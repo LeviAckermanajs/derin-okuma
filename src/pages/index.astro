@@ -1,0 +1,25 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Derin Okuma</h1>
+			<p>Hakikat arayışında dikkatli okumalar.</p>
+			<p>
+				Risale-i Nur, Kur’an ve insan üzerine yapılan dikkatli okumalar
+				ve düşünce analizleri.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
