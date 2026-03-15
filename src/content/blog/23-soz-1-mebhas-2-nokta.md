@@ -1,3 +1,11 @@
+---
+title: "23. Söz - 1. Mebhas - 2. Nokta"
+description: "İman, insanın sadece iç dünyasını değil, kâinatı okuma biçimini değiştirir."
+pubDate: 2026-03-15
+---
+
+## 23. Söz - 1. Mebhas - 2. Nokta
+
 1) İkinci Nokta’nın ana iddiası nedir?
 
 Metnin giriş cümlesi çok önemli:
