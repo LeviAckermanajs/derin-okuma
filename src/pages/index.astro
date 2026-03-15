@@ -5,28 +5,32 @@ import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection('blog'))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 3);
 ---
 
 <!doctype html>
 <html lang="tr">
 	<head>
-		<BaseHead title={`Yazılar | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section class="hero">
-				<p class="eyebrow">Tüm içerikler</p>
-				<h1>Yazılar</h1>
+				<p class="eyebrow">Derinlemesine metin okumaları</p>
+				<h1>Derin Okuma</h1>
+				<p class="hero-text">Hakikat arayışında dikkatli okumalar.</p>
 				<p class="hero-description">
-					Risale-i Nur, Kur’an ve insan üzerine yayınlanan tüm yazılar burada yer alır.
+					Risale-i Nur, Kur’an ve insan üzerine yapılan derin metin analizleri
+					ve düşünce incelemeleri.
 				</p>
+				<a class="hero-button" href="/blog">Yazıları Oku →</a>
 			</section>
 
 			<section class="home-section">
+				<h2>Son Yazılar</h2>
 				<div class="post-list">
 					{posts.map((post) => (
 						<a class="post-card" href={`/blog/${post.slug}`}>
@@ -37,6 +41,20 @@ const posts = (await getCollection('blog')).sort(
 							</p>
 						</a>
 					))}
+				</div>
+			</section>
+
+			<section class="home-section">
+				<h2>Bu site ne sunuyor?</h2>
+				<div class="info-box">
+					<p>
+						Bu site, metinleri sadece özetlemek için değil; ince mesajlarını,
+						kavram katmanlarını ve insanla kurduğu bağı anlamak için oluşturuldu.
+					</p>
+					<p>
+						Burada Risale-i Nur analizleri, Kur’an üzerine düşünce yazıları ve
+						insan anlam arayışına dair metinler yer alacak.
+					</p>
 				</div>
 			</section>
 		</main>
