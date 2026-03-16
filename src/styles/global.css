@@ -117,11 +117,17 @@ pre {
 pre > code {
 	all: unset;
 }
-blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0;
-	font-size: 1.333em;
+article blockquote {
+	margin: 24px 0;
+	padding: 14px 18px;
+	border-left: 4px solid #2563eb;
+	background: #f8fafc;
+	border-radius: 8px;
+	font-style: italic;
+	color: #111827;
+	font-size: 20px;
+	line-height: 1.8;
+	max-width: 680px;
 }
 hr {
 	border: none;
