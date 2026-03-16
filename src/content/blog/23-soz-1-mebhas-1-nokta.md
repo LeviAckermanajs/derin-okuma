@@ -4,11 +4,9 @@ description: "İnsan, acz ve fakrını fark ederek Allah’a yönelir."
 pubDate: 2026-03-15
 ---
 
-## 23. Söz - 1. Mebhas - 1. Nokta
-
 İlk cümle zaten bütün parçayı özetliyor:
 
-“İnsan, nur-u iman ile a’lâ-yı illiyyîne çıkar… Ve zulmet-i küfür ile esfel-i sâfilîne düşer.”
+> “İnsan, nur-u iman ile a’lâ-yı illiyyîne çıkar… Ve zulmet-i küfür ile esfel-i sâfilîne düşer.”
 
 Yani burada iki zıt hareket var:
 
@@ -27,7 +25,7 @@ daha köklü olarak:
 
 İman, insanın ontolojik değerini görünür kılar. Küfür ise o değeri perdeleyip bozar.
 
-1) “Çünkü iman insanı Sâni-i Zülcelâl’ine nisbet ediyor. İman bir intisabdır.”
+1) > “Çünkü iman insanı Sâni-i Zülcelâl’ine nisbet ediyor. İman bir intisabdır.”
 
 Bence burası metnin omurgası.
 
@@ -62,12 +60,12 @@ Ama Allah’ın sanatı olarak okunursa ölçü değişir.
 
 Altı çizilecek ifade:
 
-“İman bir intisabdır.”
+> “İman bir intisabdır.”
 
 Bu kısa cümle çok büyük. Çünkü iman burada sadece “doğru bilgiye sahip olmak” değil;
 aidiyet, bağ, bağlantı, mensubiyettir.
 
-2) “İnsan iman ile… san’at-ı İlâhiye ve nukuş-u esmâ-i Rabbâniye itibarıyla bir kıymet alır.”
+2) > “İnsan iman ile… san’at-ı İlâhiye ve nukuş-u esmâ-i Rabbâniye itibarıyla bir kıymet alır.”
 
 Burada iki terim çok önemli:
 
