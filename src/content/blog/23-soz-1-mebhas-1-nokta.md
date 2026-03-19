@@ -9,20 +9,13 @@ pubDate: 2026-03-15
 > “İnsan, nur-u iman ile a’lâ-yı illiyyîne çıkar… Ve zulmet-i küfür ile esfel-i sâfilîne düşer.”
 
 Yani burada iki zıt hareket var:
-
 İman → yukarı çıkarır
-
 Küfür → aşağı indirir
-
 Ama mesele sadece ahirette cennet-cehennem sonucu değil. Metin diyor ki:
-
 Bu yükseliş ve düşüş, insanın kendini nasıl anlamlandırdığıyla ilgilidir.
-
 Çünkü insanda çok büyük manalar, çok ince nakışlar, ilahî isimlerin tecellilerine mazhar olma hali var. Eğer insan bunları Allah’a nisbet ederek okursa gerçek değeri ortaya çıkar. Eğer Allah’tan koparırsa, o zaman bütün o yüksek manalar sönmeye başlar.
-
 Yani burada anlatılan şey yalnızca “inançlı olursan sevap kazanırsın” değil;
 daha köklü olarak:
-
 İman, insanın ontolojik değerini görünür kılar. Küfür ise o değeri perdeleyip bozar.
 
 1) > “Çünkü iman insanı Sâni-i Zülcelâl’ine nisbet ediyor. İman bir intisabdır.”
