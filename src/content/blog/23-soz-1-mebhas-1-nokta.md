@@ -4,6 +4,9 @@ description: "İnsan, acz ve fakrını fark ederek Allah’a yönelir."
 pubDate: 2026-03-15
 ---
 
+
+
+
 ## 🌿 Ana cümle: Bu noktanın omurgası
 
 > “İnsan, nur-u iman ile a’lâ-yı illiyyîne çıkar… ve zulmet-i küfür ile esfel-i sâfilîne düşer.”
