@@ -83,3 +83,42 @@ import HeaderLink from './HeaderLink.astro';
 		}
 	}
 </style>
+
+@media (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.internal-links {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		gap: 16px;
+	}
+
+	.internal-links a {
+		padding: 6px 0;
+		font-size: 15px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+}
+
+.internal-links {
+	display: flex;
+	gap: 20px;
+}
+
+@media (max-width: 768px) {
+	nav {
+		padding: 10px 0;
+	}
+
+	.internal-links a.active {
+		border-bottom-width: 2px;
+	}
+}
