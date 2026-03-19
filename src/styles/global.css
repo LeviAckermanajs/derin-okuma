@@ -378,3 +378,7 @@ article strong {
 		font-size: 19px;
 	}
 }
+
+body {
+	background: red;
+}
