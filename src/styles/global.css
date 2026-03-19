@@ -383,6 +383,11 @@ article blockquote {
 	line-height: 1;
 }
 
+article blockquote {
+	display: inline-block;
+	max-width: 90%;
+}
+
 .post-meta {
 	font-size: 15px;
 	color: #6b7280;
