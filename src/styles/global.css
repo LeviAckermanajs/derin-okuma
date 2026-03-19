@@ -345,3 +345,46 @@ article strong {
 	}
 }
 
+article {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 48px 20px 72px;
+}
+
+article p {
+	font-size: 21px;
+	line-height: 1.95;
+	margin: 22px 0;
+	color: #1f2937;
+}
+
+article ul,
+article ol {
+	margin: 24px 0;
+	padding-left: 28px;
+}
+
+article li {
+	font-size: 20px;
+	line-height: 1.85;
+	margin: 10px 0;
+}
+
+article blockquote {
+	margin: 24px 0;
+	padding: 14px 18px;
+	border-left: 4px solid #2563eb;
+	background: #f8fafc;
+	border-radius: 8px;
+	font-style: italic;
+	color: #111827;
+	font-size: 20px;
+	line-height: 1.8;
+	max-width: 680px;
+}
+
+.post-meta {
+	font-size: 15px;
+	color: #6b7280;
+	margin-bottom: 32px;
+}
