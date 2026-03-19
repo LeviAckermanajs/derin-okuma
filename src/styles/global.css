@@ -489,3 +489,41 @@ article blockquote {
 		max-width: 8ch;
 	}
 }
+
+@media (max-width: 768px) {
+	.hero-description,
+	.post-card p,
+	.info-box p {
+		max-width: 100%;
+		white-space: normal;
+		overflow-wrap: break-word;
+		word-break: normal;
+	}
+
+	.post-card {
+		overflow: hidden;
+	}
+
+	.hero-description {
+		max-width: 22ch;
+	}
+
+	.post-card p {
+		max-width: 26ch;
+	}
+}
+
+@media (max-width: 768px) {
+	.post-card h3 {
+		overflow-wrap: break-word;
+		word-break: normal;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero-button {
+		width: fit-content;
+		max-width: 100%;
+	}
+}
