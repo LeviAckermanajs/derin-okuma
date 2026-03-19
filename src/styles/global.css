@@ -581,3 +581,46 @@ article strong {
 		border-radius: 14px;
 	}
 }
+
+/* INFO BOX - PREMIUM TASARIM */
+.info-box {
+	margin-top: 56px;
+	padding: 22px 20px;
+	border-radius: 16px;
+
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+
+	backdrop-filter: blur(6px);
+
+	/* Yumuşak gölge */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Küçük üst etiket */
+.info-eyebrow {
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	opacity: 0.6;
+	margin-bottom: 8px;
+}
+
+/* Başlık */
+.info-box h2 {
+	font-size: 1.6rem;
+	margin-bottom: 12px;
+}
+
+/* Metin */
+.info-text {
+	font-size: 0.95rem;
+	line-height: 1.6;
+	opacity: 0.9;
+	margin-bottom: 12px;
+}
+
+/* Son paragraf boşluk */
+.info-text:last-child {
+	margin-bottom: 0;
+}
