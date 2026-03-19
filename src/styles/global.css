@@ -372,20 +372,26 @@ article li {
 
 article blockquote {
 	max-width: 600px;
-	margin: 24px auto;
-	padding: 14px 18px;
+	margin: 24px 0;
+	padding: 10px 14px;
 	border-left: 4px solid #2563eb;
 	background: #f8fafc;
 	border-radius: 8px;
 	font-style: italic;
 	color: #111827;
 	font-size: 20px;
-	line-height: 1;
+	line-height: 1.7;
 }
 
 article blockquote {
 	display: inline-block;
 	max-width: 90%;
+}
+
+article blockquote p {
+	margin: 0;
+	font-size: inherit;
+	line-height: inherit;
 }
 
 .post-meta {
