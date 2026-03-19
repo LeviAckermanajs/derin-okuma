@@ -504,3 +504,80 @@ article strong {
 		font-size: 18px;
 	}
 }
+
+@media (max-width: 768px) {
+
+	/* GENEL SAYFA DENGESİ */
+	main {
+		padding: 0 20px;
+	}
+
+	/* HERO (ÜST ALAN) */
+	.hero {
+		margin-top: 24px;
+	}
+
+	.hero h1 {
+		font-size: 2.2rem;
+		line-height: 1.2;
+		margin-bottom: 12px;
+	}
+
+	.hero p {
+		font-size: 1rem;
+		line-height: 1.6;
+		margin-bottom: 16px;
+	}
+
+	.hero-button {
+		margin-top: 16px;
+	}
+
+	/* BÖLÜM GEÇİŞİ (EN ÖNEMLİ KISIM) */
+	.home-section {
+		margin-top: 56px;
+		padding-top: 24px;
+		border-top: 1px solid rgba(255, 255, 255, 0.08);
+	}
+
+	.home-section h2 {
+		margin-bottom: 14px;
+		font-size: 1.6rem;
+	}
+
+	/* POST LİST */
+	.post-list {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		margin-top: 18px;
+		padding: 0;
+	}
+
+	/* KARTLAR */
+	.post-card {
+		padding: 18px 16px;
+		border-radius: 14px;
+		box-sizing: border-box;
+
+		/* Premium hissi */
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+	}
+
+	.post-card h3 {
+		font-size: 1.1rem;
+		margin-bottom: 6px;
+	}
+
+	.post-card p {
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+
+	/* ALT BİLGİ KUTUSU */
+	.info-box {
+		margin-top: 48px;
+		padding: 18px;
+		border-radius: 14px;
+	}
+}
