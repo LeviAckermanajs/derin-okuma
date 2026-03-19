@@ -37,7 +37,7 @@ Daha köklü olarak şunu söylüyor:
 
 ## 1) “İman bir intisabdır.”
 
-> “Çünkü iman insanı Sâni-i Zülcelâl’ine nisbet ediyor. İman bir intisabdır.” :contentReference[oaicite:0]{index=0}
+> “Çünkü iman insanı Sâni-i Zülcelâl’ine nisbet ediyor. İman bir intisabdır.”
 
 Bence burası metnin omurgası.
 
@@ -95,7 +95,7 @@ Bu cümle = tüm sistemin özeti
 
 ## 2) İnsan neden değerli?
 
-> “İnsan iman ile… san’at-ı İlâhiye ve nukuş-u esmâ-i Rabbâniye itibarıyla bir kıymet alır.” :contentReference[oaicite:1]{index=1}
+> “İnsan iman ile… san’at-ı İlâhiye ve nukuş-u esmâ-i Rabbâniye itibarıyla bir kıymet alır.”
 
 ### Buradaki iki kritik kavram:
 
@@ -132,7 +132,7 @@ Denilen şu:
 
 ## 3) Küfür ne yapıyor?
 
-> “Küfür, o nisbeti kat’ eder.” :contentReference[oaicite:2]{index=2}
+> “Küfür, o nisbeti kat’ eder.”
 
 Yani:
 
@@ -157,7 +157,7 @@ Sonuç:
 
 ## 4) En sert nokta
 
-> “Madde ise… fânî, zâil, muvakkat…” :contentReference[oaicite:3]{index=3}
+> “Madde ise… fânî, zâil, muvakkat…”
 
 Eğer insan sadece maddeden ibaret görülürse:
 
@@ -183,7 +183,7 @@ Metin şunu demiyor:
 
 ## 🎯 En çarpıcı benzetme
 
-> “Her biri birer parlak elmas iken, birer sönük şişe olurlar.” :contentReference[oaicite:4]{index=4}
+> “Her biri birer parlak elmas iken, birer sönük şişe olurlar.”
 
 ---
 
@@ -212,7 +212,7 @@ Ama:
 
 ## 🧩 Final sonucu
 
-> “İnsan… elmastan kömüre kalbeder.” :contentReference[oaicite:5]{index=5}
+> “İnsan… elmastan kömüre kalbeder.”
 
 ---
 
