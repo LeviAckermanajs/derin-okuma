@@ -2,7 +2,7 @@
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+*/
 
 :root {
 	--accent: #2337ff;
@@ -13,9 +13,11 @@
 	--gray-dark: 34, 41, 57;
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow:
-		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+		0 2px 6px rgba(var(--gray), 25%),
+		0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
+
 @font-face {
 	font-family: "Atkinson";
 	src: url("/fonts/atkinson-regular.woff") format("woff");
@@ -23,6 +25,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: "Atkinson";
 	src: url("/fonts/atkinson-bold.woff") format("woff");
@@ -30,6 +33,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+
 body {
 	font-family: "Atkinson", sans-serif;
 	margin: 0;
@@ -43,12 +47,14 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
+
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
 }
+
 h1,
 h2,
 h3,
@@ -59,77 +65,82 @@ h6 {
 	color: rgb(var(--black));
 	line-height: 1.2;
 }
+
 h1 {
 	font-size: 3.052em;
 }
+
 h2 {
 	font-size: 2.441em;
 }
+
 h3 {
 	font-size: 1.953em;
 }
+
 h4 {
 	font-size: 1.563em;
 }
+
 h5 {
 	font-size: 1.25em;
 }
+
 strong,
 b {
 	font-weight: 700;
 }
+
 a {
 	color: var(--accent);
 }
+
 a:hover {
 	color: var(--accent);
 }
+
 p {
 	margin-bottom: 1em;
 }
+
 .prose p {
 	margin-bottom: 2em;
 }
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
+
+textarea,
 input {
 	font-size: 16px;
 }
+
+textarea,
 table {
 	width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
 }
+
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
+
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
 }
+
 pre > code {
 	all: unset;
 }
 
-
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
-}
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
 }
 
 .sr-only {
@@ -140,43 +151,13 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
 	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
 	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
 	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
 
-main {
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-h2 {
-  margin-top: 40px;
-  font-size: 28px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin: 18px 0;
-}
-
-ul {
-  margin: 20px 0;
-  padding-left: 25px;
-}
-
+/* Home */
 
 .hero {
 	padding: 40px 0 20px;
@@ -198,6 +179,8 @@ ul {
 
 .hero-description {
 	max-width: 680px;
+	font-size: 18px;
+	line-height: 1.8;
 }
 
 .hero-button {
@@ -245,11 +228,20 @@ ul {
 	margin-top: 0;
 	margin-bottom: 10px;
 	font-size: 22px;
+	line-height: 1.35;
 }
 
 .post-card p {
 	margin: 0;
 	color: #4b5563;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.post-date {
+	font-size: 14px;
+	color: #6b7280;
+	margin-top: 12px !important;
 }
 
 .info-box {
@@ -258,6 +250,13 @@ ul {
 	border-radius: 14px;
 	background: white;
 }
+
+.info-box p {
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+/* Article */
 
 article {
 	max-width: 760px;
@@ -304,7 +303,32 @@ article li {
 	margin: 10px 0;
 }
 
+article blockquote {
+	display: inline-block;
+	width: auto;
+	max-width: 720px;
+	margin: 20px 0;
+	padding: 8px 14px;
+	border-left: 4px solid #2563eb;
+	background: #f8fafc;
+	border-radius: 8px;
+	font-style: italic;
+	color: #111827;
+	font-size: 20px;
+	line-height: 1.55;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
 
+article blockquote p {
+	display: inline;
+	margin: 0;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+article blockquote * + * {
+	margin-top: 0;
+}
 
 article hr {
 	border: none;
@@ -330,72 +354,17 @@ article strong {
 	border-radius: 12px;
 }
 
-
-
-article {
-	max-width: 760px;
-	margin: 0 auto;
-	padding: 48px 20px 72px;
-}
-
-article p {
-	font-size: 21px;
-	line-height: 1.95;
-	margin: 22px 0;
-	color: #1f2937;
-}
-
-article ul,
-article ol {
-	margin: 24px 0;
-	padding-left: 28px;
-}
-
-article li {
-	font-size: 20px;
-	line-height: 1.85;
-	margin: 10px 0;
-}
-
-article blockquote {
-	display: inline-block;
-	width: auto;
-	max-width: 720px;
-	margin: 20px 0;
-	padding: 8px 14px;
-	border-left: 4px solid #2563eb;
-	background: #f8fafc;
-	border-radius: 8px;
-	font-style: italic;
-	color: #111827;
-	font-size: 20px;
-	line-height: 1.55;
-}
-
-article blockquote p {
-	display: inline;
-	margin: 0;
-	font-size: inherit;
-	line-height: inherit;
-}
-
-article blockquote * + * {
-	margin-top: 0;
-}
-
-article blockquote {
-	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.post-meta {
-	font-size: 15px;
-	color: #6b7280;
-	margin-bottom: 32px;
-}
+/* Mobile */
 
 @media (max-width: 768px) {
+	body {
+		font-size: 18px;
+	}
+
 	main {
-		padding: 0 20px;
+		width: auto;
+		max-width: 100%;
+		padding: 0 20px 32px;
 	}
 
 	.hero {
@@ -412,6 +381,7 @@ article blockquote {
 		font-size: 28px;
 		line-height: 1.15;
 		margin-bottom: 12px;
+		max-width: 8ch;
 	}
 
 	.hero-text {
@@ -423,7 +393,10 @@ article blockquote {
 	.hero-description {
 		font-size: 15px;
 		line-height: 1.65;
-		max-width: 100%;
+		max-width: 22ch;
+		white-space: normal;
+		overflow-wrap: break-word;
+		word-break: normal;
 	}
 
 	.hero-button {
@@ -449,23 +422,38 @@ article blockquote {
 	}
 
 	.post-list {
-		gap: 14px;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 16px;
+		margin-top: 16px;
 	}
 
 	.post-card {
+		width: 100% !important;
+		max-width: 360px !important;
+		margin: 0 auto !important;
 		padding: 18px 16px;
 		border-radius: 14px;
+		overflow: hidden;
 	}
 
 	.post-card h3 {
 		font-size: 18px;
 		line-height: 1.35;
 		margin-bottom: 8px;
+		overflow-wrap: break-word;
+		word-break: normal;
+		max-width: 100%;
 	}
 
 	.post-card p {
 		font-size: 14px;
 		line-height: 1.55;
+		max-width: 26ch;
+		white-space: normal;
+		overflow-wrap: break-word;
+		word-break: normal;
 	}
 
 	.post-date {
@@ -481,56 +469,39 @@ article blockquote {
 	.info-box p {
 		font-size: 15px;
 		line-height: 1.7;
-	}
-}
-
-@media (max-width: 768px) {
-	h1 {
-		max-width: 8ch;
-	}
-}
-
-@media (max-width: 768px) {
-	.hero-description,
-	.post-card p,
-	.info-box p {
 		max-width: 100%;
 		white-space: normal;
 		overflow-wrap: break-word;
 		word-break: normal;
 	}
 
-	.post-card {
-		overflow: hidden;
+	article {
+		padding: 32px 16px 56px;
 	}
 
-	.hero-description {
-		max-width: 22ch;
+	article h1 {
+		font-size: 38px;
+		max-width: none;
 	}
 
-	.post-card p {
-		max-width: 26ch;
+	article h2 {
+		font-size: 26px;
+		margin-top: 40px;
 	}
-}
 
-@media (max-width: 768px) {
-	.post-card h3 {
-		overflow-wrap: break-word;
-		word-break: normal;
+	article h3 {
+		font-size: 22px;
+		margin-top: 28px;
+	}
+
+	article p,
+	article li {
+		font-size: 19px;
+		line-height: 1.8;
+	}
+
+	article blockquote {
 		max-width: 100%;
-	}
-}
-
-@media (max-width: 768px) {
-	.post-list {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.post-card {
-		width: 100%;
-		max-width: 360px;
-		margin: 0 auto;
+		font-size: 18px;
 	}
 }
