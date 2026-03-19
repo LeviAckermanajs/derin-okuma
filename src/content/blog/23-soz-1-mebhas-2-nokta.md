@@ -6,7 +6,7 @@ pubDate: 2026-03-15
 
 ## 🌿 Ana iddia: Bu nokta ne söylüyor?
 
-> “İman… insanı ışıklandırır… kâinatı aydınlatır… geçmişi ve geleceği zulümattan kurtarır.” :contentReference[oaicite:0]{index=0}
+> “İman… insanı ışıklandırır… kâinatı aydınlatır… geçmişi ve geleceği zulümattan kurtarır.”
 
 ---
 
@@ -109,7 +109,7 @@ pubDate: 2026-03-15
 
 # 🌑 Ayetin işareti
 
-> “Allah iman edenlerin dostudur; onları karanlıklardan nura çıkarır.” :contentReference[oaicite:1]{index=1}
+> “Allah iman edenlerin dostudur; onları karanlıklardan nura çıkarır.”
 
 ---
 
@@ -282,13 +282,13 @@ Bu:
 
 ---
 
-> “Her biri bir Hâkim-i Rahîm’in birer memurudur.” :contentReference[oaicite:2]{index=2}
+> “Her biri bir Hâkim-i Rahîm’in birer memurudur.”
 
 ---
 
 # ⚰️ Ölümün dönüşümü
 
-> “Mevt, hayat-ı ebediyenin mukaddimesidir.” :contentReference[oaicite:3]{index=3}
+> “Mevt, hayat-ı ebediyenin mukaddimesidir.”
 
 ---
 
