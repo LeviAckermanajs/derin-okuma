@@ -1,6 +1,6 @@
 ---
 title: "23. Söz - 2. Mebhas - 1. Nükte"
-description: "Dua, Allah’tan bir şeyi zorla almak değil; insanın aczini kabul ederek O’na yönelmesidir."
+description: "İnsan sınırsız arzularla yaratılmıştır; bu yüzden yalnızca sonsuz olana yönelirse yükselir, sınırlı şeylere bağlanırsa parçalanır."
 pubDate: 2026-03-15
 ---
 
