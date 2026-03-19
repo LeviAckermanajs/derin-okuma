@@ -330,20 +330,7 @@ article strong {
 	border-radius: 12px;
 }
 
-@media (max-width: 768px) {
-	article {
-		padding: 32px 16px 56px;
-	}
 
-	article h1 {
-		font-size: 38px;
-	}
-
-	article p,
-	article li {
-		font-size: 19px;
-	}
-}
 
 article {
 	max-width: 760px;
@@ -407,51 +394,98 @@ article blockquote {
 }
 
 @media (max-width: 768px) {
-	header {
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-		gap: 12px;
-		padding: 16px;
+	main {
+		padding: 0 20px;
 	}
 
-	.site-title,
-	header .site-title,
-	header > a:first-child {
-		display: block;
-		font-size: 18px;
-		line-height: 1.2;
-		text-align: left;
-		margin: 0;
+	.hero {
+		padding: 28px 0 18px;
 	}
 
-	header nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: nowrap;
-		gap: 12px;
-		width: 100%;
+	.eyebrow {
+		font-size: 12px;
+		letter-spacing: 0.08em;
+		margin-bottom: 10px;
 	}
 
-	header nav a {
+	h1 {
+		font-size: 28px;
+		line-height: 1.15;
+		margin-bottom: 12px;
+	}
+
+	.hero-text {
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 10px;
+	}
+
+	.hero-description {
 		font-size: 15px;
-		white-space: nowrap;
+		line-height: 1.65;
+		max-width: 100%;
 	}
 
-	.social-links,
-	header .social-links {
-		display: none;
+	.hero-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: auto;
+		min-width: 190px;
+		padding: 12px 18px;
+		font-size: 15px;
+		border-radius: 12px;
+		margin-top: 14px;
+	}
+
+	.home-section {
+		margin-top: 34px;
+	}
+
+	.home-section h2 {
+		font-size: 24px;
+		line-height: 1.2;
+		margin-bottom: 14px;
+	}
+
+	.post-list {
+		gap: 14px;
+	}
+
+	.post-card {
+		padding: 18px 16px;
+		border-radius: 14px;
+	}
+
+	.post-card h3 {
+		font-size: 18px;
+		line-height: 1.35;
+		margin-bottom: 8px;
+	}
+
+	.post-card p {
+		font-size: 14px;
+		line-height: 1.55;
+	}
+
+	.post-date {
+		font-size: 12px !important;
+		margin-top: 10px !important;
+	}
+
+	.info-box {
+		padding: 18px 16px;
+		border-radius: 14px;
+	}
+
+	.info-box p {
+		font-size: 15px;
+		line-height: 1.7;
 	}
 }
 
 @media (max-width: 768px) {
-	header nav {
-		justify-content: flex-start;
-		gap: 24px;
-	}
-
-	header nav a.active {
-		border-bottom-width: 2px;
+	h1 {
+		max-width: 8ch;
 	}
 }
