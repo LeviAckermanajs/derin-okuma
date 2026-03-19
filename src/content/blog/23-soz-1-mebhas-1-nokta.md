@@ -6,8 +6,7 @@ pubDate: 2026-03-15
 
 İlk cümle zaten bütün parçayı özetliyor:
 
-> “İnsan, nur-u iman ile a’lâ-yı illiyyîne çıkar… 
-> Ve zulmet-i küfür ile esfel-i sâfilîne düşer.”
+> “İnsan, nur-u iman ile a’lâ-yı illiyyîne çıkar… Ve zulmet-i küfür ile esfel-i sâfilîne düşer.”
 
 Yani burada iki zıt hareket var:
 
