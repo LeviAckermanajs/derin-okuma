@@ -219,10 +219,11 @@ ul {
 	margin-top: 56px;
 }
 
-.post-list {
-	display: grid;
-	gap: 20px;
-	margin-top: 20px;
+@media (max-width: 768px) {
+	.post-list {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .post-card {
