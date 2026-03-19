@@ -371,17 +371,14 @@ article li {
 }
 
 article blockquote {
-	display: inline-block;
-	max-width: 100%;
-	margin: 24px 0;
-	padding: 14px 18px;
+	max-width: 650px;
+	margin: 28px auto;
+	padding: 16px 20px;
 	border-left: 4px solid #2563eb;
 	background: #f8fafc;
-	border-radius: 8px;
+	border-radius: 10px;
 	font-style: italic;
-	color: #111827;
-	font-size: 20px;
-	line-height: 1.8;
+	line-height: 1.9;
 }
 
 .post-meta {
