@@ -1,69 +1,26 @@
-<h1>TEST HAKKINDA SAYFASI</h1>
 ---
-import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
-<!doctype html>
-<html lang="tr">
-	<head>
-		<BaseHead title={Hakkında | ${SITE_TITLE}} description="Derin Okuma hakkında" />
-	</head>
-	<body>
-		<Header />
-		<main class="about-page">
-			<section class="about-hero">
-				<p class="about-eyebrow">Hakkında</p>
-				<h1>Derin Okuma</h1>
-				<p class="about-lead">
-					Derin Okuma, metinleri yalnızca özetlemek için değil; anlam katmanlarını,
-					ince vurgularını ve insanla kurduğu bağı birlikte düşünmek için kuruldu.
-				</p>
-			</section>
+<Header />
 
-			<section class="about-section">
-				<h2>Bu site neden var?</h2>
-				<p>
-					Bazen bir metin okunur ama tam anlaşılmaz. Bazen de metnin söylediği şey
-					anlaşılır, fakat neden önemli olduğu yeterince hissedilmez.
-				</p>
-				<p>
-					Bu site, özellikle Risale-i Nur, Kur’an üzerine düşünce yazıları ve insanın
-					anlam arayışına temas eden metinlerde; sadece “ne deniyor?” sorusunu değil,
-					“burada asıl neye işaret ediliyor?” sorusunu da merkeze alır.
-				</p>
-			</section>
+<main class="about-page">
+	<h1>Derin Okuma</h1>
 
-			<section class="about-section">
-				<h2>Burada ne bulacaksın?</h2>
-				<ul>
-					<li>Risale-i Nur pasajlarına dair dikkatli okumalar</li>
-					<li>Kur’an ayetleri üzerine derinlemesine düşünce notları</li>
-					<li>İnsan, anlam, acz, dua, iman ve kulluk üzerine analizler</li>
-					<li>Gözden kaçabilecek ince noktaları öne çıkaran yorumlar</li>
-				</ul>
-			</section>
+	<p>
+		Derin Okuma, metinleri sadece özetlemek için değil;
+		anlam katmanlarını birlikte düşünmek için oluşturuldu.
+	</p>
 
-			<section class="about-section">
-				<h2>Nasıl bir okuma anlayışı?</h2>
-				<p>
-					Bu sitede amaç, metni hızlıca tüketmek değil; onun üzerinde biraz durmak,
-					kavramlarını açmak ve iç yapısını birlikte görmek.
-				</p>
-				<p>
-					Yani burada kısa özetlerden çok, metnin ruhuna yaklaşmaya çalışan,
-					okuyucuyu da düşünmeye davet eden bir yaklaşım var.
-				</p>
-			</section>
+	<h2>Bu site neden var?</h2>
+	<p>
+		Metinlerin sadece yüzeyini değil, derinliğini görmek için.
+	</p>
 
-			<section class="about-note">
-				<p>
-					Derin Okuma, cevap vermekten çok birlikte düşünmeyi önemser.
-				</p>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+	<h2>Burada ne bulacaksın?</h2>
+	<ul>
+		<li>Risale-i Nur analizleri</li>
+		<li>Kur’an üzerine düşünceler</li>
+		<li>Derin okuma notları</li>
+	</ul>
+</main>
