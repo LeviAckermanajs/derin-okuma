@@ -522,33 +522,15 @@ article blockquote {
 }
 
 @media (max-width: 768px) {
-	.hero-button {
-		width: fit-content;
-		max-width: 100%;
-	}
-}
-
-@media (max-width: 768px) {
-	.hero-button {
-		width: fit-content;
-		max-width: 100%;
-	}
-}
-
-@media (max-width: 768px) {
 	.post-list {
-		display: flex !important;
-		flex-direction: column !important;
-		align-items: center !important;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.post-card {
-		width: 100% !important;
-		max-width: 360px !important;
-		margin: 0 auto !important;
+		width: 100%;
+		max-width: 360px;
+		margin: 0 auto;
 	}
-}
-
-.post-card {
-	border: 3px solid red !important;
 }
