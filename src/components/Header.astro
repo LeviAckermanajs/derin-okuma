@@ -49,6 +49,7 @@ import HeaderLink from './HeaderLink.astro';
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
+
 	h2 {
 		margin: 0;
 		font-size: 1em;
@@ -58,67 +59,70 @@ import HeaderLink from './HeaderLink.astro';
 	h2 a.active {
 		text-decoration: none;
 	}
+
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: 20px;
 	}
+
+	.internal-links {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
+
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
+
 	.social-links,
 	.social-links a {
 		display: flex;
 	}
-	@media (max-width: 720px) {
+
+	@media (max-width: 768px) {
+		header {
+			padding: 0.75em 1em;
+		}
+
+		nav {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			gap: 10px;
+		}
+
+		h2 {
+			font-size: 1.6em;
+			line-height: 1.1;
+		}
+
+		.internal-links {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.internal-links a {
+			padding: 0.4em 0;
+			font-size: 1rem;
+		}
+
 		.social-links {
 			display: none;
 		}
 	}
 </style>
 
-@media (max-width: 768px) {
-	nav {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 12px;
-	}
-
-	.internal-links {
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		gap: 16px;
-	}
-
-	.internal-links a {
-		padding: 6px 0;
-		font-size: 15px;
-	}
-
-	h2 {
-		font-size: 18px;
-	}
-}
-
-.internal-links {
-	display: flex;
-	gap: 20px;
-}
-
-@media (max-width: 768px) {
-	nav {
-		padding: 10px 0;
-	}
-
-	.internal-links a.active {
-		border-bottom-width: 2px;
-	}
-}
