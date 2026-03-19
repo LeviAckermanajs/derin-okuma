@@ -478,3 +478,7 @@ article blockquote {
 		font-size: 12px;
 	}
 }
+
+header {
+	background: red !important;
+}
