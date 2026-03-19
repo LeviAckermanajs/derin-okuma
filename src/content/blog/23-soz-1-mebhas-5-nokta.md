@@ -6,7 +6,7 @@ pubDate: 2026-03-15
 
 ## 🌿 Ana cümle: Bu bölümün özü
 
-> İnsan bu âleme yalnızca sonuç almak için değil; ilim, iman ve dua ile kemale ermek için gelmiştir. :contentReference[oaicite:0]{index=0}
+> İnsan bu âleme yalnızca sonuç almak için değil; ilim, iman ve dua ile kemale ermek için gelmiştir.
 
 ---
 
@@ -26,7 +26,7 @@ Dua:
 
 # 🧠 1) İnsan neden var?
 
-> “İnsan bu âleme ilim ve dua vasıtasıyla tekemmül etmek için gelmiştir.” :contentReference[oaicite:1]{index=1}
+> “İnsan bu âleme ilim ve dua vasıtasıyla tekemmül etmek için gelmiştir.”
 
 ---
 
@@ -52,7 +52,7 @@ Dua:
 
 # 🔍 2) İlim nereye götürmeli?
 
-> “O nur da iman-billah’tır.” :contentReference[oaicite:2]{index=2}
+> “O nur da iman-billah’tır.”
 
 ---
 
@@ -77,7 +77,7 @@ Dua:
 
 # 🧩 3) İnsan gerçekte nedir?
 
-> İnsan nihayetsiz acz ve fakr içindedir. :contentReference[oaicite:3]{index=3}
+> İnsan nihayetsiz acz ve fakr içindedir.
 
 ---
 
@@ -121,7 +121,7 @@ bir insan tanımı var
 
 # 🤲 4) Duanın yeri
 
-> “İmandan sonra en büyük vazife duadır.” :contentReference[oaicite:4]{index=4}
+> “İmandan sonra en büyük vazife duadır.”
 
 ---
 
@@ -151,7 +151,7 @@ Dua:
 
 # 👶 5) İnsan = çocuk
 
-> “Nasıl bir çocuk… ya ağlar ya ister…” :contentReference[oaicite:5]{index=5}
+> “Nasıl bir çocuk… ya ağlar ya ister…”
 
 ---
 
@@ -182,7 +182,7 @@ Dua:
 
 # ⚠️ 6) Büyük sapma
 
-> “Ben kuvvetimle yapıyorum…” :contentReference[oaicite:6]{index=6}
+> “Ben kuvvetimle yapıyorum…”
 
 ---
 
@@ -214,13 +214,13 @@ Dua:
 
 # 🧠 7) En kritik soru
 
-> “Dua ediyoruz ama neden olmuyor?” :contentReference[oaicite:7]{index=7}
+> “Dua ediyoruz ama neden olmuyor?”
 
 ---
 
 # 🔥 Cevap
 
-> “Her duaya cevap vardır; fakat kabul etmek ayrıdır.” :contentReference[oaicite:8]{index=8}
+> “Her duaya cevap vardır; fakat kabul etmek ayrıdır.”
 
 ---
 
@@ -257,7 +257,7 @@ Dua:
 
 # 🌧️ 8) Çok ince bakış
 
-> “Yağmursuzluk, dua vaktidir.” :contentReference[oaicite:9]{index=9}
+> “Yağmursuzluk, dua vaktidir.”
 
 ---
 
@@ -284,7 +284,7 @@ Olaylar:
 
 # ⚖️ 9) Büyük düzeltme
 
-> “Dua kabul olmadı denmez…” :contentReference[oaicite:10]{index=10}
+> “Dua kabul olmadı denmez…”
 
 ---
 
@@ -309,7 +309,7 @@ Olaylar:
 
 # 🚫 10) Sınır
 
-> “Rububiyetine karışmamalı.” :contentReference[oaicite:11]{index=11}
+> “Rububiyetine karışmamalı.”
 
 ---
 
@@ -330,7 +330,7 @@ Ama:
 
 ## 💥 En ince nokta
 
-> “Rahmetini ittiham etmemeli.” :contentReference[oaicite:12]{index=12}
+> “Rahmetini ittiham etmemeli.”
 
 ---
 
@@ -377,7 +377,7 @@ Olmayınca:
 
 # 🌌 12) En güzel meyve
 
-> “Birisi var… seni işitir…” :contentReference[oaicite:13]{index=13}
+> “Birisi var… seni işitir…”
 
 ---
 
@@ -395,7 +395,7 @@ Olmayınca:
 
 # 🧭 Son çağrı
 
-> “Bu anahtarı elden bırakma…” :contentReference[oaicite:14]{index=14}
+> “Bu anahtarı elden bırakma…”
 
 ---
 
