@@ -784,11 +784,15 @@ pubDate: 2026-03-15
   <p>Bu bölümden bence özellikle şu hükümler zihne çakılmalı:</p>
 
   <ol>
-    <li>“İnsanda iki vech var.”<br>
-    Yani insanı tek taraftan okuma.</li>
+    <li>
+    <strong>İnsanda iki vech var.</strong>
+    <p>Yani insanı tek taraftan okuma.</p>
+  </li>
 
-    <li>“Enaniyet cihetinde hayat-ı dünyeviyeye nazırdır; ubudiyet cihetinde hayat-ı ebediyeye bakar.”<br>
-    Yön tayini bütün farkı oluşturur.</li>
+  <li>
+    <strong>Enaniyet cihetinde hayat-ı dünyeviyeye nazırdır; ubudiyet cihetinde hayat-ı ebediyeye bakar.</strong>
+    <p>Yön tayini bütün farkı oluşturur.</p>
+  </li>
 
     <li>“İnsan bir çekirdeğe benzer.”<br>
     İnsan bitmiş değil, açılması gereken bir varlık.</li>
