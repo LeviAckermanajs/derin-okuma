@@ -4,424 +4,205 @@ description: "İnsan sınırsız arzularla yaratılmıştır; bu yüzden yalnız
 pubDate: 2026-03-15
 ---
 
-## 🌿 Ana omurga
+<section class="risale-article">
 
-> İnsan “ahsen-i takvim” üzere yaratılmıştır ve istikameti açık bir varlıktır.
+<h1>Metnin ana omurgası</h1>
 
----
+<p>İkinci Mebhas’ın girişinde şöyle bir çerçeve kuruluyor:</p>
 
-## 🎯 Büyük gerçek
+<ul>
+  <li>İnsan “ahsen-i takvim” üzere yaratılmıştır.</li>
+  <li>Ona çok kapsamlı bir istidat verilmiştir.</li>
+</ul>
 
-İnsan:
+<p>Bu yüzden insan:</p>
 
-- ⬇️ esfel-i sâfilîne düşebilir  
-- ⬆️ a’lâ-yı illiyyîne çıkabilir  
+<ul>
+  <li>esfel-i sâfilîne düşebilir,</li>
+  <li>a’lâ-yı illiyyîne çıkabilir.</li>
+</ul>
 
----
+<p>Yani insan sabit bir varlık değil.</p>
+<p>Ne melek gibi sadece yukarıya ayarlı, ne hayvan gibi belli sınırlar içinde.</p>
+<p>İnsanın en büyük sırrı burada: istikameti açık bir varlık olması.</p>
 
-👉 sabit değil  
-👉 **yön belirleyen bir varlık**
+<p>Metindeki “zerreden tâ şemse, ferşten tâ arşa” vurgusu da bunu anlatıyor:</p>
 
----
+<p>İnsan, küçük bir alanın değil; bütün varlık mertebelerinin muhatabı gibi yaratılmış.</p>
 
-## 🌌 Ölçeği
+<p>Bu girişten sonra Birinci Nükte geliyor ve ilk temel sebebi veriyor:</p>
 
-> “Zerreden tâ şemse, ferşten tâ arşa…”
+<p>İnsanın ihtiyaçları, arzuları ve alâkaları çok geniştir.</p>
+<p>O yüzden hakikî mabudu da ancak sonsuz kudret ve ilim sahibi olabilir.</p>
 
----
+<h2>1) BİRİNCİ NÜKTE: İnsanın genişliği</h2>
 
-👉 insan küçük bir alanın değil  
-👉 **bütün varlık mertebelerinin muhatabı**
+<h3>1) İnsan, kâinatın ekser envâına muhtaç ve alâkadardır.</h3>
 
----
+<p>Bu cümle çok önemli. Burada iki ayrı şey var:</p>
 
-# 🧠 1) İnsan neden bu kadar geniş?
+<h4>a) Muhtaçtır</h4>
 
-> “İnsan, kâinatın ekser envâına muhtaç ve alâkadardır.”
+<p>Yani insanın hayatı için birçok şeye ihtiyacı vardır:</p>
 
----
+<ul>
+  <li>havaya,</li>
+  <li>suya,</li>
+  <li>güneşe,</li>
+  <li>toprağa,</li>
+  <li>rızka,</li>
+  <li>başkalarına,</li>
+  <li>sevgiye,</li>
+  <li>güvene,</li>
+  <li>mânâya,</li>
+  <li>geleceğe dair ümide.</li>
+</ul>
 
-## ✨ İki boyut
+<p>Hayvanların çoğunda ihtiyaç çevresi daha dardır.</p>
+<p>İnsan ise hem maddî hem manevî olarak çok daha geniş bir muhtaçlık alanına sahiptir.</p>
 
-### 1) Muhtaçtır
+<h4>b) Alâkadardır</h4>
 
-- hava  
-- su  
-- güneş  
-- rızık  
-- sevgi  
-- güven  
+<p>Bu daha da ince. İnsan sadece ihtiyaç duyan bir varlık değildir; aynı zamanda ilgilenir, bağ kurar, dert edinir.</p>
 
----
+<p>Mesela:</p>
 
-👉 hayatı başkalarına bağlıdır
+<ul>
+  <li>Sadece kendi odasını değil, bütün dünyayı merak eder.</li>
+  <li>Sadece bugünü değil, geçmişi ve geleceği düşünür.</li>
+  <li>Sadece kendini değil, sevdiği insanların kaderini de dert eder.</li>
+  <li>Sadece ekmek istemez; adalet, merhamet, güzellik, ebediyet de ister.</li>
+</ul>
 
----
+<p>Yani insanın çapı bedeni kadar değildir.</p>
+<p>Bedeni küçüktür, fakat kalbi ve hayali çok büyüktür.</p>
 
-### 2) Alâkadardır
+<p>Bu nokta çok temel:</p>
+<p>Bediüzzaman, insanın büyüklüğünü kas gücüyle değil, alâka genişliğiyle tanımlıyor.</p>
 
-- dünyayı merak eder  
-- geçmişi düşünür  
-- geleceği kurar  
-- başkalarının kaderini dert eder  
+<h3>2) İhtiyacı âlemin her tarafına dağılmış; arzuları ebede kadar uzanmış.</h3>
 
----
+<p>Bu cümle metnin kalbi gibi.</p>
 
-👉 sadece yaşayan değil  
-👉 **bağ kuran bir varlık**
+<p><strong>İhtiyacı âlemin her tarafına dağılmış</strong></p>
 
----
+<p>İnsan bir lokma yer ama o lokma:</p>
 
-## 💡 Altın nokta
+<ul>
+  <li>güneşe bağlı,</li>
+  <li>yağmura bağlı,</li>
+  <li>toprağa bağlı,</li>
+  <li>mevsimlere bağlı,</li>
+  <li>binlerce sebebe bağlı.</li>
+</ul>
 
-👉 insanın büyüklüğü kas gücüyle değil  
-👉 **alâka genişliğiyle ölçülür**
+<p>Bir nefes alır; bütün atmosfer sistemine bağlıdır.</p>
 
----
+<p><strong>Arzuları ebede kadar uzanmış</strong></p>
 
-# 🔥 2) Kalbin sırrı
+<ul>
+  <li>bitmeyen sevgi,</li>
+  <li>eksilmeyen güven,</li>
+  <li>bozulmayan güzellik,</li>
+  <li>ayrılıksız beraberlik,</li>
+  <li>ölümsüz hayat.</li>
+</ul>
 
-> “İhtiyacı âlemin her tarafına dağılmış; arzuları ebede kadar uzanmış.”
+<p>Yani insanın kalbi, fanî şeylerle tam doymuyor.</p>
 
----
+<h3>3) Misaller neden veriliyor?</h3>
 
-## 🎯 Derin gerçek
+<ul>
+  <li>Bir çiçeği istediği gibi, koca bir baharı da ister.</li>
+  <li>Bir bahçeyi arzu ettiği gibi, ebedî Cenneti de arzu eder.</li>
+  <li>Bir dostunu görmek istediği gibi, Cemîl-i Zülcelâl’i görmeyi de ister.</li>
+</ul>
 
-- ihtiyaç → her yere yayılmış  
-- arzu → sonsuza uzanmış  
+<p>Küçük istek ile büyük istek aynı kökten çıkar.</p>
 
----
+<h3>4) Berzaha göçmüş yüzde doksan dokuz ahbabını ziyaret etmek…</h3>
 
-## 💥 Çatışma
+<p>İnsan sadece şu anda gördüğü insanlarla yaşamıyor.</p>
+<p>Geçmişte sevdiği, kaybettiği, özlediği kimselerle de yaşıyor.</p>
 
-👉 kalp sonsuz ister  
-👉 dünya sınırlıdır  
+<h3>5) Hakikî mabud neden yalnız Allah olabilir?</h3>
 
----
+<p>İnsan sonsuz istiyor.</p>
+<p>Sınırlı varlıklar sonsuzu veremez.</p>
 
-## ⚠️ Sonuç
+<p>Bu yüzden mabud ancak:</p>
 
-👉 tatminsizlik = bozukluk değil  
+<ul>
+  <li>her şeyin dizgini elinde olan,</li>
+  <li>her şeyin hazinesi yanında bulunan,</li>
+  <li>her yerde hazır olan,</li>
+  <li>kusurdan münezzeh bir Zât olabilir.</li>
+</ul>
 
----
+<h3>6) Eğer yalnız Ona abd olsan...</h3>
 
-👉 **fıtratın işareti**
+<p>Allah’a kulluk insanı küçültmez.</p>
+<p>Aksine başka şeylere kul olmaktan kurtarır.</p>
 
----
+<h3>7) Eğer ubudiyetten kaçarsan...</h3>
 
-# 🌸 3) Küçük istek = büyük yön
+<p>İnsan boşlukta kalmaz:</p>
 
-> “Bir çiçeği ister… bir baharı ister… Cenneti ister…”
+<ul>
+  <li>para,</li>
+  <li>makam,</li>
+  <li>insanlar,</li>
+  <li>korkular,</li>
+  <li>arzular</li>
+</ul>
 
----
+<p>onun yerine geçer.</p>
 
-## 🧠 İnce çizgi
+<h2>İnsanın iki cephesi</h2>
 
-- çiçek → güzellik  
-- bahar → çoğalan güzellik  
-- Cennet → kusursuz güzellik  
+<ul>
+  <li>İcad, vücud, hayır, müspetlik</li>
+  <li>Tahrip, adem, şer, nefiy</li>
+</ul>
 
----
+<p>Şer çoğu zaman yaratma değil, bozmadır.</p>
 
-👉 hepsi aynı kökten çıkar
+<h3>9) İnsan neden hem zayıf hem tehlikeli?</h3>
 
----
+<p>Hayırda zayıf, şerde güçlüdür.</p>
 
-## 💡 Büyük ders
+<ul>
+  <li>Bir söz aileyi dağıtabilir</li>
+  <li>Bir fikir toplumu bozabilir</li>
+</ul>
 
-👉 küçük arzular  
-👉 **büyük hakikatlerin tohumu**
+<h3>10) Küfür neden büyük bir şey?</h3>
 
----
+<p>Küfür:</p>
 
-# 💔 4) En derin yara
+<ul>
+  <li>varlığı manasızlaştırır,</li>
+  <li>tesadüfe verir,</li>
+  <li>kıymeti düşürür.</li>
+</ul>
 
-> “Yüzde doksan dokuz ahbabını kaybeder…”
+<h3>11) Kötülük neden hızlı?</h3>
 
----
+<p>Bir haneyi yıkmak kolaydır; yapmak zordur.</p>
 
-## 🎯 Gerçek
+<h3>12) En ümit verici yer</h3>
 
-İnsan:
+<p>İnsan enaniyeti bırakırsa:</p>
 
-- sever  
-- bağlanır  
-- kaybeder  
+<ul>
+  <li>şer hayra dönebilir</li>
+</ul>
 
----
+<h2>Kısacık öz sonuç</h2>
 
-👉 kalbi bu dünyaya sığmaz
+<p>İnsan çok geniş yaratılmıştır.</p>
+<p>İhtiyacı bu dünyaya sığmaz.</p>
+<p>Allah’a yönelirse yükselir.</p>
+<p>Nefse yönelirse küçülür.</p>
 
----
-
-## 💡 Çok önemli
-
-👉 eğer ölüm son olsaydı  
-
----
-
-👉 insanın en derin arzuları cevapsız kalırdı
-
----
-
-# 🧭 5) Neden yalnız Allah?
-
-> “Ma’budiyete lâyık yalnız O’dur.”
-
----
-
-## 🧠 Mantık
-
-- insan → sonsuz ister  
-- dünya → sınırlıdır  
-
----
-
-👉 sınırlı, sonsuzu veremez  
-
----
-
-## 🎯 Sonuç
-
-👉 kalbin dayanacağı yer:
-
-✅ sonsuz kudret  
-✅ sonsuz ilim  
-
----
-
-👉 yani **Allah**
-
----
-
-# 🔓 6) Paradoks
-
-> “Ona abd olsan, yükselirsin.”
-
----
-
-## ❗ Nasıl olur?
-
-İnsan zaten:
-
-- nefsine  
-- insanlara  
-- korkularına  
-
-bağlanır
-
----
-
-👉 tam bağımsızlık yoktur
-
----
-
-## 💡 Çözüm
-
-👉 Allah’a bağlanırsan:
-
-- eşyaya kul olmazsın  
-- insanlara esir olmazsın  
-
----
-
-👉 **kulluk = özgürlük**
-
----
-
-# ⚠️ 7) Ters durum
-
-> “Ubudiyetten kaçarsan, zelil olursun.”
-
----
-
-## 🎯 Boşluk dolmaz
-
-Yerine gelir:
-
-- para  
-- beğenilme  
-- hırs  
-- korku  
-
----
-
-👉 Allah’a kul olmamak =  
-👉 **başka şeylere kul olmak**
-
----
-
-# ⚖️ 8) İnsanın iki cephesi
-
-> “Sende iki cihet var…”
-
----
-
-## 🌿 1) Hayır tarafı
-
-- yapmak  
-- üretmek  
-- inşa etmek  
-
----
-
-## 🔥 2) Şer tarafı
-
-- yıkmak  
-- bozmak  
-- inkâr etmek  
-
----
-
-## 💡 Temel prensip
-
-👉 şer = çoğu zaman yok etmek  
-
----
-
-👉 yapmak zor  
-👉 bozmak kolay  
-
----
-
-# 🐝 9) Çok çarpıcı karşılaştırma
-
-> “Hayırda arıdan aşağı, şerde dağdan yukarı.”
-
----
-
-## 🎯 Ne demek?
-
-- iyilik → sınırlı güç  
-- kötülük → geniş etki  
-
----
-
-## 💥 Örnek
-
-- bir söz → kalp yıkar  
-- bir kibrit → orman yakar  
-
----
-
-👉 insanın tehlikesi burada
-
----
-
-# ⚫ 10) Küfür neden büyük?
-
-> “Küfür bir tahriptir.”
-
----
-
-## 🧠 Derin bakış
-
-İman:
-
-👉 anlam verir  
-
-Küfür:
-
-👉 anlamı siler  
-
----
-
-## 🎯 Sonuç
-
-- varlık → anlamsızlaşır  
-- hayat → tesadüfe düşer  
-
----
-
-👉 küçük bir inkâr  
-👉 **büyük yıkım**
-
----
-
-# 🧠 11) Nefs gerçeği
-
-> “Nefs… büyük cinayet işleyebilir.”
-
----
-
-## ⚠️ Gerçek
-
-- yıkmak → kolay  
-- yapmak → zor  
-
----
-
-## 💡 Hayat örneği
-
-- kalp kırmak → saniye  
-- tamir etmek → zor  
-
----
-
-# 🌱 12) En büyük umut
-
-> “Kötülükleri iyiliğe çevirir.”
-
----
-
-## 🎯 Şart
-
-- enaniyeti bırakmak  
-- abd olmak  
-
----
-
-## 💥 Dönüşüm
-
-- öfke → adalet  
-- arzu → ibadet  
-- hırs → hakikat  
-
----
-
-👉 insan değişebilir  
-
----
-
-👉 **yön değişirse kader değişir**
-
----
-
-# 🔄 Dairenin tamamlanması
-
-Başlangıç:
-
-- insan açık varlık  
-
----
-
-Sonuç:
-
-- yönüne göre değer kazanır  
-
----
-
-## 🎯 İki yol
-
-⬇️ enaniyet → düşüş  
-⬆️ ubudiyet → yükseliş  
-
----
-
-# 🔥 NET ÖZET
-
-- insan → çok geniş  
-- dünya → dar  
-
----
-
-👉 çözüm:
-
-- sonsuza yönelmek  
-- Allah’a bağlanmak  
-
----
-
-# 🧠 Tek cümle
-
-İnsan sınırsız arzularla yaratılmıştır; bu yüzden yalnızca sonsuz olana yönelirse yükselir, sınırlı şeylere bağlanırsa parçalanır.
+</section>
