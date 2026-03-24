@@ -36,7 +36,9 @@ pubDate: 2026-03-15
 
   <h2>BİRİNCİ NÜKTE: İnsanın genişliği</h2>
 
-  <h3>1) “İnsan, kâinatın ekser envâına muhtaç ve alâkadardır.”</h3>
+  <h3>1) <blockquote>
+        “İnsan, kâinatın ekser envâına muhtaç ve alâkadardır.”</h3>
+         <blockquote>
 
   <p>Bu cümle çok önemli. Burada iki ayrı şey var:</p>
 
