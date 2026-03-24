@@ -25,7 +25,11 @@ pubDate: 2026-03-15
   <p>Ne melek gibi sadece yukarıya ayarlı, ne hayvan gibi belli sınırlar içinde.</p>
   <p>İnsanın en büyük sırrı burada: istikameti açık bir varlık olması.</p>
 
-  <p>Metindeki “zerreden tâ şemse, ferşten tâ arşa” vurgusu da bunu anlatıyor:</p>
+  <blockquote>
+    <p>“zerreden tâ şemse, ferşten tâ arşa”</p>
+  </blockquote>
+
+  <p>vurgusu da bunu anlatıyor:</p>
 
   <p>İnsan, küçük bir alanın değil; bütün varlık mertebelerinin muhatabı gibi yaratılmış.</p>
 
@@ -36,8 +40,9 @@ pubDate: 2026-03-15
 
   <h2>BİRİNCİ NÜKTE: İnsanın genişliği</h2>
 
-  <h3>1) <blockquote>
-        “İnsan, kâinatın ekser envâına muhtaç ve alâkadardır.”</h3><blockquote>
+  <blockquote>
+    <p>“İnsan, kâinatın ekser envâına muhtaç ve alâkadardır.”</p>
+  </blockquote>
 
   <p>Bu cümle çok önemli. Burada iki ayrı şey var:</p>
 
@@ -80,11 +85,15 @@ pubDate: 2026-03-15
   <p>Bu nokta çok temel:</p>
   <p>Bediüzzaman, insanın büyüklüğünü kas gücüyle değil, alâka genişliğiyle tanımlıyor.</p>
 
-  <h3>2) “İhtiyacı âlemin her tarafına dağılmış; arzuları ebede kadar uzanmış.”</h3>
+  <blockquote>
+    <p>“İhtiyacı âlemin her tarafına dağılmış; arzuları ebede kadar uzanmış.”</p>
+  </blockquote>
 
   <p>Bu cümle metnin kalbi gibi.</p>
 
-  <p>“İhtiyacı âlemin her tarafına dağılmış”</p>
+  <blockquote>
+    <p>“İhtiyacı âlemin her tarafına dağılmış”</p>
+  </blockquote>
 
   <p>Bu, insanın ihtiyaçlarının lokal olmadığını anlatıyor.</p>
 
@@ -103,7 +112,9 @@ pubDate: 2026-03-15
 
   <p>Demek ki insanın bir ihtiyacı bile görünenden çok daha geniş bir ağla bağlantılıdır.</p>
 
-  <p>“Arzuları ebede kadar uzanmış”</p>
+  <blockquote>
+    <p>“Arzuları ebede kadar uzanmış”</p>
+  </blockquote>
 
   <p>Burada çok derin bir insan tahlili var.</p>
 
@@ -142,7 +153,9 @@ pubDate: 2026-03-15
 
   <p>Bu örneklerin amacı şu:</p>
 
-  <p>Küçük istek ile büyük istek aynı kökten çıkar</p>
+  <blockquote>
+    <p>Küçük istek ile büyük istek aynı kökten çıkar</p>
+  </blockquote>
 
   <p>İnsandaki istekler ikiye bölünmüş değil.</p>
   <p>Yani “çiçek istemek dünyevî, Cennet istemek tamamen başka bir şey” demiyor.</p>
@@ -160,7 +173,9 @@ pubDate: 2026-03-15
   <p>Bu çok ince bir nokta:</p>
   <p>Dünyevî meyillerin kökü, doğru okunursa uhrevî ve ilahî istikamete açılır.</p>
 
-  <h3>4) “Berzaha göçmüş yüzde doksan dokuz ahbabını ziyaret etmek…”</h3>
+  <blockquote>
+    <p>“Berzaha göçmüş yüzde doksan dokuz ahbabını ziyaret etmek…”</p>
+  </blockquote>
 
   <p>Bu cümle çok sarsıcı. Neden?</p>
 
@@ -213,7 +228,9 @@ pubDate: 2026-03-15
   <p>Sınırlı varlıklar sonsuzu veremez.</p>
   <p>O hâlde insanın kalbinin tam dayanacağı ve ibadetinin tam yöneleceği merci, ancak sonsuz kudret ve sonsuz ilim sahibi olabilir.</p>
 
-  <p>Bu yüzden “ma’budiyete lâyık yalnız O’dur” deniyor.</p>
+  <blockquote>
+    <p>“ma’budiyete lâyık yalnız O’dur”</p>
+  </blockquote>
 
   <p>Yani mesele yalnız “Allah güçlüdür” demek değil.</p>
   <p>Asıl vurgu şu:</p>
@@ -224,7 +241,9 @@ pubDate: 2026-03-15
 
   <h2>Çok önemli bir dönüm noktası</h2>
 
-  <h3>6) “Eğer yalnız Ona abd olsan, bütün mahlûkat üstünde bir mevki kazanırsın.”</h3>
+  <blockquote>
+    <p>“Eğer yalnız Ona abd olsan, bütün mahlûkat üstünde bir mevki kazanırsın.”</p>
+  </blockquote>
 
   <p>Bu cümle ilk bakışta paradoks gibi:</p>
   <p>Nasıl olur da kul olmak, yükseltir?</p>
@@ -256,7 +275,9 @@ pubDate: 2026-03-15
 
   <p>Bu yüzden “kulluk” burada zillet değil, özgürleşmedir.</p>
 
-  <h3>7) “Eğer ubudiyetten istinkâf etsen, âciz mahlûkata zelil bir abd olursun.”</h3>
+  <blockquote>
+    <p>“Eğer ubudiyetten istinkâf etsen, âciz mahlûkata zelil bir abd olursun.”</p>
+  </blockquote>
 
   <p>Bu da bir öncekinin zıddı.</p>
 
@@ -284,9 +305,11 @@ pubDate: 2026-03-15
 
   <p>Sonraki sayfada metin bunu daha teknik şekilde açıyor:</p>
 
-  <p>Sende iki cihet var:</p>
-  <p>biri icad ve vücud ve hayır ve müspet ve fiil ciheti;</p>
-  <p>diğeri tahrip, adem, şer, nefiy, infial ciheti.</p>
+  <blockquote>
+    <p>Sende iki cihet var:<br>
+    biri icad ve vücud ve hayır ve müspet ve fiil ciheti;<br>
+    diğeri tahrip, adem, şer, nefiy, infial ciheti.</p>
+  </blockquote>
 
   <p>Bu bölüm çok önemli ve çok yanlış anlaşılmaya müsait.</p>
 
@@ -344,7 +367,9 @@ pubDate: 2026-03-15
     <li>iman inşa ister, inkâr ise reddederek yıkar.</li>
   </ul>
 
-  <h3>9) “Birinci cihet itibarıyla arıdan, serçeden aşağı; ikinci cihet itibarıyla dağdan geçersin.”</h3>
+  <blockquote>
+    <p>“Birinci cihet itibarıyla arıdan, serçeden aşağı; ikinci cihet itibarıyla dağdan geçersin.”</p>
+  </blockquote>
 
   <p>Bu çok çarpıcı bir ifade.</p>
 
@@ -385,7 +410,9 @@ pubDate: 2026-03-15
 
   <h2>Küfür neden “küçük bir söz” değil?</h2>
 
-  <h3>10) “Küfür bir fenalıktır, bir tahriptir, bir adem-i tasdiktir.”</h3>
+  <blockquote>
+    <p>“Küfür bir fenalıktır, bir tahriptir, bir adem-i tasdiktir.”</p>
+  </blockquote>
 
   <p>Burada çok derin bir tahlil var. İlk bakışta insan şöyle düşünebilir:</p>
   <p>“Küfür sadece inanmamak değil mi? Neden bu kadar büyük görülüyor?”</p>
@@ -419,7 +446,9 @@ pubDate: 2026-03-15
 
   <p>Bu, metindeki en ince ve en ağır noktalardan biri.</p>
 
-  <h3>11) “Nefs-i emmâre… nihayetsiz cinayet işleyebilir. Fakat icad ve hayırda iktidarı pek azdır.”</h3>
+  <blockquote>
+    <p>“Nefs-i emmâre… nihayetsiz cinayet işleyebilir. Fakat icad ve hayırda iktidarı pek azdır.”</p>
+  </blockquote>
 
   <p>Bu cümle hem psikolojik hem ahlâkî açıdan çok gerçek.</p>
 
@@ -443,9 +472,9 @@ pubDate: 2026-03-15
 
   <p>Yani kötülük hızlı, iyilik emek ister.</p>
 
-  <p>Bediüzzaman bunu şu misalle somutlaştırıyor:</p>
-
-  <p>“Bir haneyi bir günde harap eder; yüz günde yapamaz.”</p>
+  <blockquote>
+    <p>“Bir haneyi bir günde harap eder; yüz günde yapamaz.”</p>
+  </blockquote>
 
   <p>Bu yalnız bina için değil, insan ruhu için de geçerli:</p>
 
@@ -458,7 +487,9 @@ pubDate: 2026-03-15
 
   <h2>En ümit verici yer</h2>
 
-  <h3>12) “Eğer enaniyeti bıraksa… tam abd olsa… Allah onların kötülüklerini iyiliklere çevirir.”</h3>
+  <blockquote>
+    <p>“Eğer enaniyeti bıraksa… tam abd olsa… Allah onların kötülüklerini iyiliklere çevirir.”</p>
+  </blockquote>
 
   <p>Burası metnin karanlık yerlerinden sonra gelen büyük rahmet kapısı.</p>
 
@@ -491,7 +522,11 @@ pubDate: 2026-03-15
   </ul>
 
   <p>Bu yüzden burada sadece “kötülükler silinir” denmiyor;</p>
-  <p>“kötülükleri iyiliklere çevirir” deniyor.</p>
+  <blockquote>
+    <p>“kötülükleri iyiliklere çevirir”</p>
+  </blockquote>
+
+  <p>deniyor.</p>
 
   <p>Bu, İslam’daki tevbenin çok büyük bir rahmet oluşunu gösteriyor.</p>
 
@@ -532,7 +567,11 @@ pubDate: 2026-03-15
 
   <h3>3) Kulluk burada pasiflik değildir</h3>
 
-  <p>“Abd olmak”, kişiliği silmek değil;</p>
+  <blockquote>
+    <p>“Abd olmak”</p>
+  </blockquote>
+
+  <p>kişiliği silmek değil;</p>
   <p>yanlış efendilerden kurtulmaktır.</p>
 
   <h3>4) Şer çoğu zaman aktif bir üretim değil, bozmaktır</h3>
