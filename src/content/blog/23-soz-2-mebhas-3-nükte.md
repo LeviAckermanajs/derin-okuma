@@ -1,6 +1,6 @@
 ---
 title: "23. Söz - 2. Mebhas - 3. Nükte"
-description: "İnsan, bir yönüyle çok âciz ve küçük; başka bir yönüyle ise sonsuz tecellilere ayna olabilecek kadar büyük bir istidat sahibidir."
+description: "İnsana verilen büyük sermaye, küçük dünya hesabı için değil; ebedî hayat ve marifetullah içindir."
 pubDate: 2026-03-15
 ---
 
