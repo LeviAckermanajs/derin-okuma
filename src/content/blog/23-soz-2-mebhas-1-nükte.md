@@ -1,7 +1,7 @@
 ---
 title: "23. Söz - 2. Mebhas - 1. Nükte"
 description: "İnsan sınırsız arzularla yaratılmıştır; bu yüzden yalnızca sonsuz olana yönelirse yükselir, sınırlı şeylere bağlanırsa parçalanır."
-pubDate: 2026-03-15
+pubDate: 2026-03-24
 ---
 
 <section class="risale-article">

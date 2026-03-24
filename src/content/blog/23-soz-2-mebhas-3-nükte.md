@@ -1,7 +1,7 @@
 ---
 title: "23. Söz - 2. Mebhas - 3. Nükte"
 description: "İnsana verilen büyük sermaye, küçük dünya hesabı için değil; ebedî hayat ve marifetullah içindir."
-pubDate: 2026-03-15
+pubDate: 2026-03-24
 ---
 
 <section class="risale-article">

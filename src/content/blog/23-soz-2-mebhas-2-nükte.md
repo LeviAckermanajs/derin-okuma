@@ -1,7 +1,7 @@
 ---
 title: "23. Söz - 2. Mebhas - 2. Nükte"
 description: "İnsan, bir yönüyle çok âciz ve küçük; başka bir yönüyle ise sonsuz tecellilere ayna olabilecek kadar büyük bir istidat sahibidir."
-pubDate: 2026-03-15
+pubDate: 2026-03-24
 ---
 
 <section class="risale-article">
