@@ -825,6 +825,17 @@ pubDate: 2026-03-15
 
   <p>Bu 2. Nükte, insana şunu söylüyor:</p>
 
+  <ul>
+    <li>Sen sadece küçük, zayıf, fanî bir beden değilsin.<br> 
+    Ama senin büyüklüğün de nefsinden gelmiyor.</li>
+    <li>Senin içinde büyük programlar, latifeler, kabiliyetler var.<br>
+    Bunları dünya toprağında nefsin heveslerine verirsen çürürsün.<br>
+    İman, İslâmiyet, ubudiyet ve Kur’an’ın emirleriyle terbiye edersen çekirdekten ebedî bir ağaca dönüşürsün.</li>
+    <li>Gerçek ilerleme, daha çok zevk almak değil;<br>
+    içindeki yüksek duyguları asli vazifelerine döndürmektir.<br>
+    Nefsi efendi yapmak değil, kapıcı yerinde tutmaktır.</li>
+  </ul>
+
   <p>Sen sadece küçük, zayıf, fanî bir beden değilsin.<br>
   Ama senin büyüklüğün de nefsinden gelmiyor.</p>
 
