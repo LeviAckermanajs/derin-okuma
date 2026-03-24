@@ -794,20 +794,31 @@ pubDate: 2026-03-15
     <p>Yön tayini bütün farkı oluşturur.</p>
   </li>
 
-    <li>“İnsan bir çekirdeğe benzer.”<br>
-    İnsan bitmiş değil, açılması gereken bir varlık.</li>
+  <li>
+    <strong>İnsan bir çekirdeğe benzer.</strong>
+    <p>İnsan bitmiş değil, açılması gereken bir varlık.</p>
+  </li>
 
-    <li>“Cihazat-ı maneviyeyi yanlış yere sarf ederse çürür.”<br>
-    Sorun nimetin yokluğu değil, yanlış kullanımı.</li>
+  <li>
+    <strong>Cihazat-ı maneviyeyi yanlış yere sarf ederse çürür.</strong>
+    <p>Sorun nimetin yokluğu değil, yanlış kullanımı.</p>
+  </li>
 
-    <li>“Hakikî terakki, kalp, sır, ruh, akıl, hatta hayalin hayat-ı ebediyeye yüzünü çevirmesidir.”<br>
-    Terakki tanımı budur.</li>
+<li>
+    <strong>Hakikî terakki, kalp, sır, ruh, akıl, hatta hayalin hayat-ı ebediyeye yüzünü çevirmesidir.</strong>
+    <p>Terakki tanımı budur.</p>
+  </li>
 
-    <li>“Bütün letaifi nefs-i emmâreye musahhar etmek terakki değil, sukuttur.”<br>
-    En keskin hüküm bu.</li>
+  <li>
+    <strong>Bütün letaifi nefs-i emmâreye musahhar etmek terakki değil, sukuttur.</strong>
+    <p>En keskin hüküm bu.</p>
+  </li>
 
-    <li>“Nefis ve heva, kuvve-i şeheviye ve gadabiye, bir kapıcı ve it hükmündedir.”<br>
-    Yani merkez olmaları değil, sınırda kalmaları gerekir.</li>
+  <li>
+    <strong>Nefis ve heva, kuvve-i şeheviye ve gadabiye, bir kapıcı ve it hükmündedir.</strong>
+    <p>Yani merkez olmaları değil, sınırda kalmaları gerekir.</p>
+  </li>
+
   </ol>
 
   <h2>18) Bu nüktenin çok kısa özeti</h2>
