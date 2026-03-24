@@ -836,15 +836,5 @@ pubDate: 2026-03-15
     Nefsi efendi yapmak değil, kapıcı yerinde tutmaktır.</li>
   </ul>
 
-  <p>Sen sadece küçük, zayıf, fanî bir beden değilsin.<br>
-  Ama senin büyüklüğün de nefsinden gelmiyor.</p>
-
-  <p>Senin içinde büyük programlar, latifeler, kabiliyetler var.<br>
-  Bunları dünya toprağında nefsin heveslerine verirsen çürürsün.<br>
-  İman, İslâmiyet, ubudiyet ve Kur’an’ın emirleriyle terbiye edersen çekirdekten ebedî bir ağaca dönüşürsün.</p>
-
-  <p>Gerçek ilerleme, daha çok zevk almak değil;<br>
-  içindeki yüksek duyguları asli vazifelerine döndürmektir.<br>
-  Nefsi efendi yapmak değil, kapıcı yerinde tutmaktır.</p>
 
 </section>
