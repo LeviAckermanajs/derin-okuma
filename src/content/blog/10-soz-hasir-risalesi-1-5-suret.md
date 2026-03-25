@@ -1,6 +1,6 @@
 ---
 title: "10. Söz - Haşir Risalesi - 1-5. Suret"
-description: "İnsan, acz ve fakrını fark ederek Allah’a yönelir."
+description: "Başka bir âlem, büyük bir mahkeme, daimi bir seyir ve saadet yurdu olmak zorundadır."
 pubDate: 2026-03-25
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "10. Söz - Haşir Risalesi - 6-12. Suret"
-description: "İnsan, acz ve fakrını fark ederek Allah’a yönelir."
+description: "Haşir ve ahiret yalnızca mümkün değil; gerekli, hikmetli, uygun ve ilahî saltanatın gereğidir."
 pubDate: 2026-03-25
 ---
 
