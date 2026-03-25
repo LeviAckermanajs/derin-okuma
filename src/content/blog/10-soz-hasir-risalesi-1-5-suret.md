@@ -280,7 +280,7 @@ pubDate: 2026-03-25
   </blockquote>
 
   <p>Bu, çok önemli bir epistemolojik ders: Her şey gözle doğrudan görülerek bilinmez.</p>
-  <p>Bir kısmı آثارdan, fiillerden, düzenden, eserlerden bilinir.</p>
+  <p>Bir kısmı fiillerden, düzenden, eserlerden bilinir.</p>
 
   <p>Zaten ayet de “rahmet eserlerine bak” diyordu.</p>
   <p>Doğrudan zatı göster demiyor; eserlerden tanıtıyor.</p>
