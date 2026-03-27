@@ -4,207 +4,258 @@ description: "Yirmi Birinci Söz – Birinci Makam"
 pubDate: 2026-03-27
 ---
 
-<h1>Yirmi Birinci Söz – Birinci Makam</h1>
-<h2>Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı Üzerine Derin Bir Okuma</h2>
+# Yirmi Birinci Söz – Birinci Makam  
+## Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı Üzerine Derin Bir Okuma
 
-<p>Yirmi Birinci Söz’ün Birinci Makamı, Risale-i Nur içinde namaz bahsinin en dikkat çekici metinlerinden biridir. Çünkü burada sadece namazın farz oluşu veya fazileti anlatılmaz. Asıl olarak, insanın namazın doğru ve güzel bir şey olduğunu bildiği hâlde neden üşendiği, neden ertelediği, neden “her gün her gün” diyerek bıkkınlığa düştüğü çözülür.</p>
+Yirmi Birinci Söz’ün Birinci Makamı, Risale-i Nur içinde namaz bahsinin en dikkat çekici metinlerinden biridir. Çünkü burada sadece namazın farz oluşu veya fazileti anlatılmaz. Asıl olarak, insanın namazın doğru ve güzel bir şey olduğunu bildiği hâlde neden üşendiği, neden ertelediği, neden “her gün her gün” diyerek bıkkınlığa düştüğü çözülür.
 
-<p>Bu yüzden bu metin, yalnızca ibadetle ilgili bir hatırlatma değil; aynı zamanda insanın nefsiyle, zamanı algılama biçimiyle, sabır kuvvetiyle ve dünya meşgalesiyle nasıl yanlış bir ilişki kurduğunu gösteren derin bir iç muhasebedir.</p>
+Bu yüzden bu metin, yalnızca ibadetle ilgili bir hatırlatma değil; aynı zamanda insanın nefsiyle, zamanı algılama biçimiyle, sabır kuvvetiyle ve dünya meşgalesiyle nasıl yanlış bir ilişki kurduğunu gösteren derin bir iç muhasebedir.
 
-<hr>
+---
 
-<h2>Giriş: Sorun namazın güzelliğini inkâr etmek değil</h2>
+## Giriş: Sorun namazın güzelliğini inkâr etmek değil, sürekliliğine nefsi razı edememek
 
-<p>Metin çok çarpıcı bir gözlemle başlar. Büyük bir adam, namazın iyi olduğunu kabul eder; fakat her gün beş vakit kılınmasını çok bulur.</p>
+Metin çok çarpıcı bir gözlemle başlar. Büyük bir adam, namazın iyi olduğunu kabul eder; fakat her gün beş vakit kılınmasını çok bulur ve bunun insana usanç verdiğini söyler.
 
-<blockquote>
-<p>“Namaz iyidir. Fakat her gün her gün beşer defa kılmak çoktur. Bitmediğinden usanç veriyor.”</p>
-</blockquote>
+> “Namaz iyidir. Fakat her gün her gün beşer defa kılmak çoktur. Bitmediğinden usanç veriyor.”
 
-<p>Buradaki kritik nokta şudur: İtiraz namaza değil, sürekliliğinedir. Yani insan çoğu zaman ibadeti inkâr etmez; ama istikrarlı şekilde sürdürmekte zorlanır.</p>
+Burada dikkat edilmesi gereken ilk nokta şudur: İtiraz namazın hakikatine değil, tekrarına yöneliktir. Yani insan “namaz yanlış” demiyor; “sürekli olması zor” diyor. Bu, bugün de çok tanıdık bir itirazdır. Birçok insan ibadeti inkâr etmez ama düzenli ibadet hayatı kurmakta zorlanır.
 
-<blockquote>
-<p>“Madem nefsim emmâredir. Nefsini ıslah etmeyen başkasını ıslah edemez. Öyle ise nefsimden başlarım.”</p>
-</blockquote>
+Bediüzzaman, aradan zaman geçtikten sonra aynı cümleyi bu kez kendi nefsinden işitir. Ve bu noktada çok önemli bir teşhis koyar: Nefis, tembellik kulağıyla şeytandan aynı dersi almaktadır. Yani insan bazen kendi kanaati sandığı şeyi, aslında nefsin ürettiği ve şeytanın beslediği bir tembellik dili olarak içinde taşır.
 
-<p>Bu cümle, metnin temel yaklaşımını belirler: Çözüm dışarıda değil, içeridedir.</p>
+Bu fark edildiğinde metnin en temel cümlelerinden biri gelir:
 
-<hr>
+> “Madem nefsim emmâredir. Nefsini ıslah etmeyen başkasını ıslah edemez. Öyle ise nefsimden başlarım.”
 
-<h2>Namazın Konumu: Hayatın merkezi mi, artığı mı?</h2>
+Bu cümle metnin omurgasıdır. Çünkü burada çözüm dışarıda değil, içeride aranır. Başkasına öğüt vermeden önce, kendi nefsinin hangi bahanelerle seni aldattığını anlaman gerekir. İnsanın en yakın muhatabı çoğu zaman kendi içindeki gevşeklik, erteleme ve tembellik eğilimidir.
 
-<blockquote>
-<p>“Şüphesiz namaz, müminler üzerine belli vakitlerde farz kılınmıştır.”</p>
-</blockquote>
+---
 
-<p>Bu ayet, namazın hayatın kenarına bırakılacak bir tercih olmadığını gösterir. Namaz, hayatın merkezine yerleştirilmiş bir ibadettir.</p>
+## Ayetin merkezî vurgusu: Namaz, hayatın kenarına eklenmiş bir davranış değil, vakte bağlanmış bir kulluk vazifesidir
 
-<p>Bugünün en büyük problemi şudur: İnsan hayatını merkeze koyar, namazı boşluklara bırakır. Oysa hakikat bunun tersidir.</p>
+Metnin başında Nisâ Suresi’nden şu ayet yer alır:
 
-<hr>
+> “Şüphesiz namaz, müminler üzerine belli vakitlerde farz kılınmıştır.”
 
-<h2>Birinci İkaz: Ömrünü sonsuz zannetme</h2>
+Bu ayetin burada yer alması son derece anlamlıdır. Çünkü bütün metin boyunca çözülen problem aslında şudur: İnsan namazı hayatının merkezine mi koyuyor, yoksa onu ancak uygun vakit kalırsa yapılan bir ek iş gibi mi görüyor?
 
-<blockquote>
-<p>“Acaba ömrün ebedî midir? Hiç kat’î senedin var mı ki, gelecek seneye, belki yarına kadar kalacaksın?”</p>
-</blockquote>
+Ayet açıkça gösterir ki namaz, insanın boşluk bulunca yerine getireceği bir tercih değildir. O, hayatın vakit düzenine yerleştirilmiş bir farzdır. Yani doğru denge şudur: Hayat namaza göre şekillenir; namaz hayatın artıklarına göre değil.
 
-<p>İnsan ölümün varlığını bilir ama hayatını sanki hiç ölmeyecekmiş gibi yaşar.</p>
+Bugünün en büyük kopuşlarından biri de burada yaşanıyor. İnsan işini, telefonunu, yorgunluğunu, keyfini, gündemini ve sosyal akışını merkeze yerleştiriyor; namaza ise bütün bunlardan geriye ne kalırsa onu bırakıyor. Bu metin ise tam tersine, namazı tekrar merkeze yerleştiriyor.
 
-<blockquote>
-<p>“Sana usanç veren, tevehhüm-ü ebediyettir.”</p>
-</blockquote>
+---
 
-<p>Yani seni namazdan usandıran şey namaz değil; bitmeyen bir ömür varmış gibi hissetmendir.</p>
+# Birinci İkaz  
+## Namazı ağırlaştıran şey çoğu zaman namaz değil, ebedî yaşayacakmış gibi hissetmektir
 
-<p>Bugün saatlerce telefonda vakit geçiren bir insanın, birkaç dakikalık namazı “çok” bulması bunun açık göstergesidir.</p>
+Birinci İkaz, insanın ömür algısını hedef alır. Bediüzzaman, nefsin temel yanılgısını şu soruyla sarsar: İnsan gerçekten neye güvenerek namazı erteliyor? Elinde gelecek seneye, hatta yarına kadar yaşayacağına dair kesin bir senet mi var?
 
-<hr>
+> “Acaba ömrün ebedî midir? Hiç kat’î senedin var mı ki, gelecek seneye, belki yarına kadar kalacaksın?”
 
-<h2>İkinci İkaz: Tekrar, ihtiyaçtır</h2>
+Burada çok derin bir insanlık hâli teşhis edilir. İnsan ölümün varlığını inkâr etmez; fakat günlük hayatını kurarken ölümü hesaba katmaz. Aklı ölüme inanır ama planları sanki uzun ve garanti edilmiş bir ömür varmış gibi kurulur. İşte bu yüzden şu cümle bölümün anahtarlarından biridir:
 
-<blockquote>
-<p>“Acaba her gün her gün ekmek yersin, su içersin, havayı teneffüs edersin; sana onlar usanç veriyor mu?”</p>
-</blockquote>
+> “Sana usanç veren, tevehhüm-ü ebediyettir.”
 
-<p>Tekrar eden şey sıkıcı değil; ihtiyaçtır. Çünkü insan ihtiyaç duyduğu şeye tekrar tekrar döner.</p>
+Yani seni namazdan usandıran şey namazın kendisi değil; burada hep kalacakmışsın gibi yaşama vehmidir. İnsan ömrünü gerçekten kısa, kırılgan ve belirsiz hissetse, günün küçük bir kısmını ebedî hayat hesabına ayırmak ona ağır gelmezdi.
 
-<blockquote>
-<p>“Kalbimin gıdası, ruhumun âb-ı hayatı...”</p>
-</blockquote>
+Buradaki “yirmi dörtte bir” ölçüsü de çok anlamlıdır. Nefis, namazı olduğundan daha büyük gösterir. Oysa metin, bütün gün içinde namaza ayrılan sürenin ne kadar az, ama ne kadar yüksek değerli olduğunu fark ettirir. Mesele vaktin çok gitmesi değil; insanın az bir vakti bile ebediyet hesabına ayırmakta zorlanmasıdır.
 
-<p>Namaz, ruhun beslenmesidir. Nasıl beden aç kalıyorsa, kalp de aç kalır.</p>
+### Günümüzden bir örnek
 
-<blockquote>
-<p>“Ve ancak namazın penceresiyle nefes alabilir.”</p>
-</blockquote>
+Bugün bir insan saatlerce sosyal medya akışında kalabilir, onlarca kısa video izleyebilir, aynı şeyleri tekrar tekrar kontrol edebilir. Ama birkaç dakikalık namaz vakti geldiğinde, bunu fazla veya zor görebilir. Bu açıkça gösterir ki sorun çoğu zaman zaman azlığı değil; ömrün ve vaktin yanlış değerlendirilmesidir.
 
-<p>Modern insanın en büyük problemi fiziksel değil, manevî havasızlıktır.</p>
+Birinci İkaz’ın verdiği büyük ders şudur: Namazın ağırlığını konuşmadan önce, insanın kendi ömrünü nasıl gördüğünü konuşmak gerekir. Çünkü ebediyet vehmi, ibadeti ağırlaştıran en gizli aldanışlardan biridir.
 
-<hr>
+---
 
-<h2>Üçüncü İkaz: Sabır yanlış yerde tükeniyor</h2>
+# İkinci İkaz  
+## Tekrar, anlamsızlık değil ihtiyaç işaretidir
 
-<blockquote>
-<p>“Geçmiş günlerin ibadet külfetini bugün düşünüp... sabırsızlık göstermek hiç kâr-ı akıl mıdır?”</p>
-</blockquote>
+İkinci İkaz, nefsin çok sık kullandığı bir mantığı bozar: “Her gün yapılan şey bıktırır.” Bediüzzaman buna çok sade ama çok güçlü bir kıyasla cevap verir.
 
-<p>İnsan bugünkü namazdan değil, geçmiş ve geleceği aynı anda taşıdığı için yorulur.</p>
+> “Acaba her gün her gün ekmek yersin, su içersin, havayı teneffüs edersin; sana onlar usanç veriyor mu?”
 
-<blockquote>
-<p>“Cenab-ı Hakk’ın sana verdiği sabır kuvvetini... her meşakkate kâfi gelebilir.”</p>
-</blockquote>
+Bu kıyasın gücü şuradadır: Evet, ekmek yemek, su içmek, nefes almak tekrar eder. Ama tekrar ettiği için değersiz olmaz. Tersine, tekrar ediyor olması onların ihtiyaç olduğunu gösterir. Çünkü insan bir şeye ne kadar muhtaçsa, ona o kadar sık döner.
 
-<p>Sorun güçsüzlük değil; gücün yanlış yere dağıtılmasıdır.</p>
+Namaz da bu çerçevede ele alınır. Metin namazı sadece bir görev olarak değil, insanın iç dünyası için hayatî bir ihtiyaç olarak tanımlar:
 
-<hr>
+> “Kalbimin gıdası, ruhumun âb-ı hayatı ve latîfe-i Rabbâniyemin hava-yı nesîmini cezb ve celb eden namaz...”
 
-<h2>Dördüncü İkaz: Namaz neticesiz değildir</h2>
+Bu ifade çok yoğun bir anlam taşır. Kalbin gıdası demek, kalbin de aç kalabileceğini gösterir. Ruhun âb-ı hayatı demek, ruhun da susuz kalabileceğini gösterir. Latife-i Rabbaniyenin havası demek ise, insanın en ince ve en yüksek yönünün manevi havasızlık yaşayabileceğini anlatır.
 
-<blockquote>
-<p>“Kabirde gıda ve ziya ve mahşerde senet ve berat... olacak bir namaz... neticesiz midir?”</p>
-</blockquote>
+Bugün beden sağlığı çok ciddiye alınıyor. İnsan ne yiyeceğini, nasıl spor yapacağını, kaç saat uyuyacağını, hangi vitamini alacağını araştırıyor. Fakat ruhun nasıl beslendiği, kalbin ne ile dirildiği, iç dünyanın ne ile temizlendiği çoğu zaman aynı ciddiyetle ele alınmıyor. Sonra da görünürde yaşayan ama içeride daralmış insanlar ortaya çıkıyor.
 
-<p>Namazın sonucu sadece dünyada ölçülmez. İnsan sadece bu dünyaya ait değildir.</p>
+Metin, bu gerçeği çok derin bir cümleyle bağlar:
 
-<p>İnsan dünyada küçük kazançlar için büyük çaba gösterirken, sonsuz kazanç için gevşek davranıyorsa, burada değer algısı bozulmuştur.</p>
+> “Ve ancak namazın penceresiyle nefes alabilir.”
 
-<hr>
+Bu ifade özellikle çağımız için çok çarpıcıdır. Çünkü insan bugün sadece yorgun değil; çoğu zaman manen havasız kalmıştır. Sürekli uyaran, sürekli haber, sürekli ekran, sürekli kıyas, sürekli meşguliyet içinde ruh boğulmaktadır. Namaz burada sadece bir emir değil; insanın yeniden nefes alabilmesinin kapısıdır.
 
-<h2>Beşinci İkaz: “Vaktim yok” bahanesi</h2>
+---
 
-<blockquote>
-<p>“Acaba ibadetteki füturun... meşâgil-i dünyeviyenin kesretinden midir?”</p>
-</blockquote>
+# Üçüncü İkaz  
+## Sabırsızlık, bugünün yükünden çok geçmiş ve geleceği bugüne taşımaktan doğar
 
-<p>Gerçekten mi vakit yok, yoksa gereksiz şeyler mi zamanı dolduruyor?</p>
+Üçüncü İkaz, metnin psikolojik yönden en güçlü kısımlarından biridir. Burada insanın sabırsızlığı çözülür. Bediüzzaman’a göre insan çoğu zaman yalnızca bugünkü ibadeti düşünerek yorulmaz; geçmişteki ibadet yüklerini ve gelecekteki bütün namazları da bugüne yığarak kendi sabrını tüketir.
 
-<blockquote>
-<p>“Güya binler sene ömrün var gibi en lüzumsuz malûmat ile vakit geçiriyorsun.”</p>
-</blockquote>
+> “Acaba geçmiş günlerdeki ibadet külfetini... bugün düşünüp muztarib olmak, hem gelecek günlerdeki ibadet vazifesini... bugün tasavvur edip sabırsızlık göstermek hiç kâr-ı akıl mıdır?”
 
-<p>Bugünün insanı bilgiyle dolu ama anlamdan uzak yaşıyor.</p>
+Bu soru çok büyük bir teşhistir. Çünkü insan çoğu zaman şu anki birkaç dakikalık namazın altında ezilmez. Asıl ezildiği şey, zihninde taşıdığı bütün zaman yüküdür. Geçmiş eksikler, gelecekteki süreklilik korkusu, “hep böyle mi devam edecek?” duygusu, “önceden de yapamamıştım” düşüncesi... Bütün bunlar bugünün üzerine yığılır.
 
-<blockquote>
-<p>“Acaba sırf dünya için mi yaratılmışsın?”</p>
-</blockquote>
+Bediüzzaman bu hâli, kuvvetlerini yanlış yere sevk eden sersem bir kumandana benzetir. Merkez zayıflayınca düşman oradan vurur. İnsan da sabır kuvvetini geçmişin pişmanlığına ve geleceğin endişesine dağıtınca, bugünkü vazifesine karşı dayanıksız kalır.
 
-<p>İnsanın asıl problemi budur: Kendini sadece dünya için yaratılmış sanmak.</p>
+Bu yüzden şu cümle metnin en önemli düsturlarından biridir:
 
-<hr>
+> “Cenab-ı Hakk’ın sana verdiği sabır kuvvetini, eğer yanlış yolda dağıtmazsan, her meşakkate ve her musibete kâfi gelebilir.”
 
-<h2>On Dakikalık Kazı Misali</h2>
+Bu cümle sadece namaz için değil, bütün hayat için geçerlidir. İnsan çoğu zaman “gücüm yok” derken gerçekten bugüne mi güçsüzdür, yoksa bugüne verilmiş kuvvetini dün ve yarın arasında mı dağıtmıştır? Bu ayrım çok önemlidir.
 
-<blockquote>
-<p>“Gel on dakika kadar şurayı kaz. Yüz lira kıymetinde bir pırlanta bulacaksın.”</p>
-</blockquote>
+### Günümüzden bir örnek
 
-<p>İnsan küçük bir kaybı büyütüp, büyük kazancı küçümser. Namaz da böyledir.</p>
+Bugün birçok insan yalnızca yaşadığı günle değil; geçmişte kaçırdığı fırsatlarla, gelecekteki ekonomik korkularla, eski hatalarıyla ve ileride nasıl toparlanacağına dair kaygılarla da aynı anda boğuluyor. Sonra da en küçük görevi bile ağır hissediyor.
 
-<p>Burada ana kavram: <strong>bereket</strong>.</p>
+Oysa Üçüncü İkaz’ın dersi şudur: İnsandan ömür boyu tek parça sabır istenmiyor. Ondan sadece şu anın vazifesine dönük bir sadakat isteniyor.
 
-<hr>
+---
 
-<h2>İki Maden</h2>
+# Dördüncü İkaz  
+## Namaz neticesiz değildir; sadece neticesi her zaman dünya gözüyle ölçülmez
 
-<h3>1. Maden</h3>
-<blockquote>
-<p>“Her nebatın tesbihatından bir hisse alıyorsun.”</p>
-</blockquote>
+Dördüncü İkaz’da nefis başka bir itiraz getirir: “Bu ibadetin sonucu ne? Ücreti ne kadar? Bana ne kazandırıyor?” Bu, çağımızın en tanıdık sorularından biridir. İnsan, yaptığı her şeyin hemen hissedilir ve ölçülebilir bir karşılığını görmek istiyor. Namaz da bu bakışla değerlendirildiğinde, bazen “somut faydası görülmeyen” bir yük gibi algılanabiliyor.
 
-<p>Niyet, sıradan işi ibadete dönüştürür.</p>
+Bediüzzaman bu noktada çok büyük bir ufuk açar. Namazın neticesinin sadece dünya içi rahatlama olmadığını söyler. Namaz, insanın bütün yolculuğuna ait bir ameldir:
 
-<h3>2. Maden</h3>
-<blockquote>
-<p>“Kim yese... sana sadaka hükmüne geçer.”</p>
-</blockquote>
+> “Kabirde gıda ve ziya ve mahşerde senet ve berat ve Sırat Köprüsü’nde nur ve burak olacak bir namaz... neticesiz midir?”
 
-<p>Çalışma, namazla birleşirse uhrevî kazanca dönüşür.</p>
+Bu cümle, namazın anlamını sadece bugünkü psikolojiye veya görünür faydaya hapsetmez. Çünkü insan sadece bugünden ibaret bir varlık değildir. Kabir, mahşer, sırat ve ebedî hayat da hesaba katıldığında, namazın neticesi küçümsenemez.
 
-<hr>
+Daha sonra dünya örneği verilir. İnsan dünyada küçük ücretler için büyük zahmetlere katlanır. Patronundan çekindiği, maaşını kaybetmek istemediği veya menfaat elde edeceği için nice ağır işlere sabreder. Fakat Allah’ın vaadine gelince gevşer. Burada sorun zorluk değil; kıymet ölçüsünün bozulmasıdır.
 
-<h2>Elhasıl</h2>
+> “Bir adam sana yüz liralık bir hediye vaad etse, yüz gün seni çalıştırır... Acaba hulfü’l-vaad, hakkında muhal olan bir Zât, Cennet gibi bir ücreti... vaad etse... sen hizmet etmezsen... pek şiddetli bir te’dibe müstahak olacağını düşünmüyor musun?”
 
-<blockquote>
-<p>“Dünkü gün çıktı; yarın yok. Hakikî ömrünü bulunduğun gün bil.”</p>
-</blockquote>
+Bu bölüm, nefsin muhasebe bozukluğunu açığa çıkarır. İnsan küçük ve geçici menfaatler için ciddiyet gösterirken, sonsuz değerdeki vaade karşı gevşek davranıyorsa, burada asıl problem namazın ağırlığı değil; kalbin değer sıralamasındaki sapmadır.
 
-<p>İnsan ya geçmişte ya gelecekte yaşar. Ama kulluk “şimdi” ister.</p>
+---
 
-<blockquote>
-<p>“Günün bir saatini ihtiyat akçesi gibi...”</p>
-</blockquote>
+# Beşinci İkaz  
+## “Dünya işleri çok” bahanesi çoğu zaman hakiki değil, dağılmış bir hayatın mazeretidir
 
-<p>Namaz, ruhun geleceği için yapılan bir yatırımdır.</p>
+Beşinci İkaz, özellikle bugünün insanı için çok vurucudur. Burada şu soru sorulur: Namazdaki gevşeklik gerçekten dünya meşgalesinin çokluğundan mı geliyor? İnsan gerçekten zaruri işlerinden dolayı mı ibadete vakit bulamıyor?
 
-<hr>
+> “Acaba ibadetteki füturun ve namazdaki kusurun, meşâgil-i dünyeviyenin kesretinden midir?”
 
-<h2>Her Gün Yeni Bir Âlem</h2>
+Bu sorudan sonra Bediüzzaman çok sert ama çok isabetli bir teşhis yapar. İnsanın “dünya işleri” dediği şeylerin çoğu, aslında kendisine ait olmayan, gereksiz yere karıştığı, lüzumsuz ve tali uğraşlardır. Metindeki örnekler devrin diline aittir; fakat mantığı bugün çok daha açık görünür.
 
-<blockquote>
-<p>“Her yeni gün, sana bir âlemin kapısıdır.”</p>
-</blockquote>
+> “Güya binler sene ömrün var gibi en lüzumsuz malûmat ile vakit geçiriyorsun.”
 
-<p>İnsan sadece dünyayı yaşamaz; kendi dünyasını da üretir.</p>
+Bu cümle bugün adeta çağımıza söylenmiş gibidir. Çünkü modern insanın en büyük sorunlarından biri, asli vazifelerini ihmal edip tali bilgi ve meşguliyetlerle dağılmasıdır. Saatlerce haber akışı, sosyal medya, yorumlar, tartışmalar, gereksiz kıyaslar, boş gündemler, faydası sınırlı meraklar… Bunlar insanın zihnini doldurur, fakat ruhunu beslemez.
 
-<blockquote>
-<p>“Namaz, bir elektrik lambası gibidir.”</p>
-</blockquote>
+Metnin sorduğu büyük soru burada gelir:
 
-<p>Namaz, sadece görev değil; bakışı değiştiren bir ışıktır.</p>
+> “Acaba sırf dünya için mi yaratılmışsın ki, bütün vaktini ona sarf ediyorsun?”
 
-<hr>
+Bu soru insanı yerine oturtur. İnsan yalnızca geçim sağlayan bir organizma değildir. Yalnızca çalışan, kazanan, yiyen, yorulan bir beden değildir. O hâlde bütün hayatın merkezine dünyayı yerleştirmesi, kendi mahiyetini eksik okumaktır.
 
-<h2>Sonuç</h2>
+---
 
-<p>Namazın ağır gelmesi çoğu zaman namazdan değil; nefsin yanlış hesap yapmasından kaynaklanır.</p>
+## On dakikalık kazı misali  
+### Küçük kaybı büyütüp büyük kazancı küçümsemek
 
-<ul>
-<li>Ömrünü uzun sanır</li>
-<li>İhtiyacını yanlış anlar</li>
-<li>Sabrını dağıtır</li>
-<li>Kazancı küçümser</li>
-<li>Dünyayı büyütür</li>
-</ul>
+Bu bölümde verilen örnek çok çarpıcıdır. İnsan az bir gündelikle çalışırken, biri ona on dakika kadar bir yeri kazarsa çok kıymetli bir taş bulacağını söylese; sırf o on dakika içinde az bir ücret kaybı olacak diye bunu reddetmesi apaçık bir akılsızlık olur.
 
-<p>Bu metin, namazı sadece bir ibadet olarak değil; hayatı aydınlatan bir merkez olarak yeniden tanımlar.</p>
+> “Gel on dakika kadar şurayı kaz. Yüz lira kıymetinde bir pırlanta ve bir zümrüt bulacaksın.”
+
+Namaz için de aynı mantık kuruluyor. İnsan dünya nafakası için çalışırken, namaza ayıracağı kısa vakti kayıp gibi görüyor. Oysa o kısa vakit, gerçekte çok büyük bir kazancın kapısıdır.
+
+Bu noktada metnin gizli ama çok önemli kavramı **bereket**tir. Modern insan çoğu zaman sadece kuru verim hesabı yapar. Fakat Risale burada bereket hesabı yapar. Bazı vakitler kısa görünür ama çok büyük kapılar açar. Namaz, vakti bereketlendiren bir merkezdir.
+
+---
+
+# İki maden  
+## Namaz, çalışmayı küçültmez; çalışmayı manevî kazanca dönüştürür
+
+Bu bölüm, Birinci Makam’ın en özel taraflarından biridir. Bediüzzaman burada dünya işi ile ahiret işini birbirinden koparmıyor. Tam tersine, namaz ve niyet ile dünyadaki helâl emeğin nasıl manevî kazanca dönüşeceğini anlatıyor.
+
+### Birinci maden
+
+> “Yetiştirdiğin... her nebatın, her ağacın tesbihatından, güzel bir niyet ile, bir hisse alıyorsun.”
+
+Bu çok derin bir bakıştır. İnsan sadece üreten biri değildir; niyetiyle, yaptığı işin manevi yankısına da ortak olur. Yetiştirdiği şeyler sadece maddi ürünler değildir; Allah’ın isimlerine işaret eden mahlûkat olarak da değer taşır. Güzel niyet, o emeği tesbihatla ilişkilendirir.
+
+### İkinci maden
+
+> “Bu bağdan çıkan mahsulâttan kim yese... sana bir sadaka hükmüne geçer.”
+
+Burada da emeğin sosyal ve uhrevî boyutu gösterilir. İnsan Allah’ın malını Allah’ın mahlûkatına sunan bir tevziat memuru gibi hareket ederse, ortaya çıkan dünyevî netice aynı zamanda sadaka hükmü de kazanır.
+
+Bu yüzden çok önemli bir sonuç ortaya çıkar: Namaz, çalışmayı azaltmaz; aksine çalışmayı ulvîleştirir. Namazdan kopuk çalışma yalnızca dünya hesabına dönebilir. Namazla bağ kuran çalışma ise hem dünyalık hem uhrevî kazanç üretir.
+
+---
+
+# Elhasıl  
+## Gerçek ömür, içinde bulunduğun gündür
+
+Metnin toparlayıcı kısmı, zaman meselesini son derece özlü biçimde bağlar:
+
+> “Dünkü gün senin elinden çıktı; yarın ise, senin elinde senet yok ki, ona maliksin. Öyle ise, hakikî ömrünü bulunduğun gün bil.”
+
+Bu cümle, insanın en büyük dağınıklığını toplar. Dün artık gitmiştir. Yarın henüz verilmemiştir. O hâlde insanın gerçek ömrü, içinde bulunduğu gündür. İbadet de bu yüzden bugünün hakkı olarak yaşanmalıdır.
+
+Ardından çok zarif bir benzetme gelir:
+
+> “Lâakal, günün bir saatini ihtiyat akçesi gibi, hakikî istikbal için teşkil olunan bir sandukça-i uhreviye olan bir mescide veya bir seccadeye at.”
+
+Bu, namazı ruhun ve ebedî hayatın ihtiyat akçesi gibi gösterir. İnsan dünyası için nasıl birikim yapıyorsa, ahireti için de günlük bir pay ayırmalıdır. Bu bakış, namazı vakit kaybı değil; ebediyet yatırımı hâline getirir.
+
+---
+
+# Her yeni gün yeni bir âlemdir  
+## Namaz, sadece insanın amelini değil, dünyayı görüş biçimini de değiştirir
+
+Metnin en derin yerlerinden biri de burasıdır. Bediüzzaman’a göre her yeni gün, insana yeni bir âlemin kapısını açar. O âlemin şekli ise insanın kalbine, ameline ve yönelişine göre değişir.
+
+> “Her yeni gün, sana, hem herkese bir yeni âlemin kapısıdır.”
+
+Bu çok büyük bir iddiadır. Çünkü burada dış dünya kadar, insanın iç dünyasının da yaşadığı âlemi belirlediği söylenir. Ayna misali bunun için verilir: Aynanın rengi ve temizliği görüntüyü değiştirir. İnsan da kalbi, aklı, ameli ve niyetiyle kendi gününü başka bir âlem hâline getirir.
+
+Namazın buradaki rolü ise son derece etkileyici bir temsille anlatılır:
+
+> “Âdeta namazın, bir elektrik lâmbası ve namaza niyetin, onun düğmesine dokunması gibi...”
+
+Bu benzetme çok güçlüdür. Çünkü namaz, sadece yapılan bir görev değil; insanın günlük âlemini aydınlatan bir anahtar gibi tasvir edilir. Dünya karmaşık, yorucu ve boğucu görünürken; namaz o karışıklığın arkasındaki hikmeti, intizamı ve manayı kalbe göstermeye başlar.
+
+---
+
+# “Benim namazım nerede?”  
+## Kusurlu namazı küçümseyip tamamen vazgeçmemek
+
+Metnin sonunda çok teselli edici bir cevap gelir. İnsan bazen kendi namazını küçümser. Dikkati dağılır, huşû eksikliği hisseder, isteksiz olur ve sonra “Benimkinden ne olacak?” diye düşünebilir.
+
+Bediüzzaman buna hurma çekirdeği misaliyle cevap verir:
+
+> “Zira bir hurma çekirdeği, bir hurma ağacı gibi, kendi ağacını tavsif eder.”
+
+Yani çekirdek ile ağaç arasında öz bakımından bir kopukluk yoktur; fark derece ve inkişaf farkıdır. Aynı şekilde sıradan bir müminin namazı ile büyük velilerin namazı arasında da tür farkı değil, derinlik farkı vardır.
+
+Bu çok kıymetli bir derstir. Çünkü nefis bazen kusuru bahane edip ibadeti tamamen terk ettirmek ister. Oysa metin diyor ki: Zayıf da olsa, dağınık da olsa, şuursuz da olsa o namazda yine de hakikatten bir sır vardır.
+
+Buradaki büyük teselli şudur: Mükemmel olmadığın için bırakma. Çekirdek küçüktür ama ağacın hakikatini taşır.
+
+---
+
+# Sonuç  
+## Yirmi Birinci Söz’ün Birinci Makamı bize ne öğretiyor?
+
+Bu bölümün bütünü bize şunu gösterir: Namazın ağır gelmesi çoğu zaman namazın kendisinden değil; nefsin zamanı, ihtiyacı, sabrı, kazancı ve dünyayı yanlış değerlendirmesinden kaynaklanır.
+
+İnsan:
+
+- ömrünü uzun sanır,  
+- tekrar eden ihtiyacın değerini kavrayamaz,  
+- sabrını geçmiş ve gelecekte tüketir,  
+- ibadetin neticesini küçümser,  
+- dünya meşgalesini gereğinden fazla büyütür.
+
+Bediüzzaman, Beş İkaz boyunca bu aldanışların her birini söküp atar. Böylece namazı yalnızca bir görev olarak değil; kalbi besleyen, ruhu dirilten, sabrı toplayan, zamanı nurlandıran, emeği bereketlendiren ve insanın günlük âlemini aydınlatan merkezî bir ibadet olarak gösterir.
+
+Bu yüzden Yirmi Birinci Söz’ün Birinci Makamı, sadece namaz hakkında bir metin değildir. Aynı zamanda insanın neyi büyütüp neyi küçülttüğünü, nefsin hangi yollarla kendini aldattığını ve hakikatin insanın iç dünyasında nasıl yeniden kurulabileceğini gösteren çok güçlü bir nefis muhasebesidir.
