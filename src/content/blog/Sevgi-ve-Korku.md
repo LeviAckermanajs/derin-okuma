@@ -1,6 +1,6 @@
 ---
 title: "Sevgi ve Korku"
-description: "24. Söz - 5. Dal - 2. Meyve"
+description: "24. Söz - 5. Dal - 1. Meyve"
 pubDate: 2026-03-26
 ---
 
