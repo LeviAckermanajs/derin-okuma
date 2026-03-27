@@ -5,7 +5,7 @@ pubDate: 2026-03-27
 ---
 
 # Yirmi Birinci Söz – Birinci Makam  
-## Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı Üzerine Derin Bir Okuma
+## Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı Üzerine
 
 Yirmi Birinci Söz’ün Birinci Makamı, Risale-i Nur içinde namaz bahsinin en dikkat çekici metinlerinden biridir. Çünkü burada sadece namazın farz oluşu veya fazileti anlatılmaz. Asıl olarak, insanın namazın doğru ve güzel bir şey olduğunu bildiği hâlde neden üşendiği, neden ertelediği, neden “her gün her gün” diyerek bıkkınlığa düştüğü çözülür.
 
