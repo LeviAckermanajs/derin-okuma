@@ -7,6 +7,7 @@
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
+	--color-accent: #C9A84C;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -16,6 +17,16 @@
 		0 2px 6px rgba(var(--gray), 25%),
 		0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
+
+	/* Semantic değişkenler — dark mode'da bunlar override edilir */
+	--bg-body: #ffffff;
+	--bg-card: #ffffff;
+	--bg-header: #ffffff;
+	--bg-blockquote: #f8fafc;
+	--text-body: #1f2937;
+	--text-muted: #6b7280;
+	--text-card: #4b5563;
+	--border-color: #e5e7eb;
 }
 
 @font-face {
@@ -35,17 +46,19 @@
 }
 
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: 'Inter', "Atkinson", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
 	background: linear-gradient(var(--gray-gradient)) no-repeat;
 	background-size: 100% 600px;
+	background-color: var(--bg-body);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: var(--text-body);
 	font-size: 20px;
 	line-height: 1.7;
+	transition: background-color 0.2s, color 0.2s;
 }
 
 main {
@@ -61,6 +74,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: 'Lora', Georgia, serif;
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
@@ -96,7 +110,7 @@ a {
 }
 
 a:hover {
-	color: var(--accent);
+	color: var(--color-accent);
 }
 
 p {
@@ -140,7 +154,8 @@ pre > code {
 
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 2px solid var(--color-accent);
+	opacity: 0.35;
 }
 
 .sr-only {
@@ -211,12 +226,12 @@ hr {
 .post-card {
 	display: block;
 	padding: 22px;
-	border: 1px solid #e5e7eb;
+	border: 1px solid var(--border-color);
 	border-radius: 14px;
 	text-decoration: none;
 	color: inherit;
-	background: white;
-	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	background: var(--bg-card);
+	transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s, border-color 0.2s;
 }
 
 .post-card:hover {
@@ -233,22 +248,22 @@ hr {
 
 .post-card p {
 	margin: 0;
-	color: #4b5563;
+	color: var(--text-card);
 	font-size: 16px;
 	line-height: 1.6;
 }
 
 .post-date {
 	font-size: 14px;
-	color: #6b7280;
+	color: var(--text-muted);
 	margin-top: 12px !important;
 }
 
 .info-box {
 	padding: 24px;
-	border: 1px solid #e5e7eb;
+	border: 1px solid var(--border-color);
 	border-radius: 14px;
-	background: white;
+	background: var(--bg-card);
 }
 
 .info-box p {
@@ -288,7 +303,7 @@ article p {
 	font-size: 21px;
 	line-height: 1.95;
 	margin: 22px 0;
-	color: #1f2937;
+	color: var(--text-body);
 }
 
 article ul,
@@ -309,11 +324,11 @@ article blockquote {
 	max-width: 720px;
 	margin: 20px 0;
 	padding: 8px 14px;
-	border-left: 4px solid #2563eb;
-	background: #f8fafc;
+	border-left: 4px solid var(--color-accent);
+	background: var(--bg-blockquote);
 	border-radius: 8px;
 	font-style: italic;
-	color: #111827;
+	color: var(--text-body);
 	font-size: 20px;
 	line-height: 1.55;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -332,25 +347,26 @@ article blockquote * + * {
 
 article hr {
 	border: none;
-	border-top: 1px solid #e5e7eb;
+	border-top: 2px solid var(--color-accent);
+	opacity: 0.35;
 	margin: 36px 0;
 }
 
 article strong {
-	color: #111827;
+	color: rgb(var(--black));
 }
 
 .post-meta {
 	font-size: 15px;
-	color: #6b7280;
+	color: var(--text-muted);
 	margin-bottom: 32px;
 }
 
 .note-box {
 	margin: 28px 0;
 	padding: 18px 20px;
-	background: #fff;
-	border: 1px solid #e5e7eb;
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
 	border-radius: 12px;
 }
 
@@ -687,8 +703,8 @@ article strong {
 .about-note {
 	margin-top: 44px;
 	padding: 20px 18px;
-	border-left: 4px solid #2563eb;
-	background: rgba(255, 255, 255, 0.03);
+	border-left: 4px solid var(--color-accent);
+	background: var(--bg-blockquote);
 	border-radius: 12px;
 }
 
@@ -811,4 +827,48 @@ article strong {
   .risale-article h3 {
     font-size: 1.05rem;
   }
+}
+
+/* ============================================================
+   DARK MODE
+   html[data-theme="dark"]  → manuel toggle
+   @media prefers-color-scheme: dark → otomatik (localStorage yoksa)
+   ============================================================ */
+
+html[data-theme="dark"] {
+	color-scheme: dark;
+	--black: 220, 225, 235;
+	--gray: 140, 155, 175;
+	--gray-light: 50, 55, 70;
+	--gray-dark: 185, 195, 210;
+	--gray-gradient: rgba(13, 17, 25, 80%), #0d1117;
+
+	--bg-body: #0d1117;
+	--bg-card: #161b27;
+	--bg-header: #0d1117;
+	--bg-blockquote: #1a1d28;
+	--text-body: #c9d1e0;
+	--text-muted: #8a95a8;
+	--text-card: #9ca3b0;
+	--border-color: #2a3040;
+}
+
+@media (prefers-color-scheme: dark) {
+	html:not([data-theme="light"]) {
+		color-scheme: dark;
+		--black: 220, 225, 235;
+		--gray: 140, 155, 175;
+		--gray-light: 50, 55, 70;
+		--gray-dark: 185, 195, 210;
+		--gray-gradient: rgba(13, 17, 25, 80%), #0d1117;
+
+		--bg-body: #0d1117;
+		--bg-card: #161b27;
+		--bg-header: #0d1117;
+		--bg-blockquote: #1a1d28;
+		--text-body: #c9d1e0;
+		--text-muted: #8a95a8;
+		--text-card: #9ca3b0;
+		--border-color: #2a3040;
+	}
 }
