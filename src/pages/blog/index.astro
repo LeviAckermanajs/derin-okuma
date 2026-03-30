@@ -8,6 +8,25 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+function extractSeries(title: string): string {
+	const dashIndex = title.indexOf(' - ');
+	if (dashIndex === -1) return 'Diğer';
+	return title.substring(0, dashIndex);
+}
+
+const grouped = posts.reduce((acc, post) => {
+	const series = extractSeries(post.data.title);
+	if (!acc[series]) acc[series] = [];
+	acc[series].push(post);
+	return acc;
+}, {} as Record<string, typeof posts>);
+
+const seriesOrder = Object.keys(grouped).sort((a, b) => {
+	if (a === 'Diğer') return 1;
+	if (b === 'Diğer') return -1;
+	return a.localeCompare(b, 'tr');
+});
 ---
 
 <!doctype html>
@@ -22,24 +41,44 @@ const posts = (await getCollection('blog')).sort(
 				<p class="eyebrow">Tüm içerikler</p>
 				<h1>Yazılar</h1>
 				<p class="hero-description">
-					Risale-i Nur, Kur’an ve insan üzerine yayınlanan tüm yazılar burada yer alır.
+					Risale-i Nur, Kur'an ve insan üzerine yayınlanan tüm yazılar burada yer alır.
 				</p>
 			</section>
 
 			<section class="home-section">
-				<div class="post-list">
-					{posts.map((post) => (
-						<a class="post-card" href={`/blog/${post.id}`}>
-							<h3>{post.data.title}</h3>
-							<p>{post.data.description}</p>
-							<p class="post-date">
-								{post.data.pubDate.toLocaleDateString('tr-TR')}
-							</p>
-						</a>
-					))}
-				</div>
+				{seriesOrder.map((series) => (
+					<div class="series-group">
+						<h2 class="series-title">{series}</h2>
+						<div class="post-list">
+							{grouped[series].map((post) => (
+								<a class="post-card" href={`/blog/${post.id}`}>
+									<h3>{post.data.title}</h3>
+									<p>{post.data.description}</p>
+									<p class="post-date">
+										{post.data.pubDate.toLocaleDateString('tr-TR')}
+									</p>
+								</a>
+							))}
+						</div>
+					</div>
+				))}
 			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+<style>
+	.series-group {
+		margin-bottom: 2.5em;
+	}
+	.series-title {
+		font-size: 1.1em;
+		font-weight: 700;
+		color: rgb(var(--gray));
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		border-bottom: 2px solid rgb(var(--gray-light));
+		padding-bottom: 0.4em;
+		margin-bottom: 1em;
+	}
+</style>
