@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-03
+Son güncelleme: 2026-05-04
 
 ---
 
@@ -43,14 +43,17 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [ ] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma
 - [x] Landscape input'un n8n Load Input JS / `raw_input` wrapper formatına dönüştürülmesi (Day-06)
 - [x] Uzun video TTS için `audio_strategy.single_track` standardının belgelenmesi (Day-06)
-- [ ] Day-06 single-track Load Input JS ile n8n smoke test (`docs/video-tests/inputs/sevgi-ve-korku-landscape-load-input.js` hazır — gönderim bekleniyor)
-- [ ] ElevenLabs tek track TTS ve timestamp davranışını doğrulama (smoke test sonrası)
-- [ ] Smoke test sonucunu raporlama (Day-07)
-- [ ] Pexels/görsel kalite değerlendirmesi (smoke test sonrası)
-- [ ] Subtitle timing değerlendirmesi (smoke test sonrası)
+- [x] Day-06 single-track Load Input JS ile n8n smoke test (Day-07)
+- [x] ElevenLabs tek track TTS ve timestamp davranışını doğrulama (Day-07)
+- [x] Smoke test sonucunu raporlama (Day-07)
+- [x] Landscape Load Input JS formatının Derin Okuma standardı olarak doğrulanması (Day-07)
 
 **Aşama 2 — Şablon sistemi:**
-- [ ] YouTube başlık/açıklama üretim şablonu oluşturulması
+- [ ] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma
+- [ ] Shorts için n8n Load Input JS örneği oluşturma
+- [ ] YouTube başlık/açıklama prompt şablonu oluşturma (landscape + shorts ayrı)
+- [ ] Mevcut 15 yazının frontmatter ve video uygunluk audit'i
+- [ ] Blog yazıları için `video_status` frontmatter alanını değerlendirme
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi
 
 **Aşama 3 — Yarı otomatik pipeline:**
