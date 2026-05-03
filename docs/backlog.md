@@ -38,10 +38,13 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [x] Video pipeline'ın ayrı repo olarak kalması kararının ADR ile kaydedilmesi (ADR 0003)
 
 **Aşama 1 — Açık kalanlar:**
-- [ ] `scene-blog-video` içindeki gerçek n8n input JSON örneğiyle format doğrulaması (smoke test)
-- [ ] İlk gerçek blog yazısını (`Sevgi ve Korku`) yeni prompt şablonuyla landscape narration'a çevirme
+- [x] `scene-blog-video` içindeki gerçek n8n input JSON örneğiyle format doğrulaması (smoke test input hazırlandı, Day-05)
+- [x] İlk gerçek blog yazısını (`Sevgi ve Korku`) yeni prompt şablonuyla landscape narration'a çevirme (37 sahne, Day-05)
 - [ ] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma
-- [ ] Prompt çıktılarını n8n input'una elle verip smoke test yapma
+- [ ] Prompt çıktılarını n8n input'una elle verip smoke test yapma (`docs/video-tests/inputs/sevgi-ve-korku-landscape-full-video.json` hazır — gönderim bekleniyor)
+- [ ] Smoke test sonucunu raporlama (Day-06)
+- [ ] Pexels/görsel kalite değerlendirmesi (smoke test sonrası)
+- [ ] Subtitle timing değerlendirmesi (smoke test sonrası)
 
 **Aşama 2 — Şablon sistemi:**
 - [ ] YouTube başlık/açıklama üretim şablonu oluşturulması
