@@ -69,32 +69,55 @@ Bkz. ADR 0003.
 
 ---
 
-## n8n'e Manuel Scene JSON Gönderimi
+## n8n'e Gönderim Yöntemi — Load Input Code Node
 
-n8n'in kabul ettiği format `manual_scene_json` spesifikasyonudur.
+n8n'de input pratikte **JavaScript Code node** aracılığıyla verilir. `manual_scene_json` pipeline'ın iç formatıdır; n8n Load Input node'u bu formatı `raw_input` wrapper içinde bekler.
 
-**Zorunlu üst-seviye alanlar:**
+### Load Input JS formatı
 
-```json
-{
-  "input_version": "0.1.0",
-  "input_type": "manual_scene_json",
-  "job": {
-    "title": "...",
-    "description": "...",
-    "language": "tr",
-    "author": "Muhammet Yahya Ozer",
-    "job_id_hint": "..."
-  },
-  "render_preferences": {
-    "mode": "full_and_shorts",
-    "subtitles_enabled": true,
-    "target_aspect_ratio": "16:9",
-    "target_resolution": "1920x1080",
-    "target_fps": 30,
-    "voice_language": "tr"
-  },
-  "scenes": [...]
+```js
+const rawInput = {
+  input_version: '0.1.0',
+  input_type: 'manual_scene_json',
+  job: { ... },
+  audio_strategy: { ... },
+  render_preferences: { ... },
+  scenes: [...]
+};
+
+return [{ json: { raw_input: rawInput } }];
+```
+
+Bu dosya geçerli JSON değil, n8n Code node JavaScript'idir. Doğrudan n8n "Load Input" node'una yapıştırılır.
+
+### Landscape için TTS stratejisi — `single_track`
+
+Uzun landscape videolarda (30+ sahne) TTS için önerilen strateji:
+
+```js
+audio_strategy: {
+  mode: 'single_track',
+  timing_strategy: 'elevenlabs_timestamps',
+  join_separator: '\n\n'
+}
+```
+
+- `mode: 'single_track'` — tüm sahnelerin narration'ı birleştirilip ElevenLabs'e tek istek olarak gönderilir
+- `timing_strategy: 'elevenlabs_timestamps'` — ElevenLabs word-level timestamp çıktısıyla sahne senkronizasyonu yapılır
+- `join_separator: '\n\n'` — sahneler arası doğal nefes boşluğu
+
+Sahne sahne TTS yerine bu strateji daha tutarlı ses kalitesi ve doğal geçişler sağlar.
+
+### Landscape render tercihleri
+
+```js
+render_preferences: {
+  mode: 'full_video',
+  subtitles_enabled: true,
+  render_mode: 'landscape',
+  produce_both: false,
+  background_music_enabled: true,
+  target_fps: 30
 }
 ```
 
@@ -105,17 +128,14 @@ n8n'in kabul ettiği format `manual_scene_json` spesifikasyonudur.
 
 **İlk smoke test standardı:** Landscape (`full_video`) ve Shorts (`shorts`) önce ayrı ayrı test edilecek. `full_and_shorts` her iki mod çalışır hâle geldikten sonra kullanılacak.
 
-**Geçerli `target_aspect_ratio` değerleri:**
-- `16:9` — landscape
-- `9:16` — shorts
-
 **Önemli teknik kurallar:**
-- JSON geçerli olmalı; Türkçe karakterler (`ş`, `ğ`, `ü`, `ö`, `ı`, `ç`) korunmalı
 - `narration` alanı kullanılacak, `text` alanı değil
-- `visual_note` alanı korunmalı
+- `visual_note` İngilizce — Pexels arama sorgusunda kullanılır
 - `scene_id` string olarak tutulacak, format: `"scene-001"`
-- JSON içine yorum satırı yazılmayacak
-- Landscape ve Shorts çıktıları ayrı job olarak ya da `mode: full_and_shorts` ile birlikte gönderilebilir
+- Türkçe karakterler (`ş`, `ğ`, `ü`, `ö`, `ı`, `ç`) korunmalı
+- Landscape ve Shorts çıktıları ayrı job olarak gönderilir
+
+**Day-06'dan itibaren:** Landscape smoke testlerde Load Input JS formatı (`sevgi-ve-korku-landscape-load-input.js` örneği) kullanılacak. Çıplak JSON formatı referans olarak korunmakta, aktif gönderim Load Input JS ile yapılmaktadır.
 
 ---
 

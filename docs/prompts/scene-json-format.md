@@ -208,6 +208,39 @@ Landscape (`full_video`) ve Shorts (`shorts`) önce **ayrı ayrı** test edilece
 
 ---
 
+## n8n Load Input Code Node Formatı
+
+`manual_scene_json` pipeline'ın iç formatıdır. n8n Load Input node'u pratikte bu formatı `raw_input` wrapper içinde bekler. Dosya **JSON değil**, n8n Code node JavaScript'idir.
+
+```js
+const rawInput = {
+  input_version: '0.1.0',
+  input_type: 'manual_scene_json',
+  audio_strategy: {
+    mode: 'single_track',
+    timing_strategy: 'elevenlabs_timestamps',
+    join_separator: '\n\n'
+  },
+  render_preferences: {
+    mode: 'full_video',
+    render_mode: 'landscape',
+    produce_both: false
+  },
+  scenes: []
+};
+
+return [{ json: { raw_input: rawInput } }];
+```
+
+**Ne zaman kullanılır:**
+- Uzun landscape videolar (30+ sahne) için `audio_strategy.mode: 'single_track'` tercih edilir
+- Bu strateji tüm sahne narration'larını birleştirip ElevenLabs'e tek istek olarak gönderir; sahne sahne TTS yerine daha tutarlı ses kalitesi üretir
+
+**Gerçek uygulama örneği:**
+`docs/video-tests/inputs/sevgi-ve-korku-landscape-load-input.js` — Day-06 smoke test için 37 sahnelik Sevgi ve Korku Load Input dosyası
+
+---
+
 ## Geçerli `preferred_visual_style` Değerleri
 
 (scene-blog-video projesinde test edilmiş olanlar)
