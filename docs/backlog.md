@@ -8,7 +8,7 @@ Son güncelleme: 2026-05-03
 
 - [x] Mevcut Astro repo'nun audit'i
 - [x] AI dokümantasyonunun repo içine eklenmesi (CLAUDE.md, AGENTS.md, docs/)
-- [ ] ADR 0002: Astro stack kararının resmileştirilmesi ← bu dosyada yapıldı
+- [x] ADR 0002: Astro stack kararının resmileştirilmesi
 - [ ] Mevcut içerik yapısının tam çıkarılması (15 yazı, frontmatter analizi)
 - [ ] İçerik metadata modelinin standardize edilmesi (video_ready alanı?)
 - [x] `astro.config.mjs` site URL'sinin `https://derin-okuma.vercel.app` olarak güncellenmesi
@@ -30,16 +30,22 @@ Son güncelleme: 2026-05-03
 
 Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 
-**Aşama 1 — Manuel akış belgeleme (şimdiki):**
-- [ ] Mevcut ChatGPT → n8n narration akışının adım adım belgelenmesi (`docs/ai-workflow.md`)
-- [ ] Narration prompt şablonunun oluşturulması (landscape + shorts için ayrı)
-- [ ] Shorts hook yazım rehberi
+**Aşama 1 — Manuel akış belgeleme (Day-04'te tamamlandı):**
+- [x] Mevcut ChatGPT → n8n narration akışının üst seviye belgelenmesi (`docs/ai-workflow.md`, `docs/video-workflow.md`)
+- [x] Landscape narration prompt şablonu oluşturulması (`docs/prompts/landscape-narration.md`)
+- [x] Shorts narration prompt şablonu oluşturulması (`docs/prompts/shorts-narration.md`)
+- [x] Scene JSON formatının ilk versiyonunun belgelenmesi (`docs/prompts/scene-json-format.md`)
+- [x] Video pipeline'ın ayrı repo olarak kalması kararının ADR ile kaydedilmesi (ADR 0003)
+
+**Aşama 1 — Açık kalanlar:**
+- [ ] `scene-blog-video` içindeki gerçek n8n input JSON örneğiyle format doğrulaması (smoke test)
+- [ ] İlk gerçek blog yazısını (`Sevgi ve Korku`) yeni prompt şablonuyla landscape narration'a çevirme
+- [ ] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma
+- [ ] Prompt çıktılarını n8n input'una elle verip smoke test yapma
 
 **Aşama 2 — Şablon sistemi:**
-- [ ] Blog yazısından narration üretim şablonu (landscape)
-- [ ] Blog yazısından narration üretim şablonu (shorts)
-- [ ] Blog yazısından YouTube başlık/açıklama şablonu
-- [ ] Sahne bazlı JSON formatının tanımlanması
+- [ ] YouTube başlık/açıklama üretim şablonu oluşturulması
+- [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi
 
 **Aşama 3 — Yarı otomatik pipeline:**
 - [ ] Claude API entegrasyonu: Markdown → narration + scene JSON
