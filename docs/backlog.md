@@ -11,7 +11,7 @@ Son güncelleme: 2026-05-03
 - [ ] ADR 0002: Astro stack kararının resmileştirilmesi ← bu dosyada yapıldı
 - [ ] Mevcut içerik yapısının tam çıkarılması (15 yazı, frontmatter analizi)
 - [ ] İçerik metadata modelinin standardize edilmesi (video_ready alanı?)
-- [ ] `astro.config.mjs` site URL'sinin `https://derin-okuma.vercel.app` olarak güncellenmesi
+- [x] `astro.config.mjs` site URL'sinin `https://derin-okuma.vercel.app` olarak güncellenmesi
 
 **Vercel bağlantısı:** Mevcut ve çalışıyor. Doğrulama yapılacak (deployment logs kontrol).
 
@@ -50,7 +50,6 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 
 ## Teknik Borç
 
-- [ ] `astro.config.mjs` site URL düzeltmesi (örnek URL var)
 - [ ] `gonder.bat` commit mesajını "güncelleme" yerine daha açıklayıcı yapmak için güncelleme
 - [ ] Mevcut blog yazılarındaki format tutarsızlığı (bazıları HTML, bazıları Markdown)
 
