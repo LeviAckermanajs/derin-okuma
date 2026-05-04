@@ -1,0 +1,91 @@
+{
+  "video_type": "shorts",
+  "source": "23-soz-1-mebhas-4-nokta",
+  "test_day": "day-11",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İman sadece bir inanç değil. İmanlı insan dışarıdan zayıf olabilir. Ama iç dünyasında sultandır.",
+      "title_options": [
+        "İman İnsanı Sultan Eder",
+        "İçten Merkezli Olmak",
+        "Manevî Sultanlık Nedir?",
+        "Dışarıdan Zayıf, İçten Güçlü"
+      ],
+      "selected_title": "İman İnsanı Sultan Eder",
+      "description": "İman sadece tamamlamaz; yükseltir. Dışarıdan zayıf görünebilir imanlı insan. Ama iç dünyasında merkezlidir, sahipsiz değildir.\n\n#derinokuma #shorts #tefekkür #iman #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat"],
+      "thumbnail_or_cover_text": "İMAN SULTAN EDER"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Hayvan hazır programla dünyaya gelir. Peki insan neden cahil ve muhtaç doğar? Çünkü görevi farklı.",
+      "title_options": [
+        "Neden Cahil Doğarız?",
+        "Hayvan Hazır, İnsan Yolcu",
+        "İnsanın Görevi Neden Farklı?",
+        "Muhtaç Doğmanın Sebebi"
+      ],
+      "selected_title": "Neden Cahil Doğarız?",
+      "description": "Hayvan doğar doğmaz bilir. İnsan her şeyi öğrenmek zorunda. Bu bir eksiklik mi? Hayır. Çünkü insanın görevi farklı: öğrenerek büyümek.\n\n#derinokuma #shorts #tefekkür #iman #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kulluk"],
+      "thumbnail_or_cover_text": "NEDEN CAHİL DOĞARIZ?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Zayıflık ve muhtaçlık birer yük mü? Hayır. Bunlar aslında birer kanat.",
+      "title_options": [
+        "Muhtaçlık Bir Kanat",
+        "Acz ve Fakr: İki Kanat",
+        "Muhtaçlıkla Yükseliş",
+        "Zayıflık Mı, Kanat Mı?"
+      ],
+      "selected_title": "Muhtaçlık Bir Kanat",
+      "description": "İnsan gücüyle değil, muhtaçlığıyla yükselir. Acz ve fakr birer zayıflık değil, kullukla yükselişin kapısıdır.\n\n#derinokuma #shorts #tefekkür #iman #dua #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#kulluk"],
+      "thumbnail_or_cover_text": "MUHTAÇLIK KANAT"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Dua zayıflık değildir. İnsan dua için tasarlanmıştır.",
+      "title_options": [
+        "Dua Zayıflık Değil",
+        "Dua Fıtrattır",
+        "İnsan Dua İçin Tasarlanmış",
+        "Dua Neden İnsan'ın Özüdür?"
+      ],
+      "selected_title": "Dua Zayıflık Değil",
+      "description": "Dua sadece istemek değil. Yönelmek, tanımak, dayanmak. Ve insanın yapısı bu için tasarlanmış.\n\n#derinokuma #shorts #tefekkür #iman #dua #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#maneviyat"],
+      "thumbnail_or_cover_text": "DUA FITRATTIR"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "En büyük yanılgı bu: 'Ben yapıyorum.' Ama insan kendini ne yaratıyor ne yaşatıyor ne de kontrol ediyor.",
+      "title_options": [
+        "Ben Yapıyorum Yanılgısı",
+        "Sahiplenmenin Bedeli",
+        "Nankörlük Nasıl Başlar?",
+        "Kim Yapıyor Aslında?"
+      ],
+      "selected_title": "Ben Yapıyorum Yanılgısı",
+      "description": "İnsan kendini yaratmıyor, yaşatmıyor, kontrol etmiyor. Ama başarıyı sahipleniyor. Bu bir yanılgı değil: nankörlük.\n\n#derinokuma #shorts #tefekkür #iman #maneviyat #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#kulluk"],
+      "thumbnail_or_cover_text": "BEN YAPIYORUM?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "İnsan eksik olduğu için değersiz değil — muhtaç olduğu için değerlidir.",
+      "title_options": [
+        "Muhtaç Olduğu İçin Değerlidir",
+        "Muhtaçlık Değer Katar",
+        "Modern İnsanın Çıkmazı",
+        "Bağımsızlık Yanılgısı"
+      ],
+      "selected_title": "Muhtaç Olduğu İçin Değerlidir",
+      "description": "Modern insan bağımsız görünmek istiyor. Ama muhtaçlık küçüklük değil; dua kapısı. Oradan girenlerin değeri artar.\n\n#derinokuma #shorts #tefekkür #iman #kulluk #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kulluk", "#maneviyat"],
+      "thumbnail_or_cover_text": "MUHTAÇ = DEĞERLİ"
+    }
+  ]
+}

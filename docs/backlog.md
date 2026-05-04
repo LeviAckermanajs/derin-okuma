@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-10 — short-001 smoke test başarılı)
+Son güncelleme: 2026-05-04 (Day-11 — 23-soz-1-mebhas-4-nokta tam üretim paketi hazır)
 
 ---
 
@@ -56,11 +56,14 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [ ] Thumbnail metni üretim testi
 - [x] İlk Shorts Load Input JS ile n8n smoke test — short-001 (Day-10)
 - [x] short-001 Shorts formatının n8n tarafından kabul edildiğini doğrulama (Day-10)
+- [x] 23-soz-1-mebhas-4-nokta için landscape + 6 Shorts tam üretim paketi hazırlanması (Day-11)
 - [ ] Kalan Shorts Load Input JS dosyalarını sırayla test etme (`short-002` → `short-006`)
 - [ ] Shorts subtitle konumu ve okunabilirlik standardını belgelemek
 - [ ] Başarılı Shorts formatını Derin Okuma standardı olarak belgelemek
 - [ ] Mevcut 15 yazının frontmatter ve video uygunluk audit'i
 - [ ] Blog yazıları için `video_status` frontmatter alanını değerlendirme
+- [ ] 23-soz-1-mebhas-4-nokta landscape smoke test
+- [ ] 23-soz-1-mebhas-4-nokta Shorts smoke test (short-001 ile başla)
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi
 
 **Aşama 3 — Yarı otomatik pipeline:**

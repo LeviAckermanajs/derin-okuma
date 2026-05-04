@@ -1,0 +1,194 @@
+{
+  "source": {
+    "blog_post": "23-soz-1-mebhas-4-nokta",
+    "title": "23. Söz - 1. Mebhas - 4. Nokta",
+    "source_files": [
+      "src/content/blog/23-soz-1-mebhas-4-nokta.md",
+      "docs/video-tests/inputs/23-soz-1-mebhas-4-nokta-landscape-load-input.js"
+    ]
+  },
+  "test_day": "day-11",
+  "video_type": "shorts_package",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "theme": "İman insanı sultan eder — dışarıdan zayıf, içten merkezi",
+      "hook": "İman sadece bir inanç değil. İmanlı insan dışarıdan zayıf olabilir. Ama iç dünyasında sultandır.",
+      "title": "İman İnsanı Sultan Eder",
+      "description": "İman sadece tamamlamaz; yükseltir. Dışarıdan zayıf görünebilir imanlı insan. Ama iç dünyasında merkezlidir, sahipsiz değildir. #derinokuma #shorts #tefekkür #iman #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat"],
+      "thumbnail_or_cover_text": "İMAN SULTAN EDER",
+      "estimated_duration_seconds": 60,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İman sadece bir inanç değil. İmanlı insan dışarıdan zayıf olabilir; maddi imkânları az, makamı olmayabilir. Ama iç dünyasında merkezlidir. Sahipsiz değildir, anlamsız değildir.",
+          "visual_note": "person standing calmly in storm, dramatic contrast between chaos and stillness",
+          "keywords": ["calm in storm", "stillness", "dramatic contrast", "inner peace"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bu sultanlık taht ve kılıçla değil, anlam ve bağlılıkla kazanılır. Kâinatı başıboş görmemek, hadiseleri tesadüf okumamak, aczini zillet değil kapı yapmak.",
+          "visual_note": "light streaming through ancient stone archway into open sky, symbolic threshold",
+          "keywords": ["stone archway", "streaming light", "symbolic", "threshold"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Hakiki insanlık, biyolojik olmaktan öte bir anlam taşır. İman, bu anlamı verir. Ve bu yüzden iman insanı hem gerçek anlamda insan eder, hem de içten sultan kılar.",
+          "visual_note": "sunrise silhouette of standing figure on hilltop, dignity and presence",
+          "keywords": ["sunrise silhouette", "hilltop", "dignity", "presence"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "theme": "Hayvan hazır, insan yolcu — cahil doğmanın sebebi",
+      "hook": "Hayvan hazır programla dünyaya gelir. Peki insan neden cahil ve muhtaç doğar? Çünkü görevi farklı.",
+      "title": "Neden Cahil Doğarız?",
+      "description": "Hayvan doğar doğmaz bilir. İnsan her şeyi öğrenmek zorunda. Bu bir eksiklik mi? Hayır. Çünkü insanın görevi farklı: öğrenerek büyümek. #derinokuma #shorts #tefekkür #iman #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kulluk"],
+      "thumbnail_or_cover_text": "NEDEN CAHİL DOĞARIZ?",
+      "estimated_duration_seconds": 55,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Hayvan hazır programla dünyaya gelir. Bir at birkaç saat içinde yürür. Arı doğuştan bal yapar. Bunlar bilinçli tercih değil, yaratılıştan gelen kulluktur.",
+          "visual_note": "newborn foal taking first steps in sunlit field, natural and instinctive movement",
+          "keywords": ["newborn foal", "first steps", "instinct", "sunlit field"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsan ise tam tersi bir yapıyla dünyaya gelir. Her şeyi öğrenmesi gerekir, tek başına yaşayamaz, uzun yıllar boyunca yardıma muhtaçtır. Hayvanla kıyaslandığında dezavantajlı görünür.",
+          "visual_note": "newborn baby hand grasping adult finger, vulnerability and trust, soft light",
+          "keywords": ["newborn hand", "trust", "vulnerability", "soft light"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ama bu zayıflık bir hata değil, bir tasarım. İnsanın görevi büyüktür: öğrenerek büyümek, anlayarak kulluk etmek. Hayvan hazır gelir çünkü görevi sabittir. İnsan muhtaç gelir çünkü görevi bir yolculuktur.",
+          "visual_note": "long winding mountain path disappearing into morning mist, journey ahead",
+          "keywords": ["mountain path", "winding road", "mist", "journey"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "theme": "Acz ve fakr — yük değil kanat",
+      "hook": "Zayıflık ve muhtaçlık birer yük mü? Hayır. Bunlar aslında birer kanat.",
+      "title": "Muhtaçlık Bir Kanat",
+      "description": "İnsan gücüyle değil, muhtaçlığıyla yükselir. Acz ve fakr birer zayıflık değil, kullukla yükselişin kapısıdır. #derinokuma #shorts #tefekkür #iman #dua #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#kulluk"],
+      "thumbnail_or_cover_text": "MUHTAÇLIK KANAT",
+      "estimated_duration_seconds": 65,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "\"Acz\" gücünün yetmemesi; \"fakr\" muhtaç olmak. İlk bakışta bunlar dezavantajdır. Ama işin aslı tersinedir: insan bu iki özelliğiyle yükselir.",
+          "visual_note": "bird in flight silhouetted against bright sky, wings fully spread, effortless soaring",
+          "keywords": ["bird in flight", "silhouette", "wings spread", "effortless"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsan gücüyle değil, muhtaçlığıyla yükselir. Modern çağda güç yüceltilir. Ama gerçek yükseliş, aczini doğru okuyandan gelir. Muhtaçlık, doğru adrese yönelince bir kapıya dönüşür.",
+          "visual_note": "eagle soaring on thermal winds without beating wings, effortless lift",
+          "keywords": ["eagle soaring", "thermal winds", "effortless", "lift"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Kanat yük taşımaz; uçurur. İnsanın zayıflığı ve muhtaçlığı, doğru anlaşıldığında onu Allah'a yönelmenin vesilesi kılar. Bu yüzden acz ve fakr birer yük değil, birer kanattır.",
+          "visual_note": "wide open sky at dawn, birds in formation, freedom and direction",
+          "keywords": ["open sky", "birds in formation", "dawn", "freedom"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "theme": "Dua zayıflık değil fıtrat",
+      "hook": "Dua zayıflık değildir. İnsan dua için tasarlanmıştır.",
+      "title": "Dua Zayıflık Değil",
+      "description": "Dua sadece istemek değil. Yönelmek, tanımak, dayanmak. Ve insanın yapısı bu için tasarlanmış. #derinokuma #shorts #tefekkür #iman #dua #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#maneviyat"],
+      "thumbnail_or_cover_text": "DUA FITRATTIR",
+      "estimated_duration_seconds": 60,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Dua zayıflık değil, fıtrattır. İnsanın yapısı dua için tasarlanmış. Seslenmek, yönelmek, dayanmak — bunlar insanın doğasının ta içinden gelir.",
+          "visual_note": "calm water surface disturbed by single raindrop, natural response, ripple effect",
+          "keywords": ["raindrop on water", "ripple", "natural response", "calm surface"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Çocuk düşünün: gücü yetmez ama ister, seslenir. Bu çaresizliğin içinde bile tam bir güven vardır. İnsan da Allah'ın kapısında böyledir. Muhtaçlık, yakınlığın başka bir adıdır.",
+          "visual_note": "child reaching up toward parent's hand, trust and safety, warm gentle light",
+          "keywords": ["child reaching up", "parent hand", "trust", "warm light"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Dua iki türlüdür: çalışmak, çabalamak, sebeplere gitmek — ve söz ile yönelmek. İkisi birlikte olduğunda insan hem elinden geleni yapar hem de sonucu doğru adrese bırakır.",
+          "visual_note": "hands raised in prayer against soft evening sky, sincerity and surrender",
+          "keywords": ["hands raised", "prayer", "evening sky", "sincerity"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "theme": "Ben yapıyorum yanılgısı — nankörlüğün kökü",
+      "hook": "En büyük yanılgı bu: 'Ben yapıyorum.' Ama insan kendini ne yaratıyor ne yaşatıyor ne de kontrol ediyor.",
+      "title": "Ben Yapıyorum Yanılgısı",
+      "description": "İnsan kendini yaratmıyor, yaşatmıyor, kontrol etmiyor. Ama başarıyı sahipleniyor. Bu bir yanılgı değil: nankörlük. #derinokuma #shorts #tefekkür #iman #maneviyat #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#kulluk"],
+      "thumbnail_or_cover_text": "BEN YAPIYORUM?",
+      "estimated_duration_seconds": 55,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "\"Ben yapıyorum\" demek en büyük yanılgıdır. İnsan kendini yaratmıyor, kendini yaşatmıyor, kalbinin atışını kontrol etmiyor. Ama buna rağmen başarıyı, sağlığı, zekâyı kendine mülk ediniyor.",
+          "visual_note": "person casting long shadow in setting sun, shadow larger than figure itself",
+          "keywords": ["long shadow", "setting sun", "figure and shadow", "ego"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bu sahiplenme bir nankörlüktür. Verilen şeyi verende kabul etmemek. Suyun tadını almak ama kaynağını unutmak. Şükür kapanınca anlam da azalır.",
+          "visual_note": "glass of clear water in sunlight, beauty of simple gift overlooked, still life",
+          "keywords": ["glass of water", "sunlight", "simple gift", "still life"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ama bu fark edildiğinde her şey değişir. \"Ben» değil, \"bana verildi» demek. Bu küçük bir söz değişikliği değil; bakışın tümden dönüşmesidir.",
+          "visual_note": "open hands receiving light, gratitude and surrender, warm cinematic light",
+          "keywords": ["open hands", "receiving light", "gratitude", "warm light"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "theme": "Muhtaç olduğu için değerlidir — modern insanın çıkmazı",
+      "hook": "İnsan eksik olduğu için değersiz değil — muhtaç olduğu için değerlidir.",
+      "title": "Muhtaç Olduğu İçin Değerlidir",
+      "description": "Modern insan bağımsız görünmek istiyor. Ama muhtaçlık küçüklük değil; dua kapısı. Oradan girenlerin değeri artar. #derinokuma #shorts #tefekkür #iman #kulluk #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kulluk", "#maneviyat"],
+      "thumbnail_or_cover_text": "MUHTAÇ = DEĞERLİ",
+      "estimated_duration_seconds": 60,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan eksik olduğu için değersiz değil — muhtaç olduğu için değerlidir. Eksiklik mahcubiyet vesilesi; muhtaçlık ise dua kapısı. Bu kapıdan girenin değeri artar.",
+          "visual_note": "open window looking out to vast sky and horizon, threshold to infinite",
+          "keywords": ["open window", "vast sky", "horizon", "threshold"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Modern insan bağımsız görünmek istiyor. Kontrol etmek, kendi başına yetmek. Ama bunun sonucu bir paradoks: bilgi artıyor, anlam azalıyor; kaygı azalmıyor, çoğalıyor.",
+          "visual_note": "busy modern city from above, people isolated in crowd, grey urban tones",
+          "keywords": ["busy city", "crowd isolation", "grey tones", "urban paradox"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "İnsan zayıf olduğu için düşmez; zayıflığını yanlış okuduğu için düşer. Muhtaçlığını dua kapısı olarak okuyan yükselir. Bu okuyuş, her şeyi değiştirir.",
+          "visual_note": "sunrise over mountains, new light breaking over horizon, hope and renewal",
+          "keywords": ["sunrise", "mountains", "new light", "hope and renewal"]
+        }
+      ]
+    }
+  ]
+}

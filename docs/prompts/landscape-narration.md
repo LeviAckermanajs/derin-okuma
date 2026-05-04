@@ -107,6 +107,50 @@ ChatGPT'den gelen sahne dizisini n8n'e göndermeden önce şu wrapper içine al:
 
 ---
 
+## Kaynak Metni Bağımsız Anlatıya Çevirme Kuralı
+
+Kaynak yazı doğrudan açıklanmaz; anlamı bağımsız video narration'a dönüştürülür.
+
+**İzleyici kaynak metni görmüyor kabul edilir.** Dinleyici kitabı, yazarı veya bölümü bilmiyormuş gibi yazılır.
+
+Narration içinde şu kalıplardan kaçınılır:
+- "bu metin", "metnin dediği", "metnin deyimiyle"
+- "bu noktada", "bu noktanın cevabı", "bu bölüm"
+- "verilen cevap", "verilen örnek"
+- "şu cümle", "yazar burada", "kitap burada"
+- "burada anlatılmak istenen"
+
+Bunun yerine doğrudan anlatım kullanılır:
+- "İnsan çoğu zaman..."
+- "Bazen hayatı şöyle okuruz..."
+- "İman insana sadece bilgi vermez..."
+- "Bu bakış değiştiğinde..."
+- "Kalp, ancak doğru merkeze bağlandığında..."
+
+**Örnek dönüşüm:**
+
+Sorunlu:
+```
+İman nedir? Bu soruya verilen cevaplar çoğunlukla biyoloji, sosyoloji ya da felsefe çerçevesinde kalır. Ama bu metnin yaklaşımı farklı: insanın kim olduğu, imanla başlar.
+```
+
+Düzeltilmiş:
+```
+İnsan nedir? Bu soruya verilen cevaplar çoğunlukla biyoloji, sosyoloji ya da felsefe çerçevesinde kalır. Ama insanlık, sadece biyolojik bir olgu değil, varoluşsal bir anlam taşıyor. Ve bu anlam, imanla başlıyor.
+```
+
+Sorunlu:
+```
+Metnin deyimiyle iman insanı hem insan eder, hem sultan eder.
+```
+
+Düzeltilmiş:
+```
+İman, insanı sadece yaşayan bir varlık olmaktan çıkarır; ona anlam, yön ve içsel bir asalet kazandırır.
+```
+
+---
+
 ## Kontrol Listesi (Göndermeden Önce)
 
 - [ ] Sahne sayısı 30–40 arasında
@@ -114,6 +158,7 @@ ChatGPT'den gelen sahne dizisini n8n'e göndermeden önce şu wrapper içine al:
 - [ ] `visual_note` İngilizce
 - [ ] `keywords` İngilizce
 - [ ] `narration` Türkçe ve okunabilir
+- [ ] `narration` kaynak metin açıklaması dili içermiyor ("bu metin", "metnin deyimiyle" vb. yok)
 - [ ] JSON geçerli (validator ile kontrol et)
 - [ ] Türkçe karakterler korunmuş
 - [ ] `job.title`, `job.job_id_hint` doldurulmuş

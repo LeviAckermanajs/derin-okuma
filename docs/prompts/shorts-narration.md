@@ -120,6 +120,49 @@ Her Shorts'u ayrı bir n8n job olarak göndermek için:
 
 ---
 
+## Kaynak Metni Bağımsız Anlatıya Çevirme Kuralı
+
+Kaynak yazı doğrudan açıklanmaz; anlamı bağımsız video narration'a dönüştürülür.
+
+**İzleyici kaynak metni görmüyor kabul edilir.** Hook, narration ve description, dinleyicinin kitabı veya yazarı bilmediği varsayımıyla yazılır.
+
+Narration ve hook içinde şu kalıplardan kaçınılır:
+- "bu metin", "metnin dediği", "metnin deyimiyle"
+- "bu noktada", "bu bölüm"
+- "verilen cevap", "verilen örnek"
+- "şu cümle", "yazar burada", "kitap burada"
+- "burada anlatılmak istenen"
+
+Bunun yerine doğrudan anlatım kullanılır:
+- "İnsan çoğu zaman..."
+- "Bazen şunu fark ederiz..."
+- "İman insana sadece bilgi vermez..."
+- "Kalp, ancak doğru merkeze bağlandığında..."
+
+**Örnek dönüşüm:**
+
+Sorunlu hook:
+```
+Zayıflık ve muhtaçlık birer yük mü? Hayır. Metnin deyimiyle bunlar birer kanat.
+```
+
+Düzeltilmiş hook:
+```
+Zayıflık ve muhtaçlık birer yük mü? Hayır. Bunlar aslında birer kanat.
+```
+
+Sorunlu narration:
+```
+Ve bu yüzden metnin deyimiyle iman insanı hem insan eder, hem sultan.
+```
+
+Düzeltilmiş narration:
+```
+Ve bu yüzden iman insanı hem gerçek anlamda insan eder, hem de içten sultan kılar.
+```
+
+---
+
 ## Kontrol Listesi (Göndermeden Önce)
 
 - [ ] 5–6 Shorts üretildi
@@ -128,6 +171,7 @@ Her Shorts'u ayrı bir n8n job olarak göndermek için:
 - [ ] visual_note İngilizce
 - [ ] keywords İngilizce (2–4 anahtar kelime)
 - [ ] Narration Türkçe ve okunabilir
+- [ ] Hook ve narration kaynak metin açıklaması dili içermiyor ("metnin deyimiyle" vb. yok)
 - [ ] Başlıklar clickbait değil
 - [ ] Hashtagler doğal ve uygun
 - [ ] JSON geçerli
