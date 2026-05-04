@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-15 — 23. Söz landscape smoke test başarılı)
+Son güncelleme: 2026-05-04 (Day-16 — 23. Söz landscape yayın metadata son kontrolü)
 
 ---
 
@@ -69,9 +69,10 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [x] 23-soz-1-mebhas-4-nokta Shorts paketinin YouTube'da paylaşılması (Day-13)
 - [x] 23-soz-1-mebhas-4-nokta landscape Load Input JS ile n8n smoke test
 - [x] 23-soz-1-mebhas-4-nokta landscape video output oluşumu doğrulandı (Day-15)
-- [ ] Üretilen landscape video için YouTube yayın öncesi son kontrol
+- [x] Üretilen landscape video için YouTube yayın öncesi son kontrol
 - [ ] 23-soz-1-mebhas-4-nokta landscape videosunun YouTube’da paylaşılması
 - [ ] Shorts ve landscape performansını 24–48 saat sonra manuel değerlendirme
+- [ ] Yayınlanan landscape video linkini dokümantasyona ekleme
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi
 
 **Aşama 3 — Yarı otomatik pipeline:**

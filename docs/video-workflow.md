@@ -191,7 +191,8 @@ Referans: `docs/prompts/youtube-metadata.md`
 - `23-soz-1-mebhas-4-nokta` landscape smoke test Day-15'te başarıyla tamamlandı
 - Landscape Load Input JS formatı bu içerik için de çalıştı
 - Shorts paketi Day-13'te yayınlandı, landscape output Day-15'te oluştu
-- Sıradaki adım landscape YouTube yayın öncesi metadata son kontrolüdür
+- Day-16'da landscape YouTube metadata son kontrolü yapıldı ve final publish metadata dosyası oluşturuldu
+- Sıradaki adım landscape videonun YouTube'da yayınlanmasıdır
 
 ---
 
