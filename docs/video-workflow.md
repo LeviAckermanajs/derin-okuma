@@ -164,6 +164,8 @@ Metadata üretim adımları:
 - Thumbnail kısa metni (2–5 kelime)
 - Shorts başlık / açıklama / hashtag (her Shorts için ayrı)
 
+**Başlık üretim notu (Day-14'ten itibaren):** Bundan sonraki metadata üretimlerinde başlık seçeneklerinde "neden / nasıl / ne olur" gibi soru/merak temelli yapılar önceliklendirilecek. Bu, clickbait için değil; izleyicinin gerçek sorusunu başlıkta görünür kılmak için kullanılacak. Eski metadata dosyaları geriye dönük değiştirilmez.
+
 Referans: `docs/prompts/youtube-metadata.md`
 
 ---

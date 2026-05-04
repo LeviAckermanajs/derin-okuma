@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-13 — 23-soz-1-mebhas-4-nokta 6 Shorts tamamlandı ve yayınlandı)
+Son güncelleme: 2026-05-04 (Day-14 — YouTube başlık standardına soru/merak yapısı kuralı eklendi)
 
 ---
 
@@ -49,6 +49,7 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 
 **Aşama 2 — Şablon sistemi:**
 - [x] YouTube başlık/açıklama prompt şablonu oluşturma (landscape + shorts ayrı) (Day-08)
+- [x] YouTube başlık standardına "neden / nasıl" odaklı soru başlığı kuralı eklendi (Day-14)
 - [ ] `Sevgi ve Korku` landscape videosu için gerçek YouTube metadata üretim testi
 - [x] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma (Day-09 — 6 Shorts)
 - [x] Shorts için n8n Load Input JS örneği oluşturma (Day-09 — 6 adet)

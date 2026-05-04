@@ -27,6 +27,27 @@ Derin Okuma'nın sesi, içeriğin ağırlığını taşımalı.
 
 ---
 
+## Başlık Stratejisi — Soru ve Merak Odaklı Yapı
+
+Bundan sonraki başlık üretimlerinde "neden", "nasıl", "ne olur", "niçin", "insan neden..." gibi soru/merak yapıları özellikle değerlendirilecek.
+
+**Kurallar:**
+- Başlık seçeneklerinin çoğu mümkünse soru veya merak uyandıran yapı taşımalı.
+- Bu zorunlu bir kalıp değildir; anlamı bozuyorsa veya içerikle uyumsuzsa kullanılmaz.
+- Başlık clickbait olmayacak — başlık, videonun gerçekten cevap verdiği bir soruyu taşımalı.
+- Manevî içerik ucuzlaştırılmayacak.
+- "Bunu izleyince hayatın değişecek", "şok gerçek", "asla kaçırma" gibi ucuz kalıplardan kaçınılacak.
+
+**Bu yapılar özellikle şu tür içeriklerde tercih edilecek:**
+- İnsan neden bu kadar muhtaçtır?
+- Dua neden kabul edilmiyor gibi görünür?
+- İman insanı nasıl değiştirir?
+- Kalp neden tatmin olmaz?
+- Sevgi neden acıya dönüşür?
+- İnsan neden korkar?
+
+---
+
 ## Landscape Video Metadata Standardı
 
 ### Çıktı Alanları
@@ -62,8 +83,8 @@ Derin Okuma'nın sesi, içeriğin ağırlığını taşımalı.
 
 | Alan | Kural |
 |---|---|
-| `title_options` | 5–8 alternatif başlık üretilir |
-| `selected_title` | En güçlü başlık seçilip öne çıkarılır |
+| `title_options` | 5–8 alternatif başlık üretilir; en az yarısı "neden / nasıl / ne olur" gibi soru/merak yapısında olacak |
+| `selected_title` | En güçlü başlık seçilip öne çıkarılır; güçlü bir soru başlığı varsa öncelik ona verilir |
 | `description` | 2–4 paragraf; videonun ana fikrini anlatır, izleyiciyi davet eder |
 | `hashtags` | 5–10 adet; sabit çekirdek + konuya uygun değişken hashtagler |
 | `playlist_or_folder` | Videonun ait olduğu playlist/klasör önerisi |
@@ -92,8 +113,10 @@ Uyulması gereken kurallar:
    - YouTube uzun video için uygun uzunlukta olsun (40–70 karakter arası idealdir).
    - Başlıklar vurucu ama saygılı olsun.
    - Ana duygu, ana soru veya kırılma noktası öne çıksın.
+   - Başlık alternatiflerinin en az yarısı mümkünse "neden / nasıl / ne olur / niçin" gibi soru veya merak odaklı yapılarda olsun. Ancak clickbait yapma; başlık videonun gerçekten cevapladığı bir soruyu taşısın.
+   - Örnek kalıplar: "İnsan Neden Bu Kadar Muhtaçtır?", "İman İnsanı Nasıl Değiştirir?", "Dua Neden Zayıflık Değildir?", "Kalp Neden Tatmin Olmaz?"
    - Clickbait yapma. "Bunu bilmek seni değiştirecek" gibi kalıpları kullanma.
-   - En iyi başlığı `selected_title` alanında belirt.
+   - En iyi başlığı `selected_title` alanında belirt; güçlü bir soru başlığı varsa öncelik ona verilsin.
 
 2. AÇIKLAMA KURALI
    - 2 ila 4 paragraf yaz.
@@ -197,8 +220,8 @@ Uyulması gereken kurallar:
 |---|---|
 | `short_id` | `short-001`, `short-002` formatında |
 | `hook` | Shorts'un ilk 3–5 saniyesindeki cümle (narration'dan alınır veya buna uyumlu olur) |
-| `title_options` | Her Shorts için 3–5 başlık alternatifi |
-| `selected_title` | En iyi başlık seçilip öne çıkarılır |
+| `title_options` | Her Shorts için 3–5 başlık alternatifi; en az 1–2 seçenek "neden / nasıl / ne olur" yapısında olacak |
+| `selected_title` | En iyi başlık seçilip öne çıkarılır; soru başlığı güçlü değilse kısa vurucu başlık tercih edilir |
 | `description` | 1–2 cümle + hashtagler |
 | `hashtags` | 5–8 adet; `#shorts` sabit, diğerleri konuya göre |
 | `thumbnail_or_cover_text` | 2–4 kelime kapak metni |
@@ -223,6 +246,9 @@ Uyulması gereken kurallar:
    - Her Shorts için 3 ila 5 arasında alternatif başlık yaz.
    - Başlıklar kısa ve vurucu olsun (5–8 kelime idealdir).
    - Hook cümlesiyle uyumlu olsun.
+   - Her Shorts için başlık alternatiflerinden en az 1–2 tanesi "neden / nasıl / ne olur" gibi soru/merak yapısında olsun. Hook ile uyumlu, kısa ve doğal başlıklar üret. Clickbait yapma.
+   - Örnek kalıplar: "İnsan Neden Korkar?", "Dua Neden Zayıflık Değil?", "Kalp Neden Yorulur?", "İman İnsanı Nasıl Değiştirir?"
+   - Soru başlığı güçlü değilse kısa vurucu başlık seçilebilir.
    - Clickbait yapma; merak uyandır ama dürüst ol.
    - En iyi başlığı `selected_title` alanında belirt.
 
