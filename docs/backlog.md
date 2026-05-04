@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-14 — YouTube başlık standardına soru/merak yapısı kuralı eklendi)
+Son güncelleme: 2026-05-04 (Day-15 — 23. Söz landscape smoke test başarılı)
 
 ---
 
@@ -63,14 +63,15 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [ ] Başarılı Shorts formatını Derin Okuma standardı olarak belgelemek
 - [ ] Mevcut 15 yazının frontmatter ve video uygunluk audit'i
 - [ ] Blog yazıları için `video_status` frontmatter alanını değerlendirme
-- [ ] 23-soz-1-mebhas-4-nokta landscape smoke test
 - [x] 23-soz-1-mebhas-4-nokta Shorts smoke test — short-001 başarılı (Day-12)
 - [x] 23-soz-1-mebhas-4-nokta short-002 → short-006 Load Input JS dosyalarını sırayla test etme (Day-13)
 - [x] 23-soz-1-mebhas-4-nokta tüm Shorts paketi için yayın öncesi son kontrol (Day-13)
 - [x] 23-soz-1-mebhas-4-nokta Shorts paketinin YouTube'da paylaşılması (Day-13)
-- [ ] 23-soz-1-mebhas-4-nokta landscape Load Input JS ile n8n smoke test
+- [x] 23-soz-1-mebhas-4-nokta landscape Load Input JS ile n8n smoke test
+- [x] 23-soz-1-mebhas-4-nokta landscape video output oluşumu doğrulandı (Day-15)
 - [ ] Üretilen landscape video için YouTube yayın öncesi son kontrol
-- [ ] Shorts performansını 24–48 saat sonra manuel değerlendirme
+- [ ] 23-soz-1-mebhas-4-nokta landscape videosunun YouTube’da paylaşılması
+- [ ] Shorts ve landscape performansını 24–48 saat sonra manuel değerlendirme
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi
 
 **Aşama 3 — Yarı otomatik pipeline:**
