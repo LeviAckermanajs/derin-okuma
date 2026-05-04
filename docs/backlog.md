@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-09)
+Son güncelleme: 2026-05-04 (Day-10 — short-001 smoke test başarılı)
 
 ---
 
@@ -54,9 +54,10 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [x] Shorts için n8n Load Input JS örneği oluşturma (Day-09 — 6 adet)
 - [x] Shorts metadata üretim testi (Day-09 — metadata JSON hazır)
 - [ ] Thumbnail metni üretim testi
-- [ ] İlk Shorts Load Input JS ile n8n smoke test (short-001-load-input.js)
-- [ ] Shorts subtitle konumu ve okunabilirlik değerlendirmesi
-- [ ] Shorts görsel seçim kalitesi değerlendirmesi
+- [x] İlk Shorts Load Input JS ile n8n smoke test — short-001 (Day-10)
+- [x] short-001 Shorts formatının n8n tarafından kabul edildiğini doğrulama (Day-10)
+- [ ] Kalan Shorts Load Input JS dosyalarını sırayla test etme (`short-002` → `short-006`)
+- [ ] Shorts subtitle konumu ve okunabilirlik standardını belgelemek
 - [ ] Başarılı Shorts formatını Derin Okuma standardı olarak belgelemek
 - [ ] Mevcut 15 yazının frontmatter ve video uygunluk audit'i
 - [ ] Blog yazıları için `video_status` frontmatter alanını değerlendirme

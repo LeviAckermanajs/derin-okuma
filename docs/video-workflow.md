@@ -168,6 +168,16 @@ Referans: `docs/prompts/youtube-metadata.md`
 
 ---
 
+## Shorts n8n Gönderim Notu
+
+- İlk Shorts smoke test `short-001-load-input.js` ile başarıyla tamamlandı (Day-10)
+- Shorts için aktif n8n gönderim formatı Load Input JS'dir
+- Her Shorts ayrı job olarak gönderilir — package JSON doğrudan n8n'e verilmez
+- Package JSON (`sevgi-ve-korku-shorts-package.json`) master içerik / arşiv dosyasıdır
+- n8n'e her Shorts için ayrı `short-XXX-load-input.js` dosyası yapıştırılır
+
+---
+
 ## Gelecek Aşamalar
 
 - Blog frontmatter'a `video_status` alanı eklenerek hangi yazıların videoya hazırlandığı takip edilebilir
