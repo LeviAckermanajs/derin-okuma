@@ -1,0 +1,194 @@
+{
+  "source": {
+    "blog_post": "sevgi-ve-korku",
+    "title": "Sevgi ve Korku",
+    "source_files": [
+      "src/content/blog/Sevgi-ve-Korku.md",
+      "docs/video-tests/inputs/sevgi-ve-korku-landscape-load-input.js"
+    ]
+  },
+  "test_day": "day-09",
+  "video_type": "shorts_package",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "theme": "Kalbin kapasitesi — büyük sevme gücünü küçük şeylere dökmek onu kırar",
+      "hook": "İnsan bazen doğru insanı değil, yanlış yere yüklediği sevgiyi kaybeder.",
+      "title": "Kalbin Yükü Nereye Sığar?",
+      "description": "İnsandaki sevme kapasitesi kâinatı istilâ edecek büyüklükte. Peki bu büyük kapasiteyi küçük şeylere dökünce ne olur? #derinokuma #shorts #tefekkür #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#sevgi", "#kalp"],
+      "thumbnail_or_cover_text": "KALBİN YÜKÜ",
+      "estimated_duration_seconds": 60,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan bazen doğru insanı değil, yanlış yere yüklediği sevgiyi kaybeder. Çünkü insandaki sevme kapasitesi bir kişiye, bir şeye, bir hayale sığmayacak kadar büyük yaratılmış.",
+          "visual_note": "wide open landscape at dawn, single person standing on a hill, cinematic wide shot",
+          "keywords": ["open landscape", "solitude", "dawn light", "cinematic"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Kalbi dar olan arar, bulamaz. Kalbi geniş olan da arar — ama yanlış yerde. İnsan sevdiği şeye kendi sonsuzluk arzusunu yüklüyor. Ama fanî şeyler bu yükü taşıyamaz.",
+          "visual_note": "hands reaching toward light through forest canopy, soft bokeh, slow motion",
+          "keywords": ["reaching hands", "forest light", "hope", "cinematic slow motion"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Büyük kapasiteyi küçük şeylere dökersen, o şey kırılır ya da seni kırar. Çözüm sevme kapasiteni küçültmek değil — sevgini doğru yere bağlamak.",
+          "visual_note": "gentle river flowing toward wide open sea, calm and inevitable movement",
+          "keywords": ["river", "open sea", "calm flow", "natural"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "theme": "Halktan korku neden yorar — onların merhametleri sınırlıdır",
+      "hook": "İnsanların gözünden bu kadar korkmak seni neden yoruyor? Çünkü onlar sana merhamet etmez.",
+      "title": "Bu Korku Neden Bitmez?",
+      "description": "İnsanlardan korku, metnin deyimiyle 'elim bir belâ'dır. Çünkü onların merhametleri sınırlı, güçleri geçici. #derinokuma #shorts #tefekkür #korku #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#korku", "#maneviyat", "#iman"],
+      "thumbnail_or_cover_text": "KORKU NEDEN BITMEZ?",
+      "estimated_duration_seconds": 55,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsanların gözünden bu kadar korkmak seni neden yoruyor? Cevap çok basit: çünkü onlar sana merhamet etmez. Ya da senin yalvarmanı kabul etmez.",
+          "visual_note": "crowded city street from above, anonymous faces, grey tones, slow zoom",
+          "keywords": ["crowded street", "anonymous", "city", "grey tones"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Patronunun bakışından, çevrenin yargısından, eleştiriden, reddedilmekten korkmak. Bunların hepsi gerçek. Ama hepsinin ortak yanı şu: bu korkular sonu gelmeyen birer zincirdir.",
+          "visual_note": "person walking through endless dark corridor, single light source ahead, cinematic",
+          "keywords": ["dark corridor", "solitary walk", "cinematic", "light ahead"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Çünkü insanları merkeze koyunca, onlar sürekli değişiyor. Gönülleri değişiyor, kanaatleri değişiyor. Sen ise bu değişime ayak uydurmaya çalışırken tükeniyorsun. Korkunun nesnesi yanlışsa, güven değil yalnızca yorgunluk üretir.",
+          "visual_note": "waves crashing on rocks repeatedly, relentless motion, slow motion water",
+          "keywords": ["waves on rocks", "relentless", "slow motion", "ocean"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "theme": "Fanîye bağlanan kalbin sonu — ellerin yapıştığı şeyler gidince eli de parçalıyor",
+      "hook": "Kalp sevdiği şeylere elleriyle yapışır. Ama o şeyler gidince, elini de parçalayarak gider.",
+      "title": "Kalp Neden Hep Yaralı?",
+      "description": "Hiçbir şey yerinde kalmıyor. Kalp bağ kuruyor ama bağlandığı şeyler geçici. Bu yüzden kalp sürekli yaralanıyor. #derinokuma #shorts #tefekkür #iman #kalp",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kalp", "#maneviyat"],
+      "thumbnail_or_cover_text": "KALP NEDEN YARALI?",
+      "estimated_duration_seconds": 65,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Kalp sevdiği şeylere elleriyle yapışır. Ama o şeyler gidince, elini de parçalayarak gider. Biten ilişki. Ölen yakın. Kaybedilen sağlık. Elden giden kariyer.",
+          "visual_note": "autumn leaves falling from tree, slow motion, melancholy light, cinematic",
+          "keywords": ["falling leaves", "autumn", "slow motion", "melancholy"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Hiçbir şey yerinde kalmıyor. Gençlik gidiyor, para bitiyor, dostluklar zayıflıyor, şartlar değişiyor. Kalp ise bağ kurmaya devam ediyor. Ve bu yüzden sürekli yaralanıyor.",
+          "visual_note": "time lapse of changing seasons on same tree, from bloom to bare branches",
+          "keywords": ["seasons change", "time lapse", "bare tree", "passage of time"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "İnsan iki şeyden birini seçiyor: ya acıyı derinden hissedip ıztırap çekiyor, ya da gafletle uyuşuyor. Ama üçüncü bir yol var: sevgini kalıcı olana bağlamak. O zaman geçici şeyler seni yıkmaz, ağırlar.",
+          "visual_note": "calm lake reflecting mountains at sunset, still and peaceful, wide angle",
+          "keywords": ["calm lake", "mountain reflection", "sunset", "peaceful"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "theme": "Allah korkusunda lezzet — dağınık korkular azalır, tek merkez kalır",
+      "hook": "Allah'tan korkan insan, başka korkuların esaretinden kurtulmaya başlar.",
+      "title": "Allah Korkusunda Lezzet Var mı?",
+      "description": "Kulağa zor geliyor ama çok gerçek: Allah'tan korkan, başka korkuların esaretinden çıkıyor. Dağınık korkular tek bir merkeze toplanıyor. #derinokuma #shorts #tefekkür #iman #dua",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#kulluk"],
+      "thumbnail_or_cover_text": "HAVFULLAHTA LEZZET",
+      "estimated_duration_seconds": 70,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Allah'tan korkmak kulağa ağır geliyor. Ama şunu düşün: Allah'tan korkan insan, başka korkuların esaretinden kurtulmaya başlar. İnsanlardan aşırı korkmaz. Rızkından yıkılmaz. Kaybetmekten tümden darmadağın olmaz.",
+          "visual_note": "single candle flame in dark room, steady and calm, close up, cinematic",
+          "keywords": ["candle flame", "dark room", "steady light", "cinematic"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bugün kaygıların çoğu dağınık korkudur: acaba ne olacak, ya kaybedersem, ya sevilmezsem, ya yetişemezsem. Bu korkular gerçek. Ama hepsi ayrı ayrı insanı yer.",
+          "visual_note": "scattered clouds in stormy sky, chaotic wind patterns, grey tones",
+          "keywords": ["stormy sky", "scattered clouds", "grey", "chaotic"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Allah korkusu bu dağınık korkuları sihirli şekilde yok etmez. Ama onların üzerine çıkan bir merkez verir. Kalp tek noktaya bağlandığında, diğer korkular yerini buluyor. Bu toplanma hissi, metnin deyimiyle, gerçek bir lezzettir.",
+          "visual_note": "clouds parting to reveal single ray of sunlight over ocean, dramatic and calm",
+          "keywords": ["ray of light", "parting clouds", "ocean", "dramatic calm"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "theme": "Allah hesabına sevmek — dünyayı terk etmek değil, yerli yerine koymak",
+      "hook": "Allah hesabına sevmek dünyayı terk etmek değil. Dünyayı yerli yerine koymaktır.",
+      "title": "Sevgiyi Arındırmak Ne Demek?",
+      "description": "Sevdiğini Allah'ın emaneti olarak görmek ne değiştirir? Sahiplenme azalır. Elem hafifler. Sevgi daha temiz olur. #derinokuma #shorts #tefekkür #iman #sevgi #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#sevgi", "#maneviyat"],
+      "thumbnail_or_cover_text": "SEVGİYİ ARINDIRMAK",
+      "estimated_duration_seconds": 65,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Allah hesabına sevmek ne demek? Dünyayı terk etmek değil. Sevdiğin insanları, dostlukları, güzellikleri sevmeyi bırakmak değil.",
+          "visual_note": "warm family gathering at golden hour, soft light, genuine connection, cinematic",
+          "keywords": ["family gathering", "warm light", "connection", "genuine"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Şu anlama geliyor: sevdiğin şeyi bağımsız, nihai, mutlak bir merkez olarak görmemek. Onu Allah'ın eseri, nimeti, emaneti olarak sevmek. Aynayı sevmek ama aynadaki güzelliği unutmamak.",
+          "visual_note": "sunlight reflecting on water surface, mirroring sky above, gentle ripples",
+          "keywords": ["water reflection", "sunlight", "mirror", "ripples"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bu bakış neyi değiştirir? Sahiplenme azalır. Kaybettiğinde parçalanma azalır. Sevgi daha temiz olur. Karşı tarafı yutmaya değil, hakkıyla sevmeye başlarsın. Bu, sevginin azalması değil; arınmasıdır.",
+          "visual_note": "clear mountain stream flowing over smooth stones, clean water, morning light",
+          "keywords": ["clear stream", "mountain water", "clean", "morning light"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "theme": "Mecazî aşkın şikâyeti — kalbin yükünü fanîye yüklemek onu kırar",
+      "hook": "Neden mecazî aşklarda çoğunlukla şikâyet var? Çünkü sen sonsuzluk arzunu fanî birine yükledin.",
+      "title": "Neden Sevdikten Şikâyet Ederiz?",
+      "description": "Çoğu sevgide şikâyet vardır. Ama şikâyet aslında sevgiliden gelmiyor. Yanlış yere bağlanmış kalpten geliyor. #derinokuma #shorts #tefekkür #iman #sevgi #kalp",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#sevgi", "#kalp"],
+      "thumbnail_or_cover_text": "NEDEN ŞİKÂYET?",
+      "estimated_duration_seconds": 60,
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Neden mecazî aşklarda çoğunlukla şikâyet var? Metnin cevabı çok keskin: çünkü insan, kalbinin taşıdığı aşk büyüklüğüyle fanî bir nesneye bağlanınca, o nesne bu yükü taşıyamaz.",
+          "visual_note": "single flower in a large empty field, delicate against vast space, cinematic",
+          "keywords": ["single flower", "vast field", "delicate", "lonely"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Sen sevdiğin kişiden şunu bekliyorsun: hep beni anlasın, hiç değişmesin, beni tamamlasın, içimdeki boşluğu kapatsın. Ama bunlar bir insanın taşıyabileceği yükler değil.",
+          "visual_note": "fragile glass vessel being filled with water until it overflows and cracks",
+          "keywords": ["overflowing glass", "fragile", "breaking point", "water"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bu yüzden şikâyet aslında sevgiliden gelmiyor. Yanlış yere bağlanmış kalpten geliyor. Çözüm sevmemek değil — sevgini taşıyabilecek büyüklükte bir merkeze bağlamak.",
+          "visual_note": "small boat anchored in vast calm harbor, secure against large open sea",
+          "keywords": ["small boat", "calm harbor", "anchored", "vast sea"]
+        }
+      ]
+    }
+  ]
+}

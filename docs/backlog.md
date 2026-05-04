@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-08)
+Son güncelleme: 2026-05-04 (Day-09)
 
 ---
 
@@ -40,7 +40,6 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 **Aşama 1 — Açık kalanlar:**
 - [x] `scene-blog-video` içindeki gerçek n8n input JSON örneğiyle format doğrulaması (smoke test input hazırlandı, Day-05)
 - [x] İlk gerçek blog yazısını (`Sevgi ve Korku`) yeni prompt şablonuyla landscape narration'a çevirme (37 sahne, Day-05)
-- [ ] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma
 - [x] Landscape input'un n8n Load Input JS / `raw_input` wrapper formatına dönüştürülmesi (Day-06)
 - [x] Uzun video TTS için `audio_strategy.single_track` standardının belgelenmesi (Day-06)
 - [x] Day-06 single-track Load Input JS ile n8n smoke test (Day-07)
@@ -51,10 +50,14 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 **Aşama 2 — Şablon sistemi:**
 - [x] YouTube başlık/açıklama prompt şablonu oluşturma (landscape + shorts ayrı) (Day-08)
 - [ ] `Sevgi ve Korku` landscape videosu için gerçek YouTube metadata üretim testi
-- [ ] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma
-- [ ] Shorts için n8n Load Input JS örneği oluşturma
-- [ ] Shorts metadata üretim testi
+- [x] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma (Day-09 — 6 Shorts)
+- [x] Shorts için n8n Load Input JS örneği oluşturma (Day-09 — 6 adet)
+- [x] Shorts metadata üretim testi (Day-09 — metadata JSON hazır)
 - [ ] Thumbnail metni üretim testi
+- [ ] İlk Shorts Load Input JS ile n8n smoke test (short-001-load-input.js)
+- [ ] Shorts subtitle konumu ve okunabilirlik değerlendirmesi
+- [ ] Shorts görsel seçim kalitesi değerlendirmesi
+- [ ] Başarılı Shorts formatını Derin Okuma standardı olarak belgelemek
 - [ ] Mevcut 15 yazının frontmatter ve video uygunluk audit'i
 - [ ] Blog yazıları için `video_status` frontmatter alanını değerlendirme
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi

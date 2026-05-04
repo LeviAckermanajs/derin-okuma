@@ -1,0 +1,97 @@
+{
+  "video_type": "shorts",
+  "source": "sevgi-ve-korku",
+  "test_day": "day-09",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan bazen doğru insanı değil, yanlış yere yüklediği sevgiyi kaybeder.",
+      "title_options": [
+        "Kalbin Yükü Nereye Sığar?",
+        "Sevgi Neden Yıkar?",
+        "Büyük Kalbi Küçük Şeylere Dökmek",
+        "İnsanın Sevme Kapasitesi Neden Bu Kadar Büyük?",
+        "Yanlış Yere Bağlanan Sevgi"
+      ],
+      "selected_title": "Kalbin Yükü Nereye Sığar?",
+      "description": "İnsandaki sevme kapasitesi kâinatı istilâ edecek büyüklükte. Peki bu büyük kapasiteyi küçük şeylere dökünce ne olur?\n\n#derinokuma #shorts #tefekkür #iman #sevgi #kalp",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#sevgi", "#kalp"],
+      "thumbnail_or_cover_text": "KALBİN YÜKÜ"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İnsanların gözünden bu kadar korkmak seni neden yoruyor? Çünkü onlar sana merhamet etmez.",
+      "title_options": [
+        "Bu Korku Neden Bitmez?",
+        "İnsanlardan Korkmak Neden Yorar?",
+        "Halktan Havf Neden Belâdır?",
+        "Korkunun Yanlış Nesnesi",
+        "Neden Hep Tetikte Duruyoruz?"
+      ],
+      "selected_title": "Bu Korku Neden Bitmez?",
+      "description": "İnsanlardan korku, metnin deyimiyle 'elim bir belâ'dır. Çünkü onların merhametleri sınırlı, güçleri geçici.\n\n#derinokuma #shorts #tefekkür #korku #maneviyat #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#korku", "#maneviyat", "#iman"],
+      "thumbnail_or_cover_text": "KORKU NEDEN BITMEZ?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Kalp sevdiği şeylere elleriyle yapışır. Ama o şeyler gidince, elini de parçalayarak gider.",
+      "title_options": [
+        "Kalp Neden Hep Yaralı?",
+        "Ellerin Yapıştığı Şeyler",
+        "Hiçbir Şey Kararında Kalmıyor",
+        "Kalbin Sürekli Yaralanması",
+        "Fanîye Bağlanan Kalp"
+      ],
+      "selected_title": "Kalp Neden Hep Yaralı?",
+      "description": "Hiçbir şey yerinde kalmıyor. Kalp bağ kuruyor ama bağlandığı şeyler geçici. Bu yüzden kalp sürekli yaralanıyor.\n\n#derinokuma #shorts #tefekkür #iman #kalp #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kalp", "#maneviyat"],
+      "thumbnail_or_cover_text": "KALP NEDEN YARALI?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Allah'tan korkan insan, başka korkuların esaretinden kurtulmaya başlar.",
+      "title_options": [
+        "Allah Korkusunda Lezzet Var mı?",
+        "Havfullahta Azim Lezzet",
+        "Dağınık Korkulardan Kurtuluş",
+        "Allah Korkusu Neden Özgürlük?",
+        "Tek Korkuyla Bin Korkudan Kurtulmak"
+      ],
+      "selected_title": "Allah Korkusunda Lezzet Var mı?",
+      "description": "Kulağa zor geliyor ama çok gerçek: Allah'tan korkan, başka korkuların esaretinden çıkıyor. Dağınık korkular tek bir merkeze toplanıyor.\n\n#derinokuma #shorts #tefekkür #iman #dua #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#kulluk"],
+      "thumbnail_or_cover_text": "HAVFULLAHTA LEZZET"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Allah hesabına sevmek dünyayı terk etmek değil. Dünyayı yerli yerine koymaktır.",
+      "title_options": [
+        "Sevgiyi Arındırmak Ne Demek?",
+        "Allah Hesabına Sevmek",
+        "Aynayı Sevmek, Kaynağı Unutmamak",
+        "Sahiplenme Azalınca Ne Olur?",
+        "Sevgi Nasıl Arınır?"
+      ],
+      "selected_title": "Sevgiyi Arındırmak Ne Demek?",
+      "description": "Sevdiğini Allah'ın emaneti olarak görmek ne değiştirir? Sahiplenme azalır. Elem hafifler. Sevgi daha temiz olur.\n\n#derinokuma #shorts #tefekkür #iman #sevgi #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#sevgi", "#maneviyat"],
+      "thumbnail_or_cover_text": "SEVGİYİ ARINDIRMAK"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Neden mecazî aşklarda çoğunlukla şikâyet var? Çünkü sen sonsuzluk arzunu fanî birine yükledin.",
+      "title_options": [
+        "Neden Sevdikten Şikâyet Ederiz?",
+        "Mecazî Aşkın Şikâyeti",
+        "Sevgideki Yük Nereden Geliyor?",
+        "İnsan Neden Sevdiğinden Yorulur?",
+        "Fanîye Yüklenen Sonsuzluk"
+      ],
+      "selected_title": "Neden Sevdikten Şikâyet Ederiz?",
+      "description": "Çoğu sevgide şikâyet vardır. Ama şikâyet aslında sevgiliden gelmiyor. Yanlış yere bağlanmış kalpten geliyor.\n\n#derinokuma #shorts #tefekkür #iman #sevgi #kalp",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#sevgi", "#kalp"],
+      "thumbnail_or_cover_text": "NEDEN ŞİKÂYET?"
+    }
+  ]
+}
