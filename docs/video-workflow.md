@@ -178,9 +178,11 @@ Referans: `docs/prompts/youtube-metadata.md`
 
 ## 23. Söz Shorts Test Notu
 
-- `23-soz-1-mebhas-4-nokta` için ilk Shorts smoke test `short-001-load-input.js` ile başarılı oldu (Day-12)
-- Bu test, yeni içerik paketi üzerinde Shorts Load Input JS standardının tekrar çalıştığını doğruladı
-- Kalan Shorts dosyaları (`short-002` → `short-006`) aynı formatla sırayla test edilecek
+- `short-001` Day-12'de başarılı oldu
+- `short-002` → `short-006` Day-13'te başarılı oldu
+- 6 Shorts'un tamamı YouTube'da paylaşıldı
+- Bu içerik üzerinde Shorts Load Input JS standardı tam paket olarak doğrulandı
+- Package JSON master arşiv, Load Input JS dosyaları ise gerçek n8n gönderim formatıdır
 
 ---
 
