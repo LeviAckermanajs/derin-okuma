@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04
+Son güncelleme: 2026-05-04 (Day-08)
 
 ---
 
@@ -49,9 +49,12 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [x] Landscape Load Input JS formatının Derin Okuma standardı olarak doğrulanması (Day-07)
 
 **Aşama 2 — Şablon sistemi:**
+- [x] YouTube başlık/açıklama prompt şablonu oluşturma (landscape + shorts ayrı) (Day-08)
+- [ ] `Sevgi ve Korku` landscape videosu için gerçek YouTube metadata üretim testi
 - [ ] İlk gerçek blog yazısından 5–6 Shorts paketi çıkarma
 - [ ] Shorts için n8n Load Input JS örneği oluşturma
-- [ ] YouTube başlık/açıklama prompt şablonu oluşturma (landscape + shorts ayrı)
+- [ ] Shorts metadata üretim testi
+- [ ] Thumbnail metni üretim testi
 - [ ] Mevcut 15 yazının frontmatter ve video uygunluk audit'i
 - [ ] Blog yazıları için `video_status` frontmatter alanını değerlendirme
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi

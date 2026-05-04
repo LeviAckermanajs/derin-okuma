@@ -151,6 +151,23 @@ Pipeline katmanları (read-only referans, `~/projects/scene-blog-video`):
 
 ---
 
+## YouTube Metadata Aşaması
+
+Blog yazısı, narration veya scene JSON üretildikten sonra yayın için metadata hazırlanır.
+
+Metadata üretim adımları:
+
+- Landscape başlık (5–8 alternatif, en iyisi seçilir)
+- Landscape açıklama (2–4 paragraf, YouTube'a doğrudan yapıştırılabilir)
+- Hashtagler (sabit çekirdek + konuya uygun)
+- Playlist / klasör önerisi
+- Thumbnail kısa metni (2–5 kelime)
+- Shorts başlık / açıklama / hashtag (her Shorts için ayrı)
+
+Referans: `docs/prompts/youtube-metadata.md`
+
+---
+
 ## Gelecek Aşamalar
 
 - Blog frontmatter'a `video_status` alanı eklenerek hangi yazıların videoya hazırlandığı takip edilebilir
