@@ -176,6 +176,12 @@ Referans: `docs/prompts/youtube-metadata.md`
 - Package JSON (`sevgi-ve-korku-shorts-package.json`) master içerik / arşiv dosyasıdır
 - n8n'e her Shorts için ayrı `short-XXX-load-input.js` dosyası yapıştırılır
 
+## 23. Söz Shorts Test Notu
+
+- `23-soz-1-mebhas-4-nokta` için ilk Shorts smoke test `short-001-load-input.js` ile başarılı oldu (Day-12)
+- Bu test, yeni içerik paketi üzerinde Shorts Load Input JS standardının tekrar çalıştığını doğruladı
+- Kalan Shorts dosyaları (`short-002` → `short-006`) aynı formatla sırayla test edilecek
+
 ---
 
 ## Gelecek Aşamalar

@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-11 — 23-soz-1-mebhas-4-nokta tam üretim paketi hazır)
+Son güncelleme: 2026-05-04 (Day-12 — 23-soz-1-mebhas-4-nokta short-001 smoke test başarılı)
 
 ---
 
@@ -63,7 +63,9 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [ ] Mevcut 15 yazının frontmatter ve video uygunluk audit'i
 - [ ] Blog yazıları için `video_status` frontmatter alanını değerlendirme
 - [ ] 23-soz-1-mebhas-4-nokta landscape smoke test
-- [ ] 23-soz-1-mebhas-4-nokta Shorts smoke test (short-001 ile başla)
+- [x] 23-soz-1-mebhas-4-nokta Shorts smoke test — short-001 başarılı (Day-12)
+- [ ] 23-soz-1-mebhas-4-nokta short-002 → short-006 Load Input JS dosyalarını sırayla test etme
+- [ ] 23-soz-1-mebhas-4-nokta tüm Shorts paketi için yayın öncesi son kontrol
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi
 
 **Aşama 3 — Yarı otomatik pipeline:**
