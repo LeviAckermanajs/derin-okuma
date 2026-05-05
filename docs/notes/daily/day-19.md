@@ -16,10 +16,14 @@
 
 ## Durum
 
-Scaffold oluşturuldu. İçerik üretimi ve n8n testi sonraki aşamada yapılacak.
+Scaffold oluşturuldu ve Claude tarafından dolduruldu.
+
+- Landscape: 35 sahne — JSON parse OK, JS syntax OK
+- Shorts: 6 adet, 3–4 sahne her biri — tümü OK
+- Yasaklı kalıp taraması: temiz
 
 ## Sonraki Adım
 
-Claude'a şu prompt dosyası verilecek:
+n8n'e ilk verilecek dosya:
 
-`docs/video-tests/prompts/23-soz-2-mebhas-1-nukte-fill-video-package-prompt.md`
+`docs/video-tests/inputs/23-soz-2-mebhas-1-nukte-landscape-load-input.js`

@@ -35,13 +35,35 @@ Bu dosya `npm run video:prep` ile oluşturulan video üretim iskeletini belgeler
 
 ## Durum
 
-- Scaffold oluşturuldu
-- Gerçek narration henüz üretilmedi
-- Load Input JS dosyaları n8n syntax formatına uygun iskelet olarak hazır
-- Claude/ChatGPT ile içerik doldurma aşaması bekleniyor
+- Scaffold oluşturuldu (Day-19, `npm run video:prep`)
+- İçerik Claude tarafından dolduruldu (Day-19)
+- Landscape: 35 sahne
+- Shorts: 6 adet, her biri 3–4 sahne
+- JSON parse: tümü OK
+- JS syntax: tümü OK
+- Yasaklı kalıp taraması: temiz
+
+## Landscape Sahneleri Özeti
+
+İnsanın genişliği (1–12) → Çiçekten Cennete, ahbaplar, ahiret talebi (13–18) → Sonsuz mercii zorunluluğu (19–21) → Kulluk paradoksu (22–25) → İki cihet, şer genişliği, küfür (26–31) → Haneyi bir günde harap, enaniyeti bırakmak, dönüşüm (32–35)
+
+## Shorts Özeti
+
+| ID | Başlık |
+|---|---|
+| short-001 | Kalp Neden Tatmin Olmaz? |
+| short-002 | Allah'a Kul Olmak Neden Yükseltir? |
+| short-003 | Küçük Arzular Büyük Hakikatin Tohumu |
+| short-004 | İnsan Neden Hem Zayıf Hem Tehlikeli? |
+| short-005 | Kalp Bu Dünyaya Sığmaz |
+| short-006 | Kötülükler İyiliklere Nasıl Dönüşür? |
 
 ## Sonraki Adım
 
-Claude'a şu dosyayı ver:
+n8n'e ilk verilecek dosya:
 
-`docs/video-tests/prompts/23-soz-2-mebhas-1-nukte-fill-video-package-prompt.md`
+`docs/video-tests/inputs/23-soz-2-mebhas-1-nukte-landscape-load-input.js`
+
+Ardından Shorts için short-001'den başlanır:
+
+`docs/video-tests/shorts/23-soz-2-mebhas-1-nukte/load-inputs/short-001-load-input.js`

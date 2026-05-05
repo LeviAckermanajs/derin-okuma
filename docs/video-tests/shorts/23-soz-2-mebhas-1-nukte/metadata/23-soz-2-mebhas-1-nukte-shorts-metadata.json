@@ -2,6 +2,91 @@
   "video_type": "shorts",
   "source": "23-soz-2-mebhas-1-nukte",
   "test_day": "day-19",
-  "content_generation_status": "scaffold_only",
-  "shorts": []
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Çok şeye sahip olup yine de tatmin olmuyorsan, bu bir kusur mu? Yoksa kalbinin sana söylediği bir şey mi?",
+      "title_options": [
+        "Kalp Neden Tatmin Olmaz?",
+        "İnsan Neden Doymuyor?",
+        "Sonsuzluk İçin Yaratılan Kalp",
+        "Tatminsizlik Bir Kusur Değil"
+      ],
+      "selected_title": "Kalp Neden Tatmin Olmaz?",
+      "description": "Kalbin fânî şeylerle dolmaması bir bozukluk değil, sonsuzluk için yaratılmış olmanın işaretidir. #derinokuma #shorts #tefekkür #iman #maneviyat #kalp #fıtrat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#kalp", "#fıtrat"],
+      "thumbnail_or_cover_text": "KALP NEDEN DOYMUYOR?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Kul olmak, insanı küçültür mü? Yoksa tam tersi mi?",
+      "title_options": [
+        "Allah'a Kul Olmak Neden Yükseltir?",
+        "Kulluk Neden Özgürlüktür?",
+        "Kul Olmak İnsanı Küçültmez",
+        "Gerçek Özgürlük Nerede?"
+      ],
+      "selected_title": "Allah'a Kul Olmak Neden Yükseltir?",
+      "description": "Kulluk zillet değil, gerçek özgürlüktür — çünkü seni âciz şeylere kul olmaktan kurtarır. #derinokuma #shorts #tefekkür #iman #kulluk #özgürlük",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kulluk", "#özgürlük"],
+      "thumbnail_or_cover_text": "KULLUK ÖZGÜRLEŞTİRİR"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir çiçeği sevmek ile Cenneti istemek arasında nasıl bir bağ var?",
+      "title_options": [
+        "Çiçekten Cennete: Küçük Meyiller Büyük Hakikate Açılır",
+        "Güzelliği Neden Severiz?",
+        "Küçük Arzular Büyük Hakikatin Tohumu",
+        "Sevginin En Yüksek İstikameti"
+      ],
+      "selected_title": "Küçük Arzular Büyük Hakikatin Tohumu",
+      "description": "Dünyevî meyillerin kökü, doğru okunursa ilahî istikamete açılır. #derinokuma #shorts #tefekkür #iman #maneviyat #güzellik",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#güzellik"],
+      "thumbnail_or_cover_text": "ÇİÇEKTEN CENNETE"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İnsan iyilik yapmada arıdan bile aşağıda kalabilir. Ama kötülükte dağları aşar.",
+      "title_options": [
+        "İnsanın İki Yüzü: Hayırda Zayıf, Şerde Tehlikeli",
+        "Arıdan Aşağı, Dağdan Geçer",
+        "Bir Kibrit Ormanı Yakar",
+        "İnsan Neden Hem Zayıf Hem Tehlikeli?"
+      ],
+      "selected_title": "İnsan Neden Hem Zayıf Hem Tehlikeli?",
+      "description": "İnsanın büyüklüğü gücünde değil, taşıdığı emanette gizlidir. #derinokuma #shorts #tefekkür #iman #insan #fıtrat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#insan", "#fıtrat"],
+      "thumbnail_or_cover_text": "BİR KİBRİT"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Hiç saydınız mı hayatınız boyunca kaybettiklerinizi? İnsan, hep kaybederek yaşar.",
+      "title_options": [
+        "Kalp Bu Dünyaya Sığmaz",
+        "İnsanın En Büyük Yarası",
+        "Berzahtaki Ahbaplar",
+        "Neden Hep Kaybederiz?"
+      ],
+      "selected_title": "Kalp Bu Dünyaya Sığmaz",
+      "description": "İnsanın en büyük yarası ayrılıktır. Ve bu yara, kalbin ebediyet için yaratılmış olduğunu gösterir. #derinokuma #shorts #tefekkür #iman #ahiret #ayrılık",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#ahiret", "#ayrılık"],
+      "thumbnail_or_cover_text": "KALP SIĞMIYOR"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kötülük yapma kapasitesi büyük olan bir insan, aynı kapasiteyle iyiliğe de dönüşebilir.",
+      "title_options": [
+        "Dönüşümün Kapısı: Şer Kabiliyeti Bile Değişir",
+        "Kötülükler İyiliklere Nasıl Dönüşür?",
+        "Tevbenin En Büyük Muştusu",
+        "Şer Kabiliyeti Kaderi Değil"
+      ],
+      "selected_title": "Kötülükler İyiliklere Nasıl Dönüşür?",
+      "description": "Enaniyeti bırakıp tam abd olunca, kötülükler iyiliklere çevrilebilir. Bu tevbenin en büyük muştusu. #derinokuma #shorts #tefekkür #iman #tevbe #dönüşüm",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#tevbe", "#dönüşüm"],
+      "thumbnail_or_cover_text": "DÖNÜŞÜMÜN KAPISI"
+    }
+  ]
 }
