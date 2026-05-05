@@ -76,6 +76,8 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [ ] Prompt çıktılarının `scene-blog-video` spesifikasyonuyla karşılaştırılması ve gerekirse güncellenmesi
 
 **Aşama 3 — Yarı otomatik pipeline:**
+- [x] `npm run video:prep` ile yazı başlığından video üretim dosya iskeleti ve Claude doldurma promptu oluşturma komutu eklendi (Day-18)
+- [ ] `video:prep` scaffold çıktısını gerçek bir yeni yazıda Claude ile doldurma testi
 - [ ] Claude API entegrasyonu: Markdown → narration + scene JSON
 - [ ] Frontmatter'a `video_ready` veya `video_status` alanı eklenmesi
 - [ ] n8n otomatik input alma

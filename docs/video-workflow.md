@@ -207,3 +207,42 @@ Bkz:
 - `docs/prompts/shorts-narration.md`
 - `docs/prompts/scene-json-format.md`
 - `docs/ai-workflow.md`
+
+---
+
+## Video Prep Scaffold Komutu
+
+Yeni bir blog yazısı için tek komutla standart video üretim dosya iskeleti oluşturmak:
+
+```bash
+npm run video:prep -- --title "Yazı Başlığı" --day 18
+```
+
+Bu komut:
+
+- blog yazısını `src/content/blog/` içinde otomatik bulmaya çalışır
+- başlıktan Türkçe karakter normalize ederek slug üretir
+- landscape + Shorts için standart dosya iskeletlerini oluşturur
+- n8n Load Input JS wrapper'larını hazırlar
+- Claude'a verilecek doldurma promptunu üretir
+- **gerçek narration üretmez**; içerik Claude/ChatGPT ile doldurulur
+
+Desteklen seçenekler:
+
+| Seçenek | Açıklama | Varsayılan |
+|---|---|---|
+| `--title` | Yazı başlığı (zorunlu) | — |
+| `--slug` | Manuel slug | Başlıktan üretilir |
+| `--day` | Gün numarası | Mevcut max + 1 |
+| `--shorts` | Shorts sayısı | 6 |
+| `--force` | Var olan dosyaların üstüne yaz | false |
+
+Aktif akış:
+
+```text
+1. npm run video:prep -- --title "..." --day XX  →  scaffold oluşur
+2. docs/video-tests/prompts/<slug>-fill-video-package-prompt.md Claude'a ver
+3. Claude scaffold dosyalarını doldurur (scenes, metadata, Shorts)
+4. JSON/JS doğrulamaları yapılır
+5. Load Input JS dosyaları n8n'e verilir
+```
