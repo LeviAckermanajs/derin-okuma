@@ -1,0 +1,13 @@
+{
+  "source": {
+    "blog_post": "23-soz-2-mebhas-1-nukte",
+    "title": "23. Söz - 2. Mebhas - 1. Nükte",
+    "source_files": [
+      "src/content/blog/23-soz-2-mebhas-1-nükte.md"
+    ]
+  },
+  "test_day": "day-19",
+  "video_type": "shorts_package",
+  "content_generation_status": "scaffold_only",
+  "shorts": []
+}
