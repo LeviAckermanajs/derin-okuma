@@ -1,0 +1,50 @@
+{
+  "video_type": "shorts",
+  "source": "23-soz-2-mebhas-2-nukte",
+  "test_day": "day-20",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "title": "İnsan Neden Hem Küçük Hem Büyüktür?",
+      "description": "İnsanın iki farklı yüzü var: biri enaniyet, diğeri ubudiyet. Hangi yüzünden bakarsan o kadar görürsün. #derinokuma #shorts #tefekkür #iman #maneviyat #insan #fıtrat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#insan", "#fıtrat"],
+      "thumbnail_or_cover_text": "İKİ YÜZLÜ İNSAN"
+    },
+    {
+      "short_id": "short-002",
+      "title": "Acizlik Nasıl İnsanı Büyütür?",
+      "description": "İnsanın büyüklüğü gücünden değil, aczinden gelir. Her eksiklik bir ilahi ismin kapısıdır. #derinokuma #shorts #tefekkür #iman #maneviyat #acz #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#acz", "#kulluk"],
+      "thumbnail_or_cover_text": "ACZ BÜYÜTÜR"
+    },
+    {
+      "short_id": "short-003",
+      "title": "Çekirdek Nasıl Ağaç Olur?",
+      "description": "İnsan bir çekirdeğe benzer. Doğru şartlarda açılırsa ebedi bir ağaca dönüşür. Yanlış şartlarda ise toprak altında çürür. #derinokuma #shorts #tefekkür #iman #maneviyat #terakki",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#terakki"],
+      "thumbnail_or_cover_text": "ÇEKİRDEK Mİ ÇÜRÜR AĞAÇ MI OLUR?"
+    },
+    {
+      "short_id": "short-004",
+      "title": "Latifelerini Nereye Harcıyorsun?",
+      "description": "Aklın, kalbin, hayalinin nereye yöneldiği senin kaderini belirler. Nimet aynıdır; kullanım farklılaştırır. #derinokuma #shorts #tefekkür #iman #maneviyat #nefis #hüsnüistimal",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#nefis", "#hüsnüistimal"],
+      "thumbnail_or_cover_text": "LATİFELERİN NEREYE AKIYOR?"
+    },
+    {
+      "short_id": "short-005",
+      "title": "Hakiki İlerleme Nedir?",
+      "description": "Daha fazla zevk, daha çok deneyim, daha yoğun tatmin... Bunlar ilerleme mi? Asıl ölçü başkadır. #derinokuma #shorts #tefekkür #iman #maneviyat #terakki #sukut",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#terakki", "#sukut"],
+      "thumbnail_or_cover_text": "HAKİKİ İLERLEME NE?"
+    },
+    {
+      "short_id": "short-006",
+      "title": "Sarayını Kim Yönetiyor?",
+      "description": "Nefis ve heva, aslen kapıcı ve bekçi gibidir. Ama onlar merkeze geçince kalp, akıl ve ruh susturulur. Saray dıştan parlak, içten boş kalır. #derinokuma #shorts #tefekkür #iman #maneviyat #nefis",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#nefis"],
+      "thumbnail_or_cover_text": "SARAYINI KİM YÖNETİYOR?"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "source": {
+    "blog_post": "23-soz-2-mebhas-2-nukte",
+    "title": "23. Söz - 2. Mebhas - 2. Nükte",
+    "source_files": [
+      "src/content/blog/23-soz-2-mebhas-2-nükte.md"
+    ]
+  },
+  "test_day": "day-20",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Aynı insan, bir bakışta hiç; başka bir bakışta her şey. Bu nasıl mümkün?",
+      "title": "İnsan Neden Hem Küçük Hem Büyüktür?",
+      "description": "İnsanın iki farklı yüzü var: biri enaniyet, diğeri ubudiyet. Hangi yüzünden bakarsan o kadar görürsün. #derinokuma #shorts #tefekkür #iman #maneviyat #insan #fıtrat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#insan", "#fıtrat"],
+      "thumbnail_or_cover_text": "İKİ YÜZLÜ İNSAN",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Aynı insan, bir bakışta küçük ve sönük; başka bir bakışta sonsuz büyüklüklerin aynası. Bu iki okuma çelişmiyor. İkisi de aynı insana ait.",
+          "visual_note": "Split reflection in water — one half dim and small, the other bright and vast, same person, different light.",
+          "keywords": ["duality", "reflection", "contrasting light", "same person"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsanın bir yüzü kendini merkeze koyar: güç, statü, sahiplik, beğenilme. Bu yüzden bakıldığında insan gerçekten küçüktür. Sermayesi dar, ömrü kısa, bedeni geçici.",
+          "visual_note": "Person surrounded by possessions and noise, yet visibly isolated and small against the vast world.",
+          "keywords": ["ego", "smallness", "materialism", "isolated"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ama insanın diğer yüzü var. Bu yüz, aczini ve muhtaçlığını bilerek Allah'a yönelir. Ve tam bu yüzünden bakıldığında insan çok büyük bir kıymet kazanır. Büyüklük, benliğinden değil; kulluk yüzünden gelir.",
+          "visual_note": "Person bowing quietly in a vast open landscape, humble yet connected to infinite sky above.",
+          "keywords": ["humility", "servitude", "connection", "vast sky", "true worth"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Zayıflıkların seni küçülttüğünü mü sanıyordun? İşte tam tersi neden doğru?",
+      "title": "Acizlik Nasıl İnsanı Büyütür?",
+      "description": "İnsanın büyüklüğü gücünden değil, aczinden gelir. Her eksiklik bir ilahi ismin kapısıdır. #derinokuma #shorts #tefekkür #iman #maneviyat #acz #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#acz", "#kulluk"],
+      "thumbnail_or_cover_text": "ACZ BÜYÜTÜR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsanın büyüklüğü kuvvetinden değil, aczinden gelir. Bu ters gibi görünür. Ama mantığı derindir: insan âcizse sonsuz kudrete muhtaçtır. Bu muhtaçlık, onu o sonsuz kudrete bağlar.",
+          "visual_note": "A thin vine clinging to a massive ancient tree, fragile yet connected to something enduring and vast.",
+          "keywords": ["vine and tree", "strength through weakness", "connection", "dependency"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Açlık, Rezzak ismine kapı açar. Hastalık, Şafi ismine. Korku, Hafiz ismine. Yalnızlık ve muhtaçlık, Rahman ismine baktırır. İnsandaki eksiklikler, anlamsız birer kusur değildir.",
+          "visual_note": "Multiple doors opening one by one in a corridor, each revealing a different warm golden light beyond.",
+          "keywords": ["doors opening", "warm light", "discovery", "each door a gift"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "İnsanın zaafı boş bir eksiklik değil; tecelli alıcı bir kapasitedir. Bardağın boş olması, dolabilmesi için şarttır. İnsandaki boşluklar da bu anlama gelir: sonsuz tecellilere açık bir ayna.",
+          "visual_note": "An empty glass vessel slowly filling with clear glowing water from above, catching and holding light.",
+          "keywords": ["empty vessel filling", "capacity", "receiving", "light from above", "mirror"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Büyük ağaçlar küçük tohumlardan çıkar. İnsan da böyle. Ama tohum çatlamamışsa?",
+      "title": "Çekirdek Nasıl Ağaç Olur?",
+      "description": "İnsan bir çekirdeğe benzer. Doğru şartlarda açılırsa ebedi bir ağaca dönüşür. Yanlış şartlarda ise toprak altında çürür. #derinokuma #shorts #tefekkür #iman #maneviyat #terakki",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#terakki"],
+      "thumbnail_or_cover_text": "ÇEKİRDEK Mİ ÇÜRÜR AĞAÇ MI OLUR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan bir çekirdeğe benzer. Dışarıdan küçüktür; ama içinde bir ağacın planı gizlidir. Kalp, ruh, akıl, hayal, vicdan, sevme, sonsuzluk isteme... İnsan tamamlanmış bir varlık değil; açılmak üzere verilmiş bir çekirdek varlıktır.",
+          "visual_note": "Extreme close-up of a single seed, micro detail, then zooming out to a towering ancient tree in full bloom.",
+          "keywords": ["seed to tree", "hidden potential", "growth", "time-lapse"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Çekirdeğin ağaç olması için önce karanlıkta kalması, toprağın altına girmesi ve çatlaması gerekir. Kemal, anlık parıltıyla değil; sabır, kırılma ve yönelişle ortaya çıkar.",
+          "visual_note": "Underground slow-motion of a seed cracking in dark soil, first pale root emerging toward distant light.",
+          "keywords": ["seed cracking", "dark soil", "underground growth", "patience", "breaking open"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Eğer o çekirdek, manevî cihazlarını zararlı maddeler çekmek için harcarsa feshedip çürür. Ama imanın ışığıyla, ubudiyet toprağıyla terbiye edilirse; âlem-i misal ve berzahta dal budak verir, ahirette hadsiz kemale kavuşur.",
+          "visual_note": "Two paths: one seed rotting in darkness, another seedling breaking upward into sunlight, vivid contrast.",
+          "keywords": ["two paths", "rotting vs growing", "contrast", "light and dark", "choice"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Sana verilen yüksek duygular nereye akıyor? Cevap, her şeyi değiştirir.",
+      "title": "Latifelerini Nereye Harcıyorsun?",
+      "description": "Aklın, kalbin, hayalinin nereye yöneldiği senin kaderini belirler. Nimet aynıdır; kullanım farklılaştırır. #derinokuma #shorts #tefekkür #iman #maneviyat #nefis #hüsnüistimal",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#nefis", "#hüsnüistimal"],
+      "thumbnail_or_cover_text": "LATİFELERİN NEREYE AKIYOR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Sana verilen nimetin güzelliği yetmez. Onu nasıl kullandığın belirleyicidir. Akıl büyük bir nimettir. Ama hakikati ararsa nur olur, bahaneye çalışırsa afet olur.",
+          "visual_note": "A telescope pointed at stars above versus turned down to the ground, same precise instrument, different purpose.",
+          "keywords": ["telescope", "direction matters", "same tool different use", "stars vs ground"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Hayal büyük bir nimettir. Ama tefekküre açılırsa ufuk olur, vehme çalışırsa yük olur. Kalp büyük bir nimettir. Allah'a yönelirse merkez olur, fani şeylere mutlak bağlanırsa azap olur.",
+          "visual_note": "A compass spinning wildly, then settling peacefully pointing to true north, calm and resolved.",
+          "keywords": ["compass", "true north", "direction", "settling", "focus"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Yüksek latifeleri nefse hizmetkâr etmek, sukuttur. Ama onları asli vazifelerine döndürmek, hakiki terakki. Aynı cihazlar, iki farklı insan yaratır. Fark, yönde.",
+          "visual_note": "Two rivers from the same source — one flowing into a dark swamp, one opening into a bright open sea.",
+          "keywords": ["two rivers", "same source", "diverging paths", "dark swamp vs open sea", "direction"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İlerlediğini sanıyorsun. Ama hangi ölçüyle?",
+      "title": "Hakiki İlerleme Nedir?",
+      "description": "Daha fazla zevk, daha çok deneyim, daha yoğun tatmin... Bunlar ilerleme mi? Asıl ölçü başkadır. #derinokuma #shorts #tefekkür #iman #maneviyat #terakki #sukut",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#terakki", "#sukut"],
+      "thumbnail_or_cover_text": "HAKİKİ İLERLEME NE?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Daha rafine hazlar, daha zengin deneyimler, daha yoğun tatmin... Bunlar dışarıdan ilerleme gibi görünebilir. Ama eğer bunun için kalp, akıl, hayal ve ruh hep nefse hizmet eder hâle gelmişse, bu yükseliş değil düşüştür.",
+          "visual_note": "A person climbing stairs that spiral downward despite appearing to go up, the illusion of progress revealed.",
+          "keywords": ["spiral stairs downward", "illusion of progress", "false ascent", "descent"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Çünkü yüksek olan alçak olana hizmet ettiriliyor. Bir şeyin terakki olup olmadığını, ne kadar parlak göründüğüne göre değil; yüksek latifelerin nereye bağlandığına göre anlarsın.",
+          "visual_note": "A king's crown placed on a servant's head in a dim storeroom, power inverted, hierarchy broken.",
+          "keywords": ["inverted hierarchy", "crown misplaced", "power structure", "wrong order"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Hakikî terakki; kalbin, sırrın, ruhun, aklın, hatta hayalin hayat-ı ebediyeye yüzünü çevirmesidir. Her latifeyi kendi asli vazifesine yöneltmek. İşte bu, gerçek ilerlemedir.",
+          "visual_note": "Multiple compass needles all settling peacefully toward the same true north, alignment and calm resolution.",
+          "keywords": ["compasses aligning", "true north", "harmony", "purpose", "resolution"]
+        },
+        {
+          "scene_id": "scene-004",
+          "narration": "Dıştan ne kadar parlak görünürse görünsün; içindeki yüksek duyguların sustuğu bir hayat mamur değildir. Dıştan ne kadar sade görünürse görünsün; içindeki saray mamur ise o hayat gerçek terakkidedir.",
+          "visual_note": "Modest exterior opening into a luminous purposeful interior, every room alive with meaningful activity.",
+          "keywords": ["modest outside", "luminous inside", "inner richness", "true prosperity"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Sarayında kapıcı mı efendi oldu? İçeride kim yönetiyor?",
+      "title": "Sarayını Kim Yönetiyor?",
+      "description": "Nefis ve heva, aslen kapıcı ve bekçi gibidir. Ama onlar merkeze geçince kalp, akıl ve ruh susturulur. Saray dıştan parlak, içten boş kalır. #derinokuma #shorts #tefekkür #iman #maneviyat #nefis",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#nefis"],
+      "thumbnail_or_cover_text": "SARAYINI KİM YÖNETİYOR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İki saray düşün. Birinin kapısı şenlikli, parlak ve eğlenceli. Efendi kapıda oyuyor, görevliler kendi işlerini bırakmış. Ama içerisi boş. Dış parlaklık, iç boşluğu gizliyor.",
+          "visual_note": "Ornate festive palace gate with celebrations outside, but doors reveal completely empty, cold, dark interior.",
+          "keywords": ["hollow palace", "festive outside", "empty inside", "facade", "deception"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Diğer saray dıştan sade. Ama içeride herkes vazifesinde: akıl düşünüyor, kalp yönelmiş, ruh yüce işiyle meşgul. Dıştan sönük. İçeriden mamur. Gerçek hayat, iç nizamdadır.",
+          "visual_note": "Simple plain exterior, but inside warm light fills purposeful rooms, each person quietly engaged in their work.",
+          "keywords": ["simple exterior", "purposeful interior", "warm light", "inner order", "real life"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Nefis ve heva, insan sarayında kapıcı ve bekçi gibidir. Sınırda kalmaları gerekir. Ama onlar merkeze geçerse; kalp, akıl, ruh ve sır susturulur. Kapıcıyı efendi yapmak, sarayı yıkmaktır.",
+          "visual_note": "A grand hall where the gatekeeper sits on the throne while true nobles stand displaced and silent at the walls.",
+          "keywords": ["gatekeeper on throne", "true nobles displaced", "inverted order", "silence of the worthy"]
+        }
+      ]
+    }
+  ]
+}
