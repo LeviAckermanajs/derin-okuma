@@ -82,6 +82,14 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [ ] Frontmatter'a `video_ready` veya `video_status` alanı eklenmesi
 - [ ] n8n otomatik input alma
 
+**Aşama 4 — Batch ve otomasyon (bkz. `docs/video-automation-roadmap.md`):**
+- [ ] `video:validate` komutu ile video paket bütünlüğü doğrulama (JSON parse, JS syntax, yasaklı kalıp, filled kontrolü)
+- [ ] `video:batch` komutu ile Shorts batch Load Input JS üretimi (6 dosya → 1 dosya)
+- [ ] `video:batch --limit 2` ile n8n batch smoke test (sadece short-001 + short-002)
+- [ ] 6 Shorts batch üretim testini tamamlama ve n8n item array davranışını doğrulama
+- [ ] `video:send` ile n8n Webhook gönderimi değerlendirme ve implementasyonu
+- [ ] `video:publish-pack` ile YouTube upload hazırlık dosyaları üretme (title/description/hashtag/thumbnail/pinned comment)
+
 ---
 
 ## Teknik Borç

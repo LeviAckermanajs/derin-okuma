@@ -210,6 +210,21 @@ Bkz:
 
 ---
 
+## Yaklaşan Otomasyon Aşamaları
+
+Mevcut manuel akışı adım adım kısaltmak için planlanan komutlar:
+
+| Komut | Aşama | Amaç |
+|---|---|---|
+| `video:validate` | 1 | Dosya bütünlüğü doğrulama (JSON/JS/yasaklı kalıp/filled kontrolü) |
+| `video:batch` | 2 | 6 ayrı Shorts Load Input JS → tek batch dosyası (n8n'e 1 kez yapıştırma) |
+| `video:send` | 4 | Batch payload'u n8n Webhook'a POST et (kopyala-yapıştırı kaldır) |
+| `video:publish-pack` | 5 | YouTube başlık/açıklama/hashtag/thumbnail/pinned comment dosyaları üret |
+
+Detaylı tasarım, smoke test sırası ve riskler için bkz: `docs/video-automation-roadmap.md`
+
+---
+
 ## Video Prep Scaffold Komutu
 
 Yeni bir blog yazısı için tek komutla standart video üretim dosya iskeleti oluşturmak:
