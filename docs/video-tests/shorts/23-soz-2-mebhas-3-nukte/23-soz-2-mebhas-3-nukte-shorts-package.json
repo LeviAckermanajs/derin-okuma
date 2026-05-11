@@ -1,0 +1,352 @@
+{
+  "source": {
+    "blog_post": "23-soz-2-mebhas-3-nukte",
+    "title": "23. Söz - 2. Mebhas - 3. Nükte",
+    "source_files": [
+      "src/content/blog/23-soz-2-mebhas-3-nükte.md"
+    ]
+  },
+  "test_day": "day-21",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "title": "İnsan Neden Hiçbir Zaman Tam Dolu Olamaz?",
+      "hook": "İçinde sonsuzluk arzusu olan bir varlık, sonlu şeylerle dolu olamaz.",
+      "description": "Sevgi, güzellik, anlam, adalet… İnsan bunların hepsini sonsuz istiyor. Dünya ise hepsini geçici veriyor. Bu yüzden her lezzette binler elem izi var. #derinokuma #insan #maneviyat #risaleinur #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#insan",
+        "#maneviyat",
+        "#risaleinur",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "Neden Hiç Dolu Olamazsın?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Sonsuzluk arzusu olan bir varlık, sonlu şeylerle dolu olamaz. İşte bu yüzden insan, her şeye sahip olsa bile içinde bir boşluk hisseder.",
+          "visual_note": "A person surrounded by objects, looking empty — everything present yet nothing filling the void.",
+          "keywords": [
+            "emptiness despite abundance",
+            "longing",
+            "inner void",
+            "desire"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Her Lezzette Elem",
+          "narration": "En güzel anında bile ayrılık ihtimali vardır. Gençlikte yaşlanma gölgesi vardır. Sevilen şeyin biteceği bilinir. İnsan yalnız yaşamaz; o anı bilir ve bu bilgi her lezzetin içine karışır.",
+          "visual_note": "A sunset being watched — light fading, beauty tinged with the awareness of its ending.",
+          "keywords": [
+            "bittersweet",
+            "fading beauty",
+            "awareness of impermanence",
+            "transience"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Bu Huzursuzluk Neden?",
+          "narration": "İnsanın dünyada tatmin olamaması, onun bozuk olmasından değil; ebede göre yaratılmış olmasından kaynaklanıyor. Bu huzursuzluk bir arıza değil; yüksek bir yapının yanlış yere sıkışmasının sancısı.",
+          "visual_note": "A migratory bird restless on a branch — not broken, oriented toward somewhere it has not yet reached.",
+          "keywords": [
+            "migratory bird",
+            "restlessness",
+            "longing",
+            "purposeful unease"
+          ]
+        },
+        {
+          "scene_id": "scene-004",
+          "title": "Kapanış",
+          "narration": "İnsan dünyayla oyalanabilir; ama onunla tatmin olamaz. Çünkü kalbi, dünya için değil; ebedî hayat için donatılmıştır.",
+          "visual_note": "Person looking at a vast horizon at dusk — yearning, oriented outward and upward.",
+          "keywords": [
+            "horizon",
+            "yearning",
+            "eternal orientation",
+            "heart"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "title": "Bin Altını Bir Kat Elbiseye Vermek Ne Demektir?",
+      "hook": "Büyük bir sermaye küçük bir iş için verilmez. Peki insana verilen sermaye ne kadar büyük?",
+      "description": "Akıl, kalp, vicdan, sonsuzluk hissi… Bunlar yalnızca dünya rahatı için mi verildi? Risale-i Nur bu soruya çarpıcı bir temsille cevap veriyor. #derinokuma #risaleinur #bediüzzaman #maneviyat #insan",
+      "hashtags": [
+        "#derinokuma",
+        "#risaleinur",
+        "#bediüzzaman",
+        "#maneviyat",
+        "#insan"
+      ],
+      "thumbnail_or_cover_text": "Bin Altın Bir Kat Elbise İçin Mi?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Birine on altın verilir; bir kat elbise alır — makul. Başka birine bin altın verilir, içinde pusula var: büyük bir iş için kullan. Ama o pusulayı okumadan, bin altını da bir kat elbiseye verir. Büyük sermaye küçük bir iş için verilmemiştir.",
+          "visual_note": "Gold coins poured out next to a single plain garment — visual absurdity of the mismatch.",
+          "keywords": [
+            "gold coins",
+            "simple garment",
+            "mismatch",
+            "wasted potential"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "İnsanın Büyük Sermayesi",
+          "narration": "İnsana verilen sermaye nedir? Akıl, kalp, vicdan, hayal, hafıza, merak, muhabbet, sonsuzluk hissi, güzellik sevgisi… Bu kadar zengin bir donanım, yalnızca yemek, barınmak ve keyif almak için verilmiş olamaz.",
+          "visual_note": "Layers of light emerging from a human silhouette — multiple capacities, glowing, vast.",
+          "keywords": [
+            "inner wealth",
+            "multiple capacities",
+            "glowing potential",
+            "human endowment"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Pusula Verilmiş",
+          "narration": "Bu sermayenin yanında bir de pusula var: vahiy, vicdan, akıl, peygamber öğretisi. Sorun, pusulayı okumadan yaşamaya kalkmak. Çünkü amacını unutan büyük sermaye, küçük işlere harcanır.",
+          "visual_note": "An old compass on a map, needle steady — guidance available, waiting to be read.",
+          "keywords": [
+            "compass",
+            "guidance",
+            "direction",
+            "unread instructions"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "title": "Aziz Misafir: Dünyaya Nasıl Bakmalısın?",
+      "hook": "Dünya senin mülkün değil. Peki ne?",
+      "description": "Dünyayı misafirhane olarak görmek, onu küçümsemek değil; onun gerçek anlamını kavramaktır. Girişin anlamlı, kalışın sınırlı, çıkışın kaçınılmaz. #derinokuma #tefekkür #iman #risaleinur #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#tefekkür",
+        "#iman",
+        "#risaleinur",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Dünya Senin Mülkün mü?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Dünya senin mülkün değil. Kalıcı evin değil. Tesadüfen geldiğin bir yer de değil. Sahipsiz bir yer hiç değil. Peki ne?",
+          "visual_note": "A person entering a grand doorway — threshold moment, arriving somewhere meaningful.",
+          "keywords": [
+            "arrival",
+            "threshold",
+            "entering",
+            "meaning"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Misafirhane",
+          "narration": "Dünya bir misafirhanedir. Girişin anlamlı, kalışın sınırlı, çıkışın kaçınılmaz. Ve ev sahibi cömert, ikram eden, nimetleri anlamlı biçimde açan biri. Bu yüzden insanın görevi sadece tüketmek değil, ikramı tanımaktır.",
+          "visual_note": "A warm inn at night, traveler welcomed inside — golden light, generous table, a sense of purposeful hospitality.",
+          "keywords": [
+            "inn",
+            "golden light",
+            "hospitality",
+            "meaningful stay"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Misafir Bilmek",
+          "narration": "Kendini malik değil misafir bilmek insanı küçültmez. Aksine, onu sonsuz büyük bir yolculuğun parçası yapar. Hafif bagajla, doğru yönde, anlamlı bir yürüyüş.",
+          "visual_note": "A traveler walking a road at golden hour — light luggage, steady pace, purposeful movement.",
+          "keywords": [
+            "traveler",
+            "light luggage",
+            "purposeful journey",
+            "non-attachment"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "title": "İnsan Neden Hayvandan Daha Dertlidir?",
+      "hook": "Daha çok cihaz demek daha çok yara alma ihtimali de demektir.",
+      "description": "Hayvan anın içinde yaşar. İnsan ise geçmişi, geleceği ve ölümü taşır. Bu fark, insanı aciz değil; daha derin kılar. #derinokuma #insan #tefekkür #maneviyat #risaleinur",
+      "hashtags": [
+        "#derinokuma",
+        "#insan",
+        "#tefekkür",
+        "#maneviyat",
+        "#risaleinur"
+      ],
+      "thumbnail_or_cover_text": "Neden Hayvandan Daha Dertlisiniz?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Hayvan otlağında otlar, anın içinde yaşar, geleceği kurgulamaz. İnsan ise en huzurlu anında bile geçmişin izlerini ve geleceğin gölgesini taşır. Neden?",
+          "visual_note": "A deer grazing peacefully — serene, present, unburdened — beside a human lost in thought.",
+          "keywords": [
+            "deer",
+            "peaceful grazing",
+            "contrast",
+            "human burden"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Daha Derin Cihaz, Daha Derin Acı",
+          "narration": "Daha çok seviyorsan daha çok incinirsin. Daha çok düşünüyorsan daha çok kaygılanırsın. Daha çok anlam arıyorsan boşluk seni daha çok rahatsız eder. Bu kırılganlık kusur değil; yüksek bir yapının işaretidir.",
+          "visual_note": "Intricate gears visible in a human chest — more capacity, more vulnerability — delicate but profound.",
+          "keywords": [
+            "inner capacity",
+            "vulnerability",
+            "depth of feeling",
+            "sensitivity"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Bu Sancının Anlamı",
+          "narration": "İnsanın dünyada tatmin olamaması, bozuk olmasından değil; ebede göre yaratılmış olmasından kaynaklanıyor. Doğru yer bulunduğunda bu sancı yerini huzura bırakır.",
+          "visual_note": "A bird restless in a small cage — then the door opens and it flies toward open sky.",
+          "keywords": [
+            "cage opening",
+            "flight",
+            "relief",
+            "finding the right place"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "title": "Dua Neden İnsanın Asıl Silahıdır?",
+      "hook": "Eli kısa, isteği büyük olan bir varlığın silahı ne olabilir?",
+      "description": "İnsan bedenen zayıf ama talep bakımından sonsuzdur. Tam da buradan duanın gerçek anlamı doğuyor. #derinokuma #dua #iman #tefekkür #risaleinur #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#dua",
+        "#iman",
+        "#tefekkür",
+        "#risaleinur",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Dua Neden En Büyük Silahtır?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "İnsanın eli kısa ama isteği büyük. Gücü yetmiyor ama talebi sonsuz. Böyle bir varlığın silahı ne olabilir?",
+          "visual_note": "Small human hands reaching upward toward a vast sky — the gap between capacity and desire.",
+          "keywords": [
+            "small hands",
+            "vast sky",
+            "reaching",
+            "desire beyond capacity"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "İnfial, Kabul, Dua, Sual",
+          "narration": "İnsan dört şeyde büyüktür: etkilenmekte, almakta, duada ve sormakta. Bunlar insanın asıl kapasitesini oluşturuyor. Fiilden değil; yönelişten büyük olan bir varlık.",
+          "visual_note": "Four moments: a person moved by beauty, receiving a gift, kneeling in prayer, and gazing in wonder — each a different dimension of depth.",
+          "keywords": [
+            "four capacities",
+            "emotional depth",
+            "prayer",
+            "wonder"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Muhtaçlık Kapı Açar",
+          "narration": "İnsan, kuvvetiyle değil; muhtaçlığıyla büyük bir varlıktır. Muhtaçlık onu duaya açar. Dua ise sonsuz güce yöneltir. Ve bu yöneliş, en dar anda bile genişlik kapısıdır.",
+          "visual_note": "Open hands in prayer at dawn — light beginning to appear, the gesture of receiving, of reaching beyond self.",
+          "keywords": [
+            "dawn prayer",
+            "open hands",
+            "receiving light",
+            "humility as strength"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "title": "Ahsen-i Takvim'den Serçeye Düşmek Ne Demektir?",
+      "hook": "En güzel kıvamda yaratılan bir varlık neden serçe kuşuyla kıyaslanır?",
+      "description": "İnsanın dünyevîleşmesi sıradan bir düşüş değildir. Yüksek bir kıvamın küçük şeylere indirgenmesidir. 23. Söz'den derin bir ikaz. #derinokuma #risaleinur #bediüzzaman #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#risaleinur",
+        "#bediüzzaman",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "Mücevheri Çamura Neden Batırırsın?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "İnsan en güzel kıvamda yaratılmıştır. Bu yalnız bedeni değil, bütün varoluşu kapsar. Böyle bir varlık sadece mide ve şehvete indirgenirse ne olur?",
+          "visual_note": "A gem in perfect light — brilliant, complex, created for more than burial.",
+          "keywords": [
+            "gem",
+            "brilliance",
+            "potential",
+            "perfect form"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Mücevher Çamura Batarsa",
+          "narration": "Bir taş yere düşerse şaşılmaz. Ama mücevher çamura batarsa acı olur. Sorun varlığın değersizliği değil; yüksek bir kıvamın düşük şeylere indirgenmesidir.",
+          "visual_note": "A jewel falling into mud — slow motion — its brilliance dimmed, the contrast sharp and sad.",
+          "keywords": [
+            "jewel in mud",
+            "slow motion",
+            "loss of brilliance",
+            "noble degraded"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Serçe Kuşu Kıyası",
+          "narration": "Serçenin istidadı sınırlıdır, dünya için yaratılmıştır ve o sınır içinde kusursuzdur. İnsan ise sonsuz istidatlarla donatılmıştır. Kendini serçenin seviyesine indirgemek, istidat israfıdır.",
+          "visual_note": "A sparrow beside a human — both in nature, human aware of something more, looking toward the horizon.",
+          "keywords": [
+            "sparrow",
+            "human",
+            "awareness",
+            "horizon",
+            "purpose beyond"
+          ]
+        },
+        {
+          "scene_id": "scene-004",
+          "title": "Kapanış",
+          "narration": "İnsanın büyüklüğü bağımsızlığında değil, bilinçli kulluğundadır. Yüce istidatlarını kulluk ve tefekkürle büyüten insan, kendi hakikatine uygun yaşar.",
+          "visual_note": "A person walking toward dawn, upright and purposeful — the light ahead, the path clear.",
+          "keywords": [
+            "walking toward dawn",
+            "purposeful",
+            "upright",
+            "clear path"
+          ]
+        }
+      ]
+    }
+  ]
+}

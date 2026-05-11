@@ -1,0 +1,87 @@
+{
+  "video_type": "shorts",
+  "source": "23-soz-2-mebhas-3-nukte",
+  "test_day": "day-21",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "title": "İnsan Neden Hiçbir Zaman Tam Dolu Olamaz?",
+      "description": "Sevgi, güzellik, anlam, adalet… İnsan bunların hepsini sonsuz istiyor. Dünya ise hepsini geçici veriyor. Bu yüzden her lezzette binler elem izi var. #derinokuma #insan #maneviyat #risaleinur #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#insan",
+        "#maneviyat",
+        "#risaleinur",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "Neden Hiç Dolu Olamazsın?"
+    },
+    {
+      "short_id": "short-002",
+      "title": "Bin Altını Bir Kat Elbiseye Vermek Ne Demektir?",
+      "description": "Akıl, kalp, vicdan, sonsuzluk hissi… Bunlar yalnızca dünya rahatı için mi verildi? Risale-i Nur bu soruya çarpıcı bir temsille cevap veriyor. #derinokuma #risaleinur #bediüzzaman #maneviyat #insan",
+      "hashtags": [
+        "#derinokuma",
+        "#risaleinur",
+        "#bediüzzaman",
+        "#maneviyat",
+        "#insan"
+      ],
+      "thumbnail_or_cover_text": "Bin Altın Bir Kat Elbise İçin Mi?"
+    },
+    {
+      "short_id": "short-003",
+      "title": "Aziz Misafir: Dünyaya Nasıl Bakmalısın?",
+      "description": "Dünyayı misafirhane olarak görmek, onu küçümsemek değil; onun gerçek anlamını kavramaktır. Girişin anlamlı, kalışın sınırlı, çıkışın kaçınılmaz. #derinokuma #tefekkür #iman #risaleinur #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#tefekkür",
+        "#iman",
+        "#risaleinur",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Dünya Senin Mülkün mü?"
+    },
+    {
+      "short_id": "short-004",
+      "title": "İnsan Neden Hayvandan Daha Dertlidir?",
+      "description": "Hayvan anın içinde yaşar. İnsan ise geçmişi, geleceği ve ölümü taşır. Bu fark, insanı aciz değil; daha derin kılar. #derinokuma #insan #tefekkür #maneviyat #risaleinur",
+      "hashtags": [
+        "#derinokuma",
+        "#insan",
+        "#tefekkür",
+        "#maneviyat",
+        "#risaleinur"
+      ],
+      "thumbnail_or_cover_text": "Neden Hayvandan Daha Dertlisiniz?"
+    },
+    {
+      "short_id": "short-005",
+      "title": "Dua Neden İnsanın Asıl Silahıdır?",
+      "description": "İnsan bedenen zayıf ama talep bakımından sonsuzdur. Tam da buradan duanın gerçek anlamı doğuyor. #derinokuma #dua #iman #tefekkür #risaleinur #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#dua",
+        "#iman",
+        "#tefekkür",
+        "#risaleinur",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Dua Neden En Büyük Silahtır?"
+    },
+    {
+      "short_id": "short-006",
+      "title": "Ahsen-i Takvim'den Serçeye Düşmek Ne Demektir?",
+      "description": "İnsanın dünyevîleşmesi sıradan bir düşüş değildir. Yüksek bir kıvamın küçük şeylere indirgenmesidir. 23. Söz'den derin bir ikaz. #derinokuma #risaleinur #bediüzzaman #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#risaleinur",
+        "#bediüzzaman",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "Mücevheri Çamura Neden Batırırsın?"
+    }
+  ]
+}

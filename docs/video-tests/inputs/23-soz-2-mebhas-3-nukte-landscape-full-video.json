@@ -1,0 +1,525 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "23. Söz - 2. Mebhas - 3. Nükte",
+    "description": "İnsan neden büyük bir sermayeyle yaratılmıştır? Bu sermaye neden küçük dünya hesabı için değil, ebedî hayat ve marifetullah içindir?",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "23-soz-2-mebhas-3-nukte-landscape-day-21"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Açılış — Büyük Bir Soru",
+      "narration": "İnsan neden yaratılmıştır? Bu sorunun cevabı, insanın ne olduğuna bakıldığında kendiliğinden ortaya çıkıyor. Çünkü insanın içine yerleştirilen şeyler, onun amacına dair çok güçlü bir işaret taşıyor.",
+      "visual_note": "Wide shot of a person standing alone at dusk, gazing at a vast sky filled with stars beginning to appear.",
+      "keywords": [
+        "existential question",
+        "human purpose",
+        "dusk",
+        "starry sky",
+        "solitude"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Bedenen Zayıf Bir Varlık",
+      "narration": "Maddî iş yapma gücü, fiziksel dayanıklılık ve çıplak yaşama kabiliyeti bakımından insan çok sınırlı bir varlıktır. Pençesi yok, postu yok; soğuğa ve açlığa pek çok hayvandan daha az dayanıklı. Bu bir küçüklük değil; insanın büyüklüğünün bedende değil, başka bir yerde aranması gerektiğinin işareti.",
+      "visual_note": "Close-up of human hands, bare and fragile, held open against a rough stone surface — contrasting softness with hardness.",
+      "keywords": [
+        "fragile hands",
+        "human weakness",
+        "physical limits",
+        "vulnerability",
+        "contrast"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Bedenin Sınırları, Mananın Genişliği",
+      "narration": "İnsanın fiilen hükmedebildiği alan dardır: elini uzattığı yere kadar, gücünün yettiği kadardır. Ama insanın istek alanı, hayal alanı, anlama alanı çok geniştir. Fiil alanı küçük, talep alanı büyük; bu, insanın varoluşundaki en temel gerilimlerden biridir.",
+      "visual_note": "A person reaching out one hand toward a vast horizon, only touching the air — small in body, reaching for something infinite.",
+      "keywords": [
+        "reaching",
+        "horizon",
+        "limits vs infinity",
+        "longing",
+        "contrast of scale"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Ehlî Hayvanlar ve İnsan",
+      "narration": "İnsanın yanında yaşayan, insan eliyle yetişen hayvanlar, vahşi emsallerine göre daha zayıf görünür. Bu tesadüf değil. İnsanın maddî hayatı, vahşi tabiat gücü üzerine değil; akıl, tedbir, dil ve iş bölümü üzerine kurulmuştur. İnsanın üstünlüğü doğal hayvan gücü cinsinden değil.",
+      "visual_note": "A domestic horse beside a wild one — calm and tamed vs powerful and free — both beautiful, but fundamentally different in orientation.",
+      "keywords": [
+        "domesticated animals",
+        "wild vs tame",
+        "human civilization",
+        "cooperation",
+        "different strengths"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Fakat — Dönüm Noktası",
+      "narration": "Maddî işte aciz, bedenen sınırlı, fiziksel güçten yoksun… Ama başka bir cephede insan çok büyüktür. Tek bir kelime her şeyi değiştirir: fakat. İnsanın hakiki büyüklüğü bambaşka bir yerden gelir.",
+      "visual_note": "A single word appearing as golden light in a dim scene — the pivot point of understanding, turning darkness toward dawn.",
+      "keywords": [
+        "turning point",
+        "contrast",
+        "golden light",
+        "pivot",
+        "revelation"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "İnfial — Derin Etkilenme Kapasitesi",
+      "narration": "İnsan kâinata karşı duyarsız değildir. Bir manzara, bir ölüm, bir ayrılık, bir çocuk sesi, bir yıldızlı gece insanı derinden etkiler. Hayvan da etkilenir; ama insanın etkilenmesi çok daha katmanlı, çok daha derin bir yankı taşır.",
+      "visual_note": "A person pausing on a bridge to watch a sunset, visibly moved — tears forming, overwhelmed by beauty and transience.",
+      "keywords": [
+        "emotional depth",
+        "sunset",
+        "tears",
+        "beauty",
+        "profound reaction"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Kabul — İkramı İdrak Ederek Almak",
+      "narration": "İnsan yalnız yiyen ve içen bir varlık değildir. Nimeti idrak ederek alabilir; vereni hissedebilir, ikramın ardındaki cömertliği tanıyabilir. Bu kabul kapasitesi, insanı sıradan bir tüketiciden çok farklı kılar.",
+      "visual_note": "A person sitting at a table, holding a cup of tea gently, looking at it with quiet gratitude — aware, present, receiving.",
+      "keywords": [
+        "gratitude",
+        "receiving",
+        "awareness",
+        "tea",
+        "presence"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Dua — İnsanın Asıl Silahı",
+      "narration": "İnsanın eli kısa ama isteği büyük. Gücü yetmiyor ama talebi sonsuz. İşte tam buradan insanın asıl silahı doğar: dua. Fiil yetersiz kaldığında, yönelim her şeyi değiştirir.",
+      "visual_note": "Open hands raised upward in prayer against a vast sky — small hands, infinite sky above — the gesture of reaching beyond self.",
+      "keywords": [
+        "prayer",
+        "raised hands",
+        "infinite sky",
+        "supplication",
+        "reaching beyond"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Sual — Soru Soran Varlık",
+      "narration": "İnsan soru sorar. Bu basit bir özellik gibi görünse de son derece derin bir anlam taşır. 'Bu nedir? Niçin yaratıldım? Ölüm neden var? Güzellik neden içimde bu kadar güçlü?' Bu sorular hayvanî değil, insanîdir. Ve bu soruların sorulması bile insanın büyüklüğünü gösterir.",
+      "visual_note": "A person sitting in a library or by a window, lost in thought — questions visible in their gaze, searching, wondering.",
+      "keywords": [
+        "questions",
+        "seeking",
+        "contemplation",
+        "library",
+        "human curiosity"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Aziz Misafir",
+      "narration": "Fiilden zayıf, bedenden sınırlı bu insan, infial ve kabul ve dua ve sual cihetinde aziz bir yolcudur. Dünya, onun için bir misafirhanedir. Ve o misafir, öyle bir eve konuk olmuştur ki her taraf nimet ve ikramla doludur.",
+      "visual_note": "A traveler arriving at a grand inn at twilight, welcomed warmly — the light warm and golden, suggesting abundance and care.",
+      "keywords": [
+        "honored guest",
+        "inn",
+        "traveler",
+        "welcome",
+        "golden light"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Kerîm Ev Sahibi",
+      "narration": "Dünya bir tesadüfler alanı değil, misafirhane olarak görüldüğünde her şey değişir. Girişin anlamlı, kalışın sınırlı, çıkışın kaçınılmaz olduğunu bilmek; ev sahibinin iradesinin geçerli olduğunu anlamak; ve bu ev sahibinin cömert, ikram eden, nimetleri anlamlı biçimde açan biri olduğunu görmek.",
+      "visual_note": "A generous host placing food on a table before a guest — hands open and giving, light warm, an atmosphere of abundance and care.",
+      "keywords": [
+        "generous host",
+        "abundance",
+        "giving",
+        "warmth",
+        "purposeful hospitality"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Nihayetsiz Rahmet Hazineleri",
+      "narration": "İnsanın önüne açılan alan çok geniştir: sayısız nimet, sonsuz ikram, durmaksızın akan lütuf. Bu hazineler boşuna sunulmuş değildir. İnsan bunları yalnız tüketmek için değil, tanımak ve şükretmek için almaktadır.",
+      "visual_note": "A spring of water flowing endlessly in a lush valley — natural abundance, endless giving, receiving earth.",
+      "keywords": [
+        "abundance",
+        "spring water",
+        "lush valley",
+        "endless giving",
+        "gratitude"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Bedî Masnuat — Varlığı Seyretmek",
+      "narration": "Kâinattaki her varlık, sanatlı biçimde yaratılmış bir eserdir. İnsan sadece yemek için değil; seyretmek, fark etmek, anlamlandırmak, hayran olmak ve şükretmek için de yaratılmıştır. Modern insanın en çok yitirdiği boyutlardan biri bu: varlığa ayet gibi bakmak.",
+      "visual_note": "Extreme macro of a flower or leaf — intricate natural patterns, as if seeing creation for the first time in wonder.",
+      "keywords": [
+        "macro nature",
+        "intricate patterns",
+        "wonder",
+        "aesthetic creation",
+        "contemplation"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Hayal Alanı Uçsuz Bucaksız",
+      "narration": "İnsanın etki gücü dardır, ama alaka alanı çok geniştir. Küçücük bir odada bile yıldızlarla ilgilenebilir, geçmiş kavimler üzerine düşünebilir, cennet ve cehennem meselesini içinde barındırabilirsin. Milyarlarca insanın acısını hissedebilir, bir yaprağın güzelliğinden etkilenebilirsin.",
+      "visual_note": "A person sitting in a small room at night, window open to the universe — starlight falling on their face, cosmos reflected in their eyes.",
+      "keywords": [
+        "small room",
+        "cosmic imagination",
+        "starlight",
+        "vastness within",
+        "inner universe"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Bedenî Hacim Küçük, Manevî Menzil Büyük",
+      "narration": "Bedenin kapladığı alan küçüktür; ama insanın manevî menzili çok büyüktür. Bu oran fark edildiğinde, insanı tanımlamak için bedene bakmak yetersiz kalır. Asıl insanı taşıyan, içindeki anlam, yöneliş ve derinliktir.",
+      "visual_note": "A silhouette of a small person standing under an enormous night sky — body tiny, spirit vast — a visual paradox of scale.",
+      "keywords": [
+        "silhouette",
+        "night sky",
+        "small body vast spirit",
+        "paradox",
+        "inner dimension"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Enaniyete İstinad",
+      "narration": "Bir yol vardır ki insanı küçülten: kendine yaslanmak. Ben merkezli olmak, 'ben bilir, ben yapar, ben kurarım' çizgisinde yürümek. Bu çizgide dünya başka türlü görünür; her şey bene döner ve bene hapsedilir.",
+      "visual_note": "A person in a mirror maze — surrounded by reflections of themselves, unable to see beyond their own image.",
+      "keywords": [
+        "mirror maze",
+        "self-reflection",
+        "ego trap",
+        "narcissism",
+        "isolation in self"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "Dünyayı Nihai Hedef Yapmak",
+      "narration": "Hayalin merkezine geçici saadeti koymak; son hedefi dünya yapmak; bütün arzuların odağına rahat, makam ve beğenilmeyi almak. Dünya nimetlerinden faydalanmak ayrıdır; dünyayı nihai amaç yapmak ayrıdır. İşte bu ikincisi insanı daraltan şeydir.",
+      "visual_note": "A person drowning in material objects — surrounded by possessions but looking lost and empty, grasping but never fulfilled.",
+      "keywords": [
+        "materialism",
+        "surrounded by possessions",
+        "emptiness",
+        "grasping",
+        "false goals"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Dar Daire İçinde Boğulmak",
+      "narration": "İnsan sonsuzluk istidadıyla yaratılmış olduğu için, dünyaya sıkıştırılınca küçülmüyor sadece; boğuluyor. Sonsuz sevme arzusu, kalıcı güzellik isteği, tam adalet ve tam anlam talebi dünyada hiçbir zaman tam olarak karşılanmıyor. Ve bu karşılanmama hissi insanı daraltıyor.",
+      "visual_note": "A person in a small glass box, pressing hands against the walls — not in anger but in sadness — constrained by something invisible.",
+      "keywords": [
+        "suffocation",
+        "glass box",
+        "constrained",
+        "longing",
+        "inner pressure"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Dünyanın Tatmin Edemediği Arzular",
+      "narration": "Sonsuz sevme arzusu var insanda. Geçmeyecek güzellik isteği var. Yok olmayan bağ isteği var. Tam adalet talebi var. Kalıcı anlam arayışı var. Dünya bunların hiçbirini tam karşılamıyor. Bu yüzden insan dünyayla oyalanabilir; ama onunla tatmin olamaz.",
+      "visual_note": "A person holding a beautiful flower that slowly wilts in their hands — beauty fading, impermanence visible, a quiet grief.",
+      "keywords": [
+        "wilting flower",
+        "impermanence",
+        "longing for permanence",
+        "grief",
+        "beauty fading"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "İçindeki Cihazlar Şikâyet Eder",
+      "narration": "Akıl, kalp, vicdan, hayal, hafıza, merak, muhabbet, sonsuzluk hissi… Bunların hepsi insanın içine yüksek amaçlar için konulmuştur. Eğer sadece geçici şeyler için kullanılırsa, bu yüksek cihazlar bir anlamda şahit olur. Kalbin sonsuz sevme istidadı geçici putlara bağlandığında, kalp içten içe inkar eder.",
+      "visual_note": "Intricate gears and mechanisms inside a human chest, glowing but spinning uselessly — capacity unused, purpose unmet.",
+      "keywords": [
+        "inner mechanism",
+        "wasted potential",
+        "glowing gears",
+        "misuse of capacity",
+        "heart"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Kalp Yanlış Yere Bağlandığında",
+      "narration": "Kalbin sonsuz sevme istidadı var; geçici şeylere bağlandığında bu istidat kendi aleyhine döner. Aklın hakikati aramak için verildi; dar hesaplar için kullanıldığında küçülür. Ömür ebede göre tasarlandı; geçici eğlenceye eritildiğinde eriyip gider. Cihazların büyüklüğü, yanlış kullanıldığında büyük acıya dönüşür.",
+      "visual_note": "A large, powerful river dammed up and redirected into a tiny canal — enormous energy wasted in a tiny channel.",
+      "keywords": [
+        "dammed river",
+        "misdirected energy",
+        "waste",
+        "potential blocked",
+        "wrong direction"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Misafir Bilmek",
+      "narration": "Kurtuluşun birinci adımı: kendini malik değil, misafir bilmek. Dünyaya sahip değil, yolcu olarak gelmek. Bu bakış, insanı küçültmez; aksine onu olduğundan büyük bir yolculuğun parçası yapar.",
+      "visual_note": "A traveler on a road at golden hour, luggage light, pace steady — not rushing, not clinging, moving with purpose.",
+      "keywords": [
+        "traveler",
+        "golden hour",
+        "light luggage",
+        "purposeful journey",
+        "non-attachment"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "İzin Dairesinde Yaşamak",
+      "narration": "Keyfe göre değil, ölçüye göre yaşamak. Bu insanı daraltmak için değil; onu israftan ve dağılmadan korumak içindir. Zevk tamamen yasak değildir; 'izin dairesinde kullan' denilmektedir. Meşru daire, aslında yeterliden fazlasını barındırır.",
+      "visual_note": "A garden with clear boundaries but full of beauty within — flowers, light, and space, ordered and generous at the same time.",
+      "keywords": [
+        "walled garden",
+        "beautiful boundaries",
+        "order and beauty",
+        "lawful space",
+        "sufficiency"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Ahsen-i Takvim — En Güzel Kıvam",
+      "narration": "İnsan en güzel kıvamda yaratılmıştır. Bu ifade yalnız bedeni değil, bütün varoluşu kapsar. Böyle bir varlığın yanlış yere yönelmesi sıradan bir düşüş değildir. Yüksek bir kıvamın heder edilmesidir.",
+      "visual_note": "A perfectly formed crystal or gem catching light — beautiful, complex, and created for something more than being buried in the ground.",
+      "keywords": [
+        "crystal",
+        "perfect form",
+        "catching light",
+        "creation at its finest",
+        "potential"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Yüksekten Düşüş",
+      "narration": "Bir taş yere düşerse şaşılmaz; ama bir mücevher çamura batarsa acı olur. İnsanın dünyevîleşmesi de böyledir. Sorun varlığın değersizliği değil; yüksek bir kıvamın çok düşük bir şeye indirgenmesidir.",
+      "visual_note": "A jewel falling into mud in slow motion — its brilliance dimmed by contact with the earth, contrast between its nature and its state.",
+      "keywords": [
+        "jewel in mud",
+        "slow motion fall",
+        "loss of brilliance",
+        "contrast",
+        "degradation of the noble"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Serçe Kuşuyla Kıyas",
+      "narration": "Serçenin istidadı sınırlıdır, görevi bellidir ve ona göre yaşar. İnsan ise sonsuz istidatlarla donatılmıştır. Serçe dünya için yaratıldıysa kendi çizgisinde kusurlu değildir. Ama insan sonsuz cihazlarla yaratıldığı halde kendini mide ve şehvete indirgerse, kendi kıymetini boşa düşürür.",
+      "visual_note": "A sparrow beside a human — both in nature, but the human looking away toward the horizon, aware of something more.",
+      "keywords": [
+        "sparrow and human",
+        "comparison",
+        "looking toward horizon",
+        "different scales of purpose",
+        "awareness"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Bin Altın — Bir Kat Elbise",
+      "narration": "Bir kişiye on altın verilir; o da bununla bir kat elbise alır — bu normaldir. Başka birine bin altın verilir, içinde bir pusula var: bu sermayeyi büyük bir iş için kullan. Ama bu kişi pusulayı okumaz ve bin altını da yine bir kat elbiseye verir. Büyük sermaye küçük bir iş için verilmemiştir.",
+      "visual_note": "A large pile of gold coins next to a simple piece of cloth — the absurdity of the mismatch visible at a glance.",
+      "keywords": [
+        "gold coins",
+        "simple cloth",
+        "mismatch",
+        "wasted potential",
+        "misuse of great resources"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Pusula Verilmiş",
+      "narration": "İnsana hem büyük bir sermaye verilmiş, hem de bir kullanım kılavuzu. Vahiy, vicdan, akıl, peygamber öğretisi; bunların hepsi o pusulayı oluşturuyor. Sorun, pusulayı okumadan yaşamaya kalkmak. Cahillik burada bilgi eksikliği değil; amacı unutmaktır.",
+      "visual_note": "An old compass lying open on a map, needle pointing north — guidance offered, direction available, the choice to look at it or not.",
+      "keywords": [
+        "compass",
+        "map",
+        "guidance",
+        "direction",
+        "choice"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "İnsan Hayvandan Hem Zengin Hem Dertli",
+      "narration": "İnsan, cihaz ve kapasitesi bakımından hayvandan çok daha zengindir: daha çok idrak, daha çok his, daha çok derinlik. Ama sırf dünyevî lezzet açısından bakıldığında, insan bazen hayvandan daha az rahat eder. Çünkü daha çok cihaz demek, daha çok yara alma ihtimali de demektir.",
+      "visual_note": "A deer grazing peacefully in a meadow, completely present — alongside a human figure sitting, deep in thought, burdened by awareness.",
+      "keywords": [
+        "deer",
+        "peaceful grazing",
+        "human burden of awareness",
+        "contrast",
+        "consciousness as weight"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Her Lezzette Binler Elem İzi",
+      "narration": "İnsan neden hiçbir zaman tam dolu olamıyor? Çünkü aldığı şeyin biteceğini biliyor. Sevdiğini kaybedebileceğini biliyor. En güzel anında bile ayrılık ihtimali vardır. Gençlikte yaşlanma gölgesi vardır. Her lezzet içinde binler elem izi taşınır.",
+      "visual_note": "A beautiful sunset being watched — light fading, colors shifting — the joy of beauty tinged with the sadness of its passing.",
+      "keywords": [
+        "fading sunset",
+        "bittersweet",
+        "beauty and loss",
+        "transience",
+        "awareness of impermanence"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Kırılganlık Bir Kusur Değil, İşaret",
+      "narration": "İnsanın dünyada tam tatmin olamaması, onun bozuk olmasının değil; ebede göre yaratılmış olmasının işaretidir. Bu huzursuzluk, yanlış yere yerleştirilmiş yüce bir yapının sancısıdır. Ve sancı bazen en kıymetli işareti taşır.",
+      "visual_note": "A migratory bird far from home, restless on a branch — not broken, but oriented toward a destination it has not yet reached.",
+      "keywords": [
+        "migratory bird",
+        "restless",
+        "oriented toward home",
+        "longing",
+        "purposeful unease"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Ebedî Hayata Çalışmak",
+      "narration": "Dünya kısadır; ama insana verilen cihazlar uzun vadelidir. Küçük hayat için bu kadar büyük istidat verilmez. Sonlu ömür için bu kadar sonsuz arzu verilmez. Geçici lezzet için bu kadar derin kalp verilmez. İnsan, uzun bir hayat-ı ebediye için tasarlanmıştır.",
+      "visual_note": "Seeds being planted in earth — slow, deliberate, investing in a harvest that won't come immediately — trust in the long arc.",
+      "keywords": [
+        "planting seeds",
+        "long-term investment",
+        "earth",
+        "patience",
+        "eternal horizon"
+      ]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Aczini İlan Etmek",
+      "narration": "İnsanın asli vazifelerinden biri şudur: kendi aczini ve ihtiyacını ubudiyet suretinde ilan etmek. Bu, modern bakışa göre zayıflık sayılabilir. Ama burada acz, insanı duaya ve kulluk'a açan kıymetli bir kapıdır. Muhtaçlık, yönelişin çıkış noktasıdır.",
+      "visual_note": "A person kneeling in a dry landscape, hands open and upward — not defeated but surrendered, not empty but receptive.",
+      "keywords": [
+        "kneeling",
+        "open hands",
+        "surrender",
+        "receptive",
+        "humble strength"
+      ]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Kâinatın Tesbihini İşitmek",
+      "narration": "İnsanın vazifelerinden biri de kâinata küllî nazarla bakmak; varlıkların tesbihini müşahede etmek. Ağaç, dalga, rüzgâr, yıldız; bunların hepsi bir dili taşımaktadır. Ve insan, bu dili duyabilecek donanımla yaratılmıştır.",
+      "visual_note": "Trees swaying in wind, waves rolling to shore, stars moving — all in harmony, a silent music of creation.",
+      "keywords": [
+        "nature in harmony",
+        "trees and waves",
+        "stars",
+        "silent music",
+        "cosmic praise"
+      ]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Nimette İmdadı Görmek",
+      "narration": "Her nimetin içinde bir imdad-ı Rahmaniye görülmektedir. Yani her ikram, aslında bir yardım; her lütuf, bir el uzatma. İnsan bu ikramı fark ettiğinde tüketici olmaktan çıkar; şükrü idrak eden bir varlık olur.",
+      "visual_note": "Rain falling on dry earth, crops beginning to grow — generosity from above, life responding below.",
+      "keywords": [
+        "rain on dry earth",
+        "generosity",
+        "response",
+        "life emerging",
+        "gratitude"
+      ]
+    },
+    {
+      "scene_id": "scene-036",
+      "title": "Masnuatta Kudretin Mucizesini Temaşa Etmek",
+      "narration": "Yaratılmış her eserde, yaratan bir kudretin izleri vardır. İnsan bu izleri okuyabilecek biricik varlıktır. Bir çiçek, bir böcek kanadı, bir insan gözünün yapısı; bunlar ibretle temaşa edilmeyi bekleyen mucizelerdir.",
+      "visual_note": "Macro photography of insect wings, flower structures, and an eye — all intricate, all inviting wonder.",
+      "keywords": [
+        "macro wonder",
+        "intricate creation",
+        "insect wings",
+        "eye structure",
+        "contemplation"
+      ]
+    },
+    {
+      "scene_id": "scene-037",
+      "title": "Meşru Daire Yeterlidir",
+      "narration": "Dünya tamamen terk edilecek bir zindan değildir. Meşru dairede yapılan çalışmanın zevki ve lezzeti, harama girmeyi gereksiz kılar. Sorun, zevkin kendisi değil; sınırı zorlayan heva ve haramdır. Bu denge, fıtratı boğmayan bir anlayıştır.",
+      "visual_note": "A beautifully laid table in natural light — wholesome food, good company, warmth — pleasure that is sufficient and honest.",
+      "keywords": [
+        "wholesome table",
+        "natural light",
+        "honest pleasure",
+        "sufficiency",
+        "balance"
+      ]
+    },
+    {
+      "scene_id": "scene-038",
+      "title": "Kapanış — İnsanın Gerçek Büyüklüğü",
+      "narration": "İnsan bedeniyle küçük, mahiyetiyle büyüktür. Gücü az, ihtiyacı çoktur. Dünya için fazla, ahiret için uygundur. Sadece lezzet peşinde yaşarsa düşer; kulluk ve tefekkürle yaşarsa yükselir. İnsana verilen büyük sermaye, küçük dünya hesabı için değil; ebedî hayat ve marifetullah içindir.",
+      "visual_note": "A person standing at the edge of the world at dawn, facing the rising light — small in body, oriented toward something vast and permanent.",
+      "keywords": [
+        "dawn",
+        "standing at edge",
+        "facing the light",
+        "small body vast purpose",
+        "eternal orientation"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "23-soz-2-mebhas-3-nukte",
+    "test_day": "day-21",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/23-soz-2-mebhas-3-nükte.md"
+    ]
+  }
+}
