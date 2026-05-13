@@ -1,0 +1,200 @@
+{
+  "source": {
+    "blog_post": "23-soz-2-mebhas-4-nukte",
+    "title": "23. Söz - 2. Mebhas - 4. Nükte",
+    "source_files": [
+      "src/content/blog/23-soz-2-mebhas-4-nükte.md"
+    ]
+  },
+  "test_day": "day-22",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Zayıflık her zaman kayıp değildir; bazen insanı gerçek güce bağlayan kapıdır.",
+      "title": "Zayıflık Neden Güce Dönüşür?",
+      "description": "Aczini bilen insan, sınırını inkâr etmek yerine sonsuz kudrete yönelir. #derinokuma #shorts #tefekkür #iman #dua #acz",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#acz"],
+      "thumbnail_or_cover_text": "ACZİN GÜCÜ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Zayıflık her zaman kayıp değildir; bazen insanı gerçek güce bağlayan kapıdır.",
+          "visual_note": "lone person under wide sky at sunrise, calm cinematic mood",
+          "keywords": ["wide sky", "sunrise", "solitude"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Yöneliş",
+          "narration": "İnsan kendi sınırını fark ettiğinde, her şeyi tek başına taşıma iddiasından kurtulur. Aczini inkâr etmek yerine onu dua kapısına çevirir.",
+          "visual_note": "open door with warm light, quiet interior, symbolic hope",
+          "keywords": ["open door", "warm light", "hope"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Sonuç",
+          "narration": "O zaman zayıflık onu küçültmez. Doğru merkeze bağlandığı için kalbi daha sakin, adımı daha sağlam olur.",
+          "visual_note": "mountain path with soft morning clouds, slow movement",
+          "keywords": ["mountain path", "clouds", "inner strength"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Dua sadece dilin söylediği şey değildir; bazen insanın hâli de dua eder.",
+      "title": "Dua Neden Sadece Söz Değil?",
+      "description": "İstemek, hazırlanmak ve doğru kapıya yönelmek aynı hakikatin farklı dilleridir. #derinokuma #shorts #dua #tefekkür #iman #tevekkül",
+      "hashtags": ["#derinokuma", "#shorts", "#dua", "#tefekkür", "#iman", "#tevekkül"],
+      "thumbnail_or_cover_text": "DUANIN DİLİ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Dua sadece dilin söylediği şey değildir; bazen insanın hâli de dua eder.",
+          "visual_note": "hands raised in quiet prayer, soft window light, peaceful mood",
+          "keywords": ["prayer hands", "window light", "peace"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Hâl",
+          "narration": "Muhtaçlığını gerçekten hissetmek, kibri bırakmak ve içten bir kapı aramak da duanın bir dilidir. Kalp bazen sözden önce yönelir.",
+          "visual_note": "person sitting quietly by window, reflective interior, soft daylight",
+          "keywords": ["quiet room", "reflection", "need"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Tavır",
+          "narration": "Çalışmak, aramak ve sebeplere sarılmak da doğru niyetle dua hâline gelir. İnsan ister, hazırlanır ve neticeyi Rabbine bırakır.",
+          "visual_note": "focused hands writing notes at desk, morning light, calm effort",
+          "keywords": ["writing hands", "effort", "morning light"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "İnsanı en çok yanıltan cümlelerden biri şudur: Ben yaptım.",
+      "title": "İnsan Neden Ben Yaptım Der?",
+      "description": "Emek değerlidir; fakat nimetin kaynağını silen sahiplenme kalbi gurura taşır. #derinokuma #shorts #tefekkür #tevazu #iman #şükür",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#tevazu", "#iman", "#şükür"],
+      "thumbnail_or_cover_text": "BEN YAPTIM MI?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "İnsanı en çok yanıltan cümlelerden biri şudur: Ben yaptım.",
+          "visual_note": "person looking at city from high viewpoint, muted cinematic colors",
+          "keywords": ["city viewpoint", "self reflection", "success"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Ayrım",
+          "narration": "Elbette insan emek verir, çalışır ve tercih eder. Ama vesile olmak başka, bütün neticenin kaynağı olduğunu sanmak başkadır.",
+          "visual_note": "craftsman working with wood, focused hands, natural workshop light",
+          "keywords": ["craftsman", "hands", "workshop"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Şükür",
+          "narration": "Başarıyı lütufla birlikte okuyabilen kalp şükre yaklaşır. Böyle bir insan, yükseldiğinde bile haddini unutmaz.",
+          "visual_note": "simple meal on table with warm light, quiet gratitude mood",
+          "keywords": ["simple table", "gratitude", "warm light"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Kulluk insanı küçültmez; yanlış kapılara esir olmaktan kurtarır.",
+      "title": "Kulluk İnsanı Nasıl Yüceltir?",
+      "description": "Asıl Sultan'a bağlanan kalp, geçici şeylerin baskısı altında ezilmez. #derinokuma #shorts #kulluk #iman #maneviyat #tevazu",
+      "hashtags": ["#derinokuma", "#shorts", "#kulluk", "#iman", "#maneviyat", "#tevazu"],
+      "thumbnail_or_cover_text": "KULLUKTA İZZET",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Kulluk insanı küçültmez; yanlış kapılara esir olmaktan kurtarır.",
+          "visual_note": "wide mosque interior with soft light beams, single person standing",
+          "keywords": ["mosque interior", "light beams", "devotion"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Esaret",
+          "narration": "İnsan nefsine, korkularına ve geçici şeylere bağlandıkça parçalanır. Her beklenti onu başka bir yöne çeker.",
+          "visual_note": "person in busy street standing still, blurred crowd, reflective mood",
+          "keywords": ["busy street", "stillness", "pressure"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "İzzet",
+          "narration": "Allah'a kulluk ise kalbi bir merkeze toplar. İnsan o zaman küçülmez; kendi hakiki değerini bulur.",
+          "visual_note": "sunlight across mosque courtyard, calm architectural scene",
+          "keywords": ["courtyard", "sunlight", "spiritual dignity"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Dünya, sahip olduğun için değil; ikram olarak okuyabildiğin için genişler.",
+      "title": "Dünya Nasıl Bir İkram Olur?",
+      "description": "Güneş, bahar, rızık ve hayat şükürle okununca kâinat yabancı olmaktan çıkar. #derinokuma #shorts #tefekkür #şükür #kâinat #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#şükür", "#kâinat", "#iman"],
+      "thumbnail_or_cover_text": "DÜNYA İKRAMDIR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Dünya, sahip olduğun için değil; ikram olarak okuyabildiğin için genişler.",
+          "visual_note": "sunlight entering home window, spring flowers, peaceful morning",
+          "keywords": ["home light", "spring flowers", "morning"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Temaşa",
+          "narration": "Güneş bir lamba gibi, bahar bir hediye gibi, yeryüzü bir sofra gibi görünebilir. Bu sahiplenme değil, şükürle temaşadır.",
+          "visual_note": "spring meadow with sunlight and flowers, slow cinematic nature footage",
+          "keywords": ["spring meadow", "sunlight", "gratitude"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Emanet",
+          "narration": "Böyle bakan insan eşyayı tüketilecek bir mal gibi değil, emanet gibi görür. Kalbi daha minnettar, eli daha ölçülü olur.",
+          "visual_note": "person gently watering plants in quiet garden, natural afternoon light",
+          "keywords": ["watering plants", "garden", "stewardship"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Aynı başarı insanı ya gurura götürür ya da şükre.",
+      "title": "Başarı Neden Kalbi Sınar?",
+      "description": "Bir kapı açıldığında kalbin onu nasıl okuduğu, insanın yönünü belli eder. #derinokuma #shorts #başarı #şükür #tevazu #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#başarı", "#şükür", "#tevazu", "#iman"],
+      "thumbnail_or_cover_text": "BAŞARI SINAVI",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Aynı başarı insanı ya gurura götürür ya da şükre.",
+          "visual_note": "forked road in countryside, soft cloudy sky, symbolic choice",
+          "keywords": ["forked road", "choice", "reflection"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Nefsin Okuması",
+          "narration": "Nefis, açılan kapıyı hemen kendine yazar. Zekâm, gücüm, becerim der ve yardım gördüğünü unutur.",
+          "visual_note": "shadowed face near mirror, low light, introspective scene",
+          "keywords": ["mirror", "shadow", "ego"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Tevhidin Okuması",
+          "narration": "Tevhit ise emeği inkâr etmez; ama nimeti lütuf olarak görür. Bu okuma insanı küçültmez, sakinleştirir.",
+          "visual_note": "calm sea horizon at dawn, peaceful wide frame, soft light",
+          "keywords": ["sea horizon", "dawn", "peace"]
+        }
+      ]
+    }
+  ]
+}

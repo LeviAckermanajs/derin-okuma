@@ -1,0 +1,86 @@
+{
+  "video_type": "shorts",
+  "source": "23-soz-2-mebhas-4-nukte",
+  "test_day": "day-22",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Zayıflık her zaman kayıp değildir; bazen insanı gerçek güce bağlayan kapıdır.",
+      "title_options": [
+        "Zayıflık Neden Güce Dönüşür?",
+        "Aczin İçindeki Gizli Kapı",
+        "İnsan Neden Acziyle Yükselir?"
+      ],
+      "selected_title": "Zayıflık Neden Güce Dönüşür?",
+      "description": "Aczini bilen insan, sınırını inkâr etmek yerine sonsuz kudrete yönelir. #derinokuma #shorts #tefekkür #iman #dua #acz",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#dua", "#acz"],
+      "thumbnail_or_cover_text": "ACZİN GÜCÜ"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Dua sadece dilin söylediği şey değildir; bazen insanın hâli de dua eder.",
+      "title_options": [
+        "Dua Neden Sadece Söz Değil?",
+        "Duanın Üç Sessiz Dili",
+        "İnsan Nasıl Hâliyle Dua Eder?"
+      ],
+      "selected_title": "Dua Neden Sadece Söz Değil?",
+      "description": "İstemek, hazırlanmak ve doğru kapıya yönelmek aynı hakikatin farklı dilleridir. #derinokuma #shorts #dua #tefekkür #iman #tevekkül",
+      "hashtags": ["#derinokuma", "#shorts", "#dua", "#tefekkür", "#iman", "#tevekkül"],
+      "thumbnail_or_cover_text": "DUANIN DİLİ"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "İnsanı en çok yanıltan cümlelerden biri şudur: Ben yaptım.",
+      "title_options": [
+        "İnsan Neden Ben Yaptım Der?",
+        "Başarıda Gizlenen Gurur",
+        "Emek Şükre Nasıl Dönüşür?"
+      ],
+      "selected_title": "İnsan Neden Ben Yaptım Der?",
+      "description": "Emek değerlidir; fakat nimetin kaynağını silen sahiplenme kalbi gurura taşır. #derinokuma #shorts #tefekkür #tevazu #iman #şükür",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#tevazu", "#iman", "#şükür"],
+      "thumbnail_or_cover_text": "BEN YAPTIM MI?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Kulluk insanı küçültmez; yanlış kapılara esir olmaktan kurtarır.",
+      "title_options": [
+        "Kulluk İnsanı Nasıl Yüceltir?",
+        "Kullukta Saklı İzzet",
+        "İnsan Neden Kullukla Özgürleşir?"
+      ],
+      "selected_title": "Kulluk İnsanı Nasıl Yüceltir?",
+      "description": "Asıl Sultan'a bağlanan kalp, geçici şeylerin baskısı altında ezilmez. #derinokuma #shorts #kulluk #iman #maneviyat #tevazu",
+      "hashtags": ["#derinokuma", "#shorts", "#kulluk", "#iman", "#maneviyat", "#tevazu"],
+      "thumbnail_or_cover_text": "KULLUKTA İZZET"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Dünya, sahip olduğun için değil; ikram olarak okuyabildiğin için genişler.",
+      "title_options": [
+        "Dünya Nasıl Bir İkram Olur?",
+        "Kâinat Neden Yabancı Değil?",
+        "Şükür Bakışı Dünyayı Değiştirir"
+      ],
+      "selected_title": "Dünya Nasıl Bir İkram Olur?",
+      "description": "Güneş, bahar, rızık ve hayat şükürle okununca kâinat yabancı olmaktan çıkar. #derinokuma #shorts #tefekkür #şükür #kâinat #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#şükür", "#kâinat", "#iman"],
+      "thumbnail_or_cover_text": "DÜNYA İKRAMDIR"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Aynı başarı insanı ya gurura götürür ya da şükre.",
+      "title_options": [
+        "Başarı Neden Kalbi Sınar?",
+        "Başarı Şükre Nasıl Dönüşür?",
+        "Gurur Mu Şükür Mü?"
+      ],
+      "selected_title": "Başarı Neden Kalbi Sınar?",
+      "description": "Bir kapı açıldığında kalbin onu nasıl okuduğu, insanın yönünü belli eder. #derinokuma #shorts #başarı #şükür #tevazu #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#başarı", "#şükür", "#tevazu", "#iman"],
+      "thumbnail_or_cover_text": "BAŞARI SINAVI"
+    }
+  ]
+}
