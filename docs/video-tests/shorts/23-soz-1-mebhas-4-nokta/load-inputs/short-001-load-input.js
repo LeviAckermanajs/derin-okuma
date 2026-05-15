@@ -5,6 +5,11 @@
 const rawInput = {
   input_version: '0.1.0',
   input_type: 'manual_scene_json',
+  runtime: {
+    repo_root: '/home/muhammet/projects/scene-blog-video',
+    renderer_url: 'http://127.0.0.1:8000'
+  },
+
 
   job: {
     title: 'İman İnsanı Sultan Eder',

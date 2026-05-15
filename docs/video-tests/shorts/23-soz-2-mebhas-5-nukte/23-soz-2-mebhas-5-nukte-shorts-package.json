@@ -1,0 +1,221 @@
+{
+  "source": {
+    "blog_post": "23-soz-2-mebhas-5-nukte",
+    "title": "23. Söz - 2. Mebhas - 5. Nükte",
+    "source_files": [
+      "src/content/blog/23-soz-2-mebhas-5-nükte.md"
+    ]
+  },
+  "test_day": "day-23",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan bu dünyaya başıboş gelmedi; bir görev ve bir emanet bilinciyle gönderildi.",
+      "title": "İnsan Neden Memur ve Misafir?",
+      "description": "Memur olmak vazife sahibi olmak, misafir olmak ise geçiciliği kabullenmektir. İkisi birden insanı dengede tutar. #derinokuma #shorts #tefekkür #iman #fıtrat #insan",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#fıtrat", "#insan"],
+      "thumbnail_or_cover_text": "MEMUR VE MİSAFİR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "İnsan bu dünyaya başıboş gelmedi; bir görev ve bir emanet bilinciyle gönderildi.",
+          "visual_note": "person arriving at doorstep of vast landscape, purposeful posture, dawn light",
+          "keywords": ["arrival dawn", "purposeful posture", "vast landscape"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Memur",
+          "narration": "Memur olmak, görevlendirilmiş olmaktır. İnsan yalnızca yiyip içmek, çalışmak için değil; kâinatı okumak, şükretmek, Allah'ı tanımak için gönderilmiştir. Bu vazifeyi taşıyan insan, anlam kazanır.",
+          "visual_note": "person walking purposefully through corridor with natural light streaming in",
+          "keywords": ["purposeful walk", "natural light corridor", "meaningful journey"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Misafir",
+          "narration": "Misafir ise sahip değildir; geçicidir. Her şeyin gerçek sahibine karşı edepli durur. Bu bilinç enaniyeti kırar ve insana huzur verir.",
+          "visual_note": "traveler with backpack pausing at scenic viewpoint, not ownership, just visiting",
+          "keywords": ["traveler viewpoint", "transient visitor", "scenic pause"]
+        },
+        {
+          "scene_id": "scene-004",
+          "title": "İkisi Birlikte",
+          "narration": "Memur vazifeyi, misafir geçiciliği hatırlatır. İkisi birlikte anlaşılınca insan ne çok bağlanır ne de varlığını boşa harcamış olur. Hem sorumludur hem de hürdür.",
+          "visual_note": "person sitting calmly at table with open hands, balance and peace",
+          "keywords": ["calm balance", "open hands", "inner peace"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İbadet sadece beden hareketleri değildir; önce anlamak, sonra yönelmektir.",
+      "title": "İbadet Neden Marifetten Doğar?",
+      "description": "Kâinatı okuyarak başlar, doğrudan muhatabiyetle tamamlanır. Tefekkür ve dua birbirinden ayrılmaz. #derinokuma #shorts #tefekkür #iman #ibadet #marifet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#ibadet", "#marifet"],
+      "thumbnail_or_cover_text": "İBADETİN SIRRI",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "İbadet sadece beden hareketleri değildir; önce anlamak, sonra yönelmektir.",
+          "visual_note": "person in contemplation by window, light illuminating thoughtful face",
+          "keywords": ["contemplation window", "thoughtful face", "soft light"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Gaibane Yol",
+          "narration": "Birinci yol kâinatı okumaktır. Düzeni, hikmeti, azameti fark etmek; arkasında bir Sâni olduğunu anlamak. Bu tefekkür, temaşa, hayret yoludur.",
+          "visual_note": "person sitting in forest, dappled light through leaves, peaceful observation",
+          "keywords": ["forest dappled light', 'peaceful observation', 'nature contemplation"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Hazırane Yol",
+          "narration": "İkinci yol ise tanıdığı Rabbine doğrudan yönelmektir; dua etmek, secde etmek, şükretmek. Önce tanırsın, sonra yönelirsin. Hakiki ibadet, marifetten doğar.",
+          "visual_note": "person in prayer silhouette at golden sunset, direct devotion",
+          "keywords": ["prayer silhouette", "golden sunset", "direct devotion"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Güzelliği görmek yetmez; güzelliğin sahibini ilan etmek de insanın görevidir.",
+      "title": "İnsan Neden Dellâl Olmak Zorunda?",
+      "description": "Sanatkârı devre dışı bırakarak doğayı güzel bulmak büyük bir yanılgıdır. Hakiki insan sanattan Sanatkâra geçer ve bunu ilan eder. #derinokuma #shorts #tefekkür #kâinat #iman #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#kâinat", "#iman", "#maneviyat"],
+      "thumbnail_or_cover_text": "SANATÇIYI GÖREN",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Güzelliği görmek yetmez; güzelliğin sahibini ilan etmek de insanın görevidir.",
+          "visual_note": "person gesturing toward expansive mountain landscape as if announcing",
+          "keywords": ["mountain announcement", "gesturing person", "expansive view"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Sanatkârsız Estetik",
+          "narration": "Doğayı güzel bulmak ama Sanatkârı devre dışı bırakmak; sanatın içinde kaybolmak. Bu, resmin güzelliğini görüp ressamı unutmak gibidir.",
+          "visual_note": "person staring at beautiful painting in gallery, appreciating art without looking for artist",
+          "keywords": ["gallery painting", "art appreciation", "artist unseen"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Dellâllık",
+          "narration": "Ama insan yalnızca seyirci değildir; ilancıdır. Kâinatın manasını yorumlar ve bu manayı duyurur. Güzelliği sahipsiz bırakmaz; sahibine bağlar.",
+          "visual_note": "person on hilltop with open arms, vast landscape behind, sense of proclamation",
+          "keywords": ["hilltop proclamation", "open arms", "vast landscape"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Çok şey biliyor olabilirsin, ama kalbin değer vermiyorsa yine de kör kalırsın.",
+      "title": "Bilgi Neden Yetmez?",
+      "description": "Akıl ayırır, kalp kıymet verir. Marifet hem aklî hem kalbî bir tanımadır; biri olmadan diğeri eksik kalır. #derinokuma #shorts #tefekkür #kalp #iman #marifet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#kalp", "#iman", "#marifet"],
+      "thumbnail_or_cover_text": "KALBİN İLMİ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Çok şey biliyor olabilirsin, ama kalbin değer vermiyorsa yine de kör kalırsın.",
+          "visual_note": "scholar surrounded by books looking distant and unmoved, knowledge without feeling",
+          "keywords": ["scholar unmoved", "books surrounding", "distant gaze"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "İdrak Terazisi",
+          "narration": "Akıl, varlığı okur, ayırır, tanır. Bu idrak terazisidir. Ama bu tanıma soyuk kalırsa, marifet yüzeyde yüzer.",
+          "visual_note": "balance scale on wooden table, precise but cold measurement",
+          "keywords": ["balance scale", "wooden table", "precise measurement"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Kalbin Kıymetşinaslığı",
+          "narration": "Kalbin kıymetşinaslığı ise aklın tanıdığına değer verir. Bir çiçeğe bakan akıl onu sınıflandırır; ama kalp o çiçekteki lütfü, inceliği, ihsanı hisseder. İkisi birlikte çalışınca marifet derinleşir.",
+          "visual_note": "person gently touching flower petals, eyes closed, feeling the texture and wonder",
+          "keywords": ["touching flower", "eyes closed wonder", "sensory appreciation"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İstemek küçüklük değildir; istemek, doğru adrese yönelmenin şerefidir.",
+      "title": "Dua Neden Kulluktur?",
+      "description": "Allah sonsuz zenginliğini gösteriyor; insanın cevabı istemek, dua etmek. İhtiyaç utanç değil, duanın kapısıdır. #derinokuma #shorts #dua #tefekkür #iman #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#dua", "#tefekkür", "#iman", "#kulluk"],
+      "thumbnail_or_cover_text": "DUANIN ŞEREF",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "İstemek küçüklük değildir; istemek, doğru adrese yönelmenin şerefidir.",
+          "visual_note": "hands raised toward sky in open supplication, warm light from above",
+          "keywords": ["hands raised sky", "supplication", "warm light above"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Sonsuz Hazine",
+          "narration": "Allah sonsuz zenginliğini, sonsuz rahmetini ve sonsuz imkânını gösteriyor. İşte bu karşısında insanın en doğal cevabı duadır. İhtiyaç duymak, istemek, yönelmek.",
+          "visual_note": "vast ocean stretching to horizon, abundance and endless possibility",
+          "keywords": ["vast ocean", "endless horizon", "abundance"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "İhtiyaç Kapıdır",
+          "narration": "İhtiyaç utanç değildir; duanın kapısıdır. Dua eden kimse güçsüzlüğünü değil, doğru adresi bulmuşluğunu ilan etmiş olur. Ve bu, kul olmanın en derin anlamıdır.",
+          "visual_note": "door opening to warm bright light, threshold between need and hope",
+          "keywords": ["door opening", "warm light threshold", "hope beyond door"]
+        },
+        {
+          "scene_id": "scene-004",
+          "title": "Sonuç",
+          "narration": "Yani istemek düşürmez; yükseltir. Çünkü her talep, sonsuz bir kaynağa yapılan bilinçli bir yöneliştir.",
+          "visual_note": "person standing tall after prayer, upright posture, inner dignity",
+          "keywords": ["standing tall", "after prayer", "inner dignity"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Allah birdir demek yetmez; bu birliği kullukta yaşamak gerekir.",
+      "title": "Tevhidin Son Halkası Nedir?",
+      "description": "Tevhid yalnızca zihinsel bir kabul değildir; tasdik, iman, iz'an, şehadet ve ubudiyet zinciriyle tamamlanır. #derinokuma #shorts #tevhid #iman #tefekkür #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tevhid", "#iman", "#tefekkür", "#kulluk"],
+      "thumbnail_or_cover_text": "TEVHİDİN SONU",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Allah birdir demek yetmez; bu birliği kullukta yaşamak gerekir.",
+          "visual_note": "single flame burning steadily in darkness, unwavering unity",
+          "keywords": ["single flame", "darkness", "unwavering unity"]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Birlik Mühürleri",
+          "narration": "Kâinata bakınca her yerde aynı imza, aynı desen, aynı üslup görülür. Sonsuz çeşitlilik içinde şaşırtıcı bir birlik. Bu birlik damgaları, aynı Sanatkâra işaret eder.",
+          "visual_note": "fractal patterns: nautilus shell, snowflake, fern — same pattern repeating at different scales",
+          "keywords": ["fractal patterns", "nautilus snowflake", "repeating unity"]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Tevhidin Basamakları",
+          "narration": "Tevhid bir zincirdir: tasdik, iman, iz'an, şehadet ve ubudiyet. Allah birdir önce anlaşılır, sonra kabul edilir, sonra içten benimsenir, sonra hayatta yaşanır.",
+          "visual_note": "chain links connecting, each link stronger than the last, progression to completion",
+          "keywords": ["chain links", "connected progression", "strengthening bonds"]
+        },
+        {
+          "scene_id": "scene-004",
+          "title": "Yaşanan Tevhid",
+          "narration": "Allah birdir deyip hayatını başka merkezlere teslim etmek, tam cevap değildir. Hakiki tevhid, birlik hakikatini kullukta yaşamaktır.",
+          "visual_note": "person in prostration, complete surrender, full body expression of unity",
+          "keywords": ["prayer prostration", "complete surrender", "unity in body"]
+        }
+      ]
+    }
+  ]
+}

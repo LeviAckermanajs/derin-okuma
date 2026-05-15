@@ -9,6 +9,12 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
+// ─── Runtime config ───────────────────────────────────────────────────────────
+// Override with env vars if needed; defaults target the laptop WSL setup.
+
+const REPO_ROOT    = process.env.SCENE_BLOG_VIDEO_ROOT         ?? '/home/muhammet/projects/scene-blog-video';
+const RENDERER_URL = process.env.SCENE_BLOG_VIDEO_RENDERER_URL ?? 'http://127.0.0.1:8000';
+
 // ─── CLI args ────────────────────────────────────────────────────────────────
 
 function parseArgs(argv) {
@@ -177,6 +183,11 @@ const rawInput = {
   input_version: '0.1.0',
   input_type: 'manual_scene_json',
 
+  runtime: {
+    repo_root: '${REPO_ROOT}',
+    renderer_url: '${RENDERER_URL}'
+  },
+
   job: {
     title: '${args.title.replace(/'/g, "\\'")}',
     description: 'TODO: Landscape video description.',
@@ -289,6 +300,11 @@ function shortsLoadInputJS(n) {
 const rawInput = {
   input_version: '0.1.0',
   input_type: 'manual_scene_json',
+
+  runtime: {
+    repo_root: '${REPO_ROOT}',
+    renderer_url: '${RENDERER_URL}'
+  },
 
   job: {
     title: 'TODO ${sid} title',

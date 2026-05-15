@@ -1,0 +1,92 @@
+{
+  "video_type": "shorts",
+  "source": "23-soz-2-mebhas-5-nukte",
+  "test_day": "day-23",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan bu dünyaya başıboş gelmedi; bir görev ve bir emanet bilinciyle gönderildi.",
+      "title_options": [
+        "İnsan Neden Memur ve Misafir?",
+        "Dünyaya Neden Memur Olarak Geldik?",
+        "Misafirlik İnsana Ne Öğretir?",
+        "Memur ve Misafir: İki Derin Kimlik"
+      ],
+      "selected_title": "İnsan Neden Memur ve Misafir?",
+      "description": "Memur olmak vazife sahibi olmak, misafir olmak ise geçiciliği kabullenmektir. İkisi birden insanı dengede tutar. #derinokuma #shorts #tefekkür #iman #fıtrat #insan",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#fıtrat", "#insan"],
+      "thumbnail_or_cover_text": "MEMUR VE MİSAFİR"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İbadet sadece beden hareketleri değildir; önce anlamak, sonra yönelmektir.",
+      "title_options": [
+        "İbadet Neden Marifetten Doğar?",
+        "Tefekkür Neden İbadet Sayılır?",
+        "Kulluk Nasıl Anlam Kazanır?",
+        "Önce Anla, Sonra Yönel"
+      ],
+      "selected_title": "İbadet Neden Marifetten Doğar?",
+      "description": "Kâinatı okuyarak başlar, doğrudan muhatabiyetle tamamlanır. Tefekkür ve dua birbirinden ayrılmaz. #derinokuma #shorts #tefekkür #iman #ibadet #marifet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#ibadet", "#marifet"],
+      "thumbnail_or_cover_text": "İBADETİN SIRRI"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Güzelliği görmek yetmez; güzelliğin sahibini ilan etmek de insanın görevidir.",
+      "title_options": [
+        "İnsan Neden Dellâl Olmak Zorunda?",
+        "Sanatı Görüp Sanatkârı Unutmak",
+        "Güzelliği Kime Bağlarız?",
+        "Kâinatın İlancısı Kim?"
+      ],
+      "selected_title": "İnsan Neden Dellâl Olmak Zorunda?",
+      "description": "Sanatkârı devre dışı bırakarak doğayı güzel bulmak büyük bir yanılgıdır. Hakiki insan sanattan Sanatkâra geçer ve bunu ilan eder. #derinokuma #shorts #tefekkür #kâinat #iman #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#kâinat", "#iman", "#maneviyat"],
+      "thumbnail_or_cover_text": "SANATÇIYI GÖREN"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Çok şey biliyor olabilirsin, ama kalbin değer vermiyorsa yine de kör kalırsın.",
+      "title_options": [
+        "Bilgi Neden Yetmez?",
+        "Kalp Neden Devrede Olmalı?",
+        "Akıl ile Kalp Neden Birlikte Çalışır?",
+        "Marifet Neden Hem Akıl Hem Kalptir?"
+      ],
+      "selected_title": "Bilgi Neden Yetmez?",
+      "description": "Akıl ayırır, kalp kıymet verir. Marifet hem aklî hem kalbî bir tanımadır; biri olmadan diğeri eksik kalır. #derinokuma #shorts #tefekkür #kalp #iman #marifet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#kalp", "#iman", "#marifet"],
+      "thumbnail_or_cover_text": "KALBİN İLMİ"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İstemek küçüklük değildir; istemek, doğru adrese yönelmenin şerefidir.",
+      "title_options": [
+        "Dua Neden Kulluktur?",
+        "İstemek Neden Küçültmez?",
+        "İhtiyaç Neden Utanç Değil?",
+        "Dua Neden Güçlülerin İşidir?"
+      ],
+      "selected_title": "Dua Neden Kulluktur?",
+      "description": "Allah sonsuz zenginliğini gösteriyor; insanın cevabı istemek, dua etmek. İhtiyaç utanç değil, duanın kapısıdır. #derinokuma #shorts #dua #tefekkür #iman #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#dua", "#tefekkür", "#iman", "#kulluk"],
+      "thumbnail_or_cover_text": "DUANIN ŞEREFİ"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Allah birdir demek yetmez; bu birliği kullukta yaşamak gerekir.",
+      "title_options": [
+        "Tevhidin Son Halkası Nedir?",
+        "Tevhid Neden Sadece Söz Değil?",
+        "Allah Birdir Demek Neden Yetmez?",
+        "Birliği Nasıl Yaşarsın?"
+      ],
+      "selected_title": "Tevhidin Son Halkası Nedir?",
+      "description": "Tevhid yalnızca zihinsel bir kabul değildir; tasdik, iman, iz'an, şehadet ve ubudiyet zinciriyle tamamlanır. #derinokuma #shorts #tevhid #iman #tefekkür #kulluk",
+      "hashtags": ["#derinokuma", "#shorts", "#tevhid", "#iman", "#tefekkür", "#kulluk"],
+      "thumbnail_or_cover_text": "TEVHİDİN SONU"
+    }
+  ]
+}
