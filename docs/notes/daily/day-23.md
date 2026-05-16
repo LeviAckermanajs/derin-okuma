@@ -1,4 +1,39 @@
-# Day-23 — 2026-05-15
+# Day-23 — 6 Shorts Full Batch n8n Smoke Test
+
+## Batch Test Sonucu
+
+`23-soz-2-mebhas-1-nukte` paketi için 6 Shorts videosu tek batch dosyasıyla n8n'de üretildi.
+
+- 6 item n8n'e verildi
+- 6 Shorts ayrı job olarak işlendi
+- 6 ayrı output oluştu
+- 6 Shorts videosu sorunsuz üretildi
+- Output çakışması görülmedi
+- İçerik karışması görülmedi
+- Batch pipeline full Shorts paketi için başarılı kabul edildi
+
+## Kullanılan Komut
+
+```bash
+npm run video:batch -- --slug 23-soz-2-mebhas-1-nukte --type shorts --run-id day23-full6-a --force
+```
+
+## Karar
+
+- Shorts batch pipeline doğrulandı
+- Manuel n8n paste sayısı 6'dan 1'e düştü
+- Önerilen akış: `video:validate` → `video:batch` → tek n8n paste
+- Sonraki güvenli otomasyon adımı: `video:publish-pack`
+
+## Rapor
+
+Detaylı rapor:
+
+`docs/video-tests/reports/day-23-video-batch-full-6-n8n-success.md`
+
+---
+
+# Önceki Day-23 Notu — 2026-05-15
 
 ## Scaffold → Doldurma
 
