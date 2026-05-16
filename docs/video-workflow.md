@@ -264,6 +264,7 @@ Bu komut:
 - Shorts metadata başlıklarına göre yeniden adlandırır
 - masaüstündeki blog klasörüne kopyalar
 - YouTube upload için dosya düzenini hazırlar
+- `export-index.md`, export edilen video dosyalarının yanında her Short için başlık, dosya adı, description, hashtagler ve thumbnail metnini de içerir. Böylece YouTube upload sırasında hem video dosyası hem metadata aynı klasörde görülebilir.
 
 Aktif akış:
 

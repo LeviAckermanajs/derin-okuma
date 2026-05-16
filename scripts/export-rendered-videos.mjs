@@ -194,13 +194,19 @@ function findRenderedVideo(jobDir, type) {
 function writeExportIndex(targetDir, folderName, rows, dryRun, force) {
   const indexPath = path.join(targetDir, 'export-index.md');
   const content = [
-    `# Export Index - ${folderName}`,
+    `# Export Index — ${folderName}`,
     '',
-    '## Shorts',
+    '## Shorts Summary',
     '',
     '| Short | Title | File |',
     '|---|---|---|',
     ...rows.map((row) => `| ${row.shortId} | ${row.title} | ${row.fileName} |`),
+    '',
+    '---',
+    '',
+    '## Upload Metadata',
+    '',
+    ...rows.flatMap((row) => buildShortMetadataSection(row)),
     ''
   ].join('\n');
 
@@ -214,6 +220,51 @@ function writeExportIndex(targetDir, folderName, rows, dryRun, force) {
   }
   fs.writeFileSync(indexPath, content, 'utf8');
   ok('export-index.md');
+}
+
+function buildShortMetadataSection(row) {
+  const lines = [
+    `### ${row.shortId} — ${row.title}`,
+    '',
+    `**File:** \`${row.fileName}\``,
+    ''
+  ];
+
+  if (isNonEmptyString(row.hook)) {
+    lines.push(
+      '**Hook:**',
+      '',
+      '```text',
+      row.hook.trim(),
+      '```',
+      ''
+    );
+  } else {
+    lines.push('**Hook:** Yok', '');
+  }
+
+  lines.push(
+    '**Description:**',
+    '',
+    '```text',
+    row.description.trim(),
+    '```',
+    '',
+    '**Hashtags:**',
+    '',
+    '```text',
+    row.hashtags.join('\n'),
+    '```',
+    '',
+    '**Thumbnail Text:**',
+    '',
+    '```text',
+    row.thumbnailText.trim(),
+    '```',
+    ''
+  );
+
+  return lines;
 }
 
 function copyVideo(source, target, dryRun, force) {
@@ -244,6 +295,10 @@ function exportShorts(args) {
 
   for (const short of metadata.shorts) {
     const title = titleForShort(short);
+    const description = short.description || '';
+    const thumbnailText = short.thumbnail_or_cover_text || '';
+    if (!isNonEmptyString(description)) warn(`${short.short_id} description is empty`);
+    if (!isNonEmptyString(thumbnailText)) warn(`${short.short_id} thumbnail_or_cover_text is empty`);
     const fileName = `${sanitizeFileName(title)}.mp4`;
     if (usedTargets.has(fileName)) fail(`duplicate target file name in export plan: ${fileName}`);
     usedTargets.add(fileName);
@@ -251,7 +306,17 @@ function exportShorts(args) {
     const jobDir = findShortJobDir(jobDirs, args.slug, short.short_id, args.runId);
     const source = findRenderedVideo(jobDir, 'shorts');
     const target = path.join(targetDir, fileName);
-    plan.push({ shortId: short.short_id, title, fileName, source, target });
+    plan.push({
+      shortId: short.short_id,
+      title,
+      fileName,
+      description,
+      hashtags: Array.isArray(short.hashtags) ? short.hashtags : [],
+      thumbnailText,
+      hook: short.hook || '',
+      source,
+      target
+    });
   }
 
   if (!args.dryRun) fs.mkdirSync(targetDir, { recursive: true });
