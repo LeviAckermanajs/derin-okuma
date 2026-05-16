@@ -33,3 +33,31 @@ Shorts: `docs/video-tests/shorts/23-soz-2-mebhas-3-nukte/load-inputs/short-001-l
 - short-004: İnsan Neden Hayvandan Daha Dertlidir?
 - short-005: Dua Neden İnsanın Asıl Silahıdır?
 - short-006: Ahsen-i Takvim'den Serçeye Düşmek Ne Demektir?
+
+---
+
+## video:batch --limit 2 n8n Smoke Test Sonucu
+
+Day-20'de üretilen batch dosyası (`23-soz-2-mebhas-1-nukte-shorts-batch-load-input.js`) Day-21'de n8n'de test edildi.
+
+### İlk Deneme
+
+- Sadece `short-001` üretildi
+- Sebep: `scene-blog-video` workflow Code node'ları `items[0]` / `return [{ json: ... }]` ile tek item varsayımıyla yazılmıştı
+
+### Düzeltme
+
+`scene-blog-video/workflows/day-12-reuse-audio-workflow.json` içinde 18 Code node güncellendi:
+- `items[0]` → `items.map()` / `items.flatMap()`
+- `job_id_hint` desteği eklendi (her batch item ayrı job ID alıyor)
+- Polling loop context node'ları `.first()` → `.all()[idx]`
+
+### Tekrar Test
+
+- `short-001` ve `short-002` ayrı job olarak işlendi
+- İki video ayrı output dosyası olarak oluştu
+- Output çakışması yok, içerik karışması yok
+
+**Karar: `video:batch --limit 2` n8n smoke test başarılı.**
+
+Bkz: `docs/video-tests/reports/day-21-video-batch-limit-2-n8n-success.md`

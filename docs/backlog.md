@@ -1,6 +1,6 @@
 # Backlog — Derin Okuma
 
-Son güncelleme: 2026-05-04 (Day-16 — 23. Söz landscape yayın metadata son kontrolü)
+Son güncelleme: 2026-05-16 (Day-21 — video:batch --limit 2 n8n smoke test başarılı)
 
 ---
 
@@ -85,7 +85,8 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 **Aşama 4 — Batch ve otomasyon (bkz. `docs/video-automation-roadmap.md`):**
 - [x] `video:validate` komutu ile video paket bütünlüğü doğrulama (JSON parse, JS syntax, yasaklı kalıp, filled kontrolü)
 - [x] `video:batch` komutu ile Shorts batch Load Input JS üretimi (6 dosya → 1 dosya)
-- [ ] `video:batch --limit 2` ile n8n batch smoke test (sadece short-001 + short-002)
+- [x] `video:batch --limit 2` ile n8n batch smoke test (sadece short-001 + short-002) — Day-21
+- [ ] `video:batch --limit 4` ile ara batch smoke test
 - [ ] 6 Shorts batch üretim testini tamamlama ve n8n item array davranışını doğrulama
 - [ ] `video:send` ile n8n Webhook gönderimi değerlendirme ve implementasyonu
 - [ ] `video:publish-pack` ile YouTube upload hazırlık dosyaları üretme (title/description/hashtag/thumbnail/pinned comment)

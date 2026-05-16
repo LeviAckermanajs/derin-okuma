@@ -122,9 +122,17 @@ docs/video-tests/batches/<slug>-shorts-batch-load-input.js
 3. n8n output'unda iki ayrı item çıktığını ve `job_id` çakışması olmadığını doğrula
 4. ElevenLabs'in her Short için ayrı TTS isteği açtığını doğrula (tek job değil iki ayrı job)
 5. Renderer output klasörlerini (`output/jobs/`) kontrol et — `short-001` ve `short-002` ayrı klasörde mi?
-6. Başarılı olursa `--limit 6` (veya limit olmadan) 6 Shorts batch testi yap
+6. Başarılı olursa `--limit 4` ara testiyle devam et, ardından `--limit 6` ile tam batch
 
 **ElevenLabs kredi koruması:** `--limit 2` adımı atlanmamalı; tüm 6 Short'u hatalı formatta göndermek bütçe israfına yol açar.
+
+### Day-21 Sonuçları
+
+- `--limit 2` testi başarılı (Day-21)
+- `short-001` ve `short-002` ayrı job olarak işlendi; output çakışması yok
+- n8n item array davranışı 2 item için doğrulandı
+- `scene-blog-video` workflow Code node'ları batch-safe hale getirildi
+- Sonraki kontrollü adım: `--limit 4` ile ara smoke test
 
 ---
 

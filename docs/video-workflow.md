@@ -223,7 +223,14 @@ Mevcut manuel akışı adım adım kısaltmak için planlanan komutlar:
 
 Detaylı tasarım, smoke test sırası ve riskler için bkz: `docs/video-automation-roadmap.md`
 
-**Day-20 otomasyon notu:** `video:validate` ve `video:batch --limit 2` implement edildi. `video:batch` şimdilik yalnızca Shorts için desteklenir; batch dosyası n8n Load Input Code node'a tek kez yapıştırılır ve birden fazla item döndürür. İlk n8n batch testi mutlaka `--limit 2` ile, sadece `short-001` ve `short-002` üzerinden yapılmalıdır.
+**Day-20 otomasyon notu:** `video:validate` ve `video:batch --limit 2` implement edildi. `video:batch` şimdilik yalnızca Shorts için desteklenir; batch dosyası n8n Load Input Code node'a tek kez yapıştırılır ve birden fazla item döndürür.
+
+**Day-21 batch smoke test notu:** `video:batch --limit 2` n8n smoke test başarılı oldu.
+- `short-001` ve `short-002` ayrı job olarak işlendi
+- İki video ayrı output dosyası olarak oluştu
+- Output çakışması ve içerik karışması görülmedi
+- n8n workflow Code node'ları `items.map()` / `items.flatMap()` ile batch-safe hale getirildi (`scene-blog-video`)
+- 6 Shorts batch testine geçmeden önce `--limit 4` ara testi önerilir
 
 ---
 
