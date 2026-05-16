@@ -250,6 +250,36 @@ Detaylı tasarım, smoke test sırası ve riskler için bkz: `docs/video-automat
 
 ---
 
+## Video Export Komutu
+
+Render edilen videoları `scene-blog-video/output/jobs` altından masaüstündeki YouTube hazırlık klasörüne başlıklı şekilde kopyalamak için:
+
+```bash
+npm run video:export -- --slug <slug> --type shorts --run-id <run-id> --export-root "<desktop-folder>"
+```
+
+Bu komut:
+
+- renderer output klasörlerinden `.mp4` dosyalarını bulur
+- Shorts metadata başlıklarına göre yeniden adlandırır
+- masaüstündeki blog klasörüne kopyalar
+- YouTube upload için dosya düzenini hazırlar
+
+Aktif akış:
+
+```text
+video:prep
+→ Claude fill prompt
+→ video:validate
+→ video:batch
+→ n8n tek paste
+→ video:publish-pack
+→ video:export
+→ YouTube upload
+```
+
+---
+
 ## Video Prep Scaffold Komutu
 
 Yeni bir blog yazısı için tek komutla standart video üretim dosya iskeleti oluşturmak:

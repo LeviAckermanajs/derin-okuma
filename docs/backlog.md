@@ -90,6 +90,8 @@ Bu kısım uzak gelecek değil, aktif kullanım ihtiyacıdır.
 - [x] 6 Shorts batch üretim testini tamamlama ve n8n item array davranışını doğrulama — Day-23
 - [ ] `video:send` ile n8n Webhook gönderimi değerlendirme ve implementasyonu
 - [x] `video:publish-pack` ile YouTube upload hazırlık dosyaları üretme (title/description/hashtag/thumbnail/pinned comment)
+- [x] `video:export` ile render edilen Shorts videolarını başlıklı şekilde masaüstü klasörüne kopyalama
+- [ ] `video:export` komutunu n8n final step olarak otomatik çağırmayı değerlendirme
 
 ---
 

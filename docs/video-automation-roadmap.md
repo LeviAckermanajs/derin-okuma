@@ -252,6 +252,25 @@ Bu aşama kasıtlı olarak ileri bırakılmıştır.
 
 ---
 
+## Video Export / Desktop Delivery
+
+Render edilen videoların `output/jobs` içinden masaüstündeki YouTube hazırlık klasörüne başlıklı şekilde kopyalanması.
+
+**Komut:**
+
+```bash
+npm run video:export -- --slug <slug> --type shorts --run-id <run-id> --export-root "<desktop-folder>"
+```
+
+**Day-26 uygulama notu:**
+
+- `video:export` implement edildi.
+- İlk test `10-soz-hasir-risalesi-6-12-suret` için `day25-full6-b` run id ile yapıldı.
+- Renderer çıktıları Shorts metadata başlıklarına göre yeniden adlandırılıp masaüstü export klasörüne kopyalanır.
+- Bu adım YouTube API kullanmaz; manuel upload öncesi dosya teslimini düzenler.
+
+---
+
 ## Önerilen Day Planı
 
 | Gün | Hedef |
