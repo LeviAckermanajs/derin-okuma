@@ -232,6 +232,13 @@ Detaylı tasarım, smoke test sırası ve riskler için bkz: `docs/video-automat
 - n8n workflow Code node'ları `items.map()` / `items.flatMap()` ile batch-safe hale getirildi (`scene-blog-video`)
 - 6 Shorts batch testine geçmeden önce `--limit 4` ara testi önerilir
 
+**Day-22 batch smoke test notu:** `video:batch --limit 4` n8n smoke test başarılı oldu.
+- `short-001`, `short-002`, `short-003`, `short-004` ayrı job olarak işlendi
+- Dört video ayrı output dosyası olarak oluştu
+- Output çakışması ve içerik karışması görülmedi
+- `--run-id` kullanımı batch tekrar testlerinde standart hale geldi
+- Sonraki adım 6 Shorts tam batch testidir
+
 ---
 
 ## Video Prep Scaffold Komutu

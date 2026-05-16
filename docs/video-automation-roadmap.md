@@ -1,6 +1,6 @@
 # Video Automation Roadmap
 
-Son güncelleme: 2026-05-08
+Son güncelleme: 2026-05-16
 
 ---
 
@@ -134,6 +134,14 @@ docs/video-tests/batches/<slug>-shorts-batch-load-input.js
 - `scene-blog-video` workflow Code node'ları batch-safe hale getirildi
 - Sonraki kontrollü adım: `--limit 4` ile ara smoke test
 
+### Day-22 Sonuçları
+
+- `--limit 4` testi başarılı (Day-22)
+- Dört item için n8n item handling, async context ve render polling doğrulandı
+- `short-001`, `short-002`, `short-003`, `short-004` ayrı job/output olarak üretildi
+- Output çakışması ve içerik karışması görülmedi
+- Sonraki kontrollü adım: `--limit 6` ile tam Shorts batch
+
 ---
 
 ## Aşama 4 — n8n Webhook Gönderimi
@@ -233,11 +241,12 @@ Bu aşama kasıtlı olarak ileri bırakılmıştır.
 |---|---|
 | Day-20 | `video:validate` tasarımı + `video:batch` tasarımı; mevcut `23-soz-2-mebhas-2-nukte` paketi üzerinde manuel doğrulama |
 | Day-21 | `video:batch --limit 2` implementasyonu + `23-soz-2-mebhas-2-nukte` üzerinde smoke test |
-| Day-22 | 6 Shorts batch smoke test; n8n item array davranışı ve job_id doğrulaması |
-| Day-23 | `video:validate` implementasyonu; doğrulama raporu çıktısı testi |
-| Day-24 | n8n Webhook tasarımı; `video:send` implementasyonu değerlendirmesi |
-| Day-25 | `video:publish-pack` implementasyonu |
-| Day-26+ | YouTube API otomasyonu değerlendirmesi |
+| Day-22 | `video:batch --limit 4` ara smoke test |
+| Day-23 | 6 Shorts batch smoke test; n8n item array davranışı ve job_id doğrulaması |
+| Day-24 | `video:validate` implementasyonu; doğrulama raporu çıktısı testi |
+| Day-25 | n8n Webhook tasarımı; `video:send` implementasyonu değerlendirmesi |
+| Day-26 | `video:publish-pack` implementasyonu |
+| Day-27+ | YouTube API otomasyonu değerlendirmesi |
 
 ---
 

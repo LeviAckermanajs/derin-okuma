@@ -1,4 +1,4 @@
-# Day-22 — Video Prep
+# Day-22 — Video Prep + Batch Smoke Test
 
 ## Bugünün Amacı
 
@@ -32,3 +32,18 @@
 Shorts testleri için:
 
 `docs/video-tests/shorts/23-soz-2-mebhas-4-nukte/load-inputs/short-001-load-input.js` ile başlanacak.
+
+## Day-22 Batch Smoke Test
+
+`video:batch --limit 4` testi başarıyla tamamlandı.
+
+- Kullanılan komut: `npm run video:batch -- --slug 23-soz-2-mebhas-1-nukte --type shorts --limit 4 --run-id day22-limit4-d --force`
+- n8n'e 4 item verildi
+- `short-001`, `short-002`, `short-003`, `short-004` ayrı job olarak işlendi
+- 4 ayrı output/job klasörü oluştu
+- 4 Shorts videosu sorunsuz üretildi
+- Output çakışması ve içerik karışması görülmedi
+
+## Sonraki Kontrol
+
+6 Shorts tam batch testine geçmeden önce bu sonuç `docs/video-tests/reports/day-22-video-batch-limit-4-n8n-success.md` dosyasında belgelendi.
