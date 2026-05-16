@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // export-rendered-videos.mjs - copy rendered videos to a YouTube upload folder
 
+import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import process from 'process';
@@ -19,7 +20,10 @@ function parseArgs(argv) {
     exportRoot: process.env.DERIN_OKUMA_EXPORT_ROOT || null,
     folderName: null,
     force: false,
-    dryRun: false
+    dryRun: false,
+    wait: false,
+    waitTimeoutSeconds: 900,
+    waitIntervalSeconds: 10
   };
 
   for (let i = 0; i < argv.length; i++) {
@@ -32,6 +36,9 @@ function parseArgs(argv) {
     else if (arg === '--folder-name' && argv[i + 1]) args.folderName = argv[++i];
     else if (arg === '--force') args.force = true;
     else if (arg === '--dry-run') args.dryRun = true;
+    else if (arg === '--wait') args.wait = true;
+    else if (arg === '--wait-timeout-seconds' && argv[i + 1]) args.waitTimeoutSeconds = parseInt(argv[++i], 10);
+    else if (arg === '--wait-interval-seconds' && argv[i + 1]) args.waitIntervalSeconds = parseInt(argv[++i], 10);
     else fail(`Unknown or incomplete option: ${arg}`);
   }
 
@@ -174,6 +181,58 @@ function walkFiles(dir) {
   return results;
 }
 
+// Path segments and basenames that must never be selected as export sources.
+// Probe files, temp clips, and asset staging directories are all excluded.
+const _EXCLUDED_SEGMENTS = new Set(['assets', '_probe', '_probe_tmp', 'tmp', 'temp', 'preview']);
+const _EXCLUDED_BASENAMES = new Set(['_probe_tmp_0.mp4', 'probe.mp4', 'preview.mp4']);
+
+function isSafeExportMp4(filePath) {
+  for (const segment of filePath.split(path.sep)) {
+    if (_EXCLUDED_SEGMENTS.has(segment.toLowerCase())) return false;
+  }
+  return !_EXCLUDED_BASENAMES.has(path.basename(filePath).toLowerCase());
+}
+
+function sleepSync(ms) {
+  try {
+    execSync(`sleep ${Math.ceil(ms / 1000)}`);
+  } catch {
+    // ignore — sleep errors are non-fatal
+  }
+}
+
+function waitForRenders(items, timeoutSeconds, intervalSeconds) {
+  const startTime = Date.now();
+  const timeoutMs = timeoutSeconds * 1000;
+  const intervalMs = intervalSeconds * 1000;
+
+  console.log(`[WAIT] Waiting for ${items.length} final renders...`);
+
+  while (true) {
+    const notReady = items.filter((item) => !fs.existsSync(item.renderPath));
+
+    if (notReady.length === 0) {
+      ok(`${items.length}/${items.length} final renders ready`);
+      return;
+    }
+
+    const elapsed = Date.now() - startTime;
+    if (elapsed >= timeoutMs) {
+      for (const item of notReady) {
+        console.error(`[WAIT] ${item.shortId} not ready: ${item.renderPath}`);
+      }
+      fail(`Wait timeout (${timeoutSeconds}s): ${notReady.length}/${items.length} renders not ready`);
+    }
+
+    const readyCount = items.length - notReady.length;
+    console.log(`[WAIT] ${readyCount}/${items.length} ready, checking again in ${intervalSeconds}s`);
+    for (const item of notReady) {
+      console.log(`[WAIT] ${item.shortId} not ready: ${item.renderPath}`);
+    }
+    sleepSync(intervalMs);
+  }
+}
+
 function findRenderedVideo(jobDir, type) {
   const preferred = type === 'shorts'
     ? path.join(jobDir, 'renders', 'shorts-main.mp4')
@@ -185,7 +244,9 @@ function findRenderedVideo(jobDir, type) {
     : null;
   if (fallbackPreferred && fs.existsSync(fallbackPreferred)) return fallbackPreferred;
 
-  const mp4s = walkFiles(jobDir).filter((filePath) => filePath.toLowerCase().endsWith('.mp4'));
+  const mp4s = walkFiles(jobDir).filter(
+    (filePath) => filePath.toLowerCase().endsWith('.mp4') && isSafeExportMp4(filePath)
+  );
   if (mp4s.length === 0) fail(`rendered .mp4 not found in ${jobDir}`);
   if (mp4s.length > 1) warn(`${path.basename(jobDir)} has ${mp4s.length} .mp4 files; using newest`);
   return newest(mp4s);
@@ -277,7 +338,8 @@ function copyVideo(source, target, dryRun, force) {
 
 function exportShorts(args) {
   const metadata = loadShortsMetadata(args.slug);
-  ok(`Loaded shorts metadata: ${metadata.shorts.length} shorts`);
+  const expectedCount = metadata.shorts.length;
+  ok(`Loaded shorts metadata: ${expectedCount} shorts`);
 
   const jobsRoot = path.resolve(expandPath(args.jobsRoot));
   const exportRoot = path.resolve(expandPath(args.exportRoot));
@@ -287,8 +349,12 @@ function exportShorts(args) {
   ok(`Jobs root: ${jobsRoot}`);
   ok(`Export root: ${exportRoot}`);
   ok(`Target folder: ${folderName}`);
+  ok(`Expected shorts: ${expectedCount}`);
+  if (args.wait) ok(`Wait mode: on (timeout=${args.waitTimeoutSeconds}s interval=${args.waitIntervalSeconds}s)`);
   if (args.dryRun) ok('Dry run: no files will be copied');
 
+  // Phase 1: resolve job folders and render paths (no existence check yet).
+  // Shorts always use renders/shorts-main.mp4 — no recursive fallback.
   const jobDirs = listJobDirs(jobsRoot);
   const plan = [];
   const usedTargets = new Set();
@@ -304,7 +370,9 @@ function exportShorts(args) {
     usedTargets.add(fileName);
 
     const jobDir = findShortJobDir(jobDirs, args.slug, short.short_id, args.runId);
-    const source = findRenderedVideo(jobDir, 'shorts');
+    // Strict: only renders/shorts-main.mp4 is accepted as the final render output.
+    // Probe, temp, and asset staging files are never selected.
+    const renderPath = path.join(jobDir, 'renders', 'shorts-main.mp4');
     const target = path.join(targetDir, fileName);
     plan.push({
       shortId: short.short_id,
@@ -314,17 +382,32 @@ function exportShorts(args) {
       hashtags: Array.isArray(short.hashtags) ? short.hashtags : [],
       thumbnailText,
       hook: short.hook || '',
-      source,
+      renderPath,
       target
     });
   }
 
+  // Phase 2: wait for renders or fail immediately.
+  if (args.wait) {
+    waitForRenders(plan, args.waitTimeoutSeconds, args.waitIntervalSeconds);
+  } else {
+    for (const item of plan) {
+      if (!fs.existsSync(item.renderPath)) {
+        fail(`final render not found for ${item.shortId}: ${item.renderPath}`);
+      }
+    }
+  }
+
+  // Phase 3: copy to export folder.
   if (!args.dryRun) fs.mkdirSync(targetDir, { recursive: true });
 
   for (const item of plan) {
-    copyVideo(item.source, item.target, args.dryRun, args.force);
+    copyVideo(item.renderPath, item.target, args.dryRun, args.force);
     ok(`${item.shortId} -> ${item.fileName}`);
   }
+
+  ok(`Ready renders: ${plan.length}`);
+  ok(`Copied videos: ${args.dryRun ? 0 : plan.length}`);
 
   writeExportIndex(targetDir, folderName, plan, args.dryRun, args.force);
   return { count: plan.length, copied: args.dryRun ? 0 : plan.length, targetDir, folderName, plan };
