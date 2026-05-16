@@ -1,0 +1,122 @@
+{
+  "video_type": "shorts",
+  "source": "vesvesenin-mahiyeti-kalbin-bes-yarasi-ve-bes-merhem",
+  "test_day": "day-27",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Aklına gelen her düşünce gerçekten senin düşüncen mi?",
+      "title_options": [
+        "Aklına Gelen Her Şey Sen misin?",
+        "Her Düşünce Kalbin Sözü mü?",
+        "Aklındaki Ses Sen Değilsin"
+      ],
+      "selected_title": "Aklına Gelen Her Şey Sen misin?",
+      "description": "Zihne uğrayan her düşünce kalbin hükmü değildir. Vesvese çoğu zaman bu ayrım unutulunca büyür.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "HER DÜŞÜNCE SEN Mİ?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Vesvese çoğu zaman düşünceden değil, ona verdiğin korkudan beslenir.",
+      "title_options": [
+        "Vesvese Neden Büyür?",
+        "Vesvese Nasıl Söner?",
+        "Korku Vesveseyi Nasıl Büyütür?"
+      ],
+      "selected_title": "Vesvese Neden Büyür?",
+      "description": "Vesveseyi sürekli incelemek onu küçültmez; çoğu zaman daha da görünür hale getirir. Tanımak ve sakin kalmak ilk merhemdir.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "VESVESE NEDEN BÜYÜR?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Namazda aklın dağılınca ilk yapman gereken şey kendini suçlamak değil.",
+      "title_options": [
+        "Namazda Dağılınca Ne Yapmalı?",
+        "Namazda Zihin Neden Dağılır?",
+        "Panik Etme, Namaza Dön"
+      ],
+      "selected_title": "Namazda Dağılınca Ne Yapmalı?",
+      "description": "Namazdaki dağınıklık her zaman iradeli değildir. Fark ettiğin anda sakin biçimde dönmek, vesveseyi büyütmemektir.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "SAKİNCE GERİ DÖN"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İbadeti güzel yapmak başka, ibadeti takıntıya çevirmek başka.",
+      "title_options": [
+        "İbadette Mükemmeliyetçilik Tuzak mı?",
+        "Kusursuzluk İbadeti Zorlaştırır mı?",
+        "Takva mı, Takıntı mı?"
+      ],
+      "selected_title": "İbadette Mükemmeliyetçilik Tuzak mı?",
+      "description": "Hassasiyet ibadeti güzelleştirir; fakat bitmeyen tekrar ve korku ibadetin huzurunu yaralayabilir.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "KUSURSUZLUK TUZAĞI"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bir ihtimali düşünmek, ona inanmak değildir.",
+      "title_options": [
+        "Şüphe İmanı Bozar mı?",
+        "Delilsiz Şüphe Ne Kadar Güçlü?",
+        "İhtimal İman Değildir"
+      ],
+      "selected_title": "Şüphe İmanı Bozar mı?",
+      "description": "Delilsiz ihtimal yakîni yıkmaz. Bir iddiayı duymak veya zihinden geçirmek, onu tasdik etmek anlamına gelmez.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "ŞÜPHE Mİ, KURUNTU MU?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kalbini suçlamadan önce vesvesenin hilesini tanı.",
+      "title_options": [
+        "Kalp Vesveseden Nasıl Rahatlar?",
+        "Vesvese Kalbi Neden Yorar?",
+        "Kalbin Beş Merhemi"
+      ],
+      "selected_title": "Kalp Vesveseden Nasıl Rahatlar?",
+      "description": "Vesveseyi tanımak, kalbi suçlamaktan daha iyidir. Sükunet, bilgi ve Allah’a sığınmak insanı yeniden merkeze çağırır.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "KALBİN MERHEMİ"
+    }
+  ]
+}

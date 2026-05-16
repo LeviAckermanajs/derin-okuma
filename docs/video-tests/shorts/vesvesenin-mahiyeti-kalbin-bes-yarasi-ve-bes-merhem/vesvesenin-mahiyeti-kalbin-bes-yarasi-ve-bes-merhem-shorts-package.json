@@ -1,0 +1,290 @@
+{
+  "source": {
+    "blog_post": "vesvesenin-mahiyeti-kalbin-bes-yarasi-ve-bes-merhem",
+    "title": "Vesvesenin Mahiyeti, Kalbin Beş Yarası ve Beş Merhem",
+    "source_files": [
+      "src/content/blog/21-soz-2-makam.md"
+    ]
+  },
+  "test_day": "day-27",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Aklına gelen her düşünce gerçekten senin düşüncen mi?",
+      "title": "Aklına Gelen Her Şey Sen misin?",
+      "description": "Zihne uğrayan her düşünce kalbin hükmü değildir. Vesvese çoğu zaman bu ayrım unutulunca büyür.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "HER DÜŞÜNCE SEN Mİ?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Aklına gelen her düşünce gerçekten senin düşüncen mi? Bazen zihin bir kelime, bir görüntü, bir korku üretir; kalp ise ondan rahatsız olur.",
+          "visual_note": "person looking at reflections in a window, soft evening light",
+          "keywords": [
+            "reflection",
+            "thoughts",
+            "evening light"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Rahatsız olmak, o şeyi sahiplendiğin anlamına gelmez. Hatta çoğu zaman kalbin onu kabul etmediğini gösterir.",
+          "visual_note": "calm person stepping away from noisy street, cinematic contrast",
+          "keywords": [
+            "noise",
+            "stepping away",
+            "calm"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Vesvese, uğrayan düşünceyi kalbin kararı gibi göstererek büyür. Mesafe koyduğunda gücü azalır.",
+          "visual_note": "mist moving past an open doorway, symbolic quiet scene",
+          "keywords": [
+            "mist",
+            "doorway",
+            "distance"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Vesvese çoğu zaman düşünceden değil, ona verdiğin korkudan beslenir.",
+      "title": "Vesvese Neden Büyür?",
+      "description": "Vesveseyi sürekli incelemek onu küçültmez; çoğu zaman daha da görünür hale getirir. Tanımak ve sakin kalmak ilk merhemdir.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "VESVESE NEDEN BÜYÜR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Vesvese çoğu zaman düşünceden değil, ona verdiğin korkudan beslenir. Küçük bir uğrama, sürekli incelenince büyür.",
+          "visual_note": "small shadow growing on a wall, dim cinematic light",
+          "keywords": [
+            "shadow",
+            "fear",
+            "growth"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Niye geldi, ne anlama geliyor, kalbim bozuldu mu diye döndükçe zihin yorulur. Artık mesele düşünce değil, düşünceye verilen anlam olur.",
+          "visual_note": "person overthinking at a desk, papers and low lamp light",
+          "keywords": [
+            "overthinking",
+            "desk",
+            "lamp"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Mahiyetini bildiğinde vesvese eski ağırlığını kaybeder. Her kuruntuya cevap yetiştirmek yerine merkeze dönmek gerekir.",
+          "visual_note": "steady compass on wooden table, calm focused shot",
+          "keywords": [
+            "compass",
+            "focus",
+            "return"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Namazda aklın dağılınca ilk yapman gereken şey kendini suçlamak değil.",
+      "title": "Namazda Dağılınca Ne Yapmalı?",
+      "description": "Namazdaki dağınıklık her zaman iradeli değildir. Fark ettiğin anda sakin biçimde dönmek, vesveseyi büyütmemektir.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "SAKİNCE GERİ DÖN",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Namazda aklın dağılınca ilk yapman gereken şey kendini suçlamak değil. Zihin bazen istemeden başka bir hatıraya sıçrar.",
+          "visual_note": "quiet prayer rug with sunlight on the floor, peaceful room",
+          "keywords": [
+            "prayer rug",
+            "sunlight",
+            "peace"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bir düşünce başka bir düşünceyi çağırır; sonra insan kendini çok uzak bir yerde bulur. Bu fark ediş, dönüş kapısıdır.",
+          "visual_note": "chain links on wood, shallow depth of field, symbolic",
+          "keywords": [
+            "chain links",
+            "thoughts",
+            "awareness"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Panikle iç muhasebeye dalmak yerine ibadete dön. Vesvesenin istediği, dönüşünü değil suçluluğunu uzatmaktır.",
+          "visual_note": "person turning toward warm light from a doorway",
+          "keywords": [
+            "return",
+            "warm light",
+            "doorway"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İbadeti güzel yapmak başka, ibadeti takıntıya çevirmek başka.",
+      "title": "İbadette Mükemmeliyetçilik Tuzak mı?",
+      "description": "Hassasiyet ibadeti güzelleştirir; fakat bitmeyen tekrar ve korku ibadetin huzurunu yaralayabilir.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "KUSURSUZLUK TUZAĞI",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İbadeti güzel yapmak başka, ibadeti takıntıya çevirmek başka. Daha iyisini ararken insan bazen hiçbir şeye tamam diyemez.",
+          "visual_note": "person repeatedly washing hands at a sink, subdued light",
+          "keywords": [
+            "repetition",
+            "sink",
+            "anxiety"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Abdesti tekrar etmek, niyeti yeniden kurmak, aynı kelimeye takılmak huzuru artırmayabilir. Vesvese, rahatlama hissini sürekli erteler.",
+          "visual_note": "circular stairs, person paused, moody architecture",
+          "keywords": [
+            "circular stairs",
+            "loop",
+            "uncertainty"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ölçüsüne uygun yapılan amel için bitmeyen kuşkuya teslim olma. Kabul için dua et, eksiklik için istiğfar et ve devam et.",
+          "visual_note": "open hands in prayer, warm golden light, calm background",
+          "keywords": [
+            "prayer hands",
+            "humility",
+            "golden light"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bir ihtimali düşünmek, ona inanmak değildir.",
+      "title": "Şüphe İmanı Bozar mı?",
+      "description": "Delilsiz ihtimal yakîni yıkmaz. Bir iddiayı duymak veya zihinden geçirmek, onu tasdik etmek anlamına gelmez.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "ŞÜPHE Mİ, KURUNTU MU?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Bir ihtimali düşünmek, ona inanmak değildir. İnsan bazen zihnine uğrayan bir soruyu kalbinin inkârı sanır.",
+          "visual_note": "person reading at night with a desk lamp, thoughtful mood",
+          "keywords": [
+            "reading",
+            "night lamp",
+            "question"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Tasavvur başka, tasdik başkadır. Bir iddiayı anlamaya çalışmak, onu kabul etmek anlamına gelmez.",
+          "visual_note": "two forest paths, person standing still, contemplative",
+          "keywords": [
+            "two paths",
+            "choice",
+            "reflection"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Delilden doğmayan ihtimal, sağlam imanı sarsacak güçte değildir. Ya şöyleyse diye başlayan sonsuz kapılar, vesvesenin alanıdır.",
+          "visual_note": "solid stone bridge surrounded by thin fog, stable structure",
+          "keywords": [
+            "stone bridge",
+            "fog",
+            "certainty"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kalbini suçlamadan önce vesvesenin hilesini tanı.",
+      "title": "Kalp Vesveseden Nasıl Rahatlar?",
+      "description": "Vesveseyi tanımak, kalbi suçlamaktan daha iyidir. Sükunet, bilgi ve Allah’a sığınmak insanı yeniden merkeze çağırır.\n\n#derinokuma #shorts #tefekkür #iman #vesvese",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vesvese"
+      ],
+      "thumbnail_or_cover_text": "KALBİN MERHEMİ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Kalbini suçlamadan önce vesvesenin hilesini tanı. Her korku, kalbin hakikati gibi konuşmaz.",
+          "visual_note": "person stepping away from a dark mirror, symbolic scene",
+          "keywords": [
+            "mirror",
+            "distance",
+            "deception"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bilgi korkuyu azaltır; sükunet vesveseyi besleyen telaşı keser. İnsan ne yaşadığını anladıkça kalbine daha merhametli bakar.",
+          "visual_note": "window opening in a dark room, sunlight entering",
+          "keywords": [
+            "window light",
+            "clarity",
+            "mercy"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Sonra kalp Rabbine sığınır. Vesveseyi tanır, ona teslim olmaz ve rahmetin genişliğine yönelir.",
+          "visual_note": "calm landscape after rain, sunlight through clouds, hopeful",
+          "keywords": [
+            "after rain",
+            "sunlight",
+            "hope"
+          ]
+        }
+      ]
+    }
+  ]
+}
