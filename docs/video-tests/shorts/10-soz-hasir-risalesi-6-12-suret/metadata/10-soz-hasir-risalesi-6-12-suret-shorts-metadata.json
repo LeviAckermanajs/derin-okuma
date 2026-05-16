@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "10-soz-hasir-risalesi-6-12-suret",
+  "test_day": "day-25",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Dünya geçici diye anlamsız değildir; geçici olduğu için imtihan yeridir.",
+      "title_options": [
+        "Dünya Neden Son Yurt Değil?",
+        "Geçicilik Neyi Haber Verir?",
+        "Dünya Neden Misafirhane Gibidir?",
+        "İmtihan Yeri Olan Dünya"
+      ],
+      "selected_title": "Dünya Neden Son Yurt Değil?",
+      "description": "Dünya kalıcı saray değil; misafirhane, sergi ve imtihan alanıdır. #derinokuma #shorts #tefekkür #iman #ahiret #dünya",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ahiret",
+        "#dünya"
+      ],
+      "thumbnail_or_cover_text": "SON YURT DEĞİL"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Bir şey dikkatle kaydediliyorsa, o kayıt bir gün açılmak içindir.",
+      "title_options": [
+        "Kayıt Varsa Hesap Neden Var?",
+        "Ameller Neden Boşa Gitmez?",
+        "Büyük Mahkeme Neden Gerekir?",
+        "Geciken Adalet Unutulmaz"
+      ],
+      "selected_title": "Kayıt Varsa Hesap Neden Var?",
+      "description": "Küçük şeyleri koruyan düzen, insanın büyük amellerini başıboş bırakmaz. #derinokuma #shorts #tefekkür #hesap #adalet #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#hesap",
+        "#adalet",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "KAYIT VE HESAP"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bahar sadece güzel bir mevsim değil; yeniden dirilişin gözle görünen dersidir.",
+      "title_options": [
+        "Bahar Haşri Nasıl Gösterir?",
+        "Diriliş Neden Uzak Değil?",
+        "Baharın Saklı Dersi",
+        "Toprak Her Yıl Diriliyor"
+      ],
+      "selected_title": "Bahar Haşri Nasıl Gösterir?",
+      "description": "Her bahar, yeryüzünün toplu dirilişiyle büyük haşrin mümkün olduğunu hatırlatır. #derinokuma #shorts #bahar #haşir #ahiret #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#bahar",
+        "#haşir",
+        "#ahiret",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "BAHARIN DERSİ"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Dünyada merhamet var; ama ayrılık da var. Bu yarım kalış neyi gösterir?",
+      "title_options": [
+        "Merhamet Neden Tamamlanır?",
+        "Adalet Neden Yarım Kalmaz?",
+        "Ahiret Neden Rahmettir?",
+        "Yarım Kalan Tecelli"
+      ],
+      "selected_title": "Merhamet Neden Tamamlanır?",
+      "description": "Merhamet, hikmet ve adalet dünyada görünür; fakat tam neticesi başka bir yurdu gerektirir. #derinokuma #shorts #merhamet #adalet #ahiret #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#merhamet",
+        "#adalet",
+        "#ahiret",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "YARIM KALMAZ"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İnsanın arzuları bu dünyaya sığmıyorsa, bu arzular yanlış verilmiş olamaz.",
+      "title_options": [
+        "İnsan Neden Ebediyet İster?",
+        "Fıtrat Ahireti Nasıl İster?",
+        "Kalp Neden Dünyaya Sığmaz?",
+        "Ebediyet Arzusu Ne Söyler?"
+      ],
+      "selected_title": "İnsan Neden Ebediyet İster?",
+      "description": "İnsandaki akıl, vicdan, sevgi ve ebediyet arzusu daha uzun bir hayata işaret eder. #derinokuma #shorts #insan #fıtrat #ebediyet #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#insan",
+        "#fıtrat",
+        "#ebediyet",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "EBEDİYET ARZUSU"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Dünya bir tarla, bir talimgâh ve bir pazar gibi okunursa hayat değişir.",
+      "title_options": [
+        "Dünya Neden Tarla Gibidir?",
+        "Tarla, Talimgâh ve Pazar",
+        "Hayat Neden Hazırlıktır?",
+        "Dünya Ahirete Nasıl Hazırlar?"
+      ],
+      "selected_title": "Dünya Neden Tarla Gibidir?",
+      "description": "Ekim burada, hasat sonra; hazırlık burada, karşılık başka yurtta tamamlanır. #derinokuma #shorts #dünya #ahiret #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#dünya",
+        "#ahiret",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "TARLA TALİMGÂH PAZAR"
+    }
+  ]
+}

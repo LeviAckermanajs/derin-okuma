@@ -1,0 +1,314 @@
+{
+  "source": {
+    "blog_post": "10-soz-hasir-risalesi-6-12-suret",
+    "title": "10. Söz - Haşir Risalesi - 6-12. Suret",
+    "source_files": [
+      "src/content/blog/10-soz-hasir-risalesi-6-12-suret.md"
+    ]
+  },
+  "test_day": "day-25",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Dünya geçici diye anlamsız değildir; geçici olduğu için imtihan yeridir.",
+      "title": "Dünya Neden Son Yurt Değil?",
+      "description": "Dünya kalıcı saray değil; misafirhane, sergi ve imtihan alanıdır. #derinokuma #shorts #tefekkür #iman #ahiret #dünya",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ahiret",
+        "#dünya"
+      ],
+      "thumbnail_or_cover_text": "SON YURT DEĞİL",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Geçicilik",
+          "narration": "Dünya geçici diye anlamsız değildir; geçici olduğu için imtihan yeridir. Gelen gider, giden geri dönmez gibi görünür; fakat bu akış bir varışa hazırlanır.",
+          "visual_note": "train station with arrivals and departures, soft cinematic light",
+          "keywords": [
+            "train station",
+            "departure",
+            "journey"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Misafirhane",
+          "narration": "Bir misafirhanede kalıcı düzen kurulmaz. İnsan burada ağırlanır, sınanır, öğrenir ve yoluna devam eder. Dünya da böyle bir konak gibi çalışır.",
+          "visual_note": "quiet guesthouse hallway with open doors, warm light",
+          "keywords": [
+            "guesthouse",
+            "hallway",
+            "temporary"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Varış",
+          "narration": "Sergi geçiciyse, gösterilen güzelliğin aslı başka yerde aranır. Kısa duruş varsa, kalıcı varış da olmalıdır.",
+          "visual_note": "temporary exhibition opening to bright horizon, symbolic view",
+          "keywords": [
+            "exhibition",
+            "horizon",
+            "meaning"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Bir şey dikkatle kaydediliyorsa, o kayıt bir gün açılmak içindir.",
+      "title": "Kayıt Varsa Hesap Neden Var?",
+      "description": "Küçük şeyleri koruyan düzen, insanın büyük amellerini başıboş bırakmaz. #derinokuma #shorts #tefekkür #hesap #adalet #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#hesap",
+        "#adalet",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "KAYIT VE HESAP",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Kayıt",
+          "narration": "Bir şey dikkatle kaydediliyorsa, o kayıt bir gün açılmak içindir. Hayatta hiçbir iz tamamen boşa gitmiyor gibi görünür.",
+          "visual_note": "old ledger book and pen, warm desk light, close up",
+          "keywords": [
+            "ledger",
+            "pen",
+            "record"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Muhasebe",
+          "narration": "En küçük ölçüleri koruyan bir düzen, insanın büyük iyilik ve zulümlerini ihmal etmez. Küçüğü kaydeden, büyüğü başıboş bırakmaz.",
+          "visual_note": "precise seeds and handwritten notes, calm focused scene",
+          "keywords": [
+            "precision",
+            "seeds",
+            "notes"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Mahkeme",
+          "narration": "Dünyada kapanmamış görünen hesaplar, yok sayılmış değildir. Daha büyük bir mahkemeye bırakılmış olabilir.",
+          "visual_note": "empty courtroom with sunlight, solemn cinematic mood",
+          "keywords": [
+            "courtroom",
+            "justice",
+            "sunlight"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bahar sadece güzel bir mevsim değil; yeniden dirilişin gözle görünen dersidir.",
+      "title": "Bahar Haşri Nasıl Gösterir?",
+      "description": "Her bahar, yeryüzünün toplu dirilişiyle büyük haşrin mümkün olduğunu hatırlatır. #derinokuma #shorts #bahar #haşir #ahiret #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#bahar",
+        "#haşir",
+        "#ahiret",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "BAHARIN DERSİ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Bahar",
+          "narration": "Bahar sadece güzel bir mevsim değil; yeniden dirilişin gözle görünen dersidir. Kışın susan toprak, birden hayatla dolar.",
+          "visual_note": "spring flowers emerging from winter soil, fresh sunlight",
+          "keywords": [
+            "spring flowers",
+            "winter soil",
+            "renewal"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Toplu Diriliş",
+          "narration": "Ağaçlar giyinir, tohumlar uyanır, canlılar rızıklarıyla buluşur. Bütün bunlar dağınık değil; ölçülü ve emirli bir hareket gibi işler.",
+          "visual_note": "trees blooming together, bees and blossoms, cinematic nature",
+          "keywords": [
+            "blooming trees",
+            "bees",
+            "order"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Haşir",
+          "narration": "Her yıl yeryüzünü yeniden kuran kudret için, insanları yeniden diriltmek uzak değildir. Küçük haşir, büyük haşri akla yaklaştırır.",
+          "visual_note": "barren landscape turning green in time lapse, wide horizon",
+          "keywords": [
+            "green landscape",
+            "time lapse",
+            "resurrection"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Dünyada merhamet var; ama ayrılık da var. Bu yarım kalış neyi gösterir?",
+      "title": "Merhamet Neden Tamamlanır?",
+      "description": "Merhamet, hikmet ve adalet dünyada görünür; fakat tam neticesi başka bir yurdu gerektirir. #derinokuma #shorts #merhamet #adalet #ahiret #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#merhamet",
+        "#adalet",
+        "#ahiret",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "YARIM KALMAZ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Yarım Görünen",
+          "narration": "Dünyada merhamet var; ama ayrılık da var. Rızık var; ama ölüm de var. Adalet işaretleri var; ama zulümler bazen tam karşılık bulmadan geçiyor.",
+          "visual_note": "hands caring for someone, then empty chair by window, soft mood",
+          "keywords": [
+            "care",
+            "empty chair",
+            "loss"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Tam Tecelli",
+          "narration": "Bu yarım görünüş, merhametin yokluğunu değil, tamamlanacağı başka bir alanı düşündürür. Eksik tecelli, tam tecelli mahallini ister.",
+          "visual_note": "sunlight breaking through clouds over calm valley",
+          "keywords": [
+            "sunlight",
+            "clouds",
+            "completion"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Ahiret",
+          "narration": "Ahiret yalnız ceza yeri değildir. Adaletin, merhametin ve büyük ikramın birlikte tamamlandığı ebedî yurt olarak görünür.",
+          "visual_note": "peaceful garden path with golden light, serene horizon",
+          "keywords": [
+            "garden path",
+            "golden light",
+            "eternity"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İnsanın arzuları bu dünyaya sığmıyorsa, bu arzular yanlış verilmiş olamaz.",
+      "title": "İnsan Neden Ebediyet İster?",
+      "description": "İnsandaki akıl, vicdan, sevgi ve ebediyet arzusu daha uzun bir hayata işaret eder. #derinokuma #shorts #insan #fıtrat #ebediyet #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#insan",
+        "#fıtrat",
+        "#ebediyet",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "EBEDİYET ARZUSU",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Sığmayan Arzu",
+          "narration": "İnsanın arzuları bu dünyaya sığmıyorsa, bu arzular yanlış verilmiş olamaz. Kalıcı sevgi, tam güven ve ölmemek isteği basit bir tesadüf değildir.",
+          "visual_note": "person gazing at ocean horizon at dusk, calm longing",
+          "keywords": [
+            "ocean horizon",
+            "longing",
+            "dusk"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Cihazlar",
+          "narration": "Akıl, hafıza, vicdan, hayal, umut ve ebediyet arzusu birkaç günlük geçim için fazla geniştir. İnsan daha uzun bir yol için hazırlanmış gibidir.",
+          "visual_note": "thoughtful person with books and stars reflected in window",
+          "keywords": [
+            "thoughtful person",
+            "books",
+            "stars"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Namzet",
+          "narration": "Bu yüzden insan yalnız dünyaya ait değildir. Burada yaşar, çalışır, öğrenir; fakat fıtratı başka bir âleme de namzet olduğunu söyler.",
+          "visual_note": "traveler with compass looking toward bright mountain path",
+          "keywords": [
+            "traveler",
+            "compass",
+            "path"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Dünya bir tarla, bir talimgâh ve bir pazar gibi okunursa hayat değişir.",
+      "title": "Dünya Neden Tarla Gibidir?",
+      "description": "Ekim burada, hasat sonra; hazırlık burada, karşılık başka yurtta tamamlanır. #derinokuma #shorts #dünya #ahiret #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#dünya",
+        "#ahiret",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "TARLA TALİMGÂH PAZAR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Üç Benzetme",
+          "narration": "Dünya bir tarla, bir talimgâh ve bir pazar gibi okunursa hayat değişir. Çünkü hiçbiri kalıcı oturma yeri değildir.",
+          "visual_note": "field, training ground, and marketplace in calm montage",
+          "keywords": [
+            "field",
+            "training",
+            "marketplace"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Ekim ve Hazırlık",
+          "narration": "Tarlada ekim yapılır, hasat sonra alınır. Talimgâhta insan hazırlanır. Pazarda değer seçilir, alışveriş yapılır, sonra yol devam eder.",
+          "visual_note": "farmer sowing seeds, person training, market stalls, soft light",
+          "keywords": [
+            "sowing seeds",
+            "training",
+            "market"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Hayatın Yönü",
+          "narration": "Bu bakış insanı dünyadan koparmaz; dünyayı doğru yere koyar. Burada yapılan her seçim, daha büyük bir hayata doğru anlam kazanır.",
+          "visual_note": "road from field toward sunrise horizon, peaceful cinematic scene",
+          "keywords": [
+            "road",
+            "field",
+            "sunrise"
+          ]
+        }
+      ]
+    }
+  ]
+}
