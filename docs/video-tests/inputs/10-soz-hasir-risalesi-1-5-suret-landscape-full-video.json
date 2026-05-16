@@ -1,0 +1,427 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "10. Söz - Haşir Risalesi - 1-5. Suret",
+    "description": "Haşir Risalesi’nin ilk beş sureti, dünyayı başıboş bir yaşam alanı değil; imtihan, emanet, sergi ve geçici konak olarak okumaya davet eder.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "10-soz-hasir-risalesi-1-5-suret-landscape-day-24"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Soru",
+      "narration": "İnsan bazen dünyaya bakar ve her şeyin gelip geçtiğini görür. Doğanlar ölür, güzellikler solar, sevinçler yarım kalır. Fakat kalbin içinde daha derin bir soru uyanır: Bu kadar anlamlı bir düzen gerçekten sonuçsuz kalabilir mi?",
+      "visual_note": "quiet sunrise over open landscape, contemplative mood, slow cinematic movement",
+      "keywords": [
+        "sunrise landscape",
+        "contemplation",
+        "quiet nature"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Dünyanın Okunuşu",
+      "narration": "Haşir meselesi sadece ölümden sonra dirilmek mümkün müdür sorusundan ibaret değildir. Daha köklü soru şudur: Rahmet, hikmet, adalet ve güzellikle dolu bir kâinat, yarım bırakılmış bir hikâye gibi kapanabilir mi? Bu soru insanı görünen dünyanın arkasındaki manaya çağırır.",
+      "visual_note": "wide view of earth fields and sky, soft clouds, thoughtful atmosphere",
+      "keywords": [
+        "open fields",
+        "sky",
+        "meaning"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Temsilin Kapısı",
+      "narration": "Soyut hakikatler bazen doğrudan anlatıldığında uzak kalır. Fakat bir memleket, bir padişah, bir misafirhane ve bir mahkeme tasavvuru zihne yol açar. Bu hikâye dili, hayal için değil, hakikati görünür kılmak içindir.",
+      "visual_note": "old palace corridor, warm light, historical architecture, slow camera",
+      "keywords": [
+        "palace corridor",
+        "warm light",
+        "history"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Rahmetin İzleri",
+      "narration": "Yeryüzü kışın ölü gibi görünür; baharda yeniden canlanır. Toprak sessizken bir anda çiçek, yaprak, meyve ve hayatla dolar. Gözümüzün önünde tekrar eden bu diriliş, ölümün mutlak yokluk olmadığını düşündürür.",
+      "visual_note": "spring flowers emerging from soil, fresh green field, gentle morning light",
+      "keywords": [
+        "spring flowers",
+        "green field",
+        "renewal"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "İki Bakış",
+      "narration": "İnsanın içinde iki ayrı bakış konuşur. Biri gördüğü şeyleri sahipsiz sanır, hevesinin peşinden gider ve hesabı uzak görür. Diğeri düzene, ölçüye ve nimete bakar; her şeyin bir sahibi ve maksadı olduğunu fark eder.",
+      "visual_note": "two people walking on a quiet road at dawn, thoughtful contrast",
+      "keywords": [
+        "two people",
+        "quiet road",
+        "choice"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Dünya Bir Memleket",
+      "narration": "Dünya sadece yaşanılan bir yer değildir. Bir eğitim alanı, bir imtihan meydanı, bir sergi ve geçici bir konaktır. İnsan burada kalıcı malik gibi değil, ağırlanan ve sorumluluk taşıyan bir misafir gibi durur.",
+      "visual_note": "traveler in vast valley, temporary shelter, cinematic natural light",
+      "keywords": [
+        "traveler",
+        "valley",
+        "temporary home"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Açık Kapılar",
+      "narration": "Bazen dünya insana çok serbest görünür. Ceza hemen gelmez, müdahale hemen görünmez, kapılar açık gibidir. Fakat mühlet, sahipsizlik anlamına gelmez; çoğu zaman imtihanın kendisi o gecikmenin içindedir.",
+      "visual_note": "open gate in old courtyard, soft shadows, quiet atmosphere",
+      "keywords": [
+        "open gate",
+        "courtyard",
+        "waiting"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Emanet Bilinci",
+      "narration": "İnsan kullandığı şeyleri kolayca kendi malı sanır. Oysa bedeni, ömrü, nefesi, rızkı ve dünya üzerindeki imkânları ona mutlak mülk olarak verilmiş değildir. Sahiplenme duygusu emanet bilinciyle terbiye edilmezse, insan nimetin sahibini unutur.",
+      "visual_note": "hands holding water and soil, humble human gesture, natural light",
+      "keywords": [
+        "hands",
+        "water",
+        "trust"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Vazifeli Hayat",
+      "narration": "Kâinatta her şey bir görev içindedir. Arı bal yapar, ağaç meyve verir, yağmur toprağı diriltir, mevsimler nöbet değiştirir. İnsan da yalnız yaşamak için değil, anlamak, şükretmek ve doğru davranmak için vardır.",
+      "visual_note": "bee on flower, tree with fruit, rain on soil, peaceful nature montage",
+      "keywords": [
+        "bee flower",
+        "fruit tree",
+        "rain soil"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Kör Nokta Yok",
+      "narration": "İnsan bazen gizli kaldığını zanneder. Fakat kâinatta işleyen düzen, hiçbir şeyin başıboş ve habersiz olmadığını gösterir. Her hareket, her ihtiyaç, her cevap daha büyük bir ilim ve idarenin içinde yer alır.",
+      "visual_note": "city lights seen from above at night, connected roads, calm aerial view",
+      "keywords": [
+        "city lights",
+        "aerial view",
+        "connection"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Görmek ve Bilmek",
+      "narration": "Her hakikat doğrudan gözle görülerek bilinmez. Bir harf kâtibini, bir eser ustasını, bir düzen idare edeni haber verir. Kâinat da yalnız var olan bir madde yığını değil; okunmayı bekleyen anlamlı bir yazıdır.",
+      "visual_note": "close up of handwritten page, ink pen, old desk, soft window light",
+      "keywords": [
+        "handwriting",
+        "ink pen",
+        "meaning"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Küçükten Büyüğe",
+      "narration": "Bir köyün idaresiz, bir iğnenin ustasız, bir harfin yazarsız olamayacağını kabul ederiz. Peki bu kadar ölçülü, canlı ve sanatlı bir âlemin sahipsiz olduğunu nasıl düşünebiliriz? Küçük örneklerde teslim olan akıl, büyük hakikat karşısında da tutarlı olmalıdır.",
+      "visual_note": "small village from above, artisan tools, handwritten letters, cinematic detail",
+      "keywords": [
+        "village",
+        "artisan tools",
+        "letters"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Baharın Sevkiyatı",
+      "narration": "Her bahar yeryüzüne görünmeyen bir hazineden erzak gelir gibi olur. Ağaçlar giydirilir, toprak sofraya döner, canlılar rızıklarıyla buluşturulur. Bu düzen hem kudretin sürekliliğini hem de rızkın merkezî bir idareyle geldiğini gösterir.",
+      "visual_note": "spring orchard blooming, fresh fruits, sunlight through branches",
+      "keywords": [
+        "spring orchard",
+        "fresh fruit",
+        "provision"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Yanlış Okuma",
+      "narration": "İnsan teknik bilgide ilerleyip varlığın manasını okuyamayabilir. Eşyanın nasıl işlediğini bilmek önemlidir; fakat niçin var olduğunu hiç sormamak eksik bir okumadır. Hakikat, sadece mekanizmayı değil, hikmeti de arar.",
+      "visual_note": "person studying books and scientific diagrams near window, reflective mood",
+      "keywords": [
+        "study desk",
+        "books",
+        "reflection"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Küçük Günah Zannı",
+      "narration": "Nefis çoğu zaman yaptığı şeyi küçük görür. Koca düzen içinde benim payım ne ki, diye düşünür. Fakat bir fiilin ağırlığı sadece maddî sonucuyla değil, kime karşı işlendiği ve hangi hukuku çiğnediğiyle ölçülür.",
+      "visual_note": "single person standing in large empty hall, serious quiet mood",
+      "keywords": [
+        "empty hall",
+        "solitude",
+        "accountability"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Geciken Hesap",
+      "narration": "Dünyada zalim bazen gücüyle gider, mazlum bazen hakkını alamadan ayrılır. Bu görüntü adalet yoktur sonucunu değil, dünya tam adalet yeri değildir sonucunu verir. Tam hesap görünmüyorsa, daha büyük bir mahkeme gerekir.",
+      "visual_note": "empty courtroom with sunlight, solemn atmosphere, slow camera movement",
+      "keywords": [
+        "courtroom",
+        "justice",
+        "sunlight"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "Manevra Alanı",
+      "narration": "Dünya kalıcı bir saray değil, hazırlık alanıdır. Askerin talim meydanı nihai yer olmadığı gibi, insanın dünya hayatı da son durak değildir. Burada öğrenilir, sınanır, yön seçilir ve başka bir âleme hazırlanılır.",
+      "visual_note": "wide training field at sunrise, disciplined footsteps, calm cinematic mood",
+      "keywords": [
+        "training field",
+        "sunrise",
+        "preparation"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Sergi ve Misafirhane",
+      "narration": "Dünya aynı zamanda bir sergidir; sanatlar, nimetler ve güzellikler kısa süreliğine gösterilir. Aynı zamanda bir misafirhanedir; gelen kalmaz, kalan da bir gün gider. Bu iki anlam birleşince dünya hem değerli hem de geçici görünür.",
+      "visual_note": "art gallery with natural elements, quiet museum light, people passing slowly",
+      "keywords": [
+        "art gallery",
+        "passing people",
+        "temporary"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Gelenler ve Gidenler",
+      "narration": "Her gün birileri dünyaya gelir, birileri ayrılır. Hayat sürekli dolup boşalan bir istasyon gibidir. Bu akış yokluğu değil, sevki ve nakli düşündürür; insan burada tutulmak için değil, yolculuğunu tamamlamak için bulunur.",
+      "visual_note": "train station with people arriving and leaving, soft evening light",
+      "keywords": [
+        "train station",
+        "arrival",
+        "departure"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Büyük Dönüşüm",
+      "narration": "Sadece insan değil, dünyanın kendisi de son biçimiyle kalıcı değildir. Bu düzen bir gün değişecek, başka bir düzen kurulacaktır. Haşir, yalnız ruhun devamı değil; bütün varlık sahnesinin yeni bir âleme çevrilmesidir.",
+      "visual_note": "dramatic sky over mountains, clouds shifting, vast cinematic landscape",
+      "keywords": [
+        "dramatic sky",
+        "mountains",
+        "transformation"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Saltanat ve Mahkeme",
+      "narration": "Muhteşem bir saltanat, hizmet edenleri ve isyan edenleri aynı sonuçta bırakmaz. Bu dünyada mükâfat ve ceza tam görünmüyorsa, yok sayılmış değil, ertelenmiş demektir. Büyük adalet büyük bir mahkemeyi gerektirir.",
+      "visual_note": "grand courthouse exterior, balanced composition, solemn daylight",
+      "keywords": [
+        "courthouse",
+        "justice",
+        "majesty"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Kerem ve Merhamet",
+      "narration": "Yeryüzünde her canlıya rızık yetiştiren, hastalara şifa yolları açan, en küçük ihtiyacı gören geniş bir merhamet görünür. Böyle bir kerem, sadece kısa ve eksik bir hayatla sınırlı kalamaz. Cömertlik nimet vermek ister; merhamet gerçek ihsan ister.",
+      "visual_note": "mother caring for child, doctor helping patient, warm gentle light",
+      "keywords": [
+        "care",
+        "mercy",
+        "healing"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "İzzet ve Haysiyet",
+      "narration": "Büyüklük başıbozukluğu ebediyen cevapsız bırakmaz. Haysiyet, zulmün ve edepsizliğin tamamen unutulmasına razı olmaz. Zalim bazen izzetli görünerek gider, mazlum bazen ezilmiş kalır; bu açık yara başka bir hesap gününü çağırır.",
+      "visual_note": "lonely figure in shadow, distant light through doorway, serious mood",
+      "keywords": [
+        "shadow",
+        "distant light",
+        "dignity"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Hikmet ve Adalet",
+      "narration": "Kâinatta işler ölçüyle yürür. Güneş, yağmur, beden, hücre, mevsim ve rızık büyük bir intizamla çalışır. Bu kadar hikmetli bir düzenin insan fiillerinde anlamsızlığa ve hesapsızlığa izin vermesi düşünülemez.",
+      "visual_note": "macro nature patterns, leaf veins, flowing water, balanced composition",
+      "keywords": [
+        "nature patterns",
+        "balance",
+        "order"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Çok Cepheli Delil",
+      "narration": "Haşir aynı sonuca bağlanan tek bir delille değil, birçok kapıdan gelen bir hakikat olarak görünür. Saltanat adaleti ister, merhamet ihsanı ister, hikmet neticeyi ister. Her isim ve her fiil insanı aynı ufka yöneltir.",
+      "visual_note": "multiple paths meeting at a bright horizon, calm cinematic landscape",
+      "keywords": [
+        "paths",
+        "horizon",
+        "unity"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Ziyafet Sofrası",
+      "narration": "Yeryüzünde sayısız sofra açılır. Renkler, tatlar, kokular ve güzellikler insana ikram edilir. Fakat bu kadar zengin bir ziyafet yalnız birkaç günlük tatma için olamaz; geçici nimetler daha kalıcı bir ikramın haberini taşır.",
+      "visual_note": "abundant table with fruits and bread in natural light, humble atmosphere",
+      "keywords": [
+        "abundant table",
+        "fruits",
+        "provision"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Lezzetin Ayrılığı",
+      "narration": "Acının bitmesi insana lezzet verir; fakat sevilen lezzetin bitmesi de acıya dönüşür. Dünya nimetleri ebediyetle birleşmediğinde içlerinde ayrılık sızısı taşır. İnsan doymadan ayrılıyorsa, doyacağı bir yurt olmalıdır.",
+      "visual_note": "empty chair near window after sunset, quiet emotional atmosphere",
+      "keywords": [
+        "empty chair",
+        "sunset",
+        "longing"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Güzellik Görünmek İster",
+      "narration": "Güzellik kendini göstermek ister; sanat seyirci ister; kemal takdir edilmek ister. Dünya bu temaşa için kısa ve eksik bir sahnedir. İnsan bir an bakar, etkilenir, fakat tam anlayamadan yoluna devam eder.",
+      "visual_note": "sunlight illuminating beautiful architecture, slow reveal, elegant details",
+      "keywords": [
+        "beautiful architecture",
+        "sunlight",
+        "beauty"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Daimi Seyir",
+      "narration": "Eğer güzellikler sadece kaybolmak için gösterilseydi, sevgi elemle karışırdı. Kalp sevdiğine doyamadan ayrılınca, güzelliğin kendisi bile hüzne döner. Bu yüzden ahiret sadece hesap yeri değil, daimi temaşa ve gerçek kavuşma yurdudur.",
+      "visual_note": "vast garden path with golden light, peaceful endless perspective",
+      "keywords": [
+        "garden path",
+        "golden light",
+        "eternity"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Bilmediğine Yabancılaşmak",
+      "narration": "İnsan erişemediği, tutamadığı ve anlayamadığı güzelliğe karşı bazen kırılır. Geçicilik, muhabbeti bile yaralayabilir. Kalbin sevdiği şeyin sonsuz ayrılığa mahkûm olmaması için, sevginin ebedî bir karşılığı gerekir.",
+      "visual_note": "person looking at distant mountains through mist, reflective solitude",
+      "keywords": [
+        "distant mountains",
+        "mist",
+        "longing"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Şefkatin Penceresi",
+      "narration": "En küçük canlıya bile ihtiyacına uygun yardım ulaşır. Yaralıya merhem, aç olana rızık, çaresize beklenmedik kapı açılır. Bu geniş şefkat, insanın en büyük ihtiyacı olan ebedî saadet talebini cevapsız bırakmaz.",
+      "visual_note": "gentle hands helping wounded animal, soft compassionate light",
+      "keywords": [
+        "compassion",
+        "healing",
+        "gentle hands"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Büyük Dua",
+      "narration": "Peygamberin duası, sadece bir kişinin isteği gibi düşünülmez. O dua, insanlığın ve bütün muhtaç varlıkların diliyle yükselen en büyük taleptir. Fani gölgeler değil, nimetlerin asılları; geçici tatlar değil, ebedî saadet istenir.",
+      "visual_note": "silhouette praying at dawn, wide sky, reverent peaceful mood",
+      "keywords": [
+        "prayer",
+        "dawn sky",
+        "reverence"
+      ]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Numune ve Asıl",
+      "narration": "Dünyadaki güzellikler asıl değil, numune gibidir. Gölge varsa kaynak, işaret varsa işaret edilen, tadım varsa tam sofra vardır. Burada tattırılan her nimet, daha büyük bir hakikatin daveti gibi okunur.",
+      "visual_note": "reflection of trees on water, real forest beyond, symbolic natural scene",
+      "keywords": [
+        "reflection",
+        "forest",
+        "symbol"
+      ]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "En Büyük Talep",
+      "narration": "En küçük ihtiyaçları gören rahmet, en büyük peygamberî talebi görmezden gelmez. Kudret için bir baharı yaratmakla bir ahireti yaratmak arasında zorluk farkı yoktur. Rahmet, hikmet ve kudret birlikte bakıldığında haşir uzak değil, gerekli görünür.",
+      "visual_note": "spring landscape expanding into vast bright horizon, hopeful cinematic scene",
+      "keywords": [
+        "spring landscape",
+        "bright horizon",
+        "hope"
+      ]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Başıboş Değil",
+      "narration": "İnsan bu imtihan meydanında terk edilmiş değildir. Her davranışın, her niyetin, her zulmün ve her iyiliğin bir karşılığı vardır. Saadet sarayları ve zindanlar fikri, adaletin eksiksiz tamamlanacağını haber verir.",
+      "visual_note": "crossroads with one bright path and one dark path, solemn cinematic mood",
+      "keywords": [
+        "crossroads",
+        "choice",
+        "accountability"
+      ]
+    },
+    {
+      "scene_id": "scene-036",
+      "title": "Haşrin Özeti",
+      "narration": "Dünya sahipsiz değildir, son durak değildir ve tam adalet yeri değildir. Burada görülen düzen, merhamet, ikram, güzellik, hikmet ve şefkat hep daha büyük bir âlemi işaret eder. Haşir, kâinatın anlamını tamamlayan zorunlu halka olarak karşımıza çıkar.",
+      "visual_note": "wide sunrise horizon over calm sea, peaceful conclusion, slow cinematic movement",
+      "keywords": [
+        "sunrise horizon",
+        "calm sea",
+        "completion"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "10-soz-hasir-risalesi-1-5-suret",
+    "test_day": "day-24",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/10-soz-hasir-risalesi-1-5-suret.md"
+    ]
+  }
+}

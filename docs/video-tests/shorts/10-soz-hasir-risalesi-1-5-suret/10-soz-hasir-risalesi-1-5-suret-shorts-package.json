@@ -1,0 +1,314 @@
+{
+  "source": {
+    "blog_post": "10-soz-hasir-risalesi-1-5-suret",
+    "title": "10. Söz - Haşir Risalesi - 1-5. Suret",
+    "source_files": [
+      "src/content/blog/10-soz-hasir-risalesi-1-5-suret.md"
+    ]
+  },
+  "test_day": "day-24",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Dünya çok serbest görünüyorsa, bu sahipsiz olduğu anlamına gelmez.",
+      "title": "Dünya Neden Sahipsiz Değil?",
+      "description": "Cezanın gecikmesi bazen yokluk değil, imtihanın kendisidir. #derinokuma #shorts #tefekkür #iman #haşir #imtihan",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#haşir",
+        "#imtihan"
+      ],
+      "thumbnail_or_cover_text": "SAHİPSİZ DEĞİL",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Serbestlik Yanılgısı",
+          "narration": "Dünya çok serbest görünüyorsa, bu sahipsiz olduğu anlamına gelmez. Kapıların açık olması, her şeyin başıboş bırakıldığına delil değildir.",
+          "visual_note": "open gate in quiet courtyard, soft morning shadows, contemplative mood",
+          "keywords": [
+            "open gate",
+            "courtyard",
+            "freedom"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Mühlet",
+          "narration": "İnsan çoğu zaman ceza hemen gelmeyince hesap da yok sanır. Oysa mühlet, yokluk değil; imtihanın devam ettiğini gösteren ince bir alandır.",
+          "visual_note": "hourglass on wooden table, warm light, slow cinematic close up",
+          "keywords": [
+            "hourglass",
+            "waiting",
+            "test"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Sonuç",
+          "narration": "Sahibi olan bir memlekette gecikme, unutma demek değildir. Her davranışın karşılığı, en uygun vakitte ortaya çıkacak bir hesaba bırakılır.",
+          "visual_note": "empty courtroom with sunbeam, solemn atmosphere, slow camera",
+          "keywords": [
+            "courtroom",
+            "sunbeam",
+            "accountability"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İnsan sahip olduğunu sandığı şeylerin çoğunda aslında emanetçidir.",
+      "title": "İnsan Neden Emanetçidir?",
+      "description": "Beden, ömür ve nimetler mutlak mülk değil; sorumluluk taşıyan emanetlerdir. #derinokuma #shorts #tefekkür #emanet #iman #kulluk",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#emanet",
+        "#iman",
+        "#kulluk"
+      ],
+      "thumbnail_or_cover_text": "EMANETÇİ İNSAN",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Sahiplik Zannı",
+          "narration": "İnsan sahip olduğunu sandığı şeylerin çoğunda aslında emanetçidir. Kullandığı imkânları kendi mülkü zannettiğinde, nimetin sahibini unutmaya başlar.",
+          "visual_note": "hands holding soil and water, humble natural light, close up",
+          "keywords": [
+            "hands",
+            "soil",
+            "trust"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Beden ve Ömür",
+          "narration": "Beden, ömür, nefes, rızık ve çevremizdeki nimetler mutlak mülk değildir. İnsan bunları dilediği gibi harcayan bir malik değil, sorumluluk taşıyan bir misafirdir.",
+          "visual_note": "person walking through a simple guesthouse corridor, soft daylight",
+          "keywords": [
+            "guesthouse",
+            "walking",
+            "responsibility"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Ahlak",
+          "narration": "Emanet bilinci gelince ahlak değişir. İnsan nimetle şımarmaz; onu verenin huzurunda daha dikkatli, daha şükürlü ve daha edepli yaşamaya başlar.",
+          "visual_note": "quiet person by window in prayerful reflection, warm peaceful light",
+          "keywords": [
+            "reflection",
+            "gratitude",
+            "humility"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Dünyada adalet eksik görünüyorsa, bu adalet yok demek değildir.",
+      "title": "Adalet Neden Tamamlanır?",
+      "description": "Mazlumun hakkı ve zalimin hesabı, daha büyük bir mahkemeyi düşündürür. #derinokuma #shorts #adalet #ahiret #haşir #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#adalet",
+        "#ahiret",
+        "#haşir",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "ADALET TAMAMLANIR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Eksik Görünen",
+          "narration": "Dünyada adalet eksik görünüyorsa, bu adalet yok demek değildir. Zalim bazen güçlü gider, mazlum bazen hakkını alamadan ayrılır.",
+          "visual_note": "lonely figure in a dim hallway, distant light, serious cinematic tone",
+          "keywords": [
+            "lonely figure",
+            "distant light",
+            "injustice"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Yanlış Sonuç",
+          "narration": "Bu görüntü insanı inkâra değil, daha büyük bir hesaba götürmelidir. Çünkü dünya tam karşılıkların verildiği nihai mahkeme gibi işlemiyor.",
+          "visual_note": "empty courtroom benches, balanced composition, quiet solemn mood",
+          "keywords": [
+            "courtroom",
+            "justice",
+            "silence"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Büyük Mahkeme",
+          "narration": "Tam görünmeyen adalet, ertelenmiş bir hükmün işareti olabilir. İnsan başıboş bırakılmadığı için, her hak bir gün sahibine döner.",
+          "visual_note": "scales of justice near window light, slow close up, calm mood",
+          "keywords": [
+            "justice scales",
+            "window light",
+            "judgment"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Güzellik sadece kaybolmak için gösterilmiş olamaz.",
+      "title": "Güzellik Neden Ebediyeti İster?",
+      "description": "Dünya güzellikleri kısa bir seyir değil, daimi temaşaya açılan işaretlerdir. #derinokuma #shorts #tefekkür #güzellik #ahiret #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#güzellik",
+        "#ahiret",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "GÜZELLİK KALIR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Kaybolan Güzellik",
+          "narration": "Güzellik sadece kaybolmak için gösterilmiş olamaz. İnsan sever, etkilenir, hayran kalır; fakat çoğu zaman doyamadan ayrılır.",
+          "visual_note": "beautiful sunset over flowers, gentle wind, quiet emotional mood",
+          "keywords": [
+            "sunset flowers",
+            "beauty",
+            "longing"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Seyirci",
+          "narration": "Sanat seyirci ister, kemal takdir edilmek ister. Dünya bu büyük temaşa için kısa bir sahne gibidir; insan bir an bakar ve yoluna devam eder.",
+          "visual_note": "art gallery with soft light and slow walking visitor, elegant atmosphere",
+          "keywords": [
+            "art gallery",
+            "visitor",
+            "beauty"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Daimi Yurt",
+          "narration": "Kalbin sevdiği güzellik sonsuz ayrılığa mahkûm edilirse, sevgi hüzne dönüşür. Bu yüzden ahiret sadece hesap yeri değil, daimi seyir ve kavuşma yurdudur.",
+          "visual_note": "vast garden path in golden light, peaceful endless perspective",
+          "keywords": [
+            "garden path",
+            "golden light",
+            "eternity"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Burada tattırılan nimetler, asıllarına çağıran işaretler gibidir.",
+      "title": "Nimetler Neyi Haber Verir?",
+      "description": "Dünya nimetleri geçici bir tadım gibi; asıl ziyafetin varlığını düşündürür. #derinokuma #shorts #nimet #şükür #ahiret #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#nimet",
+        "#şükür",
+        "#ahiret",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "NUMUNE VE ASIL",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Tadım",
+          "narration": "Burada tattırılan nimetler, asıllarına çağıran işaretler gibidir. Bir meyve, bir koku, bir sevinç; geçici olduğu hâlde kalpte kalıcı bir arzu uyandırır.",
+          "visual_note": "fresh fruit on simple table, morning sunlight, warm humble mood",
+          "keywords": [
+            "fresh fruit",
+            "morning light",
+            "provision"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Gölge ve Kaynak",
+          "narration": "Gölge varsa kaynak vardır; işaret varsa işaret edilen vardır. Dünya nimetleri de tam kendisi değil, daha büyük bir ikramın numunesi gibi okunur.",
+          "visual_note": "tree reflection on calm water, real forest behind, symbolic nature scene",
+          "keywords": [
+            "reflection",
+            "forest",
+            "symbol"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Ziyafet",
+          "narration": "Bu kadar zengin sofralar yalnız kısa bir tatma için açılmış olamaz. Rahmet burada tattırdığını, ebedî yurtta tamamlamayı vaat eden bir dil gibi konuşur.",
+          "visual_note": "abundant table with bread and fruits, soft natural light, peaceful scene",
+          "keywords": [
+            "abundant table",
+            "bread",
+            "mercy"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Peygamberin duası, insanlığın en büyük ihtiyacını dile getirir.",
+      "title": "Dua Haşri Nasıl Gösterir?",
+      "description": "En küçük ihtiyaçları gören rahmet, ebedî saadet talebini cevapsız bırakmaz. #derinokuma #shorts #dua #peygamber #haşir #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#dua",
+        "#peygamber",
+        "#haşir",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "BÜYÜK DUA",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "En Büyük İhtiyaç",
+          "narration": "Peygamberin duası, insanlığın en büyük ihtiyacını dile getirir. Fani gölgeler değil, nimetlerin asılları; geçici tatlar değil, ebedî saadet istenir.",
+          "visual_note": "silhouette praying at dawn under wide sky, reverent calm mood",
+          "keywords": [
+            "prayer",
+            "dawn",
+            "eternal happiness"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Umumi Talep",
+          "narration": "Bu dua sadece bir kişinin isteği gibi değildir. Bütün muhtaç varlıkların, bütün kalplerin ve bütün ayrılık acılarının diliyle yükselen umumi bir taleptir.",
+          "visual_note": "crowd silhouettes facing sunrise, peaceful spiritual atmosphere",
+          "keywords": [
+            "crowd silhouettes",
+            "sunrise",
+            "supplication"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Kabul Ufku",
+          "narration": "En küçük ihtiyaçları gören rahmet, en büyük talebi görmezden gelmez. Kudret için baharı diriltmek ne kadar kolaysa, insanı ebedî hayata kaldırmak da o kadar yakındır.",
+          "visual_note": "spring field opening to bright horizon, hopeful cinematic movement",
+          "keywords": [
+            "spring field",
+            "bright horizon",
+            "hope"
+          ]
+        }
+      ]
+    }
+  ]
+}

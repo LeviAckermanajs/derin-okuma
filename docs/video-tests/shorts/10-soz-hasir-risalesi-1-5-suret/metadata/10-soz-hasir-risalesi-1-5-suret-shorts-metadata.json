@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "10-soz-hasir-risalesi-1-5-suret",
+  "test_day": "day-24",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Dünya çok serbest görünüyorsa, bu sahipsiz olduğu anlamına gelmez.",
+      "title_options": [
+        "Dünya Neden Sahipsiz Değil?",
+        "Cezanın Gecikmesi Ne Anlatır?",
+        "İmtihan Neden Hemen Bitmez?",
+        "Başıboş Değil, İmtihandayız"
+      ],
+      "selected_title": "Dünya Neden Sahipsiz Değil?",
+      "description": "Cezanın gecikmesi bazen yokluk değil, imtihanın kendisidir. #derinokuma #shorts #tefekkür #iman #haşir #imtihan",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#haşir",
+        "#imtihan"
+      ],
+      "thumbnail_or_cover_text": "SAHİPSİZ DEĞİL"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İnsan sahip olduğunu sandığı şeylerin çoğunda aslında emanetçidir.",
+      "title_options": [
+        "İnsan Neden Emanetçidir?",
+        "Sahip Olduğunu Sandığın Şey",
+        "Emanet Bilinci Nasıl Değiştirir?",
+        "Malik Değil, Misafiriz"
+      ],
+      "selected_title": "İnsan Neden Emanetçidir?",
+      "description": "Beden, ömür ve nimetler mutlak mülk değil; sorumluluk taşıyan emanetlerdir. #derinokuma #shorts #tefekkür #emanet #iman #kulluk",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#emanet",
+        "#iman",
+        "#kulluk"
+      ],
+      "thumbnail_or_cover_text": "EMANETÇİ İNSAN"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Dünyada adalet eksik görünüyorsa, bu adalet yok demek değildir.",
+      "title_options": [
+        "Adalet Neden Tamamlanır?",
+        "Dünyada Adalet Eksikse Ne Olur?",
+        "Mazlumun Hakkı Nereye Gider?",
+        "Büyük Mahkeme Neden Gerekir?"
+      ],
+      "selected_title": "Adalet Neden Tamamlanır?",
+      "description": "Mazlumun hakkı ve zalimin hesabı, daha büyük bir mahkemeyi düşündürür. #derinokuma #shorts #adalet #ahiret #haşir #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#adalet",
+        "#ahiret",
+        "#haşir",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "ADALET TAMAMLANIR"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Güzellik sadece kaybolmak için gösterilmiş olamaz.",
+      "title_options": [
+        "Güzellik Neden Ebediyeti İster?",
+        "Doymadan Ayrılıyorsak Ne Olur?",
+        "Güzellik Sadece Kaybolur Mu?",
+        "Daimi Seyir Yurdu"
+      ],
+      "selected_title": "Güzellik Neden Ebediyeti İster?",
+      "description": "Dünya güzellikleri kısa bir seyir değil, daimi temaşaya açılan işaretlerdir. #derinokuma #shorts #tefekkür #güzellik #ahiret #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#güzellik",
+        "#ahiret",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "GÜZELLİK KALIR"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Burada tattırılan nimetler, asıllarına çağıran işaretler gibidir.",
+      "title_options": [
+        "Nimetler Neyi Haber Verir?",
+        "Dünya Neden Sadece Numune?",
+        "Tattırılan Nimet Ne Söyler?",
+        "Gölge Varsa Asıl Vardır"
+      ],
+      "selected_title": "Nimetler Neyi Haber Verir?",
+      "description": "Dünya nimetleri geçici bir tadım gibi; asıl ziyafetin varlığını düşündürür. #derinokuma #shorts #nimet #şükür #ahiret #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#nimet",
+        "#şükür",
+        "#ahiret",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "NUMUNE VE ASIL"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Peygamberin duası, insanlığın en büyük ihtiyacını dile getirir.",
+      "title_options": [
+        "Dua Haşri Nasıl Gösterir?",
+        "Peygamberin Duası Neyi İster?",
+        "Rahmet En Büyük Talebi Reddeder Mi?",
+        "En Büyük Dua"
+      ],
+      "selected_title": "Dua Haşri Nasıl Gösterir?",
+      "description": "En küçük ihtiyaçları gören rahmet, ebedî saadet talebini cevapsız bırakmaz. #derinokuma #shorts #dua #peygamber #haşir #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#dua",
+        "#peygamber",
+        "#haşir",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "BÜYÜK DUA"
+    }
+  ]
+}
