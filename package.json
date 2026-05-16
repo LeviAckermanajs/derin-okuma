@@ -10,7 +10,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "video:prep": "node scripts/prepare-video-package.mjs"
+    "video:prep": "node scripts/prepare-video-package.mjs",
+    "video:validate": "node scripts/validate-video-package.mjs",
+    "video:batch": "node scripts/build-video-batch.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.0",

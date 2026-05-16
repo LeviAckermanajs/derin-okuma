@@ -223,6 +223,8 @@ Mevcut manuel akışı adım adım kısaltmak için planlanan komutlar:
 
 Detaylı tasarım, smoke test sırası ve riskler için bkz: `docs/video-automation-roadmap.md`
 
+**Day-20 otomasyon notu:** `video:validate` ve `video:batch --limit 2` implement edildi. `video:batch` şimdilik yalnızca Shorts için desteklenir; batch dosyası n8n Load Input Code node'a tek kez yapıştırılır ve birden fazla item döndürür. İlk n8n batch testi mutlaka `--limit 2` ile, sadece `short-001` ve `short-002` üzerinden yapılmalıdır.
+
 ---
 
 ## Video Prep Scaffold Komutu
