@@ -142,6 +142,16 @@ docs/video-tests/batches/<slug>-shorts-batch-load-input.js
 - Output çakışması ve içerik karışması görülmedi
 - Sonraki kontrollü adım: `--limit 6` ile tam Shorts batch
 
+### Day-23 Sonuçları
+
+- Full 6 Shorts batch testi başarılı (Day-23)
+- `23-soz-2-mebhas-1-nukte` paketi için 6 item n8n'de ayrı job olarak işlendi
+- 6 ayrı Shorts output dosyası oluştu
+- Output çakışması ve içerik karışması görülmedi
+- Batch pipeline Shorts üretimi için doğrulandı
+- Aşama 3 tamamlandı
+- Sonraki önerilen aşama: `video:publish-pack`
+
 ---
 
 ## Aşama 4 — n8n Webhook Gönderimi
@@ -214,6 +224,13 @@ shorts/
 
 Her dosya doğrudan YouTube'a yapıştırılabilir formatta olacak; hiç JSON editlemesi gerekmeyecek.
 
+### Day-24 Uygulama Notu
+
+- `video:publish-pack` implement edildi.
+- İlk test `23-soz-2-mebhas-1-nukte` Shorts metadata üzerinde yapılacak.
+- Komut metadata JSON dosyalarından YouTube upload için hazır `.txt` dosyaları üretir.
+- Tam otomatik YouTube upload hâlâ ileri aşamaya bırakıldı.
+
 ---
 
 ## Aşama 6 — YouTube API / n8n YouTube Node
@@ -239,8 +256,8 @@ Bu aşama kasıtlı olarak ileri bırakılmıştır.
 
 | Gün | Hedef |
 |---|---|
-| Day-20 | `video:validate` tasarımı + `video:batch` tasarımı; mevcut `23-soz-2-mebhas-2-nukte` paketi üzerinde manuel doğrulama |
-| Day-21 | `video:batch --limit 2` implementasyonu + `23-soz-2-mebhas-2-nukte` üzerinde smoke test |
+| Day-20 | `video:validate` tasarımı + `video:batch` tasarımı; mevcut `23-soz-2-mebhas-1-nukte` paketi üzerinde manuel doğrulama |
+| Day-21 | `video:batch --limit 2` implementasyonu + `23-soz-2-mebhas-1-nukte` üzerinde smoke test |
 | Day-22 | `video:batch --limit 4` ara smoke test |
 | Day-23 | 6 Shorts batch smoke test; n8n item array davranışı ve job_id doğrulaması |
 | Day-24 | `video:validate` implementasyonu; doğrulama raporu çıktısı testi |

@@ -223,6 +223,8 @@ Mevcut manuel akışı adım adım kısaltmak için planlanan komutlar:
 
 Detaylı tasarım, smoke test sırası ve riskler için bkz: `docs/video-automation-roadmap.md`
 
+**Day-24 publish pack notu:** `video:publish-pack` komutu eklendi. Bu komut YouTube'a otomatik upload yapmaz; metadata JSON dosyalarından kopyala-yapıştır hazır `.txt` dosyaları üretir. Shorts upload sırasında her Short için `title.txt`, `description.txt`, `hashtags.txt`, `thumbnail_text.txt` ve varsa `hook.txt` dosyaları kullanılır.
+
 **Day-20 otomasyon notu:** `video:validate` ve `video:batch --limit 2` implement edildi. `video:batch` şimdilik yalnızca Shorts için desteklenir; batch dosyası n8n Load Input Code node'a tek kez yapıştırılır ve birden fazla item döndürür.
 
 **Day-21 batch smoke test notu:** `video:batch --limit 2` n8n smoke test başarılı oldu.
@@ -238,6 +240,13 @@ Detaylı tasarım, smoke test sırası ve riskler için bkz: `docs/video-automat
 - Output çakışması ve içerik karışması görülmedi
 - `--run-id` kullanımı batch tekrar testlerinde standart hale geldi
 - Sonraki adım 6 Shorts tam batch testidir
+
+**Day-23 full batch smoke test notu:** 6 Shorts full batch testi başarılı oldu.
+- `23-soz-2-mebhas-1-nukte` paketi için 6 Shorts tek batch dosyasıyla n8n'de üretildi
+- 6 item ayrı job olarak işlendi ve 6 ayrı Shorts output dosyası oluştu
+- Output çakışması ve içerik karışması görülmedi
+- Manuel n8n paste sayısı 6'dan 1'e düştü
+- Bundan sonra Shorts batch üretiminde `--run-id` kullanımı önerilir
 
 ---
 

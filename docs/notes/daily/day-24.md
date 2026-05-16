@@ -1,4 +1,40 @@
-# Day-24 - 10. Soz Hasir Risalesi Video Paketi
+# Day-24 — video:publish-pack
+
+## Bugünün Amacı
+
+YouTube upload hazırlığı için metadata JSON dosyalarından kopyala-yapıştır hazır `.txt` dosyaları üretmek.
+
+## Eklenen Komut
+
+```bash
+npm run video:publish-pack -- --slug <slug> --type shorts
+```
+
+## Test Paketi
+
+- Slug: `23-soz-2-mebhas-1-nukte`
+- Type: `shorts`
+
+## Yapılanlar
+
+- `scripts/build-video-publish-pack.mjs` eklendi
+- `package.json` içine `video:publish-pack` scripti eklendi
+- 6 Shorts için publish pack dosyaları üretildi
+- Her Short için `title.txt`, `description.txt`, `hashtags.txt`, `thumbnail_text.txt`, `hook.txt`, `upload-notes.md` oluşturuldu
+- `shorts/upload-checklist.md` ve publish pack `index.md` oluşturuldu
+- Hashtag consistency, TODO ve boş alan kontrolleri script içinde doğrulandı
+
+## Publish Pack
+
+`docs/video-tests/publish/23-soz-2-mebhas-1-nukte/`
+
+## Sonraki Adım
+
+Oluşan publish pack dosyalarıyla 6 Shorts'un YouTube upload sürecini manuel olarak test etmek.
+
+---
+
+# Önceki Day-24 Notu - 10. Soz Hasir Risalesi Video Paketi
 
 `10. Söz - Haşir Risalesi - 1-5. Suret` yazisi icin video uretim scaffold dosyalari gercek icerikle dolduruldu.
 
