@@ -1,6 +1,6 @@
 ---
-title: "Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı"
-description: "Yirmi Birinci Söz – Birinci Makam"
+title: "21. Söz - 1. Makam"
+description: "Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı"
 pubDate: 2026-03-27
 ---
 
