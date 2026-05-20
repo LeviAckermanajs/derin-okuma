@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "21-soz-1-makam",
+  "test_day": "day-28",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan ömrünün kısa olduğunu bilir; ama hayatını sanki burada hep kalacakmış gibi kurar. İşte bu çelişki, ibadeti en çok ağırlaştıran şeydir.",
+      "title_options": [
+        "Namaz Neden Ağır Gelir? Asıl Sebep Bu",
+        "İnsan Neden İbadeti Ağır Hissediyor?",
+        "Seni Namazdan Uzaklaştıran Gizli Aldanış"
+      ],
+      "selected_title": "Namaz Neden Ağır Gelir? Asıl Sebep Bu",
+      "description": "İbadeti ağırlaştıran şey çoğu zaman namaz değil, ebediyet vehmimizdir. #derinokuma #shorts #tefekkür #iman #namaz",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#namaz",
+        "#nefis",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "NAMAZ NEDEN AĞIR GELIR?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Her gün yapılan şey bıktırır, denir. Peki neden her gün yediğin ekmek, içtiğin su seni bıktırmıyor?",
+      "title_options": [
+        "Tekrar Eden Şey Neden Değersiz Sayılır?",
+        "Namaz Neden Her Gün Kılınır?",
+        "Tekrar İhtiyacın İşaretidir"
+      ],
+      "selected_title": "Namaz Neden Her Gün Kılınır?",
+      "description": "Tekrar bıktırıcılık değil, ihtiyacın işaretidir. Kalbin de her gün beslenmeye ihtiyacı var. #derinokuma #shorts #tefekkür #iman #ibadet",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ibadet",
+        "#namaz",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "TEKRAR NEDEN GEREKLİ?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Belki bugün ibadet etmek için zor hissediyorsundur. Ama bu zorluğun ne kadarı gerçekten bugüne ait?",
+      "title_options": [
+        "Sabrını Nerede Harcıyorsun?",
+        "İbadet Neden Bu Kadar Zor Geliyor?",
+        "Bugünkü Güç Neden Yetmiyor?"
+      ],
+      "selected_title": "Sabrını Nerede Harcıyorsun?",
+      "description": "Yorgunluk çoğu zaman bugünden değil, geçmiş ve gelecekten gelir. Sabır kuvvetini doğru yere harca. #derinokuma #shorts #tefekkür #sabır",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#sabır",
+        "#iman",
+        "#nefis",
+        "#ibadet"
+      ],
+      "thumbnail_or_cover_text": "SABRINI NEREDE HARCIYORSUN?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Namaz kılıyorsun ama hayatında somut olarak ne değişiyor? Bu soru tanıdık mı?",
+      "title_options": [
+        "İbadetin Karşılığı Neden Görünmüyor?",
+        "Namazın Neticesi Nedir?",
+        "İbadet Bize Ne Kazandırıyor?"
+      ],
+      "selected_title": "İbadetin Karşılığı Neden Görünmüyor?",
+      "description": "Namazın neticesi sadece bu dünyayla sınırlı değildir. Ebedî hayat hesaba katılınca tablo değişir. #derinokuma #shorts #tefekkür #iman #ahiret",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ahiret",
+        "#namaz",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "İBADETİN NETİCESİ"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Saatlerce içeriklere bakabilirsin. Ama birkaç dakika namaz için 'vaktim yok' diyebilirsin. Bu gerçekten bir zaman problemi mi?",
+      "title_options": [
+        "Dünya İşleri Çok mu, Yoksa Öncelikler mi Kayboldu?",
+        "Zaman Neden Yetmiyor?",
+        "Asıl Vazifen Nedir?"
+      ],
+      "selected_title": "Dünya İşleri Çok mu, Yoksa Öncelikler mi Kayboldu?",
+      "description": "Zaman azlığı değil, önceliklerin kaybolması asıl mesele. İnsan sırf dünya için yaratılmadı. #derinokuma #shorts #tefekkür #iman #hayat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#hayat",
+        "#ibadet",
+        "#nefis"
+      ],
+      "thumbnail_or_cover_text": "VAKIT YOK MU GERÇEKTEN?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Namazında dağınıklık var, dikkat dağılıyor, huşû eksik. Peki bu, namazı bırakmak için geçerli bir sebep midir?",
+      "title_options": [
+        "Kusurlu Namaz Bırakılır mı?",
+        "Namazım Yeterince İyi Değil mi?",
+        "Eksik Namaz Bile Değerlidir"
+      ],
+      "selected_title": "Kusurlu Namaz Bırakılır mı?",
+      "description": "Çekirdek küçüktür ama ağacın hakikatini taşır. Eksiklik, bırakmanın değil devam etmenin sebebidir. #derinokuma #shorts #tefekkür #namaz #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#namaz",
+        "#iman",
+        "#ibadet",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "KUSURLU NAMAZ BIRAKILIR MI?"
+    }
+  ]
+}

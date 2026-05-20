@@ -1,0 +1,170 @@
+{
+  "source": {
+    "blog_post": "21-soz-1-makam",
+    "title": "21. Söz - 1. Makam",
+    "source_files": [
+      "src/content/blog/21-soz-1-makam.md"
+    ]
+  },
+  "test_day": "day-28",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan ömrünün kısa olduğunu bilir; ama hayatını sanki burada hep kalacakmış gibi kurar. İşte bu çelişki, ibadeti en çok ağırlaştıran şeydir.",
+      "title": "Namaz Neden Ağır Gelir? Asıl Sebep Bu",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan namazın güzel olduğunu bilir. Bunu büyük çoğunluk zaten kabul eder. Ama 'her gün, beş vakit, ömür boyu...' denince bir usanç hissi belirir. Bu usancın kaynağı nedir?",
+          "visual_note": "Person looking out a rain-streaked window, contemplative mood, soft grey light, quiet interior.",
+          "keywords": ["rainy window", "contemplation", "grey light", "interior"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsanı ibadetten uzaklaştıran en gizli aldanışlardan biri, burada hep kalacakmış gibi yaşama vehminin içimize yerleşmiş olmasıdır. Ömrümüzü uzun ve garanti edilmiş hissedince; günün küçük bir dilimini ebediyet hesabına ayırmak ağır gelir.",
+          "visual_note": "Hourglass on a stone surface, sand slowly falling, close-up cinematic shot, shallow depth of field.",
+          "keywords": ["hourglass", "time passing", "sand", "impermanence"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Oysa elde gelecek yıla, hatta yarına kadar yaşayacağına dair kesin bir güvence yok. İnsan bunu gerçekten hissedebilse, kısa ama değerli bir vakti ebediyet için ayırmak çok farklı görünürdü. Sorun namazda değil, ömrü nasıl gördüğümüzdedir.",
+          "visual_note": "Sunset over a quiet valley, last light fading, peaceful finality, golden and warm tones.",
+          "keywords": ["sunset", "fading light", "finality", "quiet valley"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Her gün yapılan şey bıktırır, denir. Peki neden her gün yediğin ekmek, içtiğin su seni bıktırmıyor?",
+      "title": "Tekrar Eden Şey Neden Değersiz Sayılır?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Her gün yapılan şey bıktırır, diye düşünülür. Bu mantık yaygındır. Ama şunu sormak gerekir: İnsan her gün yer, her gün su içer, her gün nefes alır. Bunlar tekrar ettiği için değersiz mi olur?",
+          "visual_note": "Glass of clear water on a wooden table, simple natural light, everyday essential element.",
+          "keywords": ["glass of water", "daily essential", "simplicity", "natural light"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Tekrar ediyor olması bir şeyin ihtiyaç olduğunu gösterir. Çünkü insan neye ne kadar muhtaçsa, ona o kadar sık döner. Bedenin her gün beslenmeye ihtiyacı olduğu gibi; kalbin, ruhun ve insanın en derin yönünün de manevî beslenmeye ihtiyacı vardır.",
+          "visual_note": "Tree roots drinking from deep soil, underground nourishment, invisible sustenance, nature depth.",
+          "keywords": ["tree roots", "underground nourishment", "invisible sustenance", "depth"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Namaz, kalbin gıdası ve ruhun suyu gibidir. Sürekli uyaran ve meşguliyet içinde bunalan insan için namaz; yeniden nefes alabilmenin kapısıdır. Tekrar bu yüzden değersizlik değil, zorunlu ihtiyacın işaretidir.",
+          "visual_note": "Open window letting in fresh morning breeze, curtain moving gently, renewal feeling, soft light.",
+          "keywords": ["open window", "morning breeze", "renewal", "fresh air"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Belki bugün ibadet etmek için zor hissediyorsundur. Ama bu zorluğun ne kadarı gerçekten bugüne ait?",
+      "title": "Sabrını Nerede Harcıyorsun?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Bir insan bazen yalnızca bugünkü ibadetin altında ezilmez. Asıl ezildiği şey, zihninde taşıdığı bütün zaman yüküdür. Geçmişteki eksikler, gelecekteki süreklilik korkusu, 'hep böyle mi devam edecek?' kaygısı...",
+          "visual_note": "Person carrying heavy backpack uphill, struggling with weight, grey misty mountain path.",
+          "keywords": ["heavy backpack", "uphill struggle", "burden", "grey path"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bütün bu geçmiş ve gelecek yükü bugüne yığıldığında, bugünün küçük vazifesi bile ezici görünür. Oysa insan geçmişini değiştiremez; gelecek ise henüz elinde değildir. Eldeki tek an, şu andır.",
+          "visual_note": "Person standing at a road junction, past fading behind and uncertain future ahead, present moment clear.",
+          "keywords": ["present moment", "past and future", "clarity in now", "crossroads"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Sabır kuvveti geçmişin pişmanlığına ve geleceğin endişesine dağıtılırsa, bugünkü vazife için güç kalmaz. 'Gücüm yok' diyenin çoğu zaman gücü vardır; ama o güç başka yerlerde harcanmaktadır.",
+          "visual_note": "Single candle flame burning in darkness, steady and focused, symbol of concentrated will.",
+          "keywords": ["candle flame", "focused energy", "darkness", "willpower"]
+        },
+        {
+          "scene_id": "scene-004",
+          "narration": "İnsandan ömür boyu tek seferde sabır istenmiyor. Ondan sadece şu anın vazifesine dönük bir sadakat isteniyor. Bugünkü görev, bugünün yükünü taşır; dün ve yarının yükünü değil.",
+          "visual_note": "One step on a mountain path, close-up of boot taking a single step forward, steady progress.",
+          "keywords": ["single step", "mountain path", "progress", "steadiness"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Namaz kılıyorsun ama hayatında somut olarak ne değişiyor? Bu soru tanıdık mı?",
+      "title": "İbadetin Karşılığı Neden Görünmüyor?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan yaptığı her şeyin hemen hissedilir ve ölçülebilir bir karşılığını görmek ister. Namaz da bu bakışla değerlendirildiğinde, bazen 'somut faydası belirsiz' gibi algılanabilir. Ama bu, namazın neticesini yalnızca bugünkü dünyayla sınırlamaktır.",
+          "visual_note": "Person searching for visible results on a blank board, modern setting, looking for measurable outcomes.",
+          "keywords": ["blank board", "searching for results", "modern workspace", "uncertainty"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsan yalnızca bugünden ibaret bir varlık değildir. Kabir, mahşer ve ebedî hayat da hesaba katıldığında, namazın neticesi küçümsenemez. Kabir karanlığında ışık, hesap yerinde belge, sırat üzerinde destek olacak bir amelin neticesi hiç küçük değildir.",
+          "visual_note": "Long dark corridor with faint warm light at end, metaphorical journey toward light, cinematic.",
+          "keywords": ["dark corridor", "distant light", "journey", "hope"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Dünyada küçük ücretler için büyük zahmetlere sabreden insan, geçici vaatlere çok ciddiyet gösterirken sonsuz vaade gevşek davranıyorsa; sorun namazın ağırlığında değil, kalbin değer sıralamasındadır. Namaz neticesiz değildir; yalnızca neticesi dünya gözüyle ölçülmez.",
+          "visual_note": "Two paths diverging, one busy and noisy, one quiet and deep, symbolic choice landscape, cinematic.",
+          "keywords": ["diverging paths", "choice", "busy vs quiet", "depth over surface"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Saatlerce içeriklere bakabilirsin. Ama birkaç dakika namaz için 'vaktim yok' diyebilirsin. Bu gerçekten bir zaman problemi mi?",
+      "title": "Dünya İşleri Çok mu, Yoksa Öncelikler mi Kayboldu?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Saatlerce sosyal medya akışında kalınabilir, onlarca video izlenebilir, aynı şeyler tekrar tekrar kontrol edilebilir. Ama birkaç dakikalık ibadet için 'vaktim yok, dünya işlerim çok' denilirse; bu gerçekten zaman problemi midir?",
+          "visual_note": "Person endlessly scrolling through phone, blue light in dark room, countless notifications passing.",
+          "keywords": ["phone scrolling", "blue light", "notifications", "time wasting"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsanın 'dünya işleri' dediği şeylerin çoğu, gerçekten kendisine ait ve zaruri işler midir? Modern insanın en büyük sorunlarından biri, asli vazifelerini ihmal edip tali bilgi ve meşguliyetlerle dağılmasıdır. Zihin dolup taşar; ama ruh beslenmez.",
+          "visual_note": "Overflowing inbox with trivial messages, contrast with an empty quiet prayer space, priority imbalance.",
+          "keywords": ["overflowing inbox", "empty prayer space", "priority contrast", "distraction"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "İnsan sırf dünya için yaratılmamıştır. Yalnızca kazanan, tüketen, yorulan bir beden değildir. Bütün vaktini dünyaya vermek, kendi mahiyetini eksik okumaktır. Asıl vazife hatırlandığında, tali meşguliyetlerin yeri değişir.",
+          "visual_note": "Wide open sky above a crowded city, vast perspective from rooftop, insignificance of busyness vs vastness.",
+          "keywords": ["open sky", "crowded city", "rooftop perspective", "vastness"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Namazında dağınıklık var, dikkat dağılıyor, huşû eksik. Peki bu, namazı bırakmak için geçerli bir sebep midir?",
+      "title": "Kusurlu Namaz Bırakılır mı?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan bazen kendi namazını küçümser. 'Dikkatim dağılıyor, tam değil, layık değilim' der. Ve bu küçümseme zamanla bırakmaya dönüşebilir. Ama şunu sormak gerekir: Eksiklik, bırakmanın sebebi midir?",
+          "visual_note": "Flickering small candle in a large dark room, imperfect but still burning, cinematic intimate mood.",
+          "keywords": ["flickering candle", "imperfect light", "dark room", "persistence"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Küçük bir çekirdek ile olgunlaşmış ağaç arasında öz bakımından bir kopukluk yoktur; fark derinlik farkıdır. Bir başlangıç namazı ile derin bir huşû namazı arasında da tür farkı değil, derece farkı vardır. İkisi de aynı hakikati taşır.",
+          "visual_note": "Small seed beside a towering tree, scale difference but same essence, forest floor, warm natural light.",
+          "keywords": ["seed and tree", "potential", "growth", "same essence"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Nefis bazen kusuru bahane edip ibadeti tamamen terk ettirmek ister. Oysa zayıf da olsa, dağınık da olsa; o namazda hakikatten bir sır taşınır. Mükemmel olmadığın için bırakma. Çekirdek küçüktür ama ağacın hakikatini taşır.",
+          "visual_note": "Small plant pushing through cracked stone, resilience in harsh conditions, close-up detail, warm light.",
+          "keywords": ["plant through stone", "resilience", "persistence", "tiny but strong"]
+        }
+      ]
+    }
+  ]
+}
