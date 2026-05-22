@@ -196,6 +196,27 @@ Referans: `docs/prompts/youtube-metadata.md`
 
 ---
 
+## Test Stratejisi
+
+Temiz run testi yaparken en düşük maliyetli kademeyi seç:
+
+1. Logic/preflight test: 0 kredi
+   - `npm run video:submit:dry-run -- --batch-input <batch-json>`
+   - Batch cardinality, short ID kapsamı, manifest path’leri ve no-external akışı doğrulanır.
+   - Renderer’a POST atılmaz, export yapılmaz.
+
+2. Clean reuse render test: 0 kredi
+   - `npm run video:batch:reuse -- --slug <slug> --type shorts --run-id <newRunId> --reuse-assets-from-run <sourceRunId> --force`
+   - Yeni job/export klasörleri oluşur.
+   - Audio/video kaynakları eski başarılı run’dan yeniden kullanılır.
+   - ElevenLabs ve Pexels çağrılmaz.
+
+3. Full paid E2E test: nadiren
+   - Gerçek TTS ve yeni Pexels asset üretimi gerekiyorsa kullan.
+   - Bu mod kredi harcar, bu yüzden yalnızca external path sorunlarını doğrulamak için aç.
+
+---
+
 ## Gelecek Aşamalar
 
 - Blog frontmatter'a `video_status` alanı eklenerek hangi yazıların videoya hazırlandığı takip edilebilir
