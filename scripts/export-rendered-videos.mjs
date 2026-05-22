@@ -16,6 +16,7 @@ function parseArgs(argv) {
     slug: null,
     type: 'shorts',
     runId: null,
+    batchInput: null,
     jobsRoot: DEFAULT_JOBS_ROOT,
     exportRoot: process.env.DERIN_OKUMA_EXPORT_ROOT || null,
     folderName: null,
@@ -31,6 +32,7 @@ function parseArgs(argv) {
     if (arg === '--slug' && argv[i + 1]) args.slug = argv[++i];
     else if (arg === '--type' && argv[i + 1]) args.type = argv[++i];
     else if (arg === '--run-id' && argv[i + 1]) args.runId = argv[++i];
+    else if (arg === '--batch-input' && argv[i + 1]) args.batchInput = argv[++i];
     else if (arg === '--jobs-root' && argv[i + 1]) args.jobsRoot = argv[++i];
     else if (arg === '--export-root' && argv[i + 1]) args.exportRoot = argv[++i];
     else if (arg === '--folder-name' && argv[i + 1]) args.folderName = argv[++i];
@@ -95,7 +97,24 @@ function sanitizeFileName(name) {
   return cleaned || 'video';
 }
 
-function loadShortsMetadata(slug) {
+function shortIdForIndex(index) {
+  return `short-${String(index + 1).padStart(3, '0')}`;
+}
+
+function shortIdFromJobId(jobId) {
+  if (!jobId) return null;
+  const match = String(jobId).match(/(short-\d{3})/i);
+  return match ? match[1] : null;
+}
+
+function loadBatchInput(batchInputPath) {
+  if (!batchInputPath) return null;
+  const resolvedPath = path.resolve(batchInputPath);
+  if (!fs.existsSync(resolvedPath)) return null;
+  return readJson(resolvedPath, 'Batch input');
+}
+
+function loadShortsMetadataFile(slug) {
   const metadataPath = path.join(ROOT, 'docs/video-tests/shorts', slug, 'metadata', `${slug}-shorts-metadata.json`);
   const metadata = readJson(metadataPath, 'Shorts metadata');
   if (!Array.isArray(metadata.shorts) || metadata.shorts.length === 0) {
@@ -108,7 +127,86 @@ function loadShortsMetadata(slug) {
     if (!Array.isArray(short.hashtags) || short.hashtags.length === 0) fail(`${short.short_id} missing hashtags`);
     if (!isNonEmptyString(short.thumbnail_or_cover_text)) fail(`${short.short_id} missing thumbnail_or_cover_text`);
   }
-  return metadata;
+  return { metadata, metadataPath };
+}
+
+function buildFallbackShortRows(batchData) {
+  const items = Array.isArray(batchData?.items) ? batchData.items : [];
+  if (items.length === 0) {
+    fail('Batch input has no items');
+  }
+
+  return items.map((item, index) => {
+    const manifest = item && item.manifest ? item.manifest : null;
+    if (!manifest) {
+      fail(`[item ${index}] batch input item missing manifest`);
+    }
+
+    const jobId = item.job_id || (manifest.job && manifest.job.job_id);
+    if (!jobId) {
+      fail(`[item ${index}] batch input item missing job_id`);
+    }
+
+    const shortId = shortIdFromJobId(jobId) || shortIdForIndex(index);
+    const sceneTitle = Array.isArray(manifest.scenes)
+      ? manifest.scenes.map((scene) => scene && scene.title).find(isNonEmptyString) || ''
+      : '';
+    const title = isNonEmptyString(manifest.job && manifest.job.title)
+      ? manifest.job.title
+      : (isNonEmptyString(sceneTitle) ? sceneTitle : shortId);
+    const description = isNonEmptyString(manifest.job && manifest.job.description)
+      ? manifest.job.description
+      : `Fallback export for ${shortId}`;
+    const thumbnailText = isNonEmptyString(manifest.job && manifest.job.thumbnail_text)
+      ? manifest.job.thumbnail_text
+      : shortId;
+
+    return {
+      short_id: shortId,
+      title,
+      description,
+      hashtags: Array.isArray(manifest.metadata && manifest.metadata.hashtags)
+        ? manifest.metadata.hashtags
+        : [],
+      thumbnail_or_cover_text: thumbnailText,
+      hook: isNonEmptyString(manifest.metadata && manifest.metadata.hook)
+        ? manifest.metadata.hook
+        : '',
+      source_job_id: jobId,
+      metadata_source: 'batch_input_fallback'
+    };
+  });
+}
+
+function loadShortsExportSource(args) {
+  const metadataPath = path.join(ROOT, 'docs/video-tests/shorts', args.slug, 'metadata', `${args.slug}-shorts-metadata.json`);
+  if (fs.existsSync(metadataPath)) {
+    const { metadata } = loadShortsMetadataFile(args.slug);
+    return {
+      metadataFound: true,
+      metadataSource: 'file',
+      metadataPath,
+      sourceData: metadata,
+      items: metadata.shorts
+    };
+  }
+
+  const batchData = loadBatchInput(args.batchInput);
+  if (batchData) {
+    return {
+      metadataFound: false,
+      metadataSource: 'batch_input_fallback',
+      metadataPath,
+      batchInputPath: path.resolve(args.batchInput),
+      sourceData: batchData,
+      items: buildFallbackShortRows(batchData)
+    };
+  }
+
+  fail(
+    `Shorts metadata not found: ${rel(metadataPath)}. ` +
+    `Provide the metadata file or pass --batch-input <batch-json> to enable fallback.`
+  );
 }
 
 function loadShortsPackageTitle(slug) {
@@ -125,6 +223,8 @@ function loadShortsPackageTitle(slug) {
 function folderNameFor(args, metadata) {
   return args.folderName
     || metadata.source?.title
+    || metadata.source?.slug
+    || metadata.slug
     || loadShortsPackageTitle(args.slug)
     || args.slug;
 }
@@ -257,6 +357,17 @@ function writeExportIndex(targetDir, folderName, rows, dryRun, force) {
   const content = [
     `# Export Index — ${folderName}`,
     '',
+    '## Export Source',
+    '',
+    ...rows.length > 0 && rows[0].metadataSource
+      ? [
+          `- metadata_source: ${rows[0].metadataSource}`,
+          `- metadata_found: ${rows[0].metadataSource === 'file' ? 'true' : 'false'}`,
+          `- metadata_path: ${rows[0].metadataPath || 'n/a'}`,
+          `- export_items_count: ${rows.length}`,
+          ''
+        ]
+      : [],
     '## Shorts Summary',
     '',
     '| Short | Title | File |',
@@ -284,6 +395,9 @@ function writeExportIndex(targetDir, folderName, rows, dryRun, force) {
 }
 
 function buildShortMetadataSection(row) {
+  const description = isNonEmptyString(row.description) ? row.description.trim() : 'Yok';
+  const hashtags = Array.isArray(row.hashtags) && row.hashtags.length > 0 ? row.hashtags : null;
+  const thumbnailText = isNonEmptyString(row.thumbnailText) ? row.thumbnailText.trim() : 'Yok';
   const lines = [
     `### ${row.shortId} — ${row.title}`,
     '',
@@ -308,19 +422,19 @@ function buildShortMetadataSection(row) {
     '**Description:**',
     '',
     '```text',
-    row.description.trim(),
+    description,
     '```',
     '',
     '**Hashtags:**',
     '',
     '```text',
-    row.hashtags.join('\n'),
+    hashtags ? hashtags.join('\n') : 'Yok',
     '```',
     '',
     '**Thumbnail Text:**',
     '',
     '```text',
-    row.thumbnailText.trim(),
+    thumbnailText,
     '```',
     ''
   );
@@ -337,13 +451,17 @@ function copyVideo(source, target, dryRun, force) {
 }
 
 function exportShorts(args) {
-  const metadata = loadShortsMetadata(args.slug);
-  const expectedCount = metadata.shorts.length;
-  ok(`Loaded shorts metadata: ${expectedCount} shorts`);
+  const exportSource = loadShortsExportSource(args);
+  const expectedCount = exportSource.items.length;
+
+  ok(`metadata_found=${exportSource.metadataFound}`);
+  ok(`metadata_source=${exportSource.metadataSource}`);
+  ok(`metadata_path=${rel(exportSource.metadataPath)}`);
+  ok(`export_items_count=${expectedCount}`);
 
   const jobsRoot = path.resolve(expandPath(args.jobsRoot));
   const exportRoot = path.resolve(expandPath(args.exportRoot));
-  const folderName = folderNameFor(args, metadata);
+  const folderName = folderNameFor(args, exportSource.sourceData || { slug: args.slug });
   const targetDir = path.join(exportRoot, folderName);
 
   ok(`Jobs root: ${jobsRoot}`);
@@ -359,29 +477,32 @@ function exportShorts(args) {
   const plan = [];
   const usedTargets = new Set();
 
-  for (const short of metadata.shorts) {
-    const title = titleForShort(short);
-    const description = short.description || '';
-    const thumbnailText = short.thumbnail_or_cover_text || '';
-    if (!isNonEmptyString(description)) warn(`${short.short_id} description is empty`);
-    if (!isNonEmptyString(thumbnailText)) warn(`${short.short_id} thumbnail_or_cover_text is empty`);
-    const fileName = `${sanitizeFileName(title)}.mp4`;
+  for (const short of exportSource.items) {
+    const shortId = short.short_id || short.shortId || shortIdFromJobId(short.source_job_id) || shortIdForIndex(plan.length);
+    const title = titleForShort(short) || short.title || shortId;
+    const description = short.description || `Fallback export for ${shortId}`;
+    const thumbnailText = short.thumbnail_or_cover_text || short.thumbnailText || shortId;
+    const fileName = isNonEmptyString(title) && title !== shortId
+      ? `${sanitizeFileName(title)}.mp4`
+      : `${shortId}.mp4`;
     if (usedTargets.has(fileName)) fail(`duplicate target file name in export plan: ${fileName}`);
     usedTargets.add(fileName);
 
-    const jobDir = findShortJobDir(jobDirs, args.slug, short.short_id, args.runId);
+    const jobDir = findShortJobDir(jobDirs, args.slug, shortId, args.runId);
     // Strict: only renders/shorts-main.mp4 is accepted as the final render output.
     // Probe, temp, and asset staging files are never selected.
     const renderPath = path.join(jobDir, 'renders', 'shorts-main.mp4');
     const target = path.join(targetDir, fileName);
     plan.push({
-      shortId: short.short_id,
+      shortId,
       title,
       fileName,
       description,
       hashtags: Array.isArray(short.hashtags) ? short.hashtags : [],
       thumbnailText,
       hook: short.hook || '',
+      metadataSource: short.metadata_source || exportSource.metadataSource,
+      metadataPath: exportSource.metadataPath,
       renderPath,
       target
     });
