@@ -1,0 +1,92 @@
+{
+  "video_type": "shorts",
+  "source": "insanin-sahiplik-yanilgisi-ve-emanet-bilinci",
+  "test_day": "day-29",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Elindeki şeyler gerçekten sana mı ait? Bu soruyu hiç bu kadar ciddiye almadın.",
+      "title_options": [
+        "Hayat Senin Mi? Malik mi Emanetçi mi?",
+        "Elindekiler Sana Mı Ait?",
+        "Sahiplik Yanılgısı Nedir?",
+        "İnsan Neden Emanetçidir?"
+      ],
+      "selected_title": "Hayat Senin Mi? Malik mi Emanetçi mi?",
+      "description": "Elindekiler gerçekten sana mı ait, yoksa emanet mi verilmiş? Bu sorunun cevabı hayata bakışını kökten değiştirebilir. #derinokuma #shorts #tefekkür #iman #emanet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#emanet", "#risaleinur"],
+      "thumbnail_or_cover_text": "HAYAT SENİN Mİ?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Ölüm neden bu kadar karanlık gelir? Belki yanlış yerden bakıyoruz.",
+      "title_options": [
+        "Ölüm Neden Karanlık Görünür?",
+        "Ölüm Bir Terhis Olabilir mi?",
+        "Bakış Değişince Ölüm Değişir",
+        "Neden Ölümden Bu Kadar Korkarız?"
+      ],
+      "selected_title": "Ölüm Neden Karanlık Görünür?",
+      "description": "Ölümü yok oluş gibi görmek, insanın kendisini hayatına malik zannetmesinden kaynaklanır. Bakış değişince ölüm de değişir. #derinokuma #shorts #ölüm #tefekkür #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#ölüm", "#tefekkür", "#iman", "#emanet"],
+      "thumbnail_or_cover_text": "ÖLÜM TEHLİS Mİ?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Dışarıdan her şeyi olan birinin içi neden boş hissedebilir?",
+      "title_options": [
+        "Dışarıdan Parlayan, İçeriden Karanlık",
+        "Dış Zenginlik Neden Yetmez?",
+        "İçerisi Neden Boş Kalır?",
+        "Gerçek Huzur Nerede Saklı?"
+      ],
+      "selected_title": "Dışarıdan Parlayan, İçeriden Karanlık",
+      "description": "Dışarıdan her şeye sahip görünmek, içeride huzur olduğu anlamına gelmez. Gerçek saadet başka bir yerden gelir. #derinokuma #shorts #tefekkür #maneviyat #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#maneviyat", "#iman", "#huzur"],
+      "thumbnail_or_cover_text": "İÇERİSİ NEDEN BOŞ?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Musibet neden haksız gelir? Çünkü kendimizi malik zannediyoruz.",
+      "title_options": [
+        "Musibet Neden Anlamsız Gelir?",
+        "Musibet Neden Haksız Hissettir?",
+        "Emanet Bilinci Musibeti Nasıl Değiştirir?",
+        "Sıkıntı Neden Bu Kadar Ağır Gelir?"
+      ],
+      "selected_title": "Musibet Neden Anlamsız Gelir?",
+      "description": "Musibeti anlamsız bir saldırı gibi görmek, kendimizi malik zannetmemizden kaynaklanır. Emanet bilinci bakışı değiştirir. #derinokuma #shorts #musibet #tefekkür #sabır",
+      "hashtags": ["#derinokuma", "#shorts", "#musibet", "#tefekkür", "#sabır", "#iman"],
+      "thumbnail_or_cover_text": "MUSİBET NEDEN AĞIR?"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İnsan neden hayatı sürekli bir savaş gibi yaşar?",
+      "title_options": [
+        "Hayat Neden Savaş Gibi Gelir?",
+        "İnsan Neden Sürekli Yorulur?",
+        "Hayat Bir Çatışma mı Yardımlaşma mı?",
+        "Neden Bu Kadar Yorgunuz?"
+      ],
+      "selected_title": "Hayat Neden Savaş Gibi Gelir?",
+      "description": "İnsan varlığını yalnızca sebeplere bağlarsa hayat bir savaş alanına dönüşür. Ama kâinatta sadece çatışma değil, derin bir yardımlaşma da var. #derinokuma #shorts #tefekkür #hayat #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#hayat", "#iman", "#maneviyat"],
+      "thumbnail_or_cover_text": "HAYAT NEDEN SAVAŞ?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kul olmak insanı küçültür mü? Tam tersi.",
+      "title_options": [
+        "Kul Olmak Neden Küçültmez?",
+        "Kulluk İnsanı Nasıl Özgür Kılar?",
+        "Gerçek Özgürlük Nedir?",
+        "Kul Olmak Neden İzzettir?"
+      ],
+      "selected_title": "Kul Olmak Neden Küçültmez?",
+      "description": "Kulluk insanı küçültmez; onu lezzetlerin, korkuların ve hırsların köleliğinden kurtarır. Gerçek özgürlük budur. #derinokuma #shorts #kulluk #iman #özgürlük",
+      "hashtags": ["#derinokuma", "#shorts", "#kulluk", "#iman", "#özgürlük", "#tefekkür"],
+      "thumbnail_or_cover_text": "KUL OLMAK İZZETTİR"
+    }
+  ]
+}

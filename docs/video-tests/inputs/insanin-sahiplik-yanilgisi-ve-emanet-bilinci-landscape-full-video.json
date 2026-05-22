@@ -1,0 +1,309 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "İnsanın Sahiplik Yanılgısı ve Emanet Bilinci",
+    "description": "İnsan kendisini hayatının maliki mi yoksa emanetçisi mi olarak görür? Bu bakış farkının musibete, ölüme ve dünyaya yansımaları üzerine derin bir tefekkür.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "insanin-sahiplik-yanilgisi-ve-emanet-bilinci-landscape-day-29"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Açılış",
+      "narration": "İnsan bazen hayatı bir yük gibi taşır. Bedeni rahat, maddî imkânları yeterli, görünürde her şey yerli yerinde olabilir. Fakat kalbin derininde yine de bir ağırlık vardır. Bu ağırlığın kaynağı ne?",
+      "visual_note": "Quiet morning city street, person walking slowly alone, soft diffused light, introspective cinematic mood.",
+      "keywords": ["morning street", "solitude", "walking", "quiet city"],
+      "media_hints": {
+        "preferred_visual_style": "slow_cinematic",
+        "avoid": ["cartoon", "bright comedy tone"]
+      },
+      "emphasis": "calm_but_serious"
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Dışarıdan parlayan, içeriden karanlık",
+      "narration": "Bir insanın dışarıdan her şeye sahip görünmesi, onun gerçekten huzurlu olduğu anlamına gelmez. Gerçek saadet, dıştaki tabloya değil, insanın kendisini ve hayatı nasıl okuduğuna bağlıdır. İçerideki karanlığı dıştaki ışıklar söndüremez.",
+      "visual_note": "Luxurious window at night, interior warmly lit but person's face shadowed, reflective and quiet.",
+      "keywords": ["night window", "interior light", "reflection", "solitude"],
+      "media_hints": {
+        "preferred_visual_style": "cinematic"
+      }
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Dıştan zengin, içten boş",
+      "narration": "İnsan zahiren güzel bir tablonun ortasında olabilir; fakat kalbi ve ruhu sıkışmışsa, buna gerçek saadet denilemez. Dışarıdaki parlaklık kalbe doğrudan ulaşmaz. Kalbi aydınlatan başka bir şeydir.",
+      "visual_note": "Empty elegant room with sunlight pouring through tall windows, minimal furniture, quiet and still.",
+      "keywords": ["elegant room", "sunlight", "emptiness", "stillness"]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "İki medeniyet yüzü",
+      "narration": "İnsanlığın büyük medeniyetleri tek boyutlu değildir. Bir tarafta ilim, sanat, adalet ve insanlığa hizmet var. Diğer tarafta insanı ruhsuzluğa, maddeciliğe ve anlamsızlığa iten bir anlayış. İkisini aynı kefeye koymak büyük bir yanılgıdır.",
+      "visual_note": "Two contrasting urban scenes: modern city skyline at dusk on one side, quiet historic architecture on other.",
+      "keywords": ["city contrast", "modern architecture", "historic buildings", "dusk"],
+      "media_hints": {
+        "preferred_visual_style": "cinematic"
+      }
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Eleştirilen şey nedir?",
+      "narration": "Eleştirilen şey ilim değildir. Eleştirilen şey sanat da değildir. Eleştirilen şey, insanın ruhunu karartan, kalbini boşlukta bırakan ve hayatı yalnızca maddî çıkardan ibaret gösteren bozuk bir anlayıştır. Faydalı olan alınır; insanı içten aşındıran reddedilir.",
+      "visual_note": "Person studying in a library, warm book light, focused and calm, rows of books in background.",
+      "keywords": ["library", "study", "books", "warm light"]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Merkezî soru",
+      "narration": "Peki bu ayrımın kalbinde ne yatıyor? İnsan kendisini hayatına malik mi, yoksa ona emanetçi mi görmeli? Bu sorunun cevabı değiştiğinde, insanın musibete, ölüme, mala ve hatta kendisine bakışı da köklü biçimde değişir.",
+      "visual_note": "Person standing at a crossroads in a misty forest, two paths ahead, soft morning light.",
+      "keywords": ["crossroads", "forest path", "mist", "decision"],
+      "emphasis": "calm_but_serious"
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Sahipsizlik ve kaygı",
+      "narration": "İnsan kendisini tesadüflerin ve kör sebeplerin içinde yalnız hissederse, ölüm ona karanlık bir son gibi görünür. Musibet, haksız ve anlamsız bir saldırı gibi gelir. Gelecek korkutur, geçmiş üzer. Hayat sürekli bir gerginliğe dönüşür.",
+      "visual_note": "Lone person on a vast empty beach during storm clouds, dramatic grey sky, isolated and small.",
+      "keywords": ["empty beach", "storm clouds", "isolation", "dramatic sky"],
+      "media_hints": {
+        "preferred_visual_style": "cinematic",
+        "avoid": ["bright comedy tone"]
+      }
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Hayatı yalnız taşımak",
+      "narration": "Varlığını yalnızca sebeplere ve tesadüflere bağlayan insan, çok ağır bir yola girer. Bu bakışta her canlı, sayısız tehdide karşı tek başına dikilir. Gücü az, ihtiyacı büyük, ömrü kısa, arzuları uçsuz. Böyle bir durumda hayat, sürekli bir çatışma alanına dönüşür.",
+      "visual_note": "Person carrying heavy stones uphill on rocky terrain, dramatic lighting, laborious and isolated scene.",
+      "keywords": ["heavy burden", "uphill", "rocky path", "effort"],
+      "emphasis": "calm_but_serious"
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Hayat bir çatışma mı?",
+      "narration": "Hayatı yalnızca bir savaş alanı gibi görmek, insanı nihayetinde tüketir. Bu bakışta ne geçmişten teselli ne gelecekten güvence vardır. Her şey belirsiz, her kayıp mutlak ve her tehdit gerçektir. İnsan bu belirsizliğe kendi sınırlı gücüyle karşı koymaya çalışır; bu bir tükeniştir.",
+      "visual_note": "Tired person sitting on ground leaning against a wall in a dim alley, exhaustion, urban setting.",
+      "keywords": ["exhaustion", "urban alley", "tired", "solitude"]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Kâinatta yardımlaşma",
+      "narration": "Fakat kâinata dikkatlice bakıldığında sadece çatışma görülmez; yardımlaşma da görülür. Beden hücreleri birbirine hizmet eder. Canlılar birbirinin ihtiyacını karşılar. Bu derin düzen, kör bir tesadüfün eseri değil; arkasında bir hikmeti ve rahmeti işaret eden bir tablo.",
+      "visual_note": "Time-lapse of flowers blooming in a field, bees pollinating, sunlight and nature in harmony.",
+      "keywords": ["flowers blooming", "bees", "nature harmony", "sunlight"],
+      "media_hints": {
+        "preferred_visual_style": "slow_cinematic"
+      }
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Sahiplik iddiasının sınırı",
+      "narration": "İnsan kendisinin mutlak maliki olduğunu düşünür. Fakat düşündüğünde işin ne kadarı gerçekten elindedir? Kendi kalbinin atışını yönetemez. Hücrelerinin çalışmasını bilemez. Rızkının sayısız şartını kuşatamaz. Bu kadar sınırlı bir tasarrufla 'Ben tamamen kendime malikim' demek gerçekçi değildir.",
+      "visual_note": "Close-up of hands opening gently, sand or petals falling through fingers, slow motion, soft light.",
+      "keywords": ["hands", "sand slipping", "slow motion", "gentle light"]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Ne kadar sahibiz?",
+      "narration": "İnsan nefes alır; ama o nefesi kendisi üretmez. Görür; ama gözünün işleyişini kendisi düzenlemez. Düşünür; ama düşüncenin nereden kaynaklandığını tam olarak bilmez. Bu kadar gizem ve bağımlılık içinde yaşayan bir varlığın, 'Her şeye benim sahip olduğum' demesi, kendisini olduğundan büyük görmektir.",
+      "visual_note": "Extreme close-up of human eye reflecting light, then pulling back to reveal a person in nature.",
+      "keywords": ["human eye", "reflection", "nature", "perspective"]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Emanet ilanı",
+      "narration": "Elindeki nefis de mal da hayat da insana emniyet olarak verilmiştir; onun mülkü değildir. Bu bakış, insanı sorumluluktan kurtarmaz. Aksine ona daha derin bir sorumluluk bilinci kazandırır: Emaneti, geçici bir sahiplik gibi değil, gerçek bir emanetçilik gibi taşımak.",
+      "visual_note": "Person holding a small delicate bird gently in cupped hands, soft daylight, careful and tender.",
+      "keywords": ["hands holding bird", "gentle care", "daylight", "tenderness"],
+      "emphasis": "calm_but_serious"
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Malik ile Emanetçi arasındaki derin fark",
+      "narration": "İnsan kendisini malik görürse, her kaybı mutlak bir yıkım sayar. Her musibeti haksız bir saldırı gibi karşılar. Her ölümü karanlık bir bitiş olarak yaşar. Ama kendisini emanetçi bilirse, aynı olayları bambaşka bir gözle okumaya başlar.",
+      "visual_note": "Split image: stormy dark landscape on one side, calm golden meadow on the other, dramatic contrast.",
+      "keywords": ["contrast landscape", "storm vs calm", "dark and light", "nature contrast"]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Emanetçi bakış ne değiştirir?",
+      "narration": "Emanetçi bakış şunu söyler: Bu nefis, bu mal, bu hayat bana bir süre için verildi. Ben bunları korumakla, yerli yerinde kullanmakla sorumlu oldum. Asıl sahip kendim değilim. Bu yüzden hem gayret ederim hem de her şeyi kendi sınırlı omzuma yıkmam.",
+      "visual_note": "Person tending carefully to a garden, watering plants in soft morning light, focused and calm.",
+      "keywords": ["gardening", "morning light", "care", "tending"],
+      "media_hints": {
+        "preferred_visual_style": "slow_cinematic"
+      }
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Asker benzetmesi",
+      "narration": "Bir asker düşün. Elindeki silah, atı, levazımı kendisine emanettir. Onları korur, vazifesini yapar. Fakat asıl sahip sultandır. Asker sultanın emriyle görev yapar. Terhis vakti gelince görev biter ve asıl merkeze dönüş zamanı gelir.",
+      "visual_note": "Soldier standing at attention in open field at dusk, dignified posture, duty and honor mood.",
+      "keywords": ["soldier", "field", "dusk", "duty"]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "Ölüm sahiplik gözünden",
+      "narration": "Ölüm, sahiplik zihniyetinden bakılınca karanlık bir yok oluştur. Çünkü insan sahip olduğu her şeyi kaybettiğini düşünür. Kazandığı, sevdiği, inşa ettiği her şey geride kalır ve giden sadece yok olmaktadır. Bu bakış ölümü gerçek anlamda katlanılmaz kılar.",
+      "visual_note": "Autumn leaves falling in a dim forest, slow motion, melancholic and contemplative mood.",
+      "keywords": ["falling leaves", "autumn forest", "slow motion", "melancholy"]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Ölüm emanetçi bakışta — terhis",
+      "narration": "Ama emanetçi bakışta ölüm bambaşkadır. Ölüm terhistir. Vazifeyi yerine getirmiş bir kulun asıl huzura dönüşüdür. Emanetler teslim edilmiş, görev tamamlanmış, dönüş vakti gelmiştir. Bu iki bakış arasındaki fark, insanın ölümü nasıl karşıladığını kökten değiştirir.",
+      "visual_note": "Sunset over calm sea, warm golden reflection, horizon fading into light, serene and hopeful.",
+      "keywords": ["sunset", "calm sea", "horizon", "golden light"],
+      "emphasis": "calm_but_serious"
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Geçmişten mahzun değil, gelecekten korkmaz",
+      "narration": "Emanet bilincinde yaşayan insan geçmişine mahzun bakmaz; zira orada yaşananlar bir Malik'in ilmiyle gerçekleşti. Geleceğe de sonsuz bir korkuyla bakmaz; zira gelecek de o Malik'in iradesindedir. Bu, insanın acı çekmeyeceği anlamına gelmez. Fakat acının içinde tamamen ezilmeyeceği anlamına gelir.",
+      "visual_note": "Person sitting calmly on a hillside at dusk, looking at horizon, peaceful acceptance, warm light.",
+      "keywords": ["hillside", "dusk", "peaceful sitting", "horizon view"],
+      "media_hints": {
+        "preferred_visual_style": "slow_cinematic"
+      }
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Psikolojik fark",
+      "narration": "İki bakış arasındaki psikolojik fark derindir. Sahiplik zihniyetiyle yaşayan insan, kaybettiği her şeye dönük derin bir hüzün taşır. Emanetçi zihniyetiyle yaşayan ise aynı kayıpları yaşar; ama onların gerçek sahibinin olduğunu bilerek içsel bir denge kurabilir.",
+      "visual_note": "Two figures in distance, one hunched under weight, one standing upright, misty landscape.",
+      "keywords": ["two figures", "contrast posture", "misty landscape", "burden vs lightness"]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Musibet — pasif teslimiyet değil",
+      "narration": "Emanet bilinci, insanı musibetler karşısında pasif bırakmaz. İnsan elindeki emaneti korumakla yükümlüdür. Hastalığa, zarara, kötülüğe karşı elinden geleni yapar; tedbiri alır, çareyi arar. Fakat tüm bu çabaya rağmen gelen musibet, artık başıboş bir saldırı değildir.",
+      "visual_note": "Doctor carefully treating a patient, gentle and focused, warm clinic lighting, quiet determination.",
+      "keywords": ["medical care", "hospital", "gentle treatment", "determination"]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Emanetin sahibine teslimiyeti",
+      "narration": "Emanetçi insan musibet karşısında şunu içselleştirir: Ben kendimin mutlak sahibi değilim; bir emanet taşıyorum. Bu musibet, emanetin gerçek sahibinin iradesinden geliyorsa, burada da bir anlam vardır. Bu duruş insanı ne çaresizliğe ne de kontrolden çıkmış bir öfkeye bırakır.",
+      "visual_note": "Person kneeling in prayer in a quiet mosque interior, dim warm light, peace and submission.",
+      "keywords": ["prayer", "mosque interior", "submission", "quiet peace"],
+      "emphasis": "calm_but_serious"
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "İnce denge",
+      "narration": "İki uç arasında çok ince bir denge vardır. Bir tarafta kendini tamamen bırakmak, her şeyi kabullenip boyun eğmek. Diğer tarafta her şeyin mutlak sahibiymiş gibi davranmak; her kayıptan ezilmek, her musibetten yıkılmak. Emanet bilinci, bu iki ucun ortasındaki sağlıklı duruştur.",
+      "visual_note": "Balanced stone sculpture by the sea, calm waves in background, equilibrium in nature.",
+      "keywords": ["balanced stones", "sea", "equilibrium", "calm waves"]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Kur'ân terbiyesi insanı genişletir",
+      "narration": "İman ve Kur'ân terbiyesi, insanın bakışını genişletir. İnsan küçük bir varlıktır; küçük bir hastalık karşısında bile sarsılabilir. Ama bakışı genişleyince kendisini yalnız, sahipsiz ve anlamsız bir varlık olarak görmez. Kâinatı bir anlam ve zikir alanı olarak görmeye başlar.",
+      "visual_note": "Wide aerial view of vast landscape, mountains meeting sky, tiny human figure in foreground, expansive horizon.",
+      "keywords": ["aerial landscape", "mountains", "vast horizon", "human perspective"],
+      "media_hints": {
+        "preferred_visual_style": "slow_cinematic"
+      }
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Kâinat başıboş değil",
+      "narration": "Kâinattaki varlıklar başıboş nesneler değildir. Onlar, arkasında bir hikmet ve irade bulunan düzenin parçalarıdır. Bu bakışı kazanan insan, her şeyi kör tesadüflerin sahnesi olarak değil, bir anlam ve hikmetin tecellisi olarak okumaya başlar.",
+      "visual_note": "Starry night sky with Milky Way, vast and ordered cosmos, slow time-lapse movement.",
+      "keywords": ["milky way", "starry night", "cosmos", "vast universe"]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Kalp büyür — kardeşlik ve dua",
+      "narration": "Emanet bilinciyle yaşayan ve Kur'ân terbiyesiyle derinleşen insan, başkalarına da farklı bakar. Yalnızca kendi menfaatine kapanmaz. Başkasının acısıyla ilgilenir, onlara dua eder. Bir müslümanın sevinciyle sevinir. Bu, kalbin gerçek anlamda büyümesidir.",
+      "visual_note": "People sitting together in a garden at dusk, warm lantern light, community and quiet sharing.",
+      "keywords": ["community gathering", "garden", "lantern light", "togetherness"]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Semavat ve arzdaki kardeşlik",
+      "narration": "Geniş bakışlı insan kendisini yalnızca kendi çevresine kapatmaz. Salih kulları kardeş bilir. Onların dualarına ortak olur, onların saadetiyle sevinir. Bu, bencillikten ibaret bir varoluşun tam karşısında duran ve kalbi genişleten bir yaşam biçimidir.",
+      "visual_note": "Diverse hands joined together, warm light, unity and brotherhood, inclusive human connection.",
+      "keywords": ["hands together", "unity", "diverse people", "brotherhood"]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Abd — ama küçülmez",
+      "narration": "Kur'ân terbiyesinin talebesi için kul sıfatı verilir. Ama bu kulluk insanı küçültmez. Tam tersine, Allah'tan başkasına boyun eğmemeyi öğretir. En büyük mahlûkata karşı bile ubudiyet etmez. Kulluğun asıl gayesi menfaat değil; vazifedir, sadakattir, Rabbinin rızasıdır.",
+      "visual_note": "Person standing upright with dignity in open field, head slightly bowed in reverence, calm and grounded.",
+      "keywords": ["dignity", "reverence", "open field", "upright posture"]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Bozuk anlayışın kölesi",
+      "narration": "Yalnızca kendi nefsini ve çıkarını merkeze alan anlayışın taraftarı başka bir tablo çizer. Görünürde hürdür; ama gerçekte kendi lezzetlerinin, korkularının ve hırslarının kölesidir. Başkasına yardım ettiğinde bile arka planda kendi menfaatini hesaplar. Bu özgürlük görüntüsünde gizli bir köleliktir.",
+      "visual_note": "Person tangled in strings or cables, unable to move freely despite seeming free, urban setting.",
+      "keywords": ["trapped", "strings", "urban", "false freedom"]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Gençlere uyarı — taklidin sınırı",
+      "narration": "Her çağda genç nesiller dış dünyadan aldıklarıyla şekillenir. Bunda bir sorun yok. Ama körü körüne taklit, özellikle de ahlâkı bozan ve insanı kendi özünden uzaklaştıran bir taklit, ilerleme değildir. İlerleme, insanın en derinden kendisi olmayı sürdürerek bilgisini genişletmesidir.",
+      "visual_note": "Young person at crossroads between traditional village and modern city skyline, contemplative.",
+      "keywords": ["youth", "crossroads", "tradition vs modernity", "choice"]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Faydalı olanı almak meşrudur",
+      "narration": "Başka kültürlerden faydalı olan alınabilir. İlim, sanat, düzen, insanlığa hizmet eden her şey alınabilir. Ama ruhunu karartan, değerlerini zedeleyen ve insanı anlamsızlığa iten şeylere taklit adıyla kapı açmak başka bir meseledir. Bu ayrımı görmek önemlidir.",
+      "visual_note": "Library with ancient and modern books side by side, light streaming in, harmony of knowledge traditions.",
+      "keywords": ["library", "ancient and modern", "knowledge", "harmony"]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Sonuç — sahiplik ağırlaştırır",
+      "narration": "İnsan kendisini hayatının maliki zannedince ağırlaşır. Bütün hayatı, kayıpları, korkuları, ihtiyaçları kendi sınırlı gücüyle taşımaya kalkışır. Bu yük insanın omuzlarına sığmaz. Ufku daralır, nefesi kesilir, her kayıp ezici gelir.",
+      "visual_note": "Atlas figure bearing the world on shoulders, heavy stone sculpture, dramatic and weighty.",
+      "keywords": ["heavy burden", "weight", "carrying world", "sculpture"]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Sonuç — emanet hafifletir",
+      "narration": "Ama insan kendisini emanetçi bilince hafifler. Hem vazifesini ciddiye alır hem de her şeyi kendi omuzlarına yıkmaz. Nefsi de malı da hayatı da ona geçici olarak verilmiştir. Onları koruması beklenir; ama nihai sahip başkasıdır.",
+      "visual_note": "Person walking lightly on a forest path, sunlight through trees, relief and calm movement.",
+      "keywords": ["light walking", "forest path", "sunlight", "relief"],
+      "media_hints": {
+        "preferred_visual_style": "slow_cinematic"
+      }
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Her şey değişir",
+      "narration": "Bu bakış değiştiğinde çok şey değişir. Ölüm, yokluk olmaktan çıkar; terhistir. Musibet, anlamsız bir saldırı olmaktan çıkar; imtihandır. Dünya, salt korku ve kayıpların alanı olmaktan çıkar; Allah'ın isimlerinin göründüğü, kulluğun yaşandığı, emanetlerin taşındığı bir meydan olur.",
+      "visual_note": "Same road filmed in storm and then in golden morning light, transformation of same scene.",
+      "keywords": ["road in storm", "road in golden light", "transformation", "same place different light"]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Kapanış sorusu",
+      "narration": "Belki de insanı en derinden dönüştüren soru şudur: Ben hayatı kendi malım gibi mi taşıyorum, yoksa bana verilmiş bir emanet gibi mi? Bu sorunun cevabı değiştiğinde, insanın musibete, ölüme, mala, nefse, dünyaya ve hatta kendisine bakışı da değişir. Hayat aynı kalsa bile, bakış değişince her şey bambaşka bir anlam kazanır.",
+      "visual_note": "Person standing at sunrise on a hilltop, looking out at expansive landscape, calm resolution and hope.",
+      "keywords": ["sunrise hilltop", "expansive view", "new perspective", "hope"],
+      "emphasis": "calm_but_serious"
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "insanin-sahiplik-yanilgisi-ve-emanet-bilinci",
+    "test_day": "day-29",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled"
+  }
+}
