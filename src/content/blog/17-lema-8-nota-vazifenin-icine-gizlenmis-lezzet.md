@@ -1,0 +1,73 @@
+---
+title: "Vazifenin İçine Gizlenmiş Lezzet"
+description: "17. Lem'a 8. Nota'nın ışığında çalışmanın, vazifeye yönelişin ve hizmetin içine yerleştirilen anlam ve lezzeti keşfeden bir derin okuma."
+pubDate: 2026-05-23
+---
+
+Risale-i Nur Külliyatı'nda yer alan **17. Lem'a'nın 8. Notası**, insanın çalışmaya, vazifeye ve hizmete bakışını değiştiren kısa ama yoğun bir bölüm. Metin, özellikle "çalışmayı sadece yorulmak" zanneden insana seslenir. İlk cümlesi bile doğrudan bu noktaya dokunur: İnsan bazen rahatlığı saadet sanır; çalışmayı, gayreti ve sorumluluğu ise yük gibi görür. Oysa bu bölüm, kâinata dikkatle bakıldığında çok farklı bir hakikatin görüleceğini söyler: **Vazife yalnızca sonuç için yapılmaz; vazifenin kendi içinde de bir lezzet vardır.**
+
+Risale-i Nur'da şöyle geçer:
+
+> "Hizmetin mükâfatını hizmet içinde derc etmiştir."
+
+Yani insanın, hayvanların, bitkilerin ve hatta cansız varlıkların kendi vazifelerine yönelişinde yalnızca dışarıdan gelen bir ödül yoktur. Metne göre ödülün bir kısmı bizzat işin içine konmuştur. Bir şey, yaratılışına uygun vazifesini yaptığında bir düzenin parçası olur; o düzenin içinde kendine ait bir anlam, bir makam, bir güzellik kazanır.
+
+## Çalışmak Sadece Yorulmak Değildir
+
+Metnin ilk muhatabı "tembel insan"dır. Çünkü tembellik çoğu zaman çalışmayı sadece zahmet tarafından görür. Halbuki bölüm, kâinattaki varlıkların işleyişine bakarak başka bir pencere açar. Arı, sinek, tavuk, güneş, ay, hatta cansız görünen şeyler bile kendilerine verilen vazifeleri yerine getirir. Üstelik bu vazifeleri, sanki bir şevkle, bir istekle yapıyor gibidirler.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Amelin ücretini nefs-i amel içine koymuş."
+
+Bu cümle, bölümün kalbi gibidir. Yapılan işin ücreti, yalnızca işin sonunda elde edilen netice değildir. İşin kendisi de bir ücret taşır. İnsan bunu kendi bedeninde bile görebilir. Göz görmekle, kulak işitmekle, mide sindirmekle, kalp atmakla kendi hizmetini yapar. Bu hizmetler kesildiğinde rahat değil, aksine azap başlar. Demek ki vazife, yalnızca dışarıdan bakıldığında yük gibi görünür; içeriden bakıldığında hayatın düzenidir.
+
+Metin bunu hayvanlar üzerinden de anlatır. Horoz aç olduğu hâlde bulduğu rızkı tavuklara çağırır, kendisi yemeden onlara yedirir. Tavuk, yavruları için kendini tehlikeye atar. Hayvan anneleri yavrularını korur, besler, himaye eder. Burada dikkat çekilen şey şudur: Onlar bu vazifeleri kendi şahsî hesapları için yapmazlar. Vazife onlara öyle yerleştirilmiştir ki, o hizmetin içinde bir lezzet varmış gibi davranırlar.
+
+Bu noktada metin, insanı hayvanlara ve bitkilere bakmaya çağırır. Çünkü bitkiler de kendi hâl dilleriyle aynı hakikati gösterir. Ağaçlar güzel kokular, süsler, çiçekler ve meyveler verir; hatta meyveleri olgunlaşıp çürüyünceye kadar kendilerini feda ederler. Hindistan cevizi ve incir gibi meyveler, kendi çamurlu gıdalarına kanaat ederken meyvelerine süt gibi gıda taşır. Nar ağacı, bulanık sudan saf ve parlak bir şurup çıkarır.
+
+Burada anlatılmak istenen şey, tabiatın kendi başına şuursuz bir üretim alanı olduğu fikri değildir. Metin, bütün bu işleyişi İlâhî emirlerin ve rahmetin bir görünümü olarak okur. Varlıkların yaptığı her vazife, onlara verilmiş bir görevdir; onlar da kendi kabiliyetleri ölçüsünde bu görevi yerine getirir.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Rahat zahmette, zahmet rahattadır."
+
+Bu cümle ilk bakışta ters gibi görünür. Ama metnin mantığında çok yerindedir. Çünkü boş duran insan, rahat içindeyken bile ömründen şikâyet edebilir. Çalışan, vazifesini yapan, bir işle meşgul olan insan ise zahmetin içinde bile bir anlam bulabilir. Buradaki mesele sadece bedensel çalışma değildir; yaratılışa uygun bir vazife içinde bulunmaktır.
+
+## Her Şey Kendi Yerinde Bir Vazife Görüyor
+
+8. Nota'nın dikkat çekici taraflarından biri, sadece canlı varlıklardan değil, cansız görünen varlıklardan da söz etmesidir. Burada cansız varlıklara bilinç atfedilmez; onların kendi hesaplarına hareket etmediği özellikle belirtilir. Fakat metin, onların İlâhî isimlere ayna olmaları yönüyle bir güzellik, bir düzen, bir makam kazandığını söyler.
+
+Bir damla su ya da küçük bir cam parçası, kendi başına önemsiz ve karanlık görünebilir. Fakat güneşe yöneldiğinde ışığı yansıtır; sanki güneşin küçük bir aynası olur. Metin bu örnekle şunu anlatır: Bir varlık kendi zatıyla çok küçük olabilir; ama doğru vazifede yer aldığında çok büyük bir mananın aynası hâline gelir.
+
+Bu bakış, insan için de çok düşündürücüdür. İnsan kendi varlığını küçük, güçsüz ve sınırlı görebilir. Fakat kendisine verilen vazifeyi doğru anladığında, sadece kendi adına yaşayan bir varlık olmaktan çıkar; daha büyük bir düzenin içinde anlam kazanır.
+
+Metin sonra hareket ve düzen meselesine geçer. Güneşlerin dönüşünden zerrelerin hareketine kadar her şeyin İlâhî kader kanunu içinde cereyan ettiğini söyler. Her bir şeyin birçok vazifesi, ilişkisi ve faydası vardır. Mesela insanın gözündeki bir zerre sadece orada duran basit bir parça değildir. Gözle, göz hücresiyle, sinirlerle, damarlarla ve bedenin bütünüyle irtibatlıdır. Kendi yerine göre bir vazifesi, o vazifeye göre bir faydası vardır.
+
+Bu yüzden bölümde varlıkların iki yönlü şahitliğinden söz edilir. Birincisi: Her şey kendi gücünün çok üstünde vazifeler görür; bu da onun kendi başına değil, kudret sahibi bir Yaratıcı'nın emriyle hareket ettiğini gösterir. İkincisi: Her şey, âlemdeki genel düzene uygun davranır; bu da bütün varlıkların aynı ilim ve hikmetle kuşatıldığını düşündürür.
+
+Metinde küçük bir sinek örneği verilir. Yeni dünyaya gelmiş, tecrübesiz, küçücük bir canlı; hortumuyla hareket eder, tehlikeden kaçar, rızkını bulur. İnsanın uzun denemelerle öğrenebileceği şeyleri, o canlı adeta doğuştan bilir. Metin burada sorar: Bu sanatı ona kim öğretti?
+
+Bu soru yalnızca sineğe değil, arıya, örümceğe, yuvasını ören kuşa, hatta bitkilere kadar genişletilir. Her biri kendi vazifesini bilirmiş gibi davranır. Her biri kendisine verilmiş programı açar ve uygular.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Programını okur, emri anlar, hareket eder."
+
+*(sadeleştirilmiş)*
+
+Bu ifade, bölümün kâinata bakışını sade biçimde özetler. Varlıklar başıboş değildir. Her birinin içine yerleştirilmiş bir yöneliş, bir vazife, bir ölçü vardır. O ölçüyle hareket ederler.
+
+## İnsana Kalan İz
+
+17. Lem'a'nın 8. Notası, insanı çalışmaya zorlayan kuru bir öğüt vermez. Daha derin bir şey yapar: İnsana kâinatı gösterir. Arıyı, sineği, tavuğu, ağacı, meyveyi, tohumu, suyu, güneşi ve zerreyi aynı hakikatin farklı aynaları gibi okutur.
+
+Bu bölümün insanda bıraktığı ana fikir şudur: **Vazife, sadece yapılması gereken bir yük değildir; yaratılışın içine konmuş bir lezzet kapısıdır.** İnsan bunu fark ederse, çalışmayı yalnızca sonuç için katlanılan bir zahmet olarak görmez. Hizmetin kendisinde de bir anlam, bir huzur, bir iç ücret olduğunu hisseder.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Rahat içinde ve boş olan kimse ömründen şikâyet eder; çalışıp gören kimse ise hâline şükreder."
+
+*(sadeleştirilmiş)*
+
+Belki de bu bölümün bize bıraktığı en sade düşünce budur: Boşluk her zaman rahatlık değildir. Hareket her zaman yorgunluk değildir. Bazen insanı yoran şey çalışmak değil, vazifesiz kalmaktır. Bazen insanı diri tutan şey de tam olarak budur: Kendisine verilmiş anlamlı bir işi, kendi yerinde ve kendi ölçüsünde yerine getirmek.
