@@ -117,6 +117,7 @@ function ok(message)   { console.log(`[OK] ${message}`); }
 function warn(message) { console.log(`[WARN] ${message}`); }
 function info(message) { console.log(`[INFO] ${message}`); }
 function skip(message) { console.log(`[SKIP] ${message}`); }
+function plan(message) { console.log(`[PLAN] ${message}`); }
 
 function isNonEmptyString(value) {
   return typeof value === 'string' && value.trim().length > 0;
@@ -439,8 +440,12 @@ function addDays(dateStr, days) {
  * Build an ordered list of `count` ISO publish timestamps by cycling through
  * `slots` (e.g. ['13:00','19:00','22:00']) across calendar days starting at
  * `startDateStr`, skipping any slot within 60 minutes of now.
+ *
+ * `startSlotIndex` controls which slot to begin with on the first day (0 = first
+ * slot as usual). When resuming from a cursor, pass the index *after* the last
+ * known slot so the same day continues without repeating already-used slots.
  */
-function buildSchedule(startDateStr, slots, timezone, count) {
+function buildSchedule(startDateStr, slots, timezone, count, startSlotIndex = 0) {
   const schedule  = [];
   const BUFFER_MS = 60 * 60 * 1000;
   const now       = Date.now();
@@ -448,9 +453,11 @@ function buildSchedule(startDateStr, slots, timezone, count) {
 
   while (schedule.length < count) {
     if (dayOffset > 365) fail('Cannot find enough valid schedule slots within 1 year. Check --schedule-start-date.');
-    const dateStr = addDays(startDateStr, dayOffset);
-    for (const slotStr of slots) {
+    const dateStr   = addDays(startDateStr, dayOffset);
+    const slotStart = dayOffset === 0 ? startSlotIndex : 0;
+    for (let si = slotStart; si < slots.length; si++) {
       if (schedule.length >= count) break;
+      const slotStr = slots[si];
       const utcDate = localToUTC(dateStr, slotStr, timezone);
       if (utcDate.getTime() - now >= BUFFER_MS) {
         schedule.push({
@@ -464,6 +471,38 @@ function buildSchedule(startDateStr, slots, timezone, count) {
   }
 
   return schedule;
+}
+
+/**
+ * Scan the existing result file for uploaded entries that carry schedule data
+ * (publishAtLocal). Returns the entry with the latest local publish time so the
+ * next pending upload can continue from the following slot.
+ *
+ * Returns { id, slotDate, slotStr, slotIdx } or null if no scheduled entry found.
+ */
+function detectScheduleCursor(resultPath, slots) {
+  const raw = tryReadJson(resultPath);
+  if (!raw) return null;
+
+  const candidates = [];
+  if (Array.isArray(raw.videos)) {
+    for (const v of raw.videos) {
+      if (v.youtube_video_id && v.publishAtLocal) candidates.push(v);
+    }
+  }
+  if (candidates.length === 0) return null;
+
+  // ISO date-time strings sort lexicographically — no Date parsing needed.
+  let latest = candidates[0];
+  for (const c of candidates) {
+    if (c.publishAtLocal > latest.publishAtLocal) latest = c;
+  }
+
+  const slotStr  = latest.scheduleSlot || latest.publishAtLocal.slice(11, 16); // HH:MM
+  const slotDate = latest.publishAtLocal.slice(0, 10);                          // YYYY-MM-DD
+  const slotIdx  = slots.indexOf(slotStr);
+
+  return { id: latest.id, slotDate, slotStr, slotIdx };
 }
 
 // ── Single video upload ───────────────────────────────────────────────────────
@@ -540,10 +579,9 @@ if (!args.clientSecret) fail('Missing required --client-secret <path>');
 if (!args.token)        fail('Missing required --token <path>');
 
 if (args.scheduled) {
-  if (!args.scheduleStartDate) {
-    fail('--scheduled requires --schedule-start-date YYYY-MM-DD');
-  }
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(args.scheduleStartDate)) {
+  // scheduleStartDate is optional when a cursor can be detected from the result file;
+  // if provided, validate its format here.
+  if (args.scheduleStartDate && !/^\d{4}-\d{2}-\d{2}$/.test(args.scheduleStartDate)) {
     fail('--schedule-start-date must be in YYYY-MM-DD format');
   }
   for (const slot of args.scheduleSlots) {
@@ -640,14 +678,36 @@ for (const video of manifest.videos) {
 // ── Schedule assignment (pending videos only) ─────────────────────────────────
 
 if (args.scheduled && toUpload.length > 0) {
-  info(`Building schedule: start=${args.scheduleStartDate}  slots=${args.scheduleSlots.join(',')}  tz=${args.timezone}`);
-  const schedule = buildSchedule(args.scheduleStartDate, args.scheduleSlots, args.timezone, toUpload.length);
-  let slotIdx = 0;
+  let startDateStr   = args.scheduleStartDate;
+  let startSlotIndex = 0;
+
+  const cursor = detectScheduleCursor(resultPath, args.scheduleSlots);
+  if (cursor) {
+    info(`schedule_cursor latest=${cursor.id} local=${cursor.slotDate}T${cursor.slotStr}:00 slot=${cursor.slotStr}`);
+    if (cursor.slotIdx < 0) {
+      warn(`Cursor slot "${cursor.slotStr}" not found in schedule slots [${args.scheduleSlots.join(',')}]. Falling back to --schedule-start-date.`);
+      if (!startDateStr) fail(`--scheduled requires --schedule-start-date when cursor slot cannot be matched against [${args.scheduleSlots.join(',')}]`);
+    } else if (cursor.slotIdx === args.scheduleSlots.length - 1) {
+      // Last slot → roll over to next day, first slot
+      startDateStr   = addDays(cursor.slotDate, 1);
+      startSlotIndex = 0;
+    } else {
+      // Same day, next slot
+      startDateStr   = cursor.slotDate;
+      startSlotIndex = cursor.slotIdx + 1;
+    }
+  } else if (!startDateStr) {
+    fail('--scheduled requires --schedule-start-date YYYY-MM-DD (no existing schedule cursor found in youtube-upload-result.json)');
+  }
+
+  info(`Building schedule: start=${startDateStr}[slot_index=${startSlotIndex}]  slots=${args.scheduleSlots.join(',')}  tz=${args.timezone}`);
+  const schedule = buildSchedule(startDateStr, args.scheduleSlots, args.timezone, toUpload.length, startSlotIndex);
+  let schedIdx = 0;
   for (const r of initialResults) {
     if (r.status === 'pending') {
-      const s         = schedule[slotIdx++];
-      r.scheduled     = true;
-      r.publishAt     = s.publishAt;
+      const s            = schedule[schedIdx++];
+      r.scheduled        = true;
+      r.publishAt        = s.publishAt;
       r.publishAtLocal   = s.publishAtLocal;
       r.scheduleTimezone = args.timezone;
       r.scheduleSlot     = s.scheduleSlot;
@@ -660,10 +720,9 @@ info(`To upload: ${toUpload.length}  |  Already uploaded (skip): ${previousUploa
 
 if (args.scheduled && toUpload.length > 0) {
   console.log('');
-  info('Schedule plan:');
   for (const r of initialResults) {
     if (r.status === 'pending') {
-      info(`  [PLAN] ${r.id}  publishAt=${r.publishAt}  local=${r.publishAtLocal}  slot=${r.scheduleSlot}  tz=${r.scheduleTimezone}`);
+      plan(`${r.id}  publishAtLocal=${r.publishAtLocal}  slot=${r.scheduleSlot}`);
     }
   }
 }
