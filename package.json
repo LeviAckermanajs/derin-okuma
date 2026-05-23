@@ -18,13 +18,15 @@
     "video:export": "node scripts/export-rendered-videos.mjs",
     "video:submit:dry-run": "NO_EXTERNAL_VIDEO_TEST=1 node ../scene-blog-video/scripts/submit-render-batch-and-export.mjs --dry-run-submit",
     "video:publish-manifest": "node scripts/build-publish-manifest.mjs",
-    "video:publish:dry-run": "node scripts/publish-dry-run.mjs"
+    "video:publish:dry-run": "node scripts/publish-dry-run.mjs",
+    "video:youtube:upload-one": "node scripts/upload-youtube-one.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.0",
     "@astrojs/rss": "^4.0.17",
     "@astrojs/sitemap": "^3.7.1",
     "astro": "^6.0.4",
+    "googleapis": "^172.0.0",
     "sharp": "^0.34.3"
   }
 }
