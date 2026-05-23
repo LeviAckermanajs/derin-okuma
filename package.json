@@ -19,7 +19,8 @@
     "video:submit:dry-run": "NO_EXTERNAL_VIDEO_TEST=1 node ../scene-blog-video/scripts/submit-render-batch-and-export.mjs --dry-run-submit",
     "video:publish-manifest": "node scripts/build-publish-manifest.mjs",
     "video:publish:dry-run": "node scripts/publish-dry-run.mjs",
-    "video:youtube:upload-one": "node scripts/upload-youtube-one.mjs"
+    "video:youtube:upload-one": "node scripts/upload-youtube-one.mjs",
+    "video:youtube:upload-batch": "node scripts/upload-youtube-batch.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.0",
