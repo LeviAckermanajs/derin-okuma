@@ -1,0 +1,314 @@
+{
+  "source": {
+    "blog_post": "vazifenin-icine-gizlenmis-lezzet",
+    "title": "Vazifenin İçine Gizlenmiş Lezzet",
+    "source_files": [
+      "src/content/blog/17-lema-8-nota-vazifenin-icine-gizlenmis-lezzet.md"
+    ]
+  },
+  "test_day": "day-30",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Çalışmak her zaman yük değildir; bazen insanın aradığı lezzet, vazifenin tam içine saklanır.",
+      "title": "Çalışmak Neden Sadece Yük Değildir?",
+      "description": "Vazife yalnız sonuca ulaşmak için katlanılan bir zahmet değildir; doğru yerde insanı diri tutan bir anlam taşır. #derinokuma #shorts #tefekkür #iman #vazife #çalışmak",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vazife",
+        "#çalışmak"
+      ],
+      "thumbnail_or_cover_text": "VAZİFENİN LEZZETİ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Çalışmak her zaman yük değildir; bazen insanın aradığı lezzet, vazifenin tam içine saklanır.",
+          "visual_note": "person starting meaningful work at sunrise, calm focused mood",
+          "keywords": [
+            "meaningful work",
+            "sunrise",
+            "focus"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Yanlış Bakış",
+          "narration": "İnsan rahatlığı saadet zannederse, her sorumluluğu ağır görür. Fakat boşluk uzadıkça kalbi dinlendirmez; iç dünyayı dağınık bırakır.",
+          "visual_note": "empty chair in quiet room, soft shadows, reflective loneliness",
+          "keywords": [
+            "empty chair",
+            "quiet room",
+            "inner emptiness"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Gizli Ücret",
+          "narration": "Doğru vazife, neticeden önce insanın içinde bir ücret taşır. Emek anlamla birleşince yorgunluk bile şükre yaklaşır.",
+          "visual_note": "hands crafting wood carefully, warm light, patient labor",
+          "keywords": [
+            "patient labor",
+            "warm light",
+            "crafting"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Boşluk her zaman rahatlık değildir; bazen insanı en çok vazifesiz kalmak yorar.",
+      "title": "Boşluk Neden İnsanı Yorar?",
+      "description": "Rahat görünen boşluk, anlamdan kopunca insanı ağırlaştırır. Vazife ise doğru niyetle kalbi toparlayan bir yola dönüşür. #derinokuma #shorts #tefekkür #iman #hayat #anlam",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#hayat",
+        "#anlam"
+      ],
+      "thumbnail_or_cover_text": "BOŞLUĞUN AĞIRLIĞI",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Boşluk her zaman rahatlık değildir; bazen insanı en çok vazifesiz kalmak yorar.",
+          "visual_note": "person sitting alone beside window with clock, quiet afternoon",
+          "keywords": [
+            "alone window",
+            "clock",
+            "quiet heaviness"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Dağınıklık",
+          "narration": "Gün geçer, beden dinlenmiş görünür; ama kalp bir yere bağlanmadığı için ağırlık artar. İnsan yalnız rahat etmekle tamamlanmaz.",
+          "visual_note": "slow shot of unused notebook and still cup on table, muted light",
+          "keywords": [
+            "unused notebook",
+            "still life",
+            "muted light"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Toparlayan Vazife",
+          "narration": "Anlamlı bir meşguliyet insanı kendi dağınıklığından çıkarır. Küçük bir vazife bile doğru niyetle ruhu toparlayan bir kapı olabilir.",
+          "visual_note": "person watering plants in morning light, simple meaningful routine",
+          "keywords": [
+            "watering plants",
+            "morning routine",
+            "simple purpose"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir damla su bile güneşe yönelince küçüklüğünü aşar; ışığa ayna olur.",
+      "title": "Küçük Şey Nasıl Büyük Mana Taşır?",
+      "description": "İnsan kendi gücüyle küçük olabilir; fakat doğru vazifede yer aldığında büyük bir manaya ayna olur. #derinokuma #shorts #tefekkür #iman #kâinat #vazife",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat",
+        "#vazife"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜK AYNA",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Bir damla su bile güneşe yönelince küçüklüğünü aşar; ışığa ayna olur.",
+          "visual_note": "macro water droplet reflecting sunlight, bright sparkle",
+          "keywords": [
+            "water droplet",
+            "sun reflection",
+            "macro"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "İnsanın Hâli",
+          "narration": "İnsan da zayıf, sınırlı ve muhtaçtır. Ama kendisine verilen vazifeyi tanıyınca yalnız kendi dar varlığıyla kalmaz.",
+          "visual_note": "single person on wide mountain path, humble scale, clear sky",
+          "keywords": [
+            "mountain path",
+            "human scale",
+            "clear sky"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Makam",
+          "narration": "Doğru yerde duran küçük bir varlık, büyük bir düzene bağlanır. Vazife, insanın küçüklüğünü anlamlı bir makama dönüştürür.",
+          "visual_note": "sunlight entering simple room through small glass prism, gentle colors",
+          "keywords": [
+            "sunlight prism",
+            "simple room",
+            "meaning"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Arı, kuş ve ağaç bize sessizce aynı şeyi söylüyor: hayat vazifeyle güzelleşir.",
+      "title": "Kâinat Neden Vazife İçinde?",
+      "description": "Canlıların işleyişi, vazifenin kuru bir yük değil, yaratılışa yerleştirilmiş bir düzen olduğunu düşündürür. #derinokuma #shorts #tefekkür #kâinat #iman #fıtrat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#kâinat",
+        "#iman",
+        "#fıtrat"
+      ],
+      "thumbnail_or_cover_text": "KÂİNATIN DERSİ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Arı, kuş ve ağaç bize sessizce aynı şeyi söylüyor: hayat vazifeyle güzelleşir.",
+          "visual_note": "bees flowers bird nest and tree montage, soft natural light",
+          "keywords": [
+            "bees flowers",
+            "bird nest",
+            "tree"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Fıtrat",
+          "narration": "Arı petek yapar, kuş yuva kurar, ağaç meyve verir. Her biri kendi ölçüsünde çalışır ve bu çalışmayla bir güzelliğe ayna olur.",
+          "visual_note": "bee on honeycomb and bird building nest, cinematic wildlife close-up",
+          "keywords": [
+            "honeycomb",
+            "nest building",
+            "wildlife"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Ders",
+          "narration": "İnsan bu düzene bakınca çalışmayı yeniden anlar. Vazife, varlığın içine konmuş bir hikmet ve rahmet dili gibi konuşur.",
+          "visual_note": "person observing nature in quiet forest, notebook in hand, contemplative",
+          "keywords": [
+            "observing nature",
+            "forest",
+            "contemplation"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bir işin ücreti bazen sonunda değil, bizzat o işi yaparken kalbe verilen huzurdadır.",
+      "title": "Hizmetin Ücreti Nerede Saklı?",
+      "description": "Hizmetin içinde sabır, dikkat, paylaşma ve teslimiyet vardır. Bunlar neticeden önce kalbi eğiten gizli nimetlerdir. #derinokuma #shorts #tefekkür #hizmet #iman #sabır",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#hizmet",
+        "#iman",
+        "#sabır"
+      ],
+      "thumbnail_or_cover_text": "GİZLİ ÜCRET",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Bir işin ücreti bazen sonunda değil, bizzat o işi yaparken kalbe verilen huzurdadır.",
+          "visual_note": "hands serving tea gently, warm human moment, calm light",
+          "keywords": [
+            "service",
+            "warm light",
+            "gentle hands"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Yolun İçindeki Pay",
+          "narration": "İnsan sadece neticeye bakarsa emeğin içindeki nimeti kaçırır. Sabır, dikkat ve sadakat yolun içinde öğrenilir.",
+          "visual_note": "person kneading bread dough patiently, warm kitchen close-up",
+          "keywords": [
+            "bread dough",
+            "patience",
+            "warm kitchen"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Huzur",
+          "narration": "Hizmet doğru yere bağlandığında insanı tüketmez; ona içten bir huzur verir. Çünkü çalışma artık yalnız kendisi için değildir.",
+          "visual_note": "volunteer helping elderly person with kindness, documentary soft light",
+          "keywords": [
+            "volunteer help",
+            "kindness",
+            "inner peace"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Yorgunluk bazen kayıp değil, doğru vazifede harcanmış bir ömrün şükrüdür.",
+      "title": "Yorgunluk Ne Zaman Şükre Dönüşür?",
+      "description": "Anlamlı bir vazifenin ardından gelen yorgunluk, insanı tüketmek yerine diri tutabilir. Mesele nerede ve niçin yorulduğumuzdur. #derinokuma #shorts #tefekkür #şükür #vazife #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#şükür",
+        "#vazife",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "YORGUNLUĞUN ŞÜKRÜ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Yorgunluk bazen kayıp değil, doğru vazifede harcanmış bir ömrün şükrüdür.",
+          "visual_note": "person resting after work in garden at sunset, peaceful expression",
+          "keywords": [
+            "rest after work",
+            "garden sunset",
+            "gratitude"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "İki Yorgunluk",
+          "narration": "Anlamsız koşuşturma insanı dağıtır; anlamlı emek ise yorarken bile toplar. Kalp, niçin yorulduğunu bildiğinde yük başka bir hâl alır.",
+          "visual_note": "contrast busy blurred street and calm worker in field, cinematic mood",
+          "keywords": [
+            "busy street",
+            "calm field",
+            "meaningful effort"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Son İz",
+          "narration": "Boşluk rahatlık sanılabilir, ama insanı diri tutan şey çoğu zaman kendi yerindeki vazifedir. Orada yorgunluk bile şükre yaklaşır.",
+          "visual_note": "wide sunrise path through field, hopeful quiet ending",
+          "keywords": [
+            "sunrise path",
+            "field",
+            "hopeful ending"
+          ]
+        }
+      ]
+    }
+  ]
+}

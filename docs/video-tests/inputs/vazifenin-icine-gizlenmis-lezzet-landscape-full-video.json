@@ -1,0 +1,383 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "Vazifenin İçine Gizlenmiş Lezzet",
+    "description": "Çalışmayı sadece yorulmak, vazifeyi sadece yük görmek insanın bakışını daraltır. Oysa kâinata dikkatle bakıldığında arıdan ağaca, bedenden güneşe kadar her şeyin kendi yerinde bir hizmet gördüğü anlaşılır. Bu video, vazifenin içine yerleştirilen anlamı ve hizmetin kendi içindeki lezzeti sakin bir tefekkür diliyle ele alıyor.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "vazifenin-icine-gizlenmis-lezzet-landscape-day-30"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Rahatlık Yanılgısı",
+      "narration": "İnsan çoğu zaman rahatlığı saadet, çalışmayı ise yorgunluk sanır. Sorumluluk görünce geri çekilir; vazife görünce onu sadece yük tarafıyla okur. Oysa hayatın derin düzenine bakıldığında başka bir kapı açılır: bazı lezzetler, vazifenin tam içine saklanmıştır.",
+      "visual_note": "quiet person by window at dawn, soft light, reflective mood",
+      "keywords": [
+        "quiet reflection",
+        "dawn light",
+        "inner question"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Vazifenin Gizli Ücreti",
+      "narration": "Bir işin karşılığı yalnızca sonunda alınan netice değildir. Bazen ücret, işin kendisine yerleştirilmiştir. İnsan doğru vazifesine yöneldiğinde sadece sonuç beklemez; hareketin içinde anlam, düzen ve iç huzur bulur.",
+      "visual_note": "hands working carefully on simple craft, warm light, slow close-up",
+      "keywords": [
+        "careful work",
+        "warm light",
+        "meaningful task"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Kâinatın Hareketi",
+      "narration": "Kâinata dikkatle bakınca, durgun bir kalabalık değil, vazife başında bir düzen görülür. Arı uçar, ağaç meyve verir, güneş ışık taşır, toprak kabul eder. Her şey kendi yerinde bir hizmet görür ve bu hizmetle güzelleşir.",
+      "visual_note": "wide nature montage, bees flowers sunlight trees, cinematic calm",
+      "keywords": [
+        "nature order",
+        "bees flowers",
+        "sunlight"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Tembelliğin Dar Bakışı",
+      "narration": "Tembellik çalışmayı yalnız zahmet tarafından görür. Emek, ter, dikkat ve süreklilik ona ağır gelir. Fakat boşluk uzun sürdüğünde insanı dinlendirmek yerine dağıtır; çünkü insan sadece rahat etmek için yaratılmış değildir.",
+      "visual_note": "empty room with unused chair, still afternoon light, quiet loneliness",
+      "keywords": [
+        "empty room",
+        "stillness",
+        "loneliness"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Bedenin Sessiz Dersi",
+      "narration": "İnsan kendi bedenine baksa bile vazifenin hayat olduğunu görür. Göz görmekle, kulak işitmekle, kalp atmakla, mide sindirmekle hizmet eder. Bu hizmetler durduğunda rahat değil, sıkıntı başlar.",
+      "visual_note": "soft medical style close-up of heartbeat monitor and human silhouette, calm",
+      "keywords": [
+        "heartbeat",
+        "human body",
+        "life rhythm"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "İşleyen Organların Huzuru",
+      "narration": "Organlar vazifelerini yaptıkça beden bir bütün olarak ayakta kalır. Hiçbiri gördüğü görevden ayrı bir saltanat istemez. Her biri kendi sınırında çalışır ve bütün beden bu uyumla yaşar.",
+      "visual_note": "abstract human body movement, calm breathing, soft light",
+      "keywords": [
+        "body harmony",
+        "breathing",
+        "life balance"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Horozun Paylaşması",
+      "narration": "Bir horoz aç olduğu hâlde bulduğu rızkı tavuklara çağırabilir. Kendi payını hemen yutmak yerine bir tür hizmet davranışı gösterir. Bu küçük sahne, canlılara yerleştirilen vazife duygusunun ne kadar derin olduğunu düşündürür.",
+      "visual_note": "rooster and hens in quiet farmyard morning, natural light",
+      "keywords": [
+        "farmyard",
+        "rooster hens",
+        "morning"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Annelik Hizmeti",
+      "narration": "Hayvan anneleri yavruları için kendilerini tehlikeye atar. Korur, besler, bekler, yorulur. Bu davranış yalnız hesapla açıklanamayacak kadar sıcak ve süreklidir; vazife, onların fıtratında bir şefkat lezzetiyle görünür.",
+      "visual_note": "mother bird feeding chicks in nest, gentle wildlife close-up",
+      "keywords": [
+        "mother bird",
+        "nest",
+        "wildlife care"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Ağacın Cömertliği",
+      "narration": "Ağaç kendisi için değil, çoğu zaman başkaları için süslenir gibi çiçek açar. Kokular verir, gölge sunar, meyve taşır. Kendi kökleri çamurlu toprağa bağlıyken dallarında parlak bir ikram belirir.",
+      "visual_note": "fruit tree in bloom, sunlight through branches, slow cinematic shot",
+      "keywords": [
+        "fruit tree",
+        "blossoms",
+        "sunlit branches"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Meyvenin Fedakârlığı",
+      "narration": "Meyve olgunlaştığında kendini sunar. Çekirdeğini taşır, tadını verir, rengini gösterir. Kendi varlığını korumaktan çok daha büyük bir döngünün parçası olur.",
+      "visual_note": "ripe pomegranate and figs on tree, natural orchard close-up",
+      "keywords": [
+        "ripe fruit",
+        "orchard",
+        "natural abundance"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Bulanık Sudan Saf İkram",
+      "narration": "Bir ağacın kökünden aldığı bulanık su, dalında berrak bir lezzete dönüşür. Toprakta karışık duran maddeler, meyvede ölçülü bir gıdaya çevrilir. Bu dönüşüm, vazifenin sadece hareket değil, hikmetli bir düzen olduğunu gösterir.",
+      "visual_note": "water flowing to tree roots, then close-up of fresh fruit, natural transformation",
+      "keywords": [
+        "tree roots",
+        "fresh fruit",
+        "water transformation"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Tabiatın Ötesindeki Emir",
+      "narration": "Bu işleyiş sahipsiz bir üretim alanı gibi okunamaz. Şuursuz unsurlar, kendi başlarına bu kadar ölçülü, faydalı ve güzel neticeler kuramaz. Her vazife, daha yüksek bir emrin ve rahmetli bir düzenin işareti gibi görünür.",
+      "visual_note": "vast landscape with wind moving through wheat field, ordered natural pattern",
+      "keywords": [
+        "wheat field",
+        "natural order",
+        "wind movement"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Rahat Zahmette Saklanır",
+      "narration": "İlk bakışta zahmet görünen şey, bazen insanın asıl rahatına açılır. Çalışmak bedeni yorar ama kalbi toplar. Boşluk bedeni dinlendirir gibi görünür ama ruhu dağınık bırakabilir.",
+      "visual_note": "worker resting peacefully after meaningful work, sunset field, calm mood",
+      "keywords": [
+        "meaningful work",
+        "sunset field",
+        "peaceful rest"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Boşluğun Ağırlığı",
+      "narration": "Vazifesiz kalan insan zamanla kendi ömründen şikâyet etmeye başlar. Gün geçer, ama içinde bir ilerleme hissi doğmaz. Hareketin yokluğu bazen dinlenme değil, içten içe ağırlaşmadır.",
+      "visual_note": "person sitting alone in dim room with clock, slow quiet atmosphere",
+      "keywords": [
+        "alone room",
+        "clock",
+        "inner heaviness"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Meşguliyetin Şükrü",
+      "narration": "Anlamlı bir işle meşgul olan insan ise yorulsa bile başka bir tat alır. Çünkü emek, kendisini aşan bir gayeye bağlanmıştır. Böyle bir çalışma, yalnız üretim değil, şükre açılan bir kapı olur.",
+      "visual_note": "person planting seedlings with careful hands, golden hour light",
+      "keywords": [
+        "planting seedlings",
+        "golden hour",
+        "purposeful work"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Küçük Ayna Büyük Mana",
+      "narration": "Bir damla su ya da küçük bir cam parçası kendi başına sade ve önemsiz görünebilir. Fakat güneşe yöneldiğinde ışığı yansıtır. Küçük olan, doğru yerde durduğunda büyük bir manaya ayna olabilir.",
+      "visual_note": "drop of water reflecting sunlight, macro shot, bright sparkle",
+      "keywords": [
+        "water drop",
+        "sun reflection",
+        "macro light"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "İnsanın Küçüklüğü ve Makamı",
+      "narration": "İnsan da kendi gücüyle sınırlı, zayıf ve muhtaçtır. Fakat kendisine verilen vazifeyi doğru anladığında yalnız kendi adına yaşayan dar bir varlık olmaktan çıkar. Büyük bir düzenin içinde anlamlı bir makam kazanır.",
+      "visual_note": "single person on mountain ridge facing wide horizon, humble scale",
+      "keywords": [
+        "mountain ridge",
+        "wide horizon",
+        "human scale"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Her Şey İlişkiler İçinde",
+      "narration": "Varlıklar tek başına duran parçalar değildir. Bir zerre bile bulunduğu yerle, çevresiyle, bütünle ve neticeyle ilişkilidir. Gözdeki küçük bir parça, sinirlerle, damarlarla ve görme düzeniyle birlikte anlam kazanır.",
+      "visual_note": "macro abstract network of cells and light connections, scientific calm style",
+      "keywords": [
+        "cell network",
+        "light connections",
+        "biological order"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Gücünün Üstünde İşler",
+      "narration": "Küçük varlıkların kendi güçlerini aşan işler görmesi dikkat ister. Sineğin rızkını bulması, arının petek örmesi, kuşun yuva kurması sıradan hareketler değildir. Her biri, kendisinden büyük bir ilmin terbiyesi altında gibidir.",
+      "visual_note": "bee on honeycomb, bird building nest, delicate wildlife details",
+      "keywords": [
+        "honeycomb",
+        "bird nest",
+        "wildlife detail"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Yeni Gelen Canlının Bilgisi",
+      "narration": "Dünyaya yeni gelen küçücük bir canlı, çoğu zaman neye yöneleceğini bilir. Tehlikeden kaçar, rızkını arar, bedeniyle uyumlu hareket eder. Deneme defteri olmayan bir varlıkta bu kadar isabetli yöneliş, insanı düşündürür.",
+      "visual_note": "tiny insect moving on green leaf, macro wildlife, soft natural light",
+      "keywords": [
+        "tiny insect",
+        "green leaf",
+        "macro wildlife"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Program ve Yöneliş",
+      "narration": "Her canlı sanki içine yerleştirilmiş bir programı açar. Ölçüsünü bilerek hareket eder, kendi yolunu bulur, vazifesini yerine getirir. Bu düzen, başıboş bir hareketten çok emre uyan bir işleyişi hatırlatır.",
+      "visual_note": "time lapse seed sprouting from soil, clear growth stages, calm",
+      "keywords": [
+        "seed sprouting",
+        "growth",
+        "natural program"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Arının İnce Sanatı",
+      "narration": "Arı, küçük bedeniyle ölçülü petekler kurar ve çiçeklerden topladığını bambaşka bir nimete dönüştürür. Ne geometri eğitimi almıştır ne kimya laboratuvarı kurmuştur. Fakat yaptığı iş, aklı hayrette bırakacak kadar ölçülüdür.",
+      "visual_note": "close-up bees on honeycomb with golden honey, detailed cinematic macro",
+      "keywords": [
+        "bees",
+        "honeycomb",
+        "golden honey"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Örümceğin Dersi",
+      "narration": "Örümcek incecik iplerle mühendislik gibi bir ağ kurar. Her ilmek bir hesap, her mesafe bir ölçü taşır. Küçücük bir canlıda görünen bu sanat, varlıkların kendi başlarına bırakılmadığını fısıldar.",
+      "visual_note": "spider web with morning dew, delicate geometry, soft sunrise",
+      "keywords": [
+        "spider web",
+        "morning dew",
+        "delicate geometry"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Kuşun Yuvası",
+      "narration": "Bir kuş dal, ot ve lif parçalarını toplar; sonra onları yavrusuna uygun bir yuvaya dönüştürür. Elinde çizim yoktur, fakat netice şaşırtıcı derecede yerindedir. Vazife, ona yol gösteren sessiz bir rehber gibi çalışır.",
+      "visual_note": "small bird building nest among tree branches, gentle spring light",
+      "keywords": [
+        "bird nest",
+        "spring branches",
+        "careful building"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "İlâhî İsimlere Ayna Olmak",
+      "narration": "Varlıkların hizmeti yalnız fayda üretmekle sınırlı değildir. Her güzellik, her düzen, her ölçü bir isme ayna olur. Rızıkta rahmet, ölçüde hikmet, korumada şefkat, sanatta cemal görünür.",
+      "visual_note": "beautiful natural details montage, flowers water light mountains, reverent calm",
+      "keywords": [
+        "natural beauty",
+        "flowers water",
+        "reverent light"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "İnsanın Okuma Vazifesi",
+      "narration": "İnsan bütün bu sahnelerin karşısında sadece seyirci kalmamalıdır. Gördüğü düzeni okumak, nimeti fark etmek, işleyişin ardındaki rahmeti düşünmek ona düşer. Tefekkür, insanın kâinat içindeki en derin vazifelerinden biridir.",
+      "visual_note": "person reading in nature with open notebook, calm forest light",
+      "keywords": [
+        "reading nature",
+        "open notebook",
+        "contemplation"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Çalışmayı Yeniden Anlamak",
+      "narration": "Çalışma yalnız geçim telaşı değildir. Doğru niyetle ve doğru ölçüyle yapıldığında insanın iç dünyasını toparlayan bir kulluk alanına dönüşür. Vazife, insanı hem hayata bağlar hem kendi nefsinin dağınıklığından kurtarır.",
+      "visual_note": "person walking to work through quiet morning street, purposeful calm",
+      "keywords": [
+        "morning street",
+        "purposeful walk",
+        "work meaning"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Sonuçtan Önceki Lezzet",
+      "narration": "İnsan bazen sadece neticeye kilitlendiği için yolun içindeki lezzeti kaçırır. Oysa hizmetin içinde sabır, dikkat, emek, paylaşma ve teslimiyet vardır. Bunlar neticeden önce kalbi eğiten gizli nimetlerdir.",
+      "visual_note": "hands kneading bread dough slowly, patient work, warm kitchen light",
+      "keywords": [
+        "patient work",
+        "bread dough",
+        "warm kitchen"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Kendi Yerinde Durmak",
+      "narration": "Her varlık kendi yerinde güzeldir. Göz kulağın işini istemez, ağaç kuşun yoluna özenmez, toprak güneş gibi davranmaya kalkmaz. İnsan da kendisine verilen yeri ve vazifeyi tanıdığında iç düzenine yaklaşır.",
+      "visual_note": "balanced stones beside calm river, natural harmony, soft light",
+      "keywords": [
+        "balanced stones",
+        "calm river",
+        "harmony"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Hizmetin Huzuru",
+      "narration": "Hizmet insanı küçültmez; doğru yere bağlandığında yüceltir. Kendi merkezinden çıkıp daha büyük bir rahmet düzenine katılan insan, emeğinde huzur bulur. Çünkü artık çalışması yalnız kendisi için değildir.",
+      "visual_note": "volunteer hands serving food with kindness, warm human documentary style",
+      "keywords": [
+        "serving food",
+        "kindness",
+        "human service"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Yorgunluğun İçindeki Dirilik",
+      "narration": "Bazı yorgunluklar insanı tüketmez, diriltir. Anlamlı bir vazifenin ardından gelen yorgunlukta pişmanlık değil, şükür vardır. Kalp, boş kalmaktan değil, doğru işte yorulmaktan beslenir.",
+      "visual_note": "person resting after gardening, peaceful smile, sunset garden",
+      "keywords": [
+        "rest after work",
+        "garden sunset",
+        "quiet gratitude"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Lezzetin Saklandığı Yer",
+      "narration": "Boşluk her zaman rahatlık değildir; hareket de her zaman yük değildir. İnsanı asıl diri tutan şey, kendisine verilmiş anlamlı işi kendi yerinde ve kendi ölçüsünde yapabilmesidir. Vazifenin içine saklanan lezzet, hayatı sadece katlanılan bir süreç olmaktan çıkarır ve şükredilen bir emanet hâline getirir.",
+      "visual_note": "wide sunrise over fields, path leading forward, peaceful hopeful ending",
+      "keywords": [
+        "sunrise field",
+        "path forward",
+        "peaceful ending"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "vazifenin-icine-gizlenmis-lezzet",
+    "test_day": "day-30",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/17-lema-8-nota-vazifenin-icine-gizlenmis-lezzet.md"
+    ]
+  }
+}

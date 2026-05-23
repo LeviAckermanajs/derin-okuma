@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "vazifenin-icine-gizlenmis-lezzet",
+  "test_day": "day-30",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Çalışmak her zaman yük değildir; bazen insanın aradığı lezzet, vazifenin tam içine saklanır.",
+      "title_options": [
+        "Çalışmak Neden Sadece Yük Değildir?",
+        "Vazife Nasıl Lezzete Dönüşür?",
+        "İnsan Neden Vazifeyle Dirilir?",
+        "Vazifenin Gizli Lezzeti"
+      ],
+      "selected_title": "Çalışmak Neden Sadece Yük Değildir?",
+      "description": "Vazife yalnız sonuca ulaşmak için katlanılan bir zahmet değildir; doğru yerde insanı diri tutan bir anlam taşır. #derinokuma #shorts #tefekkür #iman #vazife #çalışmak",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#vazife",
+        "#çalışmak"
+      ],
+      "thumbnail_or_cover_text": "VAZİFENİN LEZZETİ"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Boşluk her zaman rahatlık değildir; bazen insanı en çok vazifesiz kalmak yorar.",
+      "title_options": [
+        "Boşluk Neden İnsanı Yorar?",
+        "Rahatlık Neden Yetmez?",
+        "Vazifesiz Kalınca Ne Olur?",
+        "Boşluğun Görünmeyen Ağırlığı"
+      ],
+      "selected_title": "Boşluk Neden İnsanı Yorar?",
+      "description": "Rahat görünen boşluk, anlamdan kopunca insanı ağırlaştırır. Vazife ise doğru niyetle kalbi toparlayan bir yola dönüşür. #derinokuma #shorts #tefekkür #iman #hayat #anlam",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#hayat",
+        "#anlam"
+      ],
+      "thumbnail_or_cover_text": "BOŞLUĞUN AĞIRLIĞI"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir damla su bile güneşe yönelince küçüklüğünü aşar; ışığa ayna olur.",
+      "title_options": [
+        "Küçük Şey Nasıl Büyük Mana Taşır?",
+        "İnsan Nasıl Ayna Olur?",
+        "Küçüklük Neden Engel Değil?",
+        "Bir Damlanın Büyük Dersi"
+      ],
+      "selected_title": "Küçük Şey Nasıl Büyük Mana Taşır?",
+      "description": "İnsan kendi gücüyle küçük olabilir; fakat doğru vazifede yer aldığında büyük bir manaya ayna olur. #derinokuma #shorts #tefekkür #iman #kâinat #vazife",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat",
+        "#vazife"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜK AYNA"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Arı, kuş ve ağaç bize sessizce aynı şeyi söylüyor: hayat vazifeyle güzelleşir.",
+      "title_options": [
+        "Kâinat Neden Vazife İçinde?",
+        "Hayat Vazifeyle Nasıl Güzelleşir?",
+        "Arı ve Ağaç Ne Öğretir?",
+        "Kâinatın Sessiz Dersi"
+      ],
+      "selected_title": "Kâinat Neden Vazife İçinde?",
+      "description": "Canlıların işleyişi, vazifenin kuru bir yük değil, yaratılışa yerleştirilmiş bir düzen olduğunu düşündürür. #derinokuma #shorts #tefekkür #kâinat #iman #fıtrat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#kâinat",
+        "#iman",
+        "#fıtrat"
+      ],
+      "thumbnail_or_cover_text": "KÂİNATIN DERSİ"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bir işin ücreti bazen sonunda değil, bizzat o işi yaparken kalbe verilen huzurdadır.",
+      "title_options": [
+        "Hizmetin Ücreti Nerede Saklı?",
+        "Emek Neden Kalbi Eğitir?",
+        "Hizmet Nasıl Huzur Verir?",
+        "İşin İçindeki Gizli Ücret"
+      ],
+      "selected_title": "Hizmetin Ücreti Nerede Saklı?",
+      "description": "Hizmetin içinde sabır, dikkat, paylaşma ve teslimiyet vardır. Bunlar neticeden önce kalbi eğiten gizli nimetlerdir. #derinokuma #shorts #tefekkür #hizmet #iman #sabır",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#hizmet",
+        "#iman",
+        "#sabır"
+      ],
+      "thumbnail_or_cover_text": "GİZLİ ÜCRET"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Yorgunluk bazen kayıp değil, doğru vazifede harcanmış bir ömrün şükrüdür.",
+      "title_options": [
+        "Yorgunluk Ne Zaman Şükre Dönüşür?",
+        "Doğru Vazife Nasıl Diriltir?",
+        "İnsan Niçin Yorulduğunu Bilmeli?",
+        "Yorgunluğun İçindeki Şükür"
+      ],
+      "selected_title": "Yorgunluk Ne Zaman Şükre Dönüşür?",
+      "description": "Anlamlı bir vazifenin ardından gelen yorgunluk, insanı tüketmek yerine diri tutabilir. Mesele nerede ve niçin yorulduğumuzdur. #derinokuma #shorts #tefekkür #şükür #vazife #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#şükür",
+        "#vazife",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "YORGUNLUĞUN ŞÜKRÜ"
+    }
+  ]
+}
