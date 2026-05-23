@@ -16,7 +16,9 @@
     "video:batch:reuse": "node scripts/build-video-batch.mjs",
     "video:publish-pack": "node scripts/build-video-publish-pack.mjs",
     "video:export": "node scripts/export-rendered-videos.mjs",
-    "video:submit:dry-run": "NO_EXTERNAL_VIDEO_TEST=1 node ../scene-blog-video/scripts/submit-render-batch-and-export.mjs --dry-run-submit"
+    "video:submit:dry-run": "NO_EXTERNAL_VIDEO_TEST=1 node ../scene-blog-video/scripts/submit-render-batch-and-export.mjs --dry-run-submit",
+    "video:publish-manifest": "node scripts/build-publish-manifest.mjs",
+    "video:publish:dry-run": "node scripts/publish-dry-run.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.0",
