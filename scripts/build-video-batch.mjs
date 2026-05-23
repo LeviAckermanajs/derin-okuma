@@ -65,11 +65,21 @@ function validateShortLoadInput(filePath) {
   const content = readText(filePath);
   const label = path.basename(filePath);
   checkSyntax(content, label);
-  if (!jsContains(content, 'render_mode', 'shorts')) fail(`${label} missing render_mode: 'shorts'`);
-  if (!jsContains(content, 'mode', 'shorts')) fail(`${label} missing mode: 'shorts'`);
-  if (!/single_track/.test(content)) fail(`${label} missing single_track`);
-  if (/scenes\s*:\s*\[\s*\]/.test(content)) fail(`${label} still has empty scenes: []`);
-  if (!/content_generation_status\s*:\s*['"]filled['"]/.test(content)) {
+
+  let rawInput;
+  try {
+    const result = new Function(content)();
+    const itemJson = result?.[0]?.json ?? {};
+    rawInput = itemJson.raw_input ?? itemJson;
+  } catch (err) {
+    fail(`${label} JS evaluate failed: ${err.message}`);
+  }
+
+  if (rawInput?.render_preferences?.render_mode !== 'shorts') fail(`${label} missing render_mode: 'shorts'`);
+  if (rawInput?.render_preferences?.mode !== 'shorts') fail(`${label} missing mode: 'shorts'`);
+  if (rawInput?.audio_strategy?.mode !== 'single_track') fail(`${label} missing single_track`);
+  if (!Array.isArray(rawInput?.scenes) || rawInput.scenes.length === 0) fail(`${label} still has empty scenes: []`);
+  if (rawInput?.metadata?.content_generation_status !== 'filled') {
     fail(`${label} missing content_generation_status: 'filled'`);
   }
   return content;

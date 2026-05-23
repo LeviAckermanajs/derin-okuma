@@ -157,12 +157,23 @@ function jsContains(content, key, value) {
 function checkLoadInputJs(filePath, label, mode, renderMode, requireFilled) {
   const content = readText(filePath);
   checkJsSyntax(filePath, label);
-  addCheck(`${label} mode ${mode}`, jsContains(content, 'mode', mode));
-  addCheck(`${label} render_mode ${renderMode}`, jsContains(content, 'render_mode', renderMode));
-  addCheck(`${label} single_track`, /audio_strategy[\s\S]*single_track/.test(content));
-  addCheck(`${label} scenes filled`, !/scenes\s*:\s*\[\s*\]/.test(content));
+
+  let rawInput;
+  try {
+    const result = new Function(content)();
+    const itemJson = result?.[0]?.json ?? {};
+    rawInput = itemJson.raw_input ?? itemJson;
+  } catch (err) {
+    addCheck(`${label} JS evaluate`, false, err.message);
+    return;
+  }
+
+  addCheck(`${label} mode ${mode}`, rawInput?.render_preferences?.mode === mode);
+  addCheck(`${label} render_mode ${renderMode}`, rawInput?.render_preferences?.render_mode === renderMode);
+  addCheck(`${label} single_track`, rawInput?.audio_strategy?.mode === 'single_track');
+  addCheck(`${label} scenes filled`, Array.isArray(rawInput?.scenes) && rawInput.scenes.length > 0);
   if (requireFilled) {
-    addCheck(`${label} status filled`, /content_generation_status\s*:\s*['"]filled['"]/.test(content));
+    addCheck(`${label} status filled`, rawInput?.metadata?.content_generation_status === 'filled');
   }
 }
 
