@@ -2,7 +2,7 @@
 
 ## Summary
 
-- Status: FAIL
+- Status: PASS
 - Landscape scenes: 35
 - Shorts count: 6
 - Load input files: 6
@@ -351,9 +351,9 @@
 | short-001 has short_id | OK |  |
 | short-001 has hook | OK |  |
 | short-001 has title | OK |  |
-| short-001 has description | FAIL |  |
-| short-001 has hashtags | FAIL |  |
-| short-001 has thumbnail_or_cover_text | FAIL |  |
+| short-001 has description | OK |  |
+| short-001 has hashtags | OK |  |
+| short-001 has thumbnail_or_cover_text | OK |  |
 | short-001 has scenes | OK |  |
 | short-001 scenes non-empty | OK |  |
 | short-001 scene 1 has scene_id | OK |  |
@@ -391,9 +391,9 @@
 | short-002 has short_id | OK |  |
 | short-002 has hook | OK |  |
 | short-002 has title | OK |  |
-| short-002 has description | FAIL |  |
-| short-002 has hashtags | FAIL |  |
-| short-002 has thumbnail_or_cover_text | FAIL |  |
+| short-002 has description | OK |  |
+| short-002 has hashtags | OK |  |
+| short-002 has thumbnail_or_cover_text | OK |  |
 | short-002 has scenes | OK |  |
 | short-002 scenes non-empty | OK |  |
 | short-002 scene 1 has scene_id | OK |  |
@@ -431,9 +431,9 @@
 | short-003 has short_id | OK |  |
 | short-003 has hook | OK |  |
 | short-003 has title | OK |  |
-| short-003 has description | FAIL |  |
-| short-003 has hashtags | FAIL |  |
-| short-003 has thumbnail_or_cover_text | FAIL |  |
+| short-003 has description | OK |  |
+| short-003 has hashtags | OK |  |
+| short-003 has thumbnail_or_cover_text | OK |  |
 | short-003 has scenes | OK |  |
 | short-003 scenes non-empty | OK |  |
 | short-003 scene 1 has scene_id | OK |  |
@@ -463,9 +463,9 @@
 | short-004 has short_id | OK |  |
 | short-004 has hook | OK |  |
 | short-004 has title | OK |  |
-| short-004 has description | FAIL |  |
-| short-004 has hashtags | FAIL |  |
-| short-004 has thumbnail_or_cover_text | FAIL |  |
+| short-004 has description | OK |  |
+| short-004 has hashtags | OK |  |
+| short-004 has thumbnail_or_cover_text | OK |  |
 | short-004 has scenes | OK |  |
 | short-004 scenes non-empty | OK |  |
 | short-004 scene 1 has scene_id | OK |  |
@@ -503,9 +503,9 @@
 | short-005 has short_id | OK |  |
 | short-005 has hook | OK |  |
 | short-005 has title | OK |  |
-| short-005 has description | FAIL |  |
-| short-005 has hashtags | FAIL |  |
-| short-005 has thumbnail_or_cover_text | FAIL |  |
+| short-005 has description | OK |  |
+| short-005 has hashtags | OK |  |
+| short-005 has thumbnail_or_cover_text | OK |  |
 | short-005 has scenes | OK |  |
 | short-005 scenes non-empty | OK |  |
 | short-005 scene 1 has scene_id | OK |  |
@@ -535,9 +535,9 @@
 | short-006 has short_id | OK |  |
 | short-006 has hook | OK |  |
 | short-006 has title | OK |  |
-| short-006 has description | FAIL |  |
-| short-006 has hashtags | FAIL |  |
-| short-006 has thumbnail_or_cover_text | FAIL |  |
+| short-006 has description | OK |  |
+| short-006 has hashtags | OK |  |
+| short-006 has thumbnail_or_cover_text | OK |  |
 | short-006 has scenes | OK |  |
 | short-006 scenes non-empty | OK |  |
 | short-006 scene 1 has scene_id | OK |  |
@@ -571,27 +571,27 @@
 | short-001 metadata selected_title | OK |  |
 | short-001 metadata description | OK |  |
 | short-001 metadata hashtags | OK |  |
-| short-001 metadata hashtag consistency | FAIL |  |
+| short-001 metadata hashtag consistency | OK |  |
 | short-002 metadata selected_title | OK |  |
 | short-002 metadata description | OK |  |
 | short-002 metadata hashtags | OK |  |
-| short-002 metadata hashtag consistency | FAIL |  |
+| short-002 metadata hashtag consistency | OK |  |
 | short-003 metadata selected_title | OK |  |
 | short-003 metadata description | OK |  |
 | short-003 metadata hashtags | OK |  |
-| short-003 metadata hashtag consistency | FAIL |  |
+| short-003 metadata hashtag consistency | OK |  |
 | short-004 metadata selected_title | OK |  |
 | short-004 metadata description | OK |  |
 | short-004 metadata hashtags | OK |  |
-| short-004 metadata hashtag consistency | FAIL |  |
+| short-004 metadata hashtag consistency | OK |  |
 | short-005 metadata selected_title | OK |  |
 | short-005 metadata description | OK |  |
 | short-005 metadata hashtags | OK |  |
-| short-005 metadata hashtag consistency | FAIL |  |
+| short-005 metadata hashtag consistency | OK |  |
 | short-006 metadata selected_title | OK |  |
 | short-006 metadata description | OK |  |
 | short-006 metadata hashtags | OK |  |
-| short-006 metadata hashtag consistency | FAIL |  |
+| short-006 metadata hashtag consistency | OK |  |
 | Shorts metadata | OK | 6 shorts |
 | Shorts load inputs found | OK | 6 files |
 | Shorts short-001-load-input.js JS syntax | OK |  |
@@ -639,4 +639,4 @@
 
 ## Next Step
 
-- Fix failed checks before n8n smoke test.
+- Package is ready for n8n smoke test.
