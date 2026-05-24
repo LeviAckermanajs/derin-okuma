@@ -366,6 +366,17 @@ const rawInputs = parsedInputs.map((item) => {
     rawInput.reuse_existing_audio.audio_assets = reuse.audioAssets;
     rawInput.reuse_existing_video.video_root = reuse.videoRoot;
     rawInput.reuse_existing_video.video_assets = reuse.videoAssets;
+  } else {
+    rawInput.publish = {
+      youtube: {
+        enabled: true,
+        dry_run: true,
+        scheduled: true,
+        schedule_slots: ['13:00', '19:00', '22:00'],
+        timezone: 'Europe/Istanbul',
+        expected_channel_id: 'UCfdDdchpT4rait8RUjzpVGA'
+      }
+    };
   }
 
   return {
