@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "bir-cocugun-ardindan-acinin-icinde-sakli-teselli",
+  "test_day": "day-30",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Evlat acısı karşısında 'üzülme' demek teselli değildir. Gerçek teselli, o acıyı tanıyarak bambaşka bir yerden bakmaktır.",
+      "title_options": [
+        "Teselli Neden 'Üzülme' Demek Değildir?",
+        "Evlat Acısında Gerçek Teselli Nerede?",
+        "Acıyı Tanıyan Teselli Nasıl Konuşur?"
+      ],
+      "selected_title": "Teselli Neden 'Üzülme' Demek Değildir?",
+      "description": "Büyük acıları inkâr etmek değil; onlarla birlikte ayakta durmayı öğrenmek asıl tesellinin kapısıdır. #derinokuma #shorts #tefekkür #iman #sabır",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#sabır",
+        "#evlatacısı",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "GERÇEK TESELLİ NEDİR?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Ya çocuğun bu ağır dünyadan alınıp güzel bir saraya götürülmüş olsaydı? Bu soruyu bir düşünce deneyi olarak birlikte düşünelim.",
+      "title_options": [
+        "Zindan mı, Saray mı? Kaybın Başka Bir Okunuşu",
+        "Çocuk Nereye Gitti? Bir Temsil",
+        "Dünya Neden Zindan Gibidir?"
+      ],
+      "selected_title": "Zindan mı, Saray mı? Kaybın Başka Bir Okunuşu",
+      "description": "Bir temsil aracılığıyla evlat kaybının farklı bir okunuşu: zindan mı daha hayırlı, saray mı? #derinokuma #shorts #tefekkür #iman #ahiret",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ahiret",
+        "#evlatacısı",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "ZINDAN MI, SARAY MI?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Sever, büyütürsün. Ama o çocuğu yoktan var etmedin. O hâlde sahiplik gerçekten kime ait?",
+      "title_options": [
+        "Çocuk Emanettir: Sahiplik Kime Ait?",
+        "Evlat Neden Sahiplenilmez?",
+        "Emanet Bilinci Acıyı Nasıl Değiştirir?"
+      ],
+      "selected_title": "Evlat Neden Sahiplenilmez?",
+      "description": "Çocuğu yoktan var etmedin; yalnızca baktın. Asıl sahip sonsuz rahmet sahibidir. Bu hakikat acıyı farklı bir yerden anlamlandırır. #derinokuma #shorts #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#emanet",
+        "#sabır",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "SAHİPLİK KİME AİT?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "'Bir daha asla göremeyeceksin' duygusu, acıyı en çok büyüten şeydir. Peki ya bu hakikat değilse?",
+      "title_options": [
+        "Ayrılık Neden Sonsuz Değildir?",
+        "Bir Daha Asla mı? Hayır, Ayrılık Geçicidir",
+        "Müfarakat Neden Ebedî Değil?"
+      ],
+      "selected_title": "Ayrılık Neden Sonsuz Değildir?",
+      "description": "Dünya bir misafirhanedir; giden sadece önce gitmiştir. Ayrılık geçicidir; buluşma ümidi gerçektir. #derinokuma #shorts #tefekkür #iman #ahiret",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ahiret",
+        "#sabır",
+        "#evlatacısı"
+      ],
+      "thumbnail_or_cover_text": "AYRILIK SONSUZ DEĞİL"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İnsan çocuğunu bazen bütün dünya gibi sever. O sevgi elinden alındığında kalp nereye yönelir?",
+      "title_options": [
+        "Şefkat Neden Kalbi Allah'a Taşır?",
+        "Evlat Sevgisi Kalbi Nereye Götürür?",
+        "Şefkat Neden Aşktan Keskindir?"
+      ],
+      "selected_title": "Şefkat Neden Kalbi Allah'a Taşır?",
+      "description": "Dünya fanidir ve kalbin en derin sevgilerini taşıyamaz. Ama şefkat, kalbi gerçek kaynağına götüren güçlü bir yoldur. #derinokuma #shorts #tefekkür #iman #sevgi",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#sevgi",
+        "#şefkat",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "ŞEFKAT NEDEN GÜÇLÜDÜR?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Ayrılık geçicidir, merak etme. Bu üç kelime, kalbin en derin sızısına merhemdir.",
+      "title_options": [
+        "Müfarakat Muvakkattır: Son Teselli",
+        "Ayrılık Geçici, Sevgi Ebedî",
+        "Çocuk Kaybolmadı: Sadece Önce Gitti"
+      ],
+      "selected_title": "Ayrılık Geçici, Sevgi Ebedî",
+      "description": "Ayrılık geçicidir. Acı büyüktür ama sonsuz değildir. Çocuk kaybolmadı; sadece önce gitti. #derinokuma #shorts #tefekkür #iman #ahiret",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ahiret",
+        "#evlatacısı",
+        "#sabır"
+      ],
+      "thumbnail_or_cover_text": "AYRILIK GEÇİCİDİR"
+    }
+  ]
+}
