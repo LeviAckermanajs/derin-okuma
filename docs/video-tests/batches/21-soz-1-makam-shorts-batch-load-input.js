@@ -130,7 +130,17 @@ const short001RawInput = {
     "test_mode": "no_external",
     "reuse_assets_from_run": "day28-export-wait-c"
   },
-  "test_mode": "no_external"
+  "test_mode": "no_external",
+  "publish": {
+    "youtube": {
+      "enabled": true,
+      "dry_run": true,
+      "scheduled": true,
+      "schedule_slots": ["13:00", "19:00", "22:00"],
+      "timezone": "Europe/Istanbul",
+      "expected_channel_id": "UCfdDdchpT4rait8RUjzpVGA"
+    }
+  }
 }
 
 const short002RawInput = {
@@ -256,7 +266,17 @@ const short002RawInput = {
     "test_mode": "no_external",
     "reuse_assets_from_run": "day28-export-wait-c"
   },
-  "test_mode": "no_external"
+  "test_mode": "no_external",
+  "publish": {
+    "youtube": {
+      "enabled": true,
+      "dry_run": true,
+      "scheduled": true,
+      "schedule_slots": ["13:00", "19:00", "22:00"],
+      "timezone": "Europe/Istanbul",
+      "expected_channel_id": "UCfdDdchpT4rait8RUjzpVGA"
+    }
+  }
 }
 
 const short003RawInput = {
@@ -403,7 +423,17 @@ const short003RawInput = {
     "test_mode": "no_external",
     "reuse_assets_from_run": "day28-export-wait-c"
   },
-  "test_mode": "no_external"
+  "test_mode": "no_external",
+  "publish": {
+    "youtube": {
+      "enabled": true,
+      "dry_run": true,
+      "scheduled": true,
+      "schedule_slots": ["13:00", "19:00", "22:00"],
+      "timezone": "Europe/Istanbul",
+      "expected_channel_id": "UCfdDdchpT4rait8RUjzpVGA"
+    }
+  }
 }
 
 const short004RawInput = {
@@ -529,7 +559,17 @@ const short004RawInput = {
     "test_mode": "no_external",
     "reuse_assets_from_run": "day28-export-wait-c"
   },
-  "test_mode": "no_external"
+  "test_mode": "no_external",
+  "publish": {
+    "youtube": {
+      "enabled": true,
+      "dry_run": true,
+      "scheduled": true,
+      "schedule_slots": ["13:00", "19:00", "22:00"],
+      "timezone": "Europe/Istanbul",
+      "expected_channel_id": "UCfdDdchpT4rait8RUjzpVGA"
+    }
+  }
 }
 
 const short005RawInput = {
@@ -655,7 +695,17 @@ const short005RawInput = {
     "test_mode": "no_external",
     "reuse_assets_from_run": "day28-export-wait-c"
   },
-  "test_mode": "no_external"
+  "test_mode": "no_external",
+  "publish": {
+    "youtube": {
+      "enabled": true,
+      "dry_run": true,
+      "scheduled": true,
+      "schedule_slots": ["13:00", "19:00", "22:00"],
+      "timezone": "Europe/Istanbul",
+      "expected_channel_id": "UCfdDdchpT4rait8RUjzpVGA"
+    }
+  }
 }
 
 const short006RawInput = {
@@ -781,7 +831,17 @@ const short006RawInput = {
     "test_mode": "no_external",
     "reuse_assets_from_run": "day28-export-wait-c"
   },
-  "test_mode": "no_external"
+  "test_mode": "no_external",
+  "publish": {
+    "youtube": {
+      "enabled": true,
+      "dry_run": true,
+      "scheduled": true,
+      "schedule_slots": ["13:00", "19:00", "22:00"],
+      "timezone": "Europe/Istanbul",
+      "expected_channel_id": "UCfdDdchpT4rait8RUjzpVGA"
+    }
+  }
 }
 
 const rawInputs = [

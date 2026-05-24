@@ -80,6 +80,16 @@ const short001RawInput = {
     short_id: "short-001",
     workflow: "manual_scene_json_single_track_shorts_load_input",
     content_generation_status: "filled"
+  },
+  publish: {
+    youtube: {
+      enabled: true,
+      dry_run: true,
+      scheduled: true,
+      schedule_slots: ["13:00", "19:00", "22:00"],
+      timezone: "Europe/Istanbul",
+      expected_channel_id: "UCfdDdchpT4rait8RUjzpVGA"
+    }
   }
 };
 
@@ -157,6 +167,16 @@ const short002RawInput = {
     short_id: "short-002",
     workflow: "manual_scene_json_single_track_shorts_load_input",
     content_generation_status: "filled"
+  },
+  publish: {
+    youtube: {
+      enabled: true,
+      dry_run: true,
+      scheduled: true,
+      schedule_slots: ["13:00", "19:00", "22:00"],
+      timezone: "Europe/Istanbul",
+      expected_channel_id: "UCfdDdchpT4rait8RUjzpVGA"
+    }
   }
 };
 
@@ -234,6 +254,16 @@ const short003RawInput = {
     short_id: "short-003",
     workflow: "manual_scene_json_single_track_shorts_load_input",
     content_generation_status: "filled"
+  },
+  publish: {
+    youtube: {
+      enabled: true,
+      dry_run: true,
+      scheduled: true,
+      schedule_slots: ["13:00", "19:00", "22:00"],
+      timezone: "Europe/Istanbul",
+      expected_channel_id: "UCfdDdchpT4rait8RUjzpVGA"
+    }
   }
 };
 
@@ -311,6 +341,16 @@ const short004RawInput = {
     short_id: "short-004",
     workflow: "manual_scene_json_single_track_shorts_load_input",
     content_generation_status: "filled"
+  },
+  publish: {
+    youtube: {
+      enabled: true,
+      dry_run: true,
+      scheduled: true,
+      schedule_slots: ["13:00", "19:00", "22:00"],
+      timezone: "Europe/Istanbul",
+      expected_channel_id: "UCfdDdchpT4rait8RUjzpVGA"
+    }
   }
 };
 
@@ -388,6 +428,16 @@ const short005RawInput = {
     short_id: "short-005",
     workflow: "manual_scene_json_single_track_shorts_load_input",
     content_generation_status: "filled"
+  },
+  publish: {
+    youtube: {
+      enabled: true,
+      dry_run: true,
+      scheduled: true,
+      schedule_slots: ["13:00", "19:00", "22:00"],
+      timezone: "Europe/Istanbul",
+      expected_channel_id: "UCfdDdchpT4rait8RUjzpVGA"
+    }
   }
 };
 
@@ -465,6 +515,16 @@ const short006RawInput = {
     short_id: "short-006",
     workflow: "manual_scene_json_single_track_shorts_load_input",
     content_generation_status: "filled"
+  },
+  publish: {
+    youtube: {
+      enabled: true,
+      dry_run: true,
+      scheduled: true,
+      schedule_slots: ["13:00", "19:00", "22:00"],
+      timezone: "Europe/Istanbul",
+      expected_channel_id: "UCfdDdchpT4rait8RUjzpVGA"
+    }
   }
 };
 
