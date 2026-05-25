@@ -97,6 +97,16 @@ function sanitizeFileName(name) {
   return cleaned || 'video';
 }
 
+function sanitizeFolderName(name) {
+  const cleaned = name
+    .replace(/ *: */g, ' - ')
+    .replace(/[<>"/\\|?*]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/[. ]+$/g, '');
+  return cleaned || 'folder';
+}
+
 function shortIdForIndex(index) {
   return `short-${String(index + 1).padStart(3, '0')}`;
 }
@@ -461,7 +471,7 @@ function exportShorts(args) {
 
   const jobsRoot = path.resolve(expandPath(args.jobsRoot));
   const exportRoot = path.resolve(expandPath(args.exportRoot));
-  const folderName = folderNameFor(args, exportSource.sourceData || { slug: args.slug });
+  const folderName = sanitizeFolderName(folderNameFor(args, exportSource.sourceData || { slug: args.slug }));
   const targetDir = path.join(exportRoot, folderName);
 
   ok(`Jobs root: ${jobsRoot}`);
@@ -542,7 +552,7 @@ function exportLandscape(args) {
 
   const jobsRoot = path.resolve(expandPath(args.jobsRoot));
   const exportRoot = path.resolve(expandPath(args.exportRoot));
-  const folderName = args.folderName || title || args.slug;
+  const folderName = sanitizeFolderName(args.folderName || title || args.slug);
   const targetDir = path.join(exportRoot, folderName);
   const jobDir = findLandscapeJobDir(listJobDirs(jobsRoot), args.slug, args.runId);
   const source = findRenderedVideo(jobDir, 'landscape');

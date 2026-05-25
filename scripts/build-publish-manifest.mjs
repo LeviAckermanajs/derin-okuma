@@ -85,6 +85,16 @@ function sanitizeFileName(name) {
   return cleaned || 'video';
 }
 
+function sanitizeFolderName(name) {
+  const cleaned = name
+    .replace(/ *: */g, ' - ')
+    .replace(/[<>"/\\|?*]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/[. ]+$/g, '');
+  return cleaned || 'folder';
+}
+
 function loadShortsPackageTitle(slug) {
   const packagePath = path.join(ROOT, 'docs/video-tests/shorts', slug, `${slug}-shorts-package.json`);
   if (!fs.existsSync(packagePath)) return null;
@@ -133,9 +143,9 @@ function buildShortsManifest(args) {
     `${args.slug}-shorts-metadata.json`
   );
   const exportRoot  = path.resolve(expandHome(args.exportRoot));
-  const metadata    = readJson(metadataPath, 'Shorts metadata');
-  const folderName  = resolveFolderName(args.slug, metadata);
-  const targetDir   = path.join(exportRoot, folderName);
+  const metadata       = readJson(metadataPath, 'Shorts metadata');
+  const folderName     = sanitizeFolderName(resolveFolderName(args.slug, metadata));
+  const targetDir      = path.join(exportRoot, folderName);
   const indexPath   = path.join(targetDir, 'export-index.md');
   const manifestPath = path.join(targetDir, 'publish-manifest.json');
 
