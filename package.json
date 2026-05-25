@@ -22,7 +22,10 @@
     "video:youtube:upload-one": "node scripts/upload-youtube-one.mjs",
     "video:youtube:upload-batch": "node scripts/upload-youtube-batch.mjs",
     "video:youtube:mark-schedule": "node scripts/mark-youtube-schedule.mjs",
-    "video:tiktok:upload-batch": "node scripts/upload-tiktok-batch.mjs"
+    "video:tiktok:upload-batch": "node scripts/upload-tiktok-batch.mjs",
+    "tiktok:auth-url": "node scripts/tiktok-auth-url.mjs",
+    "tiktok:exchange-token": "node scripts/tiktok-exchange-token.mjs",
+    "tiktok:token-status": "node scripts/tiktok-token-status.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.0",
