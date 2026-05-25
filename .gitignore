@@ -27,3 +27,4 @@ pnpm-debug.log*
 .secrets/
 **/client_secret*.json
 **/token*.json
+*.local.tiktok.json
