@@ -21,6 +21,7 @@ function parseArgs(argv) {
     mode:      'draft',
     dryRun:    false,
     writePlan: false,
+    isAigc:    true,
   };
 
   for (let i = 0; i < argv.length; i++) {
@@ -29,6 +30,7 @@ function parseArgs(argv) {
     else if (arg === '--mode'       && argv[i + 1]) args.mode      = argv[++i];
     else if (arg === '--dry-run')                    args.dryRun    = true;
     else if (arg === '--write-plan')                 args.writePlan = true;
+    else if (arg === '--no-aigc')                    args.isAigc    = false;
     else {
       fail(`Unknown or incomplete option: ${arg}`);
     }
@@ -151,6 +153,10 @@ if (!args.dryRun) {
   fail('TikTok API upload is not implemented yet. Use --dry-run.');
 }
 
+if (!args.isAigc) {
+  warn('is_aigc=false; use only if the video is not AI-generated.');
+}
+
 if (!args.manifest) {
   fail('Missing required --manifest <path>');
 }
@@ -229,6 +235,7 @@ for (const video of manifest.videos) {
   plan(`${video.id} -> TikTok ${args.mode}`);
   plan(`  caption="${captionPreview}"`);
   plan(`  privacy_level=${privacyLevel}`);
+  plan(`  is_aigc=${args.isAigc}`);
   plan(`  file=${path.basename(video.path)}`);
   check(`caption_length=${captionLen}`);
   check(`hashtags_count=${normalizedTags.length}`);
@@ -259,6 +266,15 @@ for (const video of manifest.videos) {
     hashtags_count: normalizedTags.length,
     privacy_level:  privacyLevel,
     mode:           args.mode,
+    is_aigc:        args.isAigc,
+    post_info_preview: {
+      title:           caption,
+      privacy_level:   privacyLevel,
+      disable_duet:    false,
+      disable_comment: false,
+      disable_stitch:  false,
+      is_aigc:         args.isAigc,
+    },
     warnings,
     errors,
     status:         errors.length > 0 ? 'has_errors' : 'ready_for_dry_run',
@@ -277,6 +293,7 @@ if (args.writePlan) {
     platform:      'tiktok',
     mode:          args.mode,
     dry_run:       true,
+    is_aigc:       args.isAigc,
     created_at:    new Date().toISOString(),
     manifest_path: manifestPath,
     videos_count:  planItems.length,
