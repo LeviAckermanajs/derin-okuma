@@ -6,6 +6,7 @@ let config        = { n8n_url: 'http://localhost:5678', cwd: '' };
 let currentSlug   = null;   // slug shown in detail view
 let modalAction   = null;
 let modalSlug     = null;
+let modalParams   = {};
 let modalNeedsRefresh = false;
 
 // ── Utilities ──────────────────────────────────────────────────────────────
@@ -143,6 +144,7 @@ function hideDetail() {
 function renderDetail(d) {
   return `
     <div class="detail-grid">
+      ${cardWorkflowParams(d)}
       ${cardContentPackage(d)}
       ${cardPipeline(d)}
       ${cardExportArtifacts(d)}
@@ -155,6 +157,41 @@ function renderDetail(d) {
 
 function kv(label, valueHtml) {
   return `<tr><td>${esc(label)}</td><td>${valueHtml}</td></tr>`;
+}
+
+function cardWorkflowParams(d) {
+  const defaultRunId = d.pipeline?.runId
+    || (d.test_day ? `day${d.test_day}-batch-a` : 'batch-a');
+  return `
+    <div class="detail-card full-width">
+      <h3>Workflow Parametreleri</h3>
+      <div class="param-grid">
+        <div class="param-field">
+          <label class="param-label" for="param-title">Başlık (shorts-prep)</label>
+          <input class="param-input" id="param-title" type="text"
+            value="${esc(d.source_title ?? '')}"
+            placeholder="Blog yazısı başlığı">
+        </div>
+        <div class="param-field">
+          <label class="param-label" for="param-day">Gün (shorts-prep)</label>
+          <input class="param-input" id="param-day" type="number" min="1" max="999"
+            value="${esc(String(d.test_day ?? ''))}"
+            placeholder="1">
+        </div>
+        <div class="param-field">
+          <label class="param-label" for="param-run-id">Run ID (fill / batch)</label>
+          <input class="param-input" id="param-run-id" type="text"
+            value="${esc(defaultRunId)}"
+            placeholder="day1-batch-a">
+        </div>
+        <div class="param-field">
+          <label class="param-label" for="param-draft-path">Taslak dosya (blog-add)</label>
+          <input class="param-input" id="param-draft-path" type="text"
+            placeholder="docs/drafts/filename.txt" list="drafts-datalist">
+          <datalist id="drafts-datalist"></datalist>
+        </div>
+      </div>
+    </div>`;
 }
 
 function cardContentPackage(d) {
@@ -306,26 +343,41 @@ function cardShorts(d) {
 }
 
 function cardActions(d) {
-  const ttPlanOk = d.tiktok_upload_plan_exists;
-  const batchOk  = d.batch_exists;
+  const ttPlanOk  = d.tiktok_upload_plan_exists;
+  const batchOk   = d.batch_exists;
+  const pkgFilled = d.package_status === 'filled';
 
   return `
     <div class="detail-card full-width">
       <h3>Aksiyonlar</h3>
       <div class="action-bar">
+        <button class="btn-action" data-action="blog-add"
+          title="claude -p /add-blog-post &lt;draft_path&gt;">
+          + Blog Yazısını Ekle
+        </button>
+        <button class="btn-action${pkgFilled ? ' btn-warn' : ''}" data-action="shorts-prep"
+          title="node scripts/prepare-video-package.mjs --title ... --day ... --slug ${esc(d.slug)} --force">
+          ⊕ Shorts Prep Oluştur${pkgFilled ? ' ⚠' : ''}
+        </button>
+        <button class="btn-action" data-action="shorts-fill"
+          title="node scripts/run-shorts-fill-with-claude.mjs --slug ${esc(d.slug)} --run-id ...">
+          ◇ Claude ile Paketi Doldur
+        </button>
         <button class="btn-action" data-action="validate-shorts"
           title="node scripts/validate-video-package.mjs --slug ${esc(d.slug)} --type shorts --report">
           ✓ Validate Shorts
+        </button>
+        <button class="btn-action" data-action="batch-create"
+          title="node scripts/build-video-batch.mjs --slug ${esc(d.slug)} --type shorts --run-id ... --force">
+          ⊞ Batch Oluştur
         </button>
         <button class="btn-action ${batchOk ? '' : 'btn-disabled'}"
           data-action="copy-batch" ${batchOk ? '' : 'disabled'}
           title="Batch load input içeriğini panoya kopyala">
           ⎘ Copy Batch Load Input
         </button>
-        <button class="btn-action" data-action="open-n8n"
-          title="n8n arayüzünü aç">
-          ↗ Open n8n
-        </button>
+      </div>
+      <div class="action-bar action-bar-secondary">
         <button class="btn-action ${ttPlanOk ? '' : 'btn-disabled'}"
           data-action="export-captions" ${ttPlanOk ? '' : 'disabled'}
           title="node scripts/export-tiktok-captions.mjs --plan ...">
@@ -335,6 +387,10 @@ function cardActions(d) {
           data-action="tiktok-dry-run" ${ttPlanOk ? '' : 'disabled'}
           title="node scripts/upload-tiktok-batch-real.mjs --plan ... --dry-run">
           ⬡ TikTok Upload Dry Run
+        </button>
+        <button class="btn-action" data-action="open-n8n"
+          title="n8n arayüzünü aç">
+          ↗ Open n8n
         </button>
         <button class="btn-action" data-action="refresh"
           title="Detay panelini yenile">
@@ -346,22 +402,34 @@ function cardActions(d) {
 
 // ── Detail button wiring ───────────────────────────────────────────────────
 
-function wireDetailButtons(d) {
-  // Fill token card
-  fillTokenCard();
+function collectParams() {
+  return {
+    title:      (document.getElementById('param-title')?.value      ?? '').trim(),
+    day:         document.getElementById('param-day')?.value        ?? '',
+    run_id:     (document.getElementById('param-run-id')?.value     ?? '').trim(),
+    draft_path: (document.getElementById('param-draft-path')?.value ?? '').trim(),
+  };
+}
 
-  // Action buttons
+async function fillDraftsList() {
+  const datalist = document.getElementById('drafts-datalist');
+  if (!datalist) return;
+  try {
+    const drafts = await apiFetch('/api/drafts');
+    datalist.innerHTML = drafts.map(p => `<option value="${esc(p)}">`).join('');
+  } catch {}
+}
+
+function wireDetailButtons(d) {
+  fillTokenCard();
+  fillDraftsList();
+
   document.querySelectorAll('[data-action]').forEach(btn => {
     btn.addEventListener('click', async () => {
       const action = btn.dataset.action;
 
-      if (action === 'refresh') {
-        showDetail(d.slug); return;
-      }
-
-      if (action === 'open-n8n') {
-        window.open(config.n8n_url, '_blank'); return;
-      }
+      if (action === 'refresh') { showDetail(d.slug); return; }
+      if (action === 'open-n8n') { window.open(config.n8n_url, '_blank'); return; }
 
       if (action === 'copy-batch') {
         try {
@@ -374,7 +442,9 @@ function wireDetailButtons(d) {
         return;
       }
 
-      // Server-side actions: build canonical spec and open preview modal
+      const p = collectParams();
+      const cwd = config.cwd || '.';
+
       const tiktokPlan = d.tiktok_upload_plan_exists
         ? `${d.export_folder}/tiktok-upload-plan.json`
         : null;
@@ -384,7 +454,7 @@ function wireDetailButtons(d) {
           title:   'Validate Shorts',
           label:   'Doğrulama komutu',
           command: `node scripts/validate-video-package.mjs --slug ${d.slug} --type shorts --report`,
-          cwd:     config.cwd || '.',
+          cwd,
         },
         'export-captions': {
           title:   'Export TikTok Captions',
@@ -392,7 +462,7 @@ function wireDetailButtons(d) {
           command: tiktokPlan
             ? `node scripts/export-tiktok-captions.mjs --plan "${tiktokPlan}"`
             : null,
-          cwd:     config.cwd || '.',
+          cwd,
         },
         'tiktok-dry-run': {
           title:   'TikTok Upload Dry Run',
@@ -400,12 +470,47 @@ function wireDetailButtons(d) {
           command: tiktokPlan
             ? `node scripts/upload-tiktok-batch-real.mjs --plan "${tiktokPlan}" --dry-run`
             : null,
-          cwd:     config.cwd || '.',
+          cwd,
+        },
+        'shorts-prep': {
+          title:   'Shorts Prep Oluştur',
+          label:   'Shorts paketi oluşturma',
+          command: p.title && p.day
+            ? `node scripts/prepare-video-package.mjs --title "${p.title}" --day ${p.day} --slug ${d.slug} --force`
+            : null,
+          cwd,
+          warning: d.package_status === 'filled'
+            ? '⚠ Bu slug için zaten dolu bir paket mevcut. Çalıştırılırsa mevcut içerik üzerine yazılır.'
+            : null,
+        },
+        'shorts-fill': {
+          title:   'Claude ile Paketi Doldur',
+          label:   'Claude ile içerik doldurma',
+          command: p.run_id
+            ? `node scripts/run-shorts-fill-with-claude.mjs --slug ${d.slug} --run-id ${p.run_id}`
+            : null,
+          cwd,
+        },
+        'batch-create': {
+          title:   'Batch Oluştur',
+          label:   'Video batch oluşturma',
+          command: p.run_id
+            ? `node scripts/build-video-batch.mjs --slug ${d.slug} --type shorts --run-id ${p.run_id} --force`
+            : null,
+          cwd,
+        },
+        'blog-add': {
+          title:   'Blog Yazısını Ekle',
+          label:   'Taslaktan blog yazısı oluşturma',
+          command: p.draft_path
+            ? `claude -p "/add-blog-post ${p.draft_path}"`
+            : null,
+          cwd,
         },
       };
 
       const spec = ACTION_SPECS[action];
-      if (spec) openModal({ ...spec, action, slug: d.slug });
+      if (spec) openModal({ ...spec, action, slug: d.slug, params: p });
     });
   });
 }
@@ -441,30 +546,32 @@ async function fillTokenCard() {
 
 // ── Modal ─────────────────────────────────────────────────────────────────
 
-// spec: { title, label, command, cwd, action, slug }
+// spec: { title, label, command, cwd, action, slug, params?, warning? }
 function openModal(spec) {
   modalAction       = spec.action;
   modalSlug         = spec.slug;
+  modalParams       = spec.params || {};
   modalNeedsRefresh = false;
 
   const hasCommand = typeof spec.command === 'string' && spec.command.trim().length > 0;
 
-  // Set title
   document.getElementById('modal-title').textContent = spec.title || spec.action;
 
-  // Build structured preview — always renders regardless of display: flex elsewhere
   const cwdLine = spec.cwd
     ? `<div class="modal-meta"><span class="modal-meta-key">cwd:</span> ${esc(spec.cwd)}</div>`
     : '';
   const labelLine = spec.label
     ? `<div class="modal-meta modal-meta-label">${esc(spec.label)}</div>`
     : '';
+  const warningLine = spec.warning
+    ? `<div class="modal-warning">${esc(spec.warning)}</div>`
+    : '';
   const commandBlock = hasCommand
     ? `<pre class="modal-code">${esc(spec.command)}</pre>`
-    : `<div class="modal-no-command">⚠ Komut üretilemedi — plan dosyası bulunamadı.</div>`;
+    : `<div class="modal-no-command">⚠ Komut üretilemedi — gerekli parametre eksik veya dosya bulunamadı.</div>`;
 
   document.getElementById('modal-preview-wrap').innerHTML =
-    `${labelLine}${cwdLine}${commandBlock}`;
+    `${labelLine}${cwdLine}${warningLine}${commandBlock}`;
 
   // Reset output section
   document.getElementById('modal-output-section').classList.add('hidden');
@@ -504,7 +611,7 @@ async function runModal() {
     const res  = await fetch('/api/action', {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify({ action: modalAction, slug: modalSlug }),
+      body:    JSON.stringify({ action: modalAction, slug: modalSlug, params: modalParams }),
     });
     const data = await res.json();
 

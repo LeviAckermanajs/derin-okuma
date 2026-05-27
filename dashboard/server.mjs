@@ -20,7 +20,9 @@ const REPORTS_DIR  = path.join(ROOT, 'docs', 'video-tests', 'reports');
 const PUBLISH_DIR  = path.join(ROOT, 'docs', 'video-tests', 'publish');
 const BLOG_DIR     = path.join(ROOT, 'src', 'content', 'blog');
 const SCRIPTS_DIR  = path.join(ROOT, 'scripts');
+const DRAFTS_DIR   = path.join(ROOT, 'docs', 'drafts');
 const TOKEN_PATH   = path.join(ROOT, '.secrets', 'tiktok', 'token.json');
+const CLAUDE_BIN   = '/home/muhammet/.nvm/versions/node/v24.15.0/bin/claude';
 const EXPORT_ROOT  = process.env.DERIN_OKUMA_EXPORT_ROOT || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
 const N8N_URL      = process.env.N8N_URL || 'http://localhost:5678';
 
@@ -30,7 +32,10 @@ const MIME = {
   '.css':  'text/css; charset=utf-8',
 };
 
-const ALLOWED_ACTIONS = new Set(['validate-shorts', 'export-captions', 'tiktok-dry-run']);
+const ALLOWED_ACTIONS = new Set([
+  'validate-shorts', 'export-captions', 'tiktok-dry-run',
+  'shorts-prep', 'shorts-fill', 'batch-create', 'blog-add',
+]);
 
 // ── File helpers ──────────────────────────────────────────────────────────
 
@@ -87,6 +92,18 @@ function findBlogPath(slug, pkg) {
     if (exists(path.join(ROOT, sf))) return sf;
   }
   return null;
+}
+
+// ── Drafts helper ────────────────────────────────────────────────────────
+
+function apiDrafts() {
+  if (!exists(DRAFTS_DIR)) return [];
+  try {
+    return fs.readdirSync(DRAFTS_DIR)
+      .filter(f => /\.(txt|md|mdx)$/.test(f))
+      .sort()
+      .map(f => `docs/drafts/${f}`);
+  } catch { return []; }
 }
 
 // ── API handlers ──────────────────────────────────────────────────────────
@@ -192,8 +209,14 @@ function apiSlug(slug) {
   const tiktokResult = readJson(tiktokResultPath);
   const ytResult     = readJson(ytResultPath);
 
+  const testDay = pkg?.test_day
+    ?? (pipeline?.dayTag ? (parseInt(pipeline.dayTag.replace(/\D/g, ''), 10) || null) : null);
+
   return {
     slug,
+    // Source / package meta
+    source_title:  pkg?.source?.title ?? null,
+    test_day:      testDay,
     // Blog
     blog_exists:   !!blogPath,
     blog_path:     blogPath,
@@ -277,7 +300,7 @@ function apiBatchContent(slug) {
 
 // ── Action runner ─────────────────────────────────────────────────────────
 
-function buildCommand(action, slug) {
+function buildCommand(action, slug, params = {}) {
   if (action === 'validate-shorts') {
     return {
       args: [
@@ -301,21 +324,84 @@ function buildCommand(action, slug) {
       preview: `node scripts/upload-tiktok-batch-real.mjs --plan "${planPath}" --dry-run`,
     };
   }
+  if (action === 'shorts-prep') {
+    const { title, day } = params;
+    if (!title || typeof title !== 'string' || !title.trim()) return { error: 'missing_title' };
+    const dayNum = parseInt(String(day), 10);
+    if (!Number.isInteger(dayNum) || dayNum < 1 || dayNum > 999) return { error: 'invalid_day' };
+    return {
+      args: [
+        path.join(SCRIPTS_DIR, 'prepare-video-package.mjs'),
+        '--title', title.trim(),
+        '--day',   String(dayNum),
+        '--slug',  slug,
+        '--force',
+      ],
+      preview: `node scripts/prepare-video-package.mjs --title "${title.trim()}" --day ${dayNum} --slug ${slug} --force`,
+    };
+  }
+  if (action === 'shorts-fill') {
+    const { run_id } = params;
+    if (!run_id || !/^[a-zA-Z0-9_-]+$/.test(run_id)) return { error: 'invalid_run_id' };
+    const fillCmd = process.env.CLAUDE_FILL_COMMAND_TEMPLATE
+      || `${CLAUDE_BIN} --print < "$PROMPT_PATH"`;
+    return {
+      args: [
+        path.join(SCRIPTS_DIR, 'run-shorts-fill-with-claude.mjs'),
+        '--slug',   slug,
+        '--run-id', run_id,
+      ],
+      env:          { ...process.env, CLAUDE_FILL_COMMAND_TEMPLATE: fillCmd },
+      preview:      `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${run_id}`,
+      longTimeout:  true,
+    };
+  }
+  if (action === 'batch-create') {
+    const { run_id } = params;
+    if (!run_id || !/^[a-zA-Z0-9_-]+$/.test(run_id)) return { error: 'invalid_run_id' };
+    return {
+      args: [
+        path.join(SCRIPTS_DIR, 'build-video-batch.mjs'),
+        '--slug',   slug,
+        '--type',   'shorts',
+        '--run-id', run_id,
+        '--force',
+      ],
+      preview: `node scripts/build-video-batch.mjs --slug ${slug} --type shorts --run-id ${run_id} --force`,
+    };
+  }
+  if (action === 'blog-add') {
+    const { draft_path } = params;
+    if (!draft_path || typeof draft_path !== 'string') return { error: 'missing_draft_path' };
+    if (!draft_path.startsWith('docs/drafts/') || draft_path.includes('..'))
+      return { error: 'invalid_draft_path' };
+    const absPath = path.join(ROOT, draft_path);
+    if (!exists(absPath)) return { error: 'draft_not_found' };
+    return {
+      executable:  CLAUDE_BIN,
+      args:        ['-p', `/add-blog-post ${draft_path}`],
+      preview:     `claude -p "/add-blog-post ${draft_path}"`,
+      longTimeout: true,
+    };
+  }
   return { error: 'unknown_action' };
 }
 
 function handleAction(body) {
-  const { action, slug } = body ?? {};
+  const { action, slug, params } = body ?? {};
   if (!action || !slug)                return { error: 'missing_action_or_slug' };
   if (!/^[a-zA-Z0-9_-]+$/.test(slug)) return { error: 'invalid_slug' };
   if (!ALLOWED_ACTIONS.has(action))    return { error: 'unknown_action' };
 
-  const cmd = buildCommand(action, slug);
+  const cmd = buildCommand(action, slug, params ?? {});
   if (cmd.error) return cmd;
 
-  const result = spawnSync(process.execPath, cmd.args, {
-    cwd: ROOT, encoding: 'utf8', timeout: 120_000,
-  });
+  const executable  = cmd.executable || process.execPath;
+  const timeout     = cmd.longTimeout ? 300_000 : 120_000;
+  const spawnOpts   = { cwd: ROOT, encoding: 'utf8', timeout };
+  if (cmd.env) spawnOpts.env = cmd.env;
+
+  const result = spawnSync(executable, cmd.args, spawnOpts);
 
   return {
     action,
@@ -386,6 +472,7 @@ const server = http.createServer(async (req, res) => {
   if (pathname === '/api/config')       return sendJson(res, apiConfig());
   if (pathname === '/api/slugs')        return sendJson(res, apiSlugs());
   if (pathname === '/api/token-status') return sendJson(res, apiTokenStatus());
+  if (pathname === '/api/drafts')       return sendJson(res, apiDrafts());
 
   const batchMatch = pathname.match(/^\/api\/slug\/([^/]+)\/batch-content$/);
   if (batchMatch) {
