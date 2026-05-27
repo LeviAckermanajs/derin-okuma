@@ -1,6 +1,15 @@
 #!/usr/bin/env node
 // run-shorts-prep-pipeline.mjs — consolidates video:prep + video:validate + video:batch
-// Usage: npm run video:shorts:pipeline -- --title "..." --day 31 --run-id day31-export-wait-a [--force]
+//
+// Usage:
+//   npm run video:shorts:pipeline -- --title "..." --day 31 --run-id <id>
+//
+// Flags:
+//   --force                 Force-overwrite the batch output only (prep is never forced by default).
+//   --force-prep            Force video:prep to regenerate scaffold files.
+//                           If any package file is already filled, also requires --confirm-overwrite-filled.
+//   --confirm-overwrite-filled  Required together with --force-prep when filled files exist.
+//                               Acknowledges that previously rendered/uploaded content may be overwritten.
 
 import { spawnSync } from 'child_process';
 import fs from 'fs';
@@ -24,14 +33,19 @@ function toSlug(title) {
 // ─── CLI args ────────────────────────────────────────────────────────────────
 
 function parseArgs(argv) {
-  const args = { title: null, day: null, runId: null, force: false };
+  const args = {
+    title: null, day: null, runId: null,
+    force: false, forcePrep: false, confirmOverwriteFilled: false,
+  };
   let i = 0;
   while (i < argv.length) {
     const a = argv[i];
-    if      (a === '--title'  && argv[i + 1]) { args.title = argv[++i]; }
-    else if (a === '--day'    && argv[i + 1]) { args.day   = parseInt(argv[++i], 10); }
-    else if (a === '--run-id' && argv[i + 1]) { args.runId = argv[++i]; }
-    else if (a === '--force') { args.force = true; }
+    if      (a === '--title'                   && argv[i + 1]) { args.title = argv[++i]; }
+    else if (a === '--day'                     && argv[i + 1]) { args.day   = parseInt(argv[++i], 10); }
+    else if (a === '--run-id'                  && argv[i + 1]) { args.runId = argv[++i]; }
+    else if (a === '--force')                  { args.force = true; }
+    else if (a === '--force-prep')             { args.forcePrep = true; }
+    else if (a === '--confirm-overwrite-filled') { args.confirmOverwriteFilled = true; }
     i++;
   }
   return args;
@@ -68,8 +82,8 @@ const metadataPath        = rel(p('docs/video-tests/metadata', `${slug}-landscap
 const batchLoadInputPath  = rel(p('docs/video-tests/batches',  `${slug}-shorts-batch-load-input.js`));
 const expectedExportFolder = path.join(SCENE_BLOG_VIDEO_ROOT, 'output', 'jobs', `job-${slug}-short-*-${args.runId}`);
 
-const reportsDir  = p('docs/video-tests/reports');
-const statusPath  = path.join(reportsDir, `${slug}-shorts-pipeline-status.json`);
+const reportsDir = p('docs/video-tests/reports');
+const statusPath = path.join(reportsDir, `${slug}-shorts-pipeline-status.json`);
 
 // ─── Status file helpers ─────────────────────────────────────────────────────
 
@@ -118,31 +132,77 @@ function runStep(label, cmdArgs) {
   return true;
 }
 
+// ─── Filled-package detection ─────────────────────────────────────────────────
+// Returns relative paths of any package files whose content_generation_status is "filled".
+
+function detectFilledPackages(slug) {
+  const candidates = [
+    p('docs/video-tests/shorts', slug, `${slug}-shorts-package.json`),
+    p('docs/video-tests/shorts', slug, 'metadata', `${slug}-shorts-metadata.json`),
+    p('docs/video-tests/inputs', `${slug}-landscape-full-video.json`),
+  ];
+
+  const filled = [];
+  for (const filePath of candidates) {
+    if (!fs.existsSync(filePath)) continue;
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if (data.content_generation_status === 'filled') filled.push(rel(filePath));
+    } catch {
+      // unparseable → not treated as filled
+    }
+  }
+  return filled;
+}
+
 // ─── Pipeline ────────────────────────────────────────────────────────────────
 
 console.log('\nDerin Okuma — Shorts Prep Pipeline');
-console.log(`  Title  : ${args.title}`);
-console.log(`  Slug   : ${slug}`);
-console.log(`  Day    : ${dayTag}`);
-console.log(`  Run ID : ${args.runId}`);
-console.log(`  Force  : ${args.force}`);
+console.log(`  Title      : ${args.title}`);
+console.log(`  Slug       : ${slug}`);
+console.log(`  Day        : ${dayTag}`);
+console.log(`  Run ID     : ${args.runId}`);
+console.log(`  force-prep : ${args.forcePrep}`);
 
 writeStatus();
 
-// 1. video:prep
-const prepArgs = ['scripts/prepare-video-package.mjs', '--title', args.title, '--day', String(args.day)];
-if (args.force) prepArgs.push('--force');
+// 1. video:prep — guarded against overwriting filled packages
+const filledFiles = detectFilledPackages(slug);
+const hasFilledPackage = filledFiles.length > 0;
 
-if (!runStep('video:prep', prepArgs)) process.exit(1);
+if (hasFilledPackage) {
+  console.log('\n[OK] existing_filled_package=true');
+  filledFiles.forEach(f => console.log(`  filled: ${f}`));
+}
+
+if (hasFilledPackage && args.forcePrep && !args.confirmOverwriteFilled) {
+  console.error('\n[FAIL] --force-prep was passed but filled package files exist.');
+  console.error('       These files have content_generation_status="filled" and may have been rendered or uploaded:');
+  filledFiles.forEach(f => console.error(`         ${f}`));
+  console.error('\n       If you are certain you want to overwrite them, re-run with both flags:');
+  console.error('         --force-prep --confirm-overwrite-filled');
+  pipelineStatus.status        = 'failed';
+  pipelineStatus.failedCommand = '--force-prep without --confirm-overwrite-filled';
+  writeStatus();
+  process.exit(1);
+}
+
+if (hasFilledPackage && !args.forcePrep) {
+  console.log('[SKIP] video_prep_not_needed=true');
+  console.log('\n[STEP] video:prep');
+  console.log('  (skipped — existing filled package detected)');
+} else {
+  const prepArgs = ['scripts/prepare-video-package.mjs', '--title', args.title, '--day', String(args.day)];
+  if (args.forcePrep) prepArgs.push('--force');
+  if (!runStep('video:prep', prepArgs)) process.exit(1);
+}
 
 // 2. video:validate
 const validateArgs = ['scripts/validate-video-package.mjs', '--slug', slug, '--report'];
-
 if (!runStep('video:validate', validateArgs)) process.exit(1);
 
-// 3. video:batch
+// 3. video:batch (always --force so repeated runs with the same run-id overwrite cleanly)
 const batchArgs = ['scripts/build-video-batch.mjs', '--slug', slug, '--type', 'shorts', '--run-id', args.runId, '--force'];
-
 if (!runStep('video:batch', batchArgs)) process.exit(1);
 
 // ─── Summary ─────────────────────────────────────────────────────────────────
