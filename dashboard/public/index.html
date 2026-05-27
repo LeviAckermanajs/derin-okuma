@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <section id="detail-section" hidden>
+    <section id="detail-section" class="hidden">
       <div id="detail-header">
         <button id="detail-close" class="btn-ghost">← Geri</button>
         <h2 id="detail-title"></h2>
@@ -44,17 +44,22 @@
   </main>
 
   <!-- Action modal -->
-  <div id="modal-overlay" hidden>
+  <div id="modal-overlay" class="hidden">
     <div id="modal-box">
       <div id="modal-header">
-        <span id="modal-title">Komut Önizleme</span>
+        <span id="modal-title"></span>
         <button id="modal-x" class="btn-ghost">✕</button>
       </div>
-      <pre id="modal-preview" class="modal-code"></pre>
-      <div id="modal-output-section" hidden>
-        <div id="modal-status-bar"></div>
+
+      <!-- Structured command preview — filled by openModal() -->
+      <div id="modal-preview-wrap"></div>
+
+      <!-- Output section — hidden until Run is clicked -->
+      <div id="modal-output-section" class="hidden">
+        <div id="modal-status-bar" class="modal-status"></div>
         <pre id="modal-output" class="modal-output"></pre>
       </div>
+
       <div id="modal-footer">
         <button id="modal-run-btn" class="btn-primary">Çalıştır</button>
         <button id="modal-cancel-btn" class="btn-ghost">İptal</button>

@@ -2,7 +2,7 @@
 
 // ── Global state ───────────────────────────────────────────────────────────
 
-let config        = { n8n_url: 'http://localhost:5678' };
+let config        = { n8n_url: 'http://localhost:5678', cwd: '' };
 let currentSlug   = null;   // slug shown in detail view
 let modalAction   = null;
 let modalSlug     = null;
@@ -114,8 +114,8 @@ async function loadOverview() {
 async function showDetail(slug, silent = false) {
   currentSlug = slug;
   if (!silent) {
-    document.getElementById('overview-section').hidden = true;
-    document.getElementById('detail-section').hidden   = false;
+    document.getElementById('overview-section').classList.add('hidden');
+    document.getElementById('detail-section').classList.remove('hidden');
     document.getElementById('detail-title').textContent = slug;
     document.getElementById('detail-body').innerHTML    = '<div class="loading">Yükleniyor…</div>';
   }
@@ -133,8 +133,8 @@ async function showDetail(slug, silent = false) {
 
 function hideDetail() {
   currentSlug = null;
-  document.getElementById('overview-section').hidden = false;
-  document.getElementById('detail-section').hidden   = true;
+  document.getElementById('overview-section').classList.remove('hidden');
+  document.getElementById('detail-section').classList.add('hidden');
 }
 
 // ── Detail rendering ───────────────────────────────────────────────────────
@@ -362,27 +362,38 @@ function wireDetailButtons(d) {
         return;
       }
 
-      // Server-side actions: show preview modal
-      const previews = {
-        'validate-shorts':
-          `node scripts/validate-video-package.mjs --slug ${d.slug} --type shorts --report`,
-        'export-captions':
-          d.tiktok_upload_plan_exists
-            ? `node scripts/export-tiktok-captions.mjs --plan "${d.export_folder}/tiktok-upload-plan.json"`
-            : '(tiktok-upload-plan.json bulunamadı)',
-        'tiktok-dry-run':
-          d.tiktok_upload_plan_exists
-            ? `node scripts/upload-tiktok-batch-real.mjs --plan "${d.export_folder}/tiktok-upload-plan.json" --dry-run`
-            : '(tiktok-upload-plan.json bulunamadı)',
+      // Server-side actions: build canonical spec and open preview modal
+      const tiktokPlan = d.tiktok_upload_plan_exists
+        ? `${d.export_folder}/tiktok-upload-plan.json`
+        : null;
+
+      const ACTION_SPECS = {
+        'validate-shorts': {
+          title:   'Validate Shorts',
+          label:   'Doğrulama komutu',
+          command: `node scripts/validate-video-package.mjs --slug ${d.slug} --type shorts --report`,
+          cwd:     config.cwd || '.',
+        },
+        'export-captions': {
+          title:   'Export TikTok Captions',
+          label:   'TikTok altyazı dışa aktarma',
+          command: tiktokPlan
+            ? `node scripts/export-tiktok-captions.mjs --plan "${tiktokPlan}"`
+            : null,
+          cwd:     config.cwd || '.',
+        },
+        'tiktok-dry-run': {
+          title:   'TikTok Upload Dry Run',
+          label:   'TikTok yükleme önizlemesi (--dry-run)',
+          command: tiktokPlan
+            ? `node scripts/upload-tiktok-batch-real.mjs --plan "${tiktokPlan}" --dry-run`
+            : null,
+          cwd:     config.cwd || '.',
+        },
       };
 
-      const titles = {
-        'validate-shorts':  'Validate Shorts',
-        'export-captions':  'Export TikTok Captions',
-        'tiktok-dry-run':   'TikTok Upload Dry Run',
-      };
-
-      openModal(titles[action] || action, previews[action] || action, action, d.slug);
+      const spec = ACTION_SPECS[action];
+      if (spec) openModal({ ...spec, action, slug: d.slug });
     });
   });
 }
@@ -418,24 +429,47 @@ async function fillTokenCard() {
 
 // ── Modal ─────────────────────────────────────────────────────────────────
 
-function openModal(title, previewText, action, slug) {
-  modalAction       = action;
-  modalSlug         = slug;
+// spec: { title, label, command, cwd, action, slug }
+function openModal(spec) {
+  modalAction       = spec.action;
+  modalSlug         = spec.slug;
   modalNeedsRefresh = false;
 
-  document.getElementById('modal-title').textContent   = title;
-  document.getElementById('modal-preview').textContent = previewText;
-  document.getElementById('modal-output-section').hidden = true;
-  document.getElementById('modal-output').textContent  = '';
+  const hasCommand = typeof spec.command === 'string' && spec.command.trim().length > 0;
+
+  // Set title
+  document.getElementById('modal-title').textContent = spec.title || spec.action;
+
+  // Build structured preview — always renders regardless of display: flex elsewhere
+  const cwdLine = spec.cwd
+    ? `<div class="modal-meta"><span class="modal-meta-key">cwd:</span> ${esc(spec.cwd)}</div>`
+    : '';
+  const labelLine = spec.label
+    ? `<div class="modal-meta modal-meta-label">${esc(spec.label)}</div>`
+    : '';
+  const commandBlock = hasCommand
+    ? `<pre class="modal-code">${esc(spec.command)}</pre>`
+    : `<div class="modal-no-command">⚠ Komut üretilemedi — plan dosyası bulunamadı.</div>`;
+
+  document.getElementById('modal-preview-wrap').innerHTML =
+    `${labelLine}${cwdLine}${commandBlock}`;
+
+  // Reset output section
+  document.getElementById('modal-output-section').classList.add('hidden');
+  document.getElementById('modal-output').textContent    = '';
   document.getElementById('modal-status-bar').textContent = '';
-  document.getElementById('modal-status-bar').className   = 'modal-status';
-  document.getElementById('modal-run-btn').disabled    = false;
-  document.getElementById('modal-run-btn').textContent = 'Çalıştır';
-  document.getElementById('modal-overlay').hidden      = false;
+  document.getElementById('modal-status-bar').className  = 'modal-status';
+
+  // Enable run button only when command is valid
+  const runBtn = document.getElementById('modal-run-btn');
+  runBtn.disabled    = !hasCommand;
+  runBtn.textContent = 'Çalıştır';
+
+  document.getElementById('modal-overlay').classList.remove('hidden');
 }
 
 function closeModal() {
-  document.getElementById('modal-overlay').hidden = true;
+  document.getElementById('modal-overlay').classList.add('hidden');
   if (modalNeedsRefresh && currentSlug) showDetail(currentSlug, true);
   modalAction       = null;
   modalSlug         = null;
@@ -449,7 +483,7 @@ async function runModal() {
 
   runBtn.disabled    = true;
   runBtn.textContent = 'Çalışıyor…';
-  document.getElementById('modal-output-section').hidden = false;
+  document.getElementById('modal-output-section').classList.remove('hidden');
   statusEl.className   = 'modal-status';
   statusEl.textContent = '…';
   outputEl.textContent = '';

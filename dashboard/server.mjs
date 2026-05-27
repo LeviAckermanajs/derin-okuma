@@ -92,7 +92,7 @@ function findBlogPath(slug, pkg) {
 // ── API handlers ──────────────────────────────────────────────────────────
 
 function apiConfig() {
-  return { n8n_url: N8N_URL };
+  return { n8n_url: N8N_URL, cwd: ROOT };
 }
 
 function apiTokenStatus() {
