@@ -1,0 +1,16 @@
+{
+  "slug": "k-inat-neden-durmadan-yenileniyor",
+  "title": "Kâinat Neden Durmadan Yenileniyor?",
+  "day": 31,
+  "dayTag": "day-31",
+  "runId": "day31-export-wait-a",
+  "timestamp": "2026-05-27T13:46:39.981Z",
+  "status": "failed",
+  "failedCommand": "node scripts/validate-video-package.mjs --slug k-inat-neden-durmadan-yenileniyor --report",
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/k-inat-neden-durmadan-yenileniyor-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/k-inat-neden-durmadan-yenileniyor-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/k-inat-neden-durmadan-yenileniyor-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-k-inat-neden-durmadan-yenileniyor-short-*-day31-export-wait-a"
+  }
+}
