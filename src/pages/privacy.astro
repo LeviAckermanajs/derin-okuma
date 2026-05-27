@@ -1,0 +1,122 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Privacy Policy — Derin Okuma" description="Privacy Policy for Derin Okuma" />
+	</head>
+	<body>
+		<Header />
+
+		<main class="about-page">
+			<section class="about-hero">
+				<p class="about-eyebrow">Legal</p>
+				<h1>Privacy Policy</h1>
+				<p class="about-lead">
+					This policy explains what data Derin Okuma collects and how it is used.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>Overview</h2>
+				<p>
+					Derin Okuma is a creator-operated website. The site itself does not collect personal
+					data from visitors. There are no user accounts, no tracking pixels, and no
+					advertising systems on this website.
+				</p>
+				<p>
+					The site operator uses an internal publishing tool that connects to the TikTok API
+					to upload short-form videos as drafts. This document describes how that integration
+					handles data.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>TikTok Integration</h2>
+				<p>
+					The TikTok API integration is used exclusively by the site's creator (operator) to
+					automate draft video uploads. It is not a public-facing product.
+				</p>
+				<ul>
+					<li>
+						<strong>OAuth authorization:</strong> The tool uses TikTok's OAuth 2.0 flow to
+						obtain authorization to upload videos. The requested API scope is
+						<code>video.upload</code>.
+					</li>
+					<li>
+						<strong>Token storage:</strong> OAuth access tokens received from TikTok are
+						stored locally on the operator's machine or in a private secrets store. Tokens
+						are never committed to the public repository and are not shared with any
+						third party.
+					</li>
+					<li>
+						<strong>Data use:</strong> TikTok account data accessed via the API is used
+						solely for the purpose of uploading draft videos. It is not used for advertising,
+						analytics, profiling, or any other purpose.
+					</li>
+					<li>
+						<strong>Data sharing:</strong> TikTok user data is not sold, rented, or shared
+						with third parties, except as strictly necessary to interact with TikTok's
+						official API endpoints.
+					</li>
+					<li>
+						<strong>Data retention:</strong> No TikTok user data is stored beyond what is
+						transiently necessary to complete an upload request.
+					</li>
+				</ul>
+			</section>
+
+			<section class="about-section">
+				<h2>Website Visitors</h2>
+				<p>
+					The Derin Okuma website (derin-okuma.vercel.app) is a static Astro site hosted on
+					Vercel. Vercel may collect standard server logs (IP address, browser type, page
+					visited) as part of normal hosting operations. Please refer to
+					<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
+						Vercel's Privacy Policy
+					</a>
+					for details.
+				</p>
+				<p>
+					Derin Okuma does not install cookies, does not use analytics services, and does not
+					collect any personally identifiable information from website visitors.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>Revoking TikTok Access</h2>
+				<p>
+					If you have authorized Derin Okuma's TikTok integration (as the operator), you can
+					revoke access at any time from your TikTok account settings under
+					<strong>Security &gt; Apps and Websites</strong>.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>Changes to This Policy</h2>
+				<p>
+					This privacy policy may be updated from time to time. The date at the bottom of
+					this page reflects when it was last revised.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>Contact</h2>
+				<p>
+					For questions about this Privacy Policy, please contact:
+					<a href="mailto:derinokumaofficial@gmail.com">derinokumaofficial@gmail.com</a>
+				</p>
+			</section>
+
+			<section class="about-note">
+				<p>Last updated: May 2026</p>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
