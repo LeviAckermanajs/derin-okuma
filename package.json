@@ -22,6 +22,7 @@
     "video:youtube:upload-one": "node scripts/upload-youtube-one.mjs",
     "video:youtube:upload-batch": "node scripts/upload-youtube-batch.mjs",
     "video:youtube:mark-schedule": "node scripts/mark-youtube-schedule.mjs",
+    "video:tiktok:export-captions": "node scripts/export-tiktok-captions.mjs",
     "video:tiktok:upload-one": "node scripts/upload-tiktok-one.mjs",
     "video:tiktok:upload-batch-real": "node scripts/upload-tiktok-batch-real.mjs",
     "video:tiktok:upload-batch": "node scripts/upload-tiktok-batch.mjs",
