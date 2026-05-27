@@ -451,8 +451,8 @@ function buildCommand(action, slug, params = {}) {
     if (!exists(absPath)) return { error: 'draft_not_found' };
     return {
       executable:  CLAUDE_BIN,
-      args:        ['-p', `/add-blog-post ${draft_path}`],
-      preview:     `claude -p "/add-blog-post ${draft_path}"`,
+      args:        ['--permission-mode', 'acceptEdits', '-p', `/add-blog-post ${draft_path}`],
+      preview:     `claude --permission-mode acceptEdits -p "/add-blog-post ${draft_path}"`,
       longTimeout: true,
     };
   }
