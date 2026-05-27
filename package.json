@@ -24,6 +24,7 @@
     "video:youtube:mark-schedule": "node scripts/mark-youtube-schedule.mjs",
     "video:tiktok:upload-batch": "node scripts/upload-tiktok-batch.mjs",
     "tiktok:auth-url": "node scripts/tiktok-auth-url.mjs",
+    "tiktok:auth-local": "node scripts/tiktok-auth-local.mjs",
     "tiktok:exchange-token": "node scripts/tiktok-exchange-token.mjs",
     "tiktok:token-status": "node scripts/tiktok-token-status.mjs"
   },

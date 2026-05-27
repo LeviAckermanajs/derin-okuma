@@ -50,12 +50,17 @@ function readJson(filePath, label) {
 
 // ── PKCE helpers ──────────────────────────────────────────────────────────────
 
-function generateCodeVerifier() {
-  return randomBytes(32).toString('base64url');
+// RFC 7636 unreserved character set: ALPHA / DIGIT / "-" / "." / "_" / "~"
+const UNRESERVED = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~';
+
+function generateCodeVerifier(length = 64) {
+  const bytes = randomBytes(length);
+  return Array.from(bytes, b => UNRESERVED[b % UNRESERVED.length]).join('');
 }
 
+// TikTok Desktop Login Kit requires hex-encoded SHA256, NOT base64url.
 function generateCodeChallenge(verifier) {
-  return createHash('sha256').update(verifier).digest('base64url');
+  return createHash('sha256').update(verifier).digest('hex');
 }
 
 // ── Open URL in browser (best-effort) ────────────────────────────────────────
@@ -93,12 +98,17 @@ const state         = randomBytes(16).toString('hex');
 // Persist auth state for the exchange step
 fs.mkdirSync(SECRETS_DIR, { recursive: true });
 const authState = {
-  code_verifier: codeVerifier,
+  code_verifier:  codeVerifier,
+  code_challenge: codeChallenge,
   state,
-  created_at: new Date().toISOString(),
+  redirect_uri:   client.redirect_uri,
+  created_at:     new Date().toISOString(),
 };
 fs.writeFileSync(AUTH_STATE_FILE, JSON.stringify(authState, null, 2) + '\n', 'utf8');
 ok(`auth_state_saved=${path.relative(ROOT, AUTH_STATE_FILE)}`);
+ok(`code_verifier_length=${codeVerifier.length}`);
+ok('code_challenge_format=hex_sha256');
+ok(`code_challenge_length=${codeChallenge.length}`);
 
 // Build authorization URL
 const params = new URLSearchParams({

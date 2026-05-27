@@ -66,25 +66,38 @@ if (!isNonEmptyString(client.client_key))    fail('client.json missing client_ke
 if (!isNonEmptyString(client.client_secret)) fail('client.json missing client_secret');
 if (!isNonEmptyString(client.redirect_uri))  fail('client.json missing redirect_uri');
 
+// Decode code in case it was copied URL-encoded from the browser address bar
+const rawCode = args.code.includes('%') ? decodeURIComponent(args.code) : args.code;
+
 // Load PKCE verifier from auth state
-let codeVerifier = null;
+let codeVerifier  = null;
+let savedRedirect = null;
 if (fs.existsSync(AUTH_STATE_FILE)) {
   const authState = readJson(AUTH_STATE_FILE, 'auth-state.local.tiktok.json');
   if (isNonEmptyString(authState.code_verifier)) {
-    codeVerifier = authState.code_verifier;
+    codeVerifier  = authState.code_verifier;
+    savedRedirect = authState.redirect_uri || null;
     ok('pkce_verifier_found=true');
+    ok(`code_verifier_length=${codeVerifier.length}`);
   }
 } else {
   warn('auth-state.local.tiktok.json not found — proceeding without PKCE code_verifier');
 }
 
+// Verify redirect_uri consistency between auth and exchange steps
+const redirectUri = client.redirect_uri;
+if (savedRedirect && savedRedirect !== redirectUri) {
+  fail(`redirect_uri mismatch: auth used "${savedRedirect}" but client.json has "${redirectUri}"`);
+}
+ok(`redirect_uri_matches=${!savedRedirect || savedRedirect === redirectUri}`);
+
 // Build token request body
 const body = new URLSearchParams({
   client_key:    client.client_key,
   client_secret: client.client_secret,
-  code:          args.code,
+  code:          rawCode,
   grant_type:    'authorization_code',
-  redirect_uri:  client.redirect_uri,
+  redirect_uri:  redirectUri,
 });
 if (codeVerifier) body.set('code_verifier', codeVerifier);
 
