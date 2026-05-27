@@ -1,0 +1,86 @@
+{
+  "video_type": "shorts",
+  "source": "k-inat-neden-durmadan-yenileniyor",
+  "test_day": "day-31",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Her şey neden durmadan değişiyor?",
+      "title_options": [
+        "Her Şey Neden Değişiyor?",
+        "Kâinat Neden Yenileniyor?",
+        "Değişim Ne Anlatır?"
+      ],
+      "selected_title": "Her Şey Neden Değişiyor?",
+      "description": "Kâinattaki değişim sadece geçicilik değil, yenilenen anlamların görünmesidir. #derinokuma #shorts #tefekkür #iman #kâinat #varlık",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kâinat", "#varlık"],
+      "thumbnail_or_cover_text": "NEDEN DEĞİŞİYOR?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Değişim her zaman kayıp mı demektir?",
+      "title_options": [
+        "Değişim Neden Kayıp Değildir?",
+        "Geçicilik Ne Anlatır?",
+        "Kayıp Sandığımız Yenilenme"
+      ],
+      "selected_title": "Değişim Neden Kayıp Değildir?",
+      "description": "Bir şeyin gitmesi, anlamın silinmesi olmayabilir; bazen yeni bir rahmet yüzüne yer açılır. #derinokuma #shorts #tefekkür #maneviyat #kâinat #hikmet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#maneviyat", "#kâinat", "#hikmet"],
+      "thumbnail_or_cover_text": "KAYIP MI?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir tohum neden sadece tohum olarak kalmaz?",
+      "title_options": [
+        "Tohum Neden Açılmak İster?",
+        "Bir Tohum Ne Anlatır?",
+        "Saklı Kabiliyet Nasıl Açılır?"
+      ],
+      "selected_title": "Tohum Neden Açılmak İster?",
+      "description": "Varlıkların hareketi, saklı kabiliyetlerin görünür hâle gelmesidir. #derinokuma #shorts #tefekkür #iman #varlık #rahmet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#varlık", "#rahmet"],
+      "thumbnail_or_cover_text": "TOHUMUN SIRRI"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Tesadüf bu kadar düzeni açıklayabilir mi?",
+      "title_options": [
+        "Tesadüf Düzeni Açıklayabilir Mi?",
+        "Kâinattaki Ölçü Ne Söyler?",
+        "Düzen Neden Tesadüf Değil?"
+      ],
+      "selected_title": "Tesadüf Düzeni Açıklayabilir Mi?",
+      "description": "Kâinattaki ölçü, güzellik ve uyum; hareketin arkasında kör bir dağılma olmadığını düşündürür. #derinokuma #shorts #tefekkür #risaleinur #kâinat #hikmet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#risaleinur", "#kâinat", "#hikmet"],
+      "thumbnail_or_cover_text": "TESADÜF MÜ?"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Kâinat bir kitap gibi okunabilir mi?",
+      "title_options": [
+        "Kâinat Nasıl Okunur?",
+        "Tefekkür Neyi Değiştirir?",
+        "Varlık Ne Anlatır?"
+      ],
+      "selected_title": "Kâinat Nasıl Okunur?",
+      "description": "Tefekkür, varlığa yalnızca kullanmak için değil, anlamak için de bakmayı öğretir. #derinokuma #shorts #tefekkür #iman #kâinat #anlam",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kâinat", "#anlam"],
+      "thumbnail_or_cover_text": "KÂİNATI OKUMAK"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kalp değişen dünyada neye tutunur?",
+      "title_options": [
+        "Kalp Neye Tutunur?",
+        "Değişen Dünyada Güven",
+        "Kalp Neden Dayanak Arar?"
+      ],
+      "selected_title": "Kalp Neye Tutunur?",
+      "description": "Sürekli değişen âlem, değişmeyen bir hikmete işaret ettiğinde kalbe güven verir. #derinokuma #shorts #tefekkür #iman #kalp #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kalp", "#maneviyat"],
+      "thumbnail_or_cover_text": "SABİT DAYANAK"
+    }
+  ]
+}
