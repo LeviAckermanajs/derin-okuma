@@ -1,9 +1,11 @@
-// dashboard/public/app.js — Phase 2
+// dashboard/public/app.js — Phase 3
 
 // ── Global state ───────────────────────────────────────────────────────────
 
 let config        = { n8n_url: 'http://localhost:5678', cwd: '' };
-let currentSlug   = null;   // slug shown in detail view
+let activeTab     = 'drafts';
+let currentDraft  = null;   // draft filename shown in draft detail
+let currentSlug   = null;   // slug shown in shorts detail
 let modalAction   = null;
 let modalSlug     = null;
 let modalParams   = {};
@@ -57,6 +59,291 @@ async function apiFetch(url) {
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
   return r.json();
 }
+
+// ── Tab switching ─────────────────────────────────────────────────────────
+
+function switchTab(tabId) {
+  activeTab = tabId;
+  document.querySelectorAll('.tab-btn').forEach(btn =>
+    btn.classList.toggle('active', btn.dataset.tab === tabId));
+  document.querySelectorAll('.tab-panel').forEach(panel =>
+    panel.classList.toggle('hidden', panel.id !== `tab-${tabId}`));
+  if (tabId === 'drafts') loadDrafts();
+  if (tabId === 'shorts') loadOverview();
+}
+
+// ── Draft list ─────────────────────────────────────────────────────────────
+
+function draftStatusPill(status) {
+  const map = {
+    draft:            ['no',       'taslak'],
+    blog_created:     ['scaffold', 'blog oluştu'],
+    prep_ready:       ['scaffold', 'prep hazır'],
+    filled:           ['filled',   'dolduruldu'],
+    batch_ready:      ['ok',       'batch hazır'],
+    exported:         ['ok',       'export edildi'],
+    youtube_uploaded: ['yes',      'yüklendi'],
+  };
+  const [cls, label] = map[status] || ['unknown', status ?? '—'];
+  return pill(cls, label);
+}
+
+function formatSize(bytes) {
+  if (!bytes) return '—';
+  if (bytes < 1024) return `${bytes} B`;
+  return `${(bytes / 1024).toFixed(1)} KB`;
+}
+
+async function loadDrafts() {
+  const tbody = document.getElementById('drafts-tbody');
+  tbody.innerHTML = '<tr><td colspan="5" class="loading">Yükleniyor…</td></tr>';
+  try {
+    const drafts = await apiFetch('/api/drafts-list');
+    if (!drafts.length) {
+      tbody.innerHTML = '<tr><td colspan="5" class="loading">docs/drafts/ boş.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = drafts.map(d => `
+      <tr data-draft-file="${esc(d.filename)}">
+        <td><code class="inline small">${esc(d.filename)}</code></td>
+        <td class="muted-text small">${relTime(d.mtime)}</td>
+        <td class="muted-text small">${formatSize(d.size)}</td>
+        <td>${d.blog_slug
+          ? `<code class="inline small">${esc(d.blog_slug)}</code>`
+          : '<span class="muted-text">—</span>'}</td>
+        <td>${draftStatusPill(d.status)}</td>
+      </tr>`).join('');
+    tbody.querySelectorAll('tr[data-draft-file]').forEach(row =>
+      row.addEventListener('click', () => showDraftDetail(row.dataset.draftFile)));
+  } catch (err) {
+    tbody.innerHTML =
+      `<tr><td colspan="5" class="loading" style="color:#d05555">Hata: ${esc(err.message)}</td></tr>`;
+  }
+}
+
+// ── Draft detail ───────────────────────────────────────────────────────────
+
+async function showDraftDetail(filename) {
+  currentDraft = filename;
+  document.getElementById('drafts-overview').classList.add('hidden');
+  document.getElementById('draft-detail-section').classList.remove('hidden');
+  document.getElementById('draft-detail-title').textContent = filename;
+  document.getElementById('draft-detail-body').innerHTML =
+    '<div class="loading">Yükleniyor…</div>';
+  try {
+    const d = await apiFetch(`/api/draft/${encodeURIComponent(filename)}`);
+    document.getElementById('draft-detail-body').innerHTML = renderDraftDetail(d);
+    wireDraftDetailButtons(d);
+  } catch (err) {
+    document.getElementById('draft-detail-body').innerHTML =
+      `<div class="loading" style="color:#d05555">Hata: ${esc(err.message)}</div>`;
+  }
+}
+
+function hideDraftDetail() {
+  currentDraft = null;
+  document.getElementById('drafts-overview').classList.remove('hidden');
+  document.getElementById('draft-detail-section').classList.add('hidden');
+}
+
+// ── Draft detail rendering ────────────────────────────────────────────────
+
+function statusToLevel(status, slugDetail) {
+  if (status === 'youtube_uploaded') return 8;
+  if (status === 'exported')         return 7;
+  if (status === 'batch_ready')      return 6;
+  if (status === 'filled')           return slugDetail?.validation_passed ? 5 : 4;
+  if (status === 'prep_ready')       return 3;
+  if (status === 'blog_created')     return 2;
+  return 1; // draft exists = level 1
+}
+
+function stepperHtml(status, slugDetail) {
+  const labels = ['Taslak', 'Blog', 'Hazırlık', 'Dolduruldu', 'Doğrulandı', 'Batch', 'Export', 'Upload'];
+  const level  = statusToLevel(status, slugDetail);
+  const steps  = labels.map((label, i) => {
+    let cls  = 'step';
+    let icon = String(i + 1);
+    if (i < level)       { cls += ' step-done';    icon = '✓'; }
+    else if (i === level && level < 8) cls += ' step-current';
+    else                   cls += ' step-pending';
+    return `<div class="${cls}">
+      <div class="step-circle">${icon}</div>
+      <div class="step-label">${label}</div>
+    </div>`;
+  });
+  return `<div class="stepper-wrap"><div class="stepper">${
+    steps.join('<div class="step-connector"></div>')
+  }</div></div>`;
+}
+
+function renderDraftDetail(d) {
+  const sd = d.slug_detail;
+  return `
+    ${stepperHtml(d.status, sd)}
+    <div class="detail-grid">
+      ${cardDraftInfo(d)}
+      ${sd ? cardContentPackage(sd) : ''}
+      ${sd ? cardPipeline(sd) : ''}
+      ${cardDraftWorkflowParams(d)}
+      ${cardDraftActions(d)}
+    </div>`;
+}
+
+function cardDraftInfo(d) {
+  return `
+    <div class="detail-card">
+      <h3>Taslak Bilgisi</h3>
+      <table class="kv-table">
+        ${kv('Dosya',        `<code class="inline small">${esc(d.filename)}</code>`)}
+        ${kv('Boyut',        esc(formatSize(d.size)))}
+        ${kv('Değiştirilme', esc(relTime(d.mtime)))}
+        ${kv('Blog slug',    d.blog_slug
+          ? `${pill('yes', 'var')} <code class="inline">${esc(d.blog_slug)}</code>`
+          : pill('no', 'henüz yok'))}
+        ${kv('Durum',        draftStatusPill(d.status))}
+      </table>
+    </div>`;
+}
+
+function cardDraftWorkflowParams(d) {
+  const sd         = d.slug_detail;
+  const defTitle   = sd?.source_title ?? d.filename.replace(/\.(txt|md|mdx)$/, '');
+  const defDay     = sd?.test_day     ?? '';
+  const defRunId   = sd?.pipeline?.runId
+    ?? (sd?.test_day ? `day${sd.test_day}-batch-a` : 'batch-a');
+  return `
+    <div class="detail-card full-width">
+      <h3>Workflow Parametreleri</h3>
+      <div class="param-grid">
+        <div class="param-field">
+          <label class="param-label" for="dp-title">Başlık (shorts-prep)</label>
+          <input class="param-input" id="dp-title" type="text"
+            value="${esc(defTitle)}" placeholder="Blog yazısı başlığı">
+        </div>
+        <div class="param-field">
+          <label class="param-label" for="dp-day">Gün (shorts-prep)</label>
+          <input class="param-input" id="dp-day" type="number" min="1" max="999"
+            value="${esc(String(defDay))}" placeholder="1">
+        </div>
+        <div class="param-field">
+          <label class="param-label" for="dp-run-id">Run ID (fill / batch)</label>
+          <input class="param-input" id="dp-run-id" type="text"
+            value="${esc(defRunId)}" placeholder="day1-batch-a">
+        </div>
+      </div>
+    </div>`;
+}
+
+function cardDraftActions(d) {
+  const status    = d.status;
+  const sd        = d.slug_detail;
+  const slug      = d.blog_slug || '';
+  const hasBlog   = !!slug;
+  const hasPrep   = ['prep_ready','filled','batch_ready','exported','youtube_uploaded'].includes(status);
+  const hasFilled = ['filled','batch_ready','exported','youtube_uploaded'].includes(status);
+  const hasBatch  = !!sd?.batch_exists;
+  const isFilled  = sd?.package_status === 'filled';
+
+  const actionBtn = (action, label, enabled, warn = false) => {
+    const dis = enabled ? '' : ' disabled';
+    const cls = !enabled ? ' btn-disabled' : warn ? ' btn-warn' : '';
+    return `<button class="btn-action${cls}" data-draft-action="${action}"${dis}>${label}</button>`;
+  };
+
+  return `
+    <div class="detail-card full-width">
+      <h3>Workflow Aksiyonları</h3>
+      <div class="action-bar">
+        ${actionBtn('blog-add',       '+ Blog Yazısını Ekle',         !hasBlog)}
+        ${actionBtn('shorts-prep',    '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog, isFilled)}
+        ${actionBtn('shorts-fill',    '◇ Claude ile Paketi Doldur',   hasPrep)}
+        ${actionBtn('validate-shorts','✓ Validate Shorts',            hasPrep)}
+        ${actionBtn('batch-create',   '⊞ Batch Oluştur',              hasFilled)}
+        ${actionBtn('copy-batch',     '⎘ Copy Batch Load Input',      hasBatch)}
+      </div>
+    </div>`;
+}
+
+function collectDraftParams(d) {
+  return {
+    title:      (document.getElementById('dp-title')?.value  ?? '').trim(),
+    day:         document.getElementById('dp-day')?.value    ?? '',
+    run_id:     (document.getElementById('dp-run-id')?.value ?? '').trim(),
+    draft_path: d.draft_path,
+  };
+}
+
+function wireDraftDetailButtons(d) {
+  document.querySelectorAll('[data-draft-action]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const action = btn.dataset.draftAction;
+      const slug   = d.blog_slug || '';
+      const p      = collectDraftParams(d);
+      const cwd    = config.cwd || '.';
+      const sd     = d.slug_detail;
+
+      if (action === 'copy-batch') {
+        if (!slug) return;
+        try {
+          const res = await apiFetch(`/api/slug/${encodeURIComponent(slug)}/batch-content`);
+          await navigator.clipboard.writeText(res.content);
+          flashBtn(btn, '✓ Kopyalandı');
+        } catch { flashBtn(btn, '✗ Hata', true); }
+        return;
+      }
+
+      const SPECS = {
+        'blog-add': {
+          title:   'Blog Yazısını Ekle',
+          label:   'Taslaktan blog yazısı oluşturma',
+          command: `claude -p "/add-blog-post ${d.draft_path}"`,
+          cwd,
+        },
+        'shorts-prep': {
+          title:   'Shorts Prep Oluştur',
+          label:   'Shorts paketi oluşturma',
+          command: p.title && p.day
+            ? `node scripts/prepare-video-package.mjs --title "${p.title}" --day ${p.day} --slug ${slug} --force`
+            : null,
+          cwd,
+          warning: pkgFilled(sd)
+            ? '⚠ Bu paket zaten filled. Prep tekrar çalıştırmak dolu dosyaları bozabilir.'
+            : null,
+        },
+        'shorts-fill': {
+          title:   'Claude ile Paketi Doldur',
+          label:   'Claude ile içerik doldurma',
+          command: p.run_id && slug
+            ? `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${p.run_id}`
+            : null,
+          cwd,
+        },
+        'validate-shorts': {
+          title:   'Validate Shorts',
+          label:   'Doğrulama komutu',
+          command: slug
+            ? `node scripts/validate-video-package.mjs --slug ${slug} --type shorts --report`
+            : null,
+          cwd,
+        },
+        'batch-create': {
+          title:   'Batch Oluştur',
+          label:   'Video batch oluşturma',
+          command: p.run_id && slug
+            ? `node scripts/build-video-batch.mjs --slug ${slug} --type shorts --run-id ${p.run_id} --force`
+            : null,
+          cwd,
+        },
+      };
+
+      const spec = SPECS[action];
+      if (spec) openModal({ ...spec, action, slug, params: p });
+    });
+  });
+}
+
+function pkgFilled(sd) { return sd?.package_status === 'filled'; }
 
 // ── Token badge ────────────────────────────────────────────────────────────
 
@@ -589,9 +876,13 @@ function openModal(spec) {
 
 function closeModal() {
   document.getElementById('modal-overlay').classList.add('hidden');
-  if (modalNeedsRefresh && currentSlug) showDetail(currentSlug, true);
+  if (modalNeedsRefresh) {
+    if (currentDraft) showDraftDetail(currentDraft);
+    else if (currentSlug) showDetail(currentSlug, true);
+  }
   modalAction       = null;
   modalSlug         = null;
+  modalParams       = {};
   modalNeedsRefresh = false;
 }
 
@@ -642,10 +933,18 @@ async function runModal() {
 // ── Event wiring ───────────────────────────────────────────────────────────
 
 document.getElementById('refresh-btn').addEventListener('click', () => {
-  loadOverview();
+  if (activeTab === 'drafts') {
+    if (currentDraft) showDraftDetail(currentDraft);
+    else loadDrafts();
+  } else if (activeTab === 'shorts') {
+    if (currentSlug) showDetail(currentSlug);
+    else loadOverview();
+  }
   refreshTokenBadge();
 });
+
 document.getElementById('detail-close').addEventListener('click', hideDetail);
+document.getElementById('draft-detail-close').addEventListener('click', hideDraftDetail);
 document.getElementById('modal-run-btn').addEventListener('click', runModal);
 document.getElementById('modal-cancel-btn').addEventListener('click', closeModal);
 document.getElementById('modal-x').addEventListener('click', closeModal);
@@ -653,15 +952,19 @@ document.getElementById('modal-overlay').addEventListener('click', e => {
   if (e.target === document.getElementById('modal-overlay')) closeModal();
 });
 
+document.querySelectorAll('.tab-btn').forEach(btn =>
+  btn.addEventListener('click', () => switchTab(btn.dataset.tab)));
+
 // ── Init ───────────────────────────────────────────────────────────────────
 
 (async () => {
   try { config = await apiFetch('/api/config'); } catch {}
-  loadOverview();
+  loadDrafts();      // default active tab
   refreshTokenBadge();
 })();
 
 setInterval(() => {
-  loadOverview();
+  if (activeTab === 'drafts' && !currentDraft) loadDrafts();
+  else if (activeTab === 'shorts' && !currentSlug) loadOverview();
   refreshTokenBadge();
 }, 30_000);

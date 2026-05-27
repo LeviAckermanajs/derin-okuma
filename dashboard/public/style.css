@@ -37,8 +37,8 @@ header {
 header h1 {
   font-size: 15px;
   font-weight: 600;
-  flex: 1;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 /* ── Badges ─────────────────────────────────────────────────────────────── */
@@ -510,6 +510,118 @@ pre.modal-output {
   border-top: 1px solid var(--border);
   margin-top: 10px;
 }
+
+/* ── Tabs ─────────────────────────────────────────────────────────────────── */
+
+#tab-bar {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+}
+
+.tab-btn {
+  background: none;
+  border: 1px solid transparent;
+  color: var(--muted);
+  padding: 5px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.1s;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active {
+  background: var(--border);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+/* ── Draft list ──────────────────────────────────────────────────────────── */
+
+#draft-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+#draft-detail-header h2 {
+  margin: 0;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text);
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: 600;
+}
+
+/* ── Workflow stepper ────────────────────────────────────────────────────── */
+
+.stepper-wrap {
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.stepper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  min-width: max-content;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 72px;
+}
+
+.step-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  border: 2px solid var(--border);
+  background: var(--bg);
+  color: var(--muted);
+}
+
+.step-done .step-circle {
+  background: #173025;
+  border-color: #2d5a3d;
+  color: #4caf86;
+}
+.step-current .step-circle {
+  background: #1a2a40;
+  border-color: #6a9fd8;
+  color: #6a9fd8;
+}
+
+.step-label {
+  font-size: 10px;
+  color: var(--muted);
+  white-space: nowrap;
+  text-align: center;
+}
+.step-done .step-label    { color: #4caf86; }
+.step-current .step-label { color: #6a9fd8; }
+
+.step-connector {
+  width: 32px;
+  height: 2px;
+  background: var(--border);
+  margin-top: 13px;
+  flex-shrink: 0;
+}
+.step-connector.done-conn { background: #2d5a3d; }
 
 /* ── Workflow params card ────────────────────────────────────────────────── */
 

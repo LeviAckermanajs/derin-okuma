@@ -9,57 +9,102 @@
 <body>
   <header>
     <h1>Derin Okuma</h1>
+    <nav id="tab-bar">
+      <button class="tab-btn active" data-tab="drafts">Taslaklar</button>
+      <button class="tab-btn" data-tab="shorts">Shorts Paketleri</button>
+      <button class="tab-btn" data-tab="publish">Yayın Durumu</button>
+      <button class="tab-btn" data-tab="tiktok">TikTok</button>
+    </nav>
     <div id="token-badge" class="badge badge-loading">TikTok: …</div>
     <button id="refresh-btn" class="btn-ghost">↻ Yenile</button>
   </header>
 
   <main>
-    <section id="overview-section">
-      <h2>Shorts Paketleri</h2>
-      <div id="table-wrap">
-        <table id="slugs-table">
-          <thead>
-            <tr>
-              <th>Slug</th>
-              <th>Paket</th>
-              <th>Batch</th>
-              <th>Pipeline</th>
-              <th>Yayın</th>
-            </tr>
-          </thead>
-          <tbody id="slugs-tbody">
-            <tr><td colspan="5" class="loading">Yükleniyor…</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
 
-    <section id="detail-section" class="hidden">
-      <div id="detail-header">
-        <button id="detail-close" class="btn-ghost">← Geri</button>
-        <h2 id="detail-title"></h2>
-      </div>
-      <div id="detail-body"></div>
-    </section>
+    <!-- ── Taslaklar tab ──────────────────────────────────────────────────── -->
+    <div id="tab-drafts" class="tab-panel">
+      <section id="drafts-overview">
+        <h2>Blog Taslakları</h2>
+        <div id="drafts-table-wrap">
+          <table id="drafts-table">
+            <thead>
+              <tr>
+                <th>Dosya</th>
+                <th>Değiştirilme</th>
+                <th>Boyut</th>
+                <th>Blog Slug</th>
+                <th>Durum</th>
+              </tr>
+            </thead>
+            <tbody id="drafts-tbody">
+              <tr><td colspan="5" class="loading">Yükleniyor…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="draft-detail-section" class="hidden">
+        <div id="draft-detail-header">
+          <button id="draft-detail-close" class="btn-ghost">← Geri</button>
+          <h2 id="draft-detail-title"></h2>
+        </div>
+        <div id="draft-detail-body"></div>
+      </section>
+    </div>
+
+    <!-- ── Shorts Paketleri tab ───────────────────────────────────────────── -->
+    <div id="tab-shorts" class="tab-panel hidden">
+      <section id="overview-section">
+        <h2>Shorts Paketleri</h2>
+        <div id="table-wrap">
+          <table id="slugs-table">
+            <thead>
+              <tr>
+                <th>Slug</th>
+                <th>Paket</th>
+                <th>Batch</th>
+                <th>Pipeline</th>
+                <th>Yayın</th>
+              </tr>
+            </thead>
+            <tbody id="slugs-tbody">
+              <tr><td colspan="5" class="loading">Yükleniyor…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="detail-section" class="hidden">
+        <div id="detail-header">
+          <button id="detail-close" class="btn-ghost">← Geri</button>
+          <h2 id="detail-title"></h2>
+        </div>
+        <div id="detail-body"></div>
+      </section>
+    </div>
+
+    <!-- ── Yayın Durumu tab (placeholder) ────────────────────────────────── -->
+    <div id="tab-publish" class="tab-panel hidden">
+      <p class="loading" style="padding: 32px;">Yakında…</p>
+    </div>
+
+    <!-- ── TikTok tab (placeholder) ──────────────────────────────────────── -->
+    <div id="tab-tiktok" class="tab-panel hidden">
+      <p class="loading" style="padding: 32px;">Yakında…</p>
+    </div>
+
   </main>
 
-  <!-- Action modal -->
+  <!-- Action modal (shared across tabs) -->
   <div id="modal-overlay" class="hidden">
     <div id="modal-box">
       <div id="modal-header">
         <span id="modal-title"></span>
         <button id="modal-x" class="btn-ghost">✕</button>
       </div>
-
-      <!-- Structured command preview — filled by openModal() -->
       <div id="modal-preview-wrap"></div>
-
-      <!-- Output section — hidden until Run is clicked -->
       <div id="modal-output-section" class="hidden">
         <div id="modal-status-bar" class="modal-status"></div>
         <pre id="modal-output" class="modal-output"></pre>
       </div>
-
       <div id="modal-footer">
         <button id="modal-run-btn" class="btn-primary">Çalıştır</button>
         <button id="modal-cancel-btn" class="btn-ghost">İptal</button>

@@ -20,8 +20,9 @@ const REPORTS_DIR  = path.join(ROOT, 'docs', 'video-tests', 'reports');
 const PUBLISH_DIR  = path.join(ROOT, 'docs', 'video-tests', 'publish');
 const BLOG_DIR     = path.join(ROOT, 'src', 'content', 'blog');
 const SCRIPTS_DIR  = path.join(ROOT, 'scripts');
-const DRAFTS_DIR   = path.join(ROOT, 'docs', 'drafts');
-const TOKEN_PATH   = path.join(ROOT, '.secrets', 'tiktok', 'token.json');
+const DRAFTS_DIR       = path.join(ROOT, 'docs', 'drafts');
+const DRAFT_LINKS_PATH = path.join(ROOT, 'docs', 'drafts', '.draft-links.json');
+const TOKEN_PATH       = path.join(ROOT, '.secrets', 'tiktok', 'token.json');
 const CLAUDE_BIN   = '/home/muhammet/.nvm/versions/node/v24.15.0/bin/claude';
 const EXPORT_ROOT  = process.env.DERIN_OKUMA_EXPORT_ROOT || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
 const N8N_URL      = process.env.N8N_URL || 'http://localhost:5678';
@@ -94,8 +95,30 @@ function findBlogPath(slug, pkg) {
   return null;
 }
 
-// ── Drafts helper ────────────────────────────────────────────────────────
+// ── Draft workflow helpers ────────────────────────────────────────────────
 
+function readDraftLinks() { return readJson(DRAFT_LINKS_PATH) || {}; }
+
+function saveDraftLink(draftFile, blogSlug) {
+  const links = readDraftLinks();
+  links[draftFile] = blogSlug;
+  try { fs.writeFileSync(DRAFT_LINKS_PATH, JSON.stringify(links, null, 2), 'utf8'); } catch {}
+}
+
+function getDraftStatus(blogSlug) {
+  if (!blogSlug) return 'draft';
+  const pkg = readJson(path.join(SHORTS_DIR, blogSlug, `${blogSlug}-shorts-package.json`));
+  if (!pkg) return 'blog_created';
+  if (pkg.content_generation_status !== 'filled') return 'prep_ready';
+  if (!exists(path.join(BATCHES_DIR, `${blogSlug}-shorts-batch-load-input.js`))) return 'filled';
+  const expFolder = resolveExportFolder(blogSlug);
+  let mp4s = 0;
+  try { if (exists(expFolder)) mp4s = fs.readdirSync(expFolder).filter(f => f.endsWith('.mp4')).length; } catch {}
+  if (!mp4s) return 'batch_ready';
+  return exists(path.join(expFolder, 'youtube-upload-result.json')) ? 'youtube_uploaded' : 'exported';
+}
+
+// apiDrafts — returns bare paths for <datalist> use
 function apiDrafts() {
   if (!exists(DRAFTS_DIR)) return [];
   try {
@@ -104,6 +127,55 @@ function apiDrafts() {
       .sort()
       .map(f => `docs/drafts/${f}`);
   } catch { return []; }
+}
+
+// apiDraftsList — rich list for the Taslaklar tab
+function apiDraftsList() {
+  if (!exists(DRAFTS_DIR)) return [];
+  const links = readDraftLinks();
+  return fs.readdirSync(DRAFTS_DIR)
+    .filter(f => /\.(txt|md|mdx)$/.test(f))
+    .sort()
+    .map(filename => {
+      try {
+        const stat     = fs.statSync(path.join(DRAFTS_DIR, filename));
+        const blogSlug = links[filename] || null;
+        return {
+          filename,
+          mtime:     stat.mtime.toISOString(),
+          size:      stat.size,
+          blog_slug: blogSlug,
+          status:    getDraftStatus(blogSlug),
+        };
+      } catch { return null; }
+    })
+    .filter(Boolean);
+}
+
+// apiDraft — full detail for one draft file
+function apiDraft(filename) {
+  if (!filename || filename.includes('/') || filename.includes('\\') || filename.includes('..'))
+    return null;
+  if (!/\.(txt|md|mdx)$/.test(filename)) return null;
+  const absPath = path.join(DRAFTS_DIR, filename);
+  if (!exists(absPath)) return null;
+  let stat;
+  try { stat = fs.statSync(absPath); } catch { return null; }
+
+  const links    = readDraftLinks();
+  const blogSlug = links[filename] || null;
+  const status   = getDraftStatus(blogSlug);
+  const slugDetail = (blogSlug && /^[a-zA-Z0-9_-]+$/.test(blogSlug)) ? apiSlug(blogSlug) : null;
+
+  return {
+    filename,
+    draft_path: `docs/drafts/${filename}`,
+    mtime:      stat.mtime.toISOString(),
+    size:       stat.size,
+    blog_slug:  blogSlug,
+    status,
+    slug_detail: slugDetail,
+  };
 }
 
 // ── API handlers ──────────────────────────────────────────────────────────
@@ -389,23 +461,31 @@ function buildCommand(action, slug, params = {}) {
 
 function handleAction(body) {
   const { action, slug, params } = body ?? {};
-  if (!action || !slug)                return { error: 'missing_action_or_slug' };
-  if (!/^[a-zA-Z0-9_-]+$/.test(slug)) return { error: 'invalid_slug' };
-  if (!ALLOWED_ACTIONS.has(action))    return { error: 'unknown_action' };
+  if (!action)                                       return { error: 'missing_action' };
+  if (action !== 'blog-add' && !slug)                return { error: 'missing_slug' };
+  if (slug && !/^[a-zA-Z0-9_-]+$/.test(slug))       return { error: 'invalid_slug' };
+  if (!ALLOWED_ACTIONS.has(action))                  return { error: 'unknown_action' };
 
-  const cmd = buildCommand(action, slug, params ?? {});
+  const cmd = buildCommand(action, slug || '', params ?? {});
   if (cmd.error) return cmd;
 
-  const executable  = cmd.executable || process.execPath;
-  const timeout     = cmd.longTimeout ? 300_000 : 120_000;
-  const spawnOpts   = { cwd: ROOT, encoding: 'utf8', timeout };
+  const executable = cmd.executable || process.execPath;
+  const timeout    = cmd.longTimeout ? 300_000 : 120_000;
+  const spawnOpts  = { cwd: ROOT, encoding: 'utf8', timeout };
   if (cmd.env) spawnOpts.env = cmd.env;
 
   const result = spawnSync(executable, cmd.args, spawnOpts);
 
+  // After successful blog-add: parse output to save draft→slug link
+  if (result.status === 0 && action === 'blog-add' && params?.draft_path) {
+    const output = (result.stdout || '') + (result.stderr || '');
+    const m      = output.match(/^[\s\-*]*slug:\s*([a-z0-9][a-z0-9_-]*)\s*$/im);
+    if (m) saveDraftLink(path.basename(params.draft_path), m[1].trim());
+  }
+
   return {
     action,
-    slug,
+    slug:            slug || '',
     command_preview: cmd.preview,
     exit_code:       result.status,
     stdout:          result.stdout || '',
@@ -473,6 +553,14 @@ const server = http.createServer(async (req, res) => {
   if (pathname === '/api/slugs')        return sendJson(res, apiSlugs());
   if (pathname === '/api/token-status') return sendJson(res, apiTokenStatus());
   if (pathname === '/api/drafts')       return sendJson(res, apiDrafts());
+  if (pathname === '/api/drafts-list')  return sendJson(res, apiDraftsList());
+
+  const draftMatch = pathname.match(/^\/api\/draft\/([^/]+)$/);
+  if (draftMatch) {
+    const data = apiDraft(decodeURIComponent(draftMatch[1]));
+    if (!data) return sendJson(res, { error: 'not_found' }, 404);
+    return sendJson(res, data);
+  }
 
   const batchMatch = pathname.match(/^\/api\/slug\/([^/]+)\/batch-content$/);
   if (batchMatch) {
