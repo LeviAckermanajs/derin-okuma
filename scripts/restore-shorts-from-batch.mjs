@@ -17,13 +17,14 @@ const BACKUPS_DIR = path.join(ROOT, 'docs', 'video-tests', 'backups');
 // ── CLI ───────────────────────────────────────────────────────────────────────
 
 function parseArgs(argv) {
-  const args = { slug: null, runId: null, dryRun: false, write: false };
+  const args = { slug: null, runId: null, dryRun: false, write: false, repair: false };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
-    if      (arg === '--slug'   && argv[i + 1]) args.slug  = argv[++i];
-    else if (arg === '--run-id' && argv[i + 1]) args.runId = argv[++i];
+    if      (arg === '--slug'   && argv[i + 1]) args.slug   = argv[++i];
+    else if (arg === '--run-id' && argv[i + 1]) args.runId  = argv[++i];
     else if (arg === '--dry-run')                args.dryRun = true;
     else if (arg === '--write')                  args.write  = true;
+    else if (arg === '--repair')                 args.repair = true;
     else fail(`Unknown or incomplete option: ${arg}`);
   }
   return args;
@@ -38,6 +39,7 @@ function warn(message) { console.log(`[WARN] ${message}`); }
 function plan(message) { console.log(`[PLAN] ${message}`); }
 
 function isNonEmptyString(v) { return typeof v === 'string' && v.trim().length > 0; }
+function isNonEmptyArray(v)  { return Array.isArray(v) && v.length > 0; }
 
 // ── Batch file parser (no eval — JSON extraction via bracket matching) ────────
 
@@ -111,71 +113,59 @@ function validateItems(items) {
   }
 }
 
-// ── JS serializer (no eval — produces JS object literal style) ───────────────
+// ── Metadata field helpers ────────────────────────────────────────────────────
 
-function jsStr(s) {
-  // Use double quotes if the string contains single quotes, else single quotes
-  if (s.includes("'")) return JSON.stringify(s);
-  return `'${s}'`;
+const DEFAULT_HASHTAGS = ['#derinokuma', '#shorts', '#tefekkür', '#iman'];
+
+function resolveHashtags(item) {
+  if (isNonEmptyArray(item.publish?.youtube?.hashtags)) return item.publish.youtube.hashtags;
+  if (isNonEmptyArray(item.hashtags))                   return item.hashtags;
+  return DEFAULT_HASHTAGS;
 }
 
-function toJsLiteral(value, depth = 0) {
-  const indent = '  ';
-  const pad    = indent.repeat(depth);
-  const pad1   = indent.repeat(depth + 1);
-
-  if (value === null)              return 'null';
-  if (typeof value === 'boolean')  return String(value);
-  if (typeof value === 'number')   return String(value);
-  if (typeof value === 'string')   return jsStr(value);
-
-  if (Array.isArray(value)) {
-    if (value.length === 0) return '[]';
-    const items = value.map(v => `${pad1}${toJsLiteral(v, depth + 1)}`);
-    return `[\n${items.join(',\n')}\n${pad}]`;
-  }
-
-  if (typeof value === 'object') {
-    const entries = Object.entries(value);
-    if (entries.length === 0) return '{}';
-    const lines = entries.map(([k, v]) => `${pad1}${k}: ${toJsLiteral(v, depth + 1)}`);
-    return `{\n${lines.join(',\n')}\n${pad}}`;
-  }
-
-  return String(value);
+// Returns a description that ends with hashtags.join(' ') (required by validator).
+function resolveDescription(item, hashtags) {
+  const hashStr = hashtags.join(' ');
+  const base = item.publish?.youtube?.description
+    || item.job?.description
+    || item.description
+    || item.job?.title
+    || '';
+  if (isNonEmptyString(base) && base.trim().endsWith(hashStr)) return base.trim();
+  return `${base.trim()} ${hashStr}`.trim();
 }
 
 // ── File generators ───────────────────────────────────────────────────────────
 
 function generateLoadInputJs(item, postTitle, testDay) {
-  const shortId  = item.metadata.short_id;
-  const title    = item.job.title;
-  const runId    = item.metadata.batch_run_id || '';
+  const shortId = item.metadata.short_id;
+  const title   = item.job.title;
+  const runId   = item.metadata.batch_run_id || '';
 
-  // Rebuild the object preserving all fields from the batch item, but
-  // with content_generation_status updated to "filled" (already is).
   const rawInput = {
-    input_version: item.input_version,
-    input_type:    item.input_type,
-    runtime:       item.runtime,
-    job:           item.job,
-    reuse_existing_audio:  item.reuse_existing_audio,
-    reuse_existing_video:  item.reuse_existing_video,
-    visual_mode:   item.visual_mode,
-    audio_strategy: item.audio_strategy,
-    render_preferences: item.render_preferences,
-    scenes:        item.scenes,
-    metadata:      item.metadata,
+    input_version:        item.input_version,
+    input_type:           item.input_type,
+    runtime:              item.runtime,
+    job:                  item.job,
+    reuse_existing_audio: item.reuse_existing_audio,
+    reuse_existing_video: item.reuse_existing_video,
+    visual_mode:          item.visual_mode,
+    audio_strategy:       item.audio_strategy,
+    render_preferences:   item.render_preferences,
+    scenes:               item.scenes,
+    metadata:             item.metadata,
     ...(item.publish ? { publish: item.publish } : {}),
   };
 
+  // Use JSON.stringify so all Turkish chars, apostrophes, and newlines are
+  // safely escaped. JSON object literals are valid JS, so new Function() works.
   const runIdLabel = runId ? ` — ${runId}` : '';
   return [
     `// Derin Okuma — ${postTitle} Shorts`,
     `// Short: ${shortId} — ${title}`,
     `// ${testDay}${runIdLabel} — filled`,
     ``,
-    `const rawInput = ${toJsLiteral(rawInput, 0)};`,
+    `const rawInput = ${JSON.stringify(rawInput, null, 2)};`,
     ``,
     `return [{ json: { raw_input: rawInput } }];`,
     ``,
@@ -183,28 +173,42 @@ function generateLoadInputJs(item, postTitle, testDay) {
 }
 
 function buildPackageShorts(items) {
-  return items.map(item => ({
-    short_id: item.metadata.short_id,
-    hook:     item.job.description || '',
-    title:    item.job.title,
-    description:          '',
-    hashtags:             [],
-    thumbnail_or_cover_text: '',
-    scenes: item.scenes.map(s => ({
-      scene_id:    s.scene_id,
-      narration:   s.narration,
-      visual_note: s.visual_note,
-      keywords:    s.keywords || [],
-    })),
-  }));
+  return items.map(item => {
+    const hashtags   = resolveHashtags(item);
+    const description = resolveDescription(item, hashtags);
+    return {
+      short_id:               item.metadata.short_id,
+      hook:                   item.job.description || '',
+      title:                  item.job.title,
+      description,
+      hashtags,
+      thumbnail_or_cover_text: '',
+      scenes: item.scenes.map(s => ({
+        scene_id:    s.scene_id,
+        narration:   s.narration,
+        visual_note: s.visual_note,
+        keywords:    s.keywords || [],
+      })),
+    };
+  });
 }
 
 function buildMetadataShorts(items) {
-  return items.map(item => ({
-    short_id: item.metadata.short_id,
-    hook:     item.job.description || '',
-    title:    item.job.title,
-  }));
+  return items.map(item => {
+    const hashtags    = resolveHashtags(item);
+    const description = resolveDescription(item, hashtags);
+    if (!isNonEmptyString(item.job?.description)) {
+      warn(`${item.metadata?.short_id}: job.description missing — using title as description base`);
+    }
+    return {
+      short_id:               item.metadata.short_id,
+      hook:                   item.job.description || '',
+      selected_title:         item.job.title,
+      description,
+      hashtags,
+      thumbnail_or_cover_text: '',
+    };
+  });
 }
 
 // ── Backup helper ─────────────────────────────────────────────────────────────
@@ -234,7 +238,11 @@ if (!args.slug)  fail('Missing required --slug <slug>');
 if (!args.runId) fail('Missing required --run-id <run-id>');
 
 if (!args.dryRun && !args.write) {
-  fail('Specify --dry-run to preview or --write to apply changes.');
+  fail('Specify --dry-run to preview or --write (optionally with --repair) to apply changes.');
+}
+if (args.repair) {
+  info('restore_target=shorts_only');
+  warn('landscape_still_scaffold=true (landscape files are not touched by this script)');
 }
 
 console.log('Shorts Package Recovery from Batch');
@@ -362,10 +370,13 @@ ok('all_files_written=true');
 // ── Post-write validation ─────────────────────────────────────────────────────
 
 console.log('');
-info('Running video:validate…');
+info('Running video:validate --type shorts…');
+warn('landscape_still_scaffold=true');
+info('restore_target=shorts_only');
 const result = spawnSync(
-  'npm', ['run', 'video:validate', '--', '--slug', args.slug, '--report'],
-  { cwd: ROOT, stdio: 'inherit', shell: true }
+  process.execPath,
+  [path.join(ROOT, 'scripts', 'validate-video-package.mjs'), '--slug', args.slug, '--type', 'shorts', '--report'],
+  { cwd: ROOT, stdio: 'inherit' }
 );
 
 if (result.status !== 0) {
