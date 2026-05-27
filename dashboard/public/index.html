@@ -24,7 +24,7 @@
               <th>Paket</th>
               <th>Batch</th>
               <th>Pipeline</th>
-              <th>Yayın Paketi</th>
+              <th>Yayın</th>
             </tr>
           </thead>
           <tbody id="slugs-tbody">
@@ -42,6 +42,25 @@
       <div id="detail-body"></div>
     </section>
   </main>
+
+  <!-- Action modal -->
+  <div id="modal-overlay" hidden>
+    <div id="modal-box">
+      <div id="modal-header">
+        <span id="modal-title">Komut Önizleme</span>
+        <button id="modal-x" class="btn-ghost">✕</button>
+      </div>
+      <pre id="modal-preview" class="modal-code"></pre>
+      <div id="modal-output-section" hidden>
+        <div id="modal-status-bar"></div>
+        <pre id="modal-output" class="modal-output"></pre>
+      </div>
+      <div id="modal-footer">
+        <button id="modal-run-btn" class="btn-primary">Çalıştır</button>
+        <button id="modal-cancel-btn" class="btn-ghost">İptal</button>
+      </div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>

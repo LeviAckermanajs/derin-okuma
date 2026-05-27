@@ -292,6 +292,181 @@ code.inline {
   padding: 8px 0;
 }
 
+/* ── Phase 2 additions ──────────────────────────────────────────────────── */
+
+.pill-stale { background: #2b2010; color: #c88a30; }
+
+.stale-note {
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: #1f1810;
+  border-left: 3px solid #c88a30;
+  font-size: 12px;
+  color: #c88a30;
+  border-radius: 0 4px 4px 0;
+}
+
+.val-summary {
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: var(--code-bg);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.7;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.file-list {
+  list-style: none;
+}
+.file-list li {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  padding: 3px 0;
+}
+
+.muted-text { color: var(--muted); font-size: 12px; }
+code.inline.small { font-size: 10px; }
+.small { font-size: 10px; }
+
+.result-link {
+  color: #6a9fd8;
+  text-decoration: none;
+  font-size: 12px;
+}
+.result-link:hover { text-decoration: underline; }
+
+/* ── Action bar ─────────────────────────────────────────────────────────── */
+
+.action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.btn-action {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: background 0.1s;
+}
+.btn-action:hover:not(:disabled) { background: #252525; border-color: #444; }
+
+.btn-disabled, .btn-action:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #1e3a2a;
+  border: 1px solid #2d5a3d;
+  color: #4caf86;
+  padding: 6px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+.btn-primary:hover:not(:disabled) { background: #254832; }
+.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Modal ──────────────────────────────────────────────────────────────── */
+
+#modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+#modal-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  width: min(680px, 94vw);
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#modal-header {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+#modal-title {
+  font-size: 14px;
+  font-weight: 600;
+  flex: 1;
+}
+
+pre.modal-code {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 12px;
+  background: var(--code-bg);
+  padding: 12px 16px;
+  margin: 12px 16px 0;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: #a8d8a8;
+  border: 1px solid var(--border);
+}
+
+#modal-output-section {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  margin-top: 10px;
+}
+
+.modal-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 0 6px;
+  color: var(--muted);
+}
+.modal-status.ok   { color: #4caf86; }
+.modal-status.fail { color: #d05555; }
+
+pre.modal-output {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 11px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  flex: 1;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--text);
+  max-height: 280px;
+}
+
+#modal-footer {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  margin-top: 10px;
+}
+
 /* ── Scrollbar ─────────────────────────────────────────────────────────────── */
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
