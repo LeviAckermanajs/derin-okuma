@@ -90,16 +90,18 @@ function extractHashtagsFromText(text) {
 
 // ── Caption builder ───────────────────────────────────────────────────────────
 
-// TikTok has no separate title field visible to users.
-// Caption = title line + hashtags. Description body is omitted for brevity;
-// the title already carries the core message.
 function buildCaption(video, normalizedTags) {
-  // Prefer the pre-built manifest caption if present
-  if (isNonEmptyString(video.tiktok?.caption)) {
-    return video.tiktok.caption;
+  // Prefer the YouTube Shorts description — it contains meaningful text + hashtags.
+  if (isNonEmptyString(video.description)) {
+    return {
+      caption:        video.description.slice(0, CAPTION_MAX),
+      caption_source: 'youtube_shorts_description',
+    };
   }
+  // Fallback: title + hashtags (no meaningful body available).
   const hashtagStr = normalizedTags.join(' ');
-  return [video.title, hashtagStr].filter(Boolean).join('\n').slice(0, CAPTION_MAX);
+  const caption    = [video.title, hashtagStr].filter(Boolean).join('\n').slice(0, CAPTION_MAX);
+  return { caption, caption_source: 'fallback_title_hashtags' };
 }
 
 // ── Caption validation ────────────────────────────────────────────────────────
@@ -224,10 +226,10 @@ let totalErrors   = 0;
 let totalWarnings = 0;
 
 for (const video of manifest.videos) {
-  const { tags: normalizedTags, duplicates } = normalizeHashtags(video.hashtags);
-  const caption      = buildCaption(video, normalizedTags);
-  const captionLen   = caption.length;
-  const { warnings, errors } = validateCaption(video.id, caption, normalizedTags, duplicates);
+  const { tags: normalizedTags, duplicates }  = normalizeHashtags(video.hashtags);
+  const { caption, caption_source }           = buildCaption(video, normalizedTags);
+  const captionLen                            = caption.length;
+  const { warnings, errors }                  = validateCaption(video.id, caption, normalizedTags, duplicates);
 
   const captionPreview = captionLen > 80 ? `${caption.slice(0, 80)}…` : caption;
   const privacyLevel   = video.tiktok?.privacy_level || 'SELF_ONLY';
@@ -239,6 +241,11 @@ for (const video of manifest.videos) {
   plan(`  file=${path.basename(video.path)}`);
   check(`caption_length=${captionLen}`);
   check(`hashtags_count=${normalizedTags.length}`);
+  ok(`caption_source=${caption_source}`);
+
+  if (caption_source === 'fallback_title_hashtags') {
+    warn(`${video.id}: description missing in manifest — using title + hashtags as caption`);
+  }
 
   for (const w of warnings) {
     warn(`${video.id}: ${w}`);
@@ -261,6 +268,7 @@ for (const video of manifest.videos) {
     video_path:     video.path,
     file_exists:    true,
     caption,
+    caption_source,
     caption_length: captionLen,
     hashtags:       normalizedTags,
     hashtags_count: normalizedTags.length,

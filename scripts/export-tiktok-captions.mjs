@@ -95,10 +95,12 @@ for (const item of plan.items) {
   ok(`written ${item.short_id}.txt  (${item.caption.length} chars)`);
 
   // Markdown entry
+  const sourceLabel = item.caption_source || 'unknown';
   mdLines.push(
     `## ${item.short_id}`,
     ``,
-    `**Video:** \`${videoName}\``,
+    `**Video:** \`${videoName}\`  `,
+    `**Caption source:** \`${sourceLabel}\``,
     ``,
     `\`\`\``,
     item.caption,
