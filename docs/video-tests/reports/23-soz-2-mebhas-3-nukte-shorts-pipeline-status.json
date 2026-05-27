@@ -1,0 +1,16 @@
+{
+  "slug": "23-soz-2-mebhas-3-nukte",
+  "title": "23. Söz - 2. Mebhas - 3. Nukte",
+  "day": 99,
+  "dayTag": "day-99",
+  "runId": "test-guard-dry",
+  "timestamp": "2026-05-27T14:09:00.874Z",
+  "status": "failed",
+  "failedCommand": "--force-prep without --confirm-overwrite-filled",
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/23-soz-2-mebhas-3-nukte-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/23-soz-2-mebhas-3-nukte-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/23-soz-2-mebhas-3-nukte-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-23-soz-2-mebhas-3-nukte-short-*-test-guard-dry"
+  }
+}

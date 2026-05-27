@@ -1,0 +1,105 @@
+// Derin Okuma — Kâinat Neden Durmadan Yenileniyor? Shorts
+// Short: short-005 — Kâinat Nasıl Okunur?
+// day-31 — day31-export-wait-a — filled
+
+const rawInput = {
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "runtime": {
+    "repo_root": "/home/muhammet/projects/scene-blog-video",
+    "renderer_url": "http://127.0.0.1:8000"
+  },
+  "job": {
+    "title": "Kâinat Nasıl Okunur?",
+    "description": "Kâinat bir kitap gibi okunabilir mi?",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "k-inat-neden-durmadan-yenileniyor-short-005-day-31-day31-export-wait-a"
+  },
+  "reuse_existing_audio": {
+    "enabled": false,
+    "audio_mode": "single_track",
+    "audio_track": {
+      "mode": "single",
+      "path": "",
+      "duration_seconds": null
+    }
+  },
+  "reuse_existing_video": {
+    "enabled": false,
+    "visual_mode": "semantic",
+    "video_root": "",
+    "path_template": "{scene_id}.mp4"
+  },
+  "visual_mode": "ambient",
+  "audio_strategy": {
+    "mode": "single_track",
+    "timing_strategy": "elevenlabs_timestamps",
+    "join_separator": "\n\n"
+  },
+  "render_preferences": {
+    "mode": "shorts",
+    "subtitles_enabled": true,
+    "render_mode": "shorts",
+    "produce_both": false,
+    "background_music_enabled": true,
+    "target_fps": 30
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "narration": "Kâinat bir kitap gibi okunabilir mi? Bir yaprağa, bir yağmura, bir sabaha sadece olay diye bakarsak çok şey eksik kalır.",
+      "visual_note": "open book beside green leaf and rain on window",
+      "keywords": [
+        "open book",
+        "green leaf",
+        "rain"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "narration": "Tefekkür, varlığın ne işe yaradığını sormakla yetinmez. Neyi gösterdiğini, hangi mânâya işaret ettiğini de sorar.",
+      "visual_note": "person reading near window, calm natural light",
+      "keywords": [
+        "reading",
+        "window light",
+        "contemplation"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "narration": "Bu soru açıldığında âlem sessiz kalmaz. Her yenilenen sayfa, kalbe başka bir ders taşır.",
+      "visual_note": "pages turning slowly, sunlight and dust particles",
+      "keywords": [
+        "turning pages",
+        "sunlight",
+        "quiet"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "k-inat-neden-durmadan-yenileniyor",
+    "test_day": "day-31",
+    "short_id": "short-005",
+    "workflow": "manual_scene_json_single_track_shorts_load_input",
+    "content_generation_status": "filled",
+    "batch_run_id": "day31-export-wait-a"
+  },
+  "publish": {
+    "youtube": {
+      "enabled": true,
+      "dry_run": true,
+      "scheduled": true,
+      "schedule_slots": [
+        "13:00",
+        "19:00",
+        "22:00"
+      ],
+      "timezone": "Europe/Istanbul",
+      "expected_channel_id": "UCfdDdchpT4rait8RUjzpVGA"
+    }
+  }
+};
+
+return [{ json: { raw_input: rawInput } }];

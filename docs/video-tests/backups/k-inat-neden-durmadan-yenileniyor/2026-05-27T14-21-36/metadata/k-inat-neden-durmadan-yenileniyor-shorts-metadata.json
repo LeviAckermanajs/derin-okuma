@@ -1,0 +1,86 @@
+{
+  "video_type": "shorts",
+  "source": "k-inat-neden-durmadan-yenileniyor",
+  "test_day": "day-31",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Her şey neden durmadan değişiyor?",
+      "selected_title": "Her Şey Neden Değişiyor?",
+      "description": "Her şey neden durmadan değişiyor? #derinokuma #shorts #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": ""
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Değişim her zaman kayıp mı demektir?",
+      "selected_title": "Değişim Neden Kayıp Değildir?",
+      "description": "Değişim her zaman kayıp mı demektir? #derinokuma #shorts #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": ""
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir tohum neden sadece tohum olarak kalmaz?",
+      "selected_title": "Tohum Neden Açılmak İster?",
+      "description": "Bir tohum neden sadece tohum olarak kalmaz? #derinokuma #shorts #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": ""
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Tesadüf bu kadar düzeni açıklayabilir mi?",
+      "selected_title": "Tesadüf Düzeni Açıklayabilir Mi?",
+      "description": "Tesadüf bu kadar düzeni açıklayabilir mi? #derinokuma #shorts #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": ""
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Kâinat bir kitap gibi okunabilir mi?",
+      "selected_title": "Kâinat Nasıl Okunur?",
+      "description": "Kâinat bir kitap gibi okunabilir mi? #derinokuma #shorts #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": ""
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kalp değişen dünyada neye tutunur?",
+      "selected_title": "Kalp Neye Tutunur?",
+      "description": "Kalp değişen dünyada neye tutunur? #derinokuma #shorts #tefekkür #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": ""
+    }
+  ]
+}

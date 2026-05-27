@@ -1,0 +1,38 @@
+{
+  "video_type": "shorts",
+  "source": "k-inat-neden-durmadan-yenileniyor",
+  "test_day": "day-31",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Her şey neden durmadan değişiyor?",
+      "title": "Her Şey Neden Değişiyor?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Değişim her zaman kayıp mı demektir?",
+      "title": "Değişim Neden Kayıp Değildir?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir tohum neden sadece tohum olarak kalmaz?",
+      "title": "Tohum Neden Açılmak İster?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Tesadüf bu kadar düzeni açıklayabilir mi?",
+      "title": "Tesadüf Düzeni Açıklayabilir Mi?"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Kâinat bir kitap gibi okunabilir mi?",
+      "title": "Kâinat Nasıl Okunur?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kalp değişen dünyada neye tutunur?",
+      "title": "Kalp Neye Tutunur?"
+    }
+  ]
+}
