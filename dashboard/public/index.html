@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derin Okuma — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Derin Okuma</h1>
+    <div id="token-badge" class="badge badge-loading">TikTok: …</div>
+    <button id="refresh-btn" class="btn-ghost">↻ Yenile</button>
+  </header>
+
+  <main>
+    <section id="overview-section">
+      <h2>Shorts Paketleri</h2>
+      <div id="table-wrap">
+        <table id="slugs-table">
+          <thead>
+            <tr>
+              <th>Slug</th>
+              <th>Paket</th>
+              <th>Batch</th>
+              <th>Pipeline</th>
+              <th>Yayın Paketi</th>
+            </tr>
+          </thead>
+          <tbody id="slugs-tbody">
+            <tr><td colspan="5" class="loading">Yükleniyor…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="detail-section" hidden>
+      <div id="detail-header">
+        <button id="detail-close" class="btn-ghost">← Geri</button>
+        <h2 id="detail-title"></h2>
+      </div>
+      <div id="detail-body"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

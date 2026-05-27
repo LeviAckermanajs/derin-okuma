@@ -1,0 +1,299 @@
+:root {
+  --bg:      #0f0f0f;
+  --surface: #181818;
+  --border:  #2b2b2b;
+  --text:    #e0e0e0;
+  --muted:   #777;
+  --code-bg: #1e1e1e;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 15px;
+  font-weight: 600;
+  flex: 1;
+  letter-spacing: 0.02em;
+}
+
+/* ── Badges ─────────────────────────────────────────────────────────────── */
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.badge-ok      { background: #173025; color: #4caf86; }
+.badge-warn    { background: #2e2510; color: #d4a82a; }
+.badge-error   { background: #2a1717; color: #d05555; }
+.badge-loading { background: var(--border); color: var(--muted); }
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+
+.btn-ghost {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.btn-ghost:hover { background: var(--border); }
+
+/* ── Main layout ─────────────────────────────────────────────────────────── */
+
+main {
+  padding: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+/* ── Overview table ─────────────────────────────────────────────────────── */
+
+#table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 8px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--surface);
+}
+
+td:first-child {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 12px;
+  color: var(--text);
+}
+
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: var(--surface); }
+
+.loading {
+  color: var(--muted);
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+}
+
+/* ── Status pills ─────────────────────────────────────────────────────────── */
+
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.pill-filled   { background: #173025; color: #4caf86; }
+.pill-scaffold { background: #1a2035; color: #6a9fd8; }
+.pill-missing  { background: #2a1717; color: #d05555; }
+.pill-ok       { background: #173025; color: #4caf86; }
+.pill-failed   { background: #2a1717; color: #d05555; }
+.pill-yes      { background: #173025; color: #4caf86; }
+.pill-no       { background: var(--border); color: var(--muted); }
+.pill-unknown  { background: var(--border); color: var(--muted); }
+
+/* ── Detail section ─────────────────────────────────────────────────────── */
+
+#detail-section { margin-top: 4px; }
+
+#detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+#detail-header h2 {
+  margin: 0;
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text);
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: 600;
+}
+
+/* ── Detail grid ─────────────────────────────────────────────────────────── */
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 700px) {
+  .detail-grid { grid-template-columns: 1fr; }
+}
+
+.detail-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.detail-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.detail-card h3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* ── KV table inside cards ─────────────────────────────────────────────── */
+
+.kv-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kv-table td {
+  padding: 5px 0;
+  font-size: 13px;
+  border: none;
+  vertical-align: top;
+}
+
+.kv-table td:first-child {
+  color: var(--muted);
+  width: 130px;
+  padding-right: 12px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+/* ── Shorts list ─────────────────────────────────────────────────────────── */
+
+.shorts-list {
+  list-style: none;
+}
+
+.shorts-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.shorts-list li:last-child {
+  border-bottom: none;
+}
+
+.short-id {
+  font-family: 'Consolas', 'Courier New', monospace;
+  color: var(--muted);
+  font-size: 11px;
+  min-width: 70px;
+}
+
+.short-title {
+  flex: 1;
+}
+
+/* ── Load inputs list ─────────────────────────────────────────────────────── */
+
+.load-inputs-list {
+  list-style: none;
+}
+
+.load-inputs-list li {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 11px;
+  color: var(--muted);
+  padding: 3px 0;
+}
+
+/* ── Publish index ─────────────────────────────────────────────────────────── */
+
+pre.publish-index {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 280px;
+  overflow-y: auto;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+code.inline {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 11px;
+  background: var(--code-bg);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.error-msg {
+  color: #d05555;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }

@@ -32,7 +32,8 @@
     "tiktok:auth-url": "node scripts/tiktok-auth-url.mjs",
     "tiktok:auth-local": "node scripts/tiktok-auth-local.mjs",
     "tiktok:exchange-token": "node scripts/tiktok-exchange-token.mjs",
-    "tiktok:token-status": "node scripts/tiktok-token-status.mjs"
+    "tiktok:token-status": "node scripts/tiktok-token-status.mjs",
+    "dashboard": "node dashboard/server.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.0",
