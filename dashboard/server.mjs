@@ -124,14 +124,18 @@ function apiSlugs() {
       const isStale      = pipeline?.status === 'failed'
                         && pkg?.content_generation_status === 'filled'
                         && batchExists;
+      const valText      = readText(path.join(REPORTS_DIR, `${slug}-validation-result.md`));
+      const valSummary   = valText ? extractValidationSummary(valText) : null;
+      const valPassed    = valSummary?.some(l => /^Status:.*PASS/i.test(l)) ?? false;
       return {
         slug,
-        package_status:  pkg ? (pkg.content_generation_status ?? 'unknown') : 'missing',
-        batch:           batchExists,
-        pipeline_status: pipeline?.status ?? null,
-        pipeline_mtime:  fileMtime(pipelinePath),
-        is_stale_failed: isStale,
-        publish:         exists(path.join(PUBLISH_DIR, slug)),
+        package_status:    pkg ? (pkg.content_generation_status ?? 'unknown') : 'missing',
+        batch:             batchExists,
+        pipeline_status:   pipeline?.status ?? null,
+        pipeline_mtime:    fileMtime(pipelinePath),
+        is_stale_failed:   isStale,
+        validation_passed: valPassed,
+        publish:           exists(path.join(PUBLISH_DIR, slug)),
       };
     });
 }
@@ -150,7 +154,9 @@ function apiSlug(slug) {
   const pkg      = readJson(pkgPath);
   const metadata = readJson(metaPath);
   const pipeline = readJson(pipelinePath);
-  const valText  = readText(valPath);
+  const valText    = readText(valPath);
+  const valSummary = valText ? extractValidationSummary(valText) : null;
+  const valPassed  = valSummary?.some(l => /^Status:.*PASS/i.test(l)) ?? false;
   const batchExists = exists(batchPath);
 
   // Load inputs
@@ -205,7 +211,8 @@ function apiSlug(slug) {
     // Validation
     validation_exists:  !!valText,
     validation_path:    valText ? path.relative(ROOT, valPath) : null,
-    validation_summary: valText ? extractValidationSummary(valText) : null,
+    validation_summary: valSummary,
+    validation_passed:  valPassed,
     // Pipeline
     pipeline,
     pipeline_mtime:   fileMtime(pipelinePath),

@@ -30,8 +30,9 @@ function pkgPill(status) {
 }
 
 function pipelinePill(row) {
-  if (row.is_stale_failed) return pill('stale', 'stale failed');
-  if (!row.pipeline_status) return pill('no', '—');
+  if (row.is_stale_failed && row.validation_passed) return pill('stale-ok', 'stale');
+  if (row.is_stale_failed)                          return pill('stale',    'stale failed');
+  if (!row.pipeline_status)                         return pill('no',       '—');
   if (row.pipeline_status === 'ok' || row.pipeline_status === 'passed') return pill('ok', 'ok');
   return pill('failed', row.pipeline_status);
 }
@@ -205,17 +206,28 @@ function cardPipeline(d) {
     ? `${new Date(d.pipeline_mtime).toLocaleString('tr-TR')} (${relTime(d.pipeline_mtime)})`
     : '—';
 
-  const staleNote = d.is_stale_failed
-    ? `<div class="stale-note">⚠ Paket filled + batch mevcut → bu hata muhtemelen eski bir çalışmadan kaldı.</div>`
-    : '';
+  const staleResolved = d.is_stale_failed && d.validation_passed;
+  const staleUnknown  = d.is_stale_failed && !d.validation_passed;
+
+  let staleNote = '';
+  if (staleResolved) {
+    staleNote = `<div class="stale-note stale-note-ok">✓ Son doğrulama PASS — bu hata eski bir çalışmadan kalmış.</div>`;
+  } else if (staleUnknown) {
+    staleNote = `<div class="stale-note">⚠ Paket filled + batch mevcut → bu hata muhtemelen eski bir çalışmadan kaldı.</div>`;
+  }
 
   const failRow = pl.failedCommand
     ? kv('Hata komutu', `<code class="inline small">${esc(pl.failedCommand)}</code>`)
     : '';
 
+  const cardClass = staleResolved ? 'detail-card detail-card-muted' : 'detail-card';
+  const h3badge   = d.is_stale_failed
+    ? ` <span class="pill ${staleResolved ? 'pill-stale-ok' : 'pill-stale'}" style="font-size:10px">stale</span>`
+    : '';
+
   return `
-    <div class="detail-card">
-      <h3>Pipeline${d.is_stale_failed ? ' <span class="pill pill-stale" style="font-size:10px">stale</span>' : ''}</h3>
+    <div class="${cardClass}">
+      <h3>Pipeline${h3badge}</h3>
       <table class="kv-table">
         ${kv('Durum', pipelinePill(d))}
         ${kv('Run ID', esc(pl.runId ?? '—'))}
