@@ -14,6 +14,7 @@
     "video:validate": "node scripts/validate-video-package.mjs",
     "video:batch": "node scripts/build-video-batch.mjs",
     "video:batch:reuse": "node scripts/build-video-batch.mjs",
+    "video:shorts:pipeline": "node scripts/run-shorts-prep-pipeline.mjs",
     "video:publish-pack": "node scripts/build-video-publish-pack.mjs",
     "video:export": "node scripts/export-rendered-videos.mjs",
     "video:submit:dry-run": "NO_EXTERNAL_VIDEO_TEST=1 node ../scene-blog-video/scripts/submit-render-batch-and-export.mjs --dry-run-submit",
