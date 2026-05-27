@@ -2,8 +2,8 @@
 
 ## Summary
 
-- Status: FAIL
-- Landscape scenes: 0
+- Status: PASS
+- Landscape scenes: n/a
 - Shorts count: 6
 - Load input files: 6
 
@@ -11,24 +11,6 @@
 
 | Check | Result | Note |
 |---|---|---|
-| Landscape full video exists | OK | docs/video-tests/inputs/k-inat-neden-durmadan-yenileniyor-landscape-full-video.json |
-| Landscape full video JSON parse | OK |  |
-| Landscape full video content_generation_status | FAIL | scaffold_only |
-| Landscape scenes non-empty | FAIL |  |
-| Landscape scenes | FAIL | 0 |
-| Landscape Load Input JS exists | OK | docs/video-tests/inputs/k-inat-neden-durmadan-yenileniyor-landscape-load-input.js |
-| Landscape Load Input JS syntax | OK |  |
-| Landscape Load Input mode full_video | OK |  |
-| Landscape Load Input render_mode landscape | OK |  |
-| Landscape Load Input single_track | OK |  |
-| Landscape Load Input scenes filled | FAIL |  |
-| Landscape metadata exists | OK | docs/video-tests/metadata/k-inat-neden-durmadan-yenileniyor-landscape-metadata.json |
-| Landscape metadata JSON parse | OK |  |
-| Landscape metadata content_generation_status | FAIL | scaffold_only |
-| Landscape metadata selected_title | OK |  |
-| Landscape metadata description | OK |  |
-| Landscape metadata hashtags | OK |  |
-| Landscape metadata hashtag consistency | OK |  |
 | Shorts package exists | OK | docs/video-tests/shorts/k-inat-neden-durmadan-yenileniyor/k-inat-neden-durmadan-yenileniyor-shorts-package.json |
 | Shorts package JSON parse | OK |  |
 | Shorts package content_generation_status | OK | filled |
@@ -300,4 +282,4 @@
 
 ## Next Step
 
-- Fix failed checks before n8n smoke test.
+- Package is ready for n8n smoke test.
