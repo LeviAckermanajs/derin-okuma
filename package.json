@@ -15,6 +15,7 @@
     "video:batch": "node scripts/build-video-batch.mjs",
     "video:batch:reuse": "node scripts/build-video-batch.mjs",
     "video:shorts:pipeline": "node scripts/run-shorts-prep-pipeline.mjs",
+    "video:shorts:restore-from-batch": "node scripts/restore-shorts-from-batch.mjs",
     "video:shorts:fill-with-claude": "node scripts/run-shorts-fill-with-claude.mjs",
     "video:publish-pack": "node scripts/build-video-publish-pack.mjs",
     "video:export": "node scripts/export-rendered-videos.mjs",
