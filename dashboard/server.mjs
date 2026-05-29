@@ -99,6 +99,42 @@ function findBlogPath(slug, pkg) {
 
 function readDraftLinks() { return readJson(DRAFT_LINKS_PATH) || {}; }
 
+// Writes a minimal pipeline status JSON when the pipeline script failed to do so.
+// Mirrors the structure expected by run-shorts-fill-with-claude.mjs.
+function ensurePipelineStatus(slug, title, day, runId) {
+  const statusPath = path.join(REPORTS_DIR, `${slug}-shorts-pipeline-status.json`);
+  if (exists(statusPath)) return;  // already present — don't overwrite
+
+  const pkgPath = path.join(SHORTS_DIR, slug, `${slug}-shorts-package.json`);
+  if (!exists(pkgPath)) return;  // no scaffold yet — nothing to ensure
+
+  const dayNum = (Number.isInteger(day) ? day : parseInt(String(day), 10)) || 1;
+  const dayTag = `day-${String(dayNum).padStart(2, '0')}`;
+
+  function toRel(...parts) { return path.relative(ROOT, path.join(ROOT, ...parts)); }
+
+  const status = {
+    slug,
+    title:         title || slug,
+    day:           dayNum,
+    dayTag,
+    runId,
+    timestamp:     new Date().toISOString(),
+    status:        'scaffold_only',
+    failedCommand: null,
+    paths: {
+      promptPath:         toRel('docs', 'video-tests', 'prompts',  `${slug}-fill-video-package-prompt.md`),
+      metadataPath:       toRel('docs', 'video-tests', 'metadata', `${slug}-landscape-metadata.json`),
+      batchLoadInputPath: toRel('docs', 'video-tests', 'batches',  `${slug}-shorts-batch-load-input.js`),
+      expectedExportFolder: '',
+    },
+  };
+  try {
+    fs.mkdirSync(REPORTS_DIR, { recursive: true });
+    fs.writeFileSync(statusPath, JSON.stringify(status, null, 2), 'utf8');
+  } catch {}
+}
+
 function saveDraftLink(draftFile, blogSlug) {
   const links = readDraftLinks();
   links[draftFile] = blogSlug;
@@ -453,10 +489,10 @@ function buildCommand(action, slug, params = {}) {
     if (!title || typeof title !== 'string' || !title.trim()) return { error: 'missing_title' };
     const dayNum = parseInt(String(day), 10);
     if (!Number.isInteger(dayNum) || dayNum < 1 || dayNum > 999) return { error: 'invalid_day' };
-    const dayPad = String(dayNum).padStart(2, '0');
-    const runId  = (run_id && /^[a-zA-Z0-9_-]+$/.test(run_id.trim()))
-      ? run_id.trim()
-      : `day-${dayPad}-batch-a`;
+    const runIdRaw = (run_id || '').trim();
+    const runId    = /^[a-zA-Z0-9_-]+$/.test(runIdRaw)
+      ? runIdRaw
+      : `day${dayNum}-batch-a`;  // e.g. day33-batch-a (no extra dash, no zero-pad)
     return {
       args: [
         path.join(SCRIPTS_DIR, 'run-shorts-prep-pipeline.mjs'),
@@ -586,13 +622,24 @@ function handleAction(body) {
     stderr:          result.stderr || '',
   };
 
-  // For shorts-prep: check scaffold files regardless of exit code.
-  // validate/batch failures are expected for fresh scaffolds; what matters is
-  // whether the pipeline status JSON and shorts package were created.
-  if (action === 'shorts-prep' && slug && result.status !== 0) {
-    const pkgPath      = path.join(SHORTS_DIR, slug, `${slug}-shorts-package.json`);
-    const statusJPath  = path.join(REPORTS_DIR, `${slug}-shorts-pipeline-status.json`);
-    if (exists(pkgPath) && exists(statusJPath)) response.scaffold_ready = true;
+  // For shorts-prep: ensure pipeline status JSON always exists after the action,
+  // even when the pipeline script failed before calling writeStatus().
+  // Then report scaffold_ready so the UI doesn't show a red failure screen when
+  // the scaffold was actually created (validate failures are expected for fresh scaffolds).
+  if (action === 'shorts-prep' && slug && /^[a-zA-Z0-9_-]+$/.test(slug)) {
+    const p      = params ?? {};
+    const pDay   = parseInt(String(p.day), 10) || 1;
+    const pRunId = /^[a-zA-Z0-9_-]+$/.test((p.run_id || '').trim())
+      ? p.run_id.trim()
+      : `day${pDay}-batch-a`;
+
+    ensurePipelineStatus(slug, p.title || slug, pDay, pRunId);
+
+    if (result.status !== 0) {
+      const pkgPath     = path.join(SHORTS_DIR, slug, `${slug}-shorts-package.json`);
+      const statusJPath = path.join(REPORTS_DIR, `${slug}-shorts-pipeline-status.json`);
+      if (exists(pkgPath) && exists(statusJPath)) response.scaffold_ready = true;
+    }
   }
 
   return response;

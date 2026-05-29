@@ -320,7 +320,7 @@ function wireDraftDetailButtons(d) {
           title:   'Shorts Prep Oluştur',
           label:   'Shorts pipeline (prep → validate → batch)',
           command: p.title && p.day
-            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day-' + String(p.day).padStart(2,'0') + '-batch-a')} --force`
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
             : null,
           cwd,
           warning: pkgFilled(sd)
@@ -779,7 +779,7 @@ function wireDetailButtons(d) {
           title:   'Shorts Prep Oluştur',
           label:   'Shorts pipeline (prep → validate → batch)',
           command: p.title && p.day
-            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day-' + String(p.day).padStart(2,'0') + '-batch-a')} --force`
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
             : null,
           cwd,
           warning: d.package_status === 'filled'

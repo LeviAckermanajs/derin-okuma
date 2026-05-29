@@ -1,0 +1,16 @@
+{
+  "slug": "20-mektup-1-makam",
+  "title": "20. Mektup - 1. Makam",
+  "day": 33,
+  "dayTag": "day-33",
+  "runId": "day33-batch-a",
+  "timestamp": "2026-05-29T16:23:26.055Z",
+  "status": "scaffold_only",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/20-mektup-1-makam-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/20-mektup-1-makam-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/20-mektup-1-makam-shorts-batch-load-input.js",
+    "expectedExportFolder": ""
+  }
+}
