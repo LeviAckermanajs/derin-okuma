@@ -244,20 +244,27 @@ function cardDraftWorkflowParams(d) {
 }
 
 function cardDraftActions(d) {
-  const status    = d.status;
-  const sd        = d.slug_detail;
-  const slug      = d.blog_slug || '';
-  const hasBlog   = !!slug;
-  const hasPrep   = ['prep_ready','filled','batch_ready','exported','youtube_uploaded'].includes(status);
-  const hasFilled = ['filled','batch_ready','exported','youtube_uploaded'].includes(status);
-  const hasBatch  = !!sd?.batch_exists;
-  const isFilled  = sd?.package_status === 'filled';
+  const status           = d.status;
+  const sd               = d.slug_detail;
+  const slug             = d.blog_slug || '';
+  const hasBlog          = !!slug;
+  const hasPrep          = ['prep_ready','filled','batch_ready','exported','youtube_uploaded'].includes(status);
+  const hasFilled        = ['filled','batch_ready','exported','youtube_uploaded'].includes(status);
+  const hasBatch         = !!sd?.batch_exists;
+  const isFilled         = sd?.package_status === 'filled';
+  const hasPipelineStatus = !!sd?.pipeline;
 
-  const actionBtn = (action, label, enabled, warn = false) => {
-    const dis = enabled ? '' : ' disabled';
-    const cls = !enabled ? ' btn-disabled' : warn ? ' btn-warn' : '';
-    return `<button class="btn-action${cls}" data-draft-action="${action}"${dis}>${label}</button>`;
+  const actionBtn = (action, label, enabled, warn = false, hint = '') => {
+    const dis       = enabled ? '' : ' disabled';
+    const cls       = !enabled ? ' btn-disabled' : warn ? ' btn-warn' : '';
+    const titleAttr = hint ? ` title="${esc(hint)}"` : '';
+    return `<button class="btn-action${cls}" data-draft-action="${action}"${dis}${titleAttr}>${label}</button>`;
   };
+
+  const fillEnabled = hasPrep && hasPipelineStatus;
+  const fillHint    = (hasPrep && !hasPipelineStatus)
+    ? 'Pipeline status eksik — önce Shorts Prep Oluştur\'u çalıştırın.'
+    : '';
 
   return `
     <div class="detail-card full-width">
@@ -265,11 +272,12 @@ function cardDraftActions(d) {
       <div class="action-bar">
         ${actionBtn('blog-add',       '+ Blog Yazısını Ekle',         !hasBlog)}
         ${actionBtn('shorts-prep',    '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog, isFilled)}
-        ${actionBtn('shorts-fill',    '◇ Claude ile Paketi Doldur',   hasPrep)}
+        ${actionBtn('shorts-fill',    '◇ Claude ile Paketi Doldur',   fillEnabled, false, fillHint)}
         ${actionBtn('validate-shorts','✓ Validate Shorts',            hasPrep)}
         ${actionBtn('batch-create',   '⊞ Batch Oluştur',              hasFilled)}
         ${actionBtn('copy-batch',     '⎘ Copy Batch Load Input',      hasBatch)}
       </div>
+      ${(hasPrep && !hasPipelineStatus) ? `<div class="stale-note" style="margin-top:10px">⚠ Pipeline status dosyası bulunamadı — "Shorts Prep Oluştur" çalıştırarak oluşturun.</div>` : ''}
     </div>`;
 }
 
@@ -310,9 +318,9 @@ function wireDraftDetailButtons(d) {
         },
         'shorts-prep': {
           title:   'Shorts Prep Oluştur',
-          label:   'Shorts paketi oluşturma',
+          label:   'Shorts pipeline (prep → validate → batch)',
           command: p.title && p.day
-            ? `node scripts/prepare-video-package.mjs --title "${p.title}" --day ${p.day} --slug ${slug} --force`
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day-' + String(p.day).padStart(2,'0') + '-batch-a')} --force`
             : null,
           cwd,
           warning: pkgFilled(sd)
@@ -769,9 +777,9 @@ function wireDetailButtons(d) {
         },
         'shorts-prep': {
           title:   'Shorts Prep Oluştur',
-          label:   'Shorts paketi oluşturma',
+          label:   'Shorts pipeline (prep → validate → batch)',
           command: p.title && p.day
-            ? `node scripts/prepare-video-package.mjs --title "${p.title}" --day ${p.day} --slug ${d.slug} --force`
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day-' + String(p.day).padStart(2,'0') + '-batch-a')} --force`
             : null,
           cwd,
           warning: d.package_status === 'filled'
@@ -923,6 +931,10 @@ async function runModal() {
     } else if (data.exit_code === 0) {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Başarılı (exit 0)';
+      modalNeedsRefresh = true;
+    } else if (data.scaffold_ready) {
+      statusEl.className   = 'modal-status ok';
+      statusEl.textContent = 'Scaffold hazır ✓ — validate/batch adımı başarısız olsa da scaffold dosyaları oluştu. "Claude ile Paketi Doldur" artık aktif.';
       modalNeedsRefresh = true;
     } else {
       statusEl.className   = 'modal-status fail';

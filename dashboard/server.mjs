@@ -449,19 +449,23 @@ function buildCommand(action, slug, params = {}) {
     };
   }
   if (action === 'shorts-prep') {
-    const { title, day } = params;
+    const { title, day, run_id } = params;
     if (!title || typeof title !== 'string' || !title.trim()) return { error: 'missing_title' };
     const dayNum = parseInt(String(day), 10);
     if (!Number.isInteger(dayNum) || dayNum < 1 || dayNum > 999) return { error: 'invalid_day' };
+    const dayPad = String(dayNum).padStart(2, '0');
+    const runId  = (run_id && /^[a-zA-Z0-9_-]+$/.test(run_id.trim()))
+      ? run_id.trim()
+      : `day-${dayPad}-batch-a`;
     return {
       args: [
-        path.join(SCRIPTS_DIR, 'prepare-video-package.mjs'),
-        '--title', title.trim(),
-        '--day',   String(dayNum),
-        '--slug',  slug,
+        path.join(SCRIPTS_DIR, 'run-shorts-prep-pipeline.mjs'),
+        '--title',  title.trim(),
+        '--day',    String(dayNum),
+        '--run-id', runId,
         '--force',
       ],
-      preview: `node scripts/prepare-video-package.mjs --title "${title.trim()}" --day ${dayNum} --slug ${slug} --force`,
+      preview: `node scripts/run-shorts-prep-pipeline.mjs --title "${title.trim()}" --day ${dayNum} --run-id ${runId} --force`,
     };
   }
   if (action === 'shorts-fill') {
@@ -573,7 +577,7 @@ function handleAction(body) {
     }
   }
 
-  return {
+  const response = {
     action,
     slug:            slug || '',
     command_preview: cmd.preview,
@@ -581,6 +585,17 @@ function handleAction(body) {
     stdout:          result.stdout || '',
     stderr:          result.stderr || '',
   };
+
+  // For shorts-prep: check scaffold files regardless of exit code.
+  // validate/batch failures are expected for fresh scaffolds; what matters is
+  // whether the pipeline status JSON and shorts package were created.
+  if (action === 'shorts-prep' && slug && result.status !== 0) {
+    const pkgPath      = path.join(SHORTS_DIR, slug, `${slug}-shorts-package.json`);
+    const statusJPath  = path.join(REPORTS_DIR, `${slug}-shorts-pipeline-status.json`);
+    if (exists(pkgPath) && exists(statusJPath)) response.scaffold_ready = true;
+  }
+
+  return response;
 }
 
 // ── HTTP helpers ──────────────────────────────────────────────────────────
