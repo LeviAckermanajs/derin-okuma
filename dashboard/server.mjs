@@ -105,6 +105,47 @@ function saveDraftLink(draftFile, blogSlug) {
   try { fs.writeFileSync(DRAFT_LINKS_PATH, JSON.stringify(links, null, 2), 'utf8'); } catch {}
 }
 
+function slugifyDraftName(filename) {
+  const withoutExt = filename.replace(/\.(txt|md|mdx)$/, '');
+  return withoutExt
+    .replace(/[ğĞ]/g, 'g').replace(/[üÜ]/g, 'u').replace(/[şŞ]/g, 's')
+    .replace(/[ıİ]/g, 'i').replace(/[öÖ]/g, 'o').replace(/[çÇ]/g, 'c')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// Tries to find a blog slug for an unlinked draft and saves the link if confident.
+// Returns the slug if found, null otherwise.
+function autoRepairDraftLink(filename) {
+  const links = readDraftLinks();
+  if (links[filename]) return links[filename];
+  if (!exists(BLOG_DIR)) return null;
+
+  const candidate = slugifyDraftName(filename);
+
+  // Exact match — fully confident
+  for (const ext of ['.md', '.mdx']) {
+    if (exists(path.join(BLOG_DIR, candidate + ext))) {
+      saveDraftLink(filename, candidate);
+      return candidate;
+    }
+  }
+
+  // Prefix match — confident only when exactly one file matches
+  try {
+    const matches = fs.readdirSync(BLOG_DIR)
+      .filter(f => /\.(md|mdx)$/.test(f) && f.startsWith(candidate + '-'));
+    if (matches.length === 1) {
+      const slug = matches[0].replace(/\.(md|mdx)$/, '');
+      saveDraftLink(filename, slug);
+      return slug;
+    }
+  } catch {}
+
+  return null;
+}
+
 function getDraftStatus(blogSlug) {
   if (!blogSlug) return 'draft';
   const pkg = readJson(path.join(SHORTS_DIR, blogSlug, `${blogSlug}-shorts-package.json`));
@@ -132,14 +173,13 @@ function apiDrafts() {
 // apiDraftsList — rich list for the Taslaklar tab
 function apiDraftsList() {
   if (!exists(DRAFTS_DIR)) return [];
-  const links = readDraftLinks();
   return fs.readdirSync(DRAFTS_DIR)
     .filter(f => /\.(txt|md|mdx)$/.test(f))
     .sort()
     .map(filename => {
       try {
         const stat     = fs.statSync(path.join(DRAFTS_DIR, filename));
-        const blogSlug = links[filename] || null;
+        const blogSlug = autoRepairDraftLink(filename);
         return {
           filename,
           mtime:     stat.mtime.toISOString(),
@@ -162,9 +202,20 @@ function apiDraft(filename) {
   let stat;
   try { stat = fs.statSync(absPath); } catch { return null; }
 
-  const links    = readDraftLinks();
-  const blogSlug = links[filename] || null;
-  const status   = getDraftStatus(blogSlug);
+  const blogSlug = autoRepairDraftLink(filename);
+
+  // Detect multiple ambiguous candidates (not confident → surface hint to UI)
+  let orphanedBlogHint = null;
+  if (!blogSlug && exists(BLOG_DIR)) {
+    const candidate = slugifyDraftName(filename);
+    try {
+      const ambiguous = fs.readdirSync(BLOG_DIR)
+        .filter(f => /\.(md|mdx)$/.test(f) && f.startsWith(candidate));
+      if (ambiguous.length > 1) orphanedBlogHint = candidate;
+    } catch {}
+  }
+
+  const status     = getDraftStatus(blogSlug);
   const slugDetail = (blogSlug && /^[a-zA-Z0-9_-]+$/.test(blogSlug)) ? apiSlug(blogSlug) : null;
 
   return {
@@ -173,6 +224,7 @@ function apiDraft(filename) {
     mtime:      stat.mtime.toISOString(),
     size:       stat.size,
     blog_slug:  blogSlug,
+    orphaned_blog_hint: orphanedBlogHint,
     status,
     slug_detail: slugDetail,
   };
@@ -474,13 +526,51 @@ function handleAction(body) {
   const spawnOpts  = { cwd: ROOT, encoding: 'utf8', timeout };
   if (cmd.env) spawnOpts.env = cmd.env;
 
+  // Pre-scan blog dir so we can detect newly created files after blog-add
+  let preBlogFiles = new Set();
+  if (action === 'blog-add' && exists(BLOG_DIR)) {
+    try { preBlogFiles = new Set(fs.readdirSync(BLOG_DIR)); } catch {}
+  }
+
   const result = spawnSync(executable, cmd.args, spawnOpts);
 
-  // After successful blog-add: parse output to save draft→slug link
+  // After successful blog-add: reliably find the new blog slug
   if (result.status === 0 && action === 'blog-add' && params?.draft_path) {
-    const output = (result.stdout || '') + (result.stderr || '');
-    const m      = output.match(/^[\s\-*]*slug:\s*([a-z0-9][a-z0-9_-]*)\s*$/im);
-    if (m) saveDraftLink(path.basename(params.draft_path), m[1].trim());
+    const draftFile = path.basename(params.draft_path);
+    let foundSlug   = null;
+
+    // Strategy 1: detect newly created file in BLOG_DIR (most reliable)
+    if (exists(BLOG_DIR)) {
+      try {
+        for (const f of fs.readdirSync(BLOG_DIR)) {
+          if (!preBlogFiles.has(f) && /\.(md|mdx)$/.test(f)) {
+            foundSlug = f.replace(/\.(md|mdx)$/, '');
+            break;
+          }
+        }
+      } catch {}
+    }
+
+    // Strategy 2: parse Claude output with multiple patterns
+    if (!foundSlug) {
+      const output = (result.stdout || '') + (result.stderr || '');
+      const patterns = [
+        /src\/content\/blog\/([a-z0-9][a-z0-9_ü-]+)\.(md|mdx)/i,
+        /^[\s\-*]*\*{0,2}slug\*{0,2}:?\*{0,2}\s+([a-z0-9][a-z0-9_ü-]+)\s*$/im,
+        /slug[^\S\n]*[:=][^\S\n]*`?([a-z0-9][a-z0-9_ü-]+)`?/im,
+      ];
+      for (const re of patterns) {
+        const m = output.match(re);
+        if (m) { foundSlug = m[1]; break; }
+      }
+    }
+
+    if (foundSlug) {
+      saveDraftLink(draftFile, foundSlug);
+    } else {
+      // Strategy 3: slugify draft filename and check blog dir
+      autoRepairDraftLink(draftFile);
+    }
   }
 
   return {

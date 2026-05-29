@@ -191,6 +191,13 @@ function renderDraftDetail(d) {
 }
 
 function cardDraftInfo(d) {
+  const orphanNote = (!d.blog_slug && d.orphaned_blog_hint)
+    ? `<div class="stale-note" style="margin-top:10px">
+        ⚠ Blog dosyası var ama draft bağlantısı eksik —
+        birden fazla aday eşleşti (<code>${esc(d.orphaned_blog_hint)}*</code>).
+        Manuel olarak <code>.draft-links.json</code> dosyasına slug ekleyin.
+      </div>`
+    : '';
   return `
     <div class="detail-card">
       <h3>Taslak Bilgisi</h3>
@@ -203,6 +210,7 @@ function cardDraftInfo(d) {
           : pill('no', 'henüz yok'))}
         ${kv('Durum',        draftStatusPill(d.status))}
       </table>
+      ${orphanNote}
     </div>`;
 }
 
