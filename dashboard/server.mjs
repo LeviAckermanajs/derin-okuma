@@ -508,16 +508,18 @@ function buildCommand(action, slug, params = {}) {
     const { run_id } = params;
     if (!run_id || !/^[a-zA-Z0-9_-]+$/.test(run_id)) return { error: 'invalid_run_id' };
     const fillCmd = process.env.CLAUDE_FILL_COMMAND_TEMPLATE
-      || `${CLAUDE_BIN} --print < "$PROMPT_PATH"`;
+      || `${CLAUDE_BIN} -p --permission-mode acceptEdits "$(cat "$PROMPT_PATH")"`;
+    const promptRelPath = `docs/video-tests/prompts/${slug}-fill-video-package-prompt.md`;
+    const claudePreview = fillCmd.replace(/\$PROMPT_PATH/g, promptRelPath);
     return {
       args: [
         path.join(SCRIPTS_DIR, 'run-shorts-fill-with-claude.mjs'),
         '--slug',   slug,
         '--run-id', run_id,
       ],
-      env:          { ...process.env, CLAUDE_FILL_COMMAND_TEMPLATE: fillCmd },
-      preview:      `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${run_id}`,
-      longTimeout:  true,
+      env:         { ...process.env, CLAUDE_FILL_COMMAND_TEMPLATE: fillCmd },
+      preview:     `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${run_id}\n# Claude komutu:\n${claudePreview}`,
+      fillTimeout: true,
     };
   }
   if (action === 'batch-create') {
@@ -562,7 +564,9 @@ function handleAction(body) {
   if (cmd.error) return cmd;
 
   const executable = cmd.executable || process.execPath;
-  const timeout    = cmd.longTimeout ? 300_000 : 120_000;
+  const timeout    = cmd.fillTimeout ? 600_000   // 10 min for Claude fill
+                   : cmd.longTimeout ? 300_000   // 5 min for blog-add / shorts-prep
+                   : 120_000;                    // 2 min default
   const spawnOpts  = { cwd: ROOT, encoding: 'utf8', timeout };
   if (cmd.env) spawnOpts.env = cmd.env;
 
@@ -618,8 +622,10 @@ function handleAction(body) {
     slug:            slug || '',
     command_preview: cmd.preview,
     exit_code:       result.status,
-    stdout:          result.stdout || '',
-    stderr:          result.stderr || '',
+    signal:          result.signal  || null,
+    timed_out:       result.signal === 'SIGTERM' && result.status === null,
+    stdout:          result.stdout  || '',
+    stderr:          result.stderr  || '',
   };
 
   // For shorts-prep: ensure pipeline status JSON always exists after the action,

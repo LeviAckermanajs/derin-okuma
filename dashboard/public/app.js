@@ -936,9 +936,15 @@ async function runModal() {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Scaffold hazır ✓ — validate/batch adımı başarısız olsa da scaffold dosyaları oluştu. "Claude ile Paketi Doldur" artık aktif.';
       modalNeedsRefresh = true;
+    } else if (data.timed_out) {
+      statusEl.className   = 'modal-status fail';
+      statusEl.textContent = `Zaman aşımı — Claude süreci ${data.signal || 'SIGTERM'} ile sonlandırıldı. Timeout artırıldı (10 dk), tekrar deneyin.`;
+    } else if (data.signal) {
+      statusEl.className   = 'modal-status fail';
+      statusEl.textContent = `Sinyal ile sonlandı: ${data.signal} (exit ${data.exit_code ?? 'null'})`;
     } else {
       statusEl.className   = 'modal-status fail';
-      statusEl.textContent = `Başarısız (exit ${data.exit_code})`;
+      statusEl.textContent = `Başarısız (exit ${data.exit_code ?? 'null'})`;
     }
     runBtn.disabled    = false;
     runBtn.textContent = 'Tekrar Çalıştır';
