@@ -28,3 +28,6 @@ pnpm-debug.log*
 **/client_secret*.json
 **/token*.json
 *.local.tiktok.json
+
+# dashboard background job state (ephemeral)
+dashboard/.jobs/

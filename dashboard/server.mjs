@@ -4,7 +4,7 @@
 import http              from 'http';
 import fs                from 'fs';
 import path              from 'path';
-import { spawnSync }     from 'child_process';
+import { spawnSync, spawn } from 'child_process';
 import { fileURLToPath } from 'url';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
@@ -20,6 +20,7 @@ const REPORTS_DIR  = path.join(ROOT, 'docs', 'video-tests', 'reports');
 const PUBLISH_DIR  = path.join(ROOT, 'docs', 'video-tests', 'publish');
 const BLOG_DIR     = path.join(ROOT, 'src', 'content', 'blog');
 const SCRIPTS_DIR  = path.join(ROOT, 'scripts');
+const JOBS_DIR     = path.join(__dirname, '.jobs');
 const DRAFTS_DIR       = path.join(ROOT, 'docs', 'drafts');
 const DRAFT_LINKS_PATH = path.join(ROOT, 'docs', 'drafts', '.draft-links.json');
 const TOKEN_PATH       = path.join(ROOT, '.secrets', 'tiktok', 'token.json');
@@ -32,6 +33,8 @@ const MIME = {
   '.js':   'application/javascript; charset=utf-8',
   '.css':  'text/css; charset=utf-8',
 };
+
+try { fs.mkdirSync(JOBS_DIR, { recursive: true }); } catch {}
 
 const ALLOWED_ACTIONS = new Set([
   'validate-shorts', 'export-captions', 'tiktok-dry-run',
@@ -51,6 +54,79 @@ function fileMtime(p)      { try { return fs.statSync(p).mtime.toISOString(); } 
 function maskId(id)        {
   if (!id || typeof id !== 'string' || id.length < 10) return '…';
   return id.slice(0, 4) + '…' + id.slice(-4);
+}
+
+// ── Background job helpers ────────────────────────────────────────────────
+
+function writeJobStatus(jobId, data) {
+  try { fs.writeFileSync(path.join(JOBS_DIR, `${jobId}.json`), JSON.stringify(data, null, 2), 'utf8'); } catch {}
+}
+
+function readJobStatus(jobId) {
+  const status = readJson(path.join(JOBS_DIR, `${jobId}.json`));
+  if (!status) return null;
+  // If marked running, verify PID is still alive (handles server-restart case)
+  if (status.status === 'running' && status.pid) {
+    try { process.kill(status.pid, 0); }
+    catch (e) { if (e.code === 'ESRCH') status.status = 'unknown_completed'; }
+  }
+  return status;
+}
+
+function startBackgroundJob(args, env, jobId) {
+  const logPath = path.join(JOBS_DIR, `${jobId}.log`);
+  const initial = {
+    job_id:    jobId,
+    status:    'starting',
+    pid:       null,
+    started:   new Date().toISOString(),
+    finished:  null,
+    exit_code: null,
+    signal:    null,
+  };
+  writeJobStatus(jobId, initial);
+
+  let logFd;
+  try { logFd = fs.openSync(logPath, 'w'); }
+  catch (err) { return { error: err.message }; }
+
+  let child;
+  try {
+    child = spawn(process.execPath, args, {
+      cwd:      ROOT,
+      env:      env || process.env,
+      detached: true,
+      stdio:    ['ignore', logFd, logFd],
+    });
+  } catch (err) {
+    try { fs.closeSync(logFd); } catch {}
+    writeJobStatus(jobId, { ...initial, status: 'failed', finished: new Date().toISOString() });
+    return { error: err.message };
+  }
+
+  child.on('spawn', () => {
+    try { fs.closeSync(logFd); } catch {}  // parent closes its fd copy; child keeps its own
+    writeJobStatus(jobId, { ...initial, status: 'running', pid: child.pid });
+  });
+
+  child.on('error', () => {
+    try { fs.closeSync(logFd); } catch {}
+    writeJobStatus(jobId, { ...initial, status: 'failed', finished: new Date().toISOString() });
+  });
+
+  child.on('close', (code, signal) => {
+    const prev = readJobStatus(jobId) || initial;
+    writeJobStatus(jobId, {
+      ...prev,
+      status:    signal ? 'killed' : (code === 0 ? 'done' : 'failed'),
+      exit_code: code,
+      signal:    signal || null,
+      finished:  new Date().toISOString(),
+    });
+  });
+
+  child.unref();
+  return { job_id: jobId, pid: child.pid };
 }
 
 // ── Export-folder naming (must match build-publish-manifest.mjs exactly) ─
@@ -563,10 +639,24 @@ function handleAction(body) {
   const cmd = buildCommand(action, slug || '', params ?? {});
   if (cmd.error) return cmd;
 
+  // shorts-fill runs as a background job so it survives browser disconnect and long runtimes
+  if (action === 'shorts-fill') {
+    const jobId     = `${slug}-fill-${Date.now()}`;
+    const jobResult = startBackgroundJob(cmd.args, cmd.env, jobId);
+    if (jobResult.error) return { error: jobResult.error };
+    return {
+      action,
+      slug:            slug || '',
+      command_preview: cmd.preview,
+      job_id:          jobResult.job_id,
+      background:      true,
+    };
+  }
+
   const executable = cmd.executable || process.execPath;
-  const timeout    = cmd.fillTimeout ? 600_000   // 10 min for Claude fill
-                   : cmd.longTimeout ? 300_000   // 5 min for blog-add / shorts-prep
-                   : 120_000;                    // 2 min default
+  const timeout    = cmd.fillTimeout ? 1_800_000  // 30 min fallback for long Claude actions
+                   : cmd.longTimeout ? 300_000    // 5 min for blog-add / shorts-prep
+                   : 120_000;                     // 2 min default
   const spawnOpts  = { cwd: ROOT, encoding: 'utf8', timeout };
   if (cmd.env) spawnOpts.env = cmd.env;
 
@@ -712,6 +802,33 @@ const server = http.createServer(async (req, res) => {
   if (pathname === '/api/token-status') return sendJson(res, apiTokenStatus());
   if (pathname === '/api/drafts')       return sendJson(res, apiDrafts());
   if (pathname === '/api/drafts-list')  return sendJson(res, apiDraftsList());
+
+  const jobLogsMatch = pathname.match(/^\/api\/job\/([^/]+)\/logs$/);
+  if (jobLogsMatch) {
+    const jobId = decodeURIComponent(jobLogsMatch[1]);
+    if (!/^[a-zA-Z0-9_-]+$/.test(jobId)) return sendJson(res, { error: 'invalid_job_id' }, 400);
+    const logPath = path.join(JOBS_DIR, `${jobId}.log`);
+    const offset  = Math.max(0, parseInt(url.searchParams.get('offset') || '0', 10) || 0);
+    try {
+      const stat  = fs.statSync(logPath);
+      const avail = Math.max(0, stat.size - offset);
+      if (avail === 0) return sendJson(res, { job_id: jobId, content: '', offset, length: 0, total: stat.size });
+      const buf  = Buffer.allocUnsafe(Math.min(avail, 65_536));
+      const fd   = fs.openSync(logPath, 'r');
+      const read = fs.readSync(fd, buf, 0, buf.length, offset);
+      fs.closeSync(fd);
+      return sendJson(res, { job_id: jobId, content: buf.slice(0, read).toString('utf8'), offset, length: read, total: stat.size });
+    } catch { return sendJson(res, { error: 'not_found' }, 404); }
+  }
+
+  const jobMatch = pathname.match(/^\/api\/job\/([^/]+)$/);
+  if (jobMatch) {
+    const jobId = decodeURIComponent(jobMatch[1]);
+    if (!/^[a-zA-Z0-9_-]+$/.test(jobId)) return sendJson(res, { error: 'invalid_job_id' }, 400);
+    const status = readJobStatus(jobId);
+    if (!status) return sendJson(res, { error: 'not_found' }, 404);
+    return sendJson(res, status);
+  }
 
   const draftMatch = pathname.match(/^\/api\/draft\/([^/]+)$/);
   if (draftMatch) {

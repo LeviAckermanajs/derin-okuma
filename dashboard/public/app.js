@@ -11,6 +11,10 @@ let modalSlug     = null;
 let modalParams   = {};
 let modalNeedsRefresh = false;
 
+let monitorJobId    = null;
+let monitorInterval = null;
+let logOffset       = 0;
+
 // ── Utilities ──────────────────────────────────────────────────────────────
 
 function esc(str) {
@@ -849,6 +853,72 @@ async function fillTokenCard() {
 
 // ── Modal ─────────────────────────────────────────────────────────────────
 
+function stopJobMonitor() {
+  if (monitorInterval) { clearInterval(monitorInterval); monitorInterval = null; }
+  monitorJobId = null;
+  logOffset    = 0;
+}
+
+async function monitorJob(jobId) {
+  stopJobMonitor();
+  monitorJobId = jobId;
+  logOffset    = 0;
+
+  const outputEl = document.getElementById('modal-output');
+  const statusEl = document.getElementById('modal-status-bar');
+  const runBtn   = document.getElementById('modal-run-btn');
+
+  statusEl.className   = 'modal-status';
+  statusEl.textContent = `Arka plan işi: ${jobId} — başlatılıyor…`;
+
+  async function poll() {
+    try {
+      const logsRes = await fetch(`/api/job/${encodeURIComponent(jobId)}/logs?offset=${logOffset}`);
+      if (logsRes.ok) {
+        const logs = await logsRes.json();
+        if (logs.content) {
+          outputEl.textContent += logs.content;
+          logOffset = logs.offset + logs.length;
+          outputEl.scrollTop = outputEl.scrollHeight;
+        }
+      }
+
+      const stRes = await fetch(`/api/job/${encodeURIComponent(jobId)}`);
+      if (!stRes.ok) { statusEl.textContent = `İş bulunamadı: ${jobId}`; return; }
+      const st = await stRes.json();
+
+      if (['done', 'failed', 'killed', 'unknown_completed'].includes(st.status)) {
+        stopJobMonitor();
+        if (st.status === 'done') {
+          statusEl.className   = 'modal-status ok';
+          statusEl.textContent = 'Başarılı ✓';
+          modalNeedsRefresh = true;
+        } else if (st.status === 'killed') {
+          statusEl.className   = 'modal-status fail';
+          statusEl.textContent = `Claude işlemi zaman aşımına uğradı. İşlem yarıda kesildi${st.signal ? ` (${st.signal})` : ''}.`;
+        } else if (st.status === 'unknown_completed') {
+          statusEl.className   = 'modal-status';
+          statusEl.textContent = 'İşlem tamamlandı (sunucu yeniden başlatıldı — sonuç bilinmiyor, dosyaları kontrol edin).';
+          modalNeedsRefresh = true;
+        } else {
+          statusEl.className   = 'modal-status fail';
+          statusEl.textContent = `Başarısız (exit ${st.exit_code ?? 'null'})${st.signal ? `, sinyal: ${st.signal}` : ''}.`;
+        }
+        runBtn.disabled    = false;
+        runBtn.textContent = 'Tekrar Çalıştır';
+      } else {
+        const phase = st.status === 'starting' ? 'başlatılıyor…' : `PID: ${st.pid ?? '?'}`;
+        statusEl.textContent = `Çalışıyor (${phase})`;
+      }
+    } catch (err) {
+      statusEl.textContent = `İzleme hatası: ${err.message}`;
+    }
+  }
+
+  poll();
+  monitorInterval = setInterval(poll, 2000);
+}
+
 // spec: { title, label, command, cwd, action, slug, params?, warning? }
 function openModal(spec) {
   modalAction       = spec.action;
@@ -891,6 +961,7 @@ function openModal(spec) {
 }
 
 function closeModal() {
+  stopJobMonitor();
   document.getElementById('modal-overlay').classList.add('hidden');
   if (modalNeedsRefresh) {
     if (currentDraft) showDraftDetail(currentDraft);
@@ -903,6 +974,8 @@ function closeModal() {
 }
 
 async function runModal() {
+  stopJobMonitor();
+
   const runBtn   = document.getElementById('modal-run-btn');
   const statusEl = document.getElementById('modal-status-bar');
   const outputEl = document.getElementById('modal-output');
@@ -922,6 +995,14 @@ async function runModal() {
     });
     const data = await res.json();
 
+    // Background job — stream logs via polling; button re-enabled when job ends
+    if (data.job_id) {
+      statusEl.className   = 'modal-status';
+      statusEl.textContent = `Arka plan işi başlatıldı: ${data.job_id}`;
+      monitorJob(data.job_id);
+      return;
+    }
+
     const out = [data.stdout, data.stderr].filter(Boolean).join('\n').trim();
     outputEl.textContent = out || '(no output)';
 
@@ -938,13 +1019,13 @@ async function runModal() {
       modalNeedsRefresh = true;
     } else if (data.timed_out) {
       statusEl.className   = 'modal-status fail';
-      statusEl.textContent = `Zaman aşımı — Claude süreci ${data.signal || 'SIGTERM'} ile sonlandırıldı. Timeout artırıldı (10 dk), tekrar deneyin.`;
+      statusEl.textContent = `Claude işlemi zaman aşımına uğradı. İşlem yarıda kesildi${data.signal ? ` (${data.signal})` : ''}.`;
     } else if (data.signal) {
       statusEl.className   = 'modal-status fail';
-      statusEl.textContent = `Sinyal ile sonlandı: ${data.signal} (exit ${data.exit_code ?? 'null'})`;
+      statusEl.textContent = `Sinyal ile sonlandırıldı: ${data.signal}${data.exit_code != null ? ` (exit ${data.exit_code})` : ''}.`;
     } else {
       statusEl.className   = 'modal-status fail';
-      statusEl.textContent = `Başarısız (exit ${data.exit_code ?? 'null'})`;
+      statusEl.textContent = `Başarısız (exit ${data.exit_code ?? 'null'}).`;
     }
     runBtn.disabled    = false;
     runBtn.textContent = 'Tekrar Çalıştır';
