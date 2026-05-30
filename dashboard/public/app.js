@@ -292,7 +292,12 @@ function cardDraftActions(d) {
   const hasPipeline = !!sd?.pipeline;
   const valPass     = !!sd?.validation_passed;
   const hasManifest = !!sd?.publish_manifest_exists;
-  const ttPlanOk    = !!sd?.tiktok_upload_plan_exists;
+  const ttExportOk  = !!sd?.tiktok_export_ready;   // publish_manifest + mp4 exist
+  const ttPlanOk    = !!sd?.tiktok_upload_ready;   // plan JSON exists
+  const ttUploadOk  = ttPlanOk && tikTokTokenOk;
+  const ttDryHint   = sd?.tiktok_disabled_reason || (!tikTokTokenOk ? 'TikTok token geçersiz.' : '');
+  const ttUploadHint = !ttPlanOk ? (sd?.tiktok_disabled_reason || 'Önce Export TikTok Captions çalıştırılmalı.')
+                     : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '';
 
   const ab = (action, label, enabled, warn=false, hint='') => {
     const dis = enabled ? '' : ' disabled';
@@ -320,11 +325,10 @@ function cardDraftActions(d) {
         ${ab('open-n8n',        '↗ Open n8n',                   hasBlog)}
         ${ab('youtube-dry-run', '▷ YouTube Dry Run',            hasBlog && hasManifest, false, ytHint)}
         ${ab('youtube-upload',  '▲ Planlı YouTube Upload',      hasBlog && hasManifest, false, ytHint)}
-        ${ab('export-captions',     '⬇ Export TikTok Captions',    ttPlanOk)}
-        ${ab('tiktok-dry-run',      '⬡ TikTok Upload Dry Run',     ttPlanOk)}
-        ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttPlanOk && tikTokTokenOk, false,
-             !ttPlanOk ? 'Önce TikTok caption/export planı oluştur.'
-             : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '')}
+        ${ab('export-captions',     '⬇ Export TikTok Captions',    ttExportOk,
+             false, !ttExportOk ? 'publish-manifest.json veya mp4 bulunamadı.' : '')}
+        ${ab('tiktok-dry-run',      '⬡ TikTok Upload Dry Run',     ttUploadOk, false, ttDryHint)}
+        ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttUploadOk, false, ttUploadHint)}
         ${ab('mobile-caption',          '📱 Telefon Caption',            hasBlog)}
         ${ab('generate-mobile-caption',
              sd?.mobile_caption_link ? '📱 Caption Sayfasını Güncelle' : '📱 Mobil Caption Sayfası Oluştur',
@@ -806,7 +810,12 @@ function cardShorts(d) {
 }
 
 function cardActions(d) {
-  const ttPlanOk    = d.tiktok_upload_plan_exists;
+  const ttExportOk2  = !!d.tiktok_export_ready;
+  const ttUploadOk2  = !!d.tiktok_upload_ready && tikTokTokenOk;
+  const ttDryHint2   = d.tiktok_disabled_reason || (!tikTokTokenOk ? 'TikTok token geçersiz.' : '');
+  const ttUploadHint2 = !d.tiktok_upload_ready
+    ? (d.tiktok_disabled_reason || 'Önce Export TikTok Captions çalıştırılmalı.')
+    : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '';
   const batchOk     = d.batch_exists;
   const pkgFilled   = d.package_status === 'filled';
   const hasPipeline = !!d.pipeline;
@@ -840,11 +849,10 @@ function cardActions(d) {
         ${ab('open-n8n',        '↗ Open n8n',                   true)}
         ${ab('youtube-dry-run', '▷ YouTube Dry Run',            hasManifest,         false, ytHint)}
         ${ab('youtube-upload',  '▲ Planlı YouTube Upload',      hasManifest,         false, ytHint)}
-        ${ab('export-captions',     '⬇ Export TikTok Captions',    ttPlanOk)}
-        ${ab('tiktok-dry-run',      '⬡ TikTok Upload Dry Run',     ttPlanOk)}
-        ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttPlanOk && tikTokTokenOk, false,
-             !ttPlanOk ? 'Önce TikTok caption/export planı oluştur.'
-             : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '')}
+        ${ab('export-captions',     '⬇ Export TikTok Captions',    ttExportOk2,
+             false, !ttExportOk2 ? 'publish-manifest.json veya mp4 bulunamadı.' : '')}
+        ${ab('tiktok-dry-run',      '⬡ TikTok Upload Dry Run',     ttUploadOk2, false, ttDryHint2)}
+        ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttUploadOk2, false, ttUploadHint2)}
         ${ab('mobile-caption',          '📱 Telefon Caption',            true)}
         ${ab('generate-mobile-caption',
              d.mobile_caption_link ? '📱 Caption Sayfasını Güncelle' : '📱 Mobil Caption Sayfası Oluştur',

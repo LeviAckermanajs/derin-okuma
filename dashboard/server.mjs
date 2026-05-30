@@ -592,11 +592,12 @@ function apiSlug(slug) {
     try { mp4Count = fs.readdirSync(exportFolder).filter(f => f.endsWith('.mp4')).length; } catch {}
   }
 
-  const manifestPath     = path.join(exportFolder, 'publish-manifest.json');
-  const ytResultPath     = path.join(exportFolder, 'youtube-upload-result.json');
-  const tiktokPlanPath   = path.join(exportFolder, 'tiktok-upload-plan.json');
-  const tiktokResultPath = path.join(exportFolder, 'tiktok-upload-result.json');
-  const mobileLinkPath   = path.join(exportFolder, 'mobile-caption-link.json');
+  const manifestPath        = path.join(exportFolder, 'publish-manifest.json');
+  const ytResultPath        = path.join(exportFolder, 'youtube-upload-result.json');
+  const tiktokPlanPath      = path.join(exportFolder, 'tiktok-upload-plan.json');
+  const tiktokResultPath    = path.join(exportFolder, 'tiktok-upload-result.json');
+  const tiktokCaptionDir    = path.join(exportFolder, 'tiktok-captions');
+  const mobileLinkPath      = path.join(exportFolder, 'mobile-caption-link.json');
 
   const tiktokResult = readJson(tiktokResultPath);
   const ytResult     = readJson(ytResultPath);
@@ -641,6 +642,12 @@ function apiSlug(slug) {
     youtube_upload_result_exists:  exists(ytResultPath),
     tiktok_upload_plan_exists:     exists(tiktokPlanPath),
     tiktok_upload_result_exists:   exists(tiktokResultPath),
+    tiktok_caption_export_exists:  exists(tiktokCaptionDir),
+    // TikTok readiness summary (token check stays client-side)
+    tiktok_export_ready:  exists(manifestPath) && exportExists && mp4Count > 0,
+    tiktok_upload_ready:  exists(tiktokPlanPath),
+    tiktok_disabled_reason: !exists(tiktokPlanPath)
+      ? 'Önce Export TikTok Captions çalıştırılmalı.' : null,
     // Upload result summaries (no tokens)
     tiktok_upload_result: tiktokResult ? {
       mode:  tiktokResult.mode,
@@ -704,15 +711,20 @@ function buildCommand(action, slug, params = {}) {
       preview: `node scripts/validate-video-package.mjs --slug ${slug} --type shorts --report`,
     };
   }
-  if (action === 'export-captions' || action === 'tiktok-dry-run' || action === 'tiktok-draft-upload') {
+  if (action === 'export-captions') {
+    // Generates tiktok-upload-plan.json from publish-manifest + exports caption .txt files.
+    // Does NOT require tiktok-upload-plan.json to already exist.
+    const exportFolder = resolveExportFolder(slug);
+    const manifestPath = path.join(exportFolder, 'publish-manifest.json');
+    if (!exists(manifestPath)) return { error: 'publish_manifest_not_found' };
+    return {
+      args:    [path.join(SCRIPTS_DIR, 'tiktok-export-pipeline.mjs'), '--slug', slug],
+      preview: `node scripts/tiktok-export-pipeline.mjs --slug ${slug}`,
+    };
+  }
+  if (action === 'tiktok-dry-run' || action === 'tiktok-draft-upload') {
     const planPath = path.join(resolveExportFolder(slug), 'tiktok-upload-plan.json');
     if (!exists(planPath)) return { error: 'tiktok_upload_plan_not_found' };
-    if (action === 'export-captions') {
-      return {
-        args: [path.join(SCRIPTS_DIR, 'export-tiktok-captions.mjs'), '--plan', planPath],
-        preview: `node scripts/export-tiktok-captions.mjs --plan "${planPath}"`,
-      };
-    }
     if (action === 'tiktok-dry-run') {
       return {
         args: [path.join(SCRIPTS_DIR, 'upload-tiktok-batch-real.mjs'), '--plan', planPath, '--dry-run'],
