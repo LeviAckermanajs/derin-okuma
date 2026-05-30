@@ -1,0 +1,202 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="TikTok Creator Login — Derin Okuma"
+			description="Derin Okuma Creator Tools: connect your TikTok account to upload generated short videos as drafts."
+		/>
+	</head>
+	<body>
+		<Header />
+
+		<main class="about-page">
+			<section class="about-hero">
+				<p class="about-eyebrow">Creator Tools</p>
+				<h1>Derin Okuma Creator Tools</h1>
+				<p class="about-lead">
+					Authorize Derin Okuma to upload generated short-form videos to your TikTok account as drafts.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>How It Works</h2>
+				<p>
+					Derin Okuma uses the <strong>TikTok Content Posting API</strong> to let its
+					authorized creator upload AI-assisted short videos to their own TikTok account as
+					private drafts. The creator then reviews each draft, adds a caption, and publishes
+					manually from the TikTok app.
+				</p>
+				<p>
+					This tool is operated exclusively by the Derin Okuma content creator. It is not
+					a multi-user product open to the general public.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>Authorization Steps</h2>
+				<ol>
+					<li>
+						<strong>Connect your TikTok account</strong> by clicking the button below.
+						You will be redirected to TikTok's secure authorization page.
+					</li>
+					<li>
+						<strong>Review the permissions</strong> Derin Okuma requests. The only
+						permission required is <code>video.upload</code> — to upload videos as
+						private drafts.
+					</li>
+					<li>
+						<strong>Approve access.</strong> TikTok will redirect you back with an
+						authorization code. The tool exchanges this code for an access token stored
+						locally on the creator's device.
+					</li>
+					<li>
+						<strong>Videos are uploaded as drafts</strong> — they are not published
+						automatically. Each video must be manually reviewed, captioned, and published
+						by the creator.
+					</li>
+				</ol>
+			</section>
+
+			<section class="about-section tiktok-cta-section">
+				<h2>Connect Your TikTok Account</h2>
+				<p>
+					Click the button below to begin the TikTok authorization flow. You will be
+					directed to TikTok's official authorization page to grant upload permissions.
+				</p>
+
+				<div class="tiktok-btn-wrap">
+					<a
+						href="https://www.tiktok.com/v2/auth/authorize/"
+						class="tiktok-connect-btn"
+						rel="noopener noreferrer"
+					>
+						<svg class="tiktok-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+						</svg>
+						Continue with TikTok
+					</a>
+				</div>
+
+				<p class="tiktok-note">
+					<strong>Note for reviewers:</strong> This is a creator-operated tool. The full
+					OAuth flow (including PKCE code challenge generation and token exchange) runs
+					on the creator's local machine via a command-line tool. The button above
+					demonstrates the authorization entry point.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>Permissions Requested</h2>
+				<ul>
+					<li>
+						<strong>video.upload</strong> — required to upload videos as private drafts
+						to the authorized TikTok account. No other permissions are requested.
+					</li>
+				</ul>
+				<p>
+					Derin Okuma does <strong>not</strong> request permission to read your TikTok
+					feed, access your followers, read messages, or perform any action other than
+					uploading draft videos.
+				</p>
+			</section>
+
+			<section class="about-section">
+				<h2>Revoking Access</h2>
+				<p>
+					You can revoke Derin Okuma's access to your TikTok account at any time from
+					your TikTok account settings:
+					<strong>Settings → Security → Apps and Websites</strong>.
+				</p>
+			</section>
+
+			<section class="about-section tiktok-legal-links">
+				<p>
+					By connecting your account, you agree to our
+					<a href="/terms">Terms of Service</a> and acknowledge our
+					<a href="/privacy">Privacy Policy</a>.
+				</p>
+			</section>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.tiktok-cta-section {
+		background: var(--gray-light, #f4f4f4);
+		border-radius: 12px;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.tiktok-btn-wrap {
+		margin: 1.5rem 0;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.tiktok-connect-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		background: #000;
+		color: #fff;
+		padding: 14px 28px;
+		border-radius: 8px;
+		font-size: 1rem;
+		font-weight: 600;
+		text-decoration: none;
+		transition: background 0.2s;
+	}
+
+	.tiktok-connect-btn:hover {
+		background: #222;
+	}
+
+	.tiktok-icon {
+		width: 22px;
+		height: 22px;
+		flex-shrink: 0;
+	}
+
+	.tiktok-note {
+		font-size: 0.85rem;
+		color: #666;
+		margin-top: 1rem;
+		padding: 10px 14px;
+		border-left: 3px solid #ccc;
+	}
+
+	.tiktok-legal-links {
+		text-align: center;
+		font-size: 0.9rem;
+	}
+
+	.tiktok-legal-links a {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+
+	ol {
+		padding-left: 1.5rem;
+	}
+
+	ol li {
+		margin-bottom: 0.75rem;
+		line-height: 1.6;
+	}
+
+	code {
+		background: rgba(0,0,0,0.07);
+		padding: 2px 6px;
+		border-radius: 4px;
+		font-size: 0.9em;
+	}
+</style>

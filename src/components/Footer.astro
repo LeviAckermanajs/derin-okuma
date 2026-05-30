@@ -3,13 +3,50 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Derin Okuma
+	<div class="footer-links">
+		<a href="/terms">Terms of Service</a>
+		<span class="footer-sep">·</span>
+		<a href="/privacy">Privacy Policy</a>
+		<span class="footer-sep">·</span>
+		<a href="/tiktok-login">TikTok Creator Login</a>
+	</div>
+	<div class="footer-copy">
+		&copy; {today.getFullYear()} Derin Okuma
+	</div>
 </footer>
+
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+
+	.footer-links {
+		margin-bottom: 0.6em;
+		font-size: 0.85rem;
+	}
+
+	.footer-links a {
+		color: rgb(var(--gray));
+		text-decoration: none;
+		opacity: 0.75;
+		transition: opacity 0.15s;
+	}
+
+	.footer-links a:hover {
+		opacity: 1;
+		text-decoration: underline;
+	}
+
+	.footer-sep {
+		margin: 0 0.5em;
+		opacity: 0.4;
+	}
+
+	.footer-copy {
+		font-size: 0.85rem;
+		opacity: 0.6;
 	}
 </style>
