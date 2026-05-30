@@ -1,0 +1,319 @@
+{
+  "source": {
+    "blog_post": "20-mektup-1-makam",
+    "title": "20. Mektup - 1. Makam",
+    "source_files": [
+      "src/content/blog/20-mektup-1-makam.md"
+    ]
+  },
+  "test_day": "day-33",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "title": "İnsan Neden Sahipsiz Hisseder?",
+      "hook": "İnsan bazen öyle bir his duyar: sanki hiçbir şey gerçekten benim değil.",
+      "description": "Sahipsizlik korkusu ve onu aşmanın tek yolu. #derinokuma #shorts #tefekkür #iman #maneviyat",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan bazen öyle bir his duyar: sanki hiçbir şey gerçekten benim değil. Sahip olduğu şeyler, sevdikleri, bütün emekleri... hepsi kırılgan, hepsi geçici. Bu hissin altında yatan şey sahipsizlik korkusudur; ve bu, insanın en derin endişelerinden biridir.",
+          "visual_note": "A lone person standing on a misty plain at dusk, slow pan, melancholic but calm.",
+          "keywords": [
+            "lone person",
+            "misty plain",
+            "dusk",
+            "solitude"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Ama bir şey değiştiğinde bu korku da değişir. İnsan gerçek sahibini bulduğunda, içindeki dağınıklık toparlanır. Artık sahipsizlik değil, sahiplik vardır. Bütün ihtiyaçlarını karşılayabilecek sonsuz bir rahmet hazinesine kapı açılır.",
+          "visual_note": "A warm lantern glowing steadily in a dark room, safe and still, golden light.",
+          "keywords": [
+            "warm lantern",
+            "dark room",
+            "safe haven",
+            "golden light"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Sahip olduğunu zannettiğin şeyler geçebilir. Ama seni bütün bu güzelliklerle buluşturan, seni yaratan, seni koruyan Zât bâkidir. Ve O var olduğu sürece, insanın ümidi tükenmez.",
+          "visual_note": "Sunlight breaking through heavy clouds, warm light rays over a quiet landscape.",
+          "keywords": [
+            "sunlight through clouds",
+            "warm rays",
+            "quiet landscape",
+            "hope"
+          ]
+        }
+      ],
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "SAHİBİNİ BUL"
+    },
+    {
+      "short_id": "short-002",
+      "title": "Kaç Kapı Çaldın?",
+      "hook": "Kaç kapı çaldın, kaç insana muhtaç oldun, kaç kez anlaşılmak istedin?",
+      "description": "İnsan neden hep başkalarına muhtaç hisseder ve bundan nasıl kurtulur? #derinokuma #shorts #tefekkür #iman #kulluk",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Kaç kapı çaldın, kaç insana muhtaç oldun, kaç kez anlaşılmak istedin ama bulamadın? İnsan bazen en sıradan bir ihtiyacı için bile yollara düşer, kapı kapı dolaşır. Bu yorgunluk gerçektir. Fakat çoğu zaman yanlış kapılarda aranır çözüm.",
+          "visual_note": "A person walking down a street, passing multiple closed doors, searching, slow movement.",
+          "keywords": [
+            "closed doors",
+            "searching person",
+            "street",
+            "seeking"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bütün bu kapıların arkasındaki gerçek güç aynıdır. Her şeyin anahtarı tek elde. Aracıya gerek yok, engel yok, izin kapısı yok. Her hâlinde, her arzunda, her anda doğrudan dönebilirsin.",
+          "visual_note": "A single door slightly ajar with warm golden light spilling through, inviting and calm.",
+          "keywords": [
+            "open door",
+            "warm light",
+            "invitation",
+            "single door"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Yorgun düşen kalpler için bu hakikat, büyük bir rahatlıktır. En derin derdin bile bir muhatap bulur. En sessiz isteğin bile işitilir. Çünkü sana en yakın olan, aynı zamanda her şeye Kadir olandır.",
+          "visual_note": "A calm person sitting quietly by a window, peaceful expression, warm morning light.",
+          "keywords": [
+            "peaceful person",
+            "window light",
+            "calm",
+            "morning"
+          ]
+        }
+      ],
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kulluk"
+      ],
+      "thumbnail_or_cover_text": "DOĞRUDAN YOL"
+    },
+    {
+      "short_id": "short-003",
+      "title": "Hayatın Yükünü Neden Tek Başına Taşıyorsun?",
+      "hook": "İnsan neden bu kadar yorulur? Belki taşıdığı yük aslında ona ait değil.",
+      "description": "Hayatın ağırlığını bırakmanın ne demek olduğunu düşünmek için. #derinokuma #shorts #tefekkür #tevekkül #maneviyat",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan neden bu kadar yorulur? Çünkü kendini bütünüyle kendi elinde zanneder. Kendini korumak, geleceğini garanti etmek, sevdiklerini muhafaza etmek... Her şeyi omuzlamaya çalışır. Oysa buna gücü yetmez.",
+          "visual_note": "A person carrying a heavy backpack uphill, slow exhausted pace, steep trail.",
+          "keywords": [
+            "heavy backpack",
+            "uphill",
+            "exhaustion",
+            "steep path"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bir düşünce var ki insanı bu yükten kurtarır: Mülk O'nundur. İnsan O'nun mülkünde bir memurdur. Bütün masraflar sahibine aittir. İnsana düşen vazifesini güzel yapmak ve ücretini beklemektir.",
+          "visual_note": "A vast open field under soft afternoon light, wide shot, sense of freedom.",
+          "keywords": [
+            "open field",
+            "afternoon light",
+            "freedom",
+            "wide shot"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bu bakış değiştiğinde yük değişmez; ama taşıma biçimi değişir. Artık her şeyi tek başına garantilemek zorunda değilsin. Yük sahibine aittir; sen vazifeni güzel yap.",
+          "visual_note": "A person gently setting down a bag beside a tree and resting peacefully, relief.",
+          "keywords": [
+            "setting down bag",
+            "resting",
+            "relief",
+            "peaceful"
+          ]
+        }
+      ],
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#tevekkül",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "YÜKÜ BIRAK"
+    },
+    {
+      "short_id": "short-004",
+      "title": "Ölüm Neden İdam Değildir?",
+      "hook": "Ölümü düşününce içini ne dolduruyor?",
+      "description": "Ölümü farklı anlamlandırmak mümkün mü? #derinokuma #shorts #tefekkür #ölüm #iman",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Ölümü düşününce içini ne dolduruyor? Çoğu insan için bu soru karanlık bir his doğurur. Sanki varoluş orada bitiyor; sanki bütün anlam orada yok oluyor.",
+          "visual_note": "A quiet empty road at twilight, soft fading light, introspective atmosphere.",
+          "keywords": [
+            "empty road",
+            "twilight",
+            "fading light",
+            "introspective"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Ama ölüme başka türlü bakmak mümkündür. Hiçlik değil, yok oluş değil. Bir vazifeden terhis. Fânî hayattan bâkî hayata yapılan bilinçli bir geçiş. Rahîm bir Fail tarafından düzenlenmiş bir sevkiyat.",
+          "visual_note": "A dignified departure scene, sunset, honorable farewell with warm golden tones.",
+          "keywords": [
+            "dignified departure",
+            "sunset",
+            "honorable farewell",
+            "warm"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "İnsan bu dünyaya misafir olarak geldi. Asıl vatanı başka bir yerdir. Ölüm, onu yabancı bir mekândan, aşina bir huzura taşır. Sürgün değil, dönüştür. Son değil, kavuşmadır.",
+          "visual_note": "A long quiet road leading toward a warm glowing horizon, wide cinematic shot.",
+          "keywords": [
+            "long road",
+            "warm horizon",
+            "homecoming",
+            "cinematic"
+          ]
+        },
+        {
+          "scene_id": "scene-004",
+          "narration": "Böyle bakılınca kabir kapısına ağlayarak girmek gerekmez. Yokluğa değil bekaya, karanlığa değil nura, ayrılığa değil visale gidilmektedir.",
+          "visual_note": "A person opening a door to a sunlit garden, golden light flooding in, slow motion.",
+          "keywords": [
+            "opening door",
+            "sunlit garden",
+            "golden light",
+            "hope"
+          ]
+        }
+      ],
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#ölüm",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "ÖLÜM KAVUŞMADIR"
+    },
+    {
+      "short_id": "short-005",
+      "title": "Sevdiklerini Kaybetme Korkusu Nereden Geliyor?",
+      "hook": "İnsan güzel bir şey gördüğünde kalbi onu bırakmak istemez.",
+      "description": "Ayrılık acısı ve sevginin gerçek kaynağı üzerine. #derinokuma #shorts #tefekkür #sevgi #kalp",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan güzel bir şey gördüğünde kalbi onu bırakmak istemez. Sevdiklerine bağlanır, güzelliklere tutunur. Ama bir gün her şey geçer. Ve bu gerçek, kalbi sürekli incitir.",
+          "visual_note": "A person holding a flower gently, then petals beginning to fall, slow motion, soft light.",
+          "keywords": [
+            "flower petals falling",
+            "gentle hands",
+            "slow motion",
+            "transience"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Geçici güzellikler, sonsuz bir güzelliğin yansımalarıdır. Aynalar değişir, aynalar kırılır; ama yansıyan ışığın kaynağı değişmez. Bütün güzelliklerin kaynağı olan, Kendisi bâkidir.",
+          "visual_note": "Sunlight shimmering on moving water, reflections shifting but light source constant.",
+          "keywords": [
+            "shimmering water",
+            "light reflection",
+            "constant source",
+            "beauty"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "O bâki kalınca, başkaları ne olursa olsun merak çekmek gerekmez. Sevgi iptal olmaz; sevgi aslına bağlanır. Sevilenlerdeki güzellik, gerçek kaynağına işaret eder. Ayrılıklar artık bütünüyle karanlık değildir.",
+          "visual_note": "An ornate mirror reflecting warm candlelight, ancient and still, amber tones.",
+          "keywords": [
+            "ornate mirror",
+            "candlelight",
+            "warm amber",
+            "eternal reflection"
+          ]
+        }
+      ],
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#sevgi",
+        "#kalp"
+      ],
+      "thumbnail_or_cover_text": "SEVGİNİN KAYNAĞI"
+    },
+    {
+      "short_id": "short-006",
+      "title": "Hiçbir Emek Boşa Gitmez",
+      "hook": "Emeklerim boşa mı gitti? Bu soru herkese gelir.",
+      "description": "Emeklerinizin kaybolmayacağını bilmek, hayatı nasıl değiştirir? #derinokuma #shorts #tefekkür #iman #teselli",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Emeklerim boşa mı gitti? Bu soru herkese gelir. Özellikle hayatın sonuna yaklaşırken, yapamadıklar ve bırakılanlar ağır basar. Ama bu soru, yanlış bir varsayıma dayanır.",
+          "visual_note": "An elderly person's hands resting on a table, thoughtful, warm light, quiet moment.",
+          "keywords": [
+            "elderly hands",
+            "thoughtful",
+            "quiet moment",
+            "warm light"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Geçen baharın tohumları kaybolmaz. Çekirdekler korunur, sonraki baharda daha şaşaalı çıkar. Her yıl yeryüzünde görülen bu mucize, başka bir şeyi de gösterir: insanın hayatının neticeleri de zayi olmaz.",
+          "visual_note": "Seeds sprouting into new plants in spring, time-lapse, warm natural light, renewal.",
+          "keywords": [
+            "seeds sprouting",
+            "spring renewal",
+            "time-lapse",
+            "new growth"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Her hizmet kaydedilmiş, her amel muhafaza edilmiştir. Bütün hayır O'nun elindedir. Hizmet bitince ücret zamanı gelir. Emek boşa gitmez; zamanı gelince karşılığı görülür.",
+          "visual_note": "An old handwritten journal being carefully closed, hands gentle, library setting, soft light.",
+          "keywords": [
+            "handwritten journal",
+            "careful hands",
+            "library",
+            "preserved"
+          ]
+        }
+      ],
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#teselli"
+      ],
+      "thumbnail_or_cover_text": "EMEK KAYBOLMAZ"
+    }
+  ]
+}

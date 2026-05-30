@@ -1,0 +1,128 @@
+{
+  "video_type": "shorts",
+  "source": "20-mektup-1-makam",
+  "test_day": "day-33",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan bazen öyle bir his duyar: sanki hiçbir şey gerçekten benim değil.",
+      "title_options": [
+        "Sahipsizlik Neden İnsanı Yorar?",
+        "İnsan Neden Sahipsiz Hisseder?",
+        "Gerçek Sahibi Bulunca Ne Olur?",
+        "Sahipsizliğin Sonu Var Mı?"
+      ],
+      "selected_title": "İnsan Neden Sahipsiz Hisseder?",
+      "description": "Sahipsizlik korkusu ve onu aşmanın tek yolu. #derinokuma #shorts #tefekkür #iman #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "SAHİBİNİ BUL"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Kaç kapı çaldın, kaç insana muhtaç oldun, kaç kez anlaşılmak istedin?",
+      "title_options": [
+        "Kaç Kapı Çaldın?",
+        "İnsan Neden Hep Başkasına Muhtaç Hisseder?",
+        "Doğrudan Bir Yol Var Mı?",
+        "Yorgunluğun Sebebi Ne?"
+      ],
+      "selected_title": "Kaç Kapı Çaldın?",
+      "description": "İnsan neden hep başkalarına muhtaç hisseder ve bundan nasıl kurtulur? #derinokuma #shorts #tefekkür #iman #kulluk",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kulluk"
+      ],
+      "thumbnail_or_cover_text": "DOĞRUDAN YOL"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "İnsan neden bu kadar yorulur? Belki taşıdığı yük aslında ona ait değil.",
+      "title_options": [
+        "Hayatın Yükünü Neden Tek Başına Taşıyorsun?",
+        "İnsan Neden Bu Kadar Yorulur?",
+        "Yükü Bırakmak Ne Demek?",
+        "Mülk Kime Ait?"
+      ],
+      "selected_title": "Hayatın Yükünü Neden Tek Başına Taşıyorsun?",
+      "description": "Hayatın ağırlığını bırakmanın ne demek olduğunu düşünmek için. #derinokuma #shorts #tefekkür #tevekkül #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#tevekkül",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "YÜKÜ BIRAK"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Ölümü düşününce içini ne dolduruyor?",
+      "title_options": [
+        "Ölüm Neden İdam Değildir?",
+        "Ölüm Neden Bir Son Değil?",
+        "Kabir Kapısına Neden Gülerek Girilir?",
+        "Ölüm Neden Kavuşmadır?"
+      ],
+      "selected_title": "Ölüm Neden İdam Değildir?",
+      "description": "Ölümü farklı anlamlandırmak mümkün mü? #derinokuma #shorts #tefekkür #ölüm #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#ölüm",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "ÖLÜM KAVUŞMADIR"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İnsan güzel bir şey gördüğünde kalbi onu bırakmak istemez.",
+      "title_options": [
+        "Sevdiklerini Kaybetme Korkusu Nereden Geliyor?",
+        "Ayrılık Neden Bu Kadar Acıtır?",
+        "Sevginin Asıl Kaynağı Nerede?",
+        "Geçici Güzellikler Neden Yeterli Değil?"
+      ],
+      "selected_title": "Sevdiklerini Kaybetme Korkusu Nereden Geliyor?",
+      "description": "Ayrılık acısı ve sevginin gerçek kaynağı üzerine. #derinokuma #shorts #tefekkür #sevgi #kalp",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#sevgi",
+        "#kalp"
+      ],
+      "thumbnail_or_cover_text": "SEVGİNİN KAYNAĞI"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Emeklerim boşa mı gitti? Bu soru herkese gelir.",
+      "title_options": [
+        "Hiçbir Emek Boşa Gitmez",
+        "Emeklerin Nereye Gider?",
+        "Hayatın Neticeleri Kaybolur Mu?",
+        "Neden Boşa Gitmez?"
+      ],
+      "selected_title": "Hiçbir Emek Boşa Gitmez",
+      "description": "Emeklerinizin kaybolmayacağını bilmek, hayatı nasıl değiştirir? #derinokuma #shorts #tefekkür #iman #teselli",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#teselli"
+      ],
+      "thumbnail_or_cover_text": "EMEK KAYBOLMAZ"
+    }
+  ]
+}
