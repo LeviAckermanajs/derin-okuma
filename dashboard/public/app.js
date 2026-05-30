@@ -72,8 +72,9 @@ function switchTab(tabId) {
     btn.classList.toggle('active', btn.dataset.tab === tabId));
   document.querySelectorAll('.tab-panel').forEach(panel =>
     panel.classList.toggle('hidden', panel.id !== `tab-${tabId}`));
-  if (tabId === 'drafts') loadDrafts();
-  if (tabId === 'shorts') loadOverview();
+  if (tabId === 'drafts')   loadDrafts();
+  if (tabId === 'shorts')   loadOverview();
+  if (tabId === 'services') loadServices();
 }
 
 // ── Draft list ─────────────────────────────────────────────────────────────
@@ -851,6 +852,148 @@ async function fillTokenCard() {
   }
 }
 
+// ── Services tab ─────────────────────────────────────────────────────────
+
+function svcIndicator(status) {
+  const cls = {
+    up: 'svc-indicator-up', down: 'svc-indicator-down',
+    running: 'svc-indicator-running', stopped: 'svc-indicator-stopped',
+  }[status] || 'svc-indicator-unknown';
+  return `<span class="svc-indicator ${cls}"></span>`;
+}
+
+function svcLabel(status) {
+  const map = { up: 'çalışıyor', down: 'kapalı', running: 'running', stopped: 'durduruldu' };
+  return map[status] ?? status ?? '—';
+}
+
+function renderServicesPage(st) {
+  const { postgres, redis, n8n_main, n8n_worker, renderer } = st;
+
+  function row(name, status, meta = '') {
+    return `<div class="svc-status-row">
+      ${svcIndicator(status)}
+      <span class="svc-name">${name}</span>
+      <span>${svcLabel(status)}</span>
+      ${meta ? `<span class="svc-meta">${meta}</span>` : ''}
+    </div>`;
+  }
+
+  const pgNote = postgres.manual_start
+    ? `<div class="svc-manual-note">⚠ PostgreSQL kapalı — terminalde çalıştırın:<br><code>${esc(postgres.manual_start)}</code></div>` : '';
+  const rdNote = redis.manual_start
+    ? `<div class="svc-manual-note">⚠ Redis kapalı — terminalde çalıştırın:<br><code>${esc(redis.manual_start)}</code></div>` : '';
+
+  return `
+    <div class="detail-grid" style="max-width:860px;margin:0 auto">
+      <div class="detail-card full-width">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <h3 style="margin:0">Servis Durumu</h3>
+          <button class="btn-ghost" id="svc-refresh-btn">↻ Durumu Kontrol Et</button>
+        </div>
+        ${row('PostgreSQL', postgres.status)}
+        ${row('Redis',      redis.status)}
+        ${row('n8n Main',  n8n_main.status,   `port ${n8n_main.port}`)}
+        ${row('n8n Worker', n8n_worker.status, n8n_worker.pid ? `PID ${n8n_worker.pid}` : '')}
+        ${row('Renderer',  renderer.status,   `port ${renderer.port}`)}
+        ${pgNote}${rdNote}
+      </div>
+
+      <div class="detail-card full-width">
+        <h3>Servis Başlatma</h3>
+        <div class="action-bar" style="margin-top:10px">
+          <button class="btn-action" id="svc-start-n8n-main"
+            title="bash scripts/start-n8n-queue-main.sh (scene-blog-video)">⊕ N8N Main Başlat</button>
+          <button class="btn-action" id="svc-start-n8n-worker"
+            title="bash scripts/start-n8n-queue-worker.sh (scene-blog-video)">⊕ N8N Worker Başlat</button>
+          <button class="btn-action" id="svc-start-renderer"
+            title="bash scripts/start-renderer.sh (scene-blog-video)">⊕ Renderer Başlat</button>
+        </div>
+        <div class="action-bar action-bar-secondary" style="margin-top:8px">
+          <button class="btn-action" id="svc-open-n8n"
+            title="http://127.0.0.1:5678">↗ N8N'i Aç</button>
+          <button class="btn-action" id="svc-renderer-health"
+            title="GET http://127.0.0.1:8000/health">♥ Renderer Health Check</button>
+        </div>
+        <p class="muted-text small" style="margin-top:12px">
+          Not: PostgreSQL ve Redis sudo gerektirir —
+          <code>sudo service postgresql start</code> /
+          <code>sudo service redis-server start</code>
+          komutlarını terminalde çalıştırın.
+        </p>
+      </div>
+    </div>`;
+}
+
+function wireServicesButtons() {
+  document.getElementById('svc-refresh-btn')?.addEventListener('click', loadServices);
+
+  document.getElementById('svc-open-n8n')?.addEventListener('click', () => {
+    window.open('http://127.0.0.1:5678', '_blank');
+  });
+
+  document.getElementById('svc-renderer-health')?.addEventListener('click', async () => {
+    const btn = document.getElementById('svc-renderer-health');
+    const origText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = '…';
+    try {
+      const res  = await fetch('/api/action', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'renderer-health' }),
+      });
+      const data = await res.json();
+      if (data.ok) {
+        btn.textContent = `✓ ${data.status ?? 200}`;
+        btn.style.color = '#4caf86';
+      } else {
+        btn.textContent = `✗ ${data.error ?? data.status ?? 'hata'}`;
+        btn.style.color = '#d05555';
+      }
+    } catch (e) {
+      btn.textContent = `✗ ${e.message}`;
+      btn.style.color = '#d05555';
+    }
+    setTimeout(() => { btn.textContent = origText; btn.style.color = ''; btn.disabled = false; }, 3000);
+  });
+
+  for (const [btnId, action, label] of [
+    ['svc-start-n8n-main',   'start-n8n-main',   'N8N Main Başlat'],
+    ['svc-start-n8n-worker', 'start-n8n-worker', 'N8N Worker Başlat'],
+    ['svc-start-renderer',   'start-renderer',   'Renderer Başlat'],
+  ]) {
+    const cmdMap = {
+      'start-n8n-main':   'bash scripts/start-n8n-queue-main.sh\n# Dizin: ~/projects/scene-blog-video',
+      'start-n8n-worker': 'bash scripts/start-n8n-queue-worker.sh\n# Dizin: ~/projects/scene-blog-video',
+      'start-renderer':   'bash scripts/start-renderer.sh\n# Dizin: ~/projects/scene-blog-video',
+    };
+    document.getElementById(btnId)?.addEventListener('click', () => {
+      openModal({
+        title:   label,
+        label:   `${label} — arka planda başlatılır`,
+        command: cmdMap[action],
+        cwd:     '~/projects/scene-blog-video',
+        action,
+        slug:    '',
+        params:  {},
+      });
+    });
+  }
+}
+
+async function loadServices() {
+  const el = document.getElementById('services-content');
+  if (!el) return;
+  el.innerHTML = '<div class="loading" style="padding:32px">Servis durumu kontrol ediliyor…</div>';
+  try {
+    const st = await apiFetch('/api/services/status');
+    el.innerHTML = renderServicesPage(st);
+    wireServicesButtons();
+  } catch (err) {
+    el.innerHTML = `<div class="loading" style="padding:32px;color:#d05555">Hata: ${esc(err.message)}</div>`;
+  }
+}
+
 // ── Modal ─────────────────────────────────────────────────────────────────
 
 function stopJobMonitor() {
@@ -995,6 +1138,19 @@ async function runModal() {
     });
     const data = await res.json();
 
+    // Already running (service check returned without starting)
+    if (data.already_running) {
+      statusEl.className   = 'modal-status ok';
+      statusEl.textContent = data.port
+        ? `Zaten çalışıyor (port ${data.port}).`
+        : 'Zaten çalışıyor.';
+      outputEl.textContent = '(no output)';
+      runBtn.disabled    = false;
+      runBtn.textContent = 'Tekrar Çalıştır';
+      loadServices();  // refresh services tab if open
+      return;
+    }
+
     // Background job — stream logs via polling; button re-enabled when job ends
     if (data.job_id) {
       statusEl.className   = 'modal-status';
@@ -1046,6 +1202,8 @@ document.getElementById('refresh-btn').addEventListener('click', () => {
   } else if (activeTab === 'shorts') {
     if (currentSlug) showDetail(currentSlug);
     else loadOverview();
+  } else if (activeTab === 'services') {
+    loadServices();
   }
   refreshTokenBadge();
 });
@@ -1071,7 +1229,8 @@ document.querySelectorAll('.tab-btn').forEach(btn =>
 })();
 
 setInterval(() => {
-  if (activeTab === 'drafts' && !currentDraft) loadDrafts();
-  else if (activeTab === 'shorts' && !currentSlug) loadOverview();
+  if      (activeTab === 'drafts'   && !currentDraft) loadDrafts();
+  else if (activeTab === 'shorts'   && !currentSlug)  loadOverview();
+  else if (activeTab === 'services')                  loadServices();
   refreshTokenBadge();
 }, 30_000);

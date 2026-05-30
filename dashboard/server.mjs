@@ -5,6 +5,7 @@ import http              from 'http';
 import fs                from 'fs';
 import path              from 'path';
 import { spawnSync, spawn } from 'child_process';
+import net                  from 'net';
 import { fileURLToPath } from 'url';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
@@ -28,6 +29,15 @@ const CLAUDE_BIN   = '/home/muhammet/.nvm/versions/node/v24.15.0/bin/claude';
 const EXPORT_ROOT  = process.env.DERIN_OKUMA_EXPORT_ROOT || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
 const N8N_URL      = process.env.N8N_URL || 'http://localhost:5678';
 
+const SBV_ROOT      = '/home/muhammet/projects/scene-blog-video';
+const N8N_PORT      = 5678;
+const RENDERER_PORT = 8000;
+const SERVICE_JOBS  = {
+  'n8n-main':   'svc-n8n-main',
+  'n8n-worker': 'svc-n8n-worker',
+  'renderer':   'svc-renderer',
+};
+
 const MIME = {
   '.html': 'text/html; charset=utf-8',
   '.js':   'application/javascript; charset=utf-8',
@@ -39,6 +49,12 @@ try { fs.mkdirSync(JOBS_DIR, { recursive: true }); } catch {}
 const ALLOWED_ACTIONS = new Set([
   'validate-shorts', 'export-captions', 'tiktok-dry-run',
   'shorts-prep', 'shorts-fill', 'batch-create', 'blog-add',
+  'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
+]);
+
+// Actions that don't require a slug parameter
+const NO_SLUG_ACTIONS = new Set([
+  'blog-add', 'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
 ]);
 
 // ── File helpers ──────────────────────────────────────────────────────────
@@ -73,7 +89,7 @@ function readJobStatus(jobId) {
   return status;
 }
 
-function startBackgroundJob(args, env, jobId) {
+function startBackgroundJob(args, env, jobId, executable = process.execPath) {
   const logPath = path.join(JOBS_DIR, `${jobId}.log`);
   const initial = {
     job_id:    jobId,
@@ -92,7 +108,7 @@ function startBackgroundJob(args, env, jobId) {
 
   let child;
   try {
-    child = spawn(process.execPath, args, {
+    child = spawn(executable, args, {
       cwd:      ROOT,
       env:      env || process.env,
       detached: true,
@@ -127,6 +143,58 @@ function startBackgroundJob(args, env, jobId) {
 
   child.unref();
   return { job_id: jobId, pid: child.pid };
+}
+
+// ── Service helpers ───────────────────────────────────────────────────────
+
+function checkPortOpen(port, host = '127.0.0.1', timeoutMs = 1500) {
+  return new Promise(resolve => {
+    const socket = net.createConnection({ port, host });
+    socket.setTimeout(timeoutMs);
+    socket.on('connect', () => { socket.destroy(); resolve(true); });
+    socket.on('error',   () => resolve(false));
+    socket.on('timeout', () => { socket.destroy(); resolve(false); });
+  });
+}
+
+function checkRendererHealth() {
+  return new Promise(resolve => {
+    const req = http.get(`http://127.0.0.1:${RENDERER_PORT}/health`, res => {
+      let body = '';
+      res.on('data', d => { body += d; });
+      res.on('end', () => resolve({ ok: res.statusCode === 200, status: res.statusCode, body: body.slice(0, 500) }));
+    });
+    req.setTimeout(2000, () => { req.destroy(); resolve({ ok: false, error: 'timeout' }); });
+    req.on('error', e => resolve({ ok: false, error: e.message }));
+  });
+}
+
+async function apiServicesStatus() {
+  // Postgres: pg_isready (read-only check, no sudo)
+  const pgResult  = spawnSync('pg_isready', ['-h', '127.0.0.1', '-p', '5432', '-q'], { timeout: 2000, encoding: 'utf8' });
+  const pgUp      = pgResult.status === 0;
+
+  // Redis: redis-cli ping (read-only check, no sudo)
+  const rdResult  = spawnSync('redis-cli', ['-h', '127.0.0.1', '-p', '6379', 'ping'], { timeout: 2000, encoding: 'utf8' });
+  const redisUp   = rdResult.status === 0 && (rdResult.stdout || '').trim() === 'PONG';
+
+  // n8n main: port 5678
+  const n8nUp     = await checkPortOpen(N8N_PORT);
+
+  // n8n worker: tracked via job file + PID check
+  const workerJob = readJobStatus(SERVICE_JOBS['n8n-worker']);
+  const workerRunning = workerJob?.status === 'running';
+
+  // renderer: port 8000
+  const rendUp    = await checkPortOpen(RENDERER_PORT);
+
+  return {
+    postgres:   { status: pgUp       ? 'up'      : 'down',    manual_start: pgUp    ? null : 'sudo service postgresql start'  },
+    redis:      { status: redisUp    ? 'up'      : 'down',    manual_start: redisUp ? null : 'sudo service redis-server start' },
+    n8n_main:   { status: n8nUp      ? 'up'      : 'down',    port: N8N_PORT },
+    n8n_worker: { status: workerRunning ? 'running' : 'stopped', pid: workerJob?.pid ?? null },
+    renderer:   { status: rendUp     ? 'up'      : 'down',    port: RENDERER_PORT },
+  };
 }
 
 // ── Export-folder naming (must match build-publish-manifest.mjs exactly) ─
@@ -629,12 +697,46 @@ function buildCommand(action, slug, params = {}) {
   return { error: 'unknown_action' };
 }
 
-function handleAction(body) {
+async function handleAction(body) {
   const { action, slug, params } = body ?? {};
-  if (!action)                                       return { error: 'missing_action' };
-  if (action !== 'blog-add' && !slug)                return { error: 'missing_slug' };
-  if (slug && !/^[a-zA-Z0-9_-]+$/.test(slug))       return { error: 'invalid_slug' };
-  if (!ALLOWED_ACTIONS.has(action))                  return { error: 'unknown_action' };
+  if (!action)                                          return { error: 'missing_action' };
+  if (!NO_SLUG_ACTIONS.has(action) && !slug)            return { error: 'missing_slug' };
+  if (slug && !/^[a-zA-Z0-9_-]+$/.test(slug))          return { error: 'invalid_slug' };
+  if (!ALLOWED_ACTIONS.has(action))                     return { error: 'unknown_action' };
+
+  // ── Service actions (no slug, async port/process checks) ─────────────────
+  if (action === 'service-status') {
+    return apiServicesStatus();
+  }
+  if (action === 'renderer-health') {
+    const h = await checkRendererHealth();
+    return { action, ...h };
+  }
+  if (action === 'start-n8n-main') {
+    if (await checkPortOpen(N8N_PORT)) return { action, already_running: true, port: N8N_PORT };
+    const r = startBackgroundJob(
+      [path.join(SBV_ROOT, 'scripts', 'start-n8n-queue-main.sh')],
+      process.env, SERVICE_JOBS['n8n-main'], 'bash'
+    );
+    return r.error ? { error: r.error } : { action, job_id: r.job_id, background: true };
+  }
+  if (action === 'start-n8n-worker') {
+    const wj = readJobStatus(SERVICE_JOBS['n8n-worker']);
+    if (wj?.status === 'running') return { action, already_running: true };
+    const r = startBackgroundJob(
+      [path.join(SBV_ROOT, 'scripts', 'start-n8n-queue-worker.sh')],
+      process.env, SERVICE_JOBS['n8n-worker'], 'bash'
+    );
+    return r.error ? { error: r.error } : { action, job_id: r.job_id, background: true };
+  }
+  if (action === 'start-renderer') {
+    if (await checkPortOpen(RENDERER_PORT)) return { action, already_running: true, port: RENDERER_PORT };
+    const r = startBackgroundJob(
+      [path.join(SBV_ROOT, 'scripts', 'start-renderer.sh')],
+      process.env, SERVICE_JOBS['renderer'], 'bash'
+    );
+    return r.error ? { error: r.error } : { action, job_id: r.job_id, background: true };
+  }
 
   const cmd = buildCommand(action, slug || '', params ?? {});
   if (cmd.error) return cmd;
@@ -784,7 +886,7 @@ const server = http.createServer(async (req, res) => {
     if (pathname === '/api/action') {
       try {
         const body   = await readBody(req);
-        const result = handleAction(body);
+        const result = await handleAction(body);
         return sendJson(res, result, result.error ? 400 : 200);
       } catch (err) {
         return sendJson(res, { error: err.message }, 400);
@@ -797,11 +899,12 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(405); res.end('Method Not Allowed'); return;
   }
 
-  if (pathname === '/api/config')       return sendJson(res, apiConfig());
-  if (pathname === '/api/slugs')        return sendJson(res, apiSlugs());
-  if (pathname === '/api/token-status') return sendJson(res, apiTokenStatus());
-  if (pathname === '/api/drafts')       return sendJson(res, apiDrafts());
-  if (pathname === '/api/drafts-list')  return sendJson(res, apiDraftsList());
+  if (pathname === '/api/config')           return sendJson(res, apiConfig());
+  if (pathname === '/api/slugs')            return sendJson(res, apiSlugs());
+  if (pathname === '/api/token-status')     return sendJson(res, apiTokenStatus());
+  if (pathname === '/api/drafts')           return sendJson(res, apiDrafts());
+  if (pathname === '/api/drafts-list')      return sendJson(res, apiDraftsList());
+  if (pathname === '/api/services/status')  return sendJson(res, await apiServicesStatus());
 
   const jobLogsMatch = pathname.match(/^\/api\/job\/([^/]+)\/logs$/);
   if (jobLogsMatch) {
