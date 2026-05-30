@@ -702,6 +702,48 @@ pre.modal-output {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
+/* ── Modal confirm section (YouTube real upload) ──────────────────────────── */
+
+.modal-confirm {
+  margin-top: 12px;
+  padding: 12px;
+  background: #1e1510;
+  border: 1px solid #5a3a10;
+  border-radius: 6px;
+}
+
+.modal-confirm-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #d4a82a;
+  line-height: 1.4;
+}
+
+.modal-confirm-check input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: #d4a82a;
+  width: 14px;
+  height: 14px;
+}
+
+.modal-confirm-type {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.modal-confirm-type code {
+  background: var(--code-bg);
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: var(--text);
+  font-size: 12px;
+}
+
 /* ── Services tab ─────────────────────────────────────────────────────────── */
 
 .svc-status-row {

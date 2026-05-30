@@ -244,54 +244,72 @@ function cardDraftWorkflowParams(d) {
           <input class="param-input" id="dp-run-id" type="text"
             value="${esc(defRunId)}" placeholder="day1-batch-a">
         </div>
+        <div class="param-field">
+          <label class="param-label" for="dp-yt-date">YouTube Takvim Tarihi</label>
+          <input class="param-input" id="dp-yt-date" type="date"
+            value="${new Date().toISOString().slice(0,10)}"
+            min="${new Date().toISOString().slice(0,10)}">
+        </div>
       </div>
     </div>`;
 }
 
 function cardDraftActions(d) {
-  const status           = d.status;
-  const sd               = d.slug_detail;
-  const slug             = d.blog_slug || '';
-  const hasBlog          = !!slug;
-  const hasPrep          = ['prep_ready','filled','batch_ready','exported','youtube_uploaded'].includes(status);
-  const hasFilled        = ['filled','batch_ready','exported','youtube_uploaded'].includes(status);
-  const hasBatch         = !!sd?.batch_exists;
-  const isFilled         = sd?.package_status === 'filled';
-  const hasPipelineStatus = !!sd?.pipeline;
+  const status      = d.status;
+  const sd          = d.slug_detail;
+  const slug        = d.blog_slug || '';
+  const hasBlog     = !!slug;
+  const hasPrep     = ['prep_ready','filled','batch_ready','exported','youtube_uploaded'].includes(status);
+  const hasBatch    = !!sd?.batch_exists;
+  const isFilled    = sd?.package_status === 'filled';
+  const hasPipeline = !!sd?.pipeline;
+  const valPass     = !!sd?.validation_passed;
+  const hasManifest = !!sd?.publish_manifest_exists;
+  const ttPlanOk    = !!sd?.tiktok_upload_plan_exists;
 
-  const actionBtn = (action, label, enabled, warn = false, hint = '') => {
-    const dis       = enabled ? '' : ' disabled';
-    const cls       = !enabled ? ' btn-disabled' : warn ? ' btn-warn' : '';
-    const titleAttr = hint ? ` title="${esc(hint)}"` : '';
-    return `<button class="btn-action${cls}" data-draft-action="${action}"${dis}${titleAttr}>${label}</button>`;
+  const ab = (action, label, enabled, warn=false, hint='') => {
+    const dis = enabled ? '' : ' disabled';
+    const cls = !enabled ? ' btn-disabled' : warn ? ' btn-warn' : '';
+    const ta  = hint ? ` title="${esc(hint)}"` : '';
+    return `<button class="btn-action${cls}" data-draft-action="${action}"${dis}${ta}>${label}</button>`;
   };
 
-  const fillEnabled = hasPrep && hasPipelineStatus;
-  const fillHint    = (hasPrep && !hasPipelineStatus)
-    ? 'Pipeline status eksik — önce Shorts Prep Oluştur\'u çalıştırın.'
-    : '';
+  const fillEnabled = hasPrep && hasPipeline;
+  const fillHint    = (hasPrep && !hasPipeline)
+    ? 'Pipeline status eksik — önce Shorts Prep Oluştur\'u çalıştırın.' : '';
+  const ytHint      = !hasManifest
+    ? 'publish-manifest.json bulunamadı. Önce n8n export akışını tamamla.' : '';
 
   return `
     <div class="detail-card full-width">
       <h3>Workflow Aksiyonları</h3>
       <div class="action-bar">
-        ${actionBtn('blog-add',       '+ Blog Yazısını Ekle',         !hasBlog)}
-        ${actionBtn('shorts-prep',    '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog, isFilled)}
-        ${actionBtn('shorts-fill',    '◇ Claude ile Paketi Doldur',   fillEnabled, false, fillHint)}
-        ${actionBtn('validate-shorts','✓ Validate Shorts',            hasPrep)}
-        ${actionBtn('batch-create',   '⊞ Batch Oluştur',              hasFilled)}
-        ${actionBtn('copy-batch',     '⎘ Copy Batch Load Input',      hasBatch)}
+        ${ab('blog-add',        '+ Blog Yazısını Ekle',         !hasBlog)}
+        ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog,              isFilled)}
+        ${ab('shorts-fill',     '◇ Claude ile Paketi Doldur',   fillEnabled,          false,  fillHint)}
+        ${ab('validate-shorts', '✓ Validate Shorts',            hasPrep)}
+        ${ab('batch-create',    '⊞ Batch Oluştur',              valPass)}
+        ${ab('copy-batch',      '⎘ Copy Batch Load Input',      hasBatch)}
+        ${ab('open-n8n',        '↗ Open n8n',                   hasBlog)}
+        ${ab('youtube-dry-run', '▷ YouTube Dry Run',            hasBlog && hasManifest, false, ytHint)}
+        ${ab('youtube-upload',  '▲ Planlı YouTube Upload',      hasBlog && hasManifest, false, ytHint)}
+        ${ab('export-captions', '⬇ Export TikTok Captions',    ttPlanOk)}
+        ${ab('tiktok-dry-run',  '⬡ TikTok Upload Dry Run',     ttPlanOk)}
       </div>
-      ${(hasPrep && !hasPipelineStatus) ? `<div class="stale-note" style="margin-top:10px">⚠ Pipeline status dosyası bulunamadı — "Shorts Prep Oluştur" çalıştırarak oluşturun.</div>` : ''}
+      ${(hasPrep && !hasPipeline)
+        ? `<div class="stale-note" style="margin-top:10px">⚠ Pipeline status dosyası bulunamadı — "Shorts Prep Oluştur" çalıştırarak oluşturun.</div>` : ''}
+      ${(hasBlog && !hasManifest)
+        ? `<div class="stale-note" style="margin-top:10px">⚠ publish-manifest.json bulunamadı — YouTube upload için önce n8n export akışını tamamla.</div>` : ''}
     </div>`;
 }
 
 function collectDraftParams(d) {
   return {
-    title:      (document.getElementById('dp-title')?.value  ?? '').trim(),
-    day:         document.getElementById('dp-day')?.value    ?? '',
-    run_id:     (document.getElementById('dp-run-id')?.value ?? '').trim(),
-    draft_path: d.draft_path,
+    title:         (document.getElementById('dp-title')?.value   ?? '').trim(),
+    day:            document.getElementById('dp-day')?.value     ?? '',
+    run_id:        (document.getElementById('dp-run-id')?.value  ?? '').trim(),
+    schedule_date: (document.getElementById('dp-yt-date')?.value ?? '').trim(),
+    draft_path:    d.draft_path,
   };
 }
 
@@ -304,6 +322,8 @@ function wireDraftDetailButtons(d) {
       const cwd    = config.cwd || '.';
       const sd     = d.slug_detail;
 
+      if (action === 'open-n8n') { window.open(config.n8n_url, '_blank'); return; }
+
       if (action === 'copy-batch') {
         if (!slug) return;
         try {
@@ -313,6 +333,11 @@ function wireDraftDetailButtons(d) {
         } catch { flashBtn(btn, '✗ Hata', true); }
         return;
       }
+
+      const tiktokPlan = sd?.tiktok_upload_plan_exists
+        ? `${sd.export_folder}/tiktok-upload-plan.json` : null;
+      const ytDate     = p.schedule_date || new Date().toISOString().slice(0,10);
+      const folderName = sd?.export_folder ? sd.export_folder.split('/').filter(Boolean).pop() : '<export>';
 
       const SPECS = {
         'blog-add': {
@@ -355,6 +380,40 @@ function wireDraftDetailButtons(d) {
             ? `node scripts/build-video-batch.mjs --slug ${slug} --type shorts --run-id ${p.run_id} --force`
             : null,
           cwd,
+        },
+        'export-captions': {
+          title:   'Export TikTok Captions',
+          label:   'TikTok altyazı dışa aktarma',
+          command: tiktokPlan
+            ? `node scripts/export-tiktok-captions.mjs --plan "${tiktokPlan}"`
+            : null,
+          cwd,
+        },
+        'tiktok-dry-run': {
+          title:   'TikTok Upload Dry Run',
+          label:   'TikTok yükleme önizlemesi (--dry-run)',
+          command: tiktokPlan
+            ? `node scripts/upload-tiktok-batch-real.mjs --plan "${tiktokPlan}" --dry-run`
+            : null,
+          cwd,
+        },
+        'youtube-dry-run': {
+          title:   'YouTube Dry Run',
+          label:   'YouTube yükleme önizlemesi (--dry-run)',
+          command: sd?.publish_manifest_exists
+            ? `npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${ytDate} --dry-run`
+            : null,
+          cwd,
+        },
+        'youtube-upload': {
+          title:          'Planlı YouTube Upload',
+          label:          'YouTube\'a gerçek planlı video yükleme',
+          command:        sd?.publish_manifest_exists
+            ? `YOUTUBE_REAL_UPLOAD=1 npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${ytDate} --force`
+            : null,
+          cwd,
+          warning:        '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
+          requireConfirm: true,
         },
       };
 
@@ -497,6 +556,12 @@ function cardWorkflowParams(d) {
           <input class="param-input" id="param-draft-path" type="text"
             placeholder="docs/drafts/filename.txt" list="drafts-datalist">
           <datalist id="drafts-datalist"></datalist>
+        </div>
+        <div class="param-field">
+          <label class="param-label" for="param-yt-date">YouTube Takvim Tarihi</label>
+          <input class="param-input" id="param-yt-date" type="date"
+            value="${new Date().toISOString().slice(0,10)}"
+            min="${new Date().toISOString().slice(0,10)}">
         </div>
       </div>
     </div>`;
@@ -651,60 +716,45 @@ function cardShorts(d) {
 }
 
 function cardActions(d) {
-  const ttPlanOk  = d.tiktok_upload_plan_exists;
-  const batchOk   = d.batch_exists;
-  const pkgFilled = d.package_status === 'filled';
+  const ttPlanOk    = d.tiktok_upload_plan_exists;
+  const batchOk     = d.batch_exists;
+  const pkgFilled   = d.package_status === 'filled';
+  const hasPipeline = !!d.pipeline;
+  const valPass     = !!d.validation_passed;
+  const hasManifest = !!d.publish_manifest_exists;
+  const hasPkg      = d.package_status !== 'missing';
+
+  const fillEnabled = hasPkg && hasPipeline;
+  const fillHint    = (hasPkg && !hasPipeline)
+    ? 'Pipeline status eksik — önce Shorts Prep Oluştur\'u çalıştırın.' : '';
+  const ytHint      = !hasManifest
+    ? 'publish-manifest.json bulunamadı. Önce n8n export akışını tamamla.' : '';
+
+  const ab = (action, label, enabled, warn=false, hint='') => {
+    const dis = enabled ? '' : ' disabled';
+    const cls = !enabled ? ' btn-disabled' : warn ? ' btn-warn' : '';
+    const ta  = hint ? ` title="${esc(hint)}"` : '';
+    return `<button class="btn-action${cls}" data-action="${action}"${dis}${ta}>${label}</button>`;
+  };
 
   return `
     <div class="detail-card full-width">
       <h3>Aksiyonlar</h3>
       <div class="action-bar">
-        <button class="btn-action" data-action="blog-add"
-          title="claude -p /add-blog-post &lt;draft_path&gt;">
-          + Blog Yazısını Ekle
-        </button>
-        <button class="btn-action${pkgFilled ? ' btn-warn' : ''}" data-action="shorts-prep"
-          title="node scripts/prepare-video-package.mjs --title ... --day ... --slug ${esc(d.slug)} --force">
-          ⊕ Shorts Prep Oluştur${pkgFilled ? ' ⚠' : ''}
-        </button>
-        <button class="btn-action" data-action="shorts-fill"
-          title="node scripts/run-shorts-fill-with-claude.mjs --slug ${esc(d.slug)} --run-id ...">
-          ◇ Claude ile Paketi Doldur
-        </button>
-        <button class="btn-action" data-action="validate-shorts"
-          title="node scripts/validate-video-package.mjs --slug ${esc(d.slug)} --type shorts --report">
-          ✓ Validate Shorts
-        </button>
-        <button class="btn-action" data-action="batch-create"
-          title="node scripts/build-video-batch.mjs --slug ${esc(d.slug)} --type shorts --run-id ... --force">
-          ⊞ Batch Oluştur
-        </button>
-        <button class="btn-action ${batchOk ? '' : 'btn-disabled'}"
-          data-action="copy-batch" ${batchOk ? '' : 'disabled'}
-          title="Batch load input içeriğini panoya kopyala">
-          ⎘ Copy Batch Load Input
-        </button>
+        ${ab('blog-add',        '+ Blog Yazısını Ekle',         !d.blog_exists)}
+        ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (pkgFilled ? ' ⚠' : ''), true,          pkgFilled)}
+        ${ab('shorts-fill',     '◇ Claude ile Paketi Doldur',   fillEnabled,         false, fillHint)}
+        ${ab('validate-shorts', '✓ Validate Shorts',            hasPkg)}
+        ${ab('batch-create',    '⊞ Batch Oluştur',              valPass)}
+        ${ab('copy-batch',      '⎘ Copy Batch Load Input',      batchOk)}
+        ${ab('open-n8n',        '↗ Open n8n',                   true)}
+        ${ab('youtube-dry-run', '▷ YouTube Dry Run',            hasManifest,         false, ytHint)}
+        ${ab('youtube-upload',  '▲ Planlı YouTube Upload',      hasManifest,         false, ytHint)}
+        ${ab('export-captions', '⬇ Export TikTok Captions',    ttPlanOk)}
+        ${ab('tiktok-dry-run',  '⬡ TikTok Upload Dry Run',     ttPlanOk)}
+        ${ab('refresh',         '↻ Refresh',                    true)}
       </div>
-      <div class="action-bar action-bar-secondary">
-        <button class="btn-action ${ttPlanOk ? '' : 'btn-disabled'}"
-          data-action="export-captions" ${ttPlanOk ? '' : 'disabled'}
-          title="node scripts/export-tiktok-captions.mjs --plan ...">
-          ⬇ Export TikTok Captions
-        </button>
-        <button class="btn-action ${ttPlanOk ? '' : 'btn-disabled'}"
-          data-action="tiktok-dry-run" ${ttPlanOk ? '' : 'disabled'}
-          title="node scripts/upload-tiktok-batch-real.mjs --plan ... --dry-run">
-          ⬡ TikTok Upload Dry Run
-        </button>
-        <button class="btn-action" data-action="open-n8n"
-          title="n8n arayüzünü aç">
-          ↗ Open n8n
-        </button>
-        <button class="btn-action" data-action="refresh"
-          title="Detay panelini yenile">
-          ↻ Refresh
-        </button>
-      </div>
+      ${!hasManifest ? `<div class="stale-note" style="margin-top:10px">⚠ publish-manifest.json bulunamadı — YouTube upload için önce n8n export akışını tamamla.</div>` : ''}
     </div>`;
 }
 
@@ -712,10 +762,11 @@ function cardActions(d) {
 
 function collectParams() {
   return {
-    title:      (document.getElementById('param-title')?.value      ?? '').trim(),
-    day:         document.getElementById('param-day')?.value        ?? '',
-    run_id:     (document.getElementById('param-run-id')?.value     ?? '').trim(),
-    draft_path: (document.getElementById('param-draft-path')?.value ?? '').trim(),
+    title:         (document.getElementById('param-title')?.value      ?? '').trim(),
+    day:            document.getElementById('param-day')?.value        ?? '',
+    run_id:        (document.getElementById('param-run-id')?.value     ?? '').trim(),
+    schedule_date: (document.getElementById('param-yt-date')?.value    ?? '').trim(),
+    draft_path:    (document.getElementById('param-draft-path')?.value ?? '').trim(),
   };
 }
 
@@ -814,6 +865,24 @@ function wireDetailButtons(d) {
             ? `claude -p "/add-blog-post ${p.draft_path}"`
             : null,
           cwd,
+        },
+        'youtube-dry-run': {
+          title:   'YouTube Dry Run',
+          label:   'YouTube yükleme önizlemesi (--dry-run)',
+          command: d.publish_manifest_exists && p.schedule_date
+            ? `npm run video:youtube:upload-batch -- \\\n  --manifest "<export>/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${p.schedule_date} --dry-run`
+            : null,
+          cwd,
+        },
+        'youtube-upload': {
+          title:          'Planlı YouTube Upload',
+          label:          'YouTube\'a gerçek planlı video yükleme',
+          command:        d.publish_manifest_exists && p.schedule_date
+            ? `YOUTUBE_REAL_UPLOAD=1 npm run video:youtube:upload-batch -- \\\n  --manifest "<export>/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${p.schedule_date} --force`
+            : null,
+          cwd,
+          warning:        '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
+          requireConfirm: true,
         },
       };
 
@@ -1086,8 +1155,21 @@ function openModal(spec) {
     ? `<pre class="modal-code">${esc(spec.command)}</pre>`
     : `<div class="modal-no-command">⚠ Komut üretilemedi — gerekli parametre eksik veya dosya bulunamadı.</div>`;
 
+  const confirmBlock = spec.requireConfirm ? `
+    <div class="modal-confirm" id="modal-confirm">
+      <label class="modal-confirm-check">
+        <input type="checkbox" id="modal-confirm-checkbox">
+        Bunun YouTube'a gerçek planlı upload yapacağını anlıyorum
+      </label>
+      <div class="modal-confirm-type">
+        <span>Onaylamak için <code>YOUTUBE UPLOAD</code> yazın:</span>
+        <input type="text" id="modal-confirm-input" class="param-input"
+          placeholder="YOUTUBE UPLOAD" autocomplete="off" style="margin-top:6px;width:200px">
+      </div>
+    </div>` : '';
+
   document.getElementById('modal-preview-wrap').innerHTML =
-    `${labelLine}${cwdLine}${warningLine}${commandBlock}`;
+    `${labelLine}${cwdLine}${warningLine}${commandBlock}${confirmBlock}`;
 
   // Reset output section
   document.getElementById('modal-output-section').classList.add('hidden');
@@ -1095,10 +1177,23 @@ function openModal(spec) {
   document.getElementById('modal-status-bar').textContent = '';
   document.getElementById('modal-status-bar').className  = 'modal-status';
 
-  // Enable run button only when command is valid
+  // Enable run button only when command is valid (and confirm satisfied if required)
   const runBtn = document.getElementById('modal-run-btn');
-  runBtn.disabled    = !hasCommand;
+  runBtn.disabled    = !hasCommand || !!spec.requireConfirm;
   runBtn.textContent = 'Çalıştır';
+
+  if (spec.requireConfirm) {
+    const checkConfirm = () => {
+      const cb  = document.getElementById('modal-confirm-checkbox');
+      const inp = document.getElementById('modal-confirm-input');
+      runBtn.disabled = !(hasCommand && cb?.checked && inp?.value === 'YOUTUBE UPLOAD');
+    };
+    // Wire listeners after DOM is ready
+    setTimeout(() => {
+      document.getElementById('modal-confirm-checkbox')?.addEventListener('change', checkConfirm);
+      document.getElementById('modal-confirm-input')?.addEventListener('input', checkConfirm);
+    }, 0);
+  }
 
   document.getElementById('modal-overlay').classList.remove('hidden');
 }
@@ -1129,6 +1224,19 @@ async function runModal() {
   statusEl.className   = 'modal-status';
   statusEl.textContent = '…';
   outputEl.textContent = '';
+
+  // Defense-in-depth: verify YouTube real upload confirmation before sending
+  if (modalAction === 'youtube-upload') {
+    const cb  = document.getElementById('modal-confirm-checkbox');
+    const inp = document.getElementById('modal-confirm-input');
+    if (!cb?.checked || inp?.value !== 'YOUTUBE UPLOAD') {
+      statusEl.className   = 'modal-status fail';
+      statusEl.textContent = 'Onay tamamlanmadı — checkbox işaretlenmeli ve "YOUTUBE UPLOAD" yazılmalı.';
+      runBtn.disabled    = false;
+      runBtn.textContent = 'Tekrar Çalıştır';
+      return;
+    }
+  }
 
   try {
     const res  = await fetch('/api/action', {

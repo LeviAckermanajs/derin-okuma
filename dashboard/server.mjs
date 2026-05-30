@@ -49,6 +49,7 @@ try { fs.mkdirSync(JOBS_DIR, { recursive: true }); } catch {}
 const ALLOWED_ACTIONS = new Set([
   'validate-shorts', 'export-captions', 'tiktok-dry-run',
   'shorts-prep', 'shorts-fill', 'batch-create', 'blog-add',
+  'youtube-dry-run', 'youtube-upload',
   'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
 ]);
 
@@ -691,6 +692,59 @@ function buildCommand(action, slug, params = {}) {
       executable:  CLAUDE_BIN,
       args:        ['--permission-mode', 'acceptEdits', '-p', `/add-blog-post ${draft_path}`],
       preview:     `claude --permission-mode acceptEdits -p "/add-blog-post ${draft_path}"`,
+      longTimeout: true,
+    };
+  }
+  if (action === 'youtube-dry-run' || action === 'youtube-upload') {
+    const { schedule_date } = params;
+    if (!schedule_date || !/^\d{4}-\d{2}-\d{2}$/.test(schedule_date))
+      return { error: 'invalid_schedule_date' };
+
+    const exportFolder = resolveExportFolder(slug);
+    const manifestPath = path.join(exportFolder, 'publish-manifest.json');
+
+    // Safety: manifest must reside within EXPORT_ROOT
+    const safeRoot = path.resolve(EXPORT_ROOT);
+    const safeMnft = path.resolve(manifestPath);
+    if (!safeMnft.startsWith(safeRoot + path.sep) && safeMnft !== safeRoot)
+      return { error: 'invalid_manifest_path' };
+    if (!exists(manifestPath)) return { error: 'manifest_not_found' };
+
+    const clientSecretPath = path.join(ROOT, '.secrets', 'youtube', 'client_secret.json');
+    const tokenPath        = path.join(ROOT, '.secrets', 'youtube', 'token.json');
+    const channelId        = 'UCfdDchpT4rait8RUjzpVGA';
+    const folderName       = path.basename(exportFolder);
+
+    if (action === 'youtube-dry-run') {
+      return {
+        args: [
+          path.join(SCRIPTS_DIR, 'upload-youtube-batch.mjs'),
+          '--manifest',            manifestPath,
+          '--client-secret',       clientSecretPath,
+          '--token',               tokenPath,
+          '--expected-channel-id', channelId,
+          '--scheduled',
+          '--schedule-start-date', schedule_date,
+          '--dry-run',
+        ],
+        preview:     `npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled \\\n  --schedule-start-date ${schedule_date} \\\n  --dry-run`,
+        longTimeout: true,
+      };
+    }
+    // youtube-upload (real — requires YOUTUBE_REAL_UPLOAD=1)
+    return {
+      args: [
+        path.join(SCRIPTS_DIR, 'upload-youtube-batch.mjs'),
+        '--manifest',            manifestPath,
+        '--client-secret',       clientSecretPath,
+        '--token',               tokenPath,
+        '--expected-channel-id', channelId,
+        '--scheduled',
+        '--schedule-start-date', schedule_date,
+        '--force',
+      ],
+      env:         { ...process.env, YOUTUBE_REAL_UPLOAD: '1' },
+      preview:     `YOUTUBE_REAL_UPLOAD=1 npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled \\\n  --schedule-start-date ${schedule_date} \\\n  --force`,
       longTimeout: true,
     };
   }
