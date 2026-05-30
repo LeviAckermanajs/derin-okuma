@@ -1216,9 +1216,11 @@ async function loadServices() {
 
 // ── Modal URL display (static mobile caption) ─────────────────────────────
 
-function showModalUrl(url) {
+function showModalUrl(url, indexUrl = null) {
   const section = document.getElementById('modal-url-section');
   if (!section) return;
+
+  // Primary URL with copy button
   document.getElementById('modal-url-text').textContent = url;
   const copyBtn = document.getElementById('modal-url-copy');
   copyBtn.textContent = '⎘ Kopyala';
@@ -1227,11 +1229,26 @@ function showModalUrl(url) {
       .then(() => { copyBtn.textContent = '✓ Kopyalandı'; setTimeout(() => copyBtn.textContent = '⎘ Kopyala', 2000); })
       .catch(() => {});
   };
+
+  // Index URL row (optional)
+  const indexRow  = document.getElementById('modal-url-index-row');
+  if (indexRow) {
+    if (indexUrl) {
+      document.getElementById('modal-url-index-text').textContent = indexUrl;
+      const indexLink = document.getElementById('modal-url-index-link');
+      if (indexLink) indexLink.href = indexUrl;
+      indexRow.classList.remove('hidden');
+    } else {
+      indexRow.classList.add('hidden');
+    }
+  }
+
   section.classList.remove('hidden');
 }
 
 function hideModalUrl() {
   document.getElementById('modal-url-section')?.classList.add('hidden');
+  document.getElementById('modal-url-index-row')?.classList.add('hidden');
 }
 
 function stopJobMonitor() {
@@ -1466,7 +1483,8 @@ async function runModal() {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Başarılı (exit 0)';
       modalNeedsRefresh = true;
-      if (data.mobile_caption_link?.url) showModalUrl(data.mobile_caption_link.url);
+      if (data.mobile_caption_link?.url)
+        showModalUrl(data.mobile_caption_link.url, data.mobile_caption_link.index_url || null);
     } else if (data.scaffold_ready) {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Scaffold hazır ✓ — validate/batch adımı başarısız olsa da scaffold dosyaları oluştu. "Claude ile Paketi Doldur" artık aktif.';

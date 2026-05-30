@@ -734,6 +734,13 @@ pre.modal-output {
   font-family: monospace;
 }
 
+.modal-url-index-label {
+  font-size: 11px;
+  color: var(--muted);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .modal-deploy-note {
   margin-top: 6px;
   font-size: 11px;
