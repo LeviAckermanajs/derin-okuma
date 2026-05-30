@@ -146,6 +146,90 @@ function startBackgroundJob(args, env, jobId, executable = process.execPath) {
   return { job_id: jobId, pid: child.pid };
 }
 
+// ── YouTube schedule hint ─────────────────────────────────────────────────
+
+function apiYoutubeScheduleHint() {
+  // Fields already in Istanbul local time (no conversion needed)
+  const LOCAL_FIELDS = new Set(['publishAtLocal', 'publish_at_local']);
+  // Fields in UTC — convert to Istanbul (+3, fixed since 2016)
+  const UTC_FIELDS   = new Set(['publishAt', 'scheduledAt', 'scheduled_at',
+                                 'uploadDate', 'uploadedAt', 'createdAt']);
+
+  let maxDate     = null;  // 'YYYY-MM-DD'
+  let filesFound  = 0;
+
+  function toIstanbulDate(val) {
+    if (!val || (typeof val !== 'string' && typeof val !== 'number')) return null;
+    try {
+      const d = new Date(val);
+      if (isNaN(d.getTime())) return null;
+      return new Date(d.getTime() + 3 * 3_600_000).toISOString().slice(0, 10);
+    } catch { return null; }
+  }
+
+  function localDateStr(val) {
+    if (!val || typeof val !== 'string') return null;
+    const m = val.match(/^(\d{4}-\d{2}-\d{2})/);
+    return m ? m[1] : null;
+  }
+
+  function bump(dateStr) {
+    if (!dateStr) return;
+    if (!maxDate || dateStr > maxDate) maxDate = dateStr;
+  }
+
+  function extractDates(obj) {
+    if (!obj || typeof obj !== 'object') return;
+    for (const [k, v] of Object.entries(obj)) {
+      if (LOCAL_FIELDS.has(k)) bump(localDateStr(v));
+      else if (UTC_FIELDS.has(k)) bump(toIstanbulDate(v));
+    }
+  }
+
+  function scanDir(dir, depth) {
+    if (depth > 3) return;
+    let entries;
+    try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch { return; }
+    for (const e of entries) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) { scanDir(p, depth + 1); continue; }
+      if (e.name !== 'youtube-upload-result.json') continue;
+      const data = readJson(p);
+      if (!data) continue;
+      filesFound++;
+      for (const arr of [data.videos, data.items, data.results]) {
+        if (Array.isArray(arr)) arr.forEach(extractDates);
+      }
+      extractDates(data);  // top-level fields too
+    }
+  }
+
+  if (exists(EXPORT_ROOT)) scanDir(EXPORT_ROOT, 0);
+
+  if (!maxDate) {
+    // No history — suggest tomorrow (Istanbul local)
+    const tomorrow = new Date(Date.now() + 3 * 3_600_000 + 86_400_000)
+      .toISOString().slice(0, 10);
+    return {
+      suggested_date: tomorrow,
+      last_scheduled: null,
+      source:         'no_history',
+      note:           'Önerilen tarih: yarın — önceki YouTube sonuç dosyası bulunamadı',
+    };
+  }
+
+  // Day after the latest scheduled date
+  const [y, mo, d] = maxDate.split('-').map(Number);
+  const suggested   = new Date(Date.UTC(y, mo - 1, d + 1)).toISOString().slice(0, 10);
+  return {
+    suggested_date: suggested,
+    last_scheduled: maxDate,
+    source:         'history',
+    files_scanned:  filesFound,
+    note:           `Önerilen tarih: son YouTube planından sonraki gün (son: ${maxDate})`,
+  };
+}
+
 // ── Service helpers ───────────────────────────────────────────────────────
 
 function checkPortOpen(port, host = '127.0.0.1', timeoutMs = 1500) {
@@ -958,7 +1042,8 @@ const server = http.createServer(async (req, res) => {
   if (pathname === '/api/token-status')     return sendJson(res, apiTokenStatus());
   if (pathname === '/api/drafts')           return sendJson(res, apiDrafts());
   if (pathname === '/api/drafts-list')      return sendJson(res, apiDraftsList());
-  if (pathname === '/api/services/status')  return sendJson(res, await apiServicesStatus());
+  if (pathname === '/api/services/status')       return sendJson(res, await apiServicesStatus());
+  if (pathname === '/api/youtube-schedule-hint') return sendJson(res, apiYoutubeScheduleHint());
 
   const jobLogsMatch = pathname.match(/^\/api\/job\/([^/]+)\/logs$/);
   if (jobLogsMatch) {

@@ -15,6 +15,20 @@ let monitorJobId    = null;
 let monitorInterval = null;
 let logOffset       = 0;
 
+let ytScheduleHint  = null;  // { suggested_date, note, source }
+
+// Istanbul is UTC+3 year-round (no DST since 2016)
+function istanbulDateStr(offsetDays = 0) {
+  const ms = Date.now() + 3 * 3_600_000 + offsetDays * 86_400_000;
+  return new Date(ms).toISOString().slice(0, 10);
+}
+
+async function refreshYtScheduleHint() {
+  try {
+    ytScheduleHint = await apiFetch('/api/youtube-schedule-hint');
+  } catch { ytScheduleHint = null; }
+}
+
 // ── Utilities ──────────────────────────────────────────────────────────────
 
 function esc(str) {
@@ -247,8 +261,9 @@ function cardDraftWorkflowParams(d) {
         <div class="param-field">
           <label class="param-label" for="dp-yt-date">YouTube Takvim Tarihi</label>
           <input class="param-input" id="dp-yt-date" type="date"
-            value="${new Date().toISOString().slice(0,10)}"
-            min="${new Date().toISOString().slice(0,10)}">
+            value="${esc(ytScheduleHint?.suggested_date || istanbulDateStr(1))}"
+            min="${istanbulDateStr(0)}">
+          <span class="param-hint">${esc(ytScheduleHint?.note || 'Hint yükleniyor…')}</span>
         </div>
       </div>
     </div>`;
@@ -334,10 +349,13 @@ function wireDraftDetailButtons(d) {
         return;
       }
 
-      const tiktokPlan = sd?.tiktok_upload_plan_exists
+      const tiktokPlan  = sd?.tiktok_upload_plan_exists
         ? `${sd.export_folder}/tiktok-upload-plan.json` : null;
-      const ytDate     = p.schedule_date || new Date().toISOString().slice(0,10);
-      const folderName = sd?.export_folder ? sd.export_folder.split('/').filter(Boolean).pop() : '<export>';
+      const ytDate      = p.schedule_date || ytScheduleHint?.suggested_date || istanbulDateStr(1);
+      const folderName  = sd?.export_folder ? sd.export_folder.split('/').filter(Boolean).pop() : '<export>';
+      const isPastDate  = ytDate && ytDate < istanbulDateStr(0);
+      const pastWarning = isPastDate
+        ? '⚠ Seçilen tarih geçmiş bir tarihtir. Upload planı hatalı olabilir.' : null;
 
       const SPECS = {
         'blog-add': {
@@ -404,6 +422,7 @@ function wireDraftDetailButtons(d) {
             ? `npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${ytDate} --dry-run`
             : null,
           cwd,
+          warning: pastWarning,
         },
         'youtube-upload': {
           title:          'Planlı YouTube Upload',
@@ -412,7 +431,7 @@ function wireDraftDetailButtons(d) {
             ? `YOUTUBE_REAL_UPLOAD=1 npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${ytDate} --force`
             : null,
           cwd,
-          warning:        '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
+          warning:        pastWarning || '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
           requireConfirm: true,
         },
       };
@@ -560,8 +579,9 @@ function cardWorkflowParams(d) {
         <div class="param-field">
           <label class="param-label" for="param-yt-date">YouTube Takvim Tarihi</label>
           <input class="param-input" id="param-yt-date" type="date"
-            value="${new Date().toISOString().slice(0,10)}"
-            min="${new Date().toISOString().slice(0,10)}">
+            value="${esc(ytScheduleHint?.suggested_date || istanbulDateStr(1))}"
+            min="${istanbulDateStr(0)}">
+          <span class="param-hint">${esc(ytScheduleHint?.note || 'Hint yükleniyor…')}</span>
         </div>
       </div>
     </div>`;
@@ -804,9 +824,13 @@ function wireDetailButtons(d) {
       const p = collectParams();
       const cwd = config.cwd || '.';
 
-      const tiktokPlan = d.tiktok_upload_plan_exists
-        ? `${d.export_folder}/tiktok-upload-plan.json`
-        : null;
+      const tiktokPlan  = d.tiktok_upload_plan_exists
+        ? `${d.export_folder}/tiktok-upload-plan.json` : null;
+      const ytDate      = p.schedule_date || ytScheduleHint?.suggested_date || istanbulDateStr(1);
+      const folderName  = d.export_folder ? d.export_folder.split('/').filter(Boolean).pop() : '<export>';
+      const isPastDate  = ytDate && ytDate < istanbulDateStr(0);
+      const pastWarning = isPastDate
+        ? '⚠ Seçilen tarih geçmiş bir tarihtir. Upload planı hatalı olabilir.' : null;
 
       const ACTION_SPECS = {
         'validate-shorts': {
@@ -869,19 +893,20 @@ function wireDetailButtons(d) {
         'youtube-dry-run': {
           title:   'YouTube Dry Run',
           label:   'YouTube yükleme önizlemesi (--dry-run)',
-          command: d.publish_manifest_exists && p.schedule_date
-            ? `npm run video:youtube:upload-batch -- \\\n  --manifest "<export>/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${p.schedule_date} --dry-run`
+          command: d.publish_manifest_exists
+            ? `npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${ytDate} --dry-run`
             : null,
           cwd,
+          warning: pastWarning,
         },
         'youtube-upload': {
           title:          'Planlı YouTube Upload',
           label:          'YouTube\'a gerçek planlı video yükleme',
-          command:        d.publish_manifest_exists && p.schedule_date
-            ? `YOUTUBE_REAL_UPLOAD=1 npm run video:youtube:upload-batch -- \\\n  --manifest "<export>/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${p.schedule_date} --force`
+          command:        d.publish_manifest_exists
+            ? `YOUTUBE_REAL_UPLOAD=1 npm run video:youtube:upload-batch -- \\\n  --manifest "${folderName}/publish-manifest.json" \\\n  --scheduled --schedule-start-date ${ytDate} --force`
             : null,
           cwd,
-          warning:        '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
+          warning:        pastWarning || '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
           requireConfirm: true,
         },
       };
@@ -1332,7 +1357,8 @@ document.querySelectorAll('.tab-btn').forEach(btn =>
 
 (async () => {
   try { config = await apiFetch('/api/config'); } catch {}
-  loadDrafts();      // default active tab
+  refreshYtScheduleHint();  // fetch once; cached for the session
+  loadDrafts();             // default active tab
   refreshTokenBadge();
 })();
 

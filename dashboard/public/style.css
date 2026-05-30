@@ -702,6 +702,16 @@ pre.modal-output {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
+/* ── Param hint (helper text below inputs) ────────────────────────────────── */
+
+.param-hint {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
 /* ── Modal confirm section (YouTube real upload) ──────────────────────────── */
 
 .modal-confirm {
