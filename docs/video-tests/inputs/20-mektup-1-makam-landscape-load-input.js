@@ -1,0 +1,402 @@
+// Derin Okuma — 20. Mektup - 1. Makam landscape video
+// Day-33 — Filled by Claude
+
+const rawInput = {
+  input_version: '0.1.0',
+  input_type: 'manual_scene_json',
+
+  runtime: {
+    repo_root: '/home/muhammet/projects/scene-blog-video',
+    renderer_url: 'http://127.0.0.1:8000'
+  },
+
+  job: {
+    title: 'İnsan Neden Sahipsiz Hisseder? Tevhidin On Bir Müjdesi',
+    description: 'Tevhid cümlesinin on bir kelimesi; sahipsizlik korkusundan ölüm endişesine insanın en temel sorularına derin teselli.',
+    language: 'tr',
+    author: 'Muhammet Yahya Ozer',
+    job_id_hint: '20-mektup-1-makam-landscape-day-33'
+  },
+
+  reuse_existing_audio: {
+    enabled: false,
+    audio_mode: 'single_track',
+    audio_track: {
+      mode: 'single',
+      path: '',
+      duration_seconds: null
+    }
+  },
+
+  reuse_existing_video: {
+    enabled: false,
+    visual_mode: 'semantic',
+    video_root: '',
+    path_template: '{scene_id}.mp4'
+  },
+
+  visual_mode: 'ambient',
+
+  audio_strategy: {
+    mode: 'single_track',
+    timing_strategy: 'elevenlabs_timestamps',
+    join_separator: '\n\n'
+  },
+
+  render_preferences: {
+    mode: 'full_video',
+    subtitles_enabled: true,
+    render_mode: 'landscape',
+    produce_both: false,
+    background_music_enabled: true,
+    target_fps: 30
+  },
+
+  scenes: [
+    {
+      scene_id: 'scene-001',
+      title: 'Açılış',
+      narration: 'İnsan bazen dünyada yapayalnız hisseder. Elindeki güzellikler, sevdikleri, bütün kazandıkları... hepsi kırılgan, hepsi geçici. Ve insan bir gün sorar: Bütün bunların sahibi kim? Bu soruyu doğru anlayan insan, dünyaya bambaşka bir gözle bakmaya başlar.',
+      visual_note: 'A lone person standing on a vast misty plain at dusk, slow cinematic shot.',
+      keywords: ['lone person', 'dusk landscape', 'misty plain', 'cinematic'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic',
+        avoid: ['cartoon', 'bright comedy tone']
+      },
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-002',
+      title: 'Bir Cümlenin Derinliği',
+      narration: "'Lâ ilâhe illallah.' Allah'tan başka ilah yoktur. Sabah ve akşam tekrarlanan bu cümle asırlardır kalplerde yankılanmıştır. Fakat anlamının katmanları, onu tekrar edenlerin çoğu zaman farkında olmadığı derinlikler barındırır.",
+      visual_note: 'Sunlight piercing through heavy clouds over a quiet mountain range, soft light beams.',
+      keywords: ['mountain sunrise', 'light through clouds', 'peaceful', 'wide shot'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      },
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-003',
+      title: 'On Bir Kelime',
+      narration: 'Bu cümlenin içindeki on bir kelimeden her biri, insanın farklı bir sorusuna cevap verir. Sahipsizlik korkusuna, ihtiyaç içinde kalma kaygısına, sevdiklerinden ayrılma endişesine, emeğinin boşa gitme korkusuna ve ölüm karşısındaki tedirginliğe. On bir kelime, on bir müjde.',
+      visual_note: 'Abstract flowing light particles forming subtle geometric patterns against a dark background.',
+      keywords: ['abstract light', 'flowing particles', 'dark background', 'calm'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-004',
+      title: 'Sahipsizlik Korkusu',
+      narration: 'İnsanın en köklü korkularından biri sahipsizliktir. Güzellikler geçer, sevdikler ayrılır, bütün kazanılanlar bir gün elde kalmaz. Bu düşünce insanı bazen derinden yorar. Sanki varoluşun altındaki zemin çatlıyor gibi bir his verir.',
+      visual_note: 'A person alone in a dimly lit forest, standing still, searching expression, slow pan.',
+      keywords: ['alone in forest', 'dim light', 'searching', 'slow pan'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic',
+        avoid: ['horror', 'too dark']
+      }
+    },
+    {
+      scene_id: 'scene-005',
+      title: 'Dayanak Noktası',
+      narration: 'İnsan çok şeye muhtaçtır; birçok şeyden korkar. Fakat bütün ihtiyaçlarını karşılayabilecek sonsuz bir rahmet hazinesine yönelebildiğinde, içindeki dağınıklık toparlanmaya başlar. Kalp vahşetten, ruh hüzünden kurtulur. Çünkü sahipsizlik değil, sahiplik vardır.',
+      visual_note: 'A warm lantern glowing steadily in a dark room, soft golden light, still and safe.',
+      keywords: ['lantern light', 'warm glow', 'dark room', 'safe haven'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-006',
+      title: "Vahdehû — O Birdir",
+      narration: "'O birdir' anlamını taşıyan bu kelime, insanı dağılmaktan korur. İnsan çoğu zaman birçok kapıya koşar. Farklı güçlere, farklı insanlara tutunmaya çalışır. Her birine ayrı ayrı minnet eder, korkar, bekler. Bu koşuşturma yorar.",
+      visual_note: 'Scattered dry leaves blowing in different directions on the ground, wind scattering them.',
+      keywords: ['scattered leaves', 'wind', 'dispersal', 'autumn'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-007',
+      title: 'Tek Kapı',
+      narration: 'Her şeyin dizgini tek elde olduğu bilinince, o yorucu dağınıklık durur. Başka şeylere müracaat edip tükenmek gerekmez. Onlara boyun eğip minnet çekmek gerekmez. Çünkü her şeyin anahtarı tek kapıdadır; ve o kapı her an açıktır.',
+      visual_note: 'A single strong ancient oak tree standing firm against wind in an open field.',
+      keywords: ['ancient oak tree', 'open field', 'strong tree', 'solitary'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-008',
+      title: "Lâ Şerîke Leh — Ortaksız Hâkimiyet",
+      narration: "'Allah'ın saltanatında ortağı yoktur.' Bu kelime, başka bir müjdeyi açar. Rububiyette ortaksızlık demek, insanın O'na yönelmek için araya engel koyulmaması demektir. Hiçbir aracı, hiçbir izin kapısı, hiçbir engel yoktur.",
+      visual_note: 'A door slightly ajar, soft warm golden light visible through the opening, inviting atmosphere.',
+      keywords: ['open door', 'warm light', 'invitation', 'pathway'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-009',
+      title: 'Doğrudan Huzur',
+      narration: 'İnsan bazen derdini anlatacak yer bulamaz. Anlaşılmak için bile kapı kapı dolaşır. Fakat bu hakikat, ona doğrudan bir huzur yolu gösterir. Her hâlinde, her arzusunda, her anında Rabbine müracaat edebilir. Mâni yok, engel yok, yasak yok.',
+      visual_note: 'A calm person walking peacefully toward a distant warm glow along a quiet forest path.',
+      keywords: ['calm walk', 'forest path', 'warm glow', 'peaceful'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-010',
+      title: "Lehü'l-Mülk — Mülk O'nundur",
+      narration: "'Mülk O'nundur.' Bu söz, insanın omzundaki ağır sahiplik duygusunu hafifletir. İnsan hem O'nun mülküdür, hem de O'nun mülkünde çalışmaktadır. Bütün varlık O'na aittir; insan ise bu büyük mülkte bir memurdur.",
+      visual_note: 'A vast green field stretching to the horizon under soft afternoon light, wide cinematic perspective.',
+      keywords: ['vast green field', 'horizon', 'afternoon light', 'wide shot'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-011',
+      title: "Hayatın Yükü",
+      narration: 'İnsan kendini bütünüyle kendi elinde zannettiğinde, hayatın bütün ağırlığını da tek başına taşımaya kalkar. Kendini korumak, geleceğini garanti etmek, sevdiklerini muhafaza etmek ister. Fakat buna gücü yetmez. O yükü kaldıracak sırtı yoktur.',
+      visual_note: 'A person carrying a heavy backpack on a steep rocky mountain trail, slow exhausted steps.',
+      keywords: ['heavy backpack', 'steep trail', 'exhaustion', 'mountain'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-012',
+      title: 'Yükü Bırakmak',
+      narration: "Mülk O'nundur; insan O'nun mülkünde, O'nun rahmetine dayanarak vazifesini görür. Bu bakış değişince yük değişmez; ama taşıma biçimi değişir. Masraflar sahibine aittir. İnsana düşen, vazifesini güzel yapmak ve ücretini beklemektir.",
+      visual_note: 'A person gently setting down a heavy bag beside a tree and resting peacefully.',
+      keywords: ['setting down burden', 'resting', 'relief', 'peaceful nature'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-013',
+      title: "Lehü'l-Hamd — Hamd O'nadır",
+      narration: "'Hamd ve şükür O'na mahsustur.' Bu kelime, nimete bakışı kökten değiştirir. Nimetler O'nun hazinesinden gelir; bu yüzden şükür de O'na aittir. İnsan bir güzellikle karşılaşınca, o güzelliğin sahibini tanıma fırsatı bulur.",
+      visual_note: 'Autumn golden leaves falling slowly from a tree, sunlight filtering through branches.',
+      keywords: ['autumn leaves', 'golden light', 'slow fall', 'tree'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-014',
+      title: "Nimetin Geçiciliği",
+      narration: 'Hayatta güzeller geçer. Bir lezzet biter, bir nimet sona erer. İnsan bu geçişlere kalben takılıp kalır. Fakat nimetin sahibinin bâki olduğu bilinince, her geçişin ötesinde bir sürekliliğin olduğu görülür.',
+      visual_note: 'A ripe fruit hanging on a sunlit branch, morning dew, soft natural light.',
+      keywords: ['ripe fruit', 'sunlit branch', 'morning dew', 'natural light'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-015',
+      title: 'Meyve ve Ağaç',
+      narration: 'Bir meyve düşer; ama ağaç bâki ise, onun yerini yenisi alır. Bir lezzet sona erer; ama rahmet hazinesi tükenmez. İnsan yalnızca meyveye odaklanırsa, meyvenin düşüşüyle yaralanır. Ağacı görünce, meyvenin arkasındaki sonsuz ihsanı fark eder.',
+      visual_note: 'A fruit tree in full bloom, wide shot, gentle breeze moving branches in golden afternoon light.',
+      keywords: ['fruit tree', 'full bloom', 'gentle breeze', 'golden afternoon'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-016',
+      title: "Yuhyî — Hayatı Veren O'dur",
+      narration: "'Hayatı veren O'dur.' Hayatı rızıkla besleyen, devam ettiren de O'dur. İnsan, hayat gemisinde bir dümenci gibidir. Bütün masraflar ve teçhizat geminin sahibine aittir. İnsana düşen, dümenini güzel tutmak ve ücretine bakmaktır.",
+      visual_note: 'A small wooden boat sailing gently on calm sunlit water, early morning atmosphere.',
+      keywords: ['small boat', 'calm water', 'morning light', 'peaceful voyage'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-017',
+      title: "Hayatın Defteri",
+      narration: 'Hayatın neticeleri boşa gitmez. Her iyilik kaydedilir, her amel muhafaza edilir. Çünkü hayat, başlangıcı ve sonu olan ama anlamı bitmeyen bir yolculuktur. Bu yolculukta yapılan her güzellik, ebedî bir hayata vesile olmak üzere saklanmaktadır.',
+      visual_note: 'Open handwritten pages of an old journal, soft warm light illuminating the script.',
+      keywords: ['old journal', 'handwritten pages', 'warm light', 'record keeping'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-018',
+      title: "Ve Yümît — Ölümü Veren O'dur",
+      narration: "'Ölümü veren de O'dur.' Bu kelime, insanın en büyük korkusuna yönelir. Fakat ölüm burada tanıdık karanlık çağrışımlarıyla gelmez. Hiçlik değildir. Yok oluş değildir. Bir vazifeden terhis, bir mekân değişikliğidir.",
+      visual_note: 'A quiet empty road at twilight, soft fading light at the end of the path.',
+      keywords: ['empty road', 'twilight', 'fading light', 'quiet path'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-019',
+      title: 'Terhis',
+      narration: 'Ölüm, Rahîm ve Hakîm bir Fail tarafından planlanan bilinçli bir sevkiyattır. Fânî hayattan bâkî hayata geçiştir. Bu yüzden ölüm, bir bitiş olarak değil; bir geçiş olarak görülür. İnsan, asıl vatanına sevk edilmektedir.',
+      visual_note: 'A dignified formal handshake at sunset, honorable departure, warm golden tones.',
+      keywords: ['honorable departure', 'handshake', 'sunset', 'dignified moment'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-020',
+      title: "Vatan-ı Aslî",
+      narration: 'İnsan bu dünyaya misafir olarak gelmiştir. Asıl vatanı başka bir yerdir. Ölüm, onu yabancı bir mekândan, aşina bir huzura taşır. Sürgün değil, dönüştür. Karanlık değil, kapı açılışıdır.',
+      visual_note: 'A long quiet road leading toward a warm glowing horizon, cinematic wide shot.',
+      keywords: ['long road', 'warm horizon', 'homecoming', 'cinematic'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-021',
+      title: 'Kavuşma Kapısı',
+      narration: 'Ölüm böyle anlaşılınca, sadece bir bitiş gibi görünmez. Aynı zamanda bir kavuşma kapısıdır. Sevdiklerinden ayrılıkların sona erdiği, bütün perdelerin kalktığı, gerçek yurdun kapısının aralandığı bir eşiktir.',
+      visual_note: 'Two hands meeting in a warm reunion embrace, soft cinematic light from behind.',
+      keywords: ['reunion', 'hands meeting', 'soft light', 'warm embrace'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-022',
+      title: "Ve Hüve Hayyun Lâ Yemût — Bâki Diri",
+      narration: "'Diri olan, ölmeyen O'dur.' Bu kelime, insanın sevgi yarasına dokunur. İnsan güzelliği sever, kemale bağlanır, ihsan gördüğüne muhabbet eder. Fakat dünyadaki bütün güzellikler fanidir. Ayrılık kalbi sürekli incitir.",
+      visual_note: 'A person gazing at their reflection in perfectly still water at dusk, quiet atmosphere.',
+      keywords: ['reflection in water', 'still water', 'dusk', 'contemplation'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-023',
+      title: "Faniliğin Acısı",
+      narration: 'Her sevilen bir gün gider. Her güzel bir gün solar. Bağlandığımız her şey bizi nihayetinde bırakır. Bu gerçek, insanın kalbini sürekli sızlatır. Çünkü kalp, geçici olana bağlanınca tatmin bulamaz, daima eksiklik duyar.',
+      visual_note: 'Fallen autumn leaves scattered on the ground, gentle wind, muted colors.',
+      keywords: ['fallen leaves', 'autumn', 'gentle wind', 'muted tones'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-024',
+      title: "Güzelliklerin Kaynağı",
+      narration: 'Bütün güzelliklerin üstünde, bütün sevilmeye değer şeylerin kaynağı olan bâki bir güzellik vardır. Geçici güzellikler, bu sonsuz güzelliğin birer yansımasıdır. Aynalar değişir, aynalar kırılır; ama yansıyan ışığın kaynağı değişmez.',
+      visual_note: 'Sunlight reflecting off moving water, shimmering light patterns, soft cinematic slow motion.',
+      keywords: ['sunlight on water', 'shimmering reflection', 'slow motion', 'eternal light'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-025',
+      title: 'Sevgiyi Aslına Bağlamak',
+      narration: "O bâki kalınca, başkaları ne olursa olsun merak çekmek gerekmez. Sevgi iptal olmaz; sevgi, aslına bağlanır. Sevilenlerdeki güzellik, gerçek kaynağına işaret eder. Ayrılıklar artık bütünüyle karanlık değildir.",
+      visual_note: 'An ancient ornate mirror reflecting soft candlelight, warm amber tones, still.',
+      keywords: ['ornate mirror', 'candlelight reflection', 'warm amber', 'still'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-026',
+      title: "Biyedihi'l-Hayr — Hayır O'nun Elinde",
+      narration: "'Bütün hayır O'nun elindedir.' İnsan bazen giderken düşünür: Emeklerim boşa mı gitti? Yapamadıklarım kaldı. Bıraktıklarım eksik. Fakat her hizmet kaydedilmiş, her amel muhafaza edilmiş, her güzellik saklanmıştır. Hizmet bitmiş; ücret zamanı gelmiştir.",
+      visual_note: 'An old handwritten manuscript being carefully opened in a quiet library, soft light.',
+      keywords: ['manuscript', 'library', 'careful hands', 'record'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-027',
+      title: "Tohumların Muhafazası",
+      narration: 'Geçen baharın tohumları kaybolmaz. Çekirdekler korunur, sonraki baharda daha şaşaalı ve bereketli çıkar. İnsanın hayatı da böyledir. Zayi olmaz. Zamanı gelince karşılığı görülür.',
+      visual_note: 'Seeds being carefully stored and preserved in small wooden containers, soft warm light.',
+      keywords: ['seeds preserved', 'wooden containers', 'careful storage', 'warm light'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-028',
+      title: "Ve Hüve Alâ Külli Şey'in Kadîr — Her Şeye Kâdir",
+      narration: "'Her şeye gücü yeten O'dur.' Bu kelime, akılda doğan 'Mümkün mü?' sorusuna cevap verir. Bir baharı yaratmak, bir çiçek kadar kolaydır. Cenneti yaratmak, bir bahar kadar rahattır.",
+      visual_note: 'A vast spring meadow bursting with wildflowers and greenery, aerial wide shot, golden light.',
+      keywords: ['spring meadow', 'wildflowers', 'aerial wide shot', 'golden light'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-029',
+      title: 'Dirilişin Delili',
+      narration: 'Her yıl yeryüzünde sayısız canlı türü yeniden dirilir. Yazın ölen tohumlar baharda hayat bulur. Bu, gözler önünde gerçekleşen muhteşem bir örüntüdür. Ve bu örüntü, ebedî saadet vaadinin imkânsız olmadığını gösteren canlı bir şahittir.',
+      visual_note: 'Time-lapse of seeds sprouting into green plants, warm natural light, gentle movement.',
+      keywords: ['seeds sprouting', 'time-lapse', 'new growth', 'spring awakening'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-030',
+      title: 'Hesap Defteri Açılıyor',
+      narration: 'Her ilkbaharda yeryüzü sanki bir hesap defteri gibi açılır. Geçen yılın tohumları, çekirdekleri, nüveleri birer birer ortaya çıkar. Hiçbiri kaybolmamıştır. Bu düzen, şunu düşündürür: Hayatın defterleri de böyle tutuluyorsa, hiçbir amel, hiçbir emek kaybolmaz.',
+      visual_note: 'Fields transforming from bare winter to lush spring, birds returning, slow cinematic footage.',
+      keywords: ['winter to spring', 'transformation', 'birds returning', 'renewal'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-031',
+      title: "Ve İleyhi'l-Masîr — Dönüş O'nadır",
+      narration: "'Dönüş O'nadır.' İnsan dünyaya ticaret ve memuriyet için gönderilmiştir. Vazifesini bitirince gönderene dönecektir. Bu dönüş, sahipsiz bir yokluğa değil; bütün güzelliklerin kaynağına, bütün rahmetin sahibine kavuşmadır.",
+      visual_note: 'A traveler arriving home at sunset, warm lantern lights in windows, welcoming atmosphere.',
+      keywords: ['homecoming', 'sunset arrival', 'warm windows', 'welcoming'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-032',
+      title: 'Rahmet Dairesi',
+      narration: 'Bu dönüşe hazırlanan insan, hayatı farklı yaşar. Dünya artık başıboş bir yolculuk değildir. Her adımda anlamlı bir yönelme vardır. İnsan, nihayetinde bir rahmet dairesine, ebedî bir ziyafetgâha çağrıldığını bilmektedir.',
+      visual_note: 'A family gathered warmly around a well-lit dining table at evening, soft cinematic light.',
+      keywords: ['family gathering', 'warm table', 'evening light', 'feast'],
+      emphasis: 'calm_but_serious'
+    },
+    {
+      scene_id: 'scene-033',
+      title: 'On Bir Kelime, On Bir Cevap',
+      narration: 'Gece ile gündüz arasında tekrarlanan o cümle aslında bu büyük cevapları barındırır. Sahipsizlik korkusuna, ölüm kaygısına, sevgi acısına, emek endişesine... Hepsine aynı merkezden cevap verir.',
+      visual_note: 'Stars appearing one by one in a clear night sky, time-lapse, slow reveal.',
+      keywords: ['night sky', 'stars appearing', 'time-lapse', 'clear sky'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-034',
+      title: 'İnsan Nereye Gidiyor',
+      narration: 'İnsan nereye gittiğini bilirse, yolun ağırlığı değişir. Hayat sadece geçici bir koşuşturma olmaktan çıkar. Ölüm sadece karanlık bir kapı gibi görünmez. Sevgi sadece ayrılıkla yaralanan bir bağ olmaktan kurtulur.',
+      visual_note: 'A narrow mountain trail opening up to a breathtaking panoramic view at sunrise.',
+      keywords: ['mountain trail', 'panoramic view', 'sunrise', 'revelation'],
+      media_hints: {
+        preferred_visual_style: 'cinematic'
+      }
+    },
+    {
+      scene_id: 'scene-035',
+      title: 'Kapanış',
+      narration: 'Fenaya değil bekaya; zulümata değil nura; ayrılığa değil visale doğru. Bu üç yönelme, insanın kalbindeki en derin korkuların her birine bir cevaptır. Ve bu cevapların tamamı, tek bir cümlenin on bir kelimesinde saklıdır.',
+      visual_note: 'A person slowly opening a door to a beautiful sunlit garden, warm golden light flooding in.',
+      keywords: ['opening door', 'sunlit garden', 'golden light', 'hope'],
+      media_hints: {
+        preferred_visual_style: 'slow_cinematic'
+      },
+      emphasis: 'calm_but_serious'
+    }
+  ],
+
+  metadata: {
+    source: 'derin-okuma',
+    blog_post: '20-mektup-1-makam',
+    test_day: 'day-33',
+    workflow: 'manual_scene_json_single_track_landscape_load_input',
+    content_generation_status: 'ready_for_n8n'
+  }
+};
+
+return [{ json: { raw_input: rawInput } }];
