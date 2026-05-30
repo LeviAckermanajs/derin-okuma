@@ -16,6 +16,9 @@ let monitorInterval = null;
 let logOffset       = 0;
 
 let ytScheduleHint  = null;  // { suggested_date, note, source }
+let tikTokTokenOk   = false; // true when token is valid and not expired
+let localIpCache    = null;  // cached from /api/local-ip
+let modalConfirmText = null; // expected confirmation text for current modal
 
 // Istanbul is UTC+3 year-round (no DST since 2016)
 function istanbulDateStr(offsetDays = 0) {
@@ -27,6 +30,15 @@ async function refreshYtScheduleHint() {
   try {
     ytScheduleHint = await apiFetch('/api/youtube-schedule-hint');
   } catch { ytScheduleHint = null; }
+}
+
+async function getMobileIp() {
+  if (localIpCache !== null) return localIpCache;
+  try {
+    const r    = await apiFetch('/api/local-ip');
+    localIpCache = r.ip || null;
+  } catch { localIpCache = null; }
+  return localIpCache;
 }
 
 // ── Utilities ──────────────────────────────────────────────────────────────
@@ -308,8 +320,12 @@ function cardDraftActions(d) {
         ${ab('open-n8n',        '↗ Open n8n',                   hasBlog)}
         ${ab('youtube-dry-run', '▷ YouTube Dry Run',            hasBlog && hasManifest, false, ytHint)}
         ${ab('youtube-upload',  '▲ Planlı YouTube Upload',      hasBlog && hasManifest, false, ytHint)}
-        ${ab('export-captions', '⬇ Export TikTok Captions',    ttPlanOk)}
-        ${ab('tiktok-dry-run',  '⬡ TikTok Upload Dry Run',     ttPlanOk)}
+        ${ab('export-captions',     '⬇ Export TikTok Captions',    ttPlanOk)}
+        ${ab('tiktok-dry-run',      '⬡ TikTok Upload Dry Run',     ttPlanOk)}
+        ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttPlanOk && tikTokTokenOk, false,
+             !ttPlanOk ? 'Önce TikTok caption/export planı oluştur.'
+             : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '')}
+        ${ab('mobile-caption',      '📱 Telefon Caption',          hasBlog)}
       </div>
       ${(hasPrep && !hasPipeline)
         ? `<div class="stale-note" style="margin-top:10px">⚠ Pipeline status dosyası bulunamadı — "Shorts Prep Oluştur" çalıştırarak oluşturun.</div>` : ''}
@@ -346,6 +362,26 @@ function wireDraftDetailButtons(d) {
           await navigator.clipboard.writeText(res.content);
           flashBtn(btn, '✓ Kopyalandı');
         } catch { flashBtn(btn, '✗ Hata', true); }
+        return;
+      }
+
+      if (action === 'mobile-caption') {
+        const ip  = await getMobileIp();
+        const url = ip
+          ? `http://${ip}:3457/p/${encodeURIComponent(slug)}`
+          : `http://127.0.0.1:3457/p/${encodeURIComponent(slug)}`;
+        openModal({
+          title:   '📱 Telefon Caption Sayfası',
+          label:   ip ? `Bu adresi telefonda açın (${ip})` : 'Aynı ağda olduğunuzdan emin olun',
+          command: url,
+          cwd:     null,
+          action:  'mobile-caption',
+          slug,
+          params:  { url },
+        });
+        const runBtn = document.getElementById('modal-run-btn');
+        runBtn.textContent = '⎘ URL\'yi Kopyala';
+        runBtn.disabled    = false;
         return;
       }
 
@@ -415,6 +451,18 @@ function wireDraftDetailButtons(d) {
             : null,
           cwd,
         },
+        'tiktok-draft-upload': {
+          title:          'TikTok Draft Upload',
+          label:          'TikTok\'a draft video yükleme (TIKTOK_REAL_UPLOAD=1)\nNot: TikTok API draft yükler. Yayınlama ve açıklama ekleme telefonda manuel yapılır.',
+          command:        tiktokPlan
+            ? `TIKTOK_REAL_UPLOAD=1 node scripts/upload-tiktok-batch-real.mjs --plan "${tiktokPlan}"`
+            : null,
+          cwd,
+          warning:        '⚠ Bu işlem TikTok\'a gerçek draft video yükler.',
+          requireConfirm: true,
+          confirmLabel:   'Bunun TikTok\'a draft video yükleyeceğimi anlıyorum',
+          confirmText:    'TIKTOK DRAFT',
+        },
         'youtube-dry-run': {
           title:   'YouTube Dry Run',
           label:   'YouTube yükleme önizlemesi (--dry-run)',
@@ -451,16 +499,20 @@ async function refreshTokenBadge() {
   try {
     const t = await apiFetch('/api/token-status');
     if (!t.exists) {
+      tikTokTokenOk = false;
       el.className = 'badge badge-error'; el.textContent = 'TikTok: token yok'; return;
     }
     if (t.is_expired) {
+      tikTokTokenOk = false;
       el.className = 'badge badge-error';
       el.textContent = `TikTok: süresi dolmuş (${new Date(t.expires_at).toLocaleString('tr-TR')})`;
       return;
     }
+    tikTokTokenOk = true;
     el.className = 'badge badge-ok';
     el.textContent = `TikTok: geçerli (${t.open_id_masked}) — ${new Date(t.expires_at).toLocaleString('tr-TR')} kadar`;
   } catch {
+    tikTokTokenOk = false;
     el.className = 'badge badge-warn'; el.textContent = 'TikTok: okunamadı';
   }
 }
@@ -770,9 +822,13 @@ function cardActions(d) {
         ${ab('open-n8n',        '↗ Open n8n',                   true)}
         ${ab('youtube-dry-run', '▷ YouTube Dry Run',            hasManifest,         false, ytHint)}
         ${ab('youtube-upload',  '▲ Planlı YouTube Upload',      hasManifest,         false, ytHint)}
-        ${ab('export-captions', '⬇ Export TikTok Captions',    ttPlanOk)}
-        ${ab('tiktok-dry-run',  '⬡ TikTok Upload Dry Run',     ttPlanOk)}
-        ${ab('refresh',         '↻ Refresh',                    true)}
+        ${ab('export-captions',     '⬇ Export TikTok Captions',    ttPlanOk)}
+        ${ab('tiktok-dry-run',      '⬡ TikTok Upload Dry Run',     ttPlanOk)}
+        ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttPlanOk && tikTokTokenOk, false,
+             !ttPlanOk ? 'Önce TikTok caption/export planı oluştur.'
+             : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '')}
+        ${ab('mobile-caption',      '📱 Telefon Caption',          true)}
+        ${ab('refresh',             '↻ Refresh',                    true)}
       </div>
       ${!hasManifest ? `<div class="stale-note" style="margin-top:10px">⚠ publish-manifest.json bulunamadı — YouTube upload için önce n8n export akışını tamamla.</div>` : ''}
     </div>`;
@@ -818,6 +874,26 @@ function wireDetailButtons(d) {
         } catch {
           flashBtn(btn, '✗ Hata', true);
         }
+        return;
+      }
+
+      if (action === 'mobile-caption') {
+        const ip  = await getMobileIp();
+        const url = ip
+          ? `http://${ip}:3457/p/${encodeURIComponent(d.slug)}`
+          : `http://127.0.0.1:3457/p/${encodeURIComponent(d.slug)}`;
+        openModal({
+          title:   '📱 Telefon Caption Sayfası',
+          label:   ip ? `Bu adresi telefonda açın (${ip})` : 'Aynı ağda olduğunuzdan emin olun',
+          command: url,
+          cwd:     null,
+          action:  'mobile-caption',
+          slug:    d.slug,
+          params:  { url },
+        });
+        const runBtn = document.getElementById('modal-run-btn');
+        runBtn.textContent = '⎘ URL\'yi Kopyala';
+        runBtn.disabled    = false;
         return;
       }
 
@@ -889,6 +965,18 @@ function wireDetailButtons(d) {
             ? `claude -p "/add-blog-post ${p.draft_path}"`
             : null,
           cwd,
+        },
+        'tiktok-draft-upload': {
+          title:          'TikTok Draft Upload',
+          label:          'TikTok\'a draft video yükleme (TIKTOK_REAL_UPLOAD=1)\nNot: TikTok API draft yükler. Yayınlama ve açıklama ekleme telefonda manuel yapılır.',
+          command:        tiktokPlan
+            ? `TIKTOK_REAL_UPLOAD=1 node scripts/upload-tiktok-batch-real.mjs --plan "${tiktokPlan}"`
+            : null,
+          cwd,
+          warning:        '⚠ Bu işlem TikTok\'a gerçek draft video yükler.',
+          requireConfirm: true,
+          confirmLabel:   'Bunun TikTok\'a draft video yükleyeceğimi anlıyorum',
+          confirmText:    'TIKTOK DRAFT',
         },
         'youtube-dry-run': {
           title:   'YouTube Dry Run',
@@ -1180,16 +1268,20 @@ function openModal(spec) {
     ? `<pre class="modal-code">${esc(spec.command)}</pre>`
     : `<div class="modal-no-command">⚠ Komut üretilemedi — gerekli parametre eksik veya dosya bulunamadı.</div>`;
 
+  const confirmLabel = spec.confirmLabel || 'Bunun gerçek bir işlem olduğunu anlıyorum';
+  const confirmText  = spec.confirmText  || 'ONAYLA';
+  modalConfirmText   = spec.requireConfirm ? confirmText : null;
+
   const confirmBlock = spec.requireConfirm ? `
     <div class="modal-confirm" id="modal-confirm">
       <label class="modal-confirm-check">
         <input type="checkbox" id="modal-confirm-checkbox">
-        Bunun YouTube'a gerçek planlı upload yapacağını anlıyorum
+        ${esc(confirmLabel)}
       </label>
       <div class="modal-confirm-type">
-        <span>Onaylamak için <code>YOUTUBE UPLOAD</code> yazın:</span>
+        <span>Onaylamak için <code>${esc(confirmText)}</code> yazın:</span>
         <input type="text" id="modal-confirm-input" class="param-input"
-          placeholder="YOUTUBE UPLOAD" autocomplete="off" style="margin-top:6px;width:200px">
+          placeholder="${esc(confirmText)}" autocomplete="off" style="margin-top:6px;width:200px">
       </div>
     </div>` : '';
 
@@ -1211,9 +1303,8 @@ function openModal(spec) {
     const checkConfirm = () => {
       const cb  = document.getElementById('modal-confirm-checkbox');
       const inp = document.getElementById('modal-confirm-input');
-      runBtn.disabled = !(hasCommand && cb?.checked && inp?.value === 'YOUTUBE UPLOAD');
+      runBtn.disabled = !(hasCommand && cb?.checked && inp?.value === confirmText);
     };
-    // Wire listeners after DOM is ready
     setTimeout(() => {
       document.getElementById('modal-confirm-checkbox')?.addEventListener('change', checkConfirm);
       document.getElementById('modal-confirm-input')?.addEventListener('input', checkConfirm);
@@ -1234,6 +1325,7 @@ function closeModal() {
   modalSlug         = null;
   modalParams       = {};
   modalNeedsRefresh = false;
+  modalConfirmText  = null;
 }
 
 async function runModal() {
@@ -1250,13 +1342,28 @@ async function runModal() {
   statusEl.textContent = '…';
   outputEl.textContent = '';
 
-  // Defense-in-depth: verify YouTube real upload confirmation before sending
-  if (modalAction === 'youtube-upload') {
+  // Defense-in-depth: verify modal confirmation before sending (any action with requireConfirm)
+  if (modalAction === 'mobile-caption') {
+    document.getElementById('modal-output-section').classList.remove('hidden');
+    try {
+      await navigator.clipboard.writeText(modalParams.url || '');
+      statusEl.className   = 'modal-status ok';
+      statusEl.textContent = 'URL kopyalandı ✓';
+      outputEl.textContent = modalParams.url || '';
+    } catch {
+      statusEl.className   = 'modal-status fail';
+      statusEl.textContent = 'Kopyalama başarısız — URL\'yi manuel kopyalayın.';
+    }
+    runBtn.disabled    = false;
+    runBtn.textContent = '⎘ Tekrar Kopyala';
+    return;
+  }
+  if (modalConfirmText) {
     const cb  = document.getElementById('modal-confirm-checkbox');
     const inp = document.getElementById('modal-confirm-input');
-    if (!cb?.checked || inp?.value !== 'YOUTUBE UPLOAD') {
+    if (!cb?.checked || inp?.value !== modalConfirmText) {
       statusEl.className   = 'modal-status fail';
-      statusEl.textContent = 'Onay tamamlanmadı — checkbox işaretlenmeli ve "YOUTUBE UPLOAD" yazılmalı.';
+      statusEl.textContent = `Onay tamamlanmadı — checkbox işaretlenmeli ve "${modalConfirmText}" yazılmalı.`;
       runBtn.disabled    = false;
       runBtn.textContent = 'Tekrar Çalıştır';
       return;
@@ -1358,6 +1465,7 @@ document.querySelectorAll('.tab-btn').forEach(btn =>
 (async () => {
   try { config = await apiFetch('/api/config'); } catch {}
   refreshYtScheduleHint();  // fetch once; cached for the session
+  getMobileIp();            // pre-fetch local IP for mobile caption URLs
   loadDrafts();             // default active tab
   refreshTokenBadge();
 })();

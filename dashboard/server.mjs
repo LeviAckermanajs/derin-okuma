@@ -6,6 +6,7 @@ import fs                from 'fs';
 import path              from 'path';
 import { spawnSync, spawn } from 'child_process';
 import net                  from 'net';
+import os                   from 'os';
 import { fileURLToPath } from 'url';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
@@ -47,7 +48,7 @@ const MIME = {
 try { fs.mkdirSync(JOBS_DIR, { recursive: true }); } catch {}
 
 const ALLOWED_ACTIONS = new Set([
-  'validate-shorts', 'export-captions', 'tiktok-dry-run',
+  'validate-shorts', 'export-captions', 'tiktok-dry-run', 'tiktok-draft-upload',
   'shorts-prep', 'shorts-fill', 'batch-create', 'blog-add',
   'youtube-dry-run', 'youtube-upload',
   'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
@@ -699,7 +700,7 @@ function buildCommand(action, slug, params = {}) {
       preview: `node scripts/validate-video-package.mjs --slug ${slug} --type shorts --report`,
     };
   }
-  if (action === 'export-captions' || action === 'tiktok-dry-run') {
+  if (action === 'export-captions' || action === 'tiktok-dry-run' || action === 'tiktok-draft-upload') {
     const planPath = path.join(resolveExportFolder(slug), 'tiktok-upload-plan.json');
     if (!exists(planPath)) return { error: 'tiktok_upload_plan_not_found' };
     if (action === 'export-captions') {
@@ -708,9 +709,18 @@ function buildCommand(action, slug, params = {}) {
         preview: `node scripts/export-tiktok-captions.mjs --plan "${planPath}"`,
       };
     }
+    if (action === 'tiktok-dry-run') {
+      return {
+        args: [path.join(SCRIPTS_DIR, 'upload-tiktok-batch-real.mjs'), '--plan', planPath, '--dry-run'],
+        preview: `node scripts/upload-tiktok-batch-real.mjs --plan "${planPath}" --dry-run`,
+      };
+    }
+    // tiktok-draft-upload: real upload, requires TIKTOK_REAL_UPLOAD=1
     return {
-      args: [path.join(SCRIPTS_DIR, 'upload-tiktok-batch-real.mjs'), '--plan', planPath, '--dry-run'],
-      preview: `node scripts/upload-tiktok-batch-real.mjs --plan "${planPath}" --dry-run`,
+      args:    [path.join(SCRIPTS_DIR, 'upload-tiktok-batch-real.mjs'), '--plan', planPath],
+      env:     { ...process.env, TIKTOK_REAL_UPLOAD: '1' },
+      preview: `TIKTOK_REAL_UPLOAD=1 node scripts/upload-tiktok-batch-real.mjs --plan "${planPath}"`,
+      longTimeout: true,
     };
   }
   if (action === 'shorts-prep') {
@@ -1044,6 +1054,17 @@ const server = http.createServer(async (req, res) => {
   if (pathname === '/api/drafts-list')      return sendJson(res, apiDraftsList());
   if (pathname === '/api/services/status')       return sendJson(res, await apiServicesStatus());
   if (pathname === '/api/youtube-schedule-hint') return sendJson(res, apiYoutubeScheduleHint());
+  if (pathname === '/api/local-ip') {
+    const ifaces = os.networkInterfaces();
+    let ip = null;
+    for (const addrs of Object.values(ifaces)) {
+      for (const a of addrs) {
+        if (a.family === 'IPv4' && !a.internal) { ip = a.address; break; }
+      }
+      if (ip) break;
+    }
+    return sendJson(res, { ip, caption_url_base: ip ? `http://${ip}:3457` : null });
+  }
 
   const jobLogsMatch = pathname.match(/^\/api\/job\/([^/]+)\/logs$/);
   if (jobLogsMatch) {
