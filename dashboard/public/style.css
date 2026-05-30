@@ -712,6 +712,35 @@ pre.modal-output {
   line-height: 1.4;
 }
 
+/* ── Modal URL section (static mobile caption link) ──────────────────────── */
+
+.modal-url-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: #1a2a1a;
+  border: 1px solid #2c6e49;
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+.modal-url-code {
+  flex: 1;
+  font-size: 12px;
+  color: #4caf86;
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.modal-deploy-note {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #d4a82a;
+  padding: 4px 10px;
+}
+
 /* ── Modal confirm section (YouTube real upload) ──────────────────────────── */
 
 .modal-confirm {

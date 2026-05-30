@@ -51,6 +51,7 @@ const ALLOWED_ACTIONS = new Set([
   'validate-shorts', 'export-captions', 'tiktok-dry-run', 'tiktok-draft-upload',
   'shorts-prep', 'shorts-fill', 'batch-create', 'blog-add',
   'youtube-dry-run', 'youtube-upload',
+  'generate-mobile-caption',
   'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
 ]);
 
@@ -595,6 +596,7 @@ function apiSlug(slug) {
   const ytResultPath     = path.join(exportFolder, 'youtube-upload-result.json');
   const tiktokPlanPath   = path.join(exportFolder, 'tiktok-upload-plan.json');
   const tiktokResultPath = path.join(exportFolder, 'tiktok-upload-result.json');
+  const mobileLinkPath   = path.join(exportFolder, 'mobile-caption-link.json');
 
   const tiktokResult = readJson(tiktokResultPath);
   const ytResult     = readJson(ytResultPath);
@@ -675,6 +677,8 @@ function apiSlug(slug) {
             generated_at: ytResult.generated_at            ?? null,
           }
     ) : null,
+    // Mobile caption static page
+    mobile_caption_link: readJson(mobileLinkPath),
     // Publish pack index (docs/)
     publish_exists: exists(path.join(PUBLISH_DIR, slug)),
     publish_index:  readText(path.join(PUBLISH_DIR, slug, 'index.md')),
@@ -787,6 +791,12 @@ function buildCommand(action, slug, params = {}) {
       args:        ['--permission-mode', 'acceptEdits', '-p', `/add-blog-post ${draft_path}`],
       preview:     `claude --permission-mode acceptEdits -p "/add-blog-post ${draft_path}"`,
       longTimeout: true,
+    };
+  }
+  if (action === 'generate-mobile-caption') {
+    return {
+      args:    [path.join(SCRIPTS_DIR, 'export-mobile-captions-static.mjs'), '--slug', slug],
+      preview: `node scripts/export-mobile-captions-static.mjs --slug ${slug}`,
     };
   }
   if (action === 'youtube-dry-run' || action === 'youtube-upload') {
@@ -967,6 +977,13 @@ async function handleAction(body) {
     stdout:          result.stdout  || '',
     stderr:          result.stderr  || '',
   };
+
+  // For generate-mobile-caption: attach the generated link to the response
+  if (result.status === 0 && action === 'generate-mobile-caption' && slug) {
+    const linkPath = path.join(resolveExportFolder(slug), 'mobile-caption-link.json');
+    const link     = readJson(linkPath);
+    if (link) response.mobile_caption_link = link;
+  }
 
   // For shorts-prep: ensure pipeline status JSON always exists after the action,
   // even when the pipeline script failed before calling writeStatus().

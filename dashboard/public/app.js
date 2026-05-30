@@ -325,7 +325,13 @@ function cardDraftActions(d) {
         ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttPlanOk && tikTokTokenOk, false,
              !ttPlanOk ? 'Önce TikTok caption/export planı oluştur.'
              : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '')}
-        ${ab('mobile-caption',      '📱 Telefon Caption',          hasBlog)}
+        ${ab('mobile-caption',          '📱 Telefon Caption',            hasBlog)}
+        ${ab('generate-mobile-caption',
+             sd?.mobile_caption_link ? '📱 Caption Sayfasını Güncelle' : '📱 Mobil Caption Sayfası Oluştur',
+             hasBlog && hasManifest,
+             false,
+             !hasBlog ? 'Önce blog yazısı oluştur.'
+             : !hasManifest ? 'publish-manifest.json bulunamadı.' : '')}
       </div>
       ${(hasPrep && !hasPipeline)
         ? `<div class="stale-note" style="margin-top:10px">⚠ Pipeline status dosyası bulunamadı — "Shorts Prep Oluştur" çalıştırarak oluşturun.</div>` : ''}
@@ -482,10 +488,22 @@ function wireDraftDetailButtons(d) {
           warning:        pastWarning || '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
           requireConfirm: true,
         },
+        'generate-mobile-caption': {
+          title:      sd?.mobile_caption_link ? '📱 Caption Sayfasını Güncelle' : '📱 Mobil Caption Sayfası Oluştur',
+          label:      'Statik HTML caption sayfası oluştur (Vercel üzerinden erişilebilir)',
+          command:    slug ? `node scripts/export-mobile-captions-static.mjs --slug ${slug}` : null,
+          cwd,
+          existingUrl: sd?.mobile_caption_link?.url || null,
+        },
       };
 
       const spec = SPECS[action];
-      if (spec) openModal({ ...spec, action, slug, params: p });
+      if (spec) {
+        if (action === 'generate-mobile-caption' && spec.existingUrl) {
+          spec.label += `\n\nMevcut URL: ${spec.existingUrl}`;
+        }
+        openModal({ ...spec, action, slug, params: p });
+      }
     });
   });
 }
@@ -827,8 +845,13 @@ function cardActions(d) {
         ${ab('tiktok-draft-upload', '⬡ TikTok Draft Upload',       ttPlanOk && tikTokTokenOk, false,
              !ttPlanOk ? 'Önce TikTok caption/export planı oluştur.'
              : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '')}
-        ${ab('mobile-caption',      '📱 Telefon Caption',          true)}
-        ${ab('refresh',             '↻ Refresh',                    true)}
+        ${ab('mobile-caption',          '📱 Telefon Caption',            true)}
+        ${ab('generate-mobile-caption',
+             d.mobile_caption_link ? '📱 Caption Sayfasını Güncelle' : '📱 Mobil Caption Sayfası Oluştur',
+             d.publish_manifest_exists,
+             false,
+             !d.publish_manifest_exists ? 'publish-manifest.json bulunamadı.' : '')}
+        ${ab('refresh',                 '↻ Refresh',                    true)}
       </div>
       ${!hasManifest ? `<div class="stale-note" style="margin-top:10px">⚠ publish-manifest.json bulunamadı — YouTube upload için önce n8n export akışını tamamla.</div>` : ''}
     </div>`;
@@ -997,10 +1020,23 @@ function wireDetailButtons(d) {
           warning:        pastWarning || '⚠ Bu işlem YouTube\'a gerçek video yükler. Geri alınamaz.',
           requireConfirm: true,
         },
+        'generate-mobile-caption': {
+          title:   d.mobile_caption_link ? '📱 Caption Sayfasını Güncelle' : '📱 Mobil Caption Sayfası Oluştur',
+          label:   'Statik HTML caption sayfası oluştur (Vercel üzerinden erişilebilir)',
+          command: `node scripts/export-mobile-captions-static.mjs --slug ${d.slug}`,
+          cwd,
+          existingUrl: d.mobile_caption_link?.url || null,
+        },
       };
 
       const spec = ACTION_SPECS[action];
-      if (spec) openModal({ ...spec, action, slug: d.slug, params: p });
+      if (spec) {
+        // If we already have a mobile caption link, show it before opening the modal
+        if (action === 'generate-mobile-caption' && spec.existingUrl) {
+          spec.label += `\n\nMevcut URL: ${spec.existingUrl}`;
+        }
+        openModal({ ...spec, action, slug: d.slug, params: p });
+      }
     });
   });
 }
@@ -1178,6 +1214,26 @@ async function loadServices() {
 
 // ── Modal ─────────────────────────────────────────────────────────────────
 
+// ── Modal URL display (static mobile caption) ─────────────────────────────
+
+function showModalUrl(url) {
+  const section = document.getElementById('modal-url-section');
+  if (!section) return;
+  document.getElementById('modal-url-text').textContent = url;
+  const copyBtn = document.getElementById('modal-url-copy');
+  copyBtn.textContent = '⎘ Kopyala';
+  copyBtn.onclick = () => {
+    navigator.clipboard.writeText(url)
+      .then(() => { copyBtn.textContent = '✓ Kopyalandı'; setTimeout(() => copyBtn.textContent = '⎘ Kopyala', 2000); })
+      .catch(() => {});
+  };
+  section.classList.remove('hidden');
+}
+
+function hideModalUrl() {
+  document.getElementById('modal-url-section')?.classList.add('hidden');
+}
+
 function stopJobMonitor() {
   if (monitorInterval) { clearInterval(monitorInterval); monitorInterval = null; }
   monitorJobId = null;
@@ -1293,6 +1349,7 @@ function openModal(spec) {
   document.getElementById('modal-output').textContent    = '';
   document.getElementById('modal-status-bar').textContent = '';
   document.getElementById('modal-status-bar').className  = 'modal-status';
+  hideModalUrl();
 
   // Enable run button only when command is valid (and confirm satisfied if required)
   const runBtn = document.getElementById('modal-run-btn');
@@ -1409,6 +1466,7 @@ async function runModal() {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Başarılı (exit 0)';
       modalNeedsRefresh = true;
+      if (data.mobile_caption_link?.url) showModalUrl(data.mobile_caption_link.url);
     } else if (data.scaffold_ready) {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Scaffold hazır ✓ — validate/batch adımı başarısız olsa da scaffold dosyaları oluştu. "Claude ile Paketi Doldur" artık aktif.';
