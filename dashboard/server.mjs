@@ -712,7 +712,7 @@ function buildCommand(action, slug, params = {}) {
 
     const clientSecretPath = path.join(ROOT, '.secrets', 'youtube', 'client_secret.json');
     const tokenPath        = path.join(ROOT, '.secrets', 'youtube', 'token.json');
-    const channelId        = 'UCfdDchpT4rait8RUjzpVGA';
+    const channelId        = 'UCfdDdchpT4rait8RUjzpVGA';
     const folderName       = path.basename(exportFolder);
 
     if (action === 'youtube-dry-run') {
