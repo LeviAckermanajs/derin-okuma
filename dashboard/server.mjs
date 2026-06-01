@@ -747,16 +747,31 @@ function buildCommand(action, slug, params = {}) {
     const runIdRaw = (run_id || '').trim();
     const runId    = /^[a-zA-Z0-9_-]+$/.test(runIdRaw)
       ? runIdRaw
-      : `day${dayNum}-batch-a`;  // e.g. day33-batch-a (no extra dash, no zero-pad)
+      : `day${dayNum}-batch-a`;
+
+    // Use the slug from the request (blog_slug saved in draft-links.json) if valid.
+    // This prevents re-deriving a wrong slug from the title (e.g. "1-2-3-4" vs "1-4").
+    const blogSlug = (slug && /^[a-zA-Z0-9_-]+$/.test(slug)) ? slug : null;
+    if (blogSlug) {
+      const blogFileExists = ['.md', '.mdx'].some(ext =>
+        exists(path.join(BLOG_DIR, blogSlug + ext)));
+      if (!blogFileExists)
+        return { error: 'source_blog_not_found', slug: blogSlug };
+    }
+
+    const cmdArgs = [
+      path.join(SCRIPTS_DIR, 'run-shorts-prep-pipeline.mjs'),
+      '--title',  title.trim(),
+      '--day',    String(dayNum),
+      '--run-id', runId,
+      '--force',
+    ];
+    if (blogSlug) cmdArgs.push('--slug', blogSlug);
+
+    const slugPart = blogSlug ? ` --slug ${blogSlug}` : '';
     return {
-      args: [
-        path.join(SCRIPTS_DIR, 'run-shorts-prep-pipeline.mjs'),
-        '--title',  title.trim(),
-        '--day',    String(dayNum),
-        '--run-id', runId,
-        '--force',
-      ],
-      preview: `node scripts/run-shorts-prep-pipeline.mjs --title "${title.trim()}" --day ${dayNum} --run-id ${runId} --force`,
+      args:    cmdArgs,
+      preview: `node scripts/run-shorts-prep-pipeline.mjs --title "${title.trim()}"${slugPart} --day ${dayNum} --run-id ${runId} --force`,
     };
   }
   if (action === 'shorts-fill') {

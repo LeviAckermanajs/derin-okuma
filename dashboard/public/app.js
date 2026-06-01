@@ -317,7 +317,8 @@ function cardDraftActions(d) {
       <h3>Workflow Aksiyonları</h3>
       <div class="action-bar">
         ${ab('blog-add',        '+ Blog Yazısını Ekle',         !hasBlog)}
-        ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog,              isFilled)}
+        ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog, isFilled,
+             !hasBlog ? 'Önce Blog Yazısını Ekle.' : '')}
         ${ab('shorts-fill',     '◇ Claude ile Paketi Doldur',   fillEnabled,          false,  fillHint)}
         ${ab('validate-shorts', '✓ Validate Shorts',            hasPrep)}
         ${ab('batch-create',    '⊞ Batch Oluştur',              valPass)}
@@ -413,8 +414,8 @@ function wireDraftDetailButtons(d) {
         'shorts-prep': {
           title:   'Shorts Prep Oluştur',
           label:   'Shorts pipeline (prep → validate → batch)',
-          command: p.title && p.day
-            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
+          command: p.title && p.day && slug
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --slug ${slug} --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
             : null,
           cwd,
           warning: pkgFilled(sd)
@@ -966,7 +967,7 @@ function wireDetailButtons(d) {
           title:   'Shorts Prep Oluştur',
           label:   'Shorts pipeline (prep → validate → batch)',
           command: p.title && p.day
-            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --slug ${d.slug} --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
             : null,
           cwd,
           warning: d.package_status === 'filled'

@@ -34,13 +34,14 @@ function toSlug(title) {
 
 function parseArgs(argv) {
   const args = {
-    title: null, day: null, runId: null,
+    title: null, slug: null, day: null, runId: null,
     force: false, forcePrep: false, confirmOverwriteFilled: false,
   };
   let i = 0;
   while (i < argv.length) {
     const a = argv[i];
     if      (a === '--title'                   && argv[i + 1]) { args.title = argv[++i]; }
+    else if (a === '--slug'                    && argv[i + 1]) { args.slug  = argv[++i]; }
     else if (a === '--day'                     && argv[i + 1]) { args.day   = parseInt(argv[++i], 10); }
     else if (a === '--run-id'                  && argv[i + 1]) { args.runId = argv[++i]; }
     else if (a === '--force')                  { args.force = true; }
@@ -67,7 +68,7 @@ if (!args.runId) {
   process.exit(1);
 }
 
-const slug   = toSlug(args.title);
+const slug   = args.slug || toSlug(args.title);
 const dayTag = `day-${String(args.day).padStart(2, '0')}`;
 
 // ─── Paths ───────────────────────────────────────────────────────────────────
@@ -107,6 +108,22 @@ const pipelineStatus = {
 function writeStatus() {
   fs.mkdirSync(reportsDir, { recursive: true });
   fs.writeFileSync(statusPath, JSON.stringify(pipelineStatus, null, 2), 'utf8');
+}
+
+// ─── Source blog check ───────────────────────────────────────────────────────
+// When a slug is explicitly given, verify the blog file exists before any pipeline work.
+if (args.slug) {
+  const blogDir   = path.join(ROOT, 'src', 'content', 'blog');
+  const blogExists = ['.md', '.mdx'].some(ext =>
+    fs.existsSync(path.join(blogDir, slug + ext)));
+  if (!blogExists) {
+    console.error(`\n[FAIL] Kaynak blog dosyası bulunamadı: src/content/blog/${slug}.{md,mdx}`);
+    console.error('       Önce blog yazısını ekleyin ("Blog Yazısını Ekle" adımı).');
+    pipelineStatus.status        = 'failed';
+    pipelineStatus.failedCommand = 'source_blog_not_found';
+    writeStatus();
+    process.exit(1);
+  }
 }
 
 // ─── Step runner ─────────────────────────────────────────────────────────────
@@ -192,7 +209,7 @@ if (hasFilledPackage && !args.forcePrep) {
   console.log('\n[STEP] video:prep');
   console.log('  (skipped — existing filled package detected)');
 } else {
-  const prepArgs = ['scripts/prepare-video-package.mjs', '--title', args.title, '--day', String(args.day)];
+  const prepArgs = ['scripts/prepare-video-package.mjs', '--title', args.title, '--slug', slug, '--day', String(args.day)];
   if (args.forcePrep) prepArgs.push('--force');
   if (!runStep('video:prep', prepArgs)) process.exit(1);
 }
