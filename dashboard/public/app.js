@@ -448,10 +448,8 @@ function wireDraftDetailButtons(d) {
         },
         'export-captions': {
           title:   'Export TikTok Captions',
-          label:   'TikTok altyazı dışa aktarma',
-          command: tiktokPlan
-            ? `node scripts/export-tiktok-captions.mjs --plan "${tiktokPlan}"`
-            : null,
+          label:   'TikTok altyazı dışa aktarma (tiktok-upload-plan.json + caption .txt dosyaları üretir)',
+          command: slug ? `node scripts/tiktok-export-pipeline.mjs --slug ${slug}` : null,
           cwd,
         },
         'tiktok-dry-run': {
@@ -949,10 +947,8 @@ function wireDetailButtons(d) {
         },
         'export-captions': {
           title:   'Export TikTok Captions',
-          label:   'TikTok altyazı dışa aktarma',
-          command: tiktokPlan
-            ? `node scripts/export-tiktok-captions.mjs --plan "${tiktokPlan}"`
-            : null,
+          label:   'TikTok altyazı dışa aktarma (tiktok-upload-plan.json + caption .txt dosyaları üretir)',
+          command: `node scripts/tiktok-export-pipeline.mjs --slug ${d.slug}`,
           cwd,
         },
         'tiktok-dry-run': {
@@ -1487,7 +1483,7 @@ async function runModal() {
 
     if (data.error) {
       statusEl.className   = 'modal-status fail';
-      statusEl.textContent = `Hata: ${data.error}`;
+      statusEl.textContent = `Hata: ${data.error_message || data.error}`;
     } else if (data.exit_code === 0) {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Başarılı (exit 0)';

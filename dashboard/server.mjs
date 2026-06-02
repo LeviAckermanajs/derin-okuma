@@ -715,8 +715,19 @@ function buildCommand(action, slug, params = {}) {
     // Generates tiktok-upload-plan.json from publish-manifest + exports caption .txt files.
     // Does NOT require tiktok-upload-plan.json to already exist.
     const exportFolder = resolveExportFolder(slug);
+    if (!exists(exportFolder)) {
+      return {
+        error:         'export_folder_not_found',
+        error_message: `Export klasörü bulunamadı: "${path.basename(exportFolder)}"`,
+      };
+    }
     const manifestPath = path.join(exportFolder, 'publish-manifest.json');
-    if (!exists(manifestPath)) return { error: 'publish_manifest_not_found' };
+    if (!exists(manifestPath)) {
+      return {
+        error:         'publish_manifest_not_found',
+        error_message: 'publish-manifest.json bulunamadı — önce n8n export akışını tamamlayın.',
+      };
+    }
     return {
       args:    [path.join(SCRIPTS_DIR, 'tiktok-export-pipeline.mjs'), '--slug', slug],
       preview: `node scripts/tiktok-export-pipeline.mjs --slug ${slug}`,
@@ -724,7 +735,10 @@ function buildCommand(action, slug, params = {}) {
   }
   if (action === 'tiktok-dry-run' || action === 'tiktok-draft-upload') {
     const planPath = path.join(resolveExportFolder(slug), 'tiktok-upload-plan.json');
-    if (!exists(planPath)) return { error: 'tiktok_upload_plan_not_found' };
+    if (!exists(planPath)) return {
+      error:         'tiktok_upload_plan_not_found',
+      error_message: 'tiktok-upload-plan.json bulunamadı — önce Export TikTok Captions çalıştırın.',
+    };
     if (action === 'tiktok-dry-run') {
       return {
         args: [path.join(SCRIPTS_DIR, 'upload-tiktok-batch-real.mjs'), '--plan', planPath, '--dry-run'],
@@ -839,7 +853,7 @@ function buildCommand(action, slug, params = {}) {
     const safeMnft = path.resolve(manifestPath);
     if (!safeMnft.startsWith(safeRoot + path.sep) && safeMnft !== safeRoot)
       return { error: 'invalid_manifest_path' };
-    if (!exists(manifestPath)) return { error: 'manifest_not_found' };
+    if (!exists(manifestPath)) return { error: 'manifest_not_found', error_message: 'publish-manifest.json bulunamadı — önce n8n export akışını tamamlayın.' };
 
     const clientSecretPath = path.join(ROOT, '.secrets', 'youtube', 'client_secret.json');
     const tokenPath        = path.join(ROOT, '.secrets', 'youtube', 'token.json');
