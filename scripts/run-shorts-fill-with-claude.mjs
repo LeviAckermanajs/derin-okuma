@@ -155,7 +155,14 @@ if (claudeResult.status !== 0) {
   failStep('Claude fill', TEMPLATE);
 }
 
-// ─── Step 2: video:validate ───────────────────────────────────────────────────
+// ─── Step 2: normalize shorts metadata hashtags ───────────────────────────────
+
+runNodeStep('normalize hashtags', [
+  'scripts/normalize-shorts-metadata-hashtags.mjs',
+  '--slug', args.slug,
+]);
+
+// ─── Step 3: video:validate ───────────────────────────────────────────────────
 
 runNodeStep('video:validate', [
   'scripts/validate-video-package.mjs',
@@ -163,7 +170,7 @@ runNodeStep('video:validate', [
   '--report',
 ]);
 
-// ─── Step 3: video:batch ──────────────────────────────────────────────────────
+// ─── Step 4: video:batch ──────────────────────────────────────────────────────
 
 runNodeStep('video:batch', [
   'scripts/build-video-batch.mjs',
