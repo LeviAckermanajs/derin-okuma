@@ -1,0 +1,28 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "20. Mektup - 2. Makam - 1-2-3-4. kelime",
+    "description": "TODO: Bu yazıdan üretilecek landscape video açıklaması.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "20-mektup-2-makam-1-2-3-4-kelime-landscape-day-34"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "20-mektup-2-makam-1-2-3-4-kelime",
+    "test_day": "day-34",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "scaffold_only",
+    "source_files": []
+  }
+}
