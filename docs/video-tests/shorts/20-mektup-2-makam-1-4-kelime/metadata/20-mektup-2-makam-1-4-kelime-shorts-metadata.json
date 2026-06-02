@@ -1,0 +1,86 @@
+{
+  "video_type": "shorts",
+  "source": "20-mektup-2-makam-1-4-kelime",
+  "test_day": "day-34",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan kâinata baktığında genellikle tek tek şeyleri görür. Peki ya bağlantıları?",
+      "title_options": [
+        "Kâinata Neden Hep Parça Parça Bakıyoruz?",
+        "Bağlantıları Görmek Neden Zor?",
+        "Dağınık Görünen Neden Aslında Birdir?"
+      ],
+      "selected_title": "Kâinata Neden Hep Parça Parça Bakıyoruz?",
+      "description": "Kâinata parça parça değil bütün olarak bakınca ne görürsün? #derinokuma #shorts #tefekkür #iman #kâinat #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kâinat", "#maneviyat"],
+      "thumbnail_or_cover_text": "PARÇA PARÇA MI?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Pek çok parçadan oluşan her şeyin kaosa dönmesi beklenir. Kâinat neden istisna?",
+      "title_options": [
+        "Çoklukta Düzen Nasıl Mümkün Olur?",
+        "Kâinat Neden Kaosa Dönmüyor?",
+        "Düzen Nereye İşaret Ediyor?"
+      ],
+      "selected_title": "Çoklukta Düzen Nasıl Mümkün Olur?",
+      "description": "Kâinattaki düzen bir tesadüf değildir. Bunun arkasında ne var? #derinokuma #shorts #tefekkür #risaleinur #tevhid #kâinat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#risaleinur", "#tevhid", "#kâinat"],
+      "thumbnail_or_cover_text": "NEDEN DÜZEN VAR?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Küçücük bir canlı, aslında çok daha büyük bir şeyin işareti olabilir mi?",
+      "title_options": [
+        "Bir Canlı Neye İşaret Eder?",
+        "Her Canlı Neden Anlam Taşır?",
+        "Canlılar Bize Ne Söylüyor?"
+      ],
+      "selected_title": "Bir Canlı Neye İşaret Eder?",
+      "description": "Her canlı bir kitap gibidir. Başlangıcı programı taşır, sonu anlamı özetler. #derinokuma #shorts #tefekkür #iman #maneviyat #varlık",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#varlık"],
+      "thumbnail_or_cover_text": "CANLI BİR KİTAP"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir kasabada iki müdür olsa ne olur? Kâinatta iki ayrı irade olsaydı ne olurdu?",
+      "title_options": [
+        "Ortaklık Neden İmkânsızdır?",
+        "Kâinatta İki İrade Olsaydı Ne Olurdu?",
+        "Bir Zerre Neden Bütünü Gerektirir?"
+      ],
+      "selected_title": "Ortaklık Neden İmkânsızdır?",
+      "description": "İki müdür bile küçük bir kasabayı yönetemez. Kâinat ölçeğinde ortaklık hiç mümkün mü? #derinokuma #shorts #tefekkür #risaleinur #tevhid #iman",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#risaleinur", "#tevhid", "#iman"],
+      "thumbnail_or_cover_text": "ORTAKLIK İMKÂNSIZ"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bir ağacı gerçekten kim yönetiyor? Yalnızca ağacı mı, yoksa onu ayakta tutan her şeyi de mi?",
+      "title_options": [
+        "Mülk Neden Bölünmez?",
+        "Bir Ağacı Yönetmek Neden Her Şeyi Gerektirir?",
+        "Her Şeyin Sahibi Neden Tek Olmalı?"
+      ],
+      "selected_title": "Mülk Neden Bölünmez?",
+      "description": "Bir ağacı idare etmek için toprağı, suyu, havayı da idare etmek gerekir. Mülk bölünmez. #derinokuma #shorts #tefekkür #iman #maneviyat #kâinat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#kâinat"],
+      "thumbnail_or_cover_text": "MÜLK BÖLÜNMEZ"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Her şey ayrı ayrı duruyor gibi görünür. Ama gerçekten öyle mi?",
+      "title_options": [
+        "Dağınık Görünen Neden Aslında Birdir?",
+        "Kâinatı Bir Bütün Olarak Nasıl Okuruz?",
+        "Bağlantıları Görmek Neden Her Şeyi Değiştirir?"
+      ],
+      "selected_title": "Dağınık Görünen Neden Aslında Birdir?",
+      "description": "Düzen, ölçü, hikmet — bunlar bir zincir gibi birbirine bağlı. Kâinat aslında tek bir bütündür. #derinokuma #shorts #tefekkür #risaleinur #maneviyat #tevhid",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#risaleinur", "#maneviyat", "#tevhid"],
+      "thumbnail_or_cover_text": "ASLINDA BİRDİR"
+    }
+  ]
+}
