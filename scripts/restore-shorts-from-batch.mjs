@@ -123,6 +123,11 @@ function resolveHashtags(item) {
   return DEFAULT_HASHTAGS;
 }
 
+function titleToThumbnailText(title) {
+  if (!isNonEmptyString(title)) return 'DERİN OKUMA';
+  return title.replace(/[?!.,;:]+$/g, '').trim().toUpperCase();
+}
+
 // Returns a description that ends with hashtags.join(' ') (required by validator).
 function resolveDescription(item, hashtags) {
   const hashStr = hashtags.join(' ');
@@ -182,7 +187,7 @@ function buildPackageShorts(items) {
       title:                  item.job.title,
       description,
       hashtags,
-      thumbnail_or_cover_text: '',
+      thumbnail_or_cover_text: titleToThumbnailText(item.job.title),
       scenes: item.scenes.map(s => ({
         scene_id:    s.scene_id,
         narration:   s.narration,
@@ -206,7 +211,7 @@ function buildMetadataShorts(items) {
       selected_title:         item.job.title,
       description,
       hashtags,
-      thumbnail_or_cover_text: '',
+      thumbnail_or_cover_text: titleToThumbnailText(item.job.title),
     };
   });
 }
@@ -366,6 +371,21 @@ for (const f of loadInputFiles) {
 
 console.log('');
 ok('all_files_written=true');
+
+// ── Post-write: normalize package ────────────────────────────────────────────
+
+console.log('');
+info('Running normalize-shorts-package…');
+const normalizeResult = spawnSync(
+  process.execPath,
+  [path.join(ROOT, 'scripts', 'normalize-shorts-package.mjs'), '--slug', args.slug],
+  { cwd: ROOT, stdio: 'inherit' }
+);
+if (normalizeResult.status !== 0) {
+  warn('normalize-shorts-package exited non-zero — review output above');
+} else {
+  ok('normalize-shorts-package passed');
+}
 
 // ── Post-write validation ─────────────────────────────────────────────────────
 

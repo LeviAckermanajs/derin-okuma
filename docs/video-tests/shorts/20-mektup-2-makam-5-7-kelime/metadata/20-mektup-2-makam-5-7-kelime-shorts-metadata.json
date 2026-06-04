@@ -1,0 +1,132 @@
+{
+  "video_type": "shorts",
+  "source": "20-mektup-2-makam-5-7-kelime",
+  "test_day": "day-35",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir çiçeğin güzelliğini kim yarattı? Bu soruyu ciddiye aldığında, hamdin nereye gittiği de netleşir.",
+      "title_options": [
+        "Hamd Neden O'na Aittir?",
+        "Güzellik Kiminse, Hamd de Ona Aittir",
+        "Şükrümüz Nereye Gidiyor?",
+        "Güzelliğin Sahibi Kim?"
+      ],
+      "selected_title": "Hamd Neden O'na Aittir?",
+      "description": "Kâinattaki her güzelliğin sahipsiz olmadığını fark etmek, hamdi doğru yere taşır. #derinokuma #shorts #tefekkür #iman #maneviyat #hamd",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat",
+        "#hamd"
+      ],
+      "thumbnail_or_cover_text": "HAMD NEREYE AKAR?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Zerreler mi daha zor yaratılır, yıldızlar mı? Sonsuz bir kudret için bu soru anlamsızlaşır.",
+      "title_options": [
+        "Zerreler ve Yıldızlar Neden Eşittir?",
+        "Sonsuz Kudret Nasıl Anlaşılır?",
+        "Bir Elma ile Kâinat Aynı Kudrete mi Bakar?"
+      ],
+      "selected_title": "Zerreler ve Yıldızlar Neden Eşittir?",
+      "description": "Büyük ile küçük arasındaki zorluk farkı, sonsuz bir kudret açısından silinir. Bir elmadan kâinata aynı mühür. #derinokuma #shorts #tefekkür #iman #risaleinur #kâinat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#risaleinur",
+        "#kâinat"
+      ],
+      "thumbnail_or_cover_text": "ZERREYLE YILDIZ EŞİT"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Her bahar, binlerce farklı tür aynı anda uyanır. Kimse geç kalmaz, kimse unutulmaz.",
+      "title_options": [
+        "Hayatı Veren Nasıl Bilinir?",
+        "Bahar Neden Bir Mucizedir?",
+        "Binlerce Tür Nasıl Unutulmadan Hazırlanır?"
+      ],
+      "selected_title": "Hayatı Veren Nasıl Bilinir?",
+      "description": "Bahar, hayatın kaynağına adreslenmiş sessiz bir kanıttır. Her canlının ihtiyacı ayrı; ama hepsi zamanında karşılanır. #derinokuma #shorts #tefekkür #iman #maneviyat #hayat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat",
+        "#hayat"
+      ],
+      "thumbnail_or_cover_text": "BAHAR NEYI SÖYLÜYOR?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir tohum toprakta çürüdüğünde bu bir son mudur, yoksa başak hayatına bir kapı mı?",
+      "title_options": [
+        "Ölüm Neden Sönüş Değildir?",
+        "Tohumun Çürümesi Neden Kayıp Değil?",
+        "Ölümden Sonra Ne Olur?",
+        "Vazife Neden Bitmez, Değişir?"
+      ],
+      "selected_title": "Ölüm Neden Sönüş Değildir?",
+      "description": "Dışarıdan çürüme gibi görünen şey, içeriden başak hayatına açılıştır. Ölüme tohum gözüyle bakmak her şeyi değiştirir. #derinokuma #shorts #tefekkür #iman #ölüm #maneviyat #ahiret",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ölüm",
+        "#maneviyat",
+        "#ahiret"
+      ],
+      "thumbnail_or_cover_text": "ÖLÜM NEDEN SÖNÜŞ DEĞİL?"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Her canlı görünmezden görünüre çıkar, bir süre kalır, sonra yeniden görünmeze doğru yola çıkar.",
+      "title_options": [
+        "Geliş ve Gidiş Neden Rastgele Değil?",
+        "Zaman Neden Bir Nehir Gibidir?",
+        "Varlık Neden Sahipsiz Değil?"
+      ],
+      "selected_title": "Geliş ve Gidiş Neden Rastgele Değil?",
+      "description": "Gayb âleminden görünür âleme, oradan yeniden gayba... Bu akış bir yatağı ve bir hedefi olan bir nehir gibidir. #derinokuma #shorts #tefekkür #iman #varoluş #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#varoluş",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "ZAMAN BİR NEHİR"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Güzelliğe bak, hayata bak, ölüme bak. Üçü de aynı yere işaret ediyor.",
+      "title_options": [
+        "Güzellik, Hayat ve Ölüm Neden Aynı Kapıya Çıkar?",
+        "Üç Farklı Gerçek, Tek Bir Merkez",
+        "Kâinat Bize Ne Söylüyor?"
+      ],
+      "selected_title": "Güzellik, Hayat ve Ölüm Neden Aynı Kapıya Çıkar?",
+      "description": "Hamd, hayat ve ölüm: üç ayrı gerçek, ama hepsi aynı hakikatin farklı yüzleri. Kâinat bu üç dilde konuşuyor. #derinokuma #shorts #tefekkür #iman #maneviyat #risaleinur #kâinat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat",
+        "#risaleinur",
+        "#kâinat"
+      ],
+      "thumbnail_or_cover_text": "HEPSİ AYNI YERE"
+    }
+  ]
+}

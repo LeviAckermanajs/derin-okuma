@@ -162,6 +162,13 @@ runNodeStep('normalize hashtags', [
   '--slug', args.slug,
 ]);
 
+// ─── Step 2b: normalize shorts package (sync hashtags + thumbnail_or_cover_text) ─
+
+runNodeStep('normalize package', [
+  'scripts/normalize-shorts-package.mjs',
+  '--slug', args.slug,
+]);
+
 // ─── Step 3: video:validate ───────────────────────────────────────────────────
 
 runNodeStep('video:validate', [

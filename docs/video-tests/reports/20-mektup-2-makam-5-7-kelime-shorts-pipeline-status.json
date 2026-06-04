@@ -1,0 +1,17 @@
+{
+  "slug": "20-mektup-2-makam-5-7-kelime",
+  "title": "20. Mektup - 2. Makam - 5-7. kelime",
+  "day": 35,
+  "dayTag": "day-35",
+  "runId": "batch-a",
+  "timestamp": "2026-06-04T08:20:16.757Z",
+  "status": "failed",
+  "failedCommand": "node scripts/validate-video-package.mjs --slug 20-mektup-2-makam-5-7-kelime --report",
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/20-mektup-2-makam-5-7-kelime-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/20-mektup-2-makam-5-7-kelime-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/20-mektup-2-makam-5-7-kelime-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-20-mektup-2-makam-5-7-kelime-short-*-batch-a"
+  },
+  "fillTimestamp": "2026-06-04T08:37:22.725Z"
+}
