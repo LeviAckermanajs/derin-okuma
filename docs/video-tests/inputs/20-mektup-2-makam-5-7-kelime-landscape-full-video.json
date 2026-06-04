@@ -1,0 +1,276 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "Güzellik, Hayat ve Ölüm Neden Aynı Kapıya Çıkar?",
+    "description": "Kâinattaki her güzelliğin, her canlılığın ve ölümün bile sahipsiz olmadığını fark etmek, insanın dünyaya bakışını köklü biçimde değiştirir.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "20-mektup-2-makam-5-7-kelime-landscape-day-35"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Üç Kelime, Koca Bir Dünya",
+      "narration": "Bazı cümleler yalnızca birkaç kelimeden oluşur ama içlerinde koca bir dünya barınır. O'na hamd olsun, hayatı veren O'dur, ölümü veren de O'dur... Bu üç ifade ilk bakışta sade görünür. Fakat dikkatle bakıldığında insan bu üç cümleyle bütün kâinatı yeni gözlerle okumaya başlar.",
+      "visual_note": "wide open sky at dawn, soft golden light spreading across the horizon, cinematic",
+      "keywords": ["dawn sky", "golden horizon", "cinematic light"]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Güzellik Sahipsiz Değil",
+      "narration": "İnsan bir çiçeğe baktığında ne görür? Bir rengi, bir kokuyu, bir şekli... Güzel. Peki bu güzelliği kim yarattı? Toprağın mı, güneşin mi, yağmurun mu? Bunların hepsi birer araç, birer perde. Arkasındaki gerçek sanat, kendi başına duramaz; bir sahibi olmak zorundadır.",
+      "visual_note": "close-up of a blooming flower, soft morning dew, delicate petals, macro photography",
+      "keywords": ["flower close-up", "morning dew", "macro photography"]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Hamd Nereye Akar?",
+      "narration": "Şükür ve övgü bir nehir gibidir. Bir nehir her zaman bir denize doğru akar; sonunda ya onu bulur ya da kaybolur. İnsan da şükrünü bir yerlere bırakır. Bazen sebeplere, bazen insanlara, bazen tesadüfe... Fakat şükrün gerçek sahibine ulaşmadığı bir hamd, yolunu kaybetmiş bir nehir gibidir.",
+      "visual_note": "river flowing gently through a lush green valley, aerial shot, soft natural light",
+      "keywords": ["river aerial", "green valley", "flowing water"]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Varlıklardaki Güzellik Aynı Kaynaktan",
+      "narration": "Varlıklarda övülmeye değer ne kadar güzellik, iyilik ve mükemmellik varsa hepsi aynı kaynaktan geliyor. Bir elmanın tadı, bir karın beyazlığı, bir denizin genişliği, bir insanın gülüşündeki sıcaklık... Bunların hiçbiri sahipsiz bir güzellik değildir. Hepsi birer işaret gibi aynı yere işaret eder.",
+      "visual_note": "colorful autumn forest with diverse trees, warm sunlight through branches, wide shot",
+      "keywords": ["colorful forest", "autumn light", "nature diversity"]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Kâinat Bahçe Gibi",
+      "narration": "Kâinatı bir bahçe gibi düşünebiliriz. Gökyüzü, yıldızlarla süslenmiş bir tavanı andırır. Yeryüzü, sayısız bitkiler ve canlılarla donatılmış geniş bir bahçe gibidir. Bu bahçedeki her şey kendi diliyle aynı hakikati söyler: Biz bir sanatın eseriyiz, bir hikmetin işaretleriyiz, birliğin şahitleriyiz.",
+      "visual_note": "vast garden in full bloom from above, diverse flowers and greenery, birds-eye view",
+      "keywords": ["garden aerial", "full bloom", "diverse flowers"]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Zerreler ve Yıldızlar",
+      "narration": "İnsan çoğu zaman büyük ile küçük arasında zorluk farkı olduğunu varsayar. Büyük bir şeyi yaratmak zor, küçük bir şeyi yaratmak daha kolay gibi düşünür. Fakat sonsuz bir kudret açısından bakıldığında zerreler ve yıldızlar eşittir. Bir elmayı yaratmakla bütün elmaları yaratmak, aynı kudrete bakar.",
+      "visual_note": "side by side: microscopic cell structure and Milky Way galaxy, contrast of scale",
+      "keywords": ["microscopic cells", "galaxy stars", "scale contrast"]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Mühür Aynı Mühür",
+      "narration": "Bir elmanın üstündeki yaratılış mührü ile kâinattaki mühür aynıdır. Mikrop olsun, insan olsun, dağ olsun, galaksi olsun; hepsinde aynı ölçü, aynı denge, aynı sanat görünür. Bu mühür, bütün varlıkları aynı sanatçıya bağlayan bir imzadır.",
+      "visual_note": "apple orchard stretching to the horizon, abundant red apples on trees, warm golden light",
+      "keywords": ["apple orchard", "abundant fruit", "warm light"]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Şükür Bölünmez",
+      "narration": "En küçük bir nimeti doğrudan veren de, bütün kâinatı yaratan da aynı Zât'tır. Öyleyse şükür bölünmez. Sebepler sadece birer perde gibi kalır. Asıl teşekkür, nimetin gerçek sahibine gider. Tıpkı bir hediye alanın, postacıya değil, hediyeyi gönderene teşekkür etmesi gibi.",
+      "visual_note": "hands gently holding a small gift wrapped in simple cloth, warm indoor light, intimate",
+      "keywords": ["hands holding gift", "warm light", "intimate gesture"]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Hayat — Kâinatın Özü",
+      "narration": "Hayat, kâinatın en derin sırrını taşıyan bir gerçektir. Cansız bir taş düşün; sonra ona bir anlık hayat ver. Ne kadar büyük bir fark oluşur. Hayat, bir varlığı yalnızca var olmaktan çıkarır; onu hisseden, bilen, seven, acı çeken ve ümit eden bir varlığa dönüştürür.",
+      "visual_note": "stream of water flowing over smooth stones in a forest creek, dappled light, peaceful",
+      "keywords": ["forest creek", "flowing water", "dappled light"]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Hayatı Kim Verebilir?",
+      "narration": "Hayatı kim verebilir? En gelişmiş araçlarla bile, cansız maddeden gerçek hayat üretmek mümkün değil. Hayat, bütün bilgimizin ötesinde duruyor. Bu da hayatın kaynağının bütün bilgimizin ötesinde olduğuna işaret ediyor.",
+      "visual_note": "scientist in lab examining a petri dish, microscope nearby, soft focused light",
+      "keywords": ["laboratory science", "microscope", "research"]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Bahar Ordugâhı",
+      "narration": "Her bahar, yeryüzü büyük bir uyanışa sahne olur. Binlerce tür bitki, hayvan ve böcek yeniden sahneye çıkar. Her birinin ihtiyacı farklı, her birinin şekli farklı, her birinin mevsimi farklıdır. Fakat hepsi aynı anda, aynı yeryüzünde, karışmadan ve şaşırmadan hazırlanır.",
+      "visual_note": "spring meadow with bees, butterflies, and wildflowers, warm afternoon light, wide shot",
+      "keywords": ["spring meadow", "bees butterflies", "wildflowers"]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Ayrı Ayrı Görmek",
+      "narration": "Bu kadar farklı türün ihtiyaçlarını ayrı ayrı görmek, hepsine uygun donanım vermek, hiçbirini unutmamak ve hepsini belli bir ölçü içinde yaşatmak; kör ve şuursuz tesadüflerle açıklanamaz. Burada ilim vardır, irade vardır, rahmet vardır, hikmet vardır ve kudret vardır.",
+      "visual_note": "diverse wildlife side by side: birds, deer, insects, rabbits in a sunlit forest clearing",
+      "keywords": ["diverse wildlife", "forest clearing", "sunlit nature"]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Rızkın Gizemi",
+      "narration": "Küçücük bir tohumun toprağa düşüp nasıl beslendiğini düşün. Toprak ona gerekli mineralleri verir, güneş ışığını verir, yağmur suyunu verir. Tohumun bu kaynakları talep etmesi ya da anlaması gerekmez. Rızık kendisine ulaşır. İnsan da çoğu zaman bunu fark etmeden yaşar; ama rızık hep ulaşmıştır.",
+      "visual_note": "seed germinating underground in soil cross-section, roots spreading, time-lapse macro",
+      "keywords": ["seed germination", "underground roots", "soil cross-section"]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Hayat Sadece Biyoloji Değil",
+      "narration": "Hayat yalnızca biyolojik bir canlılık değildir. Hayat, düzeni taşır; ihtiyacı barındırır; rızkı içerir; ölçüyü gerektirir; bir idareye muhtaçtır. Ve bütün bunlar tek bir kaynağa bakar. Hayatın içindeki bu düzen, hayatı vermiş olanın da düzen sahibi olduğunu gösterir.",
+      "visual_note": "intricate spiderweb with morning dew drops, precise geometric pattern, close-up",
+      "keywords": ["spiderweb dew", "geometric pattern", "intricate nature"]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Geçmişten Geleceğe",
+      "narration": "Hayat geçmiş ile gelecek arasında bir köprü gibidir. Her canlı, kendisinden öncekilerin mirasını taşır; kendisinden sonrakilere de bir iz bırakır. Bu devamlılık, kör bir zincirden değil; bilgili, hikmetli ve şefkatli bir yönetimden kaynaklanır.",
+      "visual_note": "old tree with deep roots visible, moss-covered bark, surrounded by saplings, forest",
+      "keywords": ["ancient tree", "roots saplings", "forest generation"]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Ölüm — İlk Bakışın Ötesi",
+      "narration": "Ölüm, en korkutucu görünen gerçektir. İnsan onu hep bir kayıp, bir sönüş, bir yok oluş gibi hisseder. Bu his doğaldır; çünkü insan sevdiklerini kaybettiğinde derin bir acı duyar. Fakat ölüme ilk bakışın ötesinde başka bir gerçek de var mıdır?",
+      "visual_note": "autumn leaves falling slowly from trees, warm amber colors, slow motion",
+      "keywords": ["falling leaves", "autumn amber", "slow motion"]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "Ölüm Yalnızca Tahribat Değil",
+      "narration": "Ölüm yalnızca tahrip etmek ve söndürmek değildir. Dışarıdan bakıldığında bir dağılma gibi görünse de, içeriden farklı bir hakikat taşıdığı düşünülebilir. Çöken bir bina gibi değil; tamamlanan bir eser gibi. Biten bir cümle gibi değil; kapanan bir kitap ve açılmayı bekleyen bir sonraki sayfa gibi.",
+      "visual_note": "old book closing gently on a wooden desk, another book beside it open, soft lamp light",
+      "keywords": ["old book", "closing page", "warm lamp light"]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Tohum Örneği",
+      "narration": "Bir tohum düşün. Toprakta çürür, kabı parçalanır, dağılır. Eski hâlini kaybeder. Fakat bu çürüme, yokluğa gidiş değildir. O tohum, küçük bir hayattan çok daha büyük, çok daha zengin bir hayata açılmaktadır. Başak olacak, tarlaya yayılacak, yeniden hayat verecektir.",
+      "visual_note": "wheat stalks rising from ground at golden hour, full and rippling in breeze, wide field",
+      "keywords": ["wheat field", "golden hour", "rippling grain"]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Geçişin Dili",
+      "narration": "Ölüm, bir dilden başka bir dile geçiş gibi düşünülebilir. Bir dili bilen insan, başka bir dili öğrenmeye başlarken önce eski kalıplarını bırakmak zorundadır. Bırakmak acı verir; ama bırakılan yer, yeni bir anlayışın başlangıcıdır.",
+      "visual_note": "butterfly emerging from chrysalis in close-up, wings slowly unfolding, natural light",
+      "keywords": ["butterfly emerging", "chrysalis transformation", "close-up wings"]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Zaman Bir Nehir Gibi",
+      "narration": "Zaman, durağan bir havuz gibi değil; akan bir nehir gibidir. Varlıklar bu nehirde bir süre görünür, bir süre yüzeyden izlenebilir. Sonra kaynağa geri dönerler. Bu geliş ve gidiş, başıboş bir akış değildir; bir rotası, bir yatağı ve vardığı bir yeri olan bir akıştır.",
+      "visual_note": "long river meandering through plains, aerial view, reflecting sky light, slow flow",
+      "keywords": ["meandering river", "aerial view", "reflecting water"]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Gayb Âleminden Görünür Âleme",
+      "narration": "Her canlı, görünmez bir âlemden görünür âleme çıkar. Bir anlık varlık elbisesi giyer. Bir süre bu dünyada şekil alır, büyür, yaşar. Sonra bu elbiseyi bırakır ve yeniden görünmeze doğru yola çıkar. Bu geliş ve gidiş, anlamsız bir sefer değildir.",
+      "visual_note": "morning mist slowly lifting off a still lake, light gradually revealing trees, peaceful dawn",
+      "keywords": ["morning mist", "still lake", "lifting fog"]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Ölüm de Sahipsiz Değil",
+      "narration": "Hayatı sahipsiz bir şans olarak görmek mümkün değilse, ölümü de sahipsiz bir kaos olarak görmek mümkün değildir. Hayatı veren kimse, ölümü de ancak O verir. En küçük bir canlının ölümü bile, bütün hayat ve ölüm düzenini elinde tutan bir bilginin, iradenin ve kudretin izniyle olur.",
+      "visual_note": "single candle flame burning steadily in a dark room, warm glow, symbolic stillness",
+      "keywords": ["candle flame", "dark room", "warm glow"]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Kâinatın Üç Dili",
+      "narration": "Bu üç gerçek yan yana geldiğinde büyük bir tablo oluşur: Varlıklardaki her güzellik hamdi taşır. Her canlılık hayatın kaynağına işaret eder. Her ölüm de sahipli, hikmetli ve geçici bir dönüşümü anlatır. Kâinat bu üç dilde aynı hakikati söylüyor.",
+      "visual_note": "triple image: blooming garden, newborn animal, autumn leaf falling — triptych nature",
+      "keywords": ["triptych nature", "blooming garden", "seasonal change"]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Bahçe Hamd'i Söylüyor",
+      "narration": "Bir bahçeye bak. Çiçekler açar, meyve verir, renk verir, koku verir. Bu güzellik kendiliğinden mi ortaya çıkar? Yoksa bir sanat, bir ihsan ve bir ikram mıdır? Eğer ihsansa, ihsanın sahibi vardır. Ve ihsanın sahibine hamd etmek, insan olmanın doğal bir parçasıdır.",
+      "visual_note": "lush garden in full summer bloom, bees pollinating flowers, warm afternoon sun",
+      "keywords": ["summer garden", "bees pollinating", "warm afternoon"]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Bahar Hayatı Söylüyor",
+      "narration": "Bir bahara bak. Toprak ısınır, tohumlar çatlar, filizler çıkar, kuşlar döner, böcekler uyanır. Bu büyük uyanışı kim düzenler? Hangi kör kuvvet, bu kadar farklı türün ihtiyacını bu kadar hassas bir dengede karşılayabilir? Bahar, hayatın kaynağına adreslenmiş sessiz bir dua gibidir.",
+      "visual_note": "spring forest waking up: green shoots, migrating birds, flowering branches, soft light",
+      "keywords": ["spring awakening", "forest green", "migrating birds"]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Zaman Geçişi Söylüyor",
+      "narration": "Bir günbatımına bak. Işık yavaş yavaş çekilir, gece gelir. Her gece bir tür ölüm gibidir; her sabah bir tür diriliş. Bu döngü milyarlarca yıldır hiç durmadan devam ediyor. Bu devamlılık bile başlı başına bir mucize: düzen, ölçü, ritim ve amaç.",
+      "visual_note": "time-lapse of sunset transitioning to night sky with stars, seamless day-to-night cycle",
+      "keywords": ["sunset to night", "time-lapse", "day night cycle"]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Küçük Bir Yaprak",
+      "narration": "Bir yaprak yere düşer. Küçük, basit bir olay gibi görünür. Fakat bu yaprak, binlerce gün boyunca güneş ışığını yakalayıp toprağa taşıdı; oksijen üretip havayı temizledi; gölge verip sığınak oldu. Şimdi düşüyor; ama düşerken bile toprağa dönüşecek, başka bir yaşama zemin hazırlayacak.",
+      "visual_note": "single leaf falling from tree branch, slow motion, soft autumn light, detailed texture",
+      "keywords": ["falling leaf", "slow motion", "autumn detail"]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Her Şey Birbirine Bağlı",
+      "narration": "İnsan kâinata baktığında bazen dağınık, bağlantısız parçalar görür. Fakat gerçekte her şey birbirine bağlıdır. Bir çiçeğin açması için toprağın, güneşin, yağmurun ve böceğin bir arada çalışması gerekir. Bu bağlantı, tek bir yönetimin, tek bir iradenin, tek bir bilginin eseridir.",
+      "visual_note": "mycelium network underground illuminated, connecting roots of different plants, macro scientific",
+      "keywords": ["mycelium network", "underground connection", "roots linking"]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Birliği Okumak",
+      "narration": "Kâinat okunabilir bir kitap gibidir. Her varlık bir harf, her olay bir cümle, her mevsim bir bölüm gibidir. Ve bu kitabın bütününü okuyabilen insan, her sayfada aynı ismi görür. Hamd de hayat da ölüm de aynı hakikatin farklı yüzleridir.",
+      "visual_note": "old illuminated manuscript open on a table, ornate calligraphy, warm candlelight",
+      "keywords": ["illuminated manuscript", "calligraphy", "candlelight"]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "İnsana Söylenen Şey",
+      "narration": "Bu büyük tablo insana sadece inan demiyor; bak diyor. Bahara bak, yaprak düşüşüne bak, canlıların rızkına bak, ölümün dönüşümüne bak. Sonra bütün bu sahnelerin tek bir merkeze bağlandığını fark et. İnsan bu farkındalıkla dünyaya çok daha derin gözlerle bakabilir.",
+      "visual_note": "person standing at the edge of a mountain, looking at vast landscape, small figure, dawn",
+      "keywords": ["person mountain edge", "vast landscape", "dawn perspective"]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Güzellik Tesadüfî Değil",
+      "narration": "İnsan çoğu zaman güzelliğin tesadüfen oluştuğunu düşünür. Bir akşam güneşinin yarattığı renge hayran olur ama ardından bu sadece ışığın kırılmasıdır der. Fakat güzelliği yalnızca fiziksel bir olayla açıklamak, güzelliği açıklamamak demektir. Çünkü güzelliğin kendisi zaten açıklanmayı bekleyen bir gerçektir.",
+      "visual_note": "dramatic sunset with vivid colors over ocean, reflection on water, wide landscape",
+      "keywords": ["ocean sunset", "vivid colors", "wide reflection"]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Sahipsiz Değil",
+      "narration": "Varlık sahipsiz değildir. Güzellik tesadüfî değildir. Hayat başıboş değildir. Ölüm de anlamsız bir sönüş değildir. Bu dört gerçek, insanın dünyaya bakışını köklü biçimde değiştirebilir. Her şeyin birinin olduğu bir dünyada yaşamak ile hiçbir şeyin sahipli olmadığı bir dünyada yaşamak arasında derin bir fark vardır.",
+      "visual_note": "wide starry night sky above dark landscape, Milky Way visible, sense of immensity",
+      "keywords": ["starry night", "Milky Way", "dark landscape"]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Hamd Yaşam Biçimi Olarak",
+      "narration": "Hamd yalnızca söylenen bir cümle değildir. Kâinata nasıl baktığınla, nimetin arkasında kimi gördüğünle, güzelliğe nasıl dokunduğunla ilgilidir. Hamdi hisseden insan her nimette bir ikramı, her güzellikte bir sanatı, her canlılıkta bir bağışı görür. Bu bakış, insanın içini derin bir şükranla doldurur.",
+      "visual_note": "open palms receiving morning light, warm sunbeam, peaceful meditative atmosphere",
+      "keywords": ["open palms", "morning sunbeam", "meditative light"]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Veren de O, Yaşatan da O",
+      "narration": "Varlığa ve yokluğa aynı kalemden bak: Veren de O, yaşatan da O, alan da O. Bu bakış insanı yalnızca bir inanç cümlesinden çok daha derin bir anlamla buluşturur. Varlık öyle bir sahnedir ki, her perdesinde aynı hakikat gizlidir: Bunların hepsi tek bir kaynaktan geliyor.",
+      "visual_note": "theatrical stage curtain slowly parting, revealing a sunlit landscape behind, symbolic",
+      "keywords": ["stage curtain", "sunlit reveal", "symbolic opening"]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Son Soru ve Davet",
+      "narration": "Kâinat bir bahçe gibi hamdi gösteriyor. Bahar bir ordu gibi hayatı gösteriyor. Zaman bir nehir gibi geliş ve gidişi gösteriyor. Ve bütün bu manzaraların içinden aynı söz yükseliyor: Güzellik de hayat da ölüm de aynı yere aittir. İnsan bu gerçekle yüzleştiğinde içinde ne hisseder? Bu sorunun cevabı, herkesin kendi derinliğine göre farklı açılır.",
+      "visual_note": "slow pan across a tranquil river at golden hour, reflections of sky, gentle breeze on water",
+      "keywords": ["tranquil river", "golden hour", "gentle reflection"]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "20-mektup-2-makam-5-7-kelime",
+    "test_day": "day-35",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/20-mektup-2-makam-5-7-kelime.md"
+    ]
+  }
+}
