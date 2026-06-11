@@ -1,0 +1,128 @@
+{
+  "video_type": "shorts",
+  "source": "bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir",
+  "test_day": "day-37",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan bir şey yaparken ne kadar güce ihtiyaç duyuyorsa, her şeyin de o kadar güce ihtiyaç duyduğunu sanır. Bu zihniyet doğal görünür; ama bir yerde kırılır.",
+      "title_options": [
+        "İnsan Neden Büyüğü Zor Sanır?",
+        "Güçlük Nereden Gelir?",
+        "Sınırsız Güç İçin Büyük ile Küçük Aynıdır"
+      ],
+      "selected_title": "İnsan Neden Büyüğü Zor Sanır?",
+      "description": "Güçlük işin büyüklüğünden değil, yapanın gücünün sınırlı oluşundan doğar. Sınırsız bir kudret için büyük ile küçük aynı kapıya çıkar. #derinokuma #shorts #tefekkür #iman #maneviyat #kâinat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat",
+        "#kâinat"
+      ],
+      "thumbnail_or_cover_text": "BÜYÜK NEDEN ZOR DEĞİL?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Bir çiçek mi daha kolaydır, yoksa milyonlarca çiçekten oluşan bir baharı yaratmak mı?",
+      "title_options": [
+        "Bir Çiçek mi Zor, Bir Bahar mı?",
+        "Baharı Yaratmak Neden Kolaydır?",
+        "Çiçekten Cennete — Güçlük Nerede?"
+      ],
+      "selected_title": "Bir Çiçek mi Zor, Bir Bahar mı?",
+      "description": "İnsan gücüyle bakınca bahar çiçekten çok daha zordur. Ama sınırsız bir kudret için ikisi de aynı kolaydır. #derinokuma #shorts #tefekkür #iman #kâinat #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "BİR ÇİÇEK = BİR BAHAR MI?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Tek bir komutana bağlı milyon asker, ayrı ayrı yönetilen birkaç askerin idaresinden çok daha kolay yönetilir.",
+      "title_options": [
+        "Birlik Çokluğu Nasıl Kolaylaştırır?",
+        "Neden Tek Merkez Her Şeyi Kolaylaştırır?",
+        "Birlik Olmadan Basit Şey Neden İmkânsızlaşır?"
+      ],
+      "selected_title": "Birlik Çokluğu Nasıl Kolaylaştırır?",
+      "description": "Birlik çokluğu kolaylaştırır; dağınıklık, tekini bile zorlaştırır. Kâinattaki bolluk ve kolaylığın sırrı budur. #derinokuma #shorts #tefekkür #risaleinur #iman #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#risaleinur",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "BİRLİK HER ŞEYİ KOLAYLAŞTIRIR"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir ağaç binlerce meyve üretir; ama bu onu tek bir meyve üretmekten daha fazla yormaz. Neden?",
+      "title_options": [
+        "Bir Ağaç Bin Meyveyi Neden Yorulmadan Verir?",
+        "Ağacın Sırrı Nedir?",
+        "Binlerce Meyve Neden Tek Kökten Kolay Çıkar?"
+      ],
+      "selected_title": "Bir Ağaç Bin Meyveyi Neden Yorulmadan Verir?",
+      "description": "Binlerce meyve tek bir köke bağlıdır; bu yüzden hepsini beslemek, birini beslemek kadar kolaydır. Birlik böyle çalışır. #derinokuma #shorts #tefekkür #kâinat #iman #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#kâinat",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "BİN MEYVE TEK KÖK"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Güneş aynı anda milyonlarca yüzeye yansır; ne ışığı bölünür, ne de azalır.",
+      "title_options": [
+        "Güneş Neden Milyonlarca Yüzeyde Aynıdır?",
+        "Sınırsız Kudret Neden Yorulmaz?",
+        "Aynı Anda Her Yerde Nasıl Olunur?"
+      ],
+      "selected_title": "Güneş Neden Milyonlarca Yüzeyde Aynıdır?",
+      "description": "Sınırsız kudret için zaman ve mekân sınır değildir. Bir varlığa yönelmek, diğerlerini ihmal etmek anlamına gelmez. #derinokuma #shorts #tefekkür #iman #kudret #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kudret",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "SINIRSIZ KUDRET"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Her bahar, bütün insanlığın yeniden diriltilmesinin mümkün olduğunu gösteren bir delildir.",
+      "title_options": [
+        "Haşir Neden Mümkündür?",
+        "Her Bahar Haşrin Delili midir?",
+        "Diriliş Neden Zor Değildir?"
+      ],
+      "selected_title": "Haşir Neden Mümkündür?",
+      "description": "Kış sonrası yeryüzünün yeniden canlanması, büyük bir diriliş için gözümüzün önünde sergilenen bir örnektir. #derinokuma #shorts #iman #tefekkür #risaleinur #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#iman",
+        "#tefekkür",
+        "#risaleinur",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "HER BAHAR BİR DELİL"
+    }
+  ]
+}

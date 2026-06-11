@@ -1,0 +1,17 @@
+{
+  "slug": "bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir",
+  "title": "20. Mektup - 2. Makam - 10. Kelime",
+  "day": 37,
+  "dayTag": "day-37",
+  "runId": "batch-a",
+  "timestamp": "2026-06-11T13:23:03.936Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir-short-*-batch-a"
+  },
+  "fillTimestamp": "2026-06-11T13:44:20.124Z"
+}

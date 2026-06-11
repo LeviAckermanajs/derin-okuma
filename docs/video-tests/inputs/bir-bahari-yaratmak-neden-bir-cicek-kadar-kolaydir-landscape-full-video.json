@@ -1,0 +1,451 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "Bir Baharı Yaratmak Neden Bir Çiçek Kadar Kolaydır?",
+    "description": "İlâhî kudret için en büyük ile en küçük neden aynı kolaydır? Bir baharı yaratmak neden bir çiçek kadar kolaydır? Birlik, tek merkezli işleyiş ve sınırsız kudret üzerine derin bir okuma.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir-landscape-day-37"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Açılış",
+      "narration": "İnsan çoğu zaman kendi gücünden hareket ederek başkalarını değerlendirmeye çalışır. Bir işin yapılabilmesi için ne kadar zaman, emek ve araç gerekiyorsa; başkası için de aynı ölçünün geçerli olduğunu düşünür. Bu ölçüt, insan dünyasında çoğu zaman işe yarar. Ama evrenin yaratıcısını değerlendirmeye kalktığımızda bu ölçüt yeterli olmaz.",
+      "visual_note": "A lone person standing at the edge of a vast valley, gazing into the distance in contemplation",
+      "keywords": [
+        "contemplative person",
+        "wide valley",
+        "horizon",
+        "solitude"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Büyüklük Zorluk Mudur?",
+      "narration": "Büyük bir şeye baktığımızda, onun yapılmasının da büyük güç gerektirdiğini düşünürüz. Bir tohumla bir orman arasındaki farkı biliyoruz; bir damlacıkla bir okyanus arasındaki farkı da. İnsan için büyük gerçekten daha zordur. Zamanı, enerjisi ve araçları sınırlı olduğundan, hacim artıkça yük de artar.",
+      "visual_note": "A single seed resting on a palm next to a wide forest stretching to the horizon",
+      "keywords": [
+        "seed and forest",
+        "scale comparison",
+        "nature contrast",
+        "growth"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Bir Çiçekle Bir Bahar",
+      "narration": "Tek bir çiçeği yetiştirmek başka bir şeydir; bir baharı ortaya çıkarmak bambaşka. Bir baharda milyonlarca bitki, kuş, böcek, su ve toprak bir arada çalışır. İnsan böyle bir tablo karşısında hayranlığını gizleyemez; çünkü kendi gücüyle bu tabloyu hayal bile edemez. Bu, insanın ölçüsüyle doğrudur.",
+      "visual_note": "Spring landscape with rolling hills covered in wildflowers, bees and butterflies visible",
+      "keywords": [
+        "spring wildflowers",
+        "rolling hills",
+        "butterflies",
+        "abundance"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Güçlük Nereden Doğar?",
+      "narration": "Ama güçlük, işin büyüklüğünden mi doğar; yoksa yapanın gücünün yetersizliğinden mi? İnsan için bu fark önemlidir, çünkü insan sınırlıdır. Ama sınırsız bir güç söz konusu olduğunda, büyüklük bir engel oluşturmaz. Güçlüğü doğuran şey, gücün yetersizliğidir; işin büyüklüğü değil.",
+      "visual_note": "A calm river flowing effortlessly over rocks, soft natural light, no strain visible",
+      "keywords": [
+        "flowing river",
+        "effortless movement",
+        "water over rocks",
+        "natural flow"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "İlâhî Kudretin Farklı Niteliği",
+      "narration": "İlâhî kudret, insan gücünün büyütülmüş hâli değildir. Nitelik olarak farklıdır. İnsan için sınır oluşturan şey, ilâhî kudret için sınır oluşturmaz. Bu nedenle insanın hayal edebildiği en büyük şeyle dahi karşılaştırılamaz. Sınırsız güç için büyüklük ve küçüklük aynı kapıya çıkar.",
+      "visual_note": "Vast galaxy photographed from space, stars and nebulae stretching into infinite expanse",
+      "keywords": [
+        "galaxy",
+        "nebula",
+        "infinite space",
+        "cosmic scale"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Temel Hakikat",
+      "narration": "En büyük şeyin yaratılması, en küçük şeyin yaratılması kadar kolaydır. Bu yalnızca bir iddia değildir. Her yıl, her mevsimde, gözle görülebilen bir gerçek olarak önümüzde durmaktadır. Kışın ardından yeryüzünün yeniden canlanması, bu hakikatin en açık sayfasıdır.",
+      "visual_note": "A dewdrop on a petal, reflecting the entire surrounding world in miniature",
+      "keywords": [
+        "dewdrop reflection",
+        "petal close-up",
+        "miniature world",
+        "macro nature"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Cennet Bir Bahar Kadar",
+      "narration": "Cennetin yaratılması, bir baharın yaratılması kadar kolaydır. Bir baharın yaratılması, bir bahçeninki kadar. Bir bahçeninki ise bir çiçek kadar. Kolaylık zincirinde büyüklük zorluk yaratmaz; çünkü zorluğun kaynağı, işi yapanın sınırlı olmasında aranır.",
+      "visual_note": "Layered nature scene moving from a single flower to a garden, then a valley, then the open sky",
+      "keywords": [
+        "layered nature",
+        "flower to sky",
+        "scale",
+        "depth"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Yeryüzündeki Delil",
+      "narration": "Bu hakikatin kanıtı, yalnızca teorik bir çerçevede aranmaz. Her yıl, mevsim geçişlerinde gözlerimizin önünde sergilenen bir tablo vardır. Kış bitiminde ağaçlar nasıl canlanır? Toprak nasıl konuşmaya başlar? Göç yolculuğundan dönen kuşlar nasıl yerlerini bulur? Bu soruların cevabı, yaşanan tabloda gizlidir.",
+      "visual_note": "Early spring morning with frost melting and green shoots emerging from soil",
+      "keywords": [
+        "early spring",
+        "frost melting",
+        "new growth",
+        "morning light"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Bolluk ve Düzen Bir Arada",
+      "narration": "Her baharda sayısız bitki ve hayvan büyük bir bolluk içinde meydana gelir. Ama bu bolluk, özensizliği beraberinde getirmez. Binlerce farklı türün her biri, kendi türüne ait özellikleri taşırken diğerlerinden ayrılır. Birbirine karışmış görünen sayısız varlık arasında belirgin bir düzen göze çarpar.",
+      "visual_note": "Dense meadow with dozens of different wildflower species, each distinct and vibrant",
+      "keywords": [
+        "diverse wildflowers",
+        "meadow variety",
+        "botanical distinction",
+        "nature order"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Hız ve Sanat Bir Arada",
+      "narration": "Her şey büyük bir hızla meydana gelir; ama bu hız, sanatkârlığın değerini düşürmez. Çok sayıda varlık yaratılır; ama her birinin yapısı özeldir. İhtiyaçları çok olan canlılar, sanki hiçbir hazırlık gerekmiyormuş gibi kolaylıkla ortaya çıkar. Hız ile kusursuzluk burada ayrışmaz.",
+      "visual_note": "Flowers blooming rapidly in natural light, each opening perfectly despite the speed",
+      "keywords": [
+        "flower bloom",
+        "speed and perfection",
+        "blooming detail",
+        "spring morning"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Karışıklık İçinde Ayrım",
+      "narration": "Varlıklar iç içe bulunur; fakat birbirine karıştırılmaz. Bir ormanda milyonlarca yaprak vardır; ama hiçbiri diğerinin yerinde değildir. Her birine kendine uygun biçim, özellik ve vazife verilmiştir. Bolluk sanatın değerini düşürmez. Hız düzeni bozmaz.",
+      "visual_note": "Extreme close-up of autumn leaves, each with a unique vein pattern and color",
+      "keywords": [
+        "autumn leaves",
+        "leaf patterns",
+        "unique texture",
+        "diversity in nature"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Üç Temel Hakikat",
+      "narration": "Bu tablonun arkasında üç temel hakikat yatmaktadır. Birincisi; bütün varlıkların tek bir yaratıcıya ait olmasının sağladığı birlik. İkincisi; her şeyin tek merkezden idare edilmesinin kolaylığı. Üçüncüsü ise ilâhî kudretin zaman ve mekânla sınırlı olmaması. Bu üç hakikat birlikte düşünüldüğünde kâinattaki kolaylık anlaşılır hâle gelir.",
+      "visual_note": "Three golden beams of light converging through a forest canopy, illuminating the ground",
+      "keywords": [
+        "three light beams",
+        "forest convergence",
+        "golden light",
+        "pathway"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Birinci Hakikat: Birlik",
+      "narration": "Birlik, çokluğu kolaylaştırır. Bütün varlıkların tek bir yaratıcıya ait olması, onları yönetmeyi ve yaratmayı basitleştirir. Birden fazla merkeze bölünmüş bir sistemde her birim için ayrı ayrı düzen gerekir. Ama tek merkezden yönetimde bütün sistem birlikte hareket eder.",
+      "visual_note": "A single tree with wide-spreading roots supporting an enormous canopy of branches",
+      "keywords": [
+        "tree roots",
+        "single center",
+        "branching system",
+        "unity in nature"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Hükümdar ve Ordu Benzetmesi",
+      "narration": "Tek bir hükümdara bağlı büyük bir ordu düşünün. O hükümdar, tek bir emirle bütün orduyu harekete geçirebilir. Aynı zamanda ordusu, tek bir asker gibi her birini korur. Çünkü sistem bir bütündür. Güç, hiyerarşinin her noktasına aynı anda ulaşır.",
+      "visual_note": "Aerial view of a large organized gathering moving in coordinated formation",
+      "keywords": [
+        "coordinated formation",
+        "unified direction",
+        "organized movement",
+        "aerial view"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Bölünmüş Yönetimin Zorluğu",
+      "narration": "Şimdi bunun tersini düşünelim: her askerin farklı bir komutana, ayrı bir lojistik sisteme bağlı olduğunu. Bu durumda, tek bir askerin ihtiyaçlarını karşılamak bile bütün ordununkini yönetmek kadar karmaşık hâle gelir. Birliği kaybetmek, basit şeyleri bile imkânsız kılar.",
+      "visual_note": "Scattered figures spread across a vast open landscape, disconnected and directionless",
+      "keywords": [
+        "scattered people",
+        "disconnected",
+        "vast empty landscape",
+        "isolation"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Hepsi Birden Sanki Tek",
+      "narration": "Birlik içinde, milyonlarca varlığı yönetmek tek bir varlığı yönetmek gibi düzenli olabilir. Sayının artması, sistemi kuran birliğin gücüyle yük olmaktan çıkar. Hepsi birlikte sanki tektir. Bu yalnızca bir analoji değil; kâinattaki fiilî bir tablodur.",
+      "visual_note": "Flock of starlings moving in perfect murmuration, forming fluid shapes against a pale sky",
+      "keywords": [
+        "murmuration",
+        "starlings flock",
+        "unified movement",
+        "fluid sky"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "İkinci Hakikat: Tek Merkezden İşleyiş",
+      "narration": "Bir ordunun tüm ihtiyaçları tek merkezden karşılandığında, çok sayıda askerin hazırlanması tek bir askerin hazırlanması kadar düzenli olabilir. Ama her asker için ayrı bir merkez kurulmaya çalışılırsa, tek bir askerin ihtiyaçlarını karşılamak bütün ordununkinden daha ağır hâle gelir.",
+      "visual_note": "A centralized hub sending resources outward in multiple directions simultaneously",
+      "keywords": [
+        "central supply",
+        "outward flow",
+        "network distribution",
+        "logistics"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Ağaç ve Meyveleri",
+      "narration": "Bu hakikatin en canlı örneği bir ağaçtır. Binlerce meyve, tek bir köke ve ortak bir hayat düzenine bağlıdır. Bu yüzden bütün meyvelerin beslenmesi, tek bir meyvenin beslenmesi gibi gerçekleşir. Köke bağlılık, çokluğu bir yük olmaktan çıkarır.",
+      "visual_note": "Apple tree heavy with abundant fruit, trunk visible as the single source of all nourishment",
+      "keywords": [
+        "apple tree",
+        "fruit abundance",
+        "single trunk",
+        "root nourishment"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Ayrı Kök Düşüncesi",
+      "narration": "Eğer her meyve için ayrı bir kök ve ayrı bir hayat kaynağı gerekirdi, tek bir meyvenin meydana gelmesi için bütün bir ağaç sisteminin kurulması gerekirdi. O zaman en küçük meyve bile devasa bir organizasyon gerektirir. Birlik olmadığında, basit olan şey bile imkânsızlaşır.",
+      "visual_note": "A single fallen apple beside a massive tree, emphasizing dependency and scale",
+      "keywords": [
+        "fallen apple",
+        "large tree",
+        "dependency",
+        "scale contrast"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Birlik Çokluğu Kolaylaştırır",
+      "narration": "Birlik, çokluğu kolaylaştırır. Dağınıklık ise tek bir şeyi bile son derece güç hâle getirir. Bu yalnızca ağaçlar için değil, her düzenli sistemde geçerlidir. Sayının artması, sistemi kuran birlik sayesinde yük oluşturmaz.",
+      "visual_note": "An orchestra of musicians playing in perfect harmony, all guided by a single conductor",
+      "keywords": [
+        "orchestra",
+        "conductor",
+        "harmony",
+        "unified music"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Üçüncü Hakikat: Zaman ve Mekân Sınırı Yok",
+      "narration": "Üçüncü hakikat, ilâhî kudretin zaman ve mekânla sınırlı olmamasıdır. Bir usta, bir işle meşgulken başka bir işe yönelemez. Zamanı ve dikkati bölünür. Ama sınırsız bir kudret için, bir varlığa yönelmek başka bir varlığı ihmal etmek anlamına gelmez.",
+      "visual_note": "Sunlight illuminating snow-capped mountains, green forests, and ocean all at once",
+      "keywords": [
+        "sunlight everywhere",
+        "mountain forest sea",
+        "simultaneous light",
+        "panoramic"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Güneş ve Aynalar",
+      "narration": "Güneşi düşünün. Aynı anda binlerce yüzeye yansıyabilir. Bir aynada belirmesi, başka bir aynada belirmesine engel olmaz. Milyonlarca yüzeye ulaşması, ışığını azaltmaz ya da bölmez. Güneşin önce şu sonra bu şeklinde sırayla çalışması gerekmez; hepsi aynı anda gerçekleşir.",
+      "visual_note": "Sunlight reflecting simultaneously in hundreds of rippling water surfaces at golden hour",
+      "keywords": [
+        "sunlight on water",
+        "multiple reflections",
+        "simultaneous light",
+        "golden hour"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Aynı Anda, Her Yerde, Külfetsiz",
+      "narration": "Aynı anda, her yerde, külfetsiz ve birbirine engel olmadan her iş gerçekleşebilir. Bu, sınırsız kudretin özelliğidir. Zaman kuyruğu gerektirmez. Öncelik sıralaması aranmaz. Bir varlığa yönelmek, diğerlerini bekletmek anlamına gelmez.",
+      "visual_note": "Stars shining simultaneously in all directions of the night sky, undiminished and countless",
+      "keywords": [
+        "starry night",
+        "simultaneous stars",
+        "infinite directions",
+        "night sky"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Her Varlık Sanki Tekmiş Gibi",
+      "narration": "Tek bir yaratıcıya bağlanan her varlık, sanki yalnızca o varlık yaratılıyormuş gibi özen ve dikkatle işlenebilir. Çokluk, özenin azalmasına yol açmaz. Her çiçek, bütün bahara ayrılabilecek ilginin yalnızca ona ayrıldığı kadar titizlikle biçimlenmiştir.",
+      "visual_note": "Single flower in extreme macro detail, every stamen and petal perfectly formed and vivid",
+      "keywords": [
+        "flower macro",
+        "botanical precision",
+        "single bloom focus",
+        "petal detail"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Çiçeğin Düzeni Bahardan Geri Değil",
+      "narration": "Bir çiçeğin içindeki düzen, bir baharın düzeninden geri değildir. Her hücre, her renkli yaprak, her ince anten kendi yerine yerleştirilmiştir. Bu küçük şeyin taşıdığı mükemmellik, büyük tablonun parçası değil; büyük tablonun özüdür. Küçük, büyüğün yansımasıdır.",
+      "visual_note": "Incredible symmetry at the center of a flower, stamens arranged in perfect geometric order",
+      "keywords": [
+        "flower symmetry",
+        "natural geometry",
+        "petal arrangement",
+        "botanical precision"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Çekirdek ve Ağaç",
+      "narration": "Bir çekirdeği toprağa gömdüğünüzde, ileride ne çıkacağı o çekirdeğin içinde kodlanmıştır. Köklerin yönü, dalların ayrışma biçimi, yaprağın şekli, meyvenin rengi — hepsi minik bir yapı içinde saklanmıştır. Parçayı yapanın bütünü bilmesi gerekir; çünkü parçada bütün gizlidir.",
+      "visual_note": "A cracked seed revealing a tiny embryonic plant, rooted against soft soil",
+      "keywords": [
+        "seed germination",
+        "seed close-up",
+        "embryo",
+        "miniature plant"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "İnsan Kâinatın Özeti",
+      "narration": "İnsan da benzer bir yapı taşır. Kâinattaki pek çok anlam ve ölçü, onun küçük bedeninde ve büyük kalbinde toplanmıştır. Bütünü yaratan, parçayı da yaratmak durumundadır; parçayı yaratan da bütünü bilmek zorundadır. Bu yüzden insan ile kâinat birbirinden koparılmaz.",
+      "visual_note": "Human silhouette superimposed with a galaxy image, showing the connection between self and cosmos",
+      "keywords": [
+        "human silhouette",
+        "cosmic overlay",
+        "microcosm",
+        "macrocosm"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Haşir Neden Zor Değil",
+      "narration": "Bütün insanlığın yeniden diriltilmesi, ilâhî kudret açısından tek bir insanın diriltilmesi kadar kolaydır. Her baharda yeryüzü yeniden canlanmaktadır. Kışın ardından sayısız bitkinin ve canlının yeniden ortaya çıkması, büyük bir işin ne kadar kolaylıkla gerçekleşebileceğinin yaşayan örneğidir.",
+      "visual_note": "Time-lapse of a barren winter landscape slowly transforming into lush green spring",
+      "keywords": [
+        "winter to spring",
+        "seasonal renewal",
+        "barren to green",
+        "nature resurrection"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Dağılmış Ordunun Toplanması",
+      "narration": "Dağılmış büyük bir ordunun, tek bir boru sesiyle toplanmasını düşünün. Her asker o sesi duyar ve yerine gelir. Milyonlarca insanın bir araya gelmesi de bu şekilde düşünülebilir. Dağılmış olan, tek bir kudretin çağrısıyla toplanır. Sayı, bu kudreti zorlamaz.",
+      "visual_note": "Thousands of silhouettes converging toward a single point of warm light on the horizon",
+      "keywords": [
+        "silhouettes gathering",
+        "convergence",
+        "horizon light",
+        "assembly"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Tek Bir Çağrı",
+      "narration": "Bütün insanların yeniden bir araya gelmesi, tek bir insanın çağrılması kadar kolaydır. Sınırsız bir kudret için sayı engel değildir. Bir kişiyi çağırmakla bir ülkeyi çağırmak arasında, çağıranın gücünde fark yoktur. Farklı olan yalnızca bizim alışılagelen ölçütümüzdür.",
+      "visual_note": "A lone voice echoing across an empty canyon, reaching every distant corner",
+      "keywords": [
+        "canyon echo",
+        "lone voice",
+        "vast empty space",
+        "sound travel"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Kolaylık Başıboşluğun İşareti Değil",
+      "narration": "Peki, bu kadar kolaylıkla yaratılan şeylerin kendi kendine oluştuğu söylenebilir mi? Tam aksine. Büyük bir hızla, kusursuz bir düzenle ve birbirine karıştırılmadan yaratılan sayısız varlık, sınırsız bir güç ve kuşatıcı bir ilim gerektirir. Kolaylık, başıboşluğun değil; gücün işaretidir.",
+      "visual_note": "Intricate patterns in nature: snowflake crystals, spiral shells, honeycomb cells",
+      "keywords": [
+        "natural patterns",
+        "snowflake",
+        "spiral shell",
+        "honeycomb"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Kendi Kendine Oluşmanın Paradoksu",
+      "narration": "Bir varlığın kendi kendini meydana getirdiği varsayılsa, o varlığın en küçük parçasına bile bütün yapıyı bilecek bir ilim ve her şeyi düzenleyebilecek bir güç vermek gerekirdi. Bu yaklaşım işi kolaylaştırmaz; tek bir varlığın oluşmasını bütün kâinat kadar zorlaştırır.",
+      "visual_note": "A single cell under a microscope, showing incredible internal complexity and precise organization",
+      "keywords": [
+        "cell microscope",
+        "microscopic complexity",
+        "biological organization",
+        "life science"
+      ]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Hız, Düzen ve Güzellik",
+      "narration": "Kâinatta görülen sürat, bolluk ve kolaylık başıboşluğun işareti değildir. Her şeyin kendi yerinde, kendi ölçüsünde ve kendine özgü bir güzellikle yaratılması; büyüğün küçük kadar, çoğun bir kadar kolay olduğunu gösteren bir kudretin eseridir. Düzeni bozmayan hız, sanatı ucuzlaştırmayan bolluk.",
+      "visual_note": "A garden in full bloom with hundreds of flowers opening in sequence, each distinct",
+      "keywords": [
+        "garden blooming",
+        "sequential bloom",
+        "flower variety",
+        "precision in nature"
+      ]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Yeni Bir Bakış",
+      "narration": "Bir bahara baktığımızda yalnızca çok sayıda çiçek görmeyiz. Tek bir çiçeği yaratmakla bütün baharı yaratmak arasında güçlük farkı bulunmayan bir kudretin işleyişini görürüz. Bu bakış, kâinatı anlama biçimini değiştirir. Artık büyük ile küçük arasındaki mesafe, bizim sınırlarımızın ötesinde kapanır.",
+      "visual_note": "A single flower in sharp foreground with an entire blooming meadow softly blurred behind it",
+      "keywords": [
+        "single flower meadow",
+        "depth of field",
+        "foreground bloom",
+        "spring landscape"
+      ]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Kapanış",
+      "narration": "Bahara her baktığımızda bu hakikati hatırlayabiliriz: o tabloyu yaratan kudret için çiçek ile bahar arasında güçlük farkı yoktur. Bir tanesini kolaylıkla yaratan, tamamını aynı kolaylıkla yaratır. Kâinat, sınırsız bir kudretin eseridir ve bu kudret her çiçekte, her yaprakta, her nefeste kendini göstermektedir.",
+      "visual_note": "Wide panoramic shot of a vast blooming spring valley bathed in warm golden morning light",
+      "keywords": [
+        "spring valley panorama",
+        "golden light",
+        "endless bloom",
+        "morning landscape"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir",
+    "test_day": "day-37",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/bir-bahari-yaratmak-neden-bir-cicek-kadar-kolaydir.md"
+    ]
+  }
+}
