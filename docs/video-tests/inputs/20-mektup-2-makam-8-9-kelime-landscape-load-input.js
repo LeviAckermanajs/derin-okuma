@@ -1,0 +1,312 @@
+// Derin Okuma — 20. Mektup - 2. Makam - 8-9. Kelime landscape video
+// Day-36 | 35 sahne | Ölümün İçinden Okunan Daimî Hayat
+
+const rawInput = {
+  input_version: '0.1.0',
+  input_type: 'manual_scene_json',
+
+  runtime: {
+    repo_root: '/home/muhammet/projects/scene-blog-video',
+    renderer_url: 'http://127.0.0.1:8000'
+  },
+
+  job: {
+    title: '20. Mektup - 2. Makam - 8-9. Kelime',
+    description: 'Ölümün içinden okunan daimî hayat — kâinattaki geliş gidişin aynasında Allah\'ın ebedî hayatı ve bütün hayırların O\'nun elinde oluşu.',
+    language: 'tr',
+    author: 'Muhammet Yahya Ozer',
+    job_id_hint: '20-mektup-2-makam-8-9-kelime-landscape-day-36'
+  },
+
+  reuse_existing_audio: {
+    enabled: false,
+    audio_mode: 'single_track',
+    audio_track: {
+      mode: 'single',
+      path: '',
+      duration_seconds: null
+    }
+  },
+
+  reuse_existing_video: {
+    enabled: false,
+    visual_mode: 'semantic',
+    video_root: '',
+    path_template: '{scene_id}.mp4'
+  },
+
+  visual_mode: 'ambient',
+
+  audio_strategy: {
+    mode: 'single_track',
+    timing_strategy: 'elevenlabs_timestamps',
+    join_separator: '\n\n'
+  },
+
+  render_preferences: {
+    mode: 'full_video',
+    subtitles_enabled: true,
+    render_mode: 'landscape',
+    produce_both: false,
+    background_music_enabled: true,
+    target_fps: 30
+  },
+
+  scenes: [
+    {
+      scene_id: 'scene-001',
+      title: 'Değişen Bir Dünyada',
+      narration: 'Kâinat durmadan akıyor. Canlılar doğuyor, büyüyor ve yok oluyor. Mevsimler dönüyor; bahar gidiyor, kış geliyor. Nesiller birbirinin ardından gelip geçiyor. Bu aralıksız değişim karşısında insan çoğu zaman şunu sorar: Bunun bir sonu var mı? Ya da bu değişim herhangi bir anlam taşıyor mu?',
+      visual_note: 'flowing river surrounded by changing seasons, time lapse nature, cinematic slow motion',
+      keywords: ['river flow', 'changing seasons', 'nature cycle', 'contemplative']
+    },
+    {
+      scene_id: 'scene-002',
+      title: 'Değişimi Doğru Okumak',
+      narration: 'Değişimi yalnızca kayıp olarak okumak mümkündür. Ama bu, hikâyenin yalnızca bir yarısını görmektir. Akan suyun varlığını gösteren şey kıyıdır. Hareket eden her şey, sabit bir şeyin arka planında anlam kazanır. Değişim, tek başına açıklanamaz; değişmeyen bir şeye ihtiyaç duyar.',
+      visual_note: 'still river bank while water flows past, stable rocks in moving stream, steadiness amid flow',
+      keywords: ['river bank', 'stable rocks', 'flowing water', 'contrast of movement and stillness']
+    },
+    {
+      scene_id: 'scene-003',
+      title: 'Hayat Geçmiyor, Görüntüsü Geçiyor',
+      narration: 'Canlıların ölmesi, hayatın kendisinin yok olduğu anlamına gelmez. Gördüğümüz her hayat, daha derin bir hayatın yüzeye vurmuş bir tezahürüdür. Tezahürler gelip geçer; tezahür eden kalır. Bu ayrımı görmek, kâinatı başka türlü okumaktır.',
+      visual_note: 'light reflection dancing on water surface, shimmering patterns, sunlight on rippling lake',
+      keywords: ['light reflection', 'water surface', 'shimmering lake', 'depth']
+    },
+    {
+      scene_id: 'scene-004',
+      title: 'Zâtî Hayat',
+      narration: 'Allah\'ın hayatı, sonradan kazanılmış ya da dışarıdan verilmiş bir hayat değildir. O\'nun hayatı, kendi özünden, kendi zâtından gelir. Bu yüzden tükenmez. Bize verilen hayat, bir süre için verilmiş bir emanettir. O\'nun hayatı ise ezelden ebede uzanan, başlangıcı ve sonu olmayan bir hakikattir.',
+      visual_note: 'eternal flame burning steadily in still air, candle flame close-up, fire burning undisturbed',
+      keywords: ['eternal flame', 'steady candle', 'fire close-up', 'permanence']
+    },
+    {
+      scene_id: 'scene-005',
+      title: 'Ölüm ve Yokluk O\'na Yaklaşamaz',
+      narration: 'Ölüm ve yokluk, dışarıdan alınanı geri alan şeydir. Verilen geri alınabilir. Ama hiçten almamış, kendi özünden olan için ölüm söz konusu olamaz. Eksilme, dışarıdan aldığını kaybedenin durumudur. Kendi özü olan kayıp etmez.',
+      visual_note: 'solid mountain standing through storm, ancient rock cliffs enduring wind and rain, steadfast cliffs',
+      keywords: ['mountain in storm', 'ancient cliffs', 'enduring rock', 'immovable strength']
+    },
+    {
+      scene_id: 'scene-006',
+      title: 'Hayatlar O\'nun Hayatının Yansımaları',
+      narration: 'Kâinattaki her hayat, o daimî hayatın bir cilvesidir. Bir çiçeğin açması, bir çocuğun gülüşü, bir kuşun kanatlanması; bunlar büyük hayat kaynağının küçük birer tezahürüdür. Gelip geçmeleri, kaynağı tükenmediğinin kanıtıdır. Tükenen bir kaynaktan bu kadar çok ve çeşitli hayat akamazdı.',
+      visual_note: 'spring flowers blooming, bird taking flight, sunlit garden full of life, abundance of living things',
+      keywords: ['spring flowers', 'bird in flight', 'abundant life', 'life manifestations']
+    },
+    {
+      scene_id: 'scene-007',
+      title: 'Kabarcıklar ve Güneş',
+      narration: 'Güneş ışığında yüzü parlayan bir nehir hayal edin. Suyun yüzeyinde kabarcıklar oluşuyor; her biri güneşin rengini taşıyarak parlıyor, sonra sönüp kayboluyor. Arkadan yenileri geliyor. Bu gelip gidiş durmaksızın devam ediyor.',
+      visual_note: 'sunlit river surface with bubbles catching sunlight, water bubbles in light, slow motion river surface',
+      keywords: ['sunlit river', 'water bubbles', 'sunlight on water', 'slow motion']
+    },
+    {
+      scene_id: 'scene-008',
+      title: 'Sönmek Güneşi Söndürmez',
+      narration: 'O kabarcıkların sönmesi ne anlama gelir? Güneşin söndüğünü mü gösterir? Tam tersine: Her sönüşte güneş hâlâ orada parlamaktadır. Kabarcık sönmeseydi, ondan parıltı da yansımazdı. Sönüş, güneşin devam ettiğinin kanıtıdır.',
+      visual_note: 'persistent sunlight after wave fades, sun reflecting on water continuing after ripple disappears',
+      keywords: ['persistent sunlight', 'sun reflection after ripple', 'enduring light', 'continuing reflection']
+    },
+    {
+      scene_id: 'scene-009',
+      title: 'Kâinattaki Ölüm Böyle Okunur',
+      narration: 'Kâinattaki canlıların gelip gidişini de böyle okumak mümkün. Bir canlı sönüp gidiyor; ama arkasından başka bir canlı aynı hayatın parıltısını taşıyor. Bu geliş gidiş, hayatın bittiğini değil; sürekli bir hayat kaynağının işlediğini gösterir. Ölüm, büyük hayatın karşısında bir duraktır; büyük hayat ise durmaz.',
+      visual_note: 'forest with fallen trees and new saplings growing, old and new life coexisting, life cycle in woodland',
+      keywords: ['fallen trees new growth', 'forest life cycle', 'old and new life', 'regeneration']
+    },
+    {
+      scene_id: 'scene-010',
+      title: 'Ölüm Duvar Değil Ayna',
+      narration: 'Bu bakışla ölüm, bir duvar olmaktan çıkar; bir ayna hâline gelir. Duvar, arkasını gizler. Ayna ise bakan için bir şeyi görünür kılar. Ölüm, daimî hayatı fark ettiren bir ayna olarak okunduğunda, kâinattaki değişimin rengi değişir.',
+      visual_note: 'mirror reflecting sky and landscape, reflective water showing sky above, glass reflecting vast horizon',
+      keywords: ['mirror reflection', 'sky reflection in water', 'reflective surface', 'window to beyond']
+    },
+    {
+      scene_id: 'scene-011',
+      title: 'Eksiklik Kudretin Aynası',
+      narration: 'Varlıklar yalnızca var oluşlarıyla değil, eksiklikleriyle de büyük bir hakikate işaret eder. Acizlik kudrete ayna tutar. Yoksulluk zenginliğe işaret eder. Geçicilik kalıcı olana bakar. Her eksik, bir tamın varlığını haber verir.',
+      visual_note: 'small delicate flower beside strong stone wall, fragile and strong contrasting in nature',
+      keywords: ['fragile flower strong stone', 'contrast in nature', 'delicate and strong', 'complementary opposites']
+    },
+    {
+      scene_id: 'scene-012',
+      title: 'Kışın Yoksulluğu',
+      narration: 'Kış mevsiminde yeryüzü sönük ve çıplak görünür. Hiçbir şey yetişmez. Toprak donmuş, ağaçlar yaprak dökmüştür. Bu yoksulluk ve sessizlik, bir tükenmişlik gibi görünebilir; ama bakış değişince, bu sessizlik ayrı bir şey söyler.',
+      visual_note: 'bare winter trees in snow, frozen ground, dormant winter landscape, silent winter scene',
+      keywords: ['bare winter trees', 'frozen ground', 'dormant landscape', 'winter silence']
+    },
+    {
+      scene_id: 'scene-013',
+      title: 'Baharın Zenginliği',
+      narration: 'Ama aynı toprak baharda değişir. Çiçekler açar, ağaçlar yeşerir, her yer canlılıkla dolar. Kışın sessizliği o bolluğun öncesiydi. Zenginlik ve canlılık kaynağı hiç tükenmemişti; sadece mevsimi gelince açılmıştı. Kış fakirliği, baharın ihsanını mümkün kılmıştı.',
+      visual_note: 'cherry blossoms in full bloom, green meadows after winter, spring renewal, colorful flowers blooming',
+      keywords: ['cherry blossom', 'spring meadow', 'seasonal renewal', 'flowers blooming']
+    },
+    {
+      scene_id: 'scene-014',
+      title: 'Değişim Cömertliğin Şeklidir',
+      narration: 'Mevsimler bu yüzden yalnızca iklim değişimi değildir. Her biri bir cömertliğin farklı yüzüdür. Kış, baharı mümkün kılan bir hazırlıktır. Sonbaharın düşen yaprakları, toprağa dönen bir iyiliktir. Değişim içinde kesintisiz bir ihsan vardır.',
+      visual_note: 'autumn leaves falling gently, leaves enriching forest floor, golden autumn color, generous fallen leaves',
+      keywords: ['autumn leaves falling', 'forest floor enrichment', 'golden autumn', 'generous nature']
+    },
+    {
+      scene_id: 'scene-015',
+      title: 'Varlıkların Diliyle Söyledikleri',
+      narration: 'Kâinattaki her canlı, kendi hâliyle derin bir şeyi taşır. Muhtaçlığıyla kendisini besleyene, acizliğiyle güç kaynağına, geçiciliğiyle kalıcı olana doğru yönelmiş gibidir. Bu yönelme sessiz ama güçlüdür. Varlığın hâl diliyle söylediği şeyleri duymak, kâinatı farklı gözle okumaktır.',
+      visual_note: 'sunflower turning toward sun, plant reaching toward light, natural orientation toward light source',
+      keywords: ['sunflower facing sun', 'plant reaching light', 'natural orientation', 'seeking']
+    },
+    {
+      scene_id: 'scene-016',
+      title: 'Hayvanın Yavrusu, Bitkinin Kökü',
+      narration: 'Bir yavru, annesinin sütüne uzanır. Bir ağacın kökü, suyu arayarak derinlere iner. Bir kuş, yuvaya döner. Bunların hepsi, karşılanmayı bekleyen bir ihtiyacın ve o ihtiyacı karşılayan bir kaynağın varlığına işaret eder. İhtiyaç olduğu yerde, karşılayan da vardır.',
+      visual_note: 'baby bird being fed in nest, plant roots seeking water underground, animal returning to shelter',
+      keywords: ['baby bird in nest', 'plant roots water', 'animal returning shelter', 'natural provision']
+    },
+    {
+      scene_id: 'scene-017',
+      title: 'İnsanın İç Yönelişi',
+      narration: 'İnsan da bu tablonun içindedir. Kendi sınırlılıklarını fark ettikçe, aşkın bir güce olan ihtiyacını hisseder. Rızka muhtaç olduğunu gördükçe, rızık verenin varlığını arar. Fani olduğunu düşündükçe, bâkî olana yönelir. Bu yönelme, insanın en doğal hareketi olabilir.',
+      visual_note: 'person standing in vast open landscape, solitary human looking at horizon, contemplative figure in nature',
+      keywords: ['solitary person in nature', 'human looking horizon', 'contemplative figure', 'inner turning']
+    },
+    {
+      scene_id: 'scene-018',
+      title: 'Kalbin Münacaatı',
+      narration: 'İnsanın içinde bazen şöyle bir ses yükselir: Ben ölüyorum; ama bu ölümümde ve dirilmemde sonsuz bir hayat verenin izlerini görüyorum. Sen bitmeyensin, daima diri olansın. Ben geçiyorum; sen kalıyorsun. Bu iç söyleyiş, bir farkındalığın sesidir.',
+      visual_note: 'person in quiet prayer at dawn, peaceful meditation, soft morning light on contemplative face',
+      keywords: ['dawn prayer', 'quiet meditation', 'soft morning light', 'serene inner moment']
+    },
+    {
+      scene_id: 'scene-019',
+      title: 'Bütün Hayırlar O\'nun Elinde',
+      narration: 'Hayat kaynağı O ise, iyilik kaynağı da O\'dur. Bütün hayırlar, bütün ihsanlar, bütün güzellikler O\'nun elindedir. Bu bir tesadüf değil, gerçekliğin bir okumasıdır. Kaynağı bilen, adresi bilir. Hayır isteyen, hayrın bulunduğu yere döner.',
+      visual_note: 'sunlight pouring through clouds onto earth, generous light from above, warmth on landscape',
+      keywords: ['sunlight through clouds', 'generous light from sky', 'warmth on landscape', 'light and abundance']
+    },
+    {
+      scene_id: 'scene-020',
+      title: 'İyilik İsteyen Nereye Döner?',
+      narration: 'İyilik isteyen insan için bir adres vardır. Sevgi isteyenin sevgiyi kaynağından alması gerekir. Bereket arayanın bereketi verende araması gerekir. Bu sıralamanın tersine gidildiğinde, ne istenen bulunur ne de arayış dinginleşir.',
+      visual_note: 'clear path leading toward golden light on horizon, open road with purpose, direction in landscape',
+      keywords: ['path toward light', 'open road horizon', 'direction and purpose', 'seeking and finding']
+    },
+    {
+      scene_id: 'scene-021',
+      title: 'Kâinatta Hikmet',
+      narration: 'Kâinata dikkatli bakıldığında şu görülür: Her canlıya, tam ona uygun bir rızık verilmiş. Her organizma için, tam o organizmanın yaşayabileceği koşullar hazırlanmış. Bir arıya bal yapabilmesi, bir balığa suda nefes alabilmesi, bir kartalın yüksekte uçabilmesi verilmiş. Bu düzenleme çok büyük ve çok ince.',
+      visual_note: 'bee on flower perfectly adapted, fish swimming in clear water, eagle soaring in sky, each creature in its element',
+      keywords: ['bee on flower', 'fish in water', 'eagle soaring', 'perfect adaptation']
+    },
+    {
+      scene_id: 'scene-022',
+      title: 'Hikmet İlim İster',
+      narration: 'Bu kadar ince bir düzenleme bilgi olmadan gerçekleşemez. Bir cerrahın doğru kesiği yapabilmesi bilgi ister. Bir mimarın sağlam yapı inşa etmesi ilim ister. Kâinattaki düzenin ve ölçünün arkasında da kuşatıcı bir ilim olmalıdır.',
+      visual_note: 'architect studying detailed blueprints, precise technical drawings, careful planning, expertise in design',
+      keywords: ['architect with blueprints', 'precise design', 'detailed planning', 'expertise']
+    },
+    {
+      scene_id: 'scene-023',
+      title: 'Her Canlıya Uygun Rızık',
+      narration: 'Bir anne, yavrusunun ihtiyacına tam uygun süt üretir. Toprak, üzerinde yetişen bitkinin ihtiyacına göre besin verir. Her bir canlı türü, kendine özgü bir rızık düzenine sahiptir. Bu uyum bilgisizliğin içinden çıkamaz; bilmek gerekir.',
+      visual_note: 'mother animal nursing young, soil nourishing plant roots, ecosystem provision, natural balance',
+      keywords: ['mother nursing young', 'soil and roots', 'ecosystem balance', 'natural provision']
+    },
+    {
+      scene_id: 'scene-024',
+      title: 'Yalnız İlim Yetmez',
+      narration: 'Ama bilmek yeterli değildir. Bir şeyin sayısız ihtimal arasından belirli bir şekle, belirli bir ölçüye, belirli bir yola seçilmesi; sadece bilmekle olmaz. Bunun için irade de gerekir; tercih etmek, karar vermek, istemek gerekir.',
+      visual_note: 'person making deliberate choice at crossroads, thoughtful decision, intentional selection',
+      keywords: ['crossroads decision', 'deliberate choice', 'intentional path', 'decision making']
+    },
+    {
+      scene_id: 'scene-025',
+      title: 'Her Varlığa Özel Suret',
+      narration: 'Kâinattaki çeşitliliğe bakın: Milyonlarca farklı canlı türü, her birinin kendine özgün şekli, rengi, büyüklüğü, yaşam biçimi. Bu çeşitlilik gelişigüzel değildir. Her birine özel bir suret verilmesi, bir tercihin, yani bir iradenin ürünüdür.',
+      visual_note: 'diverse wildlife variety, unique patterns on butterfly wings, different snowflakes, variety of life forms',
+      keywords: ['species diversity', 'butterfly wing patterns', 'unique snowflakes', 'variety of life']
+    },
+    {
+      scene_id: 'scene-026',
+      title: 'Sudan Vücut',
+      narration: 'Basit bir suyu düşünün. Ondan nasıl yaşayan, düşünen, hisseden bir varlık ortaya çıkar? Bu dönüşümün her adımı — hücre, doku, organ, sistem — bilgi ister. Ama bilgi yetmez; hangisinin nasıl olacağına karar verecek bir irade de gerekir.',
+      visual_note: 'water droplet in macro photography, microscopic life formation, cellular biology, transformation from simple to complex',
+      keywords: ['water droplet macro', 'cell biology', 'life formation', 'complexity from simplicity']
+    },
+    {
+      scene_id: 'scene-027',
+      title: 'Çekirdekten Ağaç, Yumurtadan Kuş',
+      narration: 'Toprak altındaki küçük bir çekirdekten koca bir ağaç yükselir. Yumurtadan tam donanımlı bir kuş çıkar. Bu dönüşümler, bilgi ve iradenin bir arada çalıştığını gösterir. Çekirdek kendi kendine nasıl büyüyeceğini bilemez; onu bilen ve isteyen biri olmalıdır.',
+      visual_note: 'seed sprouting into sapling, egg hatching into bird, small beginnings becoming grand, transformation process',
+      keywords: ['seed sprouting', 'egg hatching', 'transformation', 'small to large growth']
+    },
+    {
+      scene_id: 'scene-028',
+      title: 'Küllî İrade',
+      narration: 'Bütün bunlar, kâinatta büyük bir iradenin işlediğini gösterir. Her varlığa özel şeklini, her sürece kendi ölçüsünü, her canlıya kendine uygun suretini veren bu irade, küçük ve yerel olamaz; büyük ve kuşatıcı olmalıdır.',
+      visual_note: 'aerial view of ordered landscape, geometric patterns in nature, cosmic symmetry, universal order from above',
+      keywords: ['aerial ordered landscape', 'geometric nature patterns', 'cosmic symmetry', 'universal order']
+    },
+    {
+      scene_id: 'scene-029',
+      title: 'Hayat Dağınığı Bir Araya Getirir',
+      narration: 'Hayatın başka bir özelliği daha var: Parçaları bir araya getirir ve onları bir bütün kılar. Bir canlının kemikleri, kasları, organları, sinir sistemi; hayat olmadan birbirinden kopuk parçalar olurdu. Hayat, bu parçaları bir anlam içinde birleştirir.',
+      visual_note: 'organic cells organizing into structure, harmony of biological systems, life organizing matter, unity from parts',
+      keywords: ['biological organization', 'organism harmony', 'systems working together', 'life organizing matter']
+    },
+    {
+      scene_id: 'scene-030',
+      title: 'Hayat Gidince Birlik Dağılır',
+      narration: 'Hayat gittiğinde bu birlik de gider. Parçalar dağılır, her biri kendi hâline döner. Bu, hayatın ne anlam taşıdığını gösterir: Hayat sadece bir biyolojik süreç değil, var olanı bir arada tutan ve ona anlam katan derin bir hakikattir.',
+      visual_note: 'autumn leaves gently dispersing, elements returning to earth, peaceful dissolution, gentle dispersal in wind',
+      keywords: ['leaves dispersing', 'elements returning earth', 'gentle dissolution', 'peaceful dispersal']
+    },
+    {
+      scene_id: 'scene-031',
+      title: 'Hayat Büyük Bir Kaynağın Cilvesi',
+      narration: 'İşte bu yüzden kâinattaki hayat, salt biyolojik canlılık olarak değil, çok daha büyük bir hakikatin yansıması olarak okunabilir. Her canlı varlık, sonsuz hayat kaynağının küçük bir tezahürüdür. Kaynağın tükenmezliği, her tezahüre rağmen devam etmesinden bellidir.',
+      visual_note: 'sunlight through forest canopy, rays of light in green forest, vitality of nature, life and light together',
+      keywords: ['sunlight through canopy', 'forest rays of light', 'nature vitality', 'life and light']
+    },
+    {
+      scene_id: 'scene-032',
+      title: 'Değişime Yalnızca Hüzünle Bakmak Gerekmez',
+      narration: 'İnsan, kâinattaki değişime yalnızca hüzünle bakmak zorunda değildir. Bazen ölümü, ayrılığı ve değişimi yalnızca kayıp olarak okuruz. Ama bu bakış değiştiğinde, geçip giden her şeyin kalıcı olanı hatırlattığını görürüz. Giden, kalıcı olanı haber veriyor olabilir.',
+      visual_note: 'bittersweet sunset over calm water, peaceful acceptance, serene evening light, beautiful transient moment',
+      keywords: ['calm sunset', 'bittersweet beauty', 'peaceful evening', 'transient beauty']
+    },
+    {
+      scene_id: 'scene-033',
+      title: 'Anlam Arayanlar İçin',
+      narration: 'Anlam arayan insan, eninde sonunda şu soruyla yüzleşir: Anlam nereden gelir? Kendi içimizden mi, başkalarından mı, yoksa her şeyin kaynağından mı? Kâinattaki ince düzen ve güzellik, bu soruya bir cevap önerir. Anlam, anlam verenle birlikte gelir.',
+      visual_note: 'person sitting peacefully in nature, quiet contemplation, thoughtful inner moment, seeking understanding',
+      keywords: ['person in nature contemplation', 'quiet reflection', 'inner seeking', 'peaceful thought']
+    },
+    {
+      scene_id: 'scene-034',
+      title: 'Bütün Hayır O\'nun Elindedir',
+      narration: 'İyilik isteyen, iyiliği kaynağından ister. Hayır arayan, hayrın bulunduğu yere döner. Kâinattaki tüm güzellikler, iyilikler ve ihsanlar; hepsi O\'nun elindedir. Hayır isteyen için adres aynıdır ve hep aynı kalır.',
+      visual_note: 'open hands in sunlight, receiving warmth from above, gratitude in nature, light on open palms',
+      keywords: ['open hands sunlight', 'receiving warmth', 'gratitude gesture', 'light on hands']
+    },
+    {
+      scene_id: 'scene-035',
+      title: 'Kapanış: Daimî Olanın Habercisi',
+      narration: 'Geçip giden her şey bir haber taşır. Gidenden kalanlar, geride olanın devam ettiğini gösterir. Değişen her şey, değişmeyeni fark ettirir. Ve anlam peşinde koşan, iyilik arayan insan için bu arayış hep aynı yere çıkar. Daimî olanı aramak, onu bulmakla biter.',
+      visual_note: 'dawn light after dark night, morning horizon brightening, new beginning in nature, quiet hope at dawn',
+      keywords: ['dawn after darkness', 'morning horizon', 'new beginning', 'quiet hope']
+    }
+  ],
+
+  metadata: {
+    source: 'derin-okuma',
+    blog_post: '20-mektup-2-makam-8-9-kelime',
+    test_day: 'day-36',
+    workflow: 'manual_scene_json_single_track_landscape_load_input',
+    content_generation_status: 'ready'
+  }
+};
+
+return [{ json: { raw_input: rawInput } }];

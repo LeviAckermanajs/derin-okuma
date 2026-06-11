@@ -1,0 +1,17 @@
+{
+  "slug": "20-mektup-2-makam-8-9-kelime",
+  "title": "20. Mektup - 2. Makam - 8-9. Kelime",
+  "day": 36,
+  "dayTag": "day-36",
+  "runId": "batch-a",
+  "timestamp": "2026-06-11T08:12:21.048Z",
+  "status": "failed",
+  "failedCommand": "node scripts/validate-video-package.mjs --slug 20-mektup-2-makam-8-9-kelime --report",
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/20-mektup-2-makam-8-9-kelime-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/20-mektup-2-makam-8-9-kelime-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/20-mektup-2-makam-8-9-kelime-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-20-mektup-2-makam-8-9-kelime-short-*-batch-a"
+  },
+  "fillTimestamp": "2026-06-11T09:11:33.503Z"
+}
