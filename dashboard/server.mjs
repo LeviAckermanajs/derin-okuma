@@ -8,6 +8,7 @@ import { spawnSync, spawn } from 'child_process';
 import net                  from 'net';
 import os                   from 'os';
 import { fileURLToPath } from 'url';
+import { resolveClaude } from '../scripts/resolve-claude-bin.mjs';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT       = path.resolve(__dirname, '..');
@@ -26,7 +27,6 @@ const JOBS_DIR     = path.join(__dirname, '.jobs');
 const DRAFTS_DIR       = path.join(ROOT, 'docs', 'drafts');
 const DRAFT_LINKS_PATH = path.join(ROOT, 'docs', 'drafts', '.draft-links.json');
 const TOKEN_PATH       = path.join(ROOT, '.secrets', 'tiktok', 'token.json');
-const CLAUDE_BIN   = '/home/muhammet/.nvm/versions/node/v24.15.0/bin/claude';
 const EXPORT_ROOT  = process.env.DERIN_OKUMA_EXPORT_ROOT || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
 const N8N_URL      = process.env.N8N_URL || 'http://localhost:5678';
 
@@ -791,18 +791,15 @@ function buildCommand(action, slug, params = {}) {
   if (action === 'shorts-fill') {
     const { run_id } = params;
     if (!run_id || !/^[a-zA-Z0-9_-]+$/.test(run_id)) return { error: 'invalid_run_id' };
-    const fillCmd = process.env.CLAUDE_FILL_COMMAND_TEMPLATE
-      || `${CLAUDE_BIN} -p --permission-mode acceptEdits "$(cat "$PROMPT_PATH")"`;
     const promptRelPath = `docs/video-tests/prompts/${slug}-fill-video-package-prompt.md`;
-    const claudePreview = fillCmd.replace(/\$PROMPT_PATH/g, promptRelPath);
     return {
       args: [
         path.join(SCRIPTS_DIR, 'run-shorts-fill-with-claude.mjs'),
         '--slug',   slug,
         '--run-id', run_id,
       ],
-      env:         { ...process.env, CLAUDE_FILL_COMMAND_TEMPLATE: fillCmd },
-      preview:     `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${run_id}\n# Claude komutu:\n${claudePreview}`,
+      env:         process.env,
+      preview:     `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${run_id}\n# Claude komutu:\nclaude --permission-mode acceptEdits -p <${promptRelPath}>`,
       fillTimeout: true,
     };
   }
@@ -827,8 +824,14 @@ function buildCommand(action, slug, params = {}) {
       return { error: 'invalid_draft_path' };
     const absPath = path.join(ROOT, draft_path);
     if (!exists(absPath)) return { error: 'draft_not_found' };
+    let claudeBin;
+    try {
+      claudeBin = resolveClaude();
+    } catch (err) {
+      return { error: 'claude_not_found', error_message: err.message };
+    }
     return {
-      executable:  CLAUDE_BIN,
+      executable:  claudeBin,
       args:        ['--permission-mode', 'acceptEdits', '-p', `/add-blog-post ${draft_path}`],
       preview:     `claude --permission-mode acceptEdits -p "/add-blog-post ${draft_path}"`,
       longTimeout: true,

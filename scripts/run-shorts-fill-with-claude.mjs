@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 // run-shorts-fill-with-claude.mjs — runs Claude fill prompt then re-validates and batches
 // Usage: npm run video:shorts:fill-with-claude -- --slug <slug> --run-id <run-id>
-//
-// Required env var:
-//   CLAUDE_FILL_COMMAND_TEMPLATE — shell command template where $PROMPT_PATH is expanded
-//   Example: export CLAUDE_FILL_COMMAND_TEMPLATE='claude --print < "$PROMPT_PATH"'
 
 import { spawnSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { resolveClaude } from './resolve-claude-bin.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -76,17 +73,13 @@ if (!fs.existsSync(promptAbsPath)) {
   process.exit(1);
 }
 
-// ─── CLAUDE_FILL_COMMAND_TEMPLATE ─────────────────────────────────────────────
+// ─── Resolve Claude executable ────────────────────────────────────────────────
 
-const TEMPLATE = process.env.CLAUDE_FILL_COMMAND_TEMPLATE;
-
-if (!TEMPLATE) {
-  console.error('[FAIL] CLAUDE_FILL_COMMAND_TEMPLATE is not set.');
-  console.error('');
-  console.error('Set it to the Claude Code CLI command template, for example:');
-  console.error("  export CLAUDE_FILL_COMMAND_TEMPLATE='claude --print < \"$PROMPT_PATH\"'");
-  console.error('');
-  console.error('$PROMPT_PATH will be substituted with the absolute path to the prompt file.');
+let claudeBin;
+try {
+  claudeBin = resolveClaude();
+} catch (err) {
+  console.error(`[FAIL] ${err.message}`);
   process.exit(1);
 }
 
@@ -98,7 +91,6 @@ console.log(`  Run ID     : ${args.runId}`);
 console.log(`  Status file: ${rel(statusPath)}`);
 console.log('');
 console.log(`[INFO] prompt_path=${promptRelPath}`);
-console.log(`[INFO] mode=claude_code_cli`);
 
 // ─── Status helpers ───────────────────────────────────────────────────────────
 
@@ -132,27 +124,27 @@ function runNodeStep(label, scriptArgs) {
 
 // ─── Step 1: Claude CLI ───────────────────────────────────────────────────────
 
-// PROMPT_PATH is injected as an env var so the shell expands it safely,
-// avoiding any path content being interpreted as shell syntax.
 console.log('\n[STEP] Claude fill');
-console.log(`  $ ${TEMPLATE.replace(/\$PROMPT_PATH/g, promptRelPath)}`);
+console.log(`  $ ${claudeBin} --permission-mode acceptEdits -p <${promptRelPath}>`);
 
-const claudeResult = spawnSync('/bin/sh', ['-c', TEMPLATE], {
+const promptContent = fs.readFileSync(promptAbsPath, 'utf8');
+const claudeResult = spawnSync(claudeBin, [
+  '--permission-mode', 'acceptEdits', '-p', promptContent,
+], {
   cwd:   ROOT,
   stdio: 'inherit',
   shell: false,
-  env:   { ...process.env, PROMPT_PATH: promptAbsPath },
 });
 
 if (claudeResult.error) {
   console.error(`\n[FAIL] Could not start Claude CLI: ${claudeResult.error.message}`);
   console.error('Make sure the claude command is installed and on PATH.');
-  writeStatus({ status: 'failed', failedCommand: TEMPLATE });
+  writeStatus({ status: 'failed', failedCommand: claudeBin });
   process.exit(1);
 }
 
 if (claudeResult.status !== 0) {
-  failStep('Claude fill', TEMPLATE);
+  failStep('Claude fill', claudeBin);
 }
 
 // ─── Step 2: normalize shorts metadata hashtags ───────────────────────────────
