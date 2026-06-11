@@ -1,0 +1,312 @@
+{
+  "source": {
+    "blog_post": "20-mektup-2-makam-8-9-kelime",
+    "title": "20. Mektup - 2. Makam - 8-9. Kelime",
+    "source_files": [
+      "src/content/blog/20-mektup-2-makam-8-9-kelime.md"
+    ]
+  },
+  "test_day": "day-36",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir kabarcık söner. Güneş sönmemiştir.",
+      "title": "Ölüm Neden Hayatın Sonu Değil?",
+      "description": "Her sönüp giden kabarcık, güneşin hâlâ orada parladığını ispat eder. Ölüm, hayatın sonu mu yoksa daimî olanın aynası mı? #derinokuma #shorts #tefekkür #iman #ölüm #hayat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ölüm",
+        "#hayat"
+      ],
+      "thumbnail_or_cover_text": "ÖLÜM SON DEĞİL",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Güneş ışığında parlayan bir nehir düşünün. Yüzeyde kabarcıklar oluşuyor; her biri güneşin ışığını taşıyarak parlıyor, sonra sönüp kayboluyor. Arkadan yenileri geliyor. Bu gelip gidiş durmaksızın devam ediyor.",
+          "visual_note": "sunlit river surface with bubbles catching light, shimmering water, slow motion",
+          "keywords": [
+            "sunlit river",
+            "water bubbles",
+            "shimmering water",
+            "slow motion"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bu kabarcıkların sönmesi güneşin söndüğünü göstermez. Tam tersine; her sönüşte güneş hâlâ orada parlamaktadır. Sönmek, güneşin devam ettiğinin kanıtıdır. Parıltı olmasa, sönüş de olmazdı.",
+          "visual_note": "sun still shining after wave fades, persistent light on water, enduring sunlight reflection",
+          "keywords": [
+            "persistent sunlight",
+            "enduring light",
+            "sun after ripple fades"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Kâinattaki canlıların gelip gidişi de böyle okunabilir. Bir hayatın bitmesi, hayatın tükenmediğini gösterir; büyük hayat kaynağının kesintisiz işlediğini ispat eder. Ölüm, sonu göstermiyor; devamı ispat ediyor.",
+          "visual_note": "seasons cycling in nature, fallen leaves and new growth, eternal renewal, life continues",
+          "keywords": [
+            "seasonal cycle",
+            "new growth",
+            "eternal renewal",
+            "life cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Kışın yoksul görünen toprak, baharda cömert olur. Geçicilik bir kayıp mı?",
+      "title": "Geçicilik Neden Boş Değildir?",
+      "description": "Giden her şey, kalan her şeyin haberini taşır. Geçicilik, kalıcı olanı gösterir. #derinokuma #shorts #tefekkür #iman #kâinat #anlam",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat",
+        "#anlam"
+      ],
+      "thumbnail_or_cover_text": "GEÇİCİLİK NE SÖYLER?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Kış mevsiminde yeryüzü soğuk ve sessizdir. Ağaçlar çıplak, toprak donmuştur. Bu manzara, her şeyin bittiğini düşündürebilir. Ama bitiş mi bu, yoksa başka bir şey mi?",
+          "visual_note": "bare winter trees in snow, silent frozen landscape, dormant winter, cold and still",
+          "keywords": [
+            "bare winter trees",
+            "frozen landscape",
+            "dormant winter",
+            "cold stillness"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Aynı toprak baharda değişir. Çiçekler açar, her yer yeşerir, canlılık her yere yayılır. Kışın yoksulluğunu gören gözler, baharın cömertliğini daha iyi okur. Zenginlik kaynağı hiç tükenmemişti; sadece mevsimi gelince açılmıştı.",
+          "visual_note": "spring flowers blooming after winter, green meadow renewal, cherry blossoms, seasonal transformation",
+          "keywords": [
+            "spring renewal",
+            "flowers after winter",
+            "green meadow",
+            "seasonal transformation"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Geçip giden her şey boş bir kayıp değildir. Sönüp giden her kabarcık güneşin varlığını ispat eder; kışın yoksulluğu baharın zenginliğini müjdeler. Geçicilik, kalıcı olanın habercisidir.",
+          "visual_note": "transition from winter to spring, warmth returning to landscape, hope in seasonal change",
+          "keywords": [
+            "winter to spring transition",
+            "warmth returning",
+            "hope in seasons"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Ölüm neden O'na yaklaşamaz?",
+      "title": "Neden O'nun Hayatı Sonsuz?",
+      "description": "O'nun hayatı dışarıdan alınmamış; kendi özünden gelir. Bu yüzden tükenmez ve sona ermez. #derinokuma #shorts #tefekkür #iman #risaleinur #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#risaleinur",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "DAİMÎ HAYAT",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Ölüm ve eksilme neden O'na yaklaşamaz? Çünkü O'nun hayatı, dışarıdan alınmış bir şey değildir. Verilmiş olan geri alınabilir. Ama kendi özünden olan eksilmez.",
+          "visual_note": "unquenchable flame in wind, eternal fire burning despite elements, candle flame that persists",
+          "keywords": [
+            "eternal flame",
+            "fire in wind",
+            "unquenchable fire",
+            "persistent flame"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bizim hayatımız bir emanettir; belirli bir süre için verilmiş, sonunda geri alınacak bir şeydir. O'nun hayatı ise ezelî ve ebedîdir; ne başlangıcı var ne de sonu. Bu yüzden tükenmez.",
+          "visual_note": "sunrise and sunset as eternal cycle, vast sky above changing earth, cosmos enduring",
+          "keywords": [
+            "eternal sunrise sunset",
+            "vast sky",
+            "cosmos endurance",
+            "eternal cycle"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Kâinattaki bu kadar çok ve çeşitli hayat, tükenmez bir kaynaktan akıyor. Tükenen bir kaynaktan bu kadar uzun süre, bu kadar büyük bir çeşitlilikte hayat akamazdı. Bu akış, kaynağın tükenmezliğini gösterir.",
+          "visual_note": "diverse life forms in nature, rainforest teeming with life, biodiversity, endless variety",
+          "keywords": [
+            "diverse life forms",
+            "rainforest biodiversity",
+            "endless variety",
+            "teeming with life"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İnsan kendi acizliğini fark edince, bu onu ezer mi yoksa bir kapı açar mı?",
+      "title": "Güçsüzlük Neden Yük Değildir?",
+      "description": "Acizlik kudrete ayna tutar. İnsan, kendi sınırlılığını fark ettikçe aşkın olana yönelir. #derinokuma #shorts #tefekkür #iman #kulluk #insan",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kulluk",
+        "#insan"
+      ],
+      "thumbnail_or_cover_text": "ACİZLİK VE GÜVEN",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Varlıklar yalnızca sahip olduklarıyla değil, sahip olmadıklarıyla da bir şeylere işaret eder. Acizlik kudrete ayna tutar. Yoksulluk zenginliğe bakar. Geçicilik kalıcıyı gösterir. Her eksiklik, bir tamlığın haberini taşır.",
+          "visual_note": "small delicate flower beside strong rock, fragile beauty in vast nature, contrast of delicate and strong",
+          "keywords": [
+            "fragile flower",
+            "strong rock contrast",
+            "delicate in nature",
+            "small and vast"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsan kendi sınırlılıklarını fark ettikçe, onun ötesinde olana yönelir. Rızka muhtaç olduğunu gördükçe, rızık vereni arar. Fani olduğunu düşündükçe, kalıcı olana döner. Güçsüzlük bir kapıyı açar.",
+          "visual_note": "person in open landscape looking upward, human silhouette against vast sky, contemplative turning",
+          "keywords": [
+            "person looking upward",
+            "human against sky",
+            "contemplative silhouette",
+            "inner seeking"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "İnsanın içinden bazen şöyle bir ses yükselir: Ben ölüyorum; ama bu ölümümde sonsuz hayat verenin cilvesini görüyorum. Sen bitmeyensin; ben geçiyorum, sen kalıyorsun. Güçsüzlük, bu farkındalığı doğurur.",
+          "visual_note": "person in quiet prayer at dawn, serene meditation, soft light on face, peaceful inner acknowledgment",
+          "keywords": [
+            "quiet prayer dawn",
+            "serene meditation",
+            "soft morning light",
+            "inner peace"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İyilik isteyen insan için tek bir adres var.",
+      "title": "Bütün Hayır O'nun Elindedir",
+      "description": "Tüm hayırlar ve ihsanlar O'nun elindedir. Hayır arayan için adres bellidir. #derinokuma #shorts #tefekkür #iman #dua #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#dua",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "BÜTÜN HAYIR O'NDA",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Her güzellik bir kaynaktan gelir. Her iyilik, bir vericisi olan şeydir. Kâinattaki tüm hayırlar, ihsanlar ve bereketler O'nun elindedir. Bunu fark etmek, bakışı köklü biçimde değiştirir.",
+          "visual_note": "sunlight pouring through clouds, generous light falling on earth, warmth from above, luminous sky",
+          "keywords": [
+            "sunlight through clouds",
+            "generous light",
+            "warmth from sky",
+            "luminous landscape"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İyilik kaynağını aramak, iyiliği yanlış yerden beklemekten daha huzurludur. Tüm iyiliklerin bir adresi var; o adrese yönelmek, arayışı dinginleştirir. Aradığını bulmak, doğru adreste aramakla başlar.",
+          "visual_note": "clear path leading toward warm horizon light, direction in open landscape, purpose and clarity",
+          "keywords": [
+            "path toward light",
+            "open landscape direction",
+            "clear purpose",
+            "finding the way"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Hayır isteyen, hayrın bulunduğu yere döner. Bu, basit bir teslimiyet değil; gerçekliğe uygun bir adrestir. Bütün hayır O'nun elindedir ve hayır arayan hep oraya çıkar.",
+          "visual_note": "open hands receiving golden light, hands uplifted in gratitude, warmth on open palms",
+          "keywords": [
+            "open hands light",
+            "gratitude gesture",
+            "receiving warmth",
+            "golden light hands"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Küçük bir çekirdekten koca bir ağaç çıkıyor. Bunu bilen biri mi yapıyor?",
+      "title": "Kâinattaki Düzen Rastgele mi?",
+      "description": "Her varlığa özel suret, her sürece kendi ölçüsü. Bu düzen bilgi ve irade ister. #derinokuma #shorts #tefekkür #iman #kâinat #varlık",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat",
+        "#varlık"
+      ],
+      "thumbnail_or_cover_text": "DÜZEN RASTGELE Mİ?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Toprak altında küçük bir çekirdek var. Bu çekirdek büyüyüp koca bir ağaç olacak. Peki nasıl? Bu dönüşümü mümkün kılan ne? Çekirdekte saklı bu bilgi ve program nereden geliyor?",
+          "visual_note": "seed germinating underground, root emerging from seed, seedling breaking through soil, first growth",
+          "keywords": [
+            "seed germinating",
+            "seedling breaking soil",
+            "underground growth",
+            "first emergence"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Her canlıya kendine özgü bir şekil, her sürece kendi ölçüsü verilmiş. Bu düzenleme bilgi ister. Hikmetle iş görmek bilmekle olur. Kâinattaki bu ince düzen, derin bir ilme işaret eder.",
+          "visual_note": "geometric patterns in nature, fibonacci spiral in shell, mathematical precision in flower, natural geometry",
+          "keywords": [
+            "fibonacci spiral",
+            "geometric patterns nature",
+            "mathematical precision",
+            "natural geometry"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ama bilmek yetmez; irade de gerekir. Sayısız ihtimal arasından birini seçmek, bir iradenin işidir. Her özgün suret, bir tercihin ürünüdür. Kâinattaki düzen hem derin bir ilme hem de büyük bir iradeye delildir.",
+          "visual_note": "unique snowflake crystal close-up, each one different, individual identity in nature, one of a kind",
+          "keywords": [
+            "unique snowflake",
+            "individual crystal",
+            "fingerprint uniqueness",
+            "one of a kind"
+          ]
+        }
+      ]
+    }
+  ]
+}

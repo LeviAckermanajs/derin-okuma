@@ -161,6 +161,13 @@ runNodeStep('normalize package', [
   '--slug', args.slug,
 ]);
 
+// ─── Step 2c: normalize video package status ─────────────────────────────────
+
+runNodeStep('normalize package status', [
+  'scripts/normalize-video-package-status.mjs',
+  '--slug', args.slug,
+]);
+
 // ─── Step 3: video:validate ───────────────────────────────────────────────────
 
 runNodeStep('video:validate', [

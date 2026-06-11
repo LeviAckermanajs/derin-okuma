@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "20-mektup-2-makam-8-9-kelime",
+  "test_day": "day-36",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir kabarcık söner. Güneş sönmemiştir.",
+      "title_options": [
+        "Ölüm Neden Hayatın Sonu Değil?",
+        "Kabarcık Söner, Güneş Sönmez",
+        "Ölüm Bize Ne Söyler?",
+        "Hayat Neden Bitmez?"
+      ],
+      "selected_title": "Ölüm Neden Hayatın Sonu Değil?",
+      "description": "Her sönüp giden kabarcık, güneşin hâlâ orada parladığını ispat eder. Ölüm, hayatın sonu mu yoksa daimî olanın aynası mı? #derinokuma #shorts #tefekkür #iman #ölüm #hayat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ölüm",
+        "#hayat"
+      ],
+      "thumbnail_or_cover_text": "ÖLÜM SON DEĞİL"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Kışın yoksul görünen toprak, baharda cömert olur. Geçicilik bir kayıp mı?",
+      "title_options": [
+        "Geçicilik Neden Boş Değildir?",
+        "Kış Neden Baharı Haber Verir?",
+        "Geçip Giden Neden Kayıp Değil?",
+        "Geçicilik Ne Söyler Bize?"
+      ],
+      "selected_title": "Geçicilik Neden Boş Değildir?",
+      "description": "Giden her şey, kalan her şeyin haberini taşır. Geçicilik, kalıcı olanı gösterir. #derinokuma #shorts #tefekkür #iman #kâinat #anlam",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat",
+        "#anlam"
+      ],
+      "thumbnail_or_cover_text": "GEÇİCİLİK NE SÖYLER?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Ölüm neden O'na yaklaşamaz?",
+      "title_options": [
+        "Neden O'nun Hayatı Sonsuz?",
+        "Allah'ın Hayatı Neden Ebedî?",
+        "Ölüm O'na Neden Yaklaşamaz?",
+        "Daimî Hayat Nedir?"
+      ],
+      "selected_title": "Neden O'nun Hayatı Sonsuz?",
+      "description": "O'nun hayatı dışarıdan alınmamış; kendi özünden gelir. Bu yüzden tükenmez ve sona ermez. #derinokuma #shorts #tefekkür #iman #risaleinur #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#risaleinur",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "DAİMÎ HAYAT"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İnsan kendi acizliğini fark edince, bu onu ezer mi yoksa bir kapı açar mı?",
+      "title_options": [
+        "Güçsüzlük Neden Yük Değildir?",
+        "Acizlik İnsanı Nereye Götürür?",
+        "Zayıflık Neden Kapı Açar?",
+        "İnsan Neden Muhtaçtır?"
+      ],
+      "selected_title": "Güçsüzlük Neden Yük Değildir?",
+      "description": "Acizlik kudrete ayna tutar. İnsan, kendi sınırlılığını fark ettikçe aşkın olana yönelir. #derinokuma #shorts #tefekkür #iman #kulluk #insan",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kulluk",
+        "#insan"
+      ],
+      "thumbnail_or_cover_text": "ACİZLİK VE GÜVEN"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İyilik isteyen insan için tek bir adres var.",
+      "title_options": [
+        "Bütün Hayır O'nun Elindedir",
+        "İyilik Nerede Aranır?",
+        "Hayır İsteyen Nereye Döner?",
+        "Tüm İhsanlar Nerede?"
+      ],
+      "selected_title": "Bütün Hayır O'nun Elindedir",
+      "description": "Tüm hayırlar ve ihsanlar O'nun elindedir. Hayır arayan için adres bellidir. #derinokuma #shorts #tefekkür #iman #dua #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#dua",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "BÜTÜN HAYIR O'NDA"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Küçük bir çekirdekten koca bir ağaç çıkıyor. Bunu bilen biri mi yapıyor?",
+      "title_options": [
+        "Kâinattaki Düzen Rastgele mi?",
+        "Çekirdek Nasıl Ağaç Olur?",
+        "Kâinat Neden Bu Kadar Düzenli?",
+        "Yaratılıştaki Hikmet Nedir?"
+      ],
+      "selected_title": "Kâinattaki Düzen Rastgele mi?",
+      "description": "Her varlığa özel suret, her sürece kendi ölçüsü. Bu düzen bilgi ve irade ister. #derinokuma #shorts #tefekkür #iman #kâinat #varlık",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat",
+        "#varlık"
+      ],
+      "thumbnail_or_cover_text": "DÜZEN RASTGELE Mİ?"
+    }
+  ]
+}
