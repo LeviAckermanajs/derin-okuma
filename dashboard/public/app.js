@@ -26,6 +26,111 @@ function istanbulDateStr(offsetDays = 0) {
   return new Date(ms).toISOString().slice(0, 10);
 }
 
+// ── Date formatting helpers ────────────────────────────────────────────────
+// UI boundary: input/output to users is always DD/MM/YYYY.
+// Internal values, API calls, and CLI arguments always stay YYYY-MM-DD.
+
+function formatDateForDisplay(isoDate) {
+  if (!isoDate) return '—';
+  const m = String(isoDate).match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return String(isoDate);
+  return `${m[3]}/${m[2]}/${m[1]}`;
+}
+
+function formatDateTimeForDisplay(isoStr) {
+  if (!isoStr) return '—';
+  try {
+    const d = new Date(isoStr);
+    if (isNaN(d.getTime())) return String(isoStr);
+    const ist  = new Date(d.getTime() + 3 * 3_600_000);
+    const dd   = String(ist.getUTCDate()).padStart(2, '0');
+    const mm   = String(ist.getUTCMonth() + 1).padStart(2, '0');
+    const yyyy = ist.getUTCFullYear();
+    const hh   = String(ist.getUTCHours()).padStart(2, '0');
+    const min  = String(ist.getUTCMinutes()).padStart(2, '0');
+    const ss   = String(ist.getUTCSeconds()).padStart(2, '0');
+    return `${dd}/${mm}/${yyyy} ${hh}:${min}:${ss}`;
+  } catch { return String(isoStr); }
+}
+
+function parseDisplayDate(displayDate) {
+  if (!displayDate) return '';
+  const m = String(displayDate).match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (!m) return '';
+  const dd = m[1].padStart(2, '0'), mm = m[2].padStart(2, '0'), yyyy = m[3];
+  const day = parseInt(dd, 10), month = parseInt(mm, 10), year = parseInt(yyyy, 10);
+  if (month < 1 || month > 12 || day < 1 || day > 31) return '';
+  const d = new Date(year, month - 1, day);
+  if (d.getFullYear() !== year || d.getMonth() !== month - 1 || d.getDate() !== day) return '';
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+function formatHintDates(hint) {
+  if (!hint) return hint;
+  return hint.replace(/\b(\d{4})-(\d{2})-(\d{2})\b/g, (_, y, mo, d) => `${d}/${mo}/${y}`);
+}
+
+function createDatePicker(id, isoValue, minIso) {
+  const display = isoValue ? formatDateForDisplay(isoValue) : '';
+  const valAttr = isoValue ? ` value="${esc(isoValue)}"` : '';
+  const minAttr = minIso   ? ` min="${esc(minIso)}"`     : '';
+  return `<div class="date-input-row" data-picker-id="${esc(id)}">
+      <input class="param-input date-display-input" id="${esc(id)}-display"
+        type="text" placeholder="GG/AA/YYYY"
+        value="${esc(display)}" maxlength="10" autocomplete="off">
+      <button type="button" class="date-picker-btn" data-picker-trigger="${esc(id)}"
+        title="Takvim aç" aria-label="Takvim aç">📅</button>
+      <input type="date" id="${esc(id)}" class="date-hidden-input"${valAttr}${minAttr}>
+    </div>
+    <span class="date-error" id="${esc(id)}-error"></span>`;
+}
+
+function wireDatePickers() {
+  document.querySelectorAll('[data-picker-id]').forEach(wrap => {
+    const id           = wrap.dataset.pickerId;
+    const displayInput = document.getElementById(`${id}-display`);
+    const hiddenInput  = document.getElementById(id);
+    const errorEl      = document.getElementById(`${id}-error`);
+    const btn          = wrap.querySelector(`[data-picker-trigger="${id}"]`);
+    if (!displayInput || !hiddenInput) return;
+
+    const openPicker = () => {
+      if (typeof hiddenInput.showPicker === 'function') {
+        try { hiddenInput.showPicker(); return; } catch {}
+      }
+      hiddenInput.focus();
+    };
+
+    btn?.addEventListener('click', e => { e.preventDefault(); openPicker(); });
+    displayInput.addEventListener('click', openPicker);
+
+    hiddenInput.addEventListener('change', () => {
+      displayInput.value = hiddenInput.value ? formatDateForDisplay(hiddenInput.value) : '';
+      if (errorEl) { errorEl.textContent = ''; errorEl.style.display = 'none'; }
+    });
+
+    displayInput.addEventListener('blur', () => {
+      const val = displayInput.value.trim();
+      if (!val) {
+        hiddenInput.value = '';
+        if (errorEl) { errorEl.textContent = ''; errorEl.style.display = 'none'; }
+        return;
+      }
+      const iso = parseDisplayDate(val);
+      if (!iso) {
+        if (errorEl) {
+          errorEl.textContent = 'Geçersiz tarih — GG/AA/YYYY formatında girin (örn: 07/06/2026)';
+          errorEl.style.display = 'block';
+        }
+      } else {
+        hiddenInput.value  = iso;
+        displayInput.value = formatDateForDisplay(iso);
+        if (errorEl) { errorEl.textContent = ''; errorEl.style.display = 'none'; }
+      }
+    });
+  });
+}
+
 async function refreshYtScheduleHint() {
   try {
     ytScheduleHint = await apiFetch('/api/youtube-schedule-hint');
@@ -271,11 +376,9 @@ function cardDraftWorkflowParams(d) {
             value="${esc(defRunId)}" placeholder="day1-batch-a">
         </div>
         <div class="param-field">
-          <label class="param-label" for="dp-yt-date">YouTube Takvim Tarihi</label>
-          <input class="param-input" id="dp-yt-date" type="date"
-            value="${esc(ytScheduleHint?.suggested_date || istanbulDateStr(1))}"
-            min="${istanbulDateStr(0)}">
-          <span class="param-hint">${esc(ytScheduleHint?.note || 'Hint yükleniyor…')}</span>
+          <label class="param-label" for="dp-yt-date-display">YouTube Takvim Tarihi</label>
+          ${createDatePicker('dp-yt-date', ytScheduleHint?.suggested_date || istanbulDateStr(1), istanbulDateStr(0))}
+          <span class="param-hint">${esc(formatHintDates(ytScheduleHint?.note) || 'Hint yükleniyor…')}</span>
         </div>
       </div>
     </div>`;
@@ -356,6 +459,7 @@ function collectDraftParams(d) {
 }
 
 function wireDraftDetailButtons(d) {
+  wireDatePickers();
   document.querySelectorAll('[data-draft-action]').forEach(btn => {
     btn.addEventListener('click', async () => {
       const action = btn.dataset.draftAction;
@@ -526,12 +630,12 @@ async function refreshTokenBadge() {
     if (t.is_expired) {
       tikTokTokenOk = false;
       el.className = 'badge badge-error';
-      el.textContent = `TikTok: süresi dolmuş (${new Date(t.expires_at).toLocaleString('tr-TR')})`;
+      el.textContent = `TikTok: süresi dolmuş (${formatDateTimeForDisplay(t.expires_at)})`;
       return;
     }
     tikTokTokenOk = true;
     el.className = 'badge badge-ok';
-    el.textContent = `TikTok: geçerli (${t.open_id_masked}) — ${new Date(t.expires_at).toLocaleString('tr-TR')} kadar`;
+    el.textContent = `TikTok: geçerli (${t.open_id_masked}) — ${formatDateTimeForDisplay(t.expires_at)} kadar`;
   } catch {
     tikTokTokenOk = false;
     el.className = 'badge badge-warn'; el.textContent = 'TikTok: okunamadı';
@@ -551,7 +655,7 @@ async function loadOverview() {
     }
     tbody.innerHTML = slugs.map(s => {
       const mtimeHint = s.pipeline_mtime
-        ? ` title="${new Date(s.pipeline_mtime).toLocaleString('tr-TR')} — ${relTime(s.pipeline_mtime)}"`
+        ? ` title="${formatDateTimeForDisplay(s.pipeline_mtime)} — ${relTime(s.pipeline_mtime)}"`
         : '';
       return `<tr data-slug="${esc(s.slug)}">
         <td>${esc(s.slug)}</td>
@@ -650,11 +754,9 @@ function cardWorkflowParams(d) {
           <datalist id="drafts-datalist"></datalist>
         </div>
         <div class="param-field">
-          <label class="param-label" for="param-yt-date">YouTube Takvim Tarihi</label>
-          <input class="param-input" id="param-yt-date" type="date"
-            value="${esc(ytScheduleHint?.suggested_date || istanbulDateStr(1))}"
-            min="${istanbulDateStr(0)}">
-          <span class="param-hint">${esc(ytScheduleHint?.note || 'Hint yükleniyor…')}</span>
+          <label class="param-label" for="param-yt-date-display">YouTube Takvim Tarihi</label>
+          ${createDatePicker('param-yt-date', ytScheduleHint?.suggested_date || istanbulDateStr(1), istanbulDateStr(0))}
+          <span class="param-hint">${esc(formatHintDates(ytScheduleHint?.note) || 'Hint yükleniyor…')}</span>
         </div>
       </div>
     </div>`;
@@ -706,7 +808,7 @@ function cardPipeline(d) {
   if (!pl) return `<div class="detail-card"><h3>Pipeline</h3><p class="muted-text">Rapor yok</p></div>`;
 
   const mtime = d.pipeline_mtime
-    ? `${new Date(d.pipeline_mtime).toLocaleString('tr-TR')} (${relTime(d.pipeline_mtime)})`
+    ? `${formatDateTimeForDisplay(d.pipeline_mtime)} (${relTime(d.pipeline_mtime)})`
     : '—';
 
   const staleResolved = d.is_stale_failed && d.validation_passed;
@@ -886,6 +988,7 @@ async function fillDraftsList() {
 }
 
 function wireDetailButtons(d) {
+  wireDatePickers();
   fillTokenCard();
   fillDraftsList();
 
@@ -1059,8 +1162,8 @@ async function fillTokenCard() {
   try {
     const t = await apiFetch('/api/token-status');
     if (!t.exists) { el.innerHTML = pill('missing', 'token yok'); return; }
-    const exp     = t.expires_at  ? new Date(t.expires_at).toLocaleString('tr-TR')  : '—';
-    const obt     = t.obtained_at ? new Date(t.obtained_at).toLocaleString('tr-TR') : '—';
+    const exp     = formatDateTimeForDisplay(t.expires_at);
+    const obt     = formatDateTimeForDisplay(t.obtained_at);
     const status  = t.is_expired  ? pill('failed', 'süresi dolmuş') : pill('ok', 'geçerli');
     el.innerHTML = `
       <table class="kv-table">
