@@ -1,0 +1,330 @@
+{
+  "source": {
+    "blog_post": "20-mektup-10-kelime-zeyli",
+    "title": "Bir Zerre Ne Yapabilir",
+    "source_files": [
+      "src/content/blog/20-mektup-10-kelime-zeyli.md"
+    ]
+  },
+  "test_day": "day-38",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Küçük olmak zayıflık değildir. Asıl güç, neye bağlı olduğundan gelir.",
+      "title": "Bir Zerre Neden Bu Kadar Güçlüdür?",
+      "description": "Küçücük bir zerre, güneşe yöneldiğinde onun ışığını taşıyabilir. Asıl güç, neye bağlı olduğundan gelir. #derinokuma #shorts #tefekkür #iman #risaleinur",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#risaleinur"
+      ],
+      "thumbnail_or_cover_text": "BİR ZERRE VE GÜNEŞ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Küçük olmak zayıflık değildir. Kâinatta pek çok şey küçüktür — bir zerre, bir tohum, görünmez bir hava tanecisi. Ama onların bu küçüklüğü, onları anlamsız ya da güçsüz yapmaz.",
+          "visual_note": "tiny particles floating in golden sunlight, macro, ethereal",
+          "keywords": [
+            "particles",
+            "golden sunlight",
+            "macro",
+            "ethereal"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Şeffaf bir zerreyi düşünelim. Kendi başına bırakıldığında, yalnızca kendi küçüklüğü kadar bir şeydir. Ama güneşe yönelirse ne olur? Güneşin ışığını yansıtır, rengini taşır. Küçücük bir zerre, büyük bir ışığın aynası olur.",
+          "visual_note": "sunlight through water droplet creating rainbow prism, brilliant",
+          "keywords": [
+            "sunlight",
+            "water droplet",
+            "prism",
+            "rainbow"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bir varlığın gücü, kendi yapısından değil, bağlı olduğu kaynaktan gelir. Küçük olmak sorun değildir; asıl mesele neye bağlı olduğundur. Küçüklük bir eksiklik değil, büyük bir güce bağlanmanın kapısıdır.",
+          "visual_note": "small mirror reflecting full brilliant sunlight, simplicity",
+          "keywords": [
+            "small mirror",
+            "sunlight reflection",
+            "brilliant",
+            "simplicity"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Başıboş kalmak özgürlük gibi görünür. Ama aslında insanı en küçük gücüne mahkûm eder.",
+      "title": "Başıboşluk Mu, Mensubiyet Mi?",
+      "description": "Başıboş kalmak özgürlük gibi görünür. Ama insanı en küçük gücüne hapseder. Mensubiyet ise küçük olanı büyük bir güce dayandırır. #derinokuma #shorts #tefekkür #iman #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "MENSUBİYET VE GÜÇ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Başıboş kalmak özgürlük gibi görünür. Ama aslında insanı kendi dar gücüne hapseder. Hiç kimseye bağlı olmayan biri, her şeyi kendi omzunda taşımak zorundadır.",
+          "visual_note": "lone person walking on empty road, carrying heavy pack",
+          "keywords": [
+            "lone person",
+            "empty road",
+            "heavy pack",
+            "solitary"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İki kardeşi düşünelim. Biri kendi başına hareket eder. Erzağını, her şeyini kendisi taşır. Yapabileceği iş, kendi kuvvetiyle sınırlıdır. Diğeri ise büyük bir orduya katılır. Arkasında büyük bir güç vardır. Kendi gücü az olsa bile, bağlı olduğu yapının imkânlarıyla büyük işler yapar.",
+          "visual_note": "lone warrior versus unified army at dawn, contrast, power",
+          "keywords": [
+            "lone warrior",
+            "army",
+            "dawn",
+            "contrast"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Mensubiyet, küçük bir varlığı büyük bir güce dayandırır. İnce bir tel, büyük bir merkeze bağlandığında, merkezdeki tüm imkânları harekete geçirebilir. Küçüklük artık bir engel değil, büyük bir güce açılan kapıdır.",
+          "visual_note": "thin wire connecting to powerful energy source, flow of light",
+          "keywords": [
+            "wire",
+            "connection",
+            "power source",
+            "light flow"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Her şeyi tek bir kaynağa bağlamak, her şeyi dağıtıp açıklamaya çalışmaktan çok daha kolaydır.",
+      "title": "Tevhid Neden Her Şeyi Kolaylaştırır?",
+      "description": "Tek bir kaynağa bağlanmak, her şeyi dağıtıp açıklamaya çalışmaktan kolaydır. Birlik düzeni getirir, dağınıklık kaos doğurur. #derinokuma #shorts #tefekkür #tevhid #risaleinur",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#tevhid",
+        "#risaleinur"
+      ],
+      "thumbnail_or_cover_text": "TEVHİD VE KOLAYLIK",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Her şeyi tek bir kaynağa bağlamak, her şeyi dağıtıp ayrı ayrı açıklamaya çalışmaktan çok daha kolaydır. Tek merkezden çıkan emir, milyonlarca varlığı birbirine zıt olmadan yönetir.",
+          "visual_note": "single conductor leading large orchestra, unified harmony",
+          "keywords": [
+            "conductor",
+            "orchestra",
+            "harmony",
+            "unified"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Tek bir güneş sayısız ülkeye ışık verir. Tek bir bahar, milyonlarca çiçeği aynı anda açtırır. Tek bir emir, kâinatı düzenler. Birlik, çokluğu karışıklığa düşürmeden taşır.",
+          "visual_note": "sun rays spreading over vast landscape, aerial, radiance",
+          "keywords": [
+            "sun rays",
+            "vast landscape",
+            "aerial",
+            "radiance"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bunun tersini düşünelim. Tek bir sonuç için birbirinden kopuk sayısız şeyin aynı anda, aynı ölçüyle buluşması gerekse ne olur? Bu, koordinasyonsuz bir kaos doğurur. Her küçük şey bile içinden çıkılamaz hale gelir.",
+          "visual_note": "scattered puzzle pieces, disconnected gears, chaos",
+          "keywords": [
+            "puzzle pieces",
+            "disconnected",
+            "chaos",
+            "scattered"
+          ]
+        },
+        {
+          "scene_id": "scene-004",
+          "narration": "Tevhid kolaylaştırır; şirk zorlaştırır. Tek merkezden gelen emir, karmaşıklığı eriterek düzen kurar. Dağınıklık ise küçücük bir şeyi bile açıklanamaz hale getirir.",
+          "visual_note": "single key unlocking many doors at once, simplicity, solution",
+          "keywords": [
+            "single key",
+            "many doors",
+            "solution",
+            "simplicity"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İnkâr yolunda tek bir çiçeği açıklamak için tüm evrenin yükünü taşımak gerekir.",
+      "title": "Tek Çiçeği Açıklamak Neden Bu Kadar Zordur?",
+      "description": "İnkâr yolunda tek bir çiçeği açıklamak için tüm evrenin yükünü taşımak gerekir. Tevhid ise bütün yaratılışı tek bir kudretle açıklar. #derinokuma #shorts #tefekkür #iman #kâinat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kâinat"
+      ],
+      "thumbnail_or_cover_text": "TEK ÇİÇEĞİN YÜKÜ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Tek bir çiçeğin açmasını düşün. Eğer onu sayısız bağımsız sebebe, tesadüfe, kör güçlere vermeye çalışırsan, o küçücük çiçeğin ardına tüm bir baharın yükünü yüklemek zorunda kalırsın.",
+          "visual_note": "single wildflower blooming in field, delicate light, close-up",
+          "keywords": [
+            "wildflower",
+            "blooming",
+            "delicate",
+            "close-up"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bir meyveyi açıklamak mı? Tüm bir bahçenin karmaşıklığını üstlenmek gerekir. Küçük bir sineği açıklamak mı? Göklerin ve yerin düzeni bu açıklamaya dahil edilmek zorunda kalır. Küçük görünen şey, aslında sonsuz bir güçlüğü içinde taşır.",
+          "visual_note": "fruit on branch, bee in flight, nature complexity in close detail",
+          "keywords": [
+            "fruit",
+            "bee",
+            "branch",
+            "nature complexity"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ama tek bir Yaratıcı'ya bağlandığında tablo değişir. Bütün çiçekleri, bütün meyveleri, bütün yaratılışı açıklamak tek bir kudretle kolaylaşır. Teklik çokluğu yönetir; çokluk ise tekleri parçalar.",
+          "visual_note": "spring garden in full bloom, abundant life, harmony",
+          "keywords": [
+            "spring garden",
+            "bloom",
+            "abundant",
+            "harmony"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bir zerreye bütün işleri kendin yap diyebilmek için ondan sonsuz ilim ve kudret beklemek gerekir.",
+      "title": "Bir Zerre Tek Başına Ne Yapabilir?",
+      "description": "Bir zerreye tüm işleri kendin yap diyebilmek için ondan sonsuz ilim ve kudret beklemek gerekir. Bu imkânsızdır. Asıl güç bağlantıdan gelir. #derinokuma #shorts #tefekkür #iman #risaleinur",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#risaleinur"
+      ],
+      "thumbnail_or_cover_text": "ZERRE VE SONSUZ YÜK",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Bir zerreye bütün işleri kendin yap deseydin, ondan ne beklemek gerekirdi? Sanki her şeyi bilen bir ilim. Sanki her şeye gücü yeten bir kuvvet. Sanki içinde görünmez fabrikalar taşıyan bir yapı.",
+          "visual_note": "tiny particle under microscope, alone, vast emptiness around",
+          "keywords": [
+            "particle",
+            "microscope",
+            "alone",
+            "emptiness"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bu ise zerreden beklenilemeyecek kadar büyük bir yüktür. Zerre kendi başına bırakıldığında, yalnızca kendi küçüklüğü kadar bir varlıktır. Büyük işler için büyük bir kaynağa bağlı olmak gerekir.",
+          "visual_note": "small stone in vast empty landscape, minimalist, alone",
+          "keywords": [
+            "small stone",
+            "vast landscape",
+            "minimalist",
+            "alone"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ama o zerre, sonsuz ilim ve kudret sahibi bir Yaratıcı'nın emriyle hareket ederse iş değişir. Artık kendi gücüyle değil, bağlı olduğu kudretle vazife görür. Küçüklük sorun olmaktan çıkar.",
+          "visual_note": "tiny particle catching sunlight, glowing with connection, brilliant",
+          "keywords": [
+            "particle",
+            "sunlight",
+            "glowing",
+            "connection"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Her şeyi omzunda taşımaya çalışmak mı, yoksa her şeyi asıl Sahibine vermek mi?",
+      "title": "Kalp Neden Omzundaki Yükle Yorulur?",
+      "description": "Her şeyi kendi gücünle taşımaya çalışmak yorar. Asıl dinginlik, her şeyi asıl Sahibine verebilmekten başlar. Bu bir pasiflik değil, doğru bağlantıdır. #derinokuma #shorts #tefekkür #iman #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "YÜKÜ BIRAK",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Her şeyi kendi omzunda taşımaya çalışmak ile her şeyi asıl Sahibine vermek arasındaki fark çok içseldir. Bir insan kendi başına bırakıldığında, her yükü kendisi taşımak zorundadır.",
+          "visual_note": "person with heavy backpack, tired, long road ahead",
+          "keywords": [
+            "heavy backpack",
+            "tired",
+            "long road",
+            "burden"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Ama insan, kendi aczini ve sınırlılığını kabul ettiğinde ne olur? Büyük bir güce bağlanmanın kapısı açılır. Artık her yükü kendi gücüyle değil, bağlandığı sonsuz kudretle taşır.",
+          "visual_note": "hands open in surrender and prayer, peace, warm light",
+          "keywords": [
+            "hands open",
+            "prayer",
+            "peace",
+            "warm light"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Kalbin rahatlaması buradan başlar. Bu bir pasiflik değildir. Bu, gücün doğru kaynağına bağlanmaktır. Kendi küçüklüğünü kabul ederek, sonsuz bir kudrete yaslanmaktır.",
+          "visual_note": "backpack set down on hilltop, open sky, relief, freedom",
+          "keywords": [
+            "backpack",
+            "hilltop",
+            "open sky",
+            "relief"
+          ]
+        },
+        {
+          "scene_id": "scene-004",
+          "narration": "İnsan da kendine böyle bakabilir: Zayıflıklarım mı var? Evet. Ama sonsuz kudrete bağlandığımda, varlığım daha geniş bir anlamın içine yerleşir. Kalbin rahatladığı yer burasıdır.",
+          "visual_note": "calm lake at sunrise, peaceful reflection, serenity, stillness",
+          "keywords": [
+            "calm lake",
+            "sunrise",
+            "peaceful",
+            "serenity"
+          ]
+        }
+      ]
+    }
+  ]
+}

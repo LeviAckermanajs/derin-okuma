@@ -95,20 +95,66 @@ function prepareJsReplacement(filePath, content) {
   const filledRe = /content_generation_status\s*:\s*(['"])filled\1/;
   if (filledRe.test(content)) return { already: true };
 
-  const readyRe = /content_generation_status\s*:\s*(['"])ready\1/g;
-  const matches = [...content.matchAll(readyRe)];
+  // Match any current value — not just 'ready'; Claude fill may write 'complete' or other markers
+  const statusRe = /content_generation_status\s*:\s*(['"])[^'"]*\1/g;
+  const matches = [...content.matchAll(statusRe)];
 
-  if (matches.length === 0) {
-    addError(`${rel(filePath)}: content_generation_status 'ready' not found`);
-    return null;
-  }
   if (matches.length > 1) {
     addError(`${rel(filePath)}: ${matches.length} occurrences of content_generation_status — ambiguous`);
     return null;
   }
 
-  const newContent = content.replace(readyRe, `content_generation_status: '${FILLED}'`);
-  return { newContent };
+  if (matches.length === 1) {
+    const newContent = content.replace(
+      /content_generation_status\s*:\s*(['"])[^'"]*\1/,
+      `content_generation_status: '${FILLED}'`
+    );
+    return { newContent };
+  }
+
+  // Field absent — inject into the metadata block before its closing brace
+  return injectStatusField(filePath, content);
+}
+
+// Injects content_generation_status: 'filled' before the closing } of the metadata block.
+// Uses line-based tracking to handle arbitrary nesting depth.
+function injectStatusField(filePath, content) {
+  const lines = content.split('\n');
+  let inMetadata = false;
+  let depth = 0;
+  let insertBefore = -1;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (!inMetadata && /\bmetadata\s*:\s*\{/.test(line)) {
+      inMetadata = true;
+      depth = (line.match(/\{/g) || []).length - (line.match(/\}/g) || []).length;
+      if (depth === 0) { insertBefore = i + 1; break; }
+      continue;
+    }
+    if (inMetadata) {
+      depth += (line.match(/\{/g) || []).length - (line.match(/\}/g) || []).length;
+      if (depth <= 0) { insertBefore = i; break; }
+    }
+  }
+
+  if (insertBefore === -1) {
+    addError(`${rel(filePath)}: content_generation_status not found; cannot locate metadata block for injection`);
+    return null;
+  }
+
+  const closingLine = lines[insertBefore];
+  const closingIndent = (closingLine.match(/^([ \t]*)/) || ['', ''])[1];
+
+  // Ensure the last property line ends with a comma before we insert
+  let prevIdx = insertBefore - 1;
+  while (prevIdx >= 0 && lines[prevIdx].trim() === '') prevIdx--;
+  if (prevIdx >= 0 && !/,\s*$/.test(lines[prevIdx].trimEnd())) {
+    lines[prevIdx] = lines[prevIdx].replace(/\s*$/, ',');
+  }
+
+  lines.splice(insertBefore, 0, `${closingIndent}  content_generation_status: '${FILLED}'`);
+  return { newContent: lines.join('\n') };
 }
 
 function verifySyntax(filePath, content) {
