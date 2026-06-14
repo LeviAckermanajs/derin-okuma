@@ -1,0 +1,17 @@
+{
+  "slug": "20-mektup-10-kelime-zeyli",
+  "title": "Bir Zerre Ne Yapabilir",
+  "day": 38,
+  "dayTag": "day-38",
+  "runId": "batch-a",
+  "timestamp": "2026-06-14T13:13:20.324Z",
+  "status": "failed",
+  "failedCommand": "node scripts/normalize-video-package-status.mjs --slug 20-mektup-10-kelime-zeyli",
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/20-mektup-10-kelime-zeyli-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/20-mektup-10-kelime-zeyli-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/20-mektup-10-kelime-zeyli-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-20-mektup-10-kelime-zeyli-short-*-batch-a"
+  },
+  "fillTimestamp": "2026-06-14T22:19:36.403Z"
+}
