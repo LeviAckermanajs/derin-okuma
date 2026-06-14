@@ -1,0 +1,93 @@
+---
+title: "Bir Zerre Kendi Başına Ne Yapabilir?"
+description: "Yirminci Mektup'un Onuncu Kelimesine Zeyl: Kâinattaki varlıkları sebeplere mi, yoksa Allah'a mı vermek daha kolaydır? Tevhidin kolaylığını ve şirkin imkânsızlığını üç temsille anlatan bir okuma."
+pubDate: 2026-06-14
+---
+
+## Yirminci Mektup'un Bu Ekinde Sorulan Soru
+
+Risale-i Nur Külliyatı'nda, *Mektubat* içinde yer alan **Yirminci Mektup'un Onuncu Kelimesine Zeyl** bölümünde temel bir mesele ele alınır: Kâinattaki varlıkları Allah'a vermek mi daha kolaydır, yoksa onları sebeplere, tabiata ve kendi başlarına işleyen güçlere vermek mi?
+
+Metin, önce bir itirazla başlar. Daha önce sıkça söylenen bir hakikat vardır: Tevhid yolunda kolaylık, şirk ve sebepler yolunda ise zorluk vardır. Fakat insanın aklı şöyle sorabilir: Bir zerre, bir çiçek, bir meyve gerçekten bu kadar düzenli işleri nasıl yapıyor? Bunları Allah'a nispet ettiğimizde mesele kolaylaşıyor mu, yoksa yine aynı zorluk devam mı ediyor?
+
+Risale-i Nur'da şöyle geçer:
+
+> "Vahdette nihayet derecede kolaylık var; kesrette ve şirkte nihayet müşkilât ve suubet var."
+
+Yani mesele sadece "kim yaptı?" sorusu değildir. Asıl mesele şudur: Bir şey kendi başına mı iş görüyor, yoksa sonsuz ilim ve kudret sahibi bir Zât'a bağlı olarak mı vazife görüyor?
+
+---
+
+## Küçük Şey, Büyük Bağ
+
+Metin bu hakikati anlatmak için üç temsil verir. İlk temsil, küçük ve şeffaf bir zerrecik üzerinden kurulur. O zerre kendi başına olsa, ancak kendi küçüklüğü kadar bir ışığa sahip olabilir. Fakat güneşe yönelirse, güneşle bağlantı kurarsa, onun ışığını, rengini, hararetini yansıtabilir.
+
+Burada anlatılmak istenen şey çok sade: Bir varlığın kendi gücüyle yapabildiği şey ayrıdır; bağlı olduğu kudretle yaptığı şey ayrıdır.
+
+Bir zerre kendi başına bırakılırsa, ondan beklenen işleri yapabilmesi için sanki her şeyi bilen bir ilme, her şeye yeten bir kudrete ve içinde görünmeyen fabrikalar taşıyan bir yapıya sahip olması gerekir. Bu ise imkânsızlığa yakın bir zorluktur. Ama o zerre Allah'ın emriyle hareket eden bir memur gibi görülürse, iş değişir. Kendi gücüyle değil, bağlı olduğu kudretle vazife görür.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Eğer o zerreler Vahid-i Ehad'e isnad edilse, o vakit her bir masnu, her bir zerre Ona mensup olur, Onun memuru hükmüne geçer."
+
+İkinci temsil savaş meydanından gelir. İki kardeş düşünülür. Biri sadece kendine güvenir, devlete ve orduya katılmaz. Bu durumda silahını, erzağını, gücünün kaynağını kendisi taşımak zorundadır. Yapabileceği iş de kendi küçük kuvvetiyle sınırlıdır.
+
+Diğeri ise kendi aczini bilir ve padişahın ordusuna katılır. Artık kendi başına değildir. Arkasında bir ordu vardır. Kendi kuvveti az olsa bile, bağlı olduğu makamın gücüyle büyük işler görebilir.
+
+Bu temsilin verdiği mesaj şudur: Başıboşluk özgürlük gibi görünse de aslında insanı kendi dar gücüne hapseder. Mensubiyet ise küçük bir varlığı büyük bir kuvvete dayandırır.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Evvelki başıbozuk, kendi menba-ı kuvvetini ve teçhizatını kendisi taşımaya mecbur olduğu için, gayet cüz'î iş görebilirdi."
+
+Buna karşılık memur olan kişi kendi gücünün kaynağını taşımak zorunda değildir. O güç, bağlı olduğu yerden gelir. Metin bunu telefon ve telgraf benzetmesiyle açıklar: Küçük bir tel ile büyük bir merkeze bağlanan insan, kendi sınırlı imkânını aşar.
+
+Üçüncü temsil ise bir ülke hakkında istatistikli bir coğrafya kitabı yazmak isteyen iki arkadaşla anlatılır. Biri padişaha bağlıdır; devletin haberleşme ağına girer, her yerden bilgi alır ve düzenli bir eser ortaya koyar. Diğeri ise böyle bir bağlantıya sahip değildir. Ya yıllarca dolaşması, her şeyi tek tek görmesi gerekir ya da devletin bütün haberleşme imkânlarına denk bir sistemi kendi başına kurmalıdır.
+
+Bu temsil, kâinattaki düzenin sebeplere verilmesiyle Allah'a verilmesi arasındaki farkı göstermek içindir. Eğer her varlık Allah'a bağlı görülürse, her şey birbiriyle anlamlı ve düzenli bir bağ içinde olur. Ama her şey kendi başına veya dağınık sebeplere verilirse, küçük bir şeyin arkasına koca bir imkânsızlık yüklenmiş olur.
+
+---
+
+## Vahdet Yolu Neden Kolaydır?
+
+Metnin ana fikri burada belirginleşir: Tevhid, yani her şeyi bir olan Allah'a vermek, kâinatı sadeleştirir. Çünkü bir tek Zât'ın ilmi, iradesi ve kudreti içinde her şey yerli yerine oturur. Bir komutanın bin askeri idare etmesi gibi, tek merkezden çıkan emir çokluğu karışıklığa düşürmez.
+
+Ama bunun tersi düşünüldüğünde, yani bir işi sayısız sebebe, tabiata, tesadüfe veya bağımsız parçalara vermek istendiğinde zorluk artar. Çünkü bu defa tek bir sonucun ortaya çıkması için birbirinden kopuk birçok şeyin aynı anda, aynı hikmetle, aynı ölçüyle hareket etmesi gerekir.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Kur'ân ve ehl-i iman, hadsiz masnuatı bir Sâni-i Vâhid'e verir, doğrudan doğruya her işi Ona isnad eder."
+
+Bu cümlenin karşısında ise şirk ve dalâlet yolu vardır. Orada bir tek varlık bile sayısız sebebe bağlanır. Böyle olunca bir çiçek, bir bahar kadar zorlaşır; bir meyve, bir bahçe kadar ağırlaşır; bir sinek, semavat kadar müşkül hale gelir.
+
+Metin bunu gökyüzü ve yeryüzü üzerinden de anlatır. Eğer dünya, Allah'ın emriyle hareket eden bir memur gibi görülürse, gece-gündüzün, mevsimlerin ve semavî düzenin ortaya çıkması kolay anlaşılır. Dünya emri alır ve vazifesini görür. Ama dünya hareketten çıkarılır, bu neticeler semavata ve yıldızlara havale edilirse, aynı neticeyi elde etmek için sayısız büyük cismin çok daha ağır ve karmaşık hareketler yapması gerekir.
+
+Burada verilmek istenen düşünce şudur: Bazen bize küçük görünen bir açıklama, aslında daha büyük bir zorluğu gizler. "Sebepler yaptı" demek kolay gibi durabilir. Fakat o sebeplerin aynı anda bilmesi, seçmesi, ölçmesi, düzenlemesi ve neticeyi takip etmesi gerekir. Bu ise metne göre hakiki kolaylık değil, imtina derecesinde bir zorluktur.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Bir vahid, külfetsiz olarak kesir eşyaya bir vaziyet verir ve bir neticeyi istihsal eder."
+
+Yani bir olanın çokluğu idare etmesi kolaydır. Ama bir neticenin çok başlı, dağınık ve birbirinden habersiz sebeplere verilmesi karışıklık doğurur.
+
+---
+
+## Küçüklüğün Ardındaki Büyük Dayanak
+
+Bu bölümün insanda bıraktığı en güçlü iz belki de şudur: Varlıklar kendi başlarına bakıldığında küçük, sınırlı ve zayıf görünür. Bir zerre küçüktür. Bir tohum küçüktür. Bir hava zerresi neredeyse görünmezdir. Fakat metin, onların kendi başlarına değil, Allah'ın kudretine bağlı olarak vazife gördüğünü söyler.
+
+Böyle bakınca küçüklük eksiklik olmaktan çıkar. Çünkü mesele varlığın kendi hacmi değil, kime bağlı olduğudur.
+
+Bir buğday tanesi, kendi başına bakıldığında küçücük bir şeydir. Fakat metin, onun bir çam ağacının ortaya çıkışında bir tezgâh gibi çalıştığını söyler. Bir hava zerresi, çiçeklerin ve meyvelerin oluşumunda muntazam vazifeler görebilir. Bu işler onların kendi zatî kuvvetinden değil, Allah'a intisaplarından gelir.
+
+Bu yüzden bölümün sonunda mesele tekrar aynı noktaya bağlanır: Tevhid yolu, varlıkları kendi imkânsız yüklerinden kurtarır. Her şeyi bir tek Yaratıcı'ya vermek, hem aklı rahatlatır hem kalbi sükûnete yaklaştırır.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Kur'ân yolunda bütün masnuatla, dalâlet yolunda bir masnu-u vahid beraber olur."
+
+Yani iman yolunda bütün varlıkları açıklamak, inkâr yolunda tek bir varlığı açıklamaktan daha kolay hale gelir.
+
+Bu yazının bıraktığı düşünce belki şöyle özetlenebilir: Bir şeyin küçük olması, onun anlamsız veya güçsüz olduğunu göstermez. Kendi başına bakıldığında küçücük görünen varlık, Allah'a bağlı düşünüldüğünde büyük bir düzenin vazifeli parçası olur.
+
+Ve insan da bazen kendine böyle bakabilir: Kendi başına zayıf, sınırlı, dağınık. Ama Rabbine bağlı olduğunu hatırladığında, varlığı daha geniş bir anlamın içine yerleşir. Kalbin rahatlaması da belki biraz buradan başlar: Her şeyi kendi omzunda taşımaya çalışmaktan değil, her şeyi asıl Sahibine vermekten.
