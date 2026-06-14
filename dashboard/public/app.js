@@ -16,9 +16,13 @@ let monitorInterval = null;
 let logOffset       = 0;
 
 let ytScheduleHint  = null;  // { suggested_date, note, source }
+let dayHint         = { last_day: null, next_day: 1, source: null, source_slug: null };
+let dayHintWarning  = null;
 let tikTokTokenOk   = false; // true when token is valid and not expired
 let localIpCache    = null;  // cached from /api/local-ip
 let modalConfirmText = null; // expected confirmation text for current modal
+const draftParamCache = new Map();
+const slugParamCache  = new Map();
 
 // Istanbul is UTC+3 year-round (no DST since 2016)
 function istanbulDateStr(offsetDays = 0) {
@@ -68,6 +72,69 @@ function parseDisplayDate(displayDate) {
 function formatHintDates(hint) {
   if (!hint) return hint;
   return hint.replace(/\b(\d{4})-(\d{2})-(\d{2})\b/g, (_, y, mo, d) => `${d}/${mo}/${y}`);
+}
+
+function normalizeDayValue(value) {
+  const raw = String(value ?? '').trim();
+  if (!raw) return '';
+  const m = raw.match(/^(?:day-?)?(\d{1,3})$/i) || raw.match(/\bday-?(\d{1,3})\b/i);
+  if (!m) return '';
+  const n = parseInt(m[1], 10);
+  return n >= 1 && n <= 999 ? String(n) : '';
+}
+
+function defaultRunIdForDay(day) {
+  const dayNum = normalizeDayValue(day) || '1';
+  return `day${dayNum}-batch-a`;
+}
+
+function normalizeRunIdValue(runId, day) {
+  const raw = String(runId ?? '').trim();
+  if (!raw || raw === 'batch-a' || /^day1-batch-a$/i.test(raw)) return defaultRunIdForDay(day);
+  return raw
+    .replace(/^dayday-?(\d{1,3})(?=$|-)/i, 'day$1')
+    .replace(/^day-(\d{1,3})(?=$|-)/i, 'day$1');
+}
+
+function dayHintText(existingDay) {
+  const day = normalizeDayValue(existingDay);
+  if (day) return `Bu paketin mevcut günü: day-${day}`;
+  if (dayHintWarning) return `Önerilen gün: fallback day-1 (${dayHintWarning})`;
+  if (dayHint?.last_day) return `Önerilen gün: son video paketinden sonraki gün (son: day-${dayHint.last_day})`;
+  return 'Önerilen gün: önceki video paketi bulunamadı';
+}
+
+function suggestedDayFor(existingDay) {
+  const ownDay = normalizeDayValue(existingDay);
+  if (ownDay) return ownDay;
+  return normalizeDayValue(dayHint?.next_day) || '1';
+}
+
+function rememberParams(cache, key, ids) {
+  const saved = cache.get(key) || {};
+  for (const [name, id] of Object.entries(ids)) saved[name] = document.getElementById(id)?.value ?? '';
+  saved.manual = true;
+  cache.set(key, saved);
+}
+
+function wireDayRunIdInputs(dayId, runIdId, onRemember) {
+  const dayInput = document.getElementById(dayId);
+  const runInput = document.getElementById(runIdId);
+  if (!dayInput || !runInput) return;
+  const wasDefaultRunId = () => {
+    const v = runInput.value.trim();
+    return !v || v === 'batch-a' || /^day-?\d{1,3}-batch-a$/i.test(v) || /^dayday-?\d{1,3}-batch-a$/i.test(v);
+  };
+  dayInput.addEventListener('input', () => {
+    const day = normalizeDayValue(dayInput.value) || dayInput.value;
+    if (wasDefaultRunId()) runInput.value = defaultRunIdForDay(day);
+    onRemember();
+  });
+  runInput.addEventListener('blur', () => {
+    runInput.value = normalizeRunIdValue(runInput.value, dayInput.value);
+    onRemember();
+  });
+  runInput.addEventListener('input', onRemember);
 }
 
 function createDatePicker(id, isoValue, minIso) {
@@ -135,6 +202,16 @@ async function refreshYtScheduleHint() {
   try {
     ytScheduleHint = await apiFetch('/api/youtube-schedule-hint');
   } catch { ytScheduleHint = null; }
+}
+
+async function refreshDayHint() {
+  try {
+    dayHint = await apiFetch('/api/day-hint');
+    dayHintWarning = null;
+  } catch {
+    dayHint = { last_day: null, next_day: 1, source: null, source_slug: null };
+    dayHintWarning = 'day hint okunamadı';
+  }
 }
 
 async function getMobileIp() {
@@ -267,6 +344,7 @@ async function showDraftDetail(filename) {
   document.getElementById('draft-detail-body').innerHTML =
     '<div class="loading">Yükleniyor…</div>';
   try {
+    await refreshDayHint();
     const d = await apiFetch(`/api/draft/${encodeURIComponent(filename)}`);
     document.getElementById('draft-detail-body').innerHTML = renderDraftDetail(d);
     wireDraftDetailButtons(d);
@@ -353,9 +431,11 @@ function cardDraftInfo(d) {
 function cardDraftWorkflowParams(d) {
   const sd         = d.slug_detail;
   const defTitle   = sd?.source_title ?? d.filename.replace(/\.(txt|md|mdx)$/, '');
-  const defDay     = sd?.test_day     ?? '';
-  const defRunId   = sd?.pipeline?.runId
-    ?? (sd?.test_day ? `day${sd.test_day}-batch-a` : 'batch-a');
+  const cached     = draftParamCache.get(d.filename);
+  const ownDay     = normalizeDayValue(sd?.test_day);
+  const defDay     = cached?.manual ? cached.day : suggestedDayFor(ownDay);
+  const baseRunId  = normalizeRunIdValue(sd?.pipeline?.runId, defDay);
+  const defRunId   = cached?.manual ? cached.run_id : baseRunId;
   return `
     <div class="detail-card full-width">
       <h3>Workflow Parametreleri</h3>
@@ -369,6 +449,7 @@ function cardDraftWorkflowParams(d) {
           <label class="param-label" for="dp-day">Gün (shorts-prep)</label>
           <input class="param-input" id="dp-day" type="number" min="1" max="999"
             value="${esc(String(defDay))}" placeholder="1">
+          <span class="param-hint">${esc(dayHintText(ownDay))}</span>
         </div>
         <div class="param-field">
           <label class="param-label" for="dp-run-id">Run ID (fill / batch)</label>
@@ -449,10 +530,11 @@ function cardDraftActions(d) {
 }
 
 function collectDraftParams(d) {
+  const day = normalizeDayValue(document.getElementById('dp-day')?.value) || '';
   return {
     title:         (document.getElementById('dp-title')?.value   ?? '').trim(),
-    day:            document.getElementById('dp-day')?.value     ?? '',
-    run_id:        (document.getElementById('dp-run-id')?.value  ?? '').trim(),
+    day,
+    run_id:        normalizeRunIdValue(document.getElementById('dp-run-id')?.value, day),
     schedule_date: (document.getElementById('dp-yt-date')?.value ?? '').trim(),
     draft_path:    d.draft_path,
   };
@@ -460,6 +542,8 @@ function collectDraftParams(d) {
 
 function wireDraftDetailButtons(d) {
   wireDatePickers();
+  wireDayRunIdInputs('dp-day', 'dp-run-id', () =>
+    rememberParams(draftParamCache, d.filename, { day: 'dp-day', run_id: 'dp-run-id' }));
   document.querySelectorAll('[data-draft-action]').forEach(btn => {
     btn.addEventListener('click', async () => {
       const action = btn.dataset.draftAction;
@@ -519,7 +603,7 @@ function wireDraftDetailButtons(d) {
           title:   'Shorts Prep Oluştur',
           label:   'Shorts pipeline (prep → validate → batch)',
           command: p.title && p.day && slug
-            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --slug ${slug} --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --slug ${slug} --day ${p.day} --run-id ${p.run_id || defaultRunIdForDay(p.day)} --force`
             : null,
           cwd,
           warning: pkgFilled(sd)
@@ -685,6 +769,7 @@ async function showDetail(slug, silent = false) {
     document.getElementById('detail-body').innerHTML    = '<div class="loading">Yükleniyor…</div>';
   }
   try {
+    await refreshDayHint();
     const d = await apiFetch(`/api/slug/${encodeURIComponent(slug)}`);
     document.getElementById('detail-title').textContent = slug;
     document.getElementById('detail-body').innerHTML    = renderDetail(d);
@@ -723,8 +808,12 @@ function kv(label, valueHtml) {
 }
 
 function cardWorkflowParams(d) {
-  const defaultRunId = d.pipeline?.runId
-    || (d.test_day ? `day${d.test_day}-batch-a` : 'batch-a');
+  const cached = slugParamCache.get(d.slug);
+  const ownDay = normalizeDayValue(d.test_day);
+  const defDay = cached?.manual ? cached.day : suggestedDayFor(ownDay);
+  const defaultRunId = cached?.manual
+    ? cached.run_id
+    : normalizeRunIdValue(d.pipeline?.runId, defDay);
   return `
     <div class="detail-card full-width">
       <h3>Workflow Parametreleri</h3>
@@ -738,8 +827,9 @@ function cardWorkflowParams(d) {
         <div class="param-field">
           <label class="param-label" for="param-day">Gün (shorts-prep)</label>
           <input class="param-input" id="param-day" type="number" min="1" max="999"
-            value="${esc(String(d.test_day ?? ''))}"
+            value="${esc(String(defDay))}"
             placeholder="1">
+          <span class="param-hint">${esc(dayHintText(ownDay))}</span>
         </div>
         <div class="param-field">
           <label class="param-label" for="param-run-id">Run ID (fill / batch)</label>
@@ -969,10 +1059,11 @@ function cardActions(d) {
 // ── Detail button wiring ───────────────────────────────────────────────────
 
 function collectParams() {
+  const day = normalizeDayValue(document.getElementById('param-day')?.value) || '';
   return {
     title:         (document.getElementById('param-title')?.value      ?? '').trim(),
-    day:            document.getElementById('param-day')?.value        ?? '',
-    run_id:        (document.getElementById('param-run-id')?.value     ?? '').trim(),
+    day,
+    run_id:        normalizeRunIdValue(document.getElementById('param-run-id')?.value, day),
     schedule_date: (document.getElementById('param-yt-date')?.value    ?? '').trim(),
     draft_path:    (document.getElementById('param-draft-path')?.value ?? '').trim(),
   };
@@ -989,6 +1080,8 @@ async function fillDraftsList() {
 
 function wireDetailButtons(d) {
   wireDatePickers();
+  wireDayRunIdInputs('param-day', 'param-run-id', () =>
+    rememberParams(slugParamCache, d.slug, { day: 'param-day', run_id: 'param-run-id' }));
   fillTokenCard();
   fillDraftsList();
 
@@ -1066,7 +1159,7 @@ function wireDetailButtons(d) {
           title:   'Shorts Prep Oluştur',
           label:   'Shorts pipeline (prep → validate → batch)',
           command: p.title && p.day
-            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --slug ${d.slug} --day ${p.day} --run-id ${p.run_id || ('day' + p.day + '-batch-a')} --force`
+            ? `node scripts/run-shorts-prep-pipeline.mjs --title "${p.title}" --slug ${d.slug} --day ${p.day} --run-id ${p.run_id || defaultRunIdForDay(p.day)} --force`
             : null,
           cwd,
           warning: d.package_status === 'filled'
@@ -1619,7 +1712,8 @@ async function runModal() {
 
 // ── Event wiring ───────────────────────────────────────────────────────────
 
-document.getElementById('refresh-btn').addEventListener('click', () => {
+document.getElementById('refresh-btn').addEventListener('click', async () => {
+  await refreshDayHint();
   if (activeTab === 'drafts') {
     if (currentDraft) showDraftDetail(currentDraft);
     else loadDrafts();
@@ -1648,7 +1742,7 @@ document.querySelectorAll('.tab-btn').forEach(btn =>
 
 (async () => {
   try { config = await apiFetch('/api/config'); } catch {}
-  refreshYtScheduleHint();  // fetch once; cached for the session
+  await Promise.all([refreshYtScheduleHint(), refreshDayHint()]);
   getMobileIp();            // pre-fetch local IP for mobile caption URLs
   loadDrafts();             // default active tab
   refreshTokenBadge();

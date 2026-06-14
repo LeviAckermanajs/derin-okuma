@@ -70,9 +70,39 @@ function readText(filePath) {
 }
 function exists(filePath)  { return fs.existsSync(filePath); }
 function fileMtime(p)      { try { return fs.statSync(p).mtime.toISOString(); } catch { return null; } }
+function toRelPath(p)      { return path.relative(ROOT, p).split(path.sep).join('/'); }
 function maskId(id)        {
   if (!id || typeof id !== 'string' || id.length < 10) return '…';
   return id.slice(0, 4) + '…' + id.slice(-4);
+}
+
+function normalizeDayNumber(value) {
+  if (Number.isInteger(value)) return value > 0 && value <= 999 ? value : null;
+  if (typeof value === 'number') {
+    const n = Math.trunc(value);
+    return n > 0 && n <= 999 ? n : null;
+  }
+  const raw = String(value ?? '').trim();
+  if (!raw) return null;
+  const exact = raw.match(/^(?:day-?|)(\d{1,3})$/i);
+  if (exact) {
+    const n = parseInt(exact[1], 10);
+    return n > 0 && n <= 999 ? n : null;
+  }
+  const embedded = raw.match(/\bday-?(\d{1,3})\b/i);
+  if (!embedded) return null;
+  const n = parseInt(embedded[1], 10);
+  return n > 0 && n <= 999 ? n : null;
+}
+
+function normalizeRunId(runId, day) {
+  const dayNum = normalizeDayNumber(day) || 1;
+  const raw = String(runId ?? '').trim();
+  if (!raw) return `day${dayNum}-batch-a`;
+  const normalized = raw
+    .replace(/^dayday-?(\d{1,3})(?=$|-)/i, 'day$1')
+    .replace(/^day-(\d{1,3})(?=$|-)/i, 'day$1');
+  return /^[a-zA-Z0-9_-]+$/.test(normalized) ? normalized : `day${dayNum}-batch-a`;
 }
 
 // ── Background job helpers ────────────────────────────────────────────────
@@ -232,6 +262,105 @@ function apiYoutubeScheduleHint() {
   };
 }
 
+// ── Shorts prep day hint ──────────────────────────────────────────────────
+
+function apiDayHint() {
+  const candidates = [];
+
+  function isTestCandidate(data, filePath) {
+    const haystack = [
+      filePath,
+      data?.slug,
+      data?.title,
+      data?.runId,
+      data?.run_id,
+      data?.failedCommand,
+      data?.source?.blog_post,
+      data?.source?.title,
+    ].filter(Boolean).join(' ').toLowerCase();
+    return /\btest\b/.test(haystack)
+        || /test-soz/.test(haystack)
+        || /test-guard/.test(haystack)
+        || /guard-dry/.test(haystack);
+  }
+
+  function addCandidate(day, filePath, data, reason) {
+    const dayNum = normalizeDayNumber(day);
+    if (!dayNum || isTestCandidate(data, filePath)) return;
+    const priority = reason === 'pipeline_status' ? 0 : reason === 'package_metadata' ? 1 : 2;
+    candidates.push({
+      day: dayNum,
+      source: toRelPath(filePath),
+      source_slug: data?.slug
+        || data?.source?.blog_post
+        || data?.source
+        || path.basename(filePath)
+          .replace(/-shorts-pipeline-status.*\.json$/, '')
+          .replace(/-pipeline-status.*\.json$/, '')
+          .replace(/-shorts-package\.json$/, '')
+          .replace(/-landscape-metadata\.json$/, ''),
+      reason,
+      priority,
+      mtime: fileMtime(filePath),
+    });
+  }
+
+  function addJsonDays(filePath, data, reason) {
+    if (!data || typeof data !== 'object') return;
+    addCandidate(data.day, filePath, data, reason);
+    addCandidate(data.test_day, filePath, data, reason);
+    addCandidate(data.dayTag, filePath, data, reason);
+    addCandidate(data.runId, filePath, data, 'run_id');
+    addCandidate(data.run_id, filePath, data, 'run_id');
+  }
+
+  try {
+    const reportFiles = exists(REPORTS_DIR) ? fs.readdirSync(REPORTS_DIR) : [];
+    for (const name of reportFiles) {
+      if (!/\.json$/.test(name)) continue;
+      if (!/-shorts-pipeline-status\.json$/.test(name) && !/pipeline-status/i.test(name)) continue;
+      const filePath = path.join(REPORTS_DIR, name);
+      addJsonDays(filePath, readJson(filePath), 'pipeline_status');
+    }
+  } catch {}
+
+  function scanJsonFiles(dir, matcher, reason) {
+    let entries;
+    try { entries = fs.readdirSync(dir, { withFileTypes: true }); } catch { return; }
+    for (const e of entries) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) { scanJsonFiles(p, matcher, reason); continue; }
+      if (!matcher(e.name, p)) continue;
+      addJsonDays(p, readJson(p), reason);
+    }
+  }
+
+  scanJsonFiles(SHORTS_DIR, name => /-shorts-package\.json$/.test(name) || /-shorts-metadata\.json$/.test(name), 'package_metadata');
+  scanJsonFiles(path.join(ROOT, 'docs', 'video-tests', 'metadata'), name => /-metadata\.json$/.test(name), 'video_metadata');
+
+  if (!candidates.length) {
+    return {
+      last_day: null,
+      next_day: 1,
+      source: null,
+      source_slug: null,
+      note: 'Önerilen gün: önceki video paketi bulunamadı',
+    };
+  }
+
+  candidates.sort((a, b) => (b.day - a.day)
+    || (a.priority - b.priority)
+    || String(b.mtime || '').localeCompare(String(a.mtime || '')));
+  const best = candidates[0];
+  return {
+    last_day: best.day,
+    next_day: best.day + 1,
+    source: best.source,
+    source_slug: best.source_slug,
+    note: `Önerilen gün: son video paketinden sonraki gün (son: day-${best.day})`,
+  };
+}
+
 // ── Service helpers ───────────────────────────────────────────────────────
 
 function checkPortOpen(port, host = '127.0.0.1', timeoutMs = 1500) {
@@ -339,7 +468,7 @@ function ensurePipelineStatus(slug, title, day, runId) {
   const pkgPath = path.join(SHORTS_DIR, slug, `${slug}-shorts-package.json`);
   if (!exists(pkgPath)) return;  // no scaffold yet — nothing to ensure
 
-  const dayNum = (Number.isInteger(day) ? day : parseInt(String(day), 10)) || 1;
+  const dayNum = normalizeDayNumber(day) || 1;
   const dayTag = `day-${String(dayNum).padStart(2, '0')}`;
 
   function toRel(...parts) { return path.relative(ROOT, path.join(ROOT, ...parts)); }
@@ -602,8 +731,10 @@ function apiSlug(slug) {
   const tiktokResult = readJson(tiktokResultPath);
   const ytResult     = readJson(ytResultPath);
 
-  const testDay = pkg?.test_day
-    ?? (pipeline?.dayTag ? (parseInt(pipeline.dayTag.replace(/\D/g, ''), 10) || null) : null);
+  const testDay = normalizeDayNumber(pkg?.test_day)
+    ?? normalizeDayNumber(pipeline?.day)
+    ?? normalizeDayNumber(pipeline?.dayTag)
+    ?? null;
 
   return {
     slug,
@@ -756,12 +887,9 @@ function buildCommand(action, slug, params = {}) {
   if (action === 'shorts-prep') {
     const { title, day, run_id } = params;
     if (!title || typeof title !== 'string' || !title.trim()) return { error: 'missing_title' };
-    const dayNum = parseInt(String(day), 10);
+    const dayNum = normalizeDayNumber(day);
     if (!Number.isInteger(dayNum) || dayNum < 1 || dayNum > 999) return { error: 'invalid_day' };
-    const runIdRaw = (run_id || '').trim();
-    const runId    = /^[a-zA-Z0-9_-]+$/.test(runIdRaw)
-      ? runIdRaw
-      : `day${dayNum}-batch-a`;
+    const runId = normalizeRunId(run_id, dayNum);
 
     // Use the slug from the request (blog_slug saved in draft-links.json) if valid.
     // This prevents re-deriving a wrong slug from the title (e.g. "1-2-3-4" vs "1-4").
@@ -1035,10 +1163,8 @@ async function handleAction(body) {
   // the scaffold was actually created (validate failures are expected for fresh scaffolds).
   if (action === 'shorts-prep' && slug && /^[a-zA-Z0-9_-]+$/.test(slug)) {
     const p      = params ?? {};
-    const pDay   = parseInt(String(p.day), 10) || 1;
-    const pRunId = /^[a-zA-Z0-9_-]+$/.test((p.run_id || '').trim())
-      ? p.run_id.trim()
-      : `day${pDay}-batch-a`;
+    const pDay   = normalizeDayNumber(p.day) || 1;
+    const pRunId = normalizeRunId(p.run_id, pDay);
 
     ensurePipelineStatus(slug, p.title || slug, pDay, pRunId);
 
@@ -1115,6 +1241,7 @@ const server = http.createServer(async (req, res) => {
   if (pathname === '/api/drafts-list')      return sendJson(res, apiDraftsList());
   if (pathname === '/api/services/status')       return sendJson(res, await apiServicesStatus());
   if (pathname === '/api/youtube-schedule-hint') return sendJson(res, apiYoutubeScheduleHint());
+  if (pathname === '/api/day-hint')              return sendJson(res, apiDayHint());
   if (pathname === '/api/local-ip') {
     const ifaces = os.networkInterfaces();
     let ip = null;
