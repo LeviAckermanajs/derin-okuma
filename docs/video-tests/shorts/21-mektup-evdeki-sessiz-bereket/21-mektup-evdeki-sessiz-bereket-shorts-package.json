@@ -1,0 +1,188 @@
+{
+  "source": {
+    "blog_post": "21-mektup-evdeki-sessiz-bereket",
+    "title": "21. Mektup",
+    "source_files": [
+      "src/content/blog/21-mektup-evdeki-sessiz-bereket.md"
+    ]
+  },
+  "test_day": "day-39",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Evindeki en sessiz kişi, o evin en büyük bereketi olabilir.",
+      "title": "Evin Sessiz Bereketi Nereden Geliyor?",
+      "description": "Evde bakıma muhtaç biri varken aslında ne alıyorsun, ne veriyorsun? #derinokuma #shorts #tefekkür #iman #bereket",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#bereket", "#maneviyat"],
+      "thumbnail_or_cover_text": "SESSIZ BEREKET",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Bir evin içinde bazen en az konuşan, en az hareket eden kişi; o evin en derin bereketini taşıyandır. Bunu çoğu zaman fark etmeyiz. Çünkü bereket sessizdir.",
+          "visual_note": "quiet elderly person sitting by window in soft sunlight, peaceful and still",
+          "keywords": ["elderly", "window", "peaceful", "soft light"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Yaşlı ya da hasta bir insan, evde sessizce dua eder. O dua kimseye söylenmez. Ama bir yerde karşılık bulur. Muhtaç birinin yüreğinden yükselen bu sessiz şükran, görünmez ama gerçektir.",
+          "visual_note": "elderly person praying quietly indoors, soft warm light, close-up hands",
+          "keywords": ["prayer", "elderly", "hands", "warm light"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Belki sorulması gereken soru şu değildir: Bu kişiden ne kaybediyorum? Belki asıl soru şudur: Bu kişinin sayesinde nelerden korunuyorum? Bu soruyu sormak, bakış açısını değiştirir.",
+          "visual_note": "person standing at a window looking outside thoughtfully, reflective calm mood",
+          "keywords": ["reflection", "window", "thoughtful", "interior"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İnsan bazen kalbinde fark etmeden çok acı bir düşünce taşıyabilir.",
+      "title": "Keşke Olmasaydı — İnsan Neden Bu Düşünceden Utanmalı?",
+      "description": "Hayatını sana adayan biri için içten geçen o düşünce... Gerçekten ne anlama geliyor? #derinokuma #shorts #tefekkür #annebaba",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#annebaba", "#vefa"],
+      "thumbnail_or_cover_text": "KEŞKE OLMASAYDI",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Sesli söylenmez; ama bazen kalpten geçer: keşke bu yük olmasaydı, keşke o olmasa. Bu düşünce o kadar gizli taşınır ki, insan onu bazen kendinden bile saklıyor gibidir.",
+          "visual_note": "person alone sitting in a dim room, hands clasped, troubled inner expression",
+          "keywords": ["solitude", "inner conflict", "dim light", "hands"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Oysa o kişi; bir zamanlar uyku gözlerine girmeden seni düşündü. Kendisinden önce seni düşündü. Sağlığını, vaktini, rahatını sana verdi. Şimdi o zayıfladıysa, onun varlığından sıkılmak; verilmiş olan her şeyi unutmak demektir.",
+          "visual_note": "elderly hands next to younger hands, soft warm light, generational connection",
+          "keywords": ["hands", "elderly", "generational", "warmth"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bu düşünce, bir suçlama değil; bir hatırlatmadır. Verilen emeği görmek, bazen insanı en derin pişmanlıktan kurtarır.",
+          "visual_note": "old family photo held gently in hands, nostalgic soft focus background",
+          "keywords": ["old photo", "family", "nostalgia", "reflection"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Evine muhtaç birini aldığında, rızkın daralacağını mı sanıyorsun?",
+      "title": "Yaşlı Anne-Baba Neden Evde Berekettir?",
+      "description": "Geçim sıkıntısı gerçektir. Ama muhtaç birinin varlığının bereketi tükettiği sanısı çoğu zaman yanıltıcıdır. #derinokuma #shorts #iman #bereket #risaleinur",
+      "hashtags": ["#derinokuma", "#shorts", "#iman", "#bereket", "#risaleinur", "#tefekkür"],
+      "thumbnail_or_cover_text": "RIZKI KİM DARALTIR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Çoğu insan içten şunu hisseder: Evin geçimi zaten kıt. Bir de üstüne yaşlı ya da hasta biri bakımını almak, kaynakları daha da daraltır. Bu korku anlaşılırdır. Ama gerçek, çoğu zaman bu korkunun beklediği gibi çıkmaz.",
+          "visual_note": "person looking at bills at a kitchen table, worried but calm expression, soft light",
+          "keywords": ["financial worry", "kitchen", "table", "soft light"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bir çocuk dünyaya geldiğinde aileler çoğunlukla çılgına dönmez. Çünkü içte bir his var: o çocukla birlikte rızık da gelir. Muhtaç ve yaşlı bir yakın için de bu hakikat değişmez. Merhamete daha çok muhtaç olan, daha çok ilahi gözetim altındadır.",
+          "visual_note": "infant's hand grasping adult's finger, warm soft light, trust and hope",
+          "keywords": ["baby hand", "adult hand", "hope", "warmth"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bazen insanın kendi için ayırdığı az şey, hem kendisine hem bir başkasına yeter. Hatta artar bile. Muhtaç birinin varlığı evin bereketini tüketmez; bilakis açar.",
+          "visual_note": "simple bread on a wooden table, hands sharing it warmly, natural tones",
+          "keywords": ["bread", "sharing", "wooden table", "abundance"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bazı insanlar neden hem dünyada hem ahirette bu kadar huzurlu görünür?",
+      "title": "Mutluluğun Sırrı Anne-Babada mı Saklı?",
+      "description": "Hem dünyada rahat hem içten huzurlu... Bu insanların ortak özelliği nedir? #derinokuma #shorts #iman #annebaba #tefekkür",
+      "hashtags": ["#derinokuma", "#shorts", "#iman", "#annebaba", "#tefekkür", "#risaleinur"],
+      "thumbnail_or_cover_text": "MUTLULUĞUN SIRRI",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Bazı insanlar var; hayatları hem dünyada rahat hem içten huzurlu görünüyor. Buna bakarken insan merak eder: Bu insanların ortak özelliği nedir?",
+          "visual_note": "person walking peacefully through a golden field at sunset, serene mood",
+          "keywords": ["peaceful walk", "golden field", "sunset", "serenity"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bu sorunun cevabı tarihin her döneminde pek çok ismin hayatında tekrar eder: Anne-babaya gösterilen derin saygı ve hizmet. Bu bir tesadüf değildir. Hürmet ekip hürmet biçmenin, merhamet gösterip merhamet bulmanın somut örnekleridir bunlar.",
+          "visual_note": "adult child gently helping elderly parent, warm home interior, soft afternoon light",
+          "keywords": ["care", "family", "elderly", "warmth"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Eğer ahireti seviyorsan, anne-babana hizmet et; bu bir ibadet kapısıdır. Eğer dünyayı seviyorsan, yine onları memnun et; bu hayatında bereket açar. İki farklı hedef, aynı kapıya çıkar.",
+          "visual_note": "two paths converging into one in a peaceful green forest",
+          "keywords": ["paths", "forest", "convergence", "nature"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bugün anne-babana nasıl davranıyorsun?",
+      "title": "Çocukların Sana Nasıl Davranacağını Bilmek İstersen...",
+      "description": "Hayatın ince dengesi: ektiğin şeyi biçersin. Hem anne-babana hem de çocuklarına karşı. #derinokuma #shorts #iman #annebaba #tefekkür",
+      "hashtags": ["#derinokuma", "#shorts", "#iman", "#annebaba", "#tefekkür", "#aile", "#sabır"],
+      "thumbnail_or_cover_text": "BUGÜN NE EKİYORSUN?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Bir gün herkes yaşlanır. Bu, hayatın kaçınılmaz seyrinin bir parçasıdır. Ve o gün geldiğinde, insanın etrafında nasıl bir tablo olduğu; bugün nasıl davrandığına bağlı olabilir.",
+          "visual_note": "time-lapse of seasons changing in a peaceful landscape, contemplative mood",
+          "keywords": ["seasons", "time", "landscape", "change"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Hayatta ince bir denge vardır: insan etrafına ne gösterirse, zamanla onu geri alır. Saygı gösterilen saygı görür. Hizmet eden, hizmet bulur. Bu bir vaat değil; hayatın içindeki doğal bir öğretim sürecidir.",
+          "visual_note": "calm river reflecting trees above, symmetrical and balanced, peaceful forest",
+          "keywords": ["river", "reflection", "balance", "forest"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Anne-babasına saygı göstermeyen biri, kendi çocuklarına ne öğretiyor? Farkında olsun ya da olmasın, bir şeyler öğretiyor. Ve öğretilenler, bir gün öğretene döner.",
+          "visual_note": "parent and child walking together in a park, natural light, generational bond",
+          "keywords": ["parent child", "walking", "park", "generational"]
+        },
+        {
+          "scene_id": "scene-004",
+          "narration": "Bu bir tehdit değildir. Bu, hayatın içindeki ince bir adaleti görmektir. Ve bu adaleti görmek, insanı korkutmak için değil; bugünün her anını daha değerli kılmak için hatırlatılır.",
+          "visual_note": "sunrise over a calm field, golden warm light, hopeful atmosphere",
+          "keywords": ["sunrise", "field", "golden light", "hope"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Bakım verirken yanlış soruyu soruyor olabilirsin.",
+      "title": "Bakım Verirken Sorulması Gereken Asıl Soru",
+      "description": "Ben bundan ne kaybediyorum? Belki bu yanlış soru. Asıl soru bambaşka bir kapı açıyor. #derinokuma #shorts #tefekkür #iman #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#maneviyat", "#sabır"],
+      "thumbnail_or_cover_text": "ASIL SORUYU SOR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan bakım verirken çoğunlukla şunu sorar: Bunun için ne kadar zaman harcıyorum, ne kadar yoruluyorum, ne kaybediyorum? Bu soru doğal çıkar. Ama bazen bu soru, tüm resmi göstermiyor olabilir.",
+          "visual_note": "person sitting at a table looking exhausted, soft indoor light, quiet moment",
+          "keywords": ["exhaustion", "table", "indoor", "quiet"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Çünkü görünmeyenler de var. Kazanılan sabır görünmez. Büyüyen merhamet görünmez. Korunan insanlık görünmez. Pek çok sıkıntının uğramamış olması görünmez. Ve evde bulunan yaşlı ya da muhtaç kişinin sessiz duasının etkisi görünmez.",
+          "visual_note": "soft golden light through window, dust particles visible in light, peaceful stillness",
+          "keywords": ["golden light", "window", "stillness", "peace"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Belki asıl soru şudur: Ben bu bakım sayesinde nelerden korunuyorum? Hangi berekete kavuşuyorum? Ve hangi insanlığımı kaybetmekten kurtuluyorum? Bu soruyu sormak, aynı sorumluluğu bambaşka bir ışıkla görmektir.",
+          "visual_note": "person standing at a crossroads in nature, one path bright with morning light ahead",
+          "keywords": ["crossroads", "nature", "morning light", "direction"]
+        }
+      ]
+    }
+  ]
+}

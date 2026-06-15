@@ -1,0 +1,276 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "Evdeki Yaşlı Neden Bereket Sebebidir?",
+    "description": "Evinde yaşlı, hasta veya bakıma muhtaç bir yakını olan insana: yük gibi görünen emanetlerin gerçek yüzü.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "21-mektup-evdeki-sessiz-bereket-landscape-day-39"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Açılış",
+      "narration": "İnsan zaman zaman hayatın en ağır sorumluluklarıyla ev kapısında karşılaşır. İçeri adım attığında, karşısında yaşlı bir anne, yorgun düşmüş bir baba ya da bakıma muhtaç bir yakın vardır. Ve bu an, sadece bir sorumluluk anı değil; aynı zamanda insanın kendi kalbini sınadığı bir andır.",
+      "visual_note": "quiet home interior, soft afternoon light through window, elderly person sitting peacefully",
+      "keywords": ["home interior", "soft light", "elderly", "quiet"]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Bakımın Gerçek Yüzü",
+      "narration": "Bakım vermek, güzel bir şey gibi anlatılır. Ve gerçekten güzel tarafları vardır. Ama içinde yaşayan bilir: günler uzar, enerji azalır, bazen içten bir ağırlık birikir. Ve işte o an, insanın kendi yüreğine dürüstçe bakması gerekir.",
+      "visual_note": "person sitting quietly at a table, hands resting, contemplative mood, soft indoor light",
+      "keywords": ["contemplative", "quiet moment", "soft light", "interior"]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "İçteki Ses",
+      "narration": "Kimseye söylenmez, çoğu zaman sessizce geçip gider. Ama bazen insanın içinden 'keşke bu yük kalkmış olsaydı' diye bir ses yükselir. Ve o ses, vicdan için en derin sınavdır. Çünkü insan o sesi duyunca, kendi kalbinin gerçek haritasını görür.",
+      "visual_note": "person gazing out a window, distant look, gentle light, slow cinematic movement",
+      "keywords": ["contemplation", "window light", "inner peace", "person alone"]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Bakışın Gücü",
+      "narration": "Hayatı değiştiren en büyük şeylerden biri, koşulların değil bakış açısının değişmesidir. Aynı ev, aynı kişi, aynı sorumluluk... ama bakan gözün ışığı değişince, görülen tablo da değişir. Peki yaşlı ve muhtaç bir yakına bakmak, gerçekten sadece vermek midir? Yoksa karşılığında görünmez şeyler mi alınır?",
+      "visual_note": "slow cinematic zoom out from a single candle, warm glow in dark room, reflective mood",
+      "keywords": ["candle", "warm light", "perspective", "contemplative"]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Şefkatin Hakikati",
+      "narration": "Anne ve babanın çocuğuna duyduğu şefkat, dünyanın en derin ve en hesapsız duygularından biridir. Bu sevgi, alacaklı-borçlu hesabıyla kurulmamıştır. Anne, çocuğunun acısını kendi acısından önce hisseder; uyku uyumayı, yemeyi, kendini düşünmeyi öğrenmeden bilir.",
+      "visual_note": "parent holding child's hand gently, soft warm light, close-up hands",
+      "keywords": ["parent child", "hands", "warmth", "gentle light"]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Zamanın Döngüsü",
+      "narration": "Bir insan bir zamanlar güçsüzdü. Her şeye muhtaçtı. Ve o günlerde birisi onu düşünerek yaşadı; kendi rahatından, kendi gücünden, kendi ömründen verdi. O birisi şimdi güçten düşmüşse, hafızanın içinde bu geçmiş duruyorsa... vefa, bu geçmişi hatırlamakla başlar.",
+      "visual_note": "elderly hands next to young hands on a table, soft natural light, generational warmth",
+      "keywords": ["generational", "hands", "elderly", "family"]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Nankörlüğün Sessiz Biçimi",
+      "narration": "İnsan bazen bir düşünce taşır ama bunu fark etmeyebilir. 'Keşke şu kişi yoktu, keşke bu yük olmasaydı' diye geçen bir şey... Bu düşünce sözle ifade edilmez. Ama kalpte bir yerde durur. Ve vicdanın derininde, bu düşüncenin farkında olunur.",
+      "visual_note": "person alone in a room, hands on face, troubled expression, dim interior light",
+      "keywords": ["solitude", "inner conflict", "dim light", "contemplative"]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Hayatını Veren Biri",
+      "narration": "Bir insan, başka bir insan için ömründen verdi. Uyku gözlere girmeden geçirilen geceleri verdi. Kendisi için istemediği yorgunluğu gönüllü olarak taşıdı. Şimdi o insan zayıflamışsa, onun varlığından sıkılmak; verilmiş olan her şeyi unutmak demektir.",
+      "visual_note": "elderly person resting in chair, young person sitting nearby, quiet room, soft ambient light",
+      "keywords": ["care", "elderly", "quiet home", "soft light"]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Emek Görünmez Olunca",
+      "narration": "Geçmişte verilen emek, zaman içinde olağanlaşır. Olağanlaşan şey fark edilmez. Ve fark edilmeyen şey değerini kaybetmiş gibi hissettirse de, değeri hâlâ orada durur. İşte bu görünmezlik, en sessiz nankörlük biçimidir.",
+      "visual_note": "old family photograph in hands, soft focus background, nostalgic quiet mood",
+      "keywords": ["old photograph", "family", "nostalgia", "hands"]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Geçim Derdi",
+      "narration": "Geçim kaygısı, gerçek bir sıkıntıdır. 'Kendim zor geçiniyorum; üstüme bir de başkasını nasıl taşırım?' demek, anlaşılır bir insani tepkidir. Bu soruyu sormak, onu görmezden gelmekten çok daha dürüsttür. Ama sorunun cevabı, sormak cesaretiyle bulunanlar içindir.",
+      "visual_note": "person looking at paperwork at a kitchen table, worried expression, soft natural light",
+      "keywords": ["financial worry", "table", "indoor", "soft light"]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Bereket Daralıyor mu?",
+      "narration": "Muhtaç bir kimsenin eve gelmesiyle bereketin daralacağını düşünmek yaygın bir sezgidir. Ama tarih boyunca pek çok insan şunu gözlemlemiştir: Merhamete muhtaç birinin varlığı, çoğu zaman kaynakları tüketmez; bilakis o eve ayrı bir bereket kapısı açar.",
+      "visual_note": "sunlight streaming through window onto a simple dining table with food, warm abundant atmosphere",
+      "keywords": ["simple meal", "sunlight", "dining table", "abundance"]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Rızkın Kaynağı",
+      "narration": "Bir çocuk dünyaya geldiğinde, aile bunu çoğunlukla korku yerine sevinçle karşılar. Çünkü içten bir his var: o çocukla birlikte rızık da gelir. Yaşlı ve muhtaç bir yakın için de bu hakikat değişmez. Rızkı veren Allah'tır; insan yalnızca vesiledir. Merhamete daha çok muhtaç olanın rızkı, daha çok ilahi gözetim altındadır.",
+      "visual_note": "infant's hand grasping adult's finger, warm light, gentle mood, trust and hope",
+      "keywords": ["hands", "child", "family", "hope"]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Sınırlı Ekmek, Yeten Bereket",
+      "narration": "Bazen insanın kendi için ayırdığı az şey, hem kendisine hem bir başkasına yeter. Hatta artar bile. Bunu hesapla açıklamak güçtür. Ama hayat içinde bu tür anların varlığı, muhtaç bir varlığın berekete nasıl vesile olabildiğini gösterir. Bazen en az beklendiği yerden en büyük yetme gelir.",
+      "visual_note": "simple bread on a wooden table, hands sharing food, warm natural tones",
+      "keywords": ["bread", "sharing", "wooden table", "warmth"]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Kim Kime Muhtaç?",
+      "narration": "İnsan çoğu zaman 'veren' tarafında olduğunu düşünür. Ama aslında iş o kadar basit değildir. Evde yaşlı, hasta veya muhtaç biri varsa; o kişi de bize bir şeyler veriyor olabilir. Göremediğimiz bir dua, hissedemediğimiz bir rahmet, içimizde farkında bile olmadan büyüyen bir merhamet...",
+      "visual_note": "elderly person praying quietly, hands folded, soft warm indoor light",
+      "keywords": ["prayer", "elderly", "quiet", "indoor light"]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Sessiz Şükran",
+      "narration": "Yaşlı bir insanın yüreğinden yükselen dua, sessizdir; ama gerçektir. 'Allah razı olsun' diye geçen her an, bir yerde karşılık bulur. Bunu ne bilim ölçebilir ne de hesap kitap. Ama insan fıtratı, bu tür sessiz şükranların ağırlığını içten hisseder.",
+      "visual_note": "elderly woman sitting by window, looking outside peacefully, warm afternoon light",
+      "keywords": ["elderly woman", "window", "peaceful", "afternoon light"]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "İlahi Rahmet",
+      "narration": "Bir evde muhtaç biri varsa, o ev yalnız değildir. Merhamet gösterilen yere, ilahi rahmet de akar. Bu yalnızca bir teselli değil; hayatın içinde pek çok insan tarafından gözlemlenmiş bir gerçektir. Muhtaç birinin varlığı, o evi ilahi rahmete karşı açık tutar.",
+      "visual_note": "soft golden light entering an open window, curtain gently swaying, peaceful interior",
+      "keywords": ["golden light", "window", "open", "peace"]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "Görünmez Koruma",
+      "narration": "Yaşlı ya da hasta birinin evde bulunması, o evin başına gelebilecek bazı sıkıntıları engeller. Bu sezgi, birçok insan tarafından farklı biçimlerde aktarılmıştır. Merhamet, hem vereni hem de yanında bulunanı korur. Ve bu koruma, çoğu zaman fark edilmeden gerçekleşir.",
+      "visual_note": "rain falling outside a window, cozy interior, warm lights inside, shelter from storm",
+      "keywords": ["rain", "window", "cozy", "protection"]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Zaman Geçer",
+      "narration": "Zaman durmuyor. Güçlü olan zayıflıyor, genç olan ihtiyarlıyor, sağlıklı olan hastalıkla tanışıyor. Bu, hayatın akışıdır. Ve insan bu akışın içinde ne ekiyorsa, bir gün karşısında bulur. Bugün başkasına nasıl davranıldığı, yarın kendisine nasıl davranılacağının provasını oluşturur.",
+      "visual_note": "time-lapse of clouds moving over a quiet landscape, slow and contemplative mood",
+      "keywords": ["clouds", "time", "landscape", "slow motion"]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Hayatın Dengesi",
+      "narration": "İnsan etrafına nasıl davranırsa, zamanla benzerini görür. Bu bir kural değil, hayatın içindeki ince bir adalettir. Saygı gösterilenin saygı gördüğü, hizmet edenin hizmet bulduğu... bu gözlem tesadüf değildir. Ve bu, hem insana hem de insanın torunlarına yansır.",
+      "visual_note": "calm flowing river in a forest, symmetrical reflection in still water",
+      "keywords": ["river", "reflection", "balance", "forest"]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Evlada Söylenen Söz",
+      "narration": "Anne-babasına saygı göstermeyen biri, bir gün kendi çocuklarından aynısını görebilir. Bu bir tehdit değildir; insanlığın içindeki ince bir dengenin ifadesidir. Çünkü davranışlar öğretilir. Ve öğretilen şey, bir gün öğretene döner.",
+      "visual_note": "father and adult child talking at a table, respectful posture, warm indoor light",
+      "keywords": ["family conversation", "respect", "warm light", "home"]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Mustafa Çavuş Örneği",
+      "narration": "İnsanlık tarihi boyunca bazı isimler öne çıkar; hem dininde hem dünyasında huzurlu görünenler. Bu insanların sırrı çoğu zaman aynı kapıya çıkar: anne-babaya olan saygı ve hizmet. Bu bir tesadüf değildir; nedensellik içinde taşınan bir gerçektir.",
+      "visual_note": "man walking peacefully through a golden field, calm and serene mood, warm light",
+      "keywords": ["peaceful person", "golden hour", "field", "serenity"]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Her İki Dünya için Aynı Kapı",
+      "narration": "Ahiret hayatını düşünen insan için, anne-babaya ve yakınlara hizmet bir ibadet kapısıdır. Dünya hayatını düşünen için ise, onları memnun etmek hayatta bereket getirir. İki farklı hedef, iki farklı yön gibi görünür. Ama yol aynıdır: şefkat, hizmet ve hürmet.",
+      "visual_note": "two paths meeting at a single point in a lush green forest, symbolic convergence",
+      "keywords": ["path", "forest", "convergence", "nature"]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Eksik Tanım",
+      "narration": "Yaşlıyı ya da hastayı yalnızca 'bakılacak biri' olarak tanımlamak, onu eksik tanımlamaktır. O insan; fedakârlık yapmış, hayatını vermiş, şimdi dua eden, varlığıyla bereket getiren ve bizim merhametimizi ayakta tutan biridir. Tanım değişince, yük de değişir.",
+      "visual_note": "elderly person looking at family photos on a shelf, gentle afternoon light, nostalgic warmth",
+      "keywords": ["elderly", "family photos", "afternoon light", "home"]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Bakım İnsanı Büyütür",
+      "narration": "Bir insana bakmak kolay değildir. Ama zorlukların çoğu, insanı değiştirir. Sabır, merhamet, direnç; bunlar kolaylıkla değil, güçlükle kazanılır. Bakım yükü, aynı zamanda insanın kalbini büyüten ve ufkunu genişleten bir süreçtir.",
+      "visual_note": "person tending to plants in early morning light, patience and care visible in gesture",
+      "keywords": ["gardening", "morning light", "care", "patience"]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Emanet",
+      "narration": "Anne ve baba, insana emanet olarak verilmiştir. Emanetin hakkını vermek; onu aldığı gibi, güzel bir özenle iade etmektir. Bu iade, şikâyetle değil; şükranla yapıldığında, hem veren hem alan için anlam taşır.",
+      "visual_note": "hands passing an object gently to another pair of hands, soft light, close-up shot",
+      "keywords": ["hands", "passing", "gentle", "trust"]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Niyetin Dönüştürücü Gücü",
+      "narration": "Bir insanı beslemek, sözünü dinlemek, elini tutmak... Bu eylemler, görünürde sıradan şeylerdir. Ama içine niyet girince, anlam değişir. Niyet değişince, yük de değişir. Artık o ağırlık bir bağ olur; insanı ezdiren değil, insanı tutan bir şey.",
+      "visual_note": "hands holding a warm cup of tea, quiet kitchen, natural morning light, simple comfort",
+      "keywords": ["hands", "tea", "quiet", "warmth"]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Sessiz Sütun",
+      "narration": "Bir evde yaşlı ya da hasta bir kişi olduğunda, onun varlığının o evi ne kadar taşıdığı çoğu zaman fark edilmez. Ama o gidince, bir eksiklik belirir. Çünkü o kişi sessizce çok şey taşıyordu: duasıyla, varlığıyla, o evi birleştiren anlam olarak.",
+      "visual_note": "empty chair by a window with soft light coming through, nostalgic quiet atmosphere",
+      "keywords": ["empty chair", "window", "nostalgia", "quiet"]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "En Az Konuşan",
+      "narration": "Bir evin içinde bazen en az konuşan, en az hareket eden kişi; o evin en derin bereketini taşıyandır. Sesi yoktur; ama duası vardır. Bağımsızlığı kalmamıştır; ama yüreği dolu. Ve dolu yürekten yükselen dua, sessiz ama güçlüdür.",
+      "visual_note": "quiet elderly person sitting in a sunlit room, hands in lap, peaceful and serene expression",
+      "keywords": ["elderly", "sunlight", "peaceful", "quiet room"]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Eksildiğini Sananlar",
+      "narration": "Bakım verirken insan çoğu zaman bir hesap yapar: 'Bunun için ne kadar zaman harcadım, ne kadar yoruldum, ne kadar enerji verdim.' Bu hesap yanlış değildir. Ama eksik bir hesaptır. Çünkü görünemeyenler de var: kazanılan sabır, büyüyen merhamet, korunan insanlık.",
+      "visual_note": "person writing thoughtfully in a journal in soft morning light, reflective expression",
+      "keywords": ["journal", "morning light", "reflection", "writing"]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Asıl Soru",
+      "narration": "Belki sorulması gereken soru şu değildir: 'Ben bundan ne kaybediyorum?' Belki asıl soru şudur: 'Ben bunun sayesinde nelerden korunuyorum? Hangi berekete kavuşuyorum? Ve hangi insanlığımı kaybetmekten kurtuluyorum?' Bu soruyu sormak, bakış açısını kökten değiştirir.",
+      "visual_note": "person standing at a crossroads in nature, looking at two paths, soft cinematic light",
+      "keywords": ["crossroads", "nature path", "decision", "light"]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Hizmet İbadet Olunca",
+      "narration": "Anne-babaya ve yakınlara hizmet etmek, yalnızca bir ahlak meselesi değildir. Doğru niyetle yapıldığında, bu hizmet ibadete dönüşür. Ve insan, ibadet ederken yorulabilir; ama o yorgunluğun içinde anlam da vardır. Anlam olan yerde, tükenme çok daha zordur.",
+      "visual_note": "person lighting a candle in a quiet dim space, slow meditative cinematic mood",
+      "keywords": ["candle", "quiet", "prayer", "meditative"]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Merhamet mi, Hesap mı?",
+      "narration": "Hayat insana her gün bir seçim sunar: Kalbini merhametle mi, yoksa hesapla mı donanacaksın? Merhamet seçmek, kalbi genişletir. Hesap seçmek, kalbi daraltır. Ve daralan bir kalp, ne kendi huzurunu ne de başkasının iyiliğini taşıyabilir.",
+      "visual_note": "two roads diverging in a forest, one bright and open, one shadowed and narrow",
+      "keywords": ["diverging paths", "forest", "light and shadow", "choice"]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Bahtiyarlığın Kapısı",
+      "narration": "İnsan mutlu olmak ister. Hem bu dünyada huzur, hem bir gün hesap verirken güven ister. Bunun tek bir yolu yoktur. Ama yüzyıllar boyunca tekrar tekrar görülen şu: Anne-babaya ve yakınlara gösterilen hürmet ve hizmet, her iki dünyada da kapıları açan bir anahtar gibi işler.",
+      "visual_note": "sunrise over a calm open field, warm golden light spreading across the horizon",
+      "keywords": ["sunrise", "field", "warm light", "hope"]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Evin Gerçek Bereketi",
+      "narration": "Bir ev, yalnızca duvarlardan ibaret değildir. İçindeki ilişkilerden, niyetlerden ve sessiz dualardan oluşur. Ve o evin en sessiz sakininin sessizliği; bazen tüm ailenin üzerinde gördüğü şemsiyedir. Fark edilmeden, sessizce koruyan bir şemsiye.",
+      "visual_note": "warm lit family home exterior in evening light, glowing windows, trees surrounding the house",
+      "keywords": ["home exterior", "evening light", "warmth", "shelter"]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Kapanış",
+      "narration": "İnsan zaman zaman hayatın yükünü taşıdığını düşünür. Ama bazen, taşıdığı yük onu da taşıyordur. Evdeki yaşlı, hasta veya muhtaç yakın; görünür bir sorumluluk, ama aynı zamanda görünmez bir destek ve bereket sebebidir. Bunu fark edebilmek, büyük bir uyanış olabilir.",
+      "visual_note": "person sitting quietly in a peaceful garden, looking at the sky, serene and contemplative atmosphere",
+      "keywords": ["garden", "peaceful", "sky", "contemplation"]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "21-mektup-evdeki-sessiz-bereket",
+    "test_day": "day-39",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/21-mektup-evdeki-sessiz-bereket.md"
+    ]
+  }
+}
