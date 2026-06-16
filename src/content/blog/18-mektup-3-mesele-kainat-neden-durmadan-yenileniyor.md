@@ -2,6 +2,7 @@
 title: "Kâinat Neden Durmadan Yenileniyor?"
 description: "On Sekizinci Mektup'un Üçüncü Meselesi üzerinden kâinattaki durmayan faaliyetin hikmeti, İlâhî isimlerin tecellisi ve varlıkların sürekli yenilenişinin sırrı üzerine derin okuma."
 pubDate: 2026-05-27
+source: "18. Mektup"
 ---
 
 Risale-i Nur Külliyatı'nda, **On Sekizinci Mektup'un Üçüncü Meselesi**, insanın kâinata bakarken kolayca fark edebileceği ama cevabını hemen bulamayacağı bir soruyla başlar: Her şey neden sürekli hareket hâlindedir?

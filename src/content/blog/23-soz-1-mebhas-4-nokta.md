@@ -2,6 +2,7 @@
 title: "İnsan Neden Hazır Programla Değil, Açık Fıtratla Yaratıldı?"
 description: "İnsan nedir, neden bu kadar muhtaç yaratılmıştır, niçin hayvan gibi hazır programla gönderilmemiştir, insanın asli vazifesi nedir?"
 pubDate: 2026-03-15
+source: "23. Söz"
 ---
 
 ## 🌿 Ana cümle: Bu noktanın omurgası

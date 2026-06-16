@@ -2,6 +2,7 @@
 title: "İman Hem Kalbi Hem Kâinatı Yeniden Okur"
 description: "İman, insanın sadece iç dünyasını değil, kâinatı okuma biçimini değiştirir."
 pubDate: 2026-03-15
+source: "23. Söz"
 ---
 
 ## 🌿 Ana iddia: Bu nokta ne söylüyor?

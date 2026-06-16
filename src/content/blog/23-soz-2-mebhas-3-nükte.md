@@ -2,6 +2,7 @@
 title: "Büyük Sermayeyi Küçük Hesaba Harcamamak"
 description: "İnsana verilen büyük sermaye, küçük dünya hesabı için değil; ebedî hayat ve marifetullah içindir."
 pubDate: 2026-03-24
+source: "23. Söz"
 ---
 
 <section class="risale-article">

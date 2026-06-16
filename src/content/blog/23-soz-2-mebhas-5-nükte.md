@@ -2,6 +2,7 @@
 title: "İnsan Başıboş Değil, Muhatap Bir Varlıktır"
 description: "İnsan bu dünyaya başıboş bırakılmış bir canlı değil; gören, anlayan, cevap veren, karşılık veren bir varlık."
 pubDate: 2026-03-24
+source: "23. Söz"
 ---
 
 <section class="risale-article">

@@ -2,6 +2,7 @@
 title: "Bir Baharı Yaratmak Neden Bir Çiçek Kadar Kolaydır?"
 description: "Yirminci Mektup İkinci Makam Onuncu Kelime üzerinden: İlâhî kudret için büyük ile küçüğün fark etmediğini, bir çiçekle bir baharın, tek bir insanın diriltilmesiyle bütün insanlığın yeniden yaratılmasının aynı kolaylıkta olduğunu ele alan bir okuma."
 pubDate: 2026-06-11
+source: "20. Mektup"
 ---
 
 Risale-i Nur'un *Mektubat* adlı eserinde yer alan Yirminci Mektup'un İkinci Makamı, Allah'ın isim ve sıfatlarını kâinatta görünen işler üzerinden ele alır. Bu makamın Onuncu Kelime'sinde ise şu hakikat üzerinde durulur: **"O, her şeye gücü yetendir."**

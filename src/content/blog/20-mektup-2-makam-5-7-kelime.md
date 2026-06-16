@@ -2,6 +2,7 @@
 title: "Hamdin, Hayatın ve Ölümün Aynı Kapıya Açılması"
 description: "Yirminci Mektup'un İkinci Makamı'nda beşinci, altıncı ve yedinci kelimeler: güzelliğin sahibine hamd, hayatın kaynağına bakış ve ölümün aslında bir geçiş kapısı olduğu üzerine."
 pubDate: 2026-06-04
+source: "20. Mektup"
 ---
 
 ## Hamd, Hayat ve Ölüm: Aynı Hakikate Bakan Üç Kelime

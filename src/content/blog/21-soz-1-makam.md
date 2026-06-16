@@ -2,6 +2,7 @@
 title: "Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı"
 description: "Namaz Neden Ağır Gelir? Nefsin Beş Büyük Aldanışı"
 pubDate: 2026-03-27
+source: "21. Söz"
 ---
 
 # Yirmi Birinci Söz – Birinci Makam  

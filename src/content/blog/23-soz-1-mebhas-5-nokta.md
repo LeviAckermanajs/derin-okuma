@@ -2,6 +2,7 @@
 title: "Dua Bir Talep Değil, Bir Yöneliştir"
 description: "Dua, Allah’tan bir şeyi zorla almak değil; insanın aczini kabul ederek O’na yönelmesidir."
 pubDate: 2026-03-15
+source: "23. Söz"
 ---
 
 ## 🌿 Ana cümle: Bu bölümün özü

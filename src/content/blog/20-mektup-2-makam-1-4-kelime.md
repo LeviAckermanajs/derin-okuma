@@ -2,6 +2,7 @@
 title: "Kâinata Parça Parça Değil, Bir Bütün Olarak Bakmak"
 description: "Yirminci Mektup'un İkinci Makamı'nda dört kısa kelime; tevhidin kâinat ölçeğinde okunuşu, düzen ve ölçünün ortaksız bir mülke işareti ve dağınık görünen varlığı tek bir bakışta toplama çabası."
 pubDate: 2026-06-01
+source: "20. Mektup"
 ---
 
 ## Bir Cümlenin İçinden Açılan Büyük Bir Bakış

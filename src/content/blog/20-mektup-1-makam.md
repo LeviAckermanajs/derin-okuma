@@ -2,6 +2,7 @@
 title: "İnsan Nereye Gidiyor? Tevhidin İçindeki Sessiz Müjdeler"
 description: "Yirminci Mektup'un Birinci Makamı'nda tevhid cümlesinin on bir kelimesi; sahipsizlik korkusundan ölüm endişesine, insanın en temel sorularına verilen derinden teselli edici cevaplar."
 pubDate: 2026-05-29
+source: "20. Mektup"
 ---
 
 ## Bir Cümlenin İçine Sığan Büyük Teselli

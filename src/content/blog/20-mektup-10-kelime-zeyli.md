@@ -2,6 +2,7 @@
 title: "Bir Zerre Kendi Başına Ne Yapabilir?"
 description: "Yirminci Mektup'un Onuncu Kelimesine Zeyl: Kâinattaki varlıkları sebeplere mi, yoksa Allah'a mı vermek daha kolaydır? Tevhidin kolaylığını ve şirkin imkânsızlığını üç temsille anlatan bir okuma."
 pubDate: 2026-06-14
+source: "20. Mektup"
 ---
 
 ## Yirminci Mektup'un Bu Ekinde Sorulan Soru

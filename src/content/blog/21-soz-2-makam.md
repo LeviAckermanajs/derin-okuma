@@ -2,6 +2,7 @@
 title: "Vesvesenin Mahiyeti, Kalbin Beş Yarası ve Beş Merhem"
 description: "Yirmi Birinci Söz – İkinci Makam"
 pubDate: 2026-03-27
+source: "21. Söz"
 ---
 
 # Yirmi Birinci Söz – İkinci Makam

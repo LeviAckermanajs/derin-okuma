@@ -2,6 +2,7 @@
 title: "Zaafını Bilen İnsan İçin Kâinat Musahhar Olur"
 description: "İnsan kâinatta nazik bir çocuk gibidir. Fakat zaafını ve ihtiyacını bilip Allah’a yönelirse, rahmet ve hikmet onun için pek çok şeyi musahhar eder."
 pubDate: 2026-03-24
+source: "23. Söz"
 ---
 
 <section class="risale-article">

@@ -1,0 +1,139 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+import { groupPostsBySource } from '../lib/source-utils';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
+);
+
+const groups = groupPostsBySource(posts);
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		<BaseHead
+			title={`Okuma Haritası | ${SITE_TITLE}`}
+			description="Derin Okuma yazılarını Risale-i Nur Külliyatı'ndaki kaynak bölümlerine göre keşfedin."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<p class="eyebrow">Kaynağına göre</p>
+				<h1>Okuma Haritası</h1>
+				<p class="hero-description">
+					Yazıları Risale-i Nur Külliyatı'ndaki kaynak bölümlerine göre keşfedin.
+				</p>
+			</section>
+
+			<nav class="map-nav" aria-label="Bölümler">
+				{groups.map((g) => (
+					<a href={`#${g.anchorId}`}>{g.typeLabel}</a>
+				))}
+			</nav>
+
+			{groups.map((group) => (
+				<section class="source-type-section" id={group.anchorId}>
+					<h2 class="type-heading">{group.typeLabel}</h2>
+
+					{group.sources.map((source) => (
+						<div class="source-group">
+							<p class="source-label">{source.label}</p>
+							<div class="post-list">
+								{source.posts.map((post) => (
+									<a class="post-card" href={`/blog/${post.id}`}>
+										<span class="post-series">{post.data.source}</span>
+										<h3>{post.data.title}</h3>
+										<p>{post.data.description}</p>
+										<p class="post-date">
+											{post.data.pubDate?.toLocaleDateString('tr-TR') ?? ''}
+										</p>
+									</a>
+								))}
+							</div>
+						</div>
+					))}
+				</section>
+			))}
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.map-nav {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		margin: 28px 0 0;
+		padding: 16px 0;
+		border-top: 1px solid var(--border-color);
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	.map-nav a {
+		font-size: 0.82em;
+		font-weight: 700;
+		text-decoration: none;
+		color: rgb(var(--gray));
+		padding: 5px 12px;
+		border-radius: 6px;
+		border: 1px solid var(--border-color);
+		transition: background 0.15s, color 0.15s, border-color 0.15s;
+	}
+
+	.map-nav a:hover {
+		background: var(--color-accent);
+		color: white;
+		border-color: var(--color-accent);
+	}
+
+	.source-type-section {
+		margin-top: 56px;
+		scroll-margin-top: 80px;
+	}
+
+	.type-heading {
+		font-size: 0.78em;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 0.14em;
+		color: var(--color-accent);
+		border-bottom: 2px solid var(--color-accent);
+		padding-bottom: 0.5em;
+		margin-bottom: 1.5em;
+	}
+
+	.source-group {
+		margin-bottom: 2.5em;
+	}
+
+	.source-label {
+		font-size: 0.78em;
+		font-weight: 700;
+		color: rgb(var(--gray-dark));
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin: 0 0 0.8em;
+		padding: 4px 10px;
+		background: rgba(var(--gray-light), 0.5);
+		border-radius: 6px;
+		display: inline-block;
+	}
+
+	.post-series {
+		display: inline-block;
+		font-size: 0.72em;
+		font-weight: 700;
+		color: rgb(var(--gray));
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		margin-bottom: 0.3em;
+	}
+</style>

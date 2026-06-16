@@ -2,6 +2,7 @@
 title: "Bu Kadar Hikmetli Bir Kâinat Hesapsız Bırakılabilir mi?"
 description: "Başka bir âlem, büyük bir mahkeme, daimi bir seyir ve saadet yurdu olmak zorundadır."
 pubDate: 2026-03-25
+source: "10. Söz"
 ---
 
 <section class="risale-article">

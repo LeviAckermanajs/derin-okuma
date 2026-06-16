@@ -2,6 +2,7 @@
 title: "Ahiret Yalnızca Mümkün Değil, Zorunludur"
 description: "Haşir ve ahiret yalnızca mümkün değil; gerekli, hikmetli, uygun ve ilahî saltanatın gereğidir."
 pubDate: 2026-03-25
+source: "10. Söz"
 ---
 
 <section class="risale-article">

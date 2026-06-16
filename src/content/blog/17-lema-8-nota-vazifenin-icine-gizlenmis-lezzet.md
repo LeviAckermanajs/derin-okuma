@@ -2,6 +2,7 @@
 title: "Vazifenin İçine Gizlenmiş Lezzet"
 description: "17. Lem'a 8. Nota'nın ışığında çalışmanın, vazifeye yönelişin ve hizmetin içine yerleştirilen anlam ve lezzeti keşfeden bir derin okuma."
 pubDate: 2026-05-23
+source: "17. Lema"
 ---
 
 Risale-i Nur Külliyatı'nda yer alan **17. Lem'a'nın 8. Notası**, insanın çalışmaya, vazifeye ve hizmete bakışını değiştiren kısa ama yoğun bir bölüm. Metin, özellikle "çalışmayı sadece yorulmak" zanneden insana seslenir. İlk cümlesi bile doğrudan bu noktaya dokunur: İnsan bazen rahatlığı saadet sanır; çalışmayı, gayreti ve sorumluluğu ise yük gibi görür. Oysa bu bölüm, kâinata dikkatle bakıldığında çok farklı bir hakikatin görüleceğini söyler: **Vazife yalnızca sonuç için yapılmaz; vazifenin kendi içinde de bir lezzet vardır.**

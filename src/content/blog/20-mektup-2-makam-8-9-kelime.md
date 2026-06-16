@@ -2,6 +2,7 @@
 title: "Ölümün İçinden Okunan Daimî Hayat"
 description: "Yirminci Mektup'un İkinci Makamı'nda sekizinci ve dokuzuncu kelimeler: Allah'ın daimî hayatı, kâinattaki geliş ve gidişin aynasında okunan hakikat ve bütün hayırların O'nun elinde olduğu üzerine."
 pubDate: 2026-06-11
+source: "20. Mektup"
 ---
 
 ## Daimî Hayat ve Bütün Hayırların Kaynağı

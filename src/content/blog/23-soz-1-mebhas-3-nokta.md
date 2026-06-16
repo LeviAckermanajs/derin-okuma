@@ -2,6 +2,7 @@
 title: "İmanın İçine Gizlenmiş Saadet Zinciri"
 description: "iman → tevhid → teslim → tevekkül → saadet"
 pubDate: 2026-03-15
+source: "23. Söz"
 ---
 
 ## 🌿 Genel çerçeve: Bu nokta neyi anlatıyor?

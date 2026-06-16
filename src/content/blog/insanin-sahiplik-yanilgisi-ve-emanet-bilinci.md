@@ -2,6 +2,7 @@
 title: "İnsanın Sahiplik Yanılgısı ve Emanet Bilinci"
 description: "17. Lem'a 5. Nota üzerinden insanın kendisini malik değil emanetçi olarak görmesinin hayata, musibete, ölüme ve dünyaya bakışı nasıl değiştirdiğini ele alan derin okuma."
 pubDate: 2026-05-22
+source: "17. Lema"
 ---
 
 Risale-i Nur Külliyatı'nda yer alan **Lem'alar** adlı eserin **On Yedinci Lem'a, Beşinci Nota** bölümünde çok dikkat çekici bir yüzleşme yapılır. Bu bölümde mesele doğrudan "medeniyet", "felsefe", "insanın dünyaya bakışı", "hayatın anlamı", "ölüm", "musibet" ve "emanet" kavramları etrafında şekillenir.

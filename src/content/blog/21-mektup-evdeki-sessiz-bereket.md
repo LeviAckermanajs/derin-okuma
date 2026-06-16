@@ -2,6 +2,7 @@
 title: "Bir Evin İçindeki Sessiz Bereket: 21. Mektup'un Hatırlattığı Şey"
 description: "Yirminci Birinci Mektup; evinde yaşlı, hasta veya bakıma muhtaç yakını olan insana seslenir. Metnin merkezinde şaşırtıcı bir hakikat vardır: yük gibi görünen kişiler, evin bereket sebebi olabilir."
 pubDate: 2026-06-15
+source: "21. Mektup"
 ---
 
 Risale-i Nur Külliyatı'nda yer alan **21. Mektup**, evinde yaşlı anne-babası, akrabası, hasta, güçsüz veya bakıma muhtaç bir yakını bulunan insana seslenir. Metnin merkezinde çok sade ama insanın içine dokunan bir hakikat vardır: Bazen bize yük gibi görünen insanlar, aslında evimizin bereket sebebi, rahmet vesilesi ve musibetlere karşı manevi bir siper olabilir.

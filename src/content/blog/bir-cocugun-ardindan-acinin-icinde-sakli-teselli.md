@@ -2,6 +2,7 @@
 title: "Bir Çocuğun Ardından: Acının İçinde Saklı Teselli"
 description: "On Yedinci Mektup, evlat acısını hafife almadan konuşur; kaybın yokluk değil, asıl sahibine dönüş olduğunu anlatır."
 pubDate: 2026-05-24
+source: "17. Mektup"
 ---
 
 Risale-i Nur Külliyatı'nda yer alan **On Yedinci Mektup**, "Çocuk Taziyenâmesi" başlığıyla, çocuğunu kaybetmiş bir insana yazılmış derin bir teselli metnidir. Metin, Hafız Hâlid Efendi'ye hitap eder; fakat aslında evlat acısının ağırlığını taşıyan her kalbe konuşur.

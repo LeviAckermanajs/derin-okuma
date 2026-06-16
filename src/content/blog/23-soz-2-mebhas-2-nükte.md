@@ -2,6 +2,7 @@
 title: "İnsanın Hem Aciz Hem Büyük Yaratılmasının Hikmeti"
 description: "İnsan, bir yönüyle çok âciz ve küçük; başka bir yönüyle ise sonsuz tecellilere ayna olabilecek kadar büyük bir istidat sahibidir."
 pubDate: 2026-03-24
+source: "23. Söz"
 ---
 
 <section class="risale-article">
