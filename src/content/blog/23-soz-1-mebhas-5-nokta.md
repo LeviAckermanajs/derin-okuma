@@ -1,5 +1,5 @@
 ---
-title: "23. Söz - 1. Mebhas - 5. Nokta"
+title: "Dua Bir Talep Değil, Bir Yöneliştir"
 description: "Dua, Allah’tan bir şeyi zorla almak değil; insanın aczini kabul ederek O’na yönelmesidir."
 pubDate: 2026-03-15
 ---

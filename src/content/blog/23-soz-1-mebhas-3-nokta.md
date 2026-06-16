@@ -1,5 +1,5 @@
 ---
-title: "23. Söz - 1. Mebhas - 3. Nokta"
+title: "İmanın İçine Gizlenmiş Saadet Zinciri"
 description: "iman → tevhid → teslim → tevekkül → saadet"
 pubDate: 2026-03-15
 ---

@@ -1,5 +1,5 @@
 ---
-title: "23. Söz - 1. Mebhas - 2. Nokta"
+title: "İman Hem Kalbi Hem Kâinatı Yeniden Okur"
 description: "İman, insanın sadece iç dünyasını değil, kâinatı okuma biçimini değiştirir."
 pubDate: 2026-03-15
 ---

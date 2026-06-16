@@ -1,5 +1,5 @@
 ---
-title: "23. Söz - 1. Mebhas - 4. Nokta"
+title: "İnsan Neden Hazır Programla Değil, Açık Fıtratla Yaratıldı?"
 description: "İnsan nedir, neden bu kadar muhtaç yaratılmıştır, niçin hayvan gibi hazır programla gönderilmemiştir, insanın asli vazifesi nedir?"
 pubDate: 2026-03-15
 ---

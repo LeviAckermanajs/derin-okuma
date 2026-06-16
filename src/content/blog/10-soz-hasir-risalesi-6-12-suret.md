@@ -1,5 +1,5 @@
 ---
-title: "10. Söz - Haşir Risalesi - 6-12. Suret"
+title: "Ahiret Yalnızca Mümkün Değil, Zorunludur"
 description: "Haşir ve ahiret yalnızca mümkün değil; gerekli, hikmetli, uygun ve ilahî saltanatın gereğidir."
 pubDate: 2026-03-25
 ---

@@ -1,5 +1,5 @@
 ---
-title: "23. Söz - 2. Mebhas - 1. Nükte"
+title: "Sınırsız Arzu Sonsuz Olana Yönelmeden Yatışmaz"
 description: "İnsan sınırsız arzularla yaratılmıştır; bu yüzden yalnızca sonsuz olana yönelirse yükselir, sınırlı şeylere bağlanırsa parçalanır."
 pubDate: 2026-03-24
 ---

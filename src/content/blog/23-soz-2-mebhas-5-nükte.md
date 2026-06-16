@@ -1,5 +1,5 @@
 ---
-title: "23. Söz - 2. Mebhas - 5. Nükte"
+title: "İnsan Başıboş Değil, Muhatap Bir Varlıktır"
 description: "İnsan bu dünyaya başıboş bırakılmış bir canlı değil; gören, anlayan, cevap veren, karşılık veren bir varlık."
 pubDate: 2026-03-24
 ---

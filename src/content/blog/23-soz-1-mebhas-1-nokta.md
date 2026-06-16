@@ -1,5 +1,5 @@
 ---
-title: "23. Söz - 1. Mebhas - 1. Nokta"
+title: "Acizliğini Fark Eden İnsan Allah'a Nasıl Yönelir?"
 description: "İnsan, acz ve fakrını fark ederek Allah’a yönelir."
 pubDate: 2026-03-15
 ---
