@@ -6,27 +6,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	(a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0)
 );
 
-function extractSeries(title: string): string {
+function extractSeries(title: string): string | null {
 	const dashIndex = title.indexOf(' - ');
-	if (dashIndex === -1) return 'Diğer';
+	if (dashIndex === -1) return null;
 	return title.substring(0, dashIndex);
 }
-
-const grouped = posts.reduce((acc, post) => {
-	const series = extractSeries(post.data.title);
-	if (!acc[series]) acc[series] = [];
-	acc[series].push(post);
-	return acc;
-}, {} as Record<string, typeof posts>);
-
-const seriesOrder = Object.keys(grouped).sort((a, b) => {
-	if (a === 'Diğer') return 1;
-	if (b === 'Diğer') return -1;
-	return a.localeCompare(b, 'tr');
-});
 ---
 
 <!doctype html>
@@ -46,39 +33,34 @@ const seriesOrder = Object.keys(grouped).sort((a, b) => {
 			</section>
 
 			<section class="home-section">
-				{seriesOrder.map((series) => (
-					<div class="series-group">
-						<h2 class="series-title">{series}</h2>
-						<div class="post-list">
-							{grouped[series].map((post) => (
-								<a class="post-card" href={`/blog/${post.id}`}>
-									<h3>{post.data.title}</h3>
-									<p>{post.data.description}</p>
-									<p class="post-date">
-										{post.data.pubDate.toLocaleDateString('tr-TR')}
-									</p>
-								</a>
-							))}
-						</div>
-					</div>
-				))}
+				<div class="post-list">
+					{posts.map((post) => {
+						const series = extractSeries(post.data.title);
+						return (
+							<a class="post-card" href={`/blog/${post.id}`}>
+								{series && <span class="post-series">{series}</span>}
+								<h3>{post.data.title}</h3>
+								<p>{post.data.description}</p>
+								<p class="post-date">
+									{post.data.pubDate?.toLocaleDateString('tr-TR') ?? ''}
+								</p>
+							</a>
+						);
+					})}
+				</div>
 			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
 <style>
-	.series-group {
-		margin-bottom: 2.5em;
-	}
-	.series-title {
-		font-size: 1.1em;
+	.post-series {
+		display: inline-block;
+		font-size: 0.72em;
 		font-weight: 700;
 		color: rgb(var(--gray));
 		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		border-bottom: 2px solid rgb(var(--gray-light));
-		padding-bottom: 0.4em;
-		margin-bottom: 1em;
+		letter-spacing: 0.07em;
+		margin-bottom: 0.3em;
 	}
 </style>
