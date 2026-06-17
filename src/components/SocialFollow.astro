@@ -1,0 +1,118 @@
+---
+import { siteConfig } from '../consts';
+
+const socialLinks = [
+	{ label: 'YouTube', href: siteConfig.social.youtube },
+	{ label: 'TikTok', href: siteConfig.social.tiktok },
+];
+---
+
+<section class="social-follow" aria-labelledby="social-follow-title">
+	<div>
+		<p class="social-eyebrow">Video içerikler</p>
+		<h2 id="social-follow-title">Derin Okuma'yı takip edin</h2>
+		<p>
+			Kısa video anlatımlar ve yeni içerikler için YouTube ve TikTok
+			hesaplarını takip edebilirsiniz.
+		</p>
+	</div>
+	<div class="social-actions" aria-label="Sosyal medya hesapları">
+		{socialLinks.map((link) => (
+			<a href={link.href} target="_blank" rel="noopener noreferrer">
+				{link.label}
+			</a>
+		))}
+	</div>
+</section>
+
+<style>
+	.social-follow {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		gap: 24px;
+		align-items: center;
+		margin-top: 28px;
+		padding: 22px 20px;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		border-radius: 16px;
+		background: rgba(255, 255, 255, 0.03);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+	}
+
+	.social-eyebrow {
+		margin: 0 0 8px;
+		font-size: 12px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		opacity: 0.6;
+	}
+
+	.social-follow h2 {
+		margin-bottom: 10px;
+		font-size: 1.45rem;
+	}
+
+	.social-follow p {
+		margin: 0;
+		font-size: 0.95rem;
+		line-height: 1.6;
+		opacity: 0.9;
+	}
+
+	.social-actions {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+
+	.social-actions a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 44px;
+		padding: 0 16px;
+		border: 1px solid var(--border-color);
+		border-radius: 999px;
+		background: var(--bg-card);
+		color: rgb(var(--black));
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-decoration: none;
+		transition: border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+	}
+
+	.social-actions a:hover {
+		border-color: var(--color-accent);
+		color: var(--color-accent);
+		transform: translateY(-1px);
+	}
+
+	@media (max-width: 768px) {
+		.social-follow {
+			grid-template-columns: 1fr;
+			gap: 16px;
+			margin-top: 24px;
+			padding: 18px;
+			border-radius: 14px;
+		}
+
+		.social-follow h2 {
+			font-size: 1.35rem;
+		}
+
+		.social-follow p {
+			font-size: 0.95rem;
+			line-height: 1.55;
+		}
+
+		.social-actions {
+			justify-content: stretch;
+		}
+
+		.social-actions a {
+			flex: 1 1 140px;
+			min-height: 46px;
+		}
+	}
+</style>

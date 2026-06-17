@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import SocialFollow from '../components/SocialFollow.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 
@@ -45,19 +46,21 @@ const posts = (await getCollection('blog'))
 			</section>
 
 			<section class="info-box">
-	<p class="info-eyebrow">Amaç</p>
-	<h2>Bu site ne sunuyor?</h2>
+				<p class="info-eyebrow">Amaç</p>
+				<h2>Bu site ne sunuyor?</h2>
 
-	<p class="info-text">
-		Bu site, metinleri sadece özetlemek için değil; ince mesajlarını,
-		kavram katmanlarını ve insanla kurduğu bağı anlamak için oluşturuldu.
-	</p>
+				<p class="info-text">
+					Bu site, metinleri sadece özetlemek için değil; ince mesajlarını,
+					kavram katmanlarını ve insanla kurduğu bağı anlamak için oluşturuldu.
+				</p>
 
-	<p class="info-text">
-		Burada Risale-i Nur analizleri, Kur’an üzerine düşünce yazıları ve
-		insanın anlam arayışına dair metinler yer alacak.
-	</p>
-</section>
+				<p class="info-text">
+					Burada Risale-i Nur analizleri, Kur’an üzerine düşünce yazıları ve
+					insanın anlam arayışına dair metinler yer alacak.
+				</p>
+			</section>
+
+			<SocialFollow />
 		</main>
 		<Footer />
 	</body>
