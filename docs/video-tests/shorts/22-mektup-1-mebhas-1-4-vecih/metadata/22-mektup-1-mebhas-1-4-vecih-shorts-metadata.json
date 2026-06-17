@@ -1,0 +1,128 @@
+{
+  "video_type": "shorts",
+  "source": "22-mektup-1-mebhas-1-4-vecih",
+  "test_day": "day-40",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Birinin bir kusurunu gördüğünde, onu bütün o kusurdan ibaret mi sayarsın?",
+      "title_options": [
+        "Bir Kusur Bir İnsanı Tanımlar mı?",
+        "Neden Birini Tek Özelliğiyle Yargılarız?",
+        "Dokuz Masum, Bir Suçlu — Gemiyi Batırır mısın?"
+      ],
+      "selected_title": "Bir Kusur Bir İnsanı Tanımlar mı?",
+      "description": "Dokuz masumun bulunduğu bir gemiyi, içindeki tek suçlu yüzünden batırır mısın? İnsan ilişkilerindeki en büyük yanılgılardan biri bu. #derinokuma #shorts #tefekkür #iman #adalet #kardeşlik",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#adalet",
+        "#kardeşlik"
+      ],
+      "thumbnail_or_cover_text": "BİR KUSUR TÜM İNSAN MI?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Aynı Yaratıcı'ya inanıyoruz, aynı kıbleye yöneliyoruz. Peki neden hâlâ birbirimize kırgınız?",
+      "title_options": [
+        "İman Birliği Neden Kalp Birliği İster?",
+        "Tevhid Neden Birleştirir?",
+        "Aynı İnancı Paylaşınca Ne Değişir?"
+      ],
+      "selected_title": "İman Birliği Neden Kalp Birliği İster?",
+      "description": "İman insanları birbirine bağlar. O bağı görmek için küçük kırgınlıkların üstüne çıkmak gerek. #derinokuma #shorts #iman #tefekkür #risaleinur #muhabbet",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#iman",
+        "#tefekkür",
+        "#risaleinur",
+        "#muhabbet"
+      ],
+      "thumbnail_or_cover_text": "İMAN BİRLEŞTİRİR"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Söyleyeceğin şey doğru olabilir. Ama söyleme hakkın var mı?",
+      "title_options": [
+        "Her Doğruyu Söyleme Hakkın Var mı?",
+        "Doğru Söz Neden Yara Açar?",
+        "Susmanın Gücü Nedir?"
+      ],
+      "selected_title": "Her Doğruyu Söyleme Hakkın Var mı?",
+      "description": "Doğru olan her şeyi söylemek doğru değildir. Zaman, niyet ve ton da belirleyicidir. #derinokuma #shorts #tefekkür #iman #ahlak #iletişim",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ahlak",
+        "#iletişim"
+      ],
+      "thumbnail_or_cover_text": "DOĞRUYU SÖYLEME HAKKI"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Asıl düşmanı dışarıda mı arıyoruz?",
+      "title_options": [
+        "Asıl Düşman Nerede Gizlidir?",
+        "Neden Önce Kendimize Bakmalıyız?",
+        "İçteki Düşmanı Görmek"
+      ],
+      "selected_title": "Asıl Düşman Nerede Gizlidir?",
+      "description": "Çoğu zaman asıl mücadele dışarıda değil içimizde. En büyük zafer, bu savaşı kazanmaktır. #derinokuma #shorts #tefekkür #nefis #iman #iç dünya",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#nefis",
+        "#iman",
+        "#iç dünya"
+      ],
+      "thumbnail_or_cover_text": "ASIL DÜŞMAN İÇİMİZDE"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Haset ettiğin kişiye gerçekten zarar veriyor musun?",
+      "title_options": [
+        "Haset Neden Önce Kendini Yakar?",
+        "Kıskançlık Kime Zarar Verir?",
+        "Haset Nasıl Çalışır?"
+      ],
+      "selected_title": "Haset Neden Önce Kendini Yakar?",
+      "description": "Haset, haset ettiğimiz kişiyi değil bizi ezer. Peki bu ateşten nasıl çıkılır? #derinokuma #shorts #tefekkür #haset #iman #kalp",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#haset",
+        "#iman",
+        "#kalp"
+      ],
+      "thumbnail_or_cover_text": "HASET KİMİ YAKAR?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Kin, önce sahibini yakar.",
+      "title_options": [
+        "Kin Neden Önce Sahibini Yakar?",
+        "Af Neden Özgürleştirir?",
+        "Kalpten Kin Nasıl Gider?"
+      ],
+      "selected_title": "Kin Neden Önce Sahibini Yakar?",
+      "description": "Af zayıflık değil; kalbi özgür kılmanın en güçlü yoludur. #derinokuma #shorts #af #iman #tefekkür #muhabbet",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#af",
+        "#iman",
+        "#tefekkür",
+        "#muhabbet"
+      ],
+      "thumbnail_or_cover_text": "KİN KALBE SIĞMAZ"
+    }
+  ]
+}

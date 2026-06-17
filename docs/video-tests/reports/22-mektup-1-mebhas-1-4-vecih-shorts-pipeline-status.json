@@ -1,0 +1,17 @@
+{
+  "slug": "22-mektup-1-mebhas-1-4-vecih",
+  "title": "22. Mektup - 1. Mebhas - 1-4. Vecih",
+  "day": 40,
+  "dayTag": "day-40",
+  "runId": "day40-batch-a",
+  "timestamp": "2026-06-17T08:45:28.063Z",
+  "status": "failed",
+  "failedCommand": "node scripts/validate-video-package.mjs --slug 22-mektup-1-mebhas-1-4-vecih --report",
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/22-mektup-1-mebhas-1-4-vecih-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/22-mektup-1-mebhas-1-4-vecih-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/22-mektup-1-mebhas-1-4-vecih-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-22-mektup-1-mebhas-1-4-vecih-short-*-day40-batch-a"
+  },
+  "fillTimestamp": "2026-06-17T09:14:25.599Z"
+}
