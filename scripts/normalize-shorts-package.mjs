@@ -92,6 +92,20 @@ pkg.shorts = pkg.shorts.map((short) => {
     shortChanged = true;
   }
 
+  // ── description ─────────────────────────────────────────────────────────────
+  if (!isNonEmptyString(updated.description)) {
+    if (isNonEmptyString(meta.description)) {
+      updated.description = meta.description;
+      console.log(`[FIX] ${short.short_id}: description filled from metadata`);
+      shortChanged = true;
+    } else {
+      console.error(`[FAIL] ${short.short_id}: description is missing in package and not found in metadata — cannot invent one`);
+      process.exit(1);
+    }
+  } else if (isNonEmptyString(meta.description) && updated.description !== meta.description) {
+    console.log(`[WARN] ${short.short_id}: description differs from metadata — keeping package value`);
+  }
+
   // ── thumbnail_or_cover_text ─────────────────────────────────────────────────
   if (!isNonEmptyString(updated.thumbnail_or_cover_text)) {
     if (isNonEmptyString(meta.thumbnail_or_cover_text)) {

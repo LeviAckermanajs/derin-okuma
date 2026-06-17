@@ -490,8 +490,16 @@ ${buildShortDoldurmaDosyaList()}
 - Hook ilk 3–5 saniyede merak uyandırsın.
 - Clickbait yapma.
 - Manevî içeriği ucuzlaştırma.
-- Her Shorts için metadata üret:
-  - title
+- shorts-package.json içindeki her short nesnesi şu alanları içermelidir:
+  - \`short_id\`
+  - \`hook\`
+  - \`title\`
+  - \`description\` ← metadata'daki description ile aynı veya uyumlu olmalıdır; sadece metadata dosyasına bırakılmamalıdır
+  - \`hashtags\`
+  - \`thumbnail_or_cover_text\`
+  - \`scenes\`
+- Her Shorts için metadata dosyasına da aynı alanları yaz:
+  - title / title_options / selected_title
   - description
   - hashtags
   - thumbnail_or_cover_text
