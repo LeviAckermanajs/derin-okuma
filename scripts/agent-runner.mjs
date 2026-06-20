@@ -50,7 +50,7 @@ export function buildAgentCommand(provider, action, params = {}) {
       executable,
       args: codexArgs(prompt),
       env: sanitizedAgentEnv(),
-      preview: `codex exec --cd ${ROOT} --sandbox workspace-write "<blog-add prompt for ${draftPath}>"`,
+      preview: `codex exec --cd ${ROOT} --sandbox workspace-write "Run the /add-blog-post workflow for ${draftPath}."`,
     };
   }
 
@@ -64,4 +64,3 @@ export function buildAgentCommand(provider, action, params = {}) {
     preview: `node scripts/${script} --slug ${params.slug} --run-id ${params.run_id}`,
   };
 }
-

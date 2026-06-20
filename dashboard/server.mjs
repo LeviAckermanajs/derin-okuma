@@ -8,7 +8,7 @@ import { spawnSync, spawn } from 'child_process';
 import net                  from 'net';
 import os                   from 'os';
 import { fileURLToPath } from 'url';
-import { buildAgentCommand, resolveCodexBin } from '../scripts/agent-runner.mjs';
+import { buildAgentCommand, resolveClaudeBin, resolveCodexBin } from '../scripts/agent-runner.mjs';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT       = path.resolve(__dirname, '..');
@@ -629,11 +629,16 @@ function apiDraft(filename) {
 // ── API handlers ──────────────────────────────────────────────────────────
 
 function apiConfig() {
-  try {
-    return { n8n_url: N8N_URL, cwd: ROOT, codex: { available: true, bin: resolveCodexBin() } };
-  } catch (error) {
-    return { n8n_url: N8N_URL, cwd: ROOT, codex: { available: false, error: error.message } };
-  }
+  const providerStatus = resolver => {
+    try { return { available: true, bin: resolver() }; }
+    catch (error) { return { available: false, error: error.message }; }
+  };
+  return {
+    n8n_url: N8N_URL,
+    cwd: ROOT,
+    claude: providerStatus(resolveClaudeBin),
+    codex: providerStatus(resolveCodexBin),
+  };
 }
 
 function apiTokenStatus() {
@@ -951,6 +956,7 @@ function buildCommand(action, slug, params = {}) {
   if (action === 'blog-add' || action === 'blog-add-codex') {
     const { draft_path } = params;
     if (!draft_path || typeof draft_path !== 'string') return { error: 'missing_draft_path' };
+    if (!/\.(txt|md|mdx)$/i.test(draft_path)) return { error: 'invalid_draft_path' };
     const absPath = path.resolve(ROOT, draft_path);
     if ((!absPath.startsWith(DRAFTS_DIR + path.sep) && absPath !== DRAFTS_DIR) ||
         !draft_path.startsWith('docs/drafts/') || draft_path.includes('..')) return { error: 'invalid_draft_path' };

@@ -2,7 +2,12 @@
 
 // ── Global state ───────────────────────────────────────────────────────────
 
-let config        = { n8n_url: 'http://localhost:5678', cwd: '', codex: { available: false } };
+let config        = {
+  n8n_url: 'http://localhost:5678',
+  cwd: '',
+  claude: { available: false },
+  codex: { available: false },
+};
 let activeTab     = 'drafts';
 let currentDraft  = null;   // draft filename shown in draft detail
 let currentSlug   = null;   // slug shown in shorts detail
@@ -486,6 +491,12 @@ function cardDraftActions(d) {
   const ttDryHint   = sd?.tiktok_disabled_reason || (!tikTokTokenOk ? 'TikTok token geçersiz.' : '');
   const ttUploadHint = !ttPlanOk ? (sd?.tiktok_disabled_reason || 'Önce Export TikTok Captions çalıştırılmalı.')
                      : !tikTokTokenOk ? 'TikTok token geçersiz veya süresi dolmuş.' : '';
+  const draftExists  = !!d.draft_path && !!d.filename;
+  const blogExists   = !!d.blog_slug;
+  const claudeOk     = config.claude?.available === true;
+  const codexOk      = config.codex?.available === true;
+  const canBlogAddClaude = draftExists && !blogExists && claudeOk;
+  const canBlogAddCodex  = draftExists && !blogExists && codexOk;
 
   const ab = (action, label, enabled, warn=false, hint='') => {
     const dis = enabled ? '' : ' disabled';
@@ -497,7 +508,6 @@ function cardDraftActions(d) {
   const fillEnabled = hasPrep && hasPipeline;
   const fillHint    = (hasPrep && !hasPipeline)
     ? 'Pipeline status eksik — önce Shorts Prep Oluştur\'u çalıştırın.' : '';
-  const codexOk     = config.codex?.available === true;
   const codexHint   = codexOk ? fillHint : 'Codex CLI bulunamadı; terminalde codex --version kontrol edin';
   const ytHint      = !hasManifest
     ? 'publish-manifest.json bulunamadı. Önce n8n export akışını tamamla.' : '';
@@ -506,9 +516,10 @@ function cardDraftActions(d) {
     <div class="detail-card full-width">
       <h3>Workflow Aksiyonları</h3>
       <div class="action-bar">
-        ${ab('blog-add',        '+ Blog Yazısını Ekle',         !hasBlog)}
-        ${ab('blog-add-codex',  '+ Blog Yazısını Ekle — Codex', !hasBlog && codexOk, false,
-             !codexOk ? 'Codex CLI bulunamadı; terminalde codex --version kontrol edin' : '')}
+        ${ab('blog-add',        '+ Blog Yazısını Ekle — Claude', canBlogAddClaude, false,
+             !claudeOk ? 'Claude CLI bulunamadı. Terminalde claude --version ile kontrol edin.' : '')}
+        ${ab('blog-add-codex',  '+ Blog Yazısını Ekle — Codex', canBlogAddCodex, false,
+             !codexOk ? 'Codex CLI bulunamadı. Terminalde codex --version ile kontrol edin.' : '')}
         ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog, isFilled,
              !hasBlog ? 'Önce Blog Yazısını Ekle.' : '')}
         ${ab('shorts-fill',     '◇ Claude ile Paketi Doldur',   fillEnabled,          false,  fillHint)}
@@ -550,6 +561,7 @@ function collectDraftParams(d) {
 }
 
 function wireDraftDetailButtons(d) {
+  const claudeOk = config.claude?.available === true;
   const codexOk = config.codex?.available === true;
   wireDatePickers();
   wireDayRunIdInputs('dp-day', 'dp-run-id', () =>
@@ -604,19 +616,20 @@ function wireDraftDetailButtons(d) {
 
       const SPECS = {
         'blog-add': {
-          title:   'Blog Yazısını Ekle',
-          label:   'Taslaktan blog yazısı oluşturma',
-          command: `claude -p "/add-blog-post ${d.draft_path}"`,
+          title:   'Blog Yazısını Ekle — Claude',
+          label:   'Claude ile taslaktan blog yazısı oluşturma',
+          command: claudeOk ? `claude -p "/add-blog-post ${d.draft_path}"` : null,
           cwd,
+          warning: claudeOk ? null : 'Claude CLI bulunamadı. Terminalde claude --version ile kontrol edin.',
         },
         'blog-add-codex': {
           title:   'Blog Yazısını Ekle — Codex',
           label:   'Codex ile taslaktan blog yazısı oluşturma',
           command: codexOk
-            ? `codex exec --cd ${cwd} --sandbox workspace-write "<blog-add prompt for ${d.draft_path}>"`
+            ? `codex exec --cd ${cwd} --sandbox workspace-write "Run the /add-blog-post workflow for ${d.draft_path}."`
             : null,
           cwd,
-          warning: codexOk ? null : 'Codex bulunamadı. Terminalde codex --version ile kurulumu kontrol edin.',
+          warning: codexOk ? null : 'Codex CLI bulunamadı. Terminalde codex --version ile kontrol edin.',
         },
         'shorts-prep': {
           title:   'Shorts Prep Oluştur',
@@ -1041,6 +1054,7 @@ function cardActions(d) {
   const valPass     = !!d.validation_passed;
   const hasManifest = !!d.publish_manifest_exists;
   const hasPkg      = d.package_status !== 'missing';
+  const claudeOk    = config.claude?.available === true;
 
   const fillEnabled = hasPkg && hasPipeline;
   const fillHint    = (hasPkg && !hasPipeline)
@@ -1061,9 +1075,10 @@ function cardActions(d) {
     <div class="detail-card full-width">
       <h3>Aksiyonlar</h3>
       <div class="action-bar">
-        ${ab('blog-add',        '+ Blog Yazısını Ekle',         !d.blog_exists)}
+        ${ab('blog-add',        '+ Blog Yazısını Ekle — Claude', !d.blog_exists && claudeOk, false,
+             !claudeOk ? 'Claude CLI bulunamadı. Terminalde claude --version ile kontrol edin.' : '')}
         ${ab('blog-add-codex',  '+ Blog Yazısını Ekle — Codex', !d.blog_exists && codexOk, false,
-             !codexOk ? 'Codex CLI bulunamadı; terminalde codex --version kontrol edin' : '')}
+             !codexOk ? 'Codex CLI bulunamadı. Terminalde codex --version ile kontrol edin.' : '')}
         ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (pkgFilled ? ' ⚠' : ''), true,          pkgFilled)}
         ${ab('shorts-fill',     '◇ Claude ile Paketi Doldur',   fillEnabled,         false, fillHint)}
         ${ab('shorts-fill-codex','◇ Codex ile Paketi Doldur',   fillEnabled && codexOk, false, codexHint)}
@@ -1112,6 +1127,7 @@ async function fillDraftsList() {
 }
 
 function wireDetailButtons(d) {
+  const claudeOk = config.claude?.available === true;
   const codexOk = config.codex?.available === true;
   wireDatePickers();
   wireDayRunIdInputs('param-day', 'param-run-id', () =>
@@ -1226,21 +1242,22 @@ function wireDetailButtons(d) {
           cwd,
         },
         'blog-add': {
-          title:   'Blog Yazısını Ekle',
-          label:   'Taslaktan blog yazısı oluşturma',
-          command: p.draft_path
+          title:   'Blog Yazısını Ekle — Claude',
+          label:   'Claude ile taslaktan blog yazısı oluşturma',
+          command: claudeOk && p.draft_path
             ? `claude -p "/add-blog-post ${p.draft_path}"`
             : null,
           cwd,
+          warning: claudeOk ? null : 'Claude CLI bulunamadı. Terminalde claude --version ile kontrol edin.',
         },
         'blog-add-codex': {
           title:   'Blog Yazısını Ekle — Codex',
           label:   'Codex ile taslaktan blog yazısı oluşturma',
           command: codexOk && p.draft_path
-            ? `codex exec --cd ${cwd} --sandbox workspace-write "<blog-add prompt for ${p.draft_path}>"`
+            ? `codex exec --cd ${cwd} --sandbox workspace-write "Run the /add-blog-post workflow for ${p.draft_path}."`
             : null,
           cwd,
-          warning: codexOk ? null : 'Codex bulunamadı. Terminalde codex --version ile kurulumu kontrol edin.',
+          warning: codexOk ? null : 'Codex CLI bulunamadı. Terminalde codex --version ile kontrol edin.',
         },
         'tiktok-draft-upload': {
           title:          'TikTok Draft Upload',
