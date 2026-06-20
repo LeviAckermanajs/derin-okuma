@@ -8,7 +8,7 @@ import { spawnSync, spawn } from 'child_process';
 import net                  from 'net';
 import os                   from 'os';
 import { fileURLToPath } from 'url';
-import { resolveClaude } from '../scripts/resolve-claude-bin.mjs';
+import { buildAgentCommand, resolveCodexBin } from '../scripts/agent-runner.mjs';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT       = path.resolve(__dirname, '..');
@@ -49,7 +49,7 @@ try { fs.mkdirSync(JOBS_DIR, { recursive: true }); } catch {}
 
 const ALLOWED_ACTIONS = new Set([
   'validate-shorts', 'export-captions', 'tiktok-dry-run', 'tiktok-draft-upload',
-  'shorts-prep', 'shorts-fill', 'batch-create', 'blog-add',
+  'shorts-prep', 'shorts-fill', 'shorts-fill-codex', 'batch-create', 'blog-add', 'blog-add-codex',
   'youtube-dry-run', 'youtube-upload',
   'generate-mobile-caption',
   'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
@@ -57,7 +57,7 @@ const ALLOWED_ACTIONS = new Set([
 
 // Actions that don't require a slug parameter
 const NO_SLUG_ACTIONS = new Set([
-  'blog-add', 'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
+  'blog-add', 'blog-add-codex', 'service-status', 'start-n8n-main', 'start-n8n-worker', 'start-renderer', 'renderer-health',
 ]);
 
 // ── File helpers ──────────────────────────────────────────────────────────
@@ -629,7 +629,11 @@ function apiDraft(filename) {
 // ── API handlers ──────────────────────────────────────────────────────────
 
 function apiConfig() {
-  return { n8n_url: N8N_URL, cwd: ROOT };
+  try {
+    return { n8n_url: N8N_URL, cwd: ROOT, codex: { available: true, bin: resolveCodexBin() } };
+  } catch (error) {
+    return { n8n_url: N8N_URL, cwd: ROOT, codex: { available: false, error: error.message } };
+  }
 }
 
 function apiTokenStatus() {
@@ -916,20 +920,19 @@ function buildCommand(action, slug, params = {}) {
       preview: `node scripts/run-shorts-prep-pipeline.mjs --title "${title.trim()}"${slugPart} --day ${dayNum} --run-id ${runId} --force`,
     };
   }
-  if (action === 'shorts-fill') {
+  if (action === 'shorts-fill' || action === 'shorts-fill-codex') {
     const { run_id } = params;
     if (!run_id || !/^[a-zA-Z0-9_-]+$/.test(run_id)) return { error: 'invalid_run_id' };
-    const promptRelPath = `docs/video-tests/prompts/${slug}-fill-video-package-prompt.md`;
-    return {
-      args: [
-        path.join(SCRIPTS_DIR, 'run-shorts-fill-with-claude.mjs'),
-        '--slug',   slug,
-        '--run-id', run_id,
-      ],
-      env:         process.env,
-      preview:     `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${run_id}\n# Claude komutu:\nclaude --permission-mode acceptEdits -p <${promptRelPath}>`,
-      fillTimeout: true,
-    };
+    try {
+      return {
+        ...buildAgentCommand(action === 'shorts-fill' ? 'claude' : 'codex', 'shorts-fill', {
+          slug, run_id,
+        }),
+        fillTimeout: true,
+      };
+    } catch (error) {
+      return { error: action === 'shorts-fill' ? 'claude_not_found' : 'codex_not_found', error_message: error.message };
+    }
   }
   if (action === 'batch-create') {
     const { run_id } = params;
@@ -945,25 +948,26 @@ function buildCommand(action, slug, params = {}) {
       preview: `node scripts/build-video-batch.mjs --slug ${slug} --type shorts --run-id ${run_id} --force`,
     };
   }
-  if (action === 'blog-add') {
+  if (action === 'blog-add' || action === 'blog-add-codex') {
     const { draft_path } = params;
     if (!draft_path || typeof draft_path !== 'string') return { error: 'missing_draft_path' };
-    if (!draft_path.startsWith('docs/drafts/') || draft_path.includes('..'))
-      return { error: 'invalid_draft_path' };
-    const absPath = path.join(ROOT, draft_path);
+    const absPath = path.resolve(ROOT, draft_path);
+    if ((!absPath.startsWith(DRAFTS_DIR + path.sep) && absPath !== DRAFTS_DIR) ||
+        !draft_path.startsWith('docs/drafts/') || draft_path.includes('..')) return { error: 'invalid_draft_path' };
     if (!exists(absPath)) return { error: 'draft_not_found' };
-    let claudeBin;
+    let realDraftPath;
+    try { realDraftPath = fs.realpathSync(absPath); }
+    catch { return { error: 'draft_not_found' }; }
+    if (!realDraftPath.startsWith(fs.realpathSync(DRAFTS_DIR) + path.sep) || !fs.statSync(realDraftPath).isFile())
+      return { error: 'invalid_draft_path' };
     try {
-      claudeBin = resolveClaude();
+      return {
+        ...buildAgentCommand(action === 'blog-add' ? 'claude' : 'codex', 'blog-add', { draft_path }),
+        longTimeout: true,
+      };
     } catch (err) {
-      return { error: 'claude_not_found', error_message: err.message };
+      return { error: action === 'blog-add' ? 'claude_not_found' : 'codex_not_found', error_message: err.message };
     }
-    return {
-      executable:  claudeBin,
-      args:        ['--permission-mode', 'acceptEdits', '-p', `/add-blog-post ${draft_path}`],
-      preview:     `claude --permission-mode acceptEdits -p "/add-blog-post ${draft_path}"`,
-      longTimeout: true,
-    };
   }
   if (action === 'generate-mobile-caption') {
     return {
@@ -1071,10 +1075,11 @@ async function handleAction(body) {
   const cmd = buildCommand(action, slug || '', params ?? {});
   if (cmd.error) return cmd;
 
-  // shorts-fill runs as a background job so it survives browser disconnect and long runtimes
-  if (action === 'shorts-fill') {
-    const jobId     = `${slug}-fill-${Date.now()}`;
-    const jobResult = startBackgroundJob(cmd.args, cmd.env, jobId);
+  // Agent fill runs as a background job so it survives browser disconnect and long runtimes.
+  if (action === 'shorts-fill' || action === 'shorts-fill-codex') {
+    const provider  = action.endsWith('-codex') ? 'codex' : 'claude';
+    const jobId     = `${slug}-fill-${provider}-${Date.now()}`;
+    const jobResult = startBackgroundJob(cmd.args, cmd.env, jobId, cmd.executable || process.execPath);
     if (jobResult.error) return { error: jobResult.error };
     return {
       action,
@@ -1094,14 +1099,14 @@ async function handleAction(body) {
 
   // Pre-scan blog dir so we can detect newly created files after blog-add
   let preBlogFiles = new Set();
-  if (action === 'blog-add' && exists(BLOG_DIR)) {
+  if ((action === 'blog-add' || action === 'blog-add-codex') && exists(BLOG_DIR)) {
     try { preBlogFiles = new Set(fs.readdirSync(BLOG_DIR)); } catch {}
   }
 
   const result = spawnSync(executable, cmd.args, spawnOpts);
 
   // After successful blog-add: reliably find the new blog slug
-  if (result.status === 0 && action === 'blog-add' && params?.draft_path) {
+  if (result.status === 0 && (action === 'blog-add' || action === 'blog-add-codex') && params?.draft_path) {
     const draftFile = path.basename(params.draft_path);
     let foundSlug   = null;
 

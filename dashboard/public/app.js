@@ -2,7 +2,7 @@
 
 // ── Global state ───────────────────────────────────────────────────────────
 
-let config        = { n8n_url: 'http://localhost:5678', cwd: '' };
+let config        = { n8n_url: 'http://localhost:5678', cwd: '', codex: { available: false } };
 let activeTab     = 'drafts';
 let currentDraft  = null;   // draft filename shown in draft detail
 let currentSlug   = null;   // slug shown in shorts detail
@@ -21,6 +21,10 @@ let dayHintWarning  = null;
 let tikTokTokenOk   = false; // true when token is valid and not expired
 let localIpCache    = null;  // cached from /api/local-ip
 let modalConfirmText = null; // expected confirmation text for current modal
+const activeFillJobs = (() => {
+  try { return JSON.parse(localStorage.getItem('derin-okuma-active-fill-jobs') || '{}'); }
+  catch { return {}; }
+})();
 const draftParamCache = new Map();
 const slugParamCache  = new Map();
 
@@ -493,6 +497,8 @@ function cardDraftActions(d) {
   const fillEnabled = hasPrep && hasPipeline;
   const fillHint    = (hasPrep && !hasPipeline)
     ? 'Pipeline status eksik — önce Shorts Prep Oluştur\'u çalıştırın.' : '';
+  const codexOk     = config.codex?.available === true;
+  const codexHint   = codexOk ? fillHint : 'Codex CLI bulunamadı; terminalde codex --version kontrol edin';
   const ytHint      = !hasManifest
     ? 'publish-manifest.json bulunamadı. Önce n8n export akışını tamamla.' : '';
 
@@ -501,9 +507,12 @@ function cardDraftActions(d) {
       <h3>Workflow Aksiyonları</h3>
       <div class="action-bar">
         ${ab('blog-add',        '+ Blog Yazısını Ekle',         !hasBlog)}
+        ${ab('blog-add-codex',  '+ Blog Yazısını Ekle — Codex', !hasBlog && codexOk, false,
+             !codexOk ? 'Codex CLI bulunamadı; terminalde codex --version kontrol edin' : '')}
         ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (isFilled ? ' ⚠' : ''), hasBlog, isFilled,
              !hasBlog ? 'Önce Blog Yazısını Ekle.' : '')}
         ${ab('shorts-fill',     '◇ Claude ile Paketi Doldur',   fillEnabled,          false,  fillHint)}
+        ${ab('shorts-fill-codex','◇ Codex ile Paketi Doldur',   fillEnabled && codexOk, false, codexHint)}
         ${ab('validate-shorts', '✓ Validate Shorts',            hasPrep)}
         ${ab('batch-create',    '⊞ Batch Oluştur',              valPass)}
         ${ab('copy-batch',      '⎘ Copy Batch Load Input',      hasBatch)}
@@ -541,6 +550,7 @@ function collectDraftParams(d) {
 }
 
 function wireDraftDetailButtons(d) {
+  const codexOk = config.codex?.available === true;
   wireDatePickers();
   wireDayRunIdInputs('dp-day', 'dp-run-id', () =>
     rememberParams(draftParamCache, d.filename, { day: 'dp-day', run_id: 'dp-run-id' }));
@@ -599,6 +609,15 @@ function wireDraftDetailButtons(d) {
           command: `claude -p "/add-blog-post ${d.draft_path}"`,
           cwd,
         },
+        'blog-add-codex': {
+          title:   'Blog Yazısını Ekle — Codex',
+          label:   'Codex ile taslaktan blog yazısı oluşturma',
+          command: codexOk
+            ? `codex exec --cd ${cwd} --sandbox workspace-write "<blog-add prompt for ${d.draft_path}>"`
+            : null,
+          cwd,
+          warning: codexOk ? null : 'Codex bulunamadı. Terminalde codex --version ile kurulumu kontrol edin.',
+        },
         'shorts-prep': {
           title:   'Shorts Prep Oluştur',
           label:   'Shorts pipeline (prep → validate → batch)',
@@ -617,6 +636,15 @@ function wireDraftDetailButtons(d) {
             ? `node scripts/run-shorts-fill-with-claude.mjs --slug ${slug} --run-id ${p.run_id}`
             : null,
           cwd,
+        },
+        'shorts-fill-codex': {
+          title:   'Codex ile Paketi Doldur',
+          label:   'Codex ile içerik doldurma',
+          command: codexOk && p.run_id && slug
+            ? `node scripts/run-shorts-fill-with-codex.mjs --slug ${slug} --run-id ${p.run_id}`
+            : null,
+          cwd,
+          warning: codexOk ? null : 'Codex bulunamadı. Terminalde codex --version ile kurulumu kontrol edin.',
         },
         'validate-shorts': {
           title:   'Validate Shorts',
@@ -1017,6 +1045,8 @@ function cardActions(d) {
   const fillEnabled = hasPkg && hasPipeline;
   const fillHint    = (hasPkg && !hasPipeline)
     ? 'Pipeline status eksik — önce Shorts Prep Oluştur\'u çalıştırın.' : '';
+  const codexOk     = config.codex?.available === true;
+  const codexHint   = codexOk ? fillHint : 'Codex CLI bulunamadı; terminalde codex --version kontrol edin';
   const ytHint      = !hasManifest
     ? 'publish-manifest.json bulunamadı. Önce n8n export akışını tamamla.' : '';
 
@@ -1032,8 +1062,11 @@ function cardActions(d) {
       <h3>Aksiyonlar</h3>
       <div class="action-bar">
         ${ab('blog-add',        '+ Blog Yazısını Ekle',         !d.blog_exists)}
+        ${ab('blog-add-codex',  '+ Blog Yazısını Ekle — Codex', !d.blog_exists && codexOk, false,
+             !codexOk ? 'Codex CLI bulunamadı; terminalde codex --version kontrol edin' : '')}
         ${ab('shorts-prep',     '⊕ Shorts Prep Oluştur' + (pkgFilled ? ' ⚠' : ''), true,          pkgFilled)}
         ${ab('shorts-fill',     '◇ Claude ile Paketi Doldur',   fillEnabled,         false, fillHint)}
+        ${ab('shorts-fill-codex','◇ Codex ile Paketi Doldur',   fillEnabled && codexOk, false, codexHint)}
         ${ab('validate-shorts', '✓ Validate Shorts',            hasPkg)}
         ${ab('batch-create',    '⊞ Batch Oluştur',              valPass)}
         ${ab('copy-batch',      '⎘ Copy Batch Load Input',      batchOk)}
@@ -1079,6 +1112,7 @@ async function fillDraftsList() {
 }
 
 function wireDetailButtons(d) {
+  const codexOk = config.codex?.available === true;
   wireDatePickers();
   wireDayRunIdInputs('param-day', 'param-run-id', () =>
     rememberParams(slugParamCache, d.slug, { day: 'param-day', run_id: 'param-run-id' }));
@@ -1174,6 +1208,15 @@ function wireDetailButtons(d) {
             : null,
           cwd,
         },
+        'shorts-fill-codex': {
+          title:   'Codex ile Paketi Doldur',
+          label:   'Codex ile içerik doldurma',
+          command: codexOk && p.run_id
+            ? `node scripts/run-shorts-fill-with-codex.mjs --slug ${d.slug} --run-id ${p.run_id}`
+            : null,
+          cwd,
+          warning: codexOk ? null : 'Codex bulunamadı. Terminalde codex --version ile kurulumu kontrol edin.',
+        },
         'batch-create': {
           title:   'Batch Oluştur',
           label:   'Video batch oluşturma',
@@ -1189,6 +1232,15 @@ function wireDetailButtons(d) {
             ? `claude -p "/add-blog-post ${p.draft_path}"`
             : null,
           cwd,
+        },
+        'blog-add-codex': {
+          title:   'Blog Yazısını Ekle — Codex',
+          label:   'Codex ile taslaktan blog yazısı oluşturma',
+          command: codexOk && p.draft_path
+            ? `codex exec --cd ${cwd} --sandbox workspace-write "<blog-add prompt for ${p.draft_path}>"`
+            : null,
+          cwd,
+          warning: codexOk ? null : 'Codex bulunamadı. Terminalde codex --version ile kurulumu kontrol edin.',
         },
         'tiktok-draft-upload': {
           title:          'TikTok Draft Upload',
@@ -1458,6 +1510,11 @@ function stopJobMonitor() {
   logOffset    = 0;
 }
 
+function fillJobKey(action, slug) { return `${action}:${slug}`; }
+function saveActiveFillJobs() {
+  localStorage.setItem('derin-okuma-active-fill-jobs', JSON.stringify(activeFillJobs));
+}
+
 async function monitorJob(jobId) {
   stopJobMonitor();
   monitorJobId = jobId;
@@ -1487,6 +1544,10 @@ async function monitorJob(jobId) {
       const st = await stRes.json();
 
       if (['done', 'failed', 'killed', 'unknown_completed'].includes(st.status)) {
+        for (const [key, value] of Object.entries(activeFillJobs)) {
+          if (value === jobId) delete activeFillJobs[key];
+        }
+        saveActiveFillJobs();
         stopJobMonitor();
         if (st.status === 'done') {
           statusEl.className   = 'modal-status ok';
@@ -1587,6 +1648,14 @@ function openModal(spec) {
   }
 
   document.getElementById('modal-overlay').classList.remove('hidden');
+
+  const existingJob = activeFillJobs[fillJobKey(spec.action, spec.slug)];
+  if (existingJob) {
+    document.getElementById('modal-output-section').classList.remove('hidden');
+    runBtn.disabled = true;
+    runBtn.textContent = 'Çalışıyor…';
+    monitorJob(existingJob);
+  }
 }
 
 function closeModal() {
@@ -1668,6 +1737,10 @@ async function runModal() {
 
     // Background job — stream logs via polling; button re-enabled when job ends
     if (data.job_id) {
+      if (modalAction === 'shorts-fill' || modalAction === 'shorts-fill-codex') {
+        activeFillJobs[fillJobKey(modalAction, modalSlug)] = data.job_id;
+        saveActiveFillJobs();
+      }
       statusEl.className   = 'modal-status';
       statusEl.textContent = `Arka plan işi başlatıldı: ${data.job_id}`;
       monitorJob(data.job_id);
