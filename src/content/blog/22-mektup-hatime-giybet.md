@@ -1,0 +1,88 @@
+---
+title: "Dilin Görmediği Yara: 22. Mektup'un Hâtimesinde Gıybet"
+description: "22. Mektup'un Hâtime bölümü, gıybetin akla, kalbe, vicdana, kardeşliğe ve toplum hayatına verdiği zararı; sınırlarını ve sorumluluğunu açıklar."
+pubDate: 2026-06-21
+source: "22. Mektup"
+---
+
+## Bir Kapanışta Açılan Ağır Konu
+
+Risale-i Nur Külliyatı'nda **22. Mektup'un Hâtime** kısmı, doğrudan "gıybet" meselesine ayrılır. Hâtime, yani eserin sonuna eklenen kapanış kısmı, burada sadece bir sonuç cümlesi değildir; insanın dilini, kalbini, vicdanını ve toplum hayatını ilgilendiren derin bir muhasebe alanıdır.
+
+Metin, gıybetin çirkinliğini anlatırken uzun uzun yeni deliller aramaz. Kur'ân'daki bir ayetin zaten meseleyi bütün açıklığıyla gösterdiğini söyler. Risale-i Nur'da şöyle geçer:
+
+> "Kur'ân'ın nazarında gıybet ne kadar şenî bir şey olduğunu tamamıyla gösterdiğinden, başka beyana ihtiyaç bırakmamış."
+
+Yani burada mesele sadece "arkadan konuşmak ayıptır" seviyesinde ele alınmaz. Gıybet, insanın aklına, kalbine, vicdanına, kardeşlik duygusuna ve toplum hayatına aynı anda zarar veren bir davranış olarak gösterilir.
+
+## Bir Söz, Altı Yerden İnsanı Yaralar
+
+Metnin merkezinde, Hucurât Suresi'ndeki şu anlam vardır: İnsan, ölmüş kardeşinin etini yemekten nasıl tiksinirse, gıybetten de öyle tiksinmelidir. Risale-i Nur, bu ayetin kelimelerinde gıybete karşı altı ayrı uyarı bulunduğunu söyler.
+
+İlk uyarı akladır. İnsan aklı, böyle çirkin bir şeyi nasıl normal görebilir? Gıybet eden kişi, aslında aklının önüne gelmesi gereken bir engeli aşmış olur.
+
+İkinci uyarı kalbedir. Çünkü kalp sevmenin ve nefret etmenin yeridir. Metin, insanın kalbine şöyle sorar: Kalbin bozuldu mu ki bu kadar nefret edilmesi gereken bir şeyi seviyorsun?
+
+Üçüncü uyarı toplum hayatınadır. Gıybet, sadece iki kişi arasında kalmaz; güveni, kardeşliği ve birlikte yaşama duygusunu zedeler. Bir cemaatin, bir toplumun, bir aile veya arkadaş çevresinin içten içe zehirlenmesi çoğu zaman böyle başlar.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Hayat-ı içtimaiye ve medeniyetiniz ne olmuş ki böyle hayatınızı zehirleyen bir ameli kabul eder?"
+
+Dördüncü uyarı insanlığadır. Ayet, gıybeti ölü kardeşinin etini yemek gibi tasvir eder. Bu benzetme, meseleyi insanın hayalinde bile ağırlaştırır. Çünkü gıybet edilen kişi orada değildir; kendini savunamaz. Manevî şahsiyeti, sanki yokluğunda parçalanır.
+
+Beşinci uyarı kardeşlik duygusudur. Metin, gıybet edilen kişiyi sadece "başkası" olarak görmez; onu birçok yönden kardeş sayar. Aynı insanlık ailesinden, aynı inanç dairesinden, aynı toplum bağlarından gelen bir kişiye karşı yapılan bu davranışın insafsızlığını gösterir.
+
+Altıncı uyarı vicdanadır. İnsanın fıtratı böyle bir şeyi kabul etmemelidir. Çünkü gıybet, duyulduğunda sahibini mahcup edecek, hedef alınanı incitecek bir sözdür.
+
+Bu yüzden metin gıybeti sadece dinî bir yasak olarak değil, insanın bütün iç düzenine ters düşen bir davranış olarak anlatır. Aklın kabul etmez. Kalbin sevmemeli. Vicdanın razı olmamalı. Kardeşlik duygun kaldırmamalı. İnsanlığın buna tenezzül etmemeli.
+
+## Gıybet Nedir, Ne Zaman Başka Bir Şeye Dönüşür?
+
+Metin, gıybetin tanımını çok net verir. Bir insan hakkında, o kişi orada olsa ve duyduğu zaman rahatsız olacak bir söz söyleniyorsa, bu gıybettir.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Gıybet odur ki gıybet edilen adam hazır olsa idi ve işitse idi, kerâhet edip darılacaktı."
+
+Burada önemli bir ayrım yapılır. Söylenen şey doğruysa "zaten gıybettir." Eğer yalan ise bu defa mesele daha da ağırlaşır: Hem gıybet hem iftira olur. Metnin ifadesiyle bu, "iki katlı çirkin bir günahtır."
+
+Fakat metin, bazı özel durumlarda bir kişinin kusurundan bahsetmenin gıybet hükmünde olmayabileceğini de belirtir. Bunlar keyfî konuşmalar değildir; garazsız, yani kötü niyet taşımayan ve hakka ya da maslahata dayanan durumlardır.
+
+Mesela bir haksızlığı giderebilecek görevli kişiye şikâyet etmek böyledir. Amaç kişinin ayıbını yaymak değil, bir yanlışın düzeltilmesidir.
+
+Birisi biriyle ortak iş yapmak ister ve sana danışırsa, sadece onun iyiliği için, kötü niyet taşımadan "Onunla çalışma, zarar görebilirsin" demek de bu kapsamdadır.
+
+Bir kişiyi tahkir etmek veya teşhir etmek için değil de tanıtmak ve tarif etmek için bazı belirgin özelliklerini söylemek de ayrı değerlendirilir.
+
+Bir de işlediği kötülükten utanmayan, onu açıkça yapan ve bundan sıkılmayan kişi hakkında konuşma meselesi vardır. Metin bunu da özel maddeler arasında sayar.
+
+Ama bütün bu istisnaların ortak noktası şudur: Niyet garaz olmayacak. Maksat küçük düşürmek, zevk almak, intikam almak, yaymak, yaralamak olmayacak. Sadece hak ve maslahat için söylenecek.
+
+Çünkü normal hâliyle gıybetin zararı büyüktür. Risale-i Nur'da şöyle geçer:
+
+> "Gıybet, nasıl ateş odunu yer bitirir; gıybet dahi a'mâl-i sâlihayı yer bitirir."
+
+Bu cümle, insanın iyi amellerini koruması gerektiğini hatırlatır. Dilin küçük gördüğü bir söz, kalbin ve amelin biriktirdiği iyilikleri zedeleyebilir.
+
+## Dil Sustuktan Sonra Kalan Sorumluluk
+
+Metin, sadece "gıybet etmeyin" demekle bitmez. Eğer insan gıybet etmişse veya isteyerek dinlemişse ne yapması gerektiğini de söyler. Önce Allah'tan bağışlanma dilemelidir. Sonra fırsat bulduğunda, hakkında konuştuğu kişiden helallik istemelidir.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Allah'ım, bizi ve gıybet ettiğimiz kişiyi bağışla."
+>
+> "Sonra gıybet edilen adama ne vakit rast gelse, 'Beni helâl et' demeli."
+
+Bu kapanış çok sade ama ağırdır. Çünkü gıybet çoğu zaman konuşulduğu anda hafif gelir. Bir ortamda söylenir, geçer gider sanılır. Fakat metin, o sözün arkasında bir hak kaldığını gösterir. Dilde biten şey, kul hakkı olarak devam edebilir.
+
+22. Mektup'un Hâtimesi, okuyucuyu dilinden önce kalbine baktırır. Birinin yokluğunda söylediğimiz söz, gerçekten hak için mi? Yoksa nefis, haset, inat veya düşmanlık kendine bir yol mu buluyor?
+
+Metnin sonunda verilen ölçü insanın içinde kalıyor: Gıybet, güçlü ve izzetli bir insanın silahı değildir. Risale-i Nur'da şöyle geçer:
+
+> "Çünkü gıybet, zayıf ve zelillerin silahıdır."
+
+Belki de bu yüzden en büyük mücadele, konuşacak söz bulmakta değil; konuşmamayı başaracak bir iç kuvvet kazanmaktadır. Geriye metnin sonundaki sade hakikat kalır:
+
+> "Bâki olan yalnız Allah'tır."

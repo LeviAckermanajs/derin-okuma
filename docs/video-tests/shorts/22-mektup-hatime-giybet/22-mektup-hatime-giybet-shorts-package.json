@@ -1,0 +1,86 @@
+{
+  "source": {"blog_post":"22-mektup-hatime-giybet","title":"22. Mektup - Hatime","source_files":["src/content/blog/22-mektup-hatime-giybet.md"]},
+  "test_day": "day-42",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id":"short-001",
+      "hook":"Bir insanın yokluğunda söylediğimiz söz, neden bu kadar ağır olabilir?",
+      "title":"Gıybet Neden Görünmeyen Bir Yaradır?",
+      "description":"Gıybet, konuşma bittiğinde sona ermez; insanın onurunda ve söyleyenin kalbinde iz bırakır. Dilin görünmeyen sorumluluğunu düşünelim. #derinokuma #shorts #tefekkür #iman #gıybet #ahlak",
+      "hashtags":["#derinokuma","#shorts","#tefekkür","#iman","#gıybet","#ahlak"],
+      "thumbnail_or_cover_text":"GÖRÜNMEYEN YARA",
+      "scenes":[
+        {"scene_id":"scene-001","narration":"Bir insanın yokluğunda söylediğimiz söz, neden bu kadar ağır olabilir? Çünkü o kişi kendini savunamaz; onuru, haberi olmadan başkalarının diline bırakılır.","visual_note":"empty chair in a quiet room, soft side light, cinematic mood","keywords":["empty chair","quiet room","soft light"]},
+        {"scene_id":"scene-002","narration":"Gıybet küçük bir sohbet parçası gibi görünür. Fakat aklı kusur aramaya, kalbi nefrete ve vicdanı sessiz kalmaya alıştırır.","visual_note":"dark ink slowly spreading through clear water","keywords":["ink in water","spreading","hidden harm"]},
+        {"scene_id":"scene-003","narration":"Konuşma birkaç dakika sürse de açtığı yara daha uzun yaşayabilir. Dili korumak, yalnızca başkasının itibarını değil, kendi iç dünyamızı da korumaktır.","visual_note":"hands protecting a small warm light in darkness","keywords":["protective hands","warm light","dignity"]}
+      ]
+    },
+    {
+      "short_id":"short-002",
+      "hook":"Gıybet edilen bir ortamda neden kimse gerçekten güvende değildir?",
+      "title":"Gıybet Güveni Nasıl Zehirler?",
+      "description":"Başkalarının kusurlarıyla kurulan sohbet, dostluğu değil kuşkuyu büyütür. Gıybetin toplumsal güveni nasıl aşındırdığını düşünelim. #derinokuma #shorts #tefekkür #gıybet #kardeşlik #güven",
+      "hashtags":["#derinokuma","#shorts","#tefekkür","#gıybet","#kardeşlik","#güven"],
+      "thumbnail_or_cover_text":"GÜVEN SESSİZCE ÇÖKER",
+      "scenes":[
+        {"scene_id":"scene-001","narration":"Gıybet edilen bir ortamda neden kimse gerçekten güvende değildir? Çünkü herkes aynı soruyu düşünür: Ben ayrıldığımda benim hakkımda ne konuşulacak?","visual_note":"group at cafe with one empty chair, subtle social tension","keywords":["cafe group","empty chair","distrust"]},
+        {"scene_id":"scene-002","narration":"Başkalarının kusurları üzerine kurulan yakınlık, gerçek dostluk üretmez. İnsanları birbirine bağlar gibi görünürken aralarına şüphe yerleştirir.","visual_note":"friends sitting apart on a long bench, muted evening colors","keywords":["distant friends","bench","suspicion"]},
+        {"scene_id":"scene-003","narration":"Aileler, arkadaşlıklar ve çalışma ortamları bazen büyük kavgalarla değil, küçük imalarla yorulur. Güveni korumanın yolu, yokluğunda da insanın hakkını korumaktır.","visual_note":"small crack spreading across a glass surface, symbolic close-up","keywords":["cracked glass","trust","fragility"]}
+      ]
+    },
+    {
+      "short_id":"short-003",
+      "hook":"Söylediğiniz şey doğruysa, gıybet olmaktan çıkar mı?",
+      "title":"Doğru Söz Ne Zaman Gıybettir?",
+      "description":"Bir kusurun gerçek olması, onu kişinin yokluğunda yaymayı masumlaştırmaz. Doğruluk ile söz hakkı arasındaki sınır üzerine. #derinokuma #shorts #tefekkür #iman #gıybet #dil",
+      "hashtags":["#derinokuma","#shorts","#tefekkür","#iman","#gıybet","#dil"],
+      "thumbnail_or_cover_text":"DOĞRUYSA DA GIYBET",
+      "scenes":[
+        {"scene_id":"scene-001","narration":"Söylediğiniz şey doğruysa, gıybet olmaktan çıkar mı? Hayır. Gerçek bir kusuru kişinin yokluğunda ve onu incitecek biçimde anlatmak, gıybetin kendisidir.","visual_note":"sealed letter beside an open noticeboard, symbolic privacy contrast","keywords":["sealed letter","noticeboard","privacy"]},
+        {"scene_id":"scene-002","narration":"Doğruluk, her bilgiyi her yerde söyleme izni vermez. Bir sözün gerçekliği kadar niçin, kime ve ne ölçüde söylendiği de önemlidir.","visual_note":"person weighing two stones on an old balance scale","keywords":["balance scale","judgment","measure"]},
+        {"scene_id":"scene-003","narration":"Eğer anlatılan şey yalan ise yük daha da ağırlaşır; gıybete iftira eklenir. Dili koruyan ölçü, bilgiden önce adalet ve merhamettir.","visual_note":"distorted reflection in cracked mirror, restrained dramatic light","keywords":["cracked mirror","distortion","justice"]}
+      ]
+    },
+    {
+      "short_id":"short-004",
+      "hook":"Hiç konuşmadan da gıybete ortak olabilir miyiz?",
+      "title":"Dinleyen Gıybete Nasıl Ortak Olur?",
+      "description":"Gıybet, yalnızca konuşanın sesiyle değil, onu besleyen ilgiyle de sürer. Bir sohbeti incitmeden durdurmanın yolları üzerine. #derinokuma #shorts #tefekkür #gıybet #vicdan #sorumluluk",
+      "hashtags":["#derinokuma","#shorts","#tefekkür","#gıybet","#vicdan","#sorumluluk"],
+      "thumbnail_or_cover_text":"DİNLEYENİN PAYI",
+      "scenes":[
+        {"scene_id":"scene-001","narration":"Hiç konuşmadan da gıybete ortak olabilir miyiz? İstekle dinlemek, gülmek veya yeni ayrıntılar sormak, yanlış sözün devamına güç verir.","visual_note":"small group listening closely to a whisper, subdued indoor scene","keywords":["group listening","whisper","complicity"]},
+        {"scene_id":"scene-002","narration":"Sessizlik her zaman onay değildir; fakat bazen ortamın rahatça sürmesine izin verir. Vicdanın rahatsızlığı, bize bir sınır koyma sorumluluğu hatırlatır.","visual_note":"thoughtful person becoming uneasy during group conversation","keywords":["uneasy person","conversation","conscience"]},
+        {"scene_id":"scene-003","narration":"Konuyu değiştirmek, kişinin iyi bir yönünü hatırlatmak veya nazikçe ayrılmak mümkündür. Gıybeti durdurmak için her zaman sertleşmek gerekmez; sakin bir tavır da yeterlidir.","visual_note":"person gently redirecting conversation with calm hand gesture","keywords":["calm gesture","boundary","redirection"]}
+      ]
+    },
+    {
+      "short_id":"short-005",
+      "hook":"Birinin kusurunu söylemek ne zaman gıybet sayılmaz?",
+      "title":"Kusur Söylemek Ne Zaman Gerekir?",
+      "description":"Hakkı korumak için gerekli uyarı ile ayıbı yaymak arasındaki farkı niyet, muhatap ve ölçü belirler. #derinokuma #shorts #tefekkür #gıybet #adalet #niyet",
+      "hashtags":["#derinokuma","#shorts","#tefekkür","#gıybet","#adalet","#niyet"],
+      "thumbnail_or_cover_text":"NİYET VE ÖLÇÜ",
+      "scenes":[
+        {"scene_id":"scene-001","narration":"Birinin kusurunu söylemek ne zaman gıybet sayılmaz? Bir haksızlığı gidermek, ciddi bir zararı önlemek veya samimi bir danışmaya cevap vermek için gerekli bilgi paylaşılabilir.","visual_note":"serious private consultation across a desk, respectful setting","keywords":["private consultation","desk","responsibility"]},
+        {"scene_id":"scene-002","narration":"Fakat üç ölçü korunmalıdır: Söz doğru kişiye, haklı bir amaçla ve yalnızca gerektiği kadar söylenmelidir. Öfke, teşhir ve intikam bu sınırı bozar.","visual_note":"three balanced stones stacked carefully, minimalist scene","keywords":["balanced stones","measure","restraint"]},
+        {"scene_id":"scene-003","narration":"Niyet yarayı onarmaksa dil çözüm arar; kişiyi küçültmekse ayrıntıları çoğaltır. İnsan konuşmadan önce kendi maksadına dürüstçe bakmalıdır.","visual_note":"person looking into mirror in quiet morning light","keywords":["mirror","intention","self reflection"]}
+      ]
+    },
+    {
+      "short_id":"short-006",
+      "hook":"Gıybet ettikten sonra yalnızca pişman olmak yeterli midir?",
+      "title":"Gıybetten Sonra Ne Yapılır?",
+      "description":"Dilde biten hata, kul hakkı olarak sürebilir. Bağışlanma, sorumluluk ve incitmeden helallik istemek üzerine. #derinokuma #shorts #tefekkür #iman #gıybet #helallik",
+      "hashtags":["#derinokuma","#shorts","#tefekkür","#iman","#gıybet","#helallik"],
+      "thumbnail_or_cover_text":"SÖZ BİTER HAK KALIR",
+      "scenes":[
+        {"scene_id":"scene-001","narration":"Gıybet ettikten sonra yalnızca pişman olmak yeterli midir? Pişmanlık başlangıçtır; insan önce hatasını kabul eder ve Allah'tan hem kendisi hem de incittiği kişi için bağışlanma ister.","visual_note":"person praying quietly beside a window before sunrise","keywords":["prayer","sunrise","repentance"]},
+        {"scene_id":"scene-002","narration":"Fakat söz başka bir insanın onuruna da dokunmuştur. Uygun fırsatta helallik istemek, dilde biten hatanın geride bıraktığı hakkı üstlenmektir.","visual_note":"two people speaking sincerely face to face in warm light","keywords":["sincere apology","forgiveness","warm light"]},
+        {"scene_id":"scene-003","narration":"Özür, karşı tarafı yeniden yaralayacak ayrıntılara dönüşmemelidir. Sade, samimi ve mazeretsiz bir helallik talebi; ardından da aynı yanlışa dönmemek için gerçek bir çaba gerekir.","visual_note":"open hands during quiet apology, close-up, gentle mood","keywords":["open hands","apology","sincerity"]}
+      ]
+    }
+  ]
+}

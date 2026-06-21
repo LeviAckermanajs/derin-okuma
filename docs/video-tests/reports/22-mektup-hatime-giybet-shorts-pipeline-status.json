@@ -1,0 +1,17 @@
+{
+  "slug": "22-mektup-hatime-giybet",
+  "title": "22. Mektup - Hatime",
+  "day": 42,
+  "dayTag": "day-42",
+  "runId": "day42-batch-a",
+  "timestamp": "2026-06-21T11:44:23.227Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/22-mektup-hatime-giybet-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/22-mektup-hatime-giybet-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/22-mektup-hatime-giybet-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-22-mektup-hatime-giybet-short-*-day42-batch-a"
+  },
+  "fillTimestamp": "2026-06-21T11:54:21.586Z"
+}
