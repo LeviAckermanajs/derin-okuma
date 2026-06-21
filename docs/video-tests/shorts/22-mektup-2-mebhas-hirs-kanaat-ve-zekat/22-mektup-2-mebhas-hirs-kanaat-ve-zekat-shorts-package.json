@@ -1,0 +1,86 @@
+{
+  "source": {"blog_post": "22-mektup-2-mebhas-hirs-kanaat-ve-zekat", "title": "22. Mektup - 2. Mebhas", "source_files": ["src/content/blog/22-mektup-2-mebhas-hirs-kanaat-ve-zekat.md"]},
+  "test_day": "day-41",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan neden daha çok istedikçe daha az huzur bulur?",
+      "title": "Hırs Neden Huzuru Azaltır?",
+      "description": "Hırs, kazancı büyütürken kalbi daraltabilir. Gayret ile yıpratıcı telaş arasındaki sınırı düşünelim. #derinokuma #shorts #tefekkür #iman #hırs #kanaat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#hırs", "#kanaat"],
+      "thumbnail_or_cover_text": "HIRS HUZURU AZALTIR",
+      "scenes": [
+        {"scene_id": "scene-001", "narration": "İnsan neden daha çok istedikçe daha az huzur bulur? Çünkü istek telaşa dönüştüğünde, hedef büyürken kalbin sükûneti küçülür.", "visual_note": "fast moving crowd around one anxious person, cinematic city scene", "keywords": ["crowd", "anxiety", "city"]},
+        {"scene_id": "scene-002", "narration": "Çalışmak kıymetlidir; fakat sonucu zorla ele geçirme arzusu dikkati doğru adımdan koparır. İnsan kazansa bile şükrünü ve sabrını kaybedebilir.", "visual_note": "overworked person at desk surrounded by papers, evening light", "keywords": ["overwork", "desk", "stress"]},
+        {"scene_id": "scene-003", "narration": "Gayret vazifeye, hırs ise yalnızca neticeye bakar. Kalbi koruyan ölçü, elinden geleni yapıp sonucu mutlak biçimde kendi gücüne bağlamamaktır.", "visual_note": "calm walker on open road at sunrise, wide landscape", "keywords": ["open road", "sunrise", "calm"]}
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Kanaat, daha azına razı olup çalışmayı bırakmak mıdır?",
+      "title": "Kanaat Neden Tembellik Değildir?",
+      "description": "Kanaat, çabayı bırakmak değil; kalbi sonucun esaretinden kurtarmaktır. Nimeti lütuf bilerek çalışmanın anlamı üzerine. #derinokuma #shorts #tefekkür #iman #kanaat #şükür",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kanaat", "#şükür"],
+      "thumbnail_or_cover_text": "KANAAT TEMBELLİK DEĞİL",
+      "scenes": [
+        {"scene_id": "scene-001", "narration": "Kanaat, daha azına razı olup çalışmayı bırakmak mıdır? Hayır; kanaat çabayı değil, insanı içten içe tüketen hak iddiasını bırakmaktır.", "visual_note": "artisan working steadily in quiet sunlit workshop", "keywords": ["artisan", "workshop", "steady work"]},
+        {"scene_id": "scene-002", "narration": "Kanaat sahibi insan elinden geleni yapar, gelişmek ister ve sorumluluklarını yerine getirir. Fakat elindekini değersiz görerek bugünün nimetini zehirlemez.", "visual_note": "simple meal on wooden table, hands pausing in gratitude", "keywords": ["simple meal", "gratitude", "hands"]},
+        {"scene_id": "scene-003", "narration": "Böylece kazanç kalbin efendisi değil, hayatın bir vasıtası olur. Çalışma sürer; kaygının hükmü azalır.", "visual_note": "peaceful worker closing workshop at sunset", "keywords": ["worker", "sunset", "peace"]}
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bazen aradığımız şeyden bizi uzaklaştıran, onu fazla istememizdir.",
+      "title": "Hırs Sonucu Nasıl Uzaklaştırır?",
+      "description": "Uyku, bekleyiş ve sabırsızlık bize aynı sırrı gösterir: Neticeyi zorlamak bazen onu uzaklaştırır. #derinokuma #shorts #tefekkür #sabır #hırs #tevekkül",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#sabır", "#hırs", "#tevekkül"],
+      "thumbnail_or_cover_text": "ZORLADIKÇA UZAKLAŞIR",
+      "scenes": [
+        {"scene_id": "scene-001", "narration": "Bazen aradığımız şeyden bizi uzaklaştıran, onu fazla istememizdir. Uyumak için kendimizi zorladıkça uykunun kaçması gibi.", "visual_note": "restless person awake in bed under soft moonlight", "keywords": ["insomnia", "bed", "moonlight"]},
+        {"scene_id": "scene-002", "narration": "Beklerken son bir dakika sabredemeyip ayrılırız; beklediğimiz kişi hemen ardından gelir. Hırs, neticenin eşiğinde bile insanı sabırsızlığa düşürebilir.", "visual_note": "person leaving platform while friend arrives behind", "keywords": ["platform", "waiting", "arrival"]},
+        {"scene_id": "scene-003", "narration": "Çözüm istemekten vazgeçmek değil, doğru adımı sakinlikle sürdürmektir. Sabır, neticeyi zorlamak yerine sürecin hakkını vermektir.", "visual_note": "potter calmly shaping clay on spinning wheel", "keywords": ["potter", "clay", "patience"]}
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir ekmek bile sofraya gelmeden kaç basamaktan geçer?",
+      "title": "Sonuçlar Neden Birden Gelmez?",
+      "description": "Her neticenin görünmeyen bir hazırlık zamanı vardır. Basamakları atlamak hız değil, eksiklik getirebilir. #derinokuma #shorts #tefekkür #sabır #hikmet #tevekkül",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#sabır", "#hikmet", "#tevekkül"],
+      "thumbnail_or_cover_text": "HER ŞEYİN BİR SIRASI VAR",
+      "scenes": [
+        {"scene_id": "scene-001", "narration": "Bir ekmek bile sofraya gelmeden kaç basamaktan geçer? Tohum, tarla, hasat, değirmen ve fırın; her aşama neticenin bir parçasıdır.", "visual_note": "wheat field transitioning to flour mill and bakery bread", "keywords": ["wheat", "mill", "bread"]},
+        {"scene_id": "scene-002", "narration": "Hayattaki işler de görünmeyen hazırlıklarla olgunlaşır. Hırs ise bu basamakları gecikme sanır ve hemen sona ulaşmak ister.", "visual_note": "time lapse seed growing into plant through soil", "keywords": ["seed growth", "soil", "time lapse"]},
+        {"scene_id": "scene-003", "narration": "Fakat olgunlaşmadan atlanan basamak, sonucu hızlandırmak yerine kırılgan bırakır. Sabır, her aşamada yapılması gereken işi hakkıyla yapmaktır.", "visual_note": "careful hands climbing stone steps slowly and steadily", "keywords": ["stone steps", "steady", "progress"]}
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Zekât malı eksiltir mi, yoksa onu başka bir ölçüde çoğaltır mı?",
+      "title": "Zekât Bereketi Nasıl Artırır?",
+      "description": "Bereket yalnızca sayının çoğalması değildir. Zekât, malı dua, şükür ve toplumsal güvenle buluşturur. #derinokuma #shorts #tefekkür #iman #zekât #bereket",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#zekât", "#bereket"],
+      "thumbnail_or_cover_text": "ZEKÂT EKSİLTMEZ",
+      "scenes": [
+        {"scene_id": "scene-001", "narration": "Zekât malı eksiltir mi, yoksa onu başka bir ölçüde çoğaltır mı? Bereket, yalnızca kasadaki rakamın büyümesi değildir.", "visual_note": "hands counting coins then setting a portion aside", "keywords": ["coins", "sharing", "portion"]},
+        {"scene_id": "scene-002", "narration": "Malın hayra yetmesi, sahibini esir etmemesi ve ihtiyaç sahibinin duasına vesile olması da berekettir. Paylaşılan imkân toplumsal güveni besler.", "visual_note": "respectful food package exchange between neighbors", "keywords": ["food package", "neighbors", "trust"]},
+        {"scene_id": "scene-003", "narration": "Zekât, verenin şükrünü ve alanın hakkını korur. Böylece servet, yalnızca biriktirilen bir yük değil, iyiliğe açılan bir emanet olur.", "visual_note": "open hands holding seeds above fertile earth", "keywords": ["open hands", "seeds", "stewardship"]}
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Yardım ederken bir insanın onurunu incitmek mümkün mü?",
+      "title": "İyilik Onuru Nasıl Korur?",
+      "description": "İyiliğin değeri yalnızca verilende değil, niyette ve veriliş biçimindedir. Gerçek yardım üstünlük kurmaz. #derinokuma #shorts #tefekkür #zekât #ihsan #merhamet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#zekât", "#ihsan", "#merhamet"],
+      "thumbnail_or_cover_text": "İYİLİK İNCİTMEMELİ",
+      "scenes": [
+        {"scene_id": "scene-001", "narration": "Yardım ederken bir insanın onurunu incitmek mümkün mü? Evet; verilen şeyin içine minnet ve üstünlük duygusu karışırsa iyilik ağır bir yüke dönüşebilir.", "visual_note": "hesitant recipient facing a proud giver, subtle emotional distance", "keywords": ["charity", "pride", "distance"]},
+        {"scene_id": "scene-002", "narration": "Muhtaç insan, merhamet gösterisinin nesnesi değil; hakkı teslim edilen onurlu bir insandır. Yardımın dili bunu hissettirmelidir.", "visual_note": "two people exchanging package at equal eye level, respectful scene", "keywords": ["respect", "equality", "package"]},
+        {"scene_id": "scene-003", "narration": "İyilik kişisel gösteriden kurtulduğunda hem verenin niyeti hem alanın izzeti korunur. En güzel yardım, ardında ezilmişlik değil dua ve güven bırakır.", "visual_note": "anonymous gift left quietly at doorway in warm light", "keywords": ["anonymous gift", "doorway", "dignity"]}
+      ]
+    }
+  ]
+}

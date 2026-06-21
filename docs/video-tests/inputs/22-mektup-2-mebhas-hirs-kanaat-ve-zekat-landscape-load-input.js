@@ -1,0 +1,99 @@
+// Derin Okuma — 22. Mektup - 2. Mebhas landscape video
+// Filled for the day-41 n8n landscape run.
+
+const scenes = [
+  { scene_id: 'scene-001', title: 'Bitmeyen Koşu', narration: 'İnsan bazen daha çok kazanmak için hızlandıkça huzurdan uzaklaşır. Elde etmek istediği şey büyürken, içindeki sükûnet küçülür.', visual_note: 'crowded city commuters walking fast, one person standing still, cinematic light', keywords: ['crowded city', 'fast walking', 'still person'] },
+  { scene_id: 'scene-002', title: 'İstek ve Hırs', narration: 'İstemek insanın tabiatındadır; çalışmak da kıymetlidir. Fakat istek telaşa, telaş takıntıya dönüştüğünde çalışma artık kalbi beslemez, tüketir.', visual_note: 'focused worker at desk slowly becoming overwhelmed, evening office', keywords: ['overworked', 'office', 'anxiety'] },
+  { scene_id: 'scene-003', title: 'Kazancın Gizli Bedeli', narration: 'Hırs yalnızca elde edilemeyen şeylerin acısı değildir. İnsan bazen kazanırken şükrünü, sabrını ve merhametini eksiltir; asıl kayıp da orada başlar.', visual_note: 'hands holding coins while warm family scene fades in background', keywords: ['coins', 'family', 'hidden cost'] },
+  { scene_id: 'scene-004', title: 'Tabiatın Sessiz Dersi', narration: 'Meyve ağaçları yerlerinden ayrılmaz, acele etmez ve kimseyle yarışmaz. Yine de ihtiyaçları karşılanır; üstelik dalları başka canlılara da rızık taşır.', visual_note: 'fruit tree heavy with ripe fruit, birds feeding, gentle morning breeze', keywords: ['fruit tree', 'birds', 'morning'] },
+  { scene_id: 'scene-005', title: 'Aczin Dili', narration: 'Yeni doğmuş bir yavru güçlü değildir; kendi rızkını arayacak imkâna da sahip değildir. Fakat zayıflığı, rahmeti kendine çeken sessiz bir ihtiyaç dili olur.', visual_note: 'newborn lamb resting beside mother in soft natural light', keywords: ['newborn lamb', 'mother', 'gentleness'] },
+  { scene_id: 'scene-006', title: 'Güç Tek Sebep Değildir', narration: 'Hayat, rızkın yalnızca kuvvetle ve saldırgan çabayla gelmediğini gösterir. Bazen en latif ikramlar, tam da aczin ve ihtiyacın görüldüğü yerde belirir.', visual_note: 'small bird receiving food in nest, close-up nature documentary', keywords: ['bird nest', 'feeding', 'fragility'] },
+  { scene_id: 'scene-007', title: 'Tevekkülün Anlamı', narration: 'Tevekkül, sebepleri bırakmak veya çalışmayı terk etmek değildir. Elinden geleni yaparken sonucu mutlak biçimde kendi gücüne bağlamamaktır.', visual_note: 'farmer sowing seeds calmly under wide open sky', keywords: ['farmer', 'sowing seeds', 'open sky'] },
+  { scene_id: 'scene-008', title: 'Kanaat Nedir?', narration: 'Kanaat, azla yetinip ilerlemekten vazgeçmek değildir. Nimeti lütuf bilmek, çabayı sürdürmek ve kalbi sonucun esiri yapmamaktır.', visual_note: 'simple breakfast table by window, peaceful morning atmosphere', keywords: ['simple meal', 'gratitude', 'peace'] },
+  { scene_id: 'scene-009', title: 'Rahmet Sofrası', narration: 'Dünya büyük bir rahmet sofrasına benzer. İnsan sofradaki yerini hak iddiasıyla değil, kendisine ulaşan her nimetin değerini fark ederek bulur.', visual_note: 'long communal table outdoors, bread and fruit, warm sunlight', keywords: ['communal table', 'bread', 'sunlight'] },
+  { scene_id: 'scene-010', title: 'İki Ayrı Tavır', narration: 'Bir davete giren iki kişiden biri, kabul edilmeyi başlı başına ikram sayar. Diğeri ise en yüksek yerin kendisine ait olduğunu düşünür ve huzuru daha kapıdan girerken kaybeder.', visual_note: 'elegant hall entrance, humble guest and demanding guest contrasting attitudes', keywords: ['grand hall', 'two guests', 'humility'] },
+  { scene_id: 'scene-011', title: 'İddia ve Şükür', narration: 'Hak iddiası nimeti küçültür; insan hep daha yukarıya bakıp elindekini değersiz görür. Şükür ise küçük görünen ikramın içindeki büyük manayı açar.', visual_note: 'person overlooking simple gift while another receives it gratefully', keywords: ['gift', 'gratitude', 'contrast'] },
+  { scene_id: 'scene-012', title: 'Malı Sevmenin Ölçüsü', narration: 'Malı sevmek tek başına insanı kötü yapmaz. Tehlike, malın elde bulunması değil; kalbin merkezine yerleşip bütün kararları yönetmesidir.', visual_note: 'person holding wallet near chest, thoughtful expression, muted background', keywords: ['wallet', 'thoughtful', 'attachment'] },
+  { scene_id: 'scene-013', title: 'Kanaatle Talep', narration: 'İnsan malı hırsla değil kanaatle aradığında çalışması daha berrak hâle gelir. Kazanç amaç olmaktan çıkıp sorumlulukları yerine getiren bir vasıtaya dönüşür.', visual_note: 'artisan working carefully in bright workshop, calm deliberate movements', keywords: ['artisan', 'workshop', 'careful work'] },
+  { scene_id: 'scene-014', title: 'Uykuyu Kovalarken', narration: 'Uyumaya ne kadar zorla çalışırsak uyku bazen o kadar uzaklaşır. Zihin sonucu ele geçirmek için gerildikçe, bedenin doğal düzeni bozulur.', visual_note: 'restless person awake in bed at night, soft moonlight', keywords: ['insomnia', 'bedroom', 'moonlight'] },
+  { scene_id: 'scene-015', title: 'Bir Dakikalık Sabırsızlık', narration: 'Beklediğimiz kişi gecikince sabırsızlık bizi yerimizden kaldırır. Bazen tam ayrıldığımız anda gelecek olanı, son bir dakika dayanamadığımız için kaçırırız.', visual_note: 'empty train platform, person walking away as another arrives', keywords: ['waiting', 'train platform', 'missed meeting'] },
+  { scene_id: 'scene-016', title: 'Sonucun Önündeki Engel', narration: 'Hırs, hedefe götüren güç gibi görünürken bazen hedefin önündeki en büyük engele dönüşür. Çünkü dikkati doğru adımdan koparıp hemen sonuca kilitler.', visual_note: 'runner staring at finish line and stumbling over nearby obstacle', keywords: ['runner', 'finish line', 'obstacle'] },
+  { scene_id: 'scene-017', title: 'Ekmeğin Yolculuğu', narration: 'Bir ekmek sofraya gelmeden önce tohum, tarla, hasat, değirmen ve fırın aşamalarından geçer. Her neticenin görünmeyen bir hazırlık zamanı ve hikmetli bir sırası vardır.', visual_note: 'wheat field transitioning to mill flour and fresh bread bakery', keywords: ['wheat field', 'flour mill', 'fresh bread'] },
+  { scene_id: 'scene-018', title: 'Basamakları Atlamak', narration: 'Hırs, süreçteki basamakları gereksiz gecikmeler sanır. Oysa olgunlaşmadan atlanan her basamak, sonucu hızlandırmak yerine eksik ve kırılgan bırakabilir.', visual_note: 'person rushing up stone stairs and losing balance, slow motion', keywords: ['stone stairs', 'rushing', 'balance'] },
+  { scene_id: 'scene-019', title: 'Sabır ve Fiil', narration: 'Sabır, hareketsiz beklemek değil; doğru işi doğru zamanda sürdürmektir. İnsan vazifesine odaklandığında gecikme, anlamsız bir boşluk olmaktan çıkar.', visual_note: 'potter shaping clay slowly on wheel, focused hands', keywords: ['potter', 'clay', 'patience'] },
+  { scene_id: 'scene-020', title: 'Kalbin Güven Yeri', narration: 'Çaba insanın vazifesidir, netice ise bütünüyle onun mülkü değildir. Bu ayrım kalbe yerleştiğinde çalışma devam eder; fakat kaygı hükmünü kaybeder.', visual_note: 'hiker pausing on mountain path beneath expansive sky, calm breathing', keywords: ['mountain path', 'hiker', 'calm sky'] },
+  { scene_id: 'scene-021', title: 'Hırsın Toplumsal Yüzü', narration: 'Hırs yalnızca bireyin iç huzurunu bozmaz. Biriken mal paylaşılmadığında, zenginle yoksul arasındaki mesafe öfke ve güvensizlikle büyür.', visual_note: 'wealthy skyline divided from modest neighborhood, aerial city view', keywords: ['wealth gap', 'city divide', 'inequality'] },
+  { scene_id: 'scene-022', title: 'Zekâtın Bağı', narration: 'Zekât, maldan eksilen sıradan bir pay değil; toplumun kopan bağlarını onaran bir sorumluluktur. Verenin şükrünü, alanın ise hakkını ve izzetini korur.', visual_note: 'discreet hands offering food package respectfully, no faces shown', keywords: ['charity', 'respect', 'food package'] },
+  { scene_id: 'scene-023', title: 'Bereketin Ölçüsü', narration: 'Bereket her zaman sayının çoğalması demek değildir. Malın hayra yetmesi, sahibini esir etmemesi ve başkalarının duasına vesile olması da berekettir.', visual_note: 'small basket of bread shared among family, warm intimate scene', keywords: ['shared bread', 'family', 'abundance'] },
+  { scene_id: 'scene-024', title: 'Küçük Pay Büyük Koruma', narration: 'İnsan kendisinden istenen ölçülü payı gönüllüce ayırmadığında, malı başka kayıplarla eksilebilir. Paylaşmak, serveti anlam ve dua ile koruyan manevi bir tedbirdir.', visual_note: 'hands separating a small portion of harvest for others', keywords: ['harvest', 'sharing', 'protection'] },
+  { scene_id: 'scene-025', title: 'Bana Ne Duygusu', narration: 'İnsan yalnızca kendi tokluğunu önemserse komşusunun açlığı görünmez olur. Bu kayıtsızlık büyüdüğünde aynı şehirde yaşayanlar birbirine yabancılaşır.', visual_note: 'person eating behind window while hungry neighbor walks outside in rain', keywords: ['indifference', 'window', 'rain'] },
+  { scene_id: 'scene-026', title: 'Sen Çalış Ben Yiyeyim', narration: 'Başkalarının emeği üzerinden zahmetsiz kazanç aramak adalet duygusunu yaralar. Faiz ve sömürü düzeni güçlendikçe emek ile karşılık arasındaki bağ kopar.', visual_note: 'tired workers in factory contrasted with idle luxury, documentary style', keywords: ['workers', 'exploitation', 'luxury'] },
+  { scene_id: 'scene-027', title: 'Merhamet ve Hürmet', narration: 'Sağlıklı bir toplumda imkân sahibi olanlar merhametle, ihtiyaç sahipleri de kin yerine hürmet ve duayla karşılık verir. Bu bağ lütuf gösterisiyle değil, hakkın teslimiyle kurulur.', visual_note: 'diverse neighbors helping each other carry groceries, natural street scene', keywords: ['neighbors', 'mutual help', 'community'] },
+  { scene_id: 'scene-028', title: 'İhsanın Niyeti', narration: 'Yardım ederken üstünlük duygusu taşımak, verilen şeyin içine görünmez bir incinme katar. İyilik, kişisel gösteri olmaktan çıktığında muhtaç insanın onuru korunur.', visual_note: 'anonymous donation placed quietly at a doorstep, respectful framing', keywords: ['anonymous donation', 'doorstep', 'dignity'] },
+  { scene_id: 'scene-029', title: 'Emanet Bilinci', narration: 'Sahip olduğumuz imkânlar mutlak mülkiyet değil, sorumluluk taşıyan bir emanettir. Emanet bilinci malı küçültmez; onu şükür, hizmet ve paylaşma aracına dönüştürür.', visual_note: 'open hands holding seeds, sunlight over fertile soil', keywords: ['open hands', 'seeds', 'stewardship'] },
+  { scene_id: 'scene-030', title: 'Kalbi Korumak', narration: 'Rızkını ararken kalbini de koruyabilen insan, kazancın gerçek ölçüsünü bulur. Çünkü en büyük kayıp, ulaşamadıklarımız değil; ulaşmaya çalışırken içimizden eksilttiklerimizdir.', visual_note: 'person walking calmly through sunrise field, wide cinematic ending', keywords: ['sunrise field', 'calm walking', 'inner peace'] }
+];
+
+const rawInput = {
+  input_version: '0.1.0',
+  input_type: 'manual_scene_json',
+
+  runtime: {
+    repo_root: '/home/muhammet/projects/scene-blog-video',
+    renderer_url: 'http://127.0.0.1:8000'
+  },
+
+  job: {
+    title: 'Hırs Neden İnsanı Mahrum Bırakır?',
+    description: 'Hırsın kalbi nasıl yorduğunu; kanaat, tevekkül ve zekâtın insana ve topluma nasıl denge kazandırdığını ele alan tefekkürî bir anlatı.',
+    language: 'tr',
+    author: 'Muhammet Yahya Ozer',
+    job_id_hint: '22-mektup-2-mebhas-hirs-kanaat-ve-zekat-landscape-day-41'
+  },
+
+  reuse_existing_audio: {
+    enabled: false,
+    audio_mode: 'single_track',
+    audio_track: {
+      mode: 'single',
+      path: '',
+      duration_seconds: null
+    }
+  },
+
+  reuse_existing_video: {
+    enabled: false,
+    visual_mode: 'semantic',
+    video_root: '',
+    path_template: '{scene_id}.mp4'
+  },
+
+  visual_mode: 'ambient',
+
+  audio_strategy: {
+    mode: 'single_track',
+    timing_strategy: 'elevenlabs_timestamps',
+    join_separator: '\n\n'
+  },
+
+  render_preferences: {
+    mode: 'full_video',
+    subtitles_enabled: true,
+    render_mode: 'landscape',
+    produce_both: false,
+    background_music_enabled: true,
+    target_fps: 30
+  },
+
+  scenes,
+
+  metadata: {
+    source: 'derin-okuma',
+    blog_post: '22-mektup-2-mebhas-hirs-kanaat-ve-zekat',
+    test_day: 'day-41',
+    workflow: 'manual_scene_json_single_track_landscape_load_input',
+    content_generation_status: 'filled'
+  }
+};
+
+return [{ json: { raw_input: rawInput } }];

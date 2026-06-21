@@ -1,0 +1,62 @@
+{
+  "video_type": "shorts",
+  "source": "22-mektup-2-mebhas-hirs-kanaat-ve-zekat",
+  "test_day": "day-41",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan neden daha çok istedikçe daha az huzur bulur?",
+      "title_options": ["Hırs Neden Huzuru Azaltır?", "Daha Çok İstemek Neden Yorar?", "Gayret Ne Zaman Hırsa Dönüşür?"],
+      "selected_title": "Hırs Neden Huzuru Azaltır?",
+      "description": "Hırs, kazancı büyütürken kalbi daraltabilir. Gayret ile yıpratıcı telaş arasındaki sınırı düşünelim. #derinokuma #shorts #tefekkür #iman #hırs #kanaat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#hırs", "#kanaat"],
+      "thumbnail_or_cover_text": "HIRS HUZURU AZALTIR"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Kanaat, daha azına razı olup çalışmayı bırakmak mıdır?",
+      "title_options": ["Kanaat Neden Tembellik Değildir?", "Kanaat İnsanı Nasıl Özgürleştirir?", "Çalışırken Kanaat Nasıl Korunur?"],
+      "selected_title": "Kanaat Neden Tembellik Değildir?",
+      "description": "Kanaat, çabayı bırakmak değil; kalbi sonucun esaretinden kurtarmaktır. Nimeti lütuf bilerek çalışmanın anlamı üzerine. #derinokuma #shorts #tefekkür #iman #kanaat #şükür",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kanaat", "#şükür"],
+      "thumbnail_or_cover_text": "KANAAT TEMBELLİK DEĞİL"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bazen aradığımız şeyden bizi uzaklaştıran, onu fazla istememizdir.",
+      "title_options": ["Hırs Sonucu Nasıl Uzaklaştırır?", "Sabırsızlık Neden Kaybettirir?", "Zorladıkça Neden Uzaklaşır?"],
+      "selected_title": "Hırs Sonucu Nasıl Uzaklaştırır?",
+      "description": "Uyku, bekleyiş ve sabırsızlık bize aynı sırrı gösterir: Neticeyi zorlamak bazen onu uzaklaştırır. #derinokuma #shorts #tefekkür #sabır #hırs #tevekkül",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#sabır", "#hırs", "#tevekkül"],
+      "thumbnail_or_cover_text": "ZORLADIKÇA UZAKLAŞIR"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir ekmek bile sofraya gelmeden kaç basamaktan geçer?",
+      "title_options": ["Sonuçlar Neden Birden Gelmez?", "Her Şeyin Neden Bir Sırası Var?", "Sabır Süreci Nasıl Olgunlaştırır?"],
+      "selected_title": "Sonuçlar Neden Birden Gelmez?",
+      "description": "Her neticenin görünmeyen bir hazırlık zamanı vardır. Basamakları atlamak hız değil, eksiklik getirebilir. #derinokuma #shorts #tefekkür #sabır #hikmet #tevekkül",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#sabır", "#hikmet", "#tevekkül"],
+      "thumbnail_or_cover_text": "HER ŞEYİN BİR SIRASI VAR"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Zekât malı eksiltir mi, yoksa onu başka bir ölçüde çoğaltır mı?",
+      "title_options": ["Zekât Bereketi Nasıl Artırır?", "Paylaşınca Mal Neden Eksilmez?", "Bereketin Ölçüsü Nedir?"],
+      "selected_title": "Zekât Bereketi Nasıl Artırır?",
+      "description": "Bereket yalnızca sayının çoğalması değildir. Zekât, malı dua, şükür ve toplumsal güvenle buluşturur. #derinokuma #shorts #tefekkür #iman #zekât #bereket",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#zekât", "#bereket"],
+      "thumbnail_or_cover_text": "ZEKÂT EKSİLTMEZ"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Yardım ederken bir insanın onurunu incitmek mümkün mü?",
+      "title_options": ["İyilik Onuru Nasıl Korur?", "Yardım Neden Bazen İncitir?", "İhsan Nasıl Yapılmalı?"],
+      "selected_title": "İyilik Onuru Nasıl Korur?",
+      "description": "İyiliğin değeri yalnızca verilende değil, niyette ve veriliş biçimindedir. Gerçek yardım üstünlük kurmaz. #derinokuma #shorts #tefekkür #zekât #ihsan #merhamet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#zekât", "#ihsan", "#merhamet"],
+      "thumbnail_or_cover_text": "İYİLİK İNCİTMEMELİ"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "22-mektup-2-mebhas-hirs-kanaat-ve-zekat",
+  "title": "22. Mektup - 2. Mebhas",
+  "day": 41,
+  "dayTag": "day-41",
+  "runId": "day41-batch-a",
+  "timestamp": "2026-06-21T10:47:22.203Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/22-mektup-2-mebhas-hirs-kanaat-ve-zekat-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/22-mektup-2-mebhas-hirs-kanaat-ve-zekat-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/22-mektup-2-mebhas-hirs-kanaat-ve-zekat-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-22-mektup-2-mebhas-hirs-kanaat-ve-zekat-short-*-day41-batch-a"
+  }
+}
