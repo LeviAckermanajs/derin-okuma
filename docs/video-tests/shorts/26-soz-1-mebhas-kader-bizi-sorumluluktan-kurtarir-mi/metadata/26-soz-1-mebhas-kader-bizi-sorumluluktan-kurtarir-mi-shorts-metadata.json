@@ -1,0 +1,116 @@
+{
+  "video_type": "shorts",
+  "source": "26-soz-1-mebhas-kader-bizi-sorumluluktan-kurtarir-mi",
+  "test_day": "day-44",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "title_options": [
+        "Kader Günahın Bahanesi Olabilir mi?",
+        "Kaderimde Varmış Demek Doğru mu?",
+        "Neden Günahı Kadere Atamayız?"
+      ],
+      "selected_title": "Kader Günahın Bahanesi Olabilir mi?",
+      "description": "Kötülük işleyince 'Kaderimde varmış' demek doğru mu? Cüz-i ihtiyarî bize ne söylüyor? Sorumluluktan kaçmak mümkün mü? #derinokuma #kader #risaleinur #iman #sorumluluk",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#iman",
+        "#sorumluluk"
+      ],
+      "thumbnail_or_cover_text": "Kaderimde Varmış Demek..."
+    },
+    {
+      "short_id": "short-002",
+      "title_options": [
+        "İyilik Yapınca Neden Büyüklenmemelisin?",
+        "İyilik Yaptında Gurur mu, Şükür mü?",
+        "İyiliği Kendinden Bilmek Seni Nasıl Yanıltır?"
+      ],
+      "selected_title": "İyilik Yapınca Neden Büyüklenmemelisin?",
+      "description": "İyilik yaptığında 'Ben yaptım' demek neden yanlış? Kader ve şükür arasındaki fark ne? Gurur mu, minnet mi? #derinokuma #kader #risaleinur #şükür #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#şükür",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "İyilik Yaptında Gurur mu?"
+    },
+    {
+      "short_id": "short-003",
+      "title_options": [
+        "Geçmişteki Acılarla Nasıl Baş Edebilirsin?",
+        "Geçmişin Yükünü Nasıl Bırakabilirsin?",
+        "Kader Geçmiş Acılara Ne Söylüyor?"
+      ],
+      "selected_title": "Geçmişteki Acılarla Nasıl Baş Edebilirsin?",
+      "description": "Geçmişte yaşanan kayıplar ve acılar insanı içten tüketir. Kader anlayışı bu acıya nasıl bir şifa sunar? Sabır nerede başlar? #derinokuma #kader #risaleinur #sabır #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#sabır",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Geçmişin Acısı Geçer mi?"
+    },
+    {
+      "short_id": "short-004",
+      "title_options": [
+        "Küçük Bir Tercih Neden Bu Kadar Büyük Sonuç Doğurur?",
+        "İnsan İradesi Küçük mü, Önemli mi?",
+        "Neden Küçük Seçimler Büyük Yönler Belirler?"
+      ],
+      "selected_title": "Küçük Bir Tercih Neden Bu Kadar Büyük Sonuç Doğurur?",
+      "description": "İnsan iradesinin büyüklüğü yaratmakta değil, yönelmektedir. Küçük bir tercih nasıl büyük sonuçlar doğurur? Cüz-i ihtiyarî neden önemli? #derinokuma #irade #risaleinur #sorumluluk #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#irade",
+        "#risaleinur",
+        "#sorumluluk",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "Küçük Tercih Büyük Sonuç"
+    },
+    {
+      "short_id": "short-005",
+      "title_options": [
+        "Görünen Acı Her Zaman Haksızlık mı?",
+        "Kader Adaletsiz mi Görünüyor?",
+        "Neden Kader Hakkında Yanlış Hüküm Veririz?"
+      ],
+      "selected_title": "Görünen Acı Her Zaman Haksızlık mı?",
+      "description": "Hayatta adaletsiz gibi görünen şeyler var. Ama kader, zahirden değil hakikatten hükmeder. Bu farkı anlamak her şeyi değiştirir. #derinokuma #kader #risaleinur #adalet #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#adalet",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "Kader Adaletsiz mi?"
+    },
+    {
+      "short_id": "short-006",
+      "title_options": [
+        "Sorumluluk ve Teslimiyet Nasıl Bir Arada Olur?",
+        "Kader mi, Sorumluluk mu? İkisi Birlikte Mümkün mü?",
+        "Ne Çaresiz Ne Kibirli — İnsan Nerede Durmalı?"
+      ],
+      "selected_title": "Sorumluluk ve Teslimiyet Nasıl Bir Arada Olur?",
+      "description": "Ne tamamen çaresiz ne de her şeyin sahibi. İnsan bu ikisi arasında nasıl durur? Cüz-i ihtiyarî ve kader dengesi. #derinokuma #kader #risaleinur #iman #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Sorumluluk + Teslimiyet"
+    }
+  ]
+}

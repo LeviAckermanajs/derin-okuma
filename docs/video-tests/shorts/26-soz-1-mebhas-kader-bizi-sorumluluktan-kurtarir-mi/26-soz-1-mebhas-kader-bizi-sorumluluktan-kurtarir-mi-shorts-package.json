@@ -1,0 +1,224 @@
+{
+  "source": {
+    "blog_post": "26-soz-1-mebhas-kader-bizi-sorumluluktan-kurtarir-mi",
+    "title": "26.Söz - 1.Mebhas",
+    "source_files": [
+      "src/content/blog/26-soz-1-mebhas-kader-bizi-sorumluluktan-kurtarir-mi.md"
+    ]
+  },
+  "test_day": "day-44",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Kader günahın bahanesi olabilir mi? 'Kaderimde varmış' diyerek kötülük işlemek doğru mu?",
+      "title": "Kader Günahın Bahanesi Olabilir mi?",
+      "description": "Kötülük işleyince 'Kaderimde varmış' demek doğru mu? Cüz-i ihtiyarî bize ne söylüyor? Sorumluluktan kaçmak mümkün mü?\n\n#derinokuma #kader #risaleinur #iman #sorumluluk",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#iman",
+        "#sorumluluk"
+      ],
+      "thumbnail_or_cover_text": "Kaderimde Varmış Demek...",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Kötülük işlediğinde 'Kaderimde varmış, elimde ne var' demek ne kadar doğru? Bu soruyu sormak bile önemli; çünkü cevabı insanın sorumluluğunu bütünüyle etkiliyor.",
+          "visual_note": "Person looking away with avoiding posture, shadow across face, symbolic responsibility.",
+          "keywords": ["avoiding responsibility", "shadow", "moral weight", "consequence"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Kötülüğü seçen insandır. İrade küçük görünse de tercihin sahibi odur. 'Kaderimde varmış' demek, o seçimi ortadan kaldırmaz; aksine insanı sorumluluğunun farkında olmaktan mahrum bırakır.",
+          "visual_note": "A locked door with key still in the lock, decision frozen, responsibility left behind.",
+          "keywords": ["locked door", "key", "choice", "frozen decision"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Kader, günahın bahanesi değildir. Kötülüklerde kadere sığınmak kaderin hikmetine aykırıdır. 'Ben istedim, ben sorumluyum' diyebilenler için tövbenin kapısı açılır. Ve o kapıdan geçmek, insanın elindedir.",
+          "visual_note": "Open door with warm light beyond it, welcoming return, hope of redemption.",
+          "keywords": ["open door", "warm light", "return", "redemption"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İyi bir şey yaptığında seni içten kaplayan o 'Ben ne kadar iyiyim' hissi... Seni yanıltıyor olabilir mi?",
+      "title": "İyilik Yapınca Neden Büyüklenmemelisin?",
+      "description": "İyilik yaptığında 'Ben yaptım' demek neden yanlış? Kader ve şükür arasındaki fark ne? Gurur mu, minnet mi?\n\n#derinokuma #kader #risaleinur #şükür #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#şükür",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "İyilik Yaptında Gurur mu?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İyi bir şey yaptığında içinden gelen o ses: 'Ben ne kadar iyi bir insanım, bunu ben başardım.' Bu ses sinsice çalışır. Gururu besler, insanı kendinden büyük hissettirir.",
+          "visual_note": "Mirror reflection showing inflated proud posture, symbolic pride vs humility split.",
+          "keywords": ["mirror ego", "pride", "reflection", "symbolic contrast"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İyiliklerde insanın payı çok azdır. Niyeti veren, fırsatı açan, gücü yaratan Allah'tır. İnsan dua, şuur ve rıza ile o iyiliğe nail olur. Yapan değil, nail olan. Bu farkı görmek insanı gururdan korur.",
+          "visual_note": "Sunlight streaming through clouds onto open upward hands, receiving grace, humility.",
+          "keywords": ["sunlight hands", "receiving grace", "humility", "divine light"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "İyilik yaptığında duraksayabilirsin: 'Bu fırsatı bana veren kim?' Dürüst bir bakış, her iyiliğin arkasında bir lütuf görür. Ve bu şuur şükrü getirir; gururu değil. Şükür insanı iyiliğe devam ettiren şeydir.",
+          "visual_note": "Hands open in gratitude gesture upward, warm light, peaceful and humble expression.",
+          "keywords": ["gratitude gesture", "warm light", "thankfulness", "peace"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Geçmişteki bir acı, bir kayıp hâlâ içini yakıyor mu? Belki bu hissin cevabı beklediğin yerde.",
+      "title": "Geçmişteki Acılarla Nasıl Baş Edebilirsin?",
+      "description": "Geçmişte yaşanan kayıplar ve acılar insanı içten tüketir. Kader anlayışı bu acıya nasıl bir şifa sunar? Sabır nerede başlar?\n\n#derinokuma #kader #risaleinur #sabır #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#sabır",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Geçmişin Acısı Geçer mi?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Geçmişteki bir kayıp, bir hata, yaşanan bir acı... İnsan bunlara takılıp kaldığında içten erimeye başlar. Olan bitişi değiştirmeye çalışmak, gideni geri almak için çırpınmak kalbi yorar.",
+          "visual_note": "Person sitting alone looking back, melancholy autumn landscape, weight of the past.",
+          "keywords": ["looking back", "autumn melancholy", "past weight", "solitude"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Kader, geçmişe huzurla bakmanın anahtarıdır. Geçmiş artık insanın elinde değildir; olan olmuştur ve takdir edilmişti. Bu anlayış insanı itiraz etmenin yorgunluğundan kurtarır; kalbe sabretme alanı açar.",
+          "visual_note": "Still water reflecting sky, calm surface, leaves settling, peaceful acceptance.",
+          "keywords": ["still water reflection", "calm acceptance", "peace", "letting go"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Geçmişteki acılar karşısında kaderi görmek ümitsizlik değildir. Aksine, o acının da bir anlamı olabileceğini hissettiren bir nur gibidir. Sabır bu nurla başlar. Ve insanı geçmişin yükü altında ezdirmez.",
+          "visual_note": "Dawn light slowly appearing over dark horizon, gradual warmth, hope and endurance.",
+          "keywords": ["dawn over dark horizon", "hope", "gradual light", "overcoming pain"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İnsan iradesi küçük görünüyor. Peki neden bu kadar büyük bir sorumluluk taşıyor?",
+      "title": "Küçük Bir Tercih Neden Bu Kadar Büyük Sonuç Doğurur?",
+      "description": "İnsan iradesinin büyüklüğü yaratmakta değil, yönelmektedir. Küçük bir tercih nasıl büyük sonuçlar doğurur? Cüz-i ihtiyarî neden önemli?\n\n#derinokuma #irade #risaleinur #sorumluluk #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#irade",
+        "#risaleinur",
+        "#sorumluluk",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "Küçük Tercih Büyük Sonuç",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Cüz-i ihtiyarî küçük görünür. Yaratma gücü yok onda. Ama insan bu sınırlı iradeyle neden bu kadar büyük bir sorumluluk taşıyor?",
+          "visual_note": "A single falling domino starting a long chain reaction, macro close-up, cause and effect.",
+          "keywords": ["domino effect", "chain reaction", "small cause big effect", "responsibility"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Kötülük çoğu zaman tahrip cinsindendir. Yıkmak yapmak kadar güç gerektirmez. Bir kibrit büyük bir binayı yakabilir. İnsan da küçük bir tercihle büyük bir tahribatın kapısını açabilir. Bu yüzden insanın isyanı hafife alınmaz.",
+          "visual_note": "Single match flame extreme close-up, dark background, fragile power about to ignite.",
+          "keywords": ["match flame", "fragile power", "destruction potential", "close-up"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Ama bu ağırlık insanı ezmek için değildir. Tercihini önemse. Neye yöneldiğini, neyi istediğini, hangi kapıyı açtığını düşün. Küçük seçimler büyük yönler belirler. Ve o yönü belirleyen seninle başlar.",
+          "visual_note": "Compass needle pointing on a detailed map, navigation, intention and careful direction.",
+          "keywords": ["compass navigation", "direction", "intention", "careful choice"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Hayatta sana adaletsiz gelen bir şey var mı? Gerçekten öyle mi, yoksa sadece dışarıdan mı görünüyor öyle?",
+      "title": "Görünen Acı Her Zaman Haksızlık mı?",
+      "description": "Hayatta adaletsiz gibi görünen şeyler var. Ama kader, zahirden değil hakikatten hükmeder. Bu farkı anlamak her şeyi değiştirir.\n\n#derinokuma #kader #risaleinur #adalet #tefekkür",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#adalet",
+        "#tefekkür"
+      ],
+      "thumbnail_or_cover_text": "Kader Adaletsiz mi?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Hayatında sana adaletsiz gelen bir şey var mı? 'Ben bunu hak etmedim, bu neden böyle oldu?' diye sormak kaçınılmaz. Ama o soruyu sorarken neleri göremiyorsun?",
+          "visual_note": "Iceberg above and below water, surface appearance versus hidden depth, perception gap.",
+          "keywords": ["iceberg surface depth", "hidden truth", "perception", "below surface"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsan zahire bakar; kader ise hakiki illete. Bir şey görünürde haksız olabilir. Ama kader başlangıcı, sonu, sebebi ve neticeyi birlikte kuşatır. İnsanın görmediği şeyler çok fazladır.",
+          "visual_note": "Complex puzzle with only partial pieces visible on table, incomplete picture, mystery.",
+          "keywords": ["incomplete puzzle", "partial view", "hidden meaning", "complexity"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Allah'ın yaratmasında zulüm yoktur. Çirkinlik kulun yanlış seçimine aittir; yaratmaya değil. Bu ayrımı görmek insanı şikâyetten korur ve güveni pekiştirir.",
+          "visual_note": "Scales of justice with unseen counterweight achieving perfect balance, symbolic truth.",
+          "keywords": ["balanced scales", "hidden weight", "justice", "trust"]
+        },
+        {
+          "scene_id": "scene-004",
+          "narration": "Bilmediğin çok şey var. Ve bilmediğini bilmek, tevazunun ilk adımıdır. Kaderin hükmünü tam göremezsin; ama O adalet içinde işler. Bu güveni taşıyan kalp, görünen her acıda çökmez.",
+          "visual_note": "Person looking up at vast starry sky, small figure, infinite depth above, wonder and trust.",
+          "keywords": ["starry night", "vast universe", "small figure", "wonder and trust"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "İnsan ya tamamen sorumlu ya da tamamen teslim — ama ikisi aynı anda mümkün mü?",
+      "title": "Sorumluluk ve Teslimiyet Nasıl Bir Arada Olur?",
+      "description": "Ne tamamen çaresiz ne de her şeyin sahibi. İnsan bu ikisi arasında nasıl durur? Cüz-i ihtiyarî ve kader dengesi.\n\n#derinokuma #kader #risaleinur #iman #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#kader",
+        "#risaleinur",
+        "#iman",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "Sorumluluk + Teslimiyet",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan ya tamamen sorumlu tutulur ya da her şeyi kadere bırakır. Ama bu iki uç da insana zarar verir. Acaba ikisi bir arada mümkün mü?",
+          "visual_note": "Two hands meeting in balance, one open giving one open receiving, harmony gesture.",
+          "keywords": ["hands balance", "giving receiving", "duality", "harmony"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Kader teslimiyet verir; cüz-i ihtiyarî sorumluluk. İkisi birbirini yok etmez. Kötülüklerde sorumluluk al. İyiliklerde şükret. Musibetlerde sabret. Bu üç tutum birlikte insanı ne çaresiz ne de kibirli yapar.",
+          "visual_note": "Calm river flowing steadily through changing landscape, consistent yet adapting to terrain.",
+          "keywords": ["calm river", "adaptation", "consistency", "flowing through change"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Gururdan uzak, bahaneden uzak, şükre ve tövbeye yakın durmak. Bu iki hakikat arasındaki denge zorla kurulmaz; doğru anlayıştan doğar. Ve insanı hem özgür hem de sorumlu kılar.",
+          "visual_note": "Person standing balanced on a ridge at sunset, serene posture, freedom with purpose.",
+          "keywords": ["person on ridge", "balance", "sunset", "freedom with purpose"]
+        }
+      ]
+    }
+  ]
+}

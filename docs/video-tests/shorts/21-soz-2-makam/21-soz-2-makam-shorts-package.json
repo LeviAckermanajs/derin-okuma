@@ -1,0 +1,13 @@
+{
+  "source": {
+    "blog_post": "21-soz-2-makam",
+    "title": "26.Söz - 1.Mebhas",
+    "source_files": [
+      "src/content/blog/21-soz-2-makam.md"
+    ]
+  },
+  "test_day": "day-43",
+  "video_type": "shorts_package",
+  "content_generation_status": "scaffold_only",
+  "shorts": []
+}

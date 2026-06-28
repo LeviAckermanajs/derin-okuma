@@ -1,0 +1,312 @@
+// Derin Okuma — 26.Söz - 1.Mebhas landscape video
+// Day-44 | Filled by Claude
+
+const rawInput = {
+  input_version: '0.1.0',
+  input_type: 'manual_scene_json',
+
+  runtime: {
+    repo_root: '/home/muhammet/projects/scene-blog-video',
+    renderer_url: 'http://127.0.0.1:8000'
+  },
+
+  job: {
+    title: 'Kader Bizi Sorumluluktan Kurtarır mı?',
+    description: 'Kader ile insan iradesi arasındaki ince çizgiyi anlatıyor. İyilikte gurur değil şükür, kötülükte bahane değil sorumluluk — 26. Söz\'ün Birinci Mebhası\'ndan derin bir okuma.',
+    language: 'tr',
+    author: 'Muhammet Yahya Ozer',
+    job_id_hint: '26-soz-1-mebhas-kader-bizi-sorumluluktan-kurtarir-mi-landscape-day-44'
+  },
+
+  reuse_existing_audio: {
+    enabled: false,
+    audio_mode: 'single_track',
+    audio_track: {
+      mode: 'single',
+      path: '',
+      duration_seconds: null
+    }
+  },
+
+  reuse_existing_video: {
+    enabled: false,
+    visual_mode: 'semantic',
+    video_root: '',
+    path_template: '{scene_id}.mp4'
+  },
+
+  visual_mode: 'ambient',
+
+  audio_strategy: {
+    mode: 'single_track',
+    timing_strategy: 'elevenlabs_timestamps',
+    join_separator: '\n\n'
+  },
+
+  render_preferences: {
+    mode: 'full_video',
+    subtitles_enabled: true,
+    render_mode: 'landscape',
+    produce_both: false,
+    background_music_enabled: true,
+    target_fps: 30
+  },
+
+  scenes: [
+    {
+      scene_id: 'scene-001',
+      title: 'İnsanın Kadim Sorusu',
+      narration: 'İnsan, hayatının en ağır anlarında kendine bir soru sorar: Her şey zaten kaderle yazılmışsa, neden ben sorumlu olayım? Bu soru yüzyıllardır insanlığın ruhunda yaşayan derin bir çatışmayı taşır. Ve bu soruya verilecek cevap, insanın hem iç dünyasını hem de eylemlerini doğrudan etkiler.',
+      visual_note: 'A lone figure standing at crossroads at dawn, misty landscape, cinematic mood.',
+      keywords: ['crossroads', 'dawn mist', 'lone figure', 'contemplative']
+    },
+    {
+      scene_id: 'scene-002',
+      title: 'İki Tehlike Arasında',
+      narration: 'İnsan iki uç arasında gidip gelir. Bir yanda "Ben yaptım, ben başardım" diyerek gurura kapılan biri var. Diğer yanda "Kaderimde varmış, elimde ne var" diyerek her sorumluluğu kaderin üzerine yıkan biri. Bu iki uç, insana farklı yollardan zarar verir.',
+      visual_note: 'Two diverging paths in a foggy forest, split road, dramatic lighting.',
+      keywords: ['diverging paths', 'foggy forest', 'duality', 'choice']
+    },
+    {
+      scene_id: 'scene-003',
+      title: 'İnce Bir Denge',
+      narration: 'İyilikte gururlanmamak, kötülükte suçu kadere atmamak. Bu ince denge, insanın hem hakkını hem sorumluluğunu doğru yerde tutmasını gerektiren bir olgunluktur. Kolayca öğrenilmiyor, kolayca kaybediliyor da. Ama insanı insanlaştıran şey tam da bu dengeye yaklaşabilmektir.',
+      visual_note: 'A delicate scale perfectly balanced in soft light, close-up, still life.',
+      keywords: ['balanced scale', 'equilibrium', 'soft light', 'precision']
+    },
+    {
+      scene_id: 'scene-004',
+      title: 'Kader ve İrade Çatışmaz',
+      narration: 'Kader ve insan iradesi, çoğu zaman birbirine zıt sanılır. Oysa bu iki gerçek birbirini yok etmez. Biri insanı Allah\'ın iradesiyle bağlar; diğeri insanı kendi tercihinden sorumlu tutar. Birlikte işlediklerinde insan dengede durur.',
+      visual_note: 'Two rivers merging into one wider stream, flowing peacefully, aerial view.',
+      keywords: ['merging rivers', 'harmony', 'flowing water', 'aerial nature']
+    },
+    {
+      scene_id: 'scene-005',
+      title: 'Cüz-i İhtiyarî: Sınırlı Ama Önemli',
+      narration: 'Cüz-i ihtiyarî insanın sınırlı iradesidir. Yaratma gücü yoktur onda; ama yönelme, isteme ve seçme tarafı vardır. İnsan bu küçük görünen tercihlerle büyük sonuçların kapısını aralar. Küçüklüğü onu önemsiz kılmaz; sorumluluk için yeterlidir.',
+      visual_note: 'A single key opening a large old door, close-up, dramatic depth of field.',
+      keywords: ['key opening door', 'small action big result', 'opportunity', 'cinematic']
+    },
+    {
+      scene_id: 'scene-006',
+      title: 'Mes\'ul ve Mükellefsin',
+      narration: 'Her şeyi Allah\'a verip "Benim hiçbir sorumluluğum yok" demek, insanı yanlış bir rahatlığa götürür. İşte tam burada cüz-i ihtiyarî devreye girer: Kötülüğü seçtiğinde sen seçtin. Kaderin arkasına sığınamazsın. Sorumluluktan kaçmak, sorumluluğu ortadan kaldırmaz.',
+      visual_note: 'Person standing alone under bright light, accepting posture, quiet resolve.',
+      keywords: ['accountability', 'solitary figure', 'moral weight', 'dignity']
+    },
+    {
+      scene_id: 'scene-007',
+      title: 'Küçük Hareket, Büyük Sonuç',
+      narration: 'Kapıyı aralamak için devasa bir güç gerekmez; küçük bir el hareketi yeter. İnsan da böyle. Cüz-i ihtiyarîsi yaratma gücü olmasa da yönelişiyle büyük sonuçları tetikleyebilir. Bu yüzden insanın küçük bir tercihi hafife alınmaz.',
+      visual_note: 'A hand gently pushing open a heavy old wooden door, soft interior light visible.',
+      keywords: ['hand pushing door', 'threshold', 'small gesture', 'consequence']
+    },
+    {
+      scene_id: 'scene-008',
+      title: 'İyilikte İçini Yokla',
+      narration: 'İnsan bir iyilik yaptığında içinden gelen ses bazen şunu fısıldar: "Ben ne kadar iyi bir insanım, bunu ben başardım." Bu fısıltı sinsice çalışır. Gururu besler, insanı kendinden büyük hissettirir. Ve zamanla insanı gerçekten görmesi gereken şeyden uzaklaştırır.',
+      visual_note: 'Reflection in still water showing proud posture, symbolic self-examination.',
+      keywords: ['reflection water', 'self-examination', 'pride', 'symbolic mirror']
+    },
+    {
+      scene_id: 'scene-009',
+      title: 'Haddini Bil',
+      narration: 'İyiliklerde insanın payı çok azdır. İyiliği isteyen, ona kapı açan, onu yaratan Allah\'ın rahmeti ve kudretidir. İnsan ise dua, iman, şuur ve rıza ile o iyiliğe nail olur. Yapan değil, nail olan. Bu farkı görmek insana haddini öğretir.',
+      visual_note: 'Sunlight streaming through clouds onto a person\'s open hands, receiving light.',
+      keywords: ['sunlight hands', 'receiving grace', 'humility', 'divine light']
+    },
+    {
+      scene_id: 'scene-010',
+      title: 'Gururun Ağırlığından Kurtulmak',
+      narration: 'Gurur, insanı görünmez bir yükle taşır. Her iyiliği sahiplenmeye çalışmak yorucudur. Kader ise insana hafiflik verir: O iyilik senden değil, sana bahşedildi. Bu anlayış insanı gururun ağır yükünden kurtarır.',
+      visual_note: 'Person releasing a heavy burden in an open field, slow motion, sunset light.',
+      keywords: ['releasing burden', 'freedom', 'relief', 'open field sunset']
+    },
+    {
+      scene_id: 'scene-011',
+      title: 'Kaderi Yanlış Yerde Kullanmak',
+      narration: 'Kader yanlış kullanıldığında, insanı kandıran bir araç haline gelir. Günah işlerken "Ne yapayım, kaderimde varmış" demek, kaderin hikmetine tamamen aykırıdır. Bu anlayış insanı değişmez hale getirir ve tövbenin kapısını kapatır.',
+      visual_note: 'A locked gate in a stone wall, overgrown with vines, stagnation and neglect.',
+      keywords: ['locked gate', 'stagnation', 'overgrown', 'barrier']
+    },
+    {
+      scene_id: 'scene-012',
+      title: 'Kaderin Doğru Yeri',
+      narration: 'Kader, geçmişte ve musibetlerde doğru kullanılır. Çünkü geçmiş artık insanın elinden çıkmıştır. Artık değiştirilemeyen şeye itiraz etmek kalbi yıpratır. Kaderi görmek ise insanı o yıpranmadan korur.',
+      visual_note: 'Looking back at a long winding path already walked, autumn colors, peaceful.',
+      keywords: ['path behind', 'autumn landscape', 'acceptance', 'past journey']
+    },
+    {
+      scene_id: 'scene-013',
+      title: 'Geçmişin Yükü',
+      narration: 'Geçmişteki kayıplara, kaçırılan fırsatlara, yaşanan acılara takılmak insanı içten eritir. Ama kader, o olmuş bitmiş şeylerin üzerine şunu söyler: Bu takdir edilmişti. O zaman kalp biraz daha serbest nefes alabilir. Olan olmuştu; şimdi ne yapacaksın?',
+      visual_note: 'Fallen autumn leaves in still water, gentle ripples, melancholy calm beauty.',
+      keywords: ['fallen leaves', 'still water', 'letting go', 'autumn melancholy']
+    },
+    {
+      scene_id: 'scene-014',
+      title: 'Musibette Sabır',
+      narration: 'Musibet geldiğinde kalp ilk önce direnç gösterir. Ama içinde kaderi gören biri için bir kapı açılır. Bu kapıdan sabır girer. Sabır zayıflık değildir; olana karşı çıkmanın anlamsız olduğunu gören kalbin seçimidir. Ve kalbi yıpratmaz, güçlendirir.',
+      visual_note: 'A lone tree standing strong in a storm, bending but not breaking, dramatic sky.',
+      keywords: ['lone tree storm', 'resilience', 'bending not breaking', 'strength']
+    },
+    {
+      scene_id: 'scene-015',
+      title: 'Kader İlaç Gibidir',
+      narration: 'Kader, geçmişteki acılar ve musibetler için bir ilaç gibidir. Ümitsizliğin içinde nefes aldırır. Elinden gideni geri almak için çırpınmak yerine, kalp o kaybı anlamlandırabilir hale gelir. Anlam bulduğunda acı hâlâ var olsa bile taşınabilir olur.',
+      visual_note: 'Morning light slowly filling a dark room through curtains, hope emerging.',
+      keywords: ['morning light curtains', 'healing', 'hope emerging', 'soft illumination']
+    },
+    {
+      scene_id: 'scene-016',
+      title: 'Gelecek İçin Bahane Olmaz',
+      narration: 'Fakat gelecek için kader bahane edilemez. "Kaderimde başarı yokmuş" diye çalışmaktan vazgeçmek, "Kaderimde iyilik yokmuş" diye tembelliğe düşmek doğru değildir. Kader geleceğe ümitsiz bakmak için değil, geçmişe huzurla bakmak içindir.',
+      visual_note: 'Open road stretching toward horizon, sunrise ahead, forward cinematic perspective.',
+      keywords: ['open road sunrise', 'future', 'direction', 'forward movement']
+    },
+    {
+      scene_id: 'scene-017',
+      title: 'Kötülük ve Seçim',
+      narration: 'Kötülük meselesinde insan ciddi bir sorumluluk taşır. Kötülüğü var eden kendi seçimidir. Bu fark, sorumluluğun tam olarak nerede durduğunu gösterir ve insanı hesabından kaçamaz kılar. Çünkü tercih bendeydi.',
+      visual_note: 'Person at a dark crossroads, a faint light visible in one direction, moral choice.',
+      keywords: ['moral crossroads', 'dark night', 'conscience', 'choice']
+    },
+    {
+      scene_id: 'scene-018',
+      title: 'Tahrip Küçük Güçle Başlar',
+      narration: 'Kötülük çoğu zaman tahrip cinsindendir. Yıkmak yapmak kadar büyük bir güç istemez. Bir kibrit büyük bir binayı yakabilir. İnsan da küçük bir tercihle büyük bir tahribatın kapısını açabilir. Bu yüzden insanın isyanı hafife alınmaz.',
+      visual_note: 'A single match flame, extreme close-up, dark background, fragile yet powerful.',
+      keywords: ['single match flame', 'fragile power', 'destruction', 'small cause big effect']
+    },
+    {
+      scene_id: 'scene-019',
+      title: 'Dümenci Örneği',
+      narration: 'Bir geminin dümencisi görevini ihmal ettiğinde, bütün gemi batabilir. O büyük bir şey inşa etmemiştir; yalnızca görevini terk etmiştir. Ama sonuç çok büyüktür. İşte insan iradesi de böyledir: Yaratmaz; ama yönelişiyle büyük felakete kapı açabilir.',
+      visual_note: 'Abandoned ship wheel in dense fog, no hands on it, eerie calm, consequences.',
+      keywords: ['abandoned ship wheel', 'neglect', 'fog', 'consequences']
+    },
+    {
+      scene_id: 'scene-020',
+      title: 'Kötülüğü Seçmek ile Yaratmak Arasındaki Fark',
+      narration: 'Kötülüğü seçmek kötüdür. Ama Allah\'ın onu yaratması, içinde başka hikmetler barındırdığı için kötülük değildir. Bu ayrım önemlidir. İnsan sorumlu olduğu şey kendi seçimidir; Allah\'ın yaratması ise adalet, hikmet ve kudret içindedir. Zulüm insanın seçimine aittir, yaratmaya değil.',
+      visual_note: 'Light and shadow interplay on textured stone wall, dramatic contrast, depth.',
+      keywords: ['light shadow contrast', 'duality', 'judgment', 'perspective']
+    },
+    {
+      scene_id: 'scene-021',
+      title: 'Yağmur Örneği',
+      narration: 'Yağmur pek çok fayda taşır. Tarlayı sular, toprağı besler, ruhu serinletir. Bir adam yağmurda ıslandı diye "Yağmur rahmet değildir" diyemez. Tek bir küçük zarar, büyük ve genel hayırları yok sayamaz. Kaderin de böyle bir genişliği vardır; insanın göremediği boyutları kuşatır.',
+      visual_note: 'Rain falling on dry earth, plants beginning to revive, life returning, macro close-up.',
+      keywords: ['rain on dry earth', 'revival', "nature's mercy", 'macro photography']
+    },
+    {
+      scene_id: 'scene-022',
+      title: 'Zahir ve Hakiki İllet',
+      narration: 'İnsan bazen yalnız görünene bakar. Bir haksızlık karşısında "Bu neden böyle oldu?" diye sorar. Fakat kader, yalnız görünen yüzü değil, hakiki sebepleri, neticeleri ve hikmetleri de kuşatır. Bizim hükmümüz eksik kalabilir; kaderin hükmü ise adaleti aramaktadır.',
+      visual_note: 'Looking through deep clear water at the bottom, distorted view from surface, depth.',
+      keywords: ['underwater clarity', 'depth perception', 'hidden truth', 'surface vs depth']
+    },
+    {
+      scene_id: 'scene-023',
+      title: 'Hâkim Örneği',
+      narration: 'Bir hâkim, işlemediğin bir hırsızlık yüzünden seni hapse atsa, zahirde sana zulmetmiş olur. Ama kader, kimsenin bilmediği gizli bir suçundan dolayı o hapsi sana takdir etmişse, kader açısından adalet gerçekleşmiş demektir. Zahir zulüm gibi görünse de hakikat adaleti taşır.',
+      visual_note: 'Scales of justice with hidden counterweight bringing balance, court light, symbolic.',
+      keywords: ['scales of justice', 'hidden balance', 'truth', 'court symbolism']
+    },
+    {
+      scene_id: 'scene-024',
+      title: 'Allah\'ın Yaratmasında Zulüm Yoktur',
+      narration: 'Allah\'ın yaratmasında zulüm yoktur. Çirkinlik ve haksızlık, kulun yanlış seçimine ve kabiliyetini kötüye kullanmasına aittir. Bu ayrımı görmek, insanı şikâyetten korur ve Allah\'a olan güveni pekiştirir; çünkü O adaletle yaratmaktadır.',
+      visual_note: 'Vast landscape from high above, perfect order visible in nature, harmony from distance.',
+      keywords: ['vast landscape aerial', 'divine order', 'harmony', 'perspective from above']
+    },
+    {
+      scene_id: 'scene-025',
+      title: 'İnsanın Hükmü Eksik Kalır',
+      narration: 'Biz olayları yalnız dış yüzünden değerlendiririz. Başlangıcını, sonunu, gizli sebebini ve neticesini göremeyiz. Kader ise tümünü kuşatır. Bu yüzden insanın bir olaya hükmetmesi eksik kalır. Tevazu işte burada anlam kazanır; bilmediğimiz şeyler çok fazladır.',
+      visual_note: 'Person looking at a complex mosaic from too close, pattern unclear from near, detail.',
+      keywords: ['mosaic pattern', 'perspective', 'limited view', 'close up detail']
+    },
+    {
+      scene_id: 'scene-026',
+      title: 'İnsana Kalan Üç Şey',
+      narration: 'Bu hakikatlerin farkına varan insan için üç yol açılır. Birincisi sorumluluk: Kötülükleri kendine ver, hesabını ver. İkincisi şükür: İyilikleri Allah\'a ver, büyüklenme. Üçüncüsü sabır: Musibeti kaderde gör, çöküp kalma. Bu üçü birlikte insanın dengesini kurar.',
+      visual_note: 'Three paths diverging from a central point in a sunlit garden, each leading forward.',
+      keywords: ['three paths garden', 'choice', 'direction', 'forward journey']
+    },
+    {
+      scene_id: 'scene-027',
+      title: 'Kötülükleri Kendine Ver',
+      narration: 'Kötülüklerini kadere yıkma. İçini yokla; hangi tercihle o noktaya geldin? Hangi kapıyı sen açtın? Bu hesap insanı ezmek için değildir. Aksine insanı kendi gerçeğiyle yüzleştirir ve değişmeye kapı aralar. Tövbe bu yüzden mümkündür; çünkü seçim bendeydi.',
+      visual_note: 'Person sitting alone in quiet contemplation, head bowed, warm candlelight glow.',
+      keywords: ['contemplation', 'candlelight', 'self-reflection', 'accountability']
+    },
+    {
+      scene_id: 'scene-028',
+      title: 'İyilikleri Allah\'a Ver',
+      narration: 'İyilik yaptığında bir an dur. Niyeti veren, gücü veren, fırsatı açan kim? Dürüst bir bakış, her iyiliğin arkasında bir lütuf görür. İnsan bu şuurla yaşarsa, her iyilik şükre dönüşür. Ve gurur yerine minnet gelir; bu ufak değişim insanı içten dönüştürür.',
+      visual_note: 'Hands cupped together receiving falling water, gentle light from above, gratitude.',
+      keywords: ['hands receiving water', 'gratitude', 'receiving grace', 'thankfulness']
+    },
+    {
+      scene_id: 'scene-029',
+      title: 'Musibette Kader',
+      narration: 'Başına bir şey geldiğinde ilk tepki genellikle itiraz ya da çöküntüdür. Ama kalpte bir şey ışıldıyorsa, o anda kader görünür: Bu da bir takdirdir. Bu his acıyı tamamen ortadan kaldırmaz; ama altında ezilmekten korur. Sabır bu şuurun meyvesidir.',
+      visual_note: 'Single candle flame in complete darkness, steady glow, quiet inner strength.',
+      keywords: ['candle in darkness', 'steadiness', 'quiet strength', 'inner light']
+    },
+    {
+      scene_id: 'scene-030',
+      title: 'Sorumluluk Bilinci',
+      narration: 'Sorumluluk insanı küçük yapmaz; anlamlı kılar. Hesap verebilmek, anlamlı bir hayatın işaretidir. Sorumsuz bir varlık ne öğrenir, ne büyür, ne de anlam bulur. Cüz-i ihtiyarî insana sınırlı da olsa bir tercih alanı vermiştir; ve bu alan onurlu bir yük taşır.',
+      visual_note: 'A person standing upright with dignified posture in morning light, purpose and calm.',
+      keywords: ['dignified person', 'morning light', 'purpose', 'standing tall']
+    },
+    {
+      scene_id: 'scene-031',
+      title: 'Gurur ve Bahane: İki Büyük Tuzak',
+      narration: 'Gurur ve bahane, insanın iki büyük tuzağıdır. Gurur "Ben yaptım" der, insanı hakikatten uzaklaştırır. Bahane "Kaderimde varmış" der, insanı değişmekten alıkoyar. Her ikisi de insana farklı yollardan zarar verir. Korunmanın yolu aynı hakikati kavramaktır.',
+      visual_note: 'Two mirrored traps in nature, symmetrical composition, symbolic visual metaphor.',
+      keywords: ['symmetrical traps', 'duality', 'warning', 'symbolic composition']
+    },
+    {
+      scene_id: 'scene-032',
+      title: 'Şükür ve Tövbe Korutur',
+      narration: 'İnsan iyilik karşısında şükre, kötülük karşısında tövbeye yöneldiğinde iki hakikatin dengesi yerine oturur. Ne gururun şişirdiği biri olur, ne de kaderin arkasına saklanan biri. Şükür insanı büyüklenmekten, tövbe ise bahaneden korur. İkisi birlikte insanı doğru yerde tutar.',
+      visual_note: 'Dawn sky clearing after night, transition from dark to light, horizon renewing.',
+      keywords: ['dawn clearing', 'transition', 'renewal', 'horizon hope']
+    },
+    {
+      scene_id: 'scene-033',
+      title: 'Daha Doğru Bir Yerde Durmak',
+      narration: 'Ne tamamen çaresiz görünmek, ne de her şeyin sahibiymiş gibi davranmak. İnsan bu iki hata arasında doğru bir yerde durmayı öğrenebilir. Hem haddini bilmek, hem sorumluluğunu kabul etmek. Bu duruş insanı Allah\'a da kendine de karşı dürüst kılar.',
+      visual_note: 'Person standing calmly centered between two walls of soft light, balanced composition.',
+      keywords: ['centered person', 'balance', 'two walls of light', 'equilibrium']
+    },
+    {
+      scene_id: 'scene-034',
+      title: 'Kalbin İki Tutumu',
+      narration: 'Bir kalp, iyilik yaptığında "Bana yaptırıldı" diyerek şükre yaklaşır. Kötülük yaptığında ise "Ben istedim, ben sorumluyum" diyerek hesabını verir. Bu iki tutum, insanı gururdan da bahaneden de uzak tutar. İnsana yakışan budur.',
+      visual_note: 'Heart-shaped light reflection on water, gentle ripples, warm golden glow.',
+      keywords: ['heart light reflection', 'inner attitude', 'warm glow', 'water reflection']
+    },
+    {
+      scene_id: 'scene-035',
+      title: 'Teslimiyet ve Sorumluluk Birlikte',
+      narration: 'Kader, kalbi rahatlatan bir teslimiyet olur. Cüz-i ihtiyarî ise insanı ayakta tutan bir sorumluluk bilinci. Bu ikisi birlikte var olduğunda, insan gururdan uzak, bahaneden uzak, şükre ve tövbeye yakın bir hayat sürer. Belki de insanın aradığı huzur tam burada gizlidir.',
+      visual_note: 'Wide open landscape at sunset, person silhouette in distance, serene and purposeful.',
+      keywords: ['sunset silhouette', 'open landscape', 'serenity', 'purpose']
+    }
+  ],
+
+  metadata: {
+    source: 'derin-okuma',
+    blog_post: '26-soz-1-mebhas-kader-bizi-sorumluluktan-kurtarir-mi',
+    test_day: 'day-44',
+    workflow: 'manual_scene_json_single_track_landscape_load_input',
+    content_generation_status: 'filled'
+  }
+};
+
+return [{ json: { raw_input: rawInput } }];

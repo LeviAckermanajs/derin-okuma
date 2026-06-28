@@ -2,13 +2,14 @@
 // build-publish-manifest.mjs — build publish-manifest.json from an existing export folder
 
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 import process from 'process';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const DEFAULT_EXPORT_ROOT = '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
+const DEFAULT_EXPORT_ROOT = path.join(os.homedir(), 'Derin Okuma YT');
 const SCHEMA_VERSION = '1';
 
 // ── CLI ───────────────────────────────────────────────────────────────────────

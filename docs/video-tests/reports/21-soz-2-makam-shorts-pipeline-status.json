@@ -1,0 +1,16 @@
+{
+  "slug": "21-soz-2-makam",
+  "title": "26.Söz - 1.Mebhas",
+  "day": 43,
+  "dayTag": "day-43",
+  "runId": "day43-batch-a",
+  "timestamp": "2026-06-26T11:23:01.167Z",
+  "status": "failed",
+  "failedCommand": "node scripts/validate-video-package.mjs --slug 21-soz-2-makam --report",
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/21-soz-2-makam-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/21-soz-2-makam-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/21-soz-2-makam-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-21-soz-2-makam-short-*-day43-batch-a"
+  }
+}

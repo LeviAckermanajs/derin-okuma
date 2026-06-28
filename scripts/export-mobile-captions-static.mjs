@@ -8,6 +8,7 @@
 //   <export_folder>/mobile-caption-link.json
 
 import fs     from 'fs';
+import os     from 'os';
 import path   from 'path';
 import crypto from 'crypto';
 import { fileURLToPath } from 'url';
@@ -15,7 +16,7 @@ import { fileURLToPath } from 'url';
 const __dirname   = path.dirname(fileURLToPath(import.meta.url));
 const ROOT        = path.resolve(__dirname, '..');
 const EXPORT_ROOT = process.env.DERIN_OKUMA_EXPORT_ROOT
-  || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
+  || path.join(os.homedir(), 'Derin Okuma YT');
 const SITE_BASE   = process.env.SITE_BASE_URL || 'https://derin-okuma.vercel.app';
 const SHORTS_DIR  = path.join(ROOT, 'docs', 'video-tests', 'shorts');
 

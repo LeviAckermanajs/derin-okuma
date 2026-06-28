@@ -43,7 +43,7 @@ Load Input (batch JS pasted into n8n Code node)
 1. Reads shorts metadata from `docs/video-tests/shorts/<slug>/metadata/<slug>-shorts-metadata.json`
 2. Resolves each `short-00N` job folder under `scene-blog-video/output/jobs/`
 3. Finds `renders/shorts-main.mp4` for each short
-4. Creates the target desktop folder: `/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT/<FolderName>/`
+4. Creates the target desktop folder: `/home/muhammet/Derin Okuma YT/<FolderName>/`
 5. Copies and renames each MP4 using `selected_title` from the shorts metadata
 6. Writes `export-index.md` to the desktop folder
 
@@ -134,7 +134,7 @@ Upload scripts are idempotent: they check `publish-result.json` for already-uplo
 The `publish-manifest.json` should live alongside `export-index.md` in the desktop export folder:
 
 ```
-/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT/<FolderName>/
+/home/muhammet/Derin Okuma YT/<FolderName>/
   export-index.md
   publish-manifest.json     ← new
   publish-result.json       ← written by upload scripts
@@ -152,13 +152,13 @@ The `publish-manifest.json` should live alongside `export-index.md` in the deskt
   "slug": "10-soz-hasir-risalesi-6-12-suret",
   "run_id": "day25-full6-b",
   "export_type": "shorts",
-  "target_folder": "/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT/Haşir Risalesi 6-12. Suret",
-  "source_export_index": "/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT/Haşir Risalesi 6-12. Suret/export-index.md",
+  "target_folder": "/home/muhammet/Derin Okuma YT/Haşir Risalesi 6-12. Suret",
+  "source_export_index": "/home/muhammet/Derin Okuma YT/Haşir Risalesi 6-12. Suret/export-index.md",
   "source_metadata": "docs/video-tests/shorts/10-soz-hasir-risalesi-6-12-suret/metadata/10-soz-hasir-risalesi-6-12-suret-shorts-metadata.json",
   "videos": [
     {
       "id": "short-001",
-      "path": "/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT/Haşir Risalesi 6-12. Suret/Dünya Neden Son Yurt Değil.mp4",
+      "path": "/home/muhammet/Derin Okuma YT/Haşir Risalesi 6-12. Suret/Dünya Neden Son Yurt Değil.mp4",
       "file_exists": true,
       "title": "Dünya Neden Son Yurt Değil?",
       "description": "Dünya kalıcı saray değil; misafirhane, sergi ve imtihan alanıdır. #derinokuma #shorts #tefekkür #iman #ahiret #dünya",
@@ -772,7 +772,7 @@ npm run video:publish-manifest -- \
   --slug 10-soz-hasir-risalesi-6-12-suret \
   --run-id day25-full6-b \
   --type shorts \
-  --export-root "/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT"
+  --export-root "/home/muhammet/Derin Okuma YT"
 ```
 
 **Output that confirms success:**
@@ -784,7 +784,7 @@ npm run video:publish-manifest -- \
 [OK] short-002 path exists: Kayıt Varsa Hesap Neden Var.mp4
 ...
 [OK] publish-manifest.json written
-Target: /mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT/Haşir Risalesi 6-12. Suret/publish-manifest.json
+Target: /home/muhammet/Derin Okuma YT/Haşir Risalesi 6-12. Suret/publish-manifest.json
 ```
 
 Once that command exits 0 and the JSON looks correct, the dry-run validator is the next step.  

@@ -9,13 +9,14 @@
 //   node scripts/tiktok-export-pipeline.mjs --manifest <abs-path-to-publish-manifest.json>
 
 import fs   from 'fs';
+import os   from 'os';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname   = path.dirname(fileURLToPath(import.meta.url));
 const ROOT        = path.resolve(__dirname, '..');
 const EXPORT_ROOT = process.env.DERIN_OKUMA_EXPORT_ROOT
-  || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
+  || path.join(os.homedir(), 'Derin Okuma YT');
 const SHORTS_DIR  = path.join(ROOT, 'docs', 'video-tests', 'shorts');
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

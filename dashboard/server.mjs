@@ -27,7 +27,7 @@ const JOBS_DIR     = path.join(__dirname, '.jobs');
 const DRAFTS_DIR       = path.join(ROOT, 'docs', 'drafts');
 const DRAFT_LINKS_PATH = path.join(ROOT, 'docs', 'drafts', '.draft-links.json');
 const TOKEN_PATH       = path.join(ROOT, '.secrets', 'tiktok', 'token.json');
-const EXPORT_ROOT  = process.env.DERIN_OKUMA_EXPORT_ROOT || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
+const EXPORT_ROOT  = process.env.DERIN_OKUMA_EXPORT_ROOT || path.join(os.homedir(), 'Derin Okuma YT');
 const N8N_URL      = process.env.N8N_URL || 'http://localhost:5678';
 
 const SBV_ROOT      = '/home/muhammet/projects/scene-blog-video';

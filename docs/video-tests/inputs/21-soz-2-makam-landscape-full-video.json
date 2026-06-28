@@ -1,0 +1,30 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "26.Söz - 1.Mebhas",
+    "description": "TODO: Bu yazıdan üretilecek landscape video açıklaması.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "21-soz-2-makam-landscape-day-43"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "21-soz-2-makam",
+    "test_day": "day-43",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "scaffold_only",
+    "source_files": [
+      "src/content/blog/21-soz-2-makam.md"
+    ]
+  }
+}

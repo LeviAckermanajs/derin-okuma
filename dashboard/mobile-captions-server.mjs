@@ -12,7 +12,7 @@ const __dirname   = path.dirname(fileURLToPath(import.meta.url));
 const HOST        = '0.0.0.0';
 const PORT        = 3457;
 const EXPORT_ROOT = process.env.DERIN_OKUMA_EXPORT_ROOT
-  || '/mnt/c/Users/MUHAMMET/Desktop/Derin Okuma YT';
+  || path.join(os.homedir(), 'Derin Okuma YT');
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
