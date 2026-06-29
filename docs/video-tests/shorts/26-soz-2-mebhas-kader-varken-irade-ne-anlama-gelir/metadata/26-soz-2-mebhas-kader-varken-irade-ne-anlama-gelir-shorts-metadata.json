@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "26-soz-2-mebhas-kader-varken-irade-ne-anlama-gelir",
+  "test_day": "day-45",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Allah hangi seçimi yapacağını biliyorsa, gerçekten özgür müsün?",
+      "title_options": [
+        "İlâhî Bilgi İradeyi Zorlar mı?",
+        "Kader Varken İnsan Nasıl Seçer?",
+        "Bilinen Seçim Özgür Olabilir mi?",
+        "Allah Biliyorsa Neden Sorumluyuz?"
+      ],
+      "selected_title": "İlâhî Bilgi İradeyi Zorlar mı?",
+      "description": "Allah’ın bir tercihi bilmesi, insanı o tercihe mecbur eder mi? Kader ile iradenin neden çelişmediğini düşünelim. #derinokuma #shorts #tefekkür #iman #kader #irade",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kader",
+        "#irade"
+      ],
+      "thumbnail_or_cover_text": "BİLMEK ZORLAMAK MI?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "İradeni tam açıklayamaman, iraden olmadığı anlamına gelir mi?",
+      "title_options": [
+        "İnsan Seçtiğini Nasıl Bilir?",
+        "İradeyi Göremiyorsak Yok mudur?",
+        "Bilmemek Neden Yokluk Değildir?",
+        "Vicdan Seçimi Nasıl Hisseder?"
+      ],
+      "selected_title": "İnsan Seçtiğini Nasıl Bilir?",
+      "description": "İradenin mahiyetini tam çözememek, onun yokluğunu göstermez. Tercih, önce insanın vicdanında yaşadığı gerçek bir tecrübedir. #derinokuma #shorts #tefekkür #iman #irade #vicdan",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#irade",
+        "#vicdan"
+      ],
+      "thumbnail_or_cover_text": "SEÇTİĞİNİ BİLİRSİN"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "“Zaten kaderde vardı” demek, yapılan kötülüğün suçunu siler mi?",
+      "title_options": [
+        "Kader Neden Suçu Silmez?",
+        "Kader Varsa Neden Sorumluyuz?",
+        "Sonuç Yazılıysa Suç Kimin?",
+        "Kader Bahane Olursa Ne Olur?"
+      ],
+      "selected_title": "Kader Neden Suçu Silmez?",
+      "description": "Kader yalnız sonucu değil, sebebi ve insanın tercihini de birlikte kuşatır. Bu yüzden kader, sorumluluktan kaçış bahanesi olamaz. #derinokuma #shorts #tefekkür #kader #sorumluluk #ahlâk",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#kader",
+        "#sorumluluk",
+        "#ahlâk"
+      ],
+      "thumbnail_or_cover_text": "KADER BAHANE DEĞİL"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İnsan fiili yaratmıyorsa, neden yaptığından sorumlu tutulur?",
+      "title_options": [
+        "Sorumluluk Neden Tercihten Doğar?",
+        "İnsan Yaratmıyorsa Neden Sorumlu?",
+        "Küçük İrade Nasıl Hesap Doğurur?",
+        "Yöneliş Neden Bu Kadar Önemli?"
+      ],
+      "selected_title": "Sorumluluk Neden Tercihten Doğar?",
+      "description": "İnsan sonuçları yaratmaz; fakat ister, yönelir ve teşebbüs eder. Ahlâkî sorumluluğun merkezi, sınırlı ama gerçek olan bu tercihtir. #derinokuma #shorts #tefekkür #iman #irade #sorumluluk",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#irade",
+        "#sorumluluk"
+      ],
+      "thumbnail_or_cover_text": "TERCİHİN GERÇEK"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Zayıf bir irade, insanın bütün hayatına nasıl yön verebilir?",
+      "title_options": [
+        "Zayıf İrade Nasıl Yön Verir?",
+        "Küçük Bir Seçim Ne Değiştirir?",
+        "İnsan Hangi Yolu Seçer?",
+        "İrade Zayıfsa Neden Önemlidir?"
+      ],
+      "selected_title": "Zayıf İrade Nasıl Yön Verir?",
+      "description": "İnsanın iradesi küçük olabilir; fakat yön tayin eder. İlâhî kudret imkânı yaratırken insan hangi yola girmek istediğini seçer. #derinokuma #shorts #tefekkür #iman #irade #kader",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#irade",
+        "#kader"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜK AMA YÖN VERİR"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "İraden zayıfsa, iyiliğe nasıl güç bulup kötülükten nasıl dönersin?",
+      "title_options": [
+        "Dua İradeyi Nasıl Güçlendirir?",
+        "Kötü Yöneliş Nasıl Kesilir?",
+        "İrade Zayıfsa Ne Yapmalı?",
+        "Tövbe Yönünü Nasıl Değiştirir?"
+      ],
+      "selected_title": "Dua İradeyi Nasıl Güçlendirir?",
+      "description": "Dua ve tevekkül iyiliğe yönelişi kuvvetlendirir; istiğfar ve tövbe kötü yönelişin bağını keser. Zayıf irade, İlâhî yardıma açıldığında yalnız kalmaz. #derinokuma #shorts #tefekkür #dua #tövbe #tevekkül",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#dua",
+        "#tövbe",
+        "#tevekkül"
+      ],
+      "thumbnail_or_cover_text": "İRADENİ DESTEKLE"
+    }
+  ]
+}

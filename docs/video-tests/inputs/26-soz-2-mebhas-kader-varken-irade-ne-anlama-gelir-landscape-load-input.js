@@ -1,0 +1,490 @@
+// Derin Okuma — 26.Söz - 2.Makam landscape video
+// Filled for day-45; paste into the n8n Load Input Code node.
+
+const rawInput = {
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "runtime": {
+    "repo_root": "/home/muhammet/projects/scene-blog-video",
+    "renderer_url": "http://127.0.0.1:8000"
+  },
+  "job": {
+    "title": "26.Söz - 2.Makam",
+    "description": "Kader ile insan iradesi birbiriyle çelişir mi? Bu video, İlâhî bilginin seçimi zorlamadığını; insanın sınırlı fakat gerçek yönelişinin sorumluluğa nasıl temel olduğunu anlatır.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "26-soz-2-mebhas-kader-varken-irade-ne-anlama-gelir-landscape-day-45"
+  },
+  "reuse_existing_audio": {
+    "enabled": false,
+    "audio_mode": "single_track",
+    "audio_track": {
+      "mode": "single",
+      "path": "",
+      "duration_seconds": null
+    }
+  },
+  "reuse_existing_video": {
+    "enabled": false,
+    "visual_mode": "semantic",
+    "video_root": "",
+    "path_template": "{scene_id}.mp4"
+  },
+  "visual_mode": "ambient",
+  "audio_strategy": {
+    "mode": "single_track",
+    "timing_strategy": "elevenlabs_timestamps",
+    "join_separator": "\n\n"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "render_mode": "landscape",
+    "produce_both": false,
+    "background_music_enabled": true,
+    "target_fps": 30
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Kader ve Seçim Sorusu",
+      "narration": "İnsan hayatında iki hakikati aynı anda hisseder: Yaşananların İlâhî bir takdir içinde olduğunu düşünür ve kendi seçimlerinin sonuçlarını vicdanında taşır. Peki her şey Allah’ın ilmindeyse, insanın iradesi nerede başlar? Kader ile sorumluluk arasındaki denge, bu soruyu doğru kurmakla anlaşılır.",
+      "visual_note": "A thoughtful person at a quiet crossroads before sunrise, slow cinematic movement.",
+      "keywords": [
+        "crossroads",
+        "thoughtful person",
+        "sunrise",
+        "choice"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "İçimizdeki Tercih",
+      "narration": "Bir işi yapmakla yapmamak arasında kaldığımızda, içimizde bir yöneliş yaşarız. Bazen tereddüt eder, sonra bir tarafa karar veririz. İnsan bu tercih tecrübesini doğrudan bilir; yaptığı seçimin kendisine ait olduğunu vicdanında hisseder.",
+      "visual_note": "Close-up of a contemplative person pausing between two forest paths, soft daylight.",
+      "keywords": [
+        "decision",
+        "forest paths",
+        "contemplation",
+        "human choice"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Varlık Başka Mahiyet Başka",
+      "narration": "Bir şeyin varlığını bilmekle onun mahiyetini bütünüyle çözmek aynı değildir. İnsan iradesinin nasıl işlediğini eksiksiz açıklayamayabilir. Fakat bu eksiklik, tercih duygusunun ve seçme kabiliyetinin yokluğunu göstermez.",
+      "visual_note": "Hands examining an intricate clock mechanism in gentle window light, shallow depth of field.",
+      "keywords": [
+        "clock mechanism",
+        "curiosity",
+        "hands",
+        "window light"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Bilmemek Yokluk Değildir",
+      "narration": "İnsan pek çok hakikatin etkisini yaşar, fakat iç işleyişini tam kavrayamaz. Bilgimizin sınırı, gerçekliğin sınırı değildir. İradeyi tam tarif edememek de onu inkâr etmek için yeterli bir gerekçe olmaz.",
+      "visual_note": "A vast misty mountain range partly hidden by clouds, calm aerial shot.",
+      "keywords": [
+        "misty mountains",
+        "hidden horizon",
+        "aerial view",
+        "mystery"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "İki Hakikati Birlikte Tutmak",
+      "narration": "Kaderi kabul etmek, seçimi silmeyi gerektirmez. İradeyi kabul etmek de insanı bağımsız ve sınırsız bir güç sahibi yapmaz. Sağlam düşünce, İlâhî takdir ile insanın sorumluluğunu birbirine rakip görmeden birlikte tutar.",
+      "visual_note": "Two streams joining into one calm river, balanced composition, golden hour.",
+      "keywords": [
+        "joining streams",
+        "balance",
+        "calm river",
+        "golden hour"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Kader İlâhî İlimdir",
+      "narration": "Kader, Allah’ın her şeyi kuşatan ilmiyle ilgilidir. Geçmişte olanlar, şimdi yaşananlar ve gelecekte gerçekleşecek olanlar bu ilmin dışına çıkmaz. Fakat bilmek ile zorlamak aynı fiil değildir.",
+      "visual_note": "Star-filled sky above a quiet landscape, slow time-lapse, deep blue tones.",
+      "keywords": [
+        "starry sky",
+        "vast knowledge",
+        "night landscape",
+        "time lapse"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Bilgi Mecbur Etmez",
+      "narration": "Bir seçimin Allah tarafından bilinmesi, insanın o seçime zorlandığı anlamına gelmez. İlâhî ilim, insanın neyi özgürce tercih edeceğini de kuşatır. Seçim bilgiye göre yapılmaz; bilgi, seçimin nasıl gerçekleşeceğini eksiksiz bilir.",
+      "visual_note": "A person freely choosing a book from a quiet library shelf, warm cinematic light.",
+      "keywords": [
+        "library",
+        "free choice",
+        "books",
+        "warm light"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Bilinen Şeye Uygun İlim",
+      "narration": "İlim, bilinen şey nasılsa onu öyle kuşatır. İnsan bir yolu kendi isteğiyle seçecekse, bu tercih İlâhî ilimde de kendi isteğiyle yapılmış bir tercih olarak bilinir. Dolayısıyla kader, iradenin karşısında değil; iradeyi de içeren kuşatıcı bilginin adıdır.",
+      "visual_note": "A winding road seen clearly from a high hill, lone traveler choosing the route.",
+      "keywords": [
+        "winding road",
+        "high viewpoint",
+        "traveler",
+        "route"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Ezel Zamanın Başlangıcı Değildir",
+      "narration": "Ezel, geçmişin çok uzak bir köşesi gibi düşünülürse yanlış bir tablo ortaya çıkar. Sanki önce bir yazı yazılmış, sonra insan o yazının baskısıyla hareket etmiş gibi görünür. Oysa İlâhî ilim zaman çizgisinin içinde bekleyen bir bilgi değildir.",
+      "visual_note": "An ancient sundial under moving clouds, timeless cinematic atmosphere.",
+      "keywords": [
+        "sundial",
+        "moving clouds",
+        "timelessness",
+        "ancient stone"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Zamanın İçinden Bakışımız",
+      "narration": "Biz olayları sırayla görürüz: Dün geride kalır, bugün yaşanır, yarın henüz gelmemiş görünür. Bu sınırlı bakış yüzünden bilgiyi de önce ve sonra kayıtlarıyla düşünürüz. Allah’ın ilmi ise bizim zaman içindeki dar görüşümüze benzemez.",
+      "visual_note": "Fast-moving city shadows from morning to evening, fixed camera time-lapse.",
+      "keywords": [
+        "time passage",
+        "city shadows",
+        "day cycle",
+        "time lapse"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Yükselen Ayna",
+      "narration": "Yerde duran bir ayna yalnızca dar bir alanı gösterir. Ayna yükseldikçe sağında ve solunda kalan daha geniş bir manzara aynı görüntüye girer. Bakış yüksekliği arttığında, aşağıda birbirinden uzak görünen noktalar birlikte kuşatılır.",
+      "visual_note": "A mirror rising above a valley and revealing a wider panoramic landscape.",
+      "keywords": [
+        "mirror",
+        "wide panorama",
+        "valley",
+        "elevated view"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Bütün Zamanları Kuşatan Bakış",
+      "narration": "İlâhî ilim geçmişi, hâli ve geleceği tek bir kuşatışla bilir. Bizim için henüz gerçekleşmemiş olan bir tercih, bu ilim açısından bilinmez değildir. Bu kuşatıcılık, seçimi ortadan kaldırmaz; seçimin bütün şartlarıyla bilinmesini ifade eder.",
+      "visual_note": "A sweeping aerial view showing a river from mountain source to distant sea.",
+      "keywords": [
+        "river journey",
+        "mountain source",
+        "distant sea",
+        "aerial panorama"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "İrade Bilginin İçindedir",
+      "narration": "Kader insanı iradesiz bir nesne olarak kaydetmez. Tereddüdü, niyeti, yönelişi ve kararıyla birlikte bilir. Bu nedenle “Biliniyorsa mecburum” sonucu doğru değildir; bilinen şey zaten insanın tercih ederek yaptığı fiildir.",
+      "visual_note": "A person writing a deliberate decision in a notebook beside a quiet window.",
+      "keywords": [
+        "notebook",
+        "deliberate decision",
+        "window",
+        "reflection"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Sebep ve Sonuç Birlikte",
+      "narration": "Kader yalnızca sonuçları değil, o sonuçlara götüren sebepleri de kuşatır. Bir olayın zamanı kadar hangi tercih ve hangi fiille gerçekleşeceği de bilinir. Sebebi kaderden çıkarıp yalnız sonucu kadere vermek, hakikatin yarısını ayırmak olur.",
+      "visual_note": "A line of falling dominoes showing cause and effect, dramatic soft lighting.",
+      "keywords": [
+        "dominoes",
+        "cause and effect",
+        "sequence",
+        "soft lighting"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Suçu Kadere Yüklemek",
+      "narration": "Bir insan başka birine zarar verdiğinde, “Bu sonuç zaten takdir edilmişti” diyerek sorumluluktan kaçamaz. Çünkü zarar veren tercih, kullanılan sebep ve ortaya çıkan sonuç birlikte değerlendirilir. Fiile yönelen insan, kendi seçiminin ahlâkî yükünü taşır.",
+      "visual_note": "A tense silhouette lowering a clenched hand, choosing restraint in a dim corridor.",
+      "keywords": [
+        "moral choice",
+        "restraint",
+        "silhouette",
+        "responsibility"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Gerçekleşmeyen İhtimal",
+      "narration": "“O sebep olmasaydı aynı sonuç yine olur muydu?” sorusunun cevabını kesin olarak bilemeyiz. Gerçekleşmeyen ihtimaller hakkında hüküm kurup suçu hafifletemeyiz. Bildiğimiz şey, insanın belirli bir tercihle belirli bir fiile yöneldiğidir.",
+      "visual_note": "An unopened door beside an open doorway, quiet ambiguous interior, slow push in.",
+      "keywords": [
+        "two doors",
+        "unknown possibility",
+        "interior",
+        "ambiguity"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "Sorumluluk Tercihe Bakar",
+      "narration": "Ahlâkî sorumluluk, insanın bütün sonuçları yaratmasına dayanmaz. Neyi istediğine, hangi yolu seçtiğine ve hangi fiile teşebbüs ettiğine dayanır. Kader bu tercihi gizlemez; tam tersine onu bütün gerçekliğiyle kuşatır.",
+      "visual_note": "A person placing a hand on one of two directional signs at a rural fork.",
+      "keywords": [
+        "direction signs",
+        "rural fork",
+        "choice",
+        "responsibility"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Sınırlı İrade",
+      "narration": "İnsanın iradesi mutlak bir kudret değildir. Kalbin bir şeye meyletmesi, zihnin bir seçeneği benimsemesi ve kişinin o tarafa yönelmesi kadar ince bir paydır. Küçüktür; fakat insanın ahlâkî kimliğini belirleyecek kadar gerçektir.",
+      "visual_note": "A compass needle slowly settling on one direction, macro cinematic shot.",
+      "keywords": [
+        "compass needle",
+        "direction",
+        "macro shot",
+        "inclination"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Yönelişin İnceliği",
+      "narration": "Bir niyetin ağırlığı tartıyla ölçülmez, bir kararın hacmi gözle görülmez. Buna rağmen niyetler ve kararlar hayatın akışını değiştirir. İrade de maddî büyüklüğüyle değil, yön tayin eden niteliğiyle önem kazanır.",
+      "visual_note": "A small compass guiding a traveler across a vast open landscape.",
+      "keywords": [
+        "small compass",
+        "vast landscape",
+        "guidance",
+        "traveler"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Yaratmak ve Kazanmak",
+      "narration": "İnsan fiillerinin bütün şartlarını ve sonuçlarını yaratan değildir. Bedeni, imkânları, zamanı ve fiilin meydana gelişini yaratan Allah’tır. İnsana ait olan pay; istemek, yönelmek ve o fiili kendi tercihiyle kazanmaktır.",
+      "visual_note": "Hands planting a seed while rain and sunlight nurture the soil, cinematic close-up.",
+      "keywords": [
+        "planting seed",
+        "rain",
+        "sunlight",
+        "human effort"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Uyarının Anlamı",
+      "narration": "İnsan kötülüğe yöneldiği anda hâlâ geri dönebilir. Bu yüzden emir, yasak, nasihat ve vicdan uyarısı anlamlıdır. İrade hiç olmasaydı “Yapma” çağrısının, pişmanlığın ve tövbenin de ahlâkî bir karşılığı kalmazdı.",
+      "visual_note": "A person stopping at the edge of a dark path as warm light appears behind.",
+      "keywords": [
+        "turning back",
+        "dark path",
+        "warm light",
+        "warning"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Failin Unvanı",
+      "narration": "Bir kötülüğün yaratılması İlâhî kudrete ait olsa da o kötülüğü isteyen insan masum sayılmaz. Çünkü kötü unvan, yaratma gücünden değil, kötü tercihten doğar. İnsan neyi sahiplenip neye yönelmişse, ahlâkî vasfı da ona göre şekillenir.",
+      "visual_note": "A shadowed figure facing their reflection in a mirror, sober and introspective.",
+      "keywords": [
+        "mirror reflection",
+        "moral accountability",
+        "shadowed figure",
+        "introspection"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Güç Küçük Seçim Gerçek",
+      "narration": "İnsanın gücü sınırlıdır, fakat tercihi önemsiz değildir. Bir düğmeye dokunmak büyük bir sistemi çalıştırabilir; küçük hareket, geniş bir sonucun başlangıcı olabilir. İrade de yaratıcı güç olduğu için değil, yön veren bir şart olduğu için sorumluluğun temelidir.",
+      "visual_note": "A finger pressing a small switch as a large hall slowly fills with light.",
+      "keywords": [
+        "light switch",
+        "large hall",
+        "small action",
+        "illumination"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Önümüzdeki Yollar",
+      "narration": "Hayat boyunca insanın önüne farklı yollar çıkar. İyilik, sabır, adalet ve merhamet bir yön; bencillik, zarar ve haksızlık başka bir yöndür. İnsan bütün yolu yaratmaz, fakat hangi yola adım atacağını seçmekten muaf değildir.",
+      "visual_note": "A clear fork in a mountain trail, one path sunlit and one under heavy clouds.",
+      "keywords": [
+        "mountain trail",
+        "forked path",
+        "sunlight",
+        "moral direction"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Taşınan Çocuğun Tercihi",
+      "narration": "Güçsüz bir çocuğun güçlü bir yetişkinin omzunda taşındığını düşünelim. Yetişkin ona gideceği yönü sorsa, çocuk uzak ve soğuk bir tepeyi isteyebilir. Taşıyanın gücü büyüktür; fakat yön talebi çocuğa aittir.",
+      "visual_note": "A child riding on an adult shoulders and pointing toward a distant mountain.",
+      "keywords": [
+        "child on shoulders",
+        "distant mountain",
+        "pointing",
+        "journey"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Kudret ve Talep",
+      "narration": "Çocuğu hedefe ulaştıran kuvvet, onun kendi kuvveti değildir. Yine de hangi hedefi istediği önemsiz sayılamaz. İnsan da İlâhî kudretin yarattığı imkânlar içinde yönünü ister; sorumluluğu bu talebin niteliğinden doğar.",
+      "visual_note": "Strong adult carrying a child uphill while the child chooses the direction.",
+      "keywords": [
+        "carrying child",
+        "uphill journey",
+        "chosen direction",
+        "support"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Zayıf İradenin Değeri",
+      "narration": "İrade zayıf olduğu için değersiz değildir. Bir geminin dümeni gemiden küçüktür, fakat gidiş yönünü belirler. İnsanın niyeti ve tercihi de hayatın ahlâkî istikametini tayin eden küçük bir dümen gibidir.",
+      "visual_note": "Close-up of a ship wheel turning slightly on a calm open sea.",
+      "keywords": [
+        "ship wheel",
+        "open sea",
+        "direction",
+        "small movement"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Yıkmak Neden Kolaydır",
+      "narration": "Kötülükte insanın küçük iradesi büyük sonuçlara yol açabilir. Bir binayı kurmak uzun emek isterken, küçük bir ihmal onu ağır biçimde zedeleyebilir. Tahrip kolay olduğu için, şerre yönelen cüz’î tercih geniş bir zararın kapısını açabilir.",
+      "visual_note": "A single crack spreading across an old stone wall, slow detailed close-up.",
+      "keywords": [
+        "cracked wall",
+        "destruction",
+        "small cause",
+        "stone texture"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "İyilikte Yardıma Muhtaçlık",
+      "narration": "İnşa etmek ise bilgi, sabır, zaman ve birçok şartın bir araya gelmesini ister. İnsan iyiliği arzu eder, fakat onun tamamlanması için İlâhî yardıma muhtaçtır. Bu gerçek, iyilik yapanı gururdan korur ve şükre yöneltir.",
+      "visual_note": "Craftspeople carefully building a wooden structure together in morning light.",
+      "keywords": [
+        "careful construction",
+        "teamwork",
+        "morning light",
+        "craftsmanship"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Zayıflık Ümitsizlik Değildir",
+      "narration": "İradenin sınırlı oluşu insanı çaresizliğe mahkûm etmez. Çünkü insandan bütün neticeleri yaratması değil, doğru yöne samimiyetle dönmesi beklenir. Küçük bir yöneliş, sonsuz rahmet ve kudretin yardımına açılan kapı olabilir.",
+      "visual_note": "A small doorway opening onto a bright expansive valley, hopeful cinematic shot.",
+      "keywords": [
+        "open doorway",
+        "bright valley",
+        "hope",
+        "new direction"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Dua İradeyi Güçlendirir",
+      "narration": "İnsan iyiliğe yönelmek istediğinde dua ile destek ister. Dua, iradenin eksikliğini kabul ederken doğru tercihte sebat arzusunu da ifade eder. Böylece zayıf meyil, tevekkülle birlikte daha güçlü ve istikrarlı bir hayır yönelişine dönüşür.",
+      "visual_note": "Hands raised in quiet prayer by a window at dawn, soft natural light.",
+      "keywords": [
+        "prayer hands",
+        "dawn window",
+        "soft light",
+        "trust"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Tövbe Kötü Yönelişi Keser",
+      "narration": "İnsan yanlış bir yola girdiğinde dönüş kapısı kapanmaz. İstiğfar, hatayı dürüstçe kabul etmek; tövbe ise yönü yeniden iyiliğe çevirmektir. Pişmanlık geçmişi inkâr etmez, fakat kötülüğün geleceğe uzanan bağını kesebilir.",
+      "visual_note": "A traveler turning away from a stormy road toward a peaceful sunrise path.",
+      "keywords": [
+        "turning back",
+        "sunrise path",
+        "stormy road",
+        "repentance"
+      ]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Kader Gururu Kırar",
+      "narration": "İnsan güzel bir iş başardığında bütün payı kendisine verirse gurura düşer. Kader, imkânların, kabiliyetlerin ve neticenin Allah’ın ihsanıyla gerçekleştiğini hatırlatır. İyiliğin karşısında insana düşen övünmek değil, şükretmektir.",
+      "visual_note": "A successful gardener looking humbly over a flourishing field at sunset.",
+      "keywords": [
+        "flourishing field",
+        "humility",
+        "gardener",
+        "sunset"
+      ]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "İrade Bahaneyi Kırar",
+      "narration": "İnsan kötü bir iş yaptığında bütün suçu kadere yüklerse sorumluluktan kaçar. İrade, o fiile kendi isteğiyle yöneldiğini hatırlatır. Kötülüğün karşısında doğru tavır bahane üretmek değil, hatayı kabul edip dönüş aramaktır.",
+      "visual_note": "A person removing a mask and facing clear morning light, honest reflective mood.",
+      "keywords": [
+        "removing mask",
+        "honesty",
+        "morning light",
+        "accountability"
+      ]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Dengenin Ahlâkı",
+      "narration": "Kader ve irade birlikte düşünüldüğünde insan dengede kalır. İyilikte dua eder, yardım ister, tevekkül eder ve şükreder. Kötülükte ise tercihini sahiplenir, istiğfar eder, tövbe eder ve yönünü düzeltir.",
+      "visual_note": "Balanced stones beside flowing water in a serene forest, soft morning mist.",
+      "keywords": [
+        "balanced stones",
+        "flowing water",
+        "forest mist",
+        "harmony"
+      ]
+    },
+    {
+      "scene_id": "scene-036",
+      "title": "Yönünü Seçmek",
+      "narration": "İnsan her şeyi elinde tutmaz; fakat yönünü seçmekten de muaf değildir. Kader, Allah’ın bütün zamanları ve tercihleri kuşatan ilmidir. İrade ise insana emanet edilen ince bir yöneliştir; hayatın ahlâkî anlamı, o yönelişin hangi tarafa çevrildiğinde belirir.",
+      "visual_note": "A lone traveler walking confidently toward sunrise across a wide peaceful plain.",
+      "keywords": [
+        "traveler",
+        "sunrise",
+        "wide plain",
+        "chosen direction"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "26-soz-2-mebhas-kader-varken-irade-ne-anlama-gelir",
+    "test_day": "day-45",
+    "workflow": "manual_scene_json_single_track_landscape_load_input",
+    "content_generation_status": "filled"
+  }
+};
+
+return [{ json: { raw_input: rawInput } }];
