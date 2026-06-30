@@ -1,0 +1,17 @@
+{
+  "slug": "26-soz-4-mebhas-hatime-aci-neden-kotulugun-kendisi-degildir",
+  "title": "26.Söz - 4.Mebhas - Hatime",
+  "day": 47,
+  "dayTag": "day-47",
+  "runId": "day47-batch-a",
+  "timestamp": "2026-06-30T12:25:38.847Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/26-soz-4-mebhas-hatime-aci-neden-kotulugun-kendisi-degildir-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/26-soz-4-mebhas-hatime-aci-neden-kotulugun-kendisi-degildir-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/26-soz-4-mebhas-hatime-aci-neden-kotulugun-kendisi-degildir-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-26-soz-4-mebhas-hatime-aci-neden-kotulugun-kendisi-degildir-short-*-day47-batch-a"
+  },
+  "fillTimestamp": "2026-06-30T12:33:58.631Z"
+}

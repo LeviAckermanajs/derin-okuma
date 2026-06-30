@@ -1,0 +1,490 @@
+// Derin Okuma — Acı Neden Her Zaman Kötülüğün Kendisi Değildir?
+// Filled for day-47; paste into the n8n Load Input Code node.
+
+const rawInput = {
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "runtime": {
+    "repo_root": "/home/muhammet/projects/scene-blog-video",
+    "renderer_url": "http://127.0.0.1:8000"
+  },
+  "job": {
+    "title": "Acı Neden Her Zaman Kötülüğün Kendisi Değildir?",
+    "description": "Acı ve musibet neden yalnızca kötülük olarak okunmamalıdır? Hayatın değişimle açılan kabiliyetlerini, zorluk içinde beliren sabır ve tevekkülü, hikmet ile rahmetin ilk anda görünmeyen yönlerini birlikte düşünüyoruz.\n\n26. Söz’ün Dördüncü Mebhası ve Hâtimesi doğrultusunda; insanın başarıyı kendinden bilme yanılgısını, hizmete sızabilen gururu ve fanî olana bağlanan kalbin neden yorulduğunu ele alıyoruz. Acıyı küçümsemeden, sorumluluğu terk etmeden ve hayatı sahipsiz görmeden daha geniş bir bakış arıyoruz.\n\nKalıcı sükûnet, değişimin durmasında değil; her hâli hikmet ve rahmet sahibi Allah’a bağlayabilmekte belirir.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "26-soz-4-mebhas-hatime-aci-neden-kotulugun-kendisi-degildir-landscape-day-47"
+  },
+  "reuse_existing_audio": {
+    "enabled": false,
+    "audio_mode": "single_track",
+    "audio_track": {
+      "mode": "single",
+      "path": "",
+      "duration_seconds": null
+    }
+  },
+  "reuse_existing_video": {
+    "enabled": false,
+    "visual_mode": "semantic",
+    "video_root": "",
+    "path_template": "{scene_id}.mp4"
+  },
+  "visual_mode": "ambient",
+  "audio_strategy": {
+    "mode": "single_track",
+    "timing_strategy": "elevenlabs_timestamps",
+    "join_separator": "\n\n"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "render_mode": "landscape",
+    "produce_both": false,
+    "background_music_enabled": true,
+    "target_fps": 30
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Acının Sorusu",
+      "narration": "Acı geldiğinde insanın zihninde zor bir soru belirir: Yaşadığım şeyin içinde nasıl bir hayır olabilir? Bu soru, acıyı inkâr etmeden ve onu küçümsemeden daha geniş bir anlam aramaya çağırır.",
+      "visual_note": "A solitary person by a rain-covered window, soft gray daylight, slow cinematic movement.",
+      "keywords": [
+        "rainy window",
+        "solitary person",
+        "reflection",
+        "soft daylight"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Görünen Yüz",
+      "narration": "Musibet ilk anda yalnızca kayıp, bozulma ve engel gibi görünür. Çünkü insan, yaşadıklarını çoğu zaman o an verdiği haz veya elem üzerinden değerlendirir. Oysa bir hâlin bütün anlamı, ilk hissedilen yüzünden ibaret olmayabilir.",
+      "visual_note": "Storm clouds passing over a quiet valley, distant light emerging.",
+      "keywords": [
+        "storm clouds",
+        "quiet valley",
+        "emerging light",
+        "cinematic"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Varlık ve Yokluk",
+      "narration": "Hayır, varlığın açılmasıyla; kötülük ise çoğu zaman eksilme ve yoklukla ilişkilidir. Hayatın sürmesi, kabiliyetlerin gelişmesi ve anlamın çoğalması varlığa bakar. Donukluk ve kesinti ise yokluğun gölgesini taşır.",
+      "visual_note": "A green sprout rising through dark soil beside a dry fallen leaf.",
+      "keywords": [
+        "green sprout",
+        "dark soil",
+        "fallen leaf",
+        "growth"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Hayatın Hareketi",
+      "narration": "Hayat, yalnızca var olmak değil; sürekli yenilenmek, değişmek ve farklı hâllerden geçmektir. Kalbin, aklın ve duyguların nice kabiliyeti ancak bu hareket içinde görünür olur. Hiç değişmeyen bir hayat, canlılığını giderek kaybederdi.",
+      "visual_note": "Time-lapse of changing seasons across a forest landscape.",
+      "keywords": [
+        "changing seasons",
+        "forest",
+        "time lapse",
+        "renewal"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Tekdüzeliğin Gölgesi",
+      "narration": "Her günün, her duygunun ve her şartın aynı kaldığını düşünelim. İlk anda güvenli görünen bu yeknesaklık, zamanla gelişmenin ve fark edişin önünü kapatırdı. Hareketsizlik, hayatın içinde bir çeşit sönme meydana getirir.",
+      "visual_note": "An empty train platform in still fog, symmetrical and motionless.",
+      "keywords": [
+        "empty platform",
+        "still fog",
+        "symmetry",
+        "silence"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Zahmetin Açtığı Alan",
+      "narration": "Zorluk her zaman iyi değildir; fakat bazı zorluklar insanda uyuyan güçleri harekete geçirir. Sabır, dayanıklılık, şefkat ve tevekkül çoğu zaman rahatlığın değil, sınanmanın içinde belirginleşir. Zahmet, saklı kabiliyetlere bir çalışma alanı açabilir.",
+      "visual_note": "A hiker climbing a steep mountain trail at dawn.",
+      "keywords": [
+        "mountain trail",
+        "hiker",
+        "dawn",
+        "endurance"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Rahatlık Tek Başına Yetmez",
+      "narration": "Rahatlık bir nimettir, fakat hayat yalnızca rahatlıktan oluşsaydı insan kendini ve ihtiyaçlarını derinden tanıyamazdı. Sıkıntı, ne kadar sınırlı olduğumuzu gösterirken hangi kapıya yönelmemiz gerektiğini de hatırlatır. Böylece acizlik, anlamlı bir uyanışa dönüşebilir.",
+      "visual_note": "A person pausing beside a calm lake after a long walk.",
+      "keywords": [
+        "calm lake",
+        "tired traveler",
+        "pause",
+        "reflection"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "İşlenen Bir Gömlek",
+      "narration": "İnsan hayatını sanatla işlenen bir elbise gibi düşünebilir. Elbisenin biçimi değişirken bazı yerleri daralır, bazı yerleri genişler; fakat bütün müdahaleler daha büyük bir desenin ortaya çıkmasına hizmet eder. Tek bir kesite bakmak, tamamlanan sanatı görmeye yetmez.",
+      "visual_note": "A tailor shaping elegant fabric on a wooden worktable, close-up hands.",
+      "keywords": [
+        "tailor hands",
+        "elegant fabric",
+        "craftsmanship",
+        "worktable"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Emanet Edilen Beden",
+      "narration": "Göz, kulak, akıl, hafıza ve kalp insana hazır olarak verilmiş büyük imkânlardır. İnsan bunların yaratıcısı değil, onları kullanan ve korumakla sorumlu olan bir emanetçidir. Bu fark ediş, hayat üzerindeki mutlak sahiplik iddiasını yumuşatır.",
+      "visual_note": "Close-up portraits transitioning to an eye, ear, hands and thoughtful face.",
+      "keywords": [
+        "human senses",
+        "thoughtful face",
+        "close up",
+        "human life"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Değişen Hâller",
+      "narration": "Sevinç ve hüzün, kolaylık ve darlık, sağlık ve hastalık aynı ömürde yan yana bulunur. Her hâl insanın başka bir yönünü açığa çıkarır ve başka bir isme ayna olur. Hayatın zenginliği, yalnız hoşumuza giden renklerden oluşmaz.",
+      "visual_note": "Sunlight and rain alternating over a wide meadow.",
+      "keywords": [
+        "sun and rain",
+        "wide meadow",
+        "changing weather",
+        "contrast"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "İsimlerin Aynası",
+      "narration": "Şifa hastalıkla, yardım ihtiyaçla, koruma tehlikeyle daha belirgin anlaşılır. Rahmetin ve hikmetin farklı tecellileri, insanın değişen hâllerinde görünür hâle gelir. Böyle bakıldığında hayat, İlâhî isimleri tanıtan canlı bir aynaya dönüşür.",
+      "visual_note": "Light reflected across moving water onto an old stone wall.",
+      "keywords": [
+        "water reflections",
+        "stone wall",
+        "moving light",
+        "abstract"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Sabır Nasıl Görünür",
+      "narration": "Sabır, hiçbir şey hissetmemek veya acıyı bastırmak değildir. Acının varlığını kabul ederken doğru olanı terk etmemek ve kalbi ümitsizliğe teslim etmemektir. Bu kuvvet, ancak sabredilecek bir durum ortaya çıktığında görünür olur.",
+      "visual_note": "A calm person waiting under a shelter during heavy rain.",
+      "keywords": [
+        "waiting person",
+        "heavy rain",
+        "shelter",
+        "patience"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Tevekkülün Doğuşu",
+      "narration": "İnsan gücünün yetmediği sınırla karşılaşınca iki yola yaklaşır: Her şeyi kontrol etmeye çalışarak ezilmek veya vazifesini yapıp sonucu Allah’a bırakmak. Tevekkül, çabayı bırakmak değil; çabanın sınırını bilmektir. Bu bilgi kalbin yükünü hafifletir.",
+      "visual_note": "Hands releasing a small stone beside a flowing river.",
+      "keywords": [
+        "open hands",
+        "flowing river",
+        "release",
+        "trust"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Rahmetin İnce Işığı",
+      "narration": "Bazı musibetlerin içinde ilk anda seçilemeyen rahmet izleri bulunabilir. Bir kayıp insanı daha sahici ilişkilere, bir hastalık şükre, bir çaresizlik duaya yöneltebilir. Sonuç her zaman hemen görülmese de acı tek bir anlama mahkûm değildir.",
+      "visual_note": "Soft sun rays entering a dark hospital corridor with an empty chair.",
+      "keywords": [
+        "hospital corridor",
+        "sun rays",
+        "empty chair",
+        "hope"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Hikmet Sonradan Belirebilir",
+      "narration": "İnsan bazen yıllar sonra dönüp baktığında, ağır bir dönemin kendisine yeni bir yön verdiğini fark eder. O gün yalnızca kapanan bir kapı görürken sonradan başka bir yolun açıldığını anlayabilir. Zaman, görünmeyen bağların bir kısmını ortaya çıkarır.",
+      "visual_note": "A winding road appearing beyond morning mist from a high viewpoint.",
+      "keywords": [
+        "winding road",
+        "morning mist",
+        "high viewpoint",
+        "journey"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Acıyı Romantikleştirmemek",
+      "narration": "Bu bakış, acıyı aramak veya haksızlığa sessiz kalmak anlamına gelmez. Hastalık tedavi edilir, zarar önlenir ve zulme karşı durulur. Hikmet arayışı, insanın sorumluluğunu azaltmaz; yaşadığı şeyi anlamsızlığa terk etmesini önler.",
+      "visual_note": "A doctor walking purposefully through a bright clinic hallway.",
+      "keywords": [
+        "doctor",
+        "clinic hallway",
+        "purpose",
+        "care"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "İki Hakikati Birlikte Tutmak",
+      "narration": "Bir musibet gerçekten ağır olabilir ve aynı zamanda insanın göremediği bir hayır yönü taşıyabilir. Bu iki hüküm birbirini yok etmez. Olgun bakış, elemi küçümsemeden rahmet ihtimaline açık kalabilmektir.",
+      "visual_note": "Dark ocean waves beneath a break in the clouds, balanced horizon.",
+      "keywords": [
+        "ocean waves",
+        "cloud break",
+        "balanced horizon",
+        "light"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Bakışın Dönüşümü",
+      "narration": "Acı yalnızca düşman olarak görüldüğünde kalp yaşananlara karşı bütünüyle kapanır. Onun içinde bir ders, arınma veya yöneliş ihtimali bulunduğu düşünüldüğünde ise aynı yük başka türlü taşınır. Hadise değişmese bile insanın onunla kurduğu ilişki değişir.",
+      "visual_note": "A person opening curtains to reveal a sunrise after rain.",
+      "keywords": [
+        "opening curtains",
+        "sunrise",
+        "after rain",
+        "new perspective"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Dışarıdan İçeriye",
+      "narration": "Hayatın değişen yüzlerini anlamaya çalışmak, insanı sonunda kendi nefsine getirir. Çünkü asıl mesele yalnız başımıza ne geldiği değil, gelen hâl karşısında içimizde neyin büyüdüğüdür. Acı bazen gururu azaltır, bazen de benlik iddiasını görünür kılar.",
+      "visual_note": "A person looking into a simple mirror in a quiet room.",
+      "keywords": [
+        "mirror reflection",
+        "quiet room",
+        "self examination",
+        "soft light"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Kâinat Sahipsiz Değil",
+      "narration": "Çevremizdeki ölçü, sanat ve karşılıklı yardımlaşma, varlığın başıboş olmadığını düşündürür. Her şeyi ayrı ve bağımsız güçlere vermek, bir tek çiçeği bütün kâinat kadar zorlaştırırdı. Bütün varlığı tek bir iradeye bağlamak ise düzeni anlaşılır kılar.",
+      "visual_note": "Wide cosmos transitioning into the detailed structure of a flower.",
+      "keywords": [
+        "cosmos",
+        "flower detail",
+        "natural order",
+        "macro"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Birlikte Gelen Kolaylık",
+      "narration": "Bir ağacın meyveleri aynı kökten, aynı kanunla ve aynı cömertlikle yetişir. Her meyve için ayrı bir düzen kurmak gerekmez. Birlik bakışı, çokluk içindeki şaşırtıcı kolaylığı ve uyumu gösterir.",
+      "visual_note": "Fruit tree branches moving gently in warm sunlight.",
+      "keywords": [
+        "fruit tree",
+        "warm sunlight",
+        "branches",
+        "harmony"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Üzüm Asmasının Dersi",
+      "narration": "Üzüm asması, taşıdığı salkımların planını kendi aklıyla kurmaz ve onları kendi kudretiyle yaratmaz. O yalnızca meyvenin görünmesine vesile olan bir taşıyıcıdır. İnsan da kendindeki güzelliklere bu ölçüyle bakmalıdır.",
+      "visual_note": "Ripe grape clusters hanging from a vine in golden light.",
+      "keywords": [
+        "grape clusters",
+        "vineyard",
+        "golden light",
+        "fruit"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Başarı Kimin Eseri",
+      "narration": "Kabiliyet, uygun şartlar, karşılaşılan insanlar ve elde edilen imkânlar bir başarıda birlikte pay sahibidir. İnsan gayret eder; fakat gayretin araçlarını da sonucunu da bütünüyle kendisi üretmez. Başarıyı mutlak mülk saymamak, şükrün kapısını açar.",
+      "visual_note": "A craftsperson completing work with many tools on a shared table.",
+      "keywords": [
+        "craftsperson",
+        "tools",
+        "completed work",
+        "gratitude"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Gururun Sessiz Girişi",
+      "narration": "Gurur her zaman açık bir övünme şeklinde gelmez. Bazen insanın iyiliği yalnız kendinden bilmesi, başkalarını küçümsemesi veya takdir beklemesi olarak belirir. Nefis, en güzel işleri bile kendine pay çıkarmak için kullanabilir.",
+      "visual_note": "A subtle shadow crossing a person receiving applause on a small stage.",
+      "keywords": [
+        "applause",
+        "person on stage",
+        "shadow",
+        "ego"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Hizmetteki Tehlike",
+      "narration": "İnsan faydalı bir iş yaptığında bununla üstünlük kurmaya başlayabilir. Oysa hizmet, insana verilmiş imkânların şükrü ve kulluk vazifesidir. İyilik, benliği büyütmek yerine sorumluluk duygusunu derinleştirdiğinde temiz kalır.",
+      "visual_note": "Volunteers quietly serving food together without posing.",
+      "keywords": [
+        "volunteers",
+        "serving food",
+        "quiet service",
+        "community"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Vesile Olduğunu Bilmek",
+      "narration": "Bir güzelliğe vesile olmak kıymetlidir, fakat güzelliğin gerçek sahibi olmak değildir. Toprak çiçeği taşır, su büyümesine yardım eder, güneş ona ışık verir; hiçbiri tek başına çiçeği yapamaz. İnsan da payını inkâr etmeden sınırını bilmelidir.",
+      "visual_note": "A flower growing with soil, water droplets and sunlight in macro view.",
+      "keywords": [
+        "flower growth",
+        "water droplets",
+        "sunlight",
+        "soil"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Hakikî Bilginin Yönü",
+      "narration": "Eşyayı yalnız kendi başına okumak, onu geçici ve kopuk görüntülere dönüştürür. Varlığın hangi İlâhî isme dayandığı fark edildiğinde ise bilgi hikmete yaklaşır. Bir şeyin hakikati, yalnız nasıl göründüğünde değil, neye işaret ettiğinde saklıdır.",
+      "visual_note": "An old library window casting light onto an open book and leaf.",
+      "keywords": [
+        "open book",
+        "library window",
+        "leaf",
+        "wisdom"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Güzellik Neye Dayanır",
+      "narration": "Bir çiçeğin güzelliği birkaç gün sonra solabilir; fakat onda görünen ölçü, sanat ve ikram daha kalıcı bir kaynağa işaret eder. Suret geçer, gösterdiği anlam kalır. Kalp, fanî güzelliği bâkî olana açılan bir pencere olarak sevebilir.",
+      "visual_note": "A blooming flower beside a gently fading flower at sunset.",
+      "keywords": [
+        "blooming flower",
+        "fading flower",
+        "sunset",
+        "beauty"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Şimdiki Anın İnceliği",
+      "narration": "İnsanın maddî hayatı gerçekte elinde bulunan şu an kadar yakındır. Geçmiş gitmiş, gelecek ise henüz gelmemiştir. Buna rağmen kalp, bütün ömrü kendi mülküymüş gibi ona dayanmak ister.",
+      "visual_note": "Close-up of a clock hand moving while a person sits in present stillness.",
+      "keywords": [
+        "clock hand",
+        "present moment",
+        "still person",
+        "time"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Geçmiş ve Gelecek",
+      "narration": "Dünün sevinçleri artık hatıradır; yarının şartları ise hiçbirimizin garantisi değildir. Fanî hayata sınırsız güven bağlamak, ince bir dala bütün ağırlığı vermeye benzer. Bu kırılganlık fark edildiğinde daha sağlam bir dayanak arayışı başlar.",
+      "visual_note": "A fragile branch moving in wind above a deep valley.",
+      "keywords": [
+        "fragile branch",
+        "wind",
+        "deep valley",
+        "impermanence"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Fânî Olana Tutunmak",
+      "narration": "Geçici şeyler sevilmez değildir; fakat kalbin sonsuzluk arzusunu tek başlarına karşılayamazlar. İnsan onları kalıcı sanarak tuttuğunda her değişim derin bir sarsıntıya dönüşür. Sevginin yönü düzelince nimet korunur, sahiplik yanılgısı azalır.",
+      "visual_note": "Hands gently holding autumn leaves and then letting them go.",
+      "keywords": [
+        "autumn leaves",
+        "gentle hands",
+        "letting go",
+        "impermanence"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Aciz Olandan Beklemek",
+      "narration": "İnsan bazen kendisi kadar sınırlı varlıklardan bütün korkularını gidermelerini ve bütün ihtiyaçlarını karşılamalarını bekler. Bu beklenti hem insanları ağırlaştırır hem kalbi yorar. Aciz olan sevilir ve desteklenir; fakat mutlak dayanak hâline getirilemez.",
+      "visual_note": "Two people supporting each other on a windy shoreline.",
+      "keywords": [
+        "two people",
+        "windy shore",
+        "support",
+        "human limits"
+      ]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Ruhu Rahmân’a Teslim Etmek",
+      "narration": "Kalbin gerçek sükûneti, kendini ve sevdiklerini sonsuz rahmet sahibine emanet edebilmesinde belirir. Teslimiyet, duygusuzluk değil; her şeyin sahipsiz olmadığını bilmektir. İnsan böylece korkularını inkâr etmeden onların altında ezilmekten kurtulur.",
+      "visual_note": "A peaceful person standing beneath a vast starry sky, hands relaxed.",
+      "keywords": [
+        "starry sky",
+        "peaceful person",
+        "trust",
+        "vastness"
+      ]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Acıdan Arınmaya",
+      "narration": "Musibet insanın yalnız bedenine veya düzenine dokunmaz; neye güvendiğini de açığa çıkarır. Sahiplik, kontrol ve gurur iddiaları sarsıldığında kalp daha sahici bir kulluğa yaklaşabilir. Acı, bu yönüyle benliği incelten bir arınma vesilesi olabilir.",
+      "visual_note": "River water smoothing rough stones in a slow cinematic close-up.",
+      "keywords": [
+        "river stones",
+        "flowing water",
+        "smoothing",
+        "purification"
+      ]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Yeni Bir Sükûnet",
+      "narration": "Sükûnet, hayatın hiç değişmemesi veya acının hiç gelmemesi değildir. Değişen her hâlin ardında hikmet ve rahmet sahibi bir irade bulunduğunu bilmektir. Bu güven, insanı hem mücadeleye hem kabule aynı anda hazırlar.",
+      "visual_note": "A lighthouse standing steady while waves move around it at dawn.",
+      "keywords": [
+        "lighthouse",
+        "ocean waves",
+        "dawn",
+        "steadiness"
+      ]
+    },
+    {
+      "scene_id": "scene-036",
+      "title": "Kalbin Son Yönü",
+      "narration": "Hayat yalnız hoşumuza giden hâllerden ibaret değildir; bazen yoran ve inciten şeyler daha derin bir anlamın kapısını açar. İnsan acıyı inkâr etmeden hikmeti arar, iyiliği kendinden bilmeden şükreder ve fanî olanı bâkî olana bağlar. Kalp gerçek huzura, sahip olduğunu sandıklarını emanet bildiğinde yaklaşır.",
+      "visual_note": "A quiet path leading toward warm light beyond ancient trees.",
+      "keywords": [
+        "quiet path",
+        "warm light",
+        "ancient trees",
+        "peace"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "26-soz-4-mebhas-hatime-aci-neden-kotulugun-kendisi-degildir",
+    "test_day": "day-47",
+    "workflow": "manual_scene_json_single_track_landscape_load_input",
+    "content_generation_status": "filled"
+  }
+};
+
+return [{ json: { raw_input: rawInput } }];
