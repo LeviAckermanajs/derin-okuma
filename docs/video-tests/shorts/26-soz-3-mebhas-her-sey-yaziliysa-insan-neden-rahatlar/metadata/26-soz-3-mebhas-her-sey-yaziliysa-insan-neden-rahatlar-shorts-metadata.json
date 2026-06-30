@@ -1,0 +1,134 @@
+{
+  "video_type": "shorts",
+  "source": "26-soz-3-mebhas-her-sey-yaziliysa-insan-neden-rahatlar",
+  "test_day": "day-46",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir çekirdeğin içinde koca bir ağacın planı nasıl saklanır?",
+      "title_options": [
+        "Çekirdek Geleceği Nasıl Taşır?",
+        "Bir Ağaç Tohuma Nasıl Sığar?",
+        "Tohumdaki Ölçü Neyi Gösterir?",
+        "Küçük Çekirdek Ne Saklar?"
+      ],
+      "selected_title": "Çekirdek Geleceği Nasıl Taşır?",
+      "description": "Küçücük bir çekirdek, gelecekteki ağacın ölçüsünü ve yönünü sessizce taşır. Basit bir başlangıçtaki düzen, kaderi görünür kılar. #derinokuma #shorts #tefekkür #iman #kader #çekirdek",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kader",
+        "#çekirdek"
+      ],
+      "thumbnail_or_cover_text": "ÇEKİRDEKTEKİ PLAN"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Geçmişin yılları küçücük bir hafızada nasıl saklanıyor?",
+      "title_options": [
+        "Hafıza Geçmişi Nasıl Korur?",
+        "Yaşananlar Neden Kaybolmaz?",
+        "Geçmiş Zihinde Nasıl Saklanır?",
+        "Hafıza Neyi Haber Verir?"
+      ],
+      "selected_title": "Hafıza Geçmişi Nasıl Korur?",
+      "description": "Hafıza, geçip giden hayatın bütünüyle kaybolmadığını hissettiren sessiz bir kayıttır. Geçiciliğin içinde korunmaya açılan bir pencere sunar. #derinokuma #shorts #tefekkür #hafıza #kader #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#hafıza",
+        "#kader",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "HAYAT KAYITSIZ DEĞİL"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Kadere inanmak insanın hürriyetini elinden alır mı?",
+      "title_options": [
+        "Kader Hürriyeti Neden Yok Etmez?",
+        "Her Şey Yazılıysa Özgür Müyüz?",
+        "Kader İnsanı Nasıl Rahatlatır?",
+        "Yazılmış Olmak Zincir midir?"
+      ],
+      "selected_title": "Kader Hürriyeti Neden Yok Etmez?",
+      "description": "Kader, insanın seçimini silmez; nefsin her şeyi yönetme iddiasını sınırlar. Sorumluluk korunurken taşınamayacak yükler hafifler. #derinokuma #shorts #tefekkür #iman #kader #hürriyet",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kader",
+        "#hürriyet"
+      ],
+      "thumbnail_or_cover_text": "KADER ZİNCİR Mİ?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "İnsan neden kontrol edemediği her şeyi omzunda taşımaya çalışır?",
+      "title_options": [
+        "İnsan Yükünü Nasıl Hafifletir?",
+        "Neden Her Şeyi Kontrol Ederiz?",
+        "Kader Kaygıyı Nasıl Azaltır?",
+        "Sınırlı Güç Ne Yapmalı?"
+      ],
+      "selected_title": "İnsan Yükünü Nasıl Hafifletir?",
+      "description": "Sonsuz isteklerle sınırlı güç arasındaki gerilim insanı yorar. Kadere güvenmek, vazifeyi bırakmadan neticenin yükünü Allah’a teslim etmektir. #derinokuma #shorts #tefekkür #kader #tevekkül #huzur",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#kader",
+        "#tevekkül",
+        "#huzur"
+      ],
+      "thumbnail_or_cover_text": "YÜKÜNÜ HAFİFLET"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Aynı dünya birine cehennem, diğerine huzur gibi neden görünür?",
+      "title_options": [
+        "Bakış Değişince Dünya Nasıl Değişir?",
+        "Dünya Neden Ağırlaşır?",
+        "İnsan Kendini Nasıl Misafir Bilir?",
+        "Sahipsizlik Vehmi Ne Yapar?"
+      ],
+      "selected_title": "Bakış Değişince Dünya Nasıl Değişir?",
+      "description": "Dünyayı sahipsiz bir yük gibi görmekle kendini misafir bilmek aynı hayatı farklılaştırır. Kader imanı, dış şartlardan önce bakışı dönüştürür. #derinokuma #shorts #tefekkür #iman #kader #misafirlik",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kader",
+        "#misafirlik"
+      ],
+      "thumbnail_or_cover_text": "AYNI DÜNYA İKİ BAKIŞ"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Her şey yazılıysa insan neden kederden emin olur?",
+      "title_options": [
+        "Kader İnsanı Neden Rahatlatır?",
+        "Her Şey Yazılıysa Ne Olur?",
+        "Kalp Emniyeti Nasıl Bulur?",
+        "Kader Kederi Nasıl Hafifletir?"
+      ],
+      "selected_title": "Kader İnsanı Neden Rahatlatır?",
+      "description": "Kadere iman acıyı yok etmez; yaşananların sahipsiz ve anlamsız olmadığını bildirir. Kalp, her şeyi kontrol ederek değil, güveneceği merkezi tanıyarak rahatlar. #derinokuma #shorts #tefekkür #iman #kader #emniyet",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kader",
+        "#emniyet"
+      ],
+      "thumbnail_or_cover_text": "HİÇBİR ŞEY SAHİPSİZ DEĞİL"
+    }
+  ]
+}

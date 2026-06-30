@@ -1,0 +1,435 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "26.Söz - 3.Mebhas",
+    "description": "Her şeyin yazılı olması insanı neden daraltmak yerine rahatlatır? Bu video; çekirdekteki plandan hafızadaki kayda, varlıklardaki ölçüden insanın taşıdığı ağır kontrol duygusuna kadar kaderin nasıl göründüğünü anlatır.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "26-soz-3-mebhas-her-sey-yaziliysa-insan-neden-rahatlar-landscape-day-46"
+  },
+  "audio_strategy": {
+    "mode": "single_track",
+    "timing_strategy": "elevenlabs_timestamps",
+    "join_separator": "\n\n"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "render_mode": "landscape",
+    "produce_both": false,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Yazılı Olmak Ne Demektir?",
+      "narration": "Her şeyin yazılı olduğunu düşünmek, ilk anda insanı daraltan bir fikir gibi görünebilir. Oysa kader, hayatı kilitleyen bir hükümden önce, varlıkların ölçüsüz ve sahipsiz olmadığını bildirir. Bu bakış yerleştiğinde insanın dünyayla kurduğu ilişki değişir.",
+      "visual_note": "A solitary person overlooking an ordered valley at dawn, slow cinematic camera.",
+      "keywords": [
+        "person overlooking valley",
+        "ordered nature",
+        "dawn light"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "Kâinattaki Ölçü",
+      "narration": "Gökyüzünden bir yaprağın damarlarına kadar her yerde sınır, oran ve düzen görülür. Varlıklar gelişigüzel biçimler almaz; her biri kendi kabiliyetine uygun bir şekle yönelir. Kader, bu ölçülü akışın İlâhî ilimdeki karşılığıdır.",
+      "visual_note": "Close-up transitions from starry sky to leaf veins, cinematic macro detail.",
+      "keywords": [
+        "starry sky",
+        "leaf veins",
+        "natural order"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Takdir ve İman",
+      "narration": "Kadere iman, yalnız gelecekte ne olacağını Allah’ın bildiğine inanmak değildir. Her varlığın miktarının, biçiminin ve hayat yolunun İlâhî ilimle kuşatıldığını kabul etmektir. Böylece tesadüfün yerini hikmet, sahipsizliğin yerini aidiyet alır.",
+      "visual_note": "Balanced geometric patterns in nature, shells and flowers in soft light.",
+      "keywords": [
+        "natural geometry",
+        "flower pattern",
+        "divine order"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Küçük Bir Çekirdek",
+      "narration": "Bir çekirdek avuç içinde son derece sade görünür. Fakat toprağa düştüğünde kökü, gövdeyi, dalları ve meyveyi taşıyan şaşırtıcı bir programa göre açılır. Küçücük bir başlangıçtan büyük bir hayat düzeni çıkar.",
+      "visual_note": "A seed resting in a palm then planted in rich soil, macro cinematic shot.",
+      "keywords": [
+        "seed in hand",
+        "rich soil",
+        "new life"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Ağacın Gizli Fihristi",
+      "narration": "Çekirdeğin içinde yetişkin ağacın maddî parçaları bulunmaz. Buna rağmen hangi ağacın doğacağı, yaprakların nasıl dizileceği ve meyvenin neye benzeyeceği bellidir. Çekirdek, gelecekteki ağacın özlü bir fihristi gibi çalışır.",
+      "visual_note": "Time-lapse of a seed sprouting into a young tree, soft natural light.",
+      "keywords": [
+        "seed sprouting",
+        "young tree",
+        "time lapse"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Benzer Tohumlar Farklı Hayatlar",
+      "narration": "Birbirine benzeyen küçük tohumlardan farklı renkler, kokular ve biçimler çıkar. Basit maddeler, kendi başlarına sahip olmadıkları ayrıntılı sonuçlara yönelir. Bu farklılaşma, görünmeyen bir ölçünün varlığını düşündürür.",
+      "visual_note": "Various seeds beside colorful flowers and fruit, clean botanical composition.",
+      "keywords": [
+        "various seeds",
+        "colorful flowers",
+        "botanical diversity"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Zerrelerin İstikameti",
+      "narration": "Canlı bir beden kurulurken sayısız küçük parça doğru yerde buluşur. Kök toprağa, dal göğe yönelir; hücreler farklı vazifeler üstlenir. Şuursuz parçaların ölçülü bir bütüne hizmet etmesi, onları aşan bir takdiri gösterir.",
+      "visual_note": "Microscopic cells forming an ordered living structure, elegant scientific imagery.",
+      "keywords": [
+        "living cells",
+        "ordered structure",
+        "microscopic life"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Kudret Yaratır, Kader Ölçer",
+      "narration": "İlâhî kudret varlığı meydana getirir; kader ise ona ölçü, biçim ve sınır tayin eder. Bir mimarî eserde malzeme ile plan nasıl farklı fakat uyumluysa, yaratma ile takdir de birlikte görünür. Varlık hem yapılmış hem ölçülmüştür.",
+      "visual_note": "Architectural blueprint blending into a completed elegant building.",
+      "keywords": [
+        "blueprint",
+        "architecture",
+        "measured design"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Sınırlar Kusur Değildir",
+      "narration": "Bir varlığın belli bir biçime ve sınıra sahip olması eksiklik değildir. Sınır, ona kimlik ve vazife kazandırır; su yatağında akınca nehir olur, ışık belirli bir açıyla düşünce şekilleri görünür kılar. Ölçü, güzelliğin de dilidir.",
+      "visual_note": "A river flowing within clear banks through a peaceful landscape.",
+      "keywords": [
+        "river banks",
+        "flowing water",
+        "natural boundaries"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Meyvede Saklanan Devam",
+      "narration": "Ağacın hayatı meyvede tamamlanırken yeni çekirdekler ortaya çıkar. Son gibi görünen meyve, gelecek bir ağacın başlangıcını taşır. Böylece hayatın neticesi, yeni bir hayatın kaydına dönüşür.",
+      "visual_note": "Ripe fruit opening to reveal seeds, warm orchard light.",
+      "keywords": [
+        "ripe fruit",
+        "fruit seeds",
+        "orchard"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Sonun İçindeki Başlangıç",
+      "narration": "Doğadaki döngü, kayboluş ile devamın iç içe olduğunu gösterir. Yaprak düşer, tohum toprağa girer ve görünürdeki bitiş yeni bir bahara hazırlanır. Kader, başlangıçları ve sonuçları tek bir ilim içinde kuşatır.",
+      "visual_note": "Fallen leaves and a seedling emerging from soil in early spring.",
+      "keywords": [
+        "fallen leaves",
+        "new seedling",
+        "spring renewal"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "İnsanın Hafızası",
+      "narration": "İnsan hafızası da hayatın yazıldığı sessiz bir defter gibidir. Yıllar önce yaşanan bir an, bir koku veya sesle yeniden canlanabilir. Geçmişin büyük kısmı, küçücük bir hatırlama kabiliyetinde korunur.",
+      "visual_note": "An elderly person looking through photographs by a softly lit window.",
+      "keywords": [
+        "memory",
+        "old photographs",
+        "window light"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Hayattan Kalan Kayıt",
+      "narration": "Yaşanan saatler geçip gider; fakat izleri insanın zihninde, karakterinde ve seçimlerinde kalır. Hafıza, hayatın bütünüyle boşluğa düşmediğini hissettirir. Her an geçici olsa da her şey kayıtsız değildir.",
+      "visual_note": "A journal, photographs and clock on a wooden table, reflective mood.",
+      "keywords": [
+        "journal",
+        "photographs",
+        "passing time"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Geçicilikte Kalıcılık İşaretleri",
+      "narration": "Dünya sürekli değişir; yüzler yaşlanır, mevsimler döner ve günler geride kalır. Buna rağmen çekirdek, suret ve hafıza gibi kayıtlar devamı haber verir. Geçiciliğin içinde kalıcılığa açılan aynalar vardır.",
+      "visual_note": "Seasons changing around the same tree, gentle cinematic transition.",
+      "keywords": [
+        "changing seasons",
+        "same tree",
+        "continuity"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "Kaybolmak ile Saklanmak",
+      "narration": "Gözden çekilen her şey yok olmuş değildir. Toprağa giren tohum görünmez hâle gelirken yeni hayatını hazırlar; unutulduğu sanılan bir hatıra yıllar sonra dönebilir. Kader bakışı, kayboluş sandığımız yerde korunmayı fark ettirir.",
+      "visual_note": "A seed beneath transparent soil beginning to germinate, macro view.",
+      "keywords": [
+        "underground seed",
+        "germination",
+        "hidden life"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "İnsan Daha Büyük Bir Emanet",
+      "narration": "En basit bitkinin hayatı bile böylesine ölçülü ise, insanın hayatı başıboş düşünülemez. İnsan yalnız yaşayan bir beden değildir; anlam arar, sorumluluk taşır ve bütün varlıkla ilişki kurar. Bu geniş kabiliyet, daha derin bir takdire işaret eder.",
+      "visual_note": "A thoughtful human figure standing between earth and a vast starry sky.",
+      "keywords": [
+        "human silhouette",
+        "earth and stars",
+        "responsibility"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "İtirazın Ağırlığı",
+      "narration": "Yine de zor bir soru kalır: Her şey takdir edilmişse insanın hürriyeti daralmaz mı? Yazılmış olmak, görünmez bir zincirle bağlanmak gibi algılanabilir. Kaderin insana nasıl rahatlık verdiğini anlamak için bu kaygıyı ciddiye almak gerekir.",
+      "visual_note": "A person facing a narrow corridor opening toward a bright landscape.",
+      "keywords": [
+        "narrow corridor",
+        "open landscape",
+        "inner question"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Bilmek Zorlamak Değildir",
+      "narration": "Bir hayatın İlâhî ilimde bilinmesi, insanın iradesiz bırakıldığı anlamına gelmez. Bilgi, seçimi zorlayan bir baskı değildir; insanın tercihleri de o kuşatıcı ilmin içindedir. Kader ile sorumluluk birbirini ortadan kaldırmaz.",
+      "visual_note": "A person choosing freely between two paths seen from above.",
+      "keywords": [
+        "two paths",
+        "free choice",
+        "aerial view"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Kaderin Kırdığı Taşkınlık",
+      "narration": "Kader, kalbin düşünmesini ve ruhun yönelmesini engellemez. Onun sınırladığı şey, nefsin kendini her şeyin sahibi ve yöneticisi sanan taşkınlığıdır. İnsan iradesini kullanır; fakat sonuçların mutlak hâkimi olmadığını öğrenir.",
+      "visual_note": "A clenched hand slowly opening under calm sunlight.",
+      "keywords": [
+        "opening hand",
+        "sunlight",
+        "letting go"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Sınırlı Güç, Sonsuz İstek",
+      "narration": "İnsanın arzuları çok geniş, gücü ise sınırlıdır. Sevdiklerini korumak, geleceği güvenceye almak ve hayatın bütün ihtimallerini yönetmek ister. Bu isteklerin tamamını kendi kuvvetiyle taşımaya çalıştığında iç dünyası daralır.",
+      "visual_note": "A worried person surrounded by clocks, maps and unfinished tasks.",
+      "keywords": [
+        "worried person",
+        "clocks",
+        "heavy responsibility"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "Kâinatı Omuzlamak",
+      "narration": "Kendini hayatın tek sorumlusu sayan insan, kontrol edemediği her olaydan ayrı bir yük üretir. Hava, sağlık, zaman, insanlar ve gelecek onun iradesine bağlı değildir. Buna rağmen hepsini yönetmesi gerektiğini sanmak, küçük bir omza koca bir âlemi yükler.",
+      "visual_note": "A lone person carrying a large symbolic globe uphill.",
+      "keywords": [
+        "carrying globe",
+        "uphill struggle",
+        "heavy burden"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "Kaderin Gemisi",
+      "narration": "Kadere iman, insanın taşıyamadığı ağırlığı güvenilir bir gemiye bırakması gibidir. Deniz devam eder, yolculuk sürer ve insan yine vazifesini yapar; fakat geminin bütün yükünü sırtında taşımaya kalkmaz. Teslimiyet, sorumluluğu değil gereksiz yükü azaltır.",
+      "visual_note": "A calm ship crossing a wide sea at sunrise, steady cinematic shot.",
+      "keywords": [
+        "calm ship",
+        "wide sea",
+        "sunrise journey"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Tevekkülün Dengesi",
+      "narration": "Tevekkül, hiçbir şey yapmadan sonucu beklemek değildir. İnsan elinden geleni yapar, doğru sebeplere başvurur ve ardından hükmedemediği neticeyi Allah’a bırakır. Böylece gayret ile huzur aynı kalpte buluşur.",
+      "visual_note": "A farmer carefully tending plants then looking at the sky peacefully.",
+      "keywords": [
+        "farmer",
+        "tending plants",
+        "peaceful sky"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Misafirlik Şuuru",
+      "narration": "İnsan dünyaya mutlak sahip olarak değil, sınırlı bir süre için gelen misafir olarak bakabilir. Misafir, bulunduğu yerin güzelliklerinden yararlanır; fakat bütün düzeni tek başına kurmak zorunda değildir. Bu şuur, sahiplik hırsını şükre dönüştürür.",
+      "visual_note": "A peaceful guest walking through a grand garden in morning light.",
+      "keywords": [
+        "garden walk",
+        "morning light",
+        "peaceful guest"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Saraydaki İlk Adam",
+      "narration": "Büyük bir saraya giren ve sahibini tanımayan birini düşünelim. Etrafındaki makineleri, bahçeleri ve canlıları kendi hesabına yönetmesi gerektiğini sanır. Güzelliklerle dolu yer, ağır bir sorumluluk ve korku alanına dönüşür.",
+      "visual_note": "An anxious man alone in a vast ornate palace hall.",
+      "keywords": [
+        "anxious man",
+        "palace hall",
+        "isolation"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Sahipsizlik Vehmi",
+      "narration": "Sarayın düzenini kendine yükleyen kişi, her aksaklığı kişisel bir tehdit görür. Koruyamadığı her şey onu suçluluk ve telaşa sürükler. Asıl sıkıntı sarayın büyüklüğü değil, onu sahipsiz zannetmesidir.",
+      "visual_note": "A person overwhelmed by complex machinery in a grand hall.",
+      "keywords": [
+        "complex machinery",
+        "overwhelmed person",
+        "grand hall"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Saraydaki İkinci Adam",
+      "narration": "Aynı saraya giren ikinci kişi, oranın bir sahibi ve işleyen bir düzeni olduğunu bilir. Kendini misafir kabul eder, kendisine düşen sınırlı vazifeyi yerine getirir ve güzellikleri emniyetle seyreder. Aynı mekân, farklı bir bakışla huzur yerine dönüşür.",
+      "visual_note": "A calm visitor admiring a sunlit palace garden.",
+      "keywords": [
+        "calm visitor",
+        "palace garden",
+        "sunlit architecture"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Dünya Değişmedi, Bakış Değişti",
+      "narration": "İki kişinin bulunduğu yer aynıdır; fark, dünyayı nasıl okuduklarındadır. Biri her şeyi sahipsiz ve kendi omzunda görür, diğeri düzenin bir iradeye dayandığını kabul eder. Kader imanı, dış şartlardan önce bu temel bakışı değiştirir.",
+      "visual_note": "Split view of the same garden, one side stormy and one side serene.",
+      "keywords": [
+        "same garden",
+        "contrasting mood",
+        "changed perspective"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Emniyet Nereden Doğar?",
+      "narration": "İnsan her olayın sebebini ve sonucunu bilemez. Fakat hayatın İlâhî ilim, kudret ve hikmet içinde yürüdüğüne inandığında bilinmezlik mutlak bir karanlık olmaktan çıkar. Emniyet, her ayrıntıyı kontrol etmekten değil, güvenilecek merkezi tanımaktan doğar.",
+      "visual_note": "A lighthouse guiding a small boat through gentle evening mist.",
+      "keywords": [
+        "lighthouse",
+        "small boat",
+        "evening mist"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Kederden Emin Olmak",
+      "narration": "Kadere iman, insanın hiç üzülmeyeceği anlamına gelmez. Acı yine acıdır, ayrılık yine kalbi sızlatır; fakat yaşananların sahipsiz ve anlamsız olmadığı bilinir. Bu güven, kederin insanı bütünüyle yutmasını engeller.",
+      "visual_note": "A grieving person sitting quietly as warm light enters the room.",
+      "keywords": [
+        "quiet grief",
+        "warm light",
+        "inner comfort"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Yazılmış Olmak Kaybolmamak",
+      "narration": "Hayatın yazılı olması, insanın silinmiş bir iz gibi boşluğa bırakılmadığını düşündürür. Yaşanan iyilikler, çekilen emekler ve kalpte taşınan niyetler İlâhî ilmin dışına düşmez. Kayıt, varlığın değer gördüğüne dair derin bir tesellidir.",
+      "visual_note": "Handwritten journal beside a glowing candle in a dark room.",
+      "keywords": [
+        "handwritten journal",
+        "candlelight",
+        "preserved memory"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Kontrol ile Sorumluluk Arasındaki Fark",
+      "narration": "İnsan her şeyi kontrol etmek zorunda değildir; fakat kendi niyetinden ve seçebildiği davranışlardan sorumludur. Kader bu ayrımı berraklaştırır. Vazife insana, netice ise bütün sebepleri yöneten Allah’a aittir.",
+      "visual_note": "A person steering a small wheel while a vast river carries the boat.",
+      "keywords": [
+        "boat steering",
+        "vast river",
+        "responsibility"
+      ]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Bugünün Vazifesi",
+      "narration": "Geleceğin bütün ihtimallerini zihinde taşımak, bugünün gücünü tüketir. Kadere güvenen insan, önündeki doğru adımı arar ve henüz gelmemiş yükleri şimdiden omuzlamaz. Bu tutum, dikkati korkudan vazifeye çevirir.",
+      "visual_note": "A person taking one clear step on a misty morning path.",
+      "keywords": [
+        "single step",
+        "misty path",
+        "present moment"
+      ]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Şükre Açılan Alan",
+      "narration": "Her şeyi kendi başarısı sayan insan sürekli koruma ve kaybetme kaygısı yaşar. Nimetleri emanet olarak görmek ise sahiplik iddiasını hafifletir ve şükrü çoğaltır. Kalp, tutunmak yerine kıymet bilmeyi öğrenir.",
+      "visual_note": "Hands gently holding water and releasing it in sunlight.",
+      "keywords": [
+        "open hands",
+        "flowing water",
+        "gratitude"
+      ]
+    },
+    {
+      "scene_id": "scene-035",
+      "title": "Kader ve İç Hürriyet",
+      "narration": "Teslimiyet dışarıdan bir sınır gibi görünse de içeride genişlik doğurabilir. İnsan, gücünün yetmediği alanlarla savaşmayı bıraktığında iradesini gerçekten değiştirebileceği şeylere yöneltir. Kader, ruhu felç etmez; onu boşuna tüketen iddialardan kurtarır.",
+      "visual_note": "A person emerging from a dense forest into a wide open field.",
+      "keywords": [
+        "open field",
+        "forest exit",
+        "inner freedom"
+      ]
+    },
+    {
+      "scene_id": "scene-036",
+      "title": "Hiçbir Şey Sahipsiz Değil",
+      "narration": "Çekirdeğin planından hafızanın kaydına, meyvenin devamından insanın sorumluluğuna kadar aynı hakikat görünür: Varlık ölçüsüz ve sahipsiz değildir. Her şey yazılıysa insan bir zincire değil, İlâhî ilim ve rahmetin kuşatıcılığına dayanır. Kalbin rahatlığı, her şeyi bilmekten değil, hiçbir şeyin sahipsiz olmadığını bilmekten doğar.",
+      "visual_note": "A vast peaceful landscape under sunrise, person standing with quiet confidence.",
+      "keywords": [
+        "peaceful landscape",
+        "sunrise",
+        "quiet confidence"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "26-soz-3-mebhas-her-sey-yaziliysa-insan-neden-rahatlar",
+    "test_day": "day-46",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/26-soz-3-mebhas-her-sey-yaziliysa-insan-neden-rahatlar.md"
+    ]
+  }
+}
+

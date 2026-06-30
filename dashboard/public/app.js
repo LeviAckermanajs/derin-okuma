@@ -207,6 +207,26 @@ function wireDatePickers() {
   });
 }
 
+function wireYoutubeDateInput(id, cache, key) {
+  const hiddenInput = document.getElementById(id);
+  const displayInput = document.getElementById(`${id}-display`);
+  if (!hiddenInput || !displayInput) return;
+
+  let displayEdited = false;
+  const remember = () => {
+    const saved = cache.get(key) || {};
+    saved.schedule_date = hiddenInput.value;
+    saved.youtubeDateManual = true;
+    cache.set(key, saved);
+  };
+  hiddenInput.addEventListener('change', remember);
+  displayInput.addEventListener('input', () => { displayEdited = true; });
+  displayInput.addEventListener('blur', () => {
+    if (displayEdited && (!displayInput.value.trim() || hiddenInput.value)) remember();
+    displayEdited = false;
+  });
+}
+
 async function refreshYtScheduleHint() {
   try {
     ytScheduleHint = await apiFetch('/api/youtube-schedule-hint');
@@ -220,6 +240,17 @@ async function refreshDayHint() {
   } catch {
     dayHint = { last_day: null, next_day: 1, source: null, source_slug: null };
     dayHintWarning = 'day hint okunamadı';
+  }
+}
+
+async function refreshWorkflowHints() {
+  try {
+    const hints = await apiFetch('/api/workflow-hints');
+    dayHint = hints.day;
+    ytScheduleHint = hints.youtube;
+    dayHintWarning = null;
+  } catch {
+    await Promise.all([refreshYtScheduleHint(), refreshDayHint()]);
   }
 }
 
@@ -353,7 +384,7 @@ async function showDraftDetail(filename) {
   document.getElementById('draft-detail-body').innerHTML =
     '<div class="loading">Yükleniyor…</div>';
   try {
-    await refreshDayHint();
+    await refreshWorkflowHints();
     const d = await apiFetch(`/api/draft/${encodeURIComponent(filename)}`);
     document.getElementById('draft-detail-body').innerHTML = renderDraftDetail(d);
     wireDraftDetailButtons(d);
@@ -445,6 +476,9 @@ function cardDraftWorkflowParams(d) {
   const defDay     = cached?.manual ? cached.day : suggestedDayFor(ownDay);
   const baseRunId  = normalizeRunIdValue(sd?.pipeline?.runId, defDay);
   const defRunId   = cached?.manual ? cached.run_id : baseRunId;
+  const defYoutubeDate = cached?.youtubeDateManual
+    ? cached.schedule_date
+    : (ytScheduleHint?.suggested_date || istanbulDateStr(1));
   return `
     <div class="detail-card full-width">
       <h3>Workflow Parametreleri</h3>
@@ -467,7 +501,7 @@ function cardDraftWorkflowParams(d) {
         </div>
         <div class="param-field">
           <label class="param-label" for="dp-yt-date-display">YouTube Takvim Tarihi</label>
-          ${createDatePicker('dp-yt-date', ytScheduleHint?.suggested_date || istanbulDateStr(1), istanbulDateStr(0))}
+          ${createDatePicker('dp-yt-date', defYoutubeDate, istanbulDateStr(0))}
           <span class="param-hint">${esc(formatHintDates(ytScheduleHint?.note) || 'Hint yükleniyor…')}</span>
         </div>
       </div>
@@ -564,6 +598,7 @@ function wireDraftDetailButtons(d) {
   const claudeOk = config.claude?.available === true;
   const codexOk = config.codex?.available === true;
   wireDatePickers();
+  wireYoutubeDateInput('dp-yt-date', draftParamCache, d.filename);
   wireDayRunIdInputs('dp-day', 'dp-run-id', () =>
     rememberParams(draftParamCache, d.filename, { day: 'dp-day', run_id: 'dp-run-id' }));
   document.querySelectorAll('[data-draft-action]').forEach(btn => {
@@ -810,7 +845,7 @@ async function showDetail(slug, silent = false) {
     document.getElementById('detail-body').innerHTML    = '<div class="loading">Yükleniyor…</div>';
   }
   try {
-    await refreshDayHint();
+    await refreshWorkflowHints();
     const d = await apiFetch(`/api/slug/${encodeURIComponent(slug)}`);
     document.getElementById('detail-title').textContent = slug;
     document.getElementById('detail-body').innerHTML    = renderDetail(d);
@@ -855,6 +890,9 @@ function cardWorkflowParams(d) {
   const defaultRunId = cached?.manual
     ? cached.run_id
     : normalizeRunIdValue(d.pipeline?.runId, defDay);
+  const defYoutubeDate = cached?.youtubeDateManual
+    ? cached.schedule_date
+    : (ytScheduleHint?.suggested_date || istanbulDateStr(1));
   return `
     <div class="detail-card full-width">
       <h3>Workflow Parametreleri</h3>
@@ -886,7 +924,7 @@ function cardWorkflowParams(d) {
         </div>
         <div class="param-field">
           <label class="param-label" for="param-yt-date-display">YouTube Takvim Tarihi</label>
-          ${createDatePicker('param-yt-date', ytScheduleHint?.suggested_date || istanbulDateStr(1), istanbulDateStr(0))}
+          ${createDatePicker('param-yt-date', defYoutubeDate, istanbulDateStr(0))}
           <span class="param-hint">${esc(formatHintDates(ytScheduleHint?.note) || 'Hint yükleniyor…')}</span>
         </div>
       </div>
@@ -1130,6 +1168,7 @@ function wireDetailButtons(d) {
   const claudeOk = config.claude?.available === true;
   const codexOk = config.codex?.available === true;
   wireDatePickers();
+  wireYoutubeDateInput('param-yt-date', slugParamCache, d.slug);
   wireDayRunIdInputs('param-day', 'param-run-id', () =>
     rememberParams(slugParamCache, d.slug, { day: 'param-day', run_id: 'param-run-id' }));
   fillTokenCard();
@@ -1570,6 +1609,7 @@ async function monitorJob(jobId) {
           statusEl.className   = 'modal-status ok';
           statusEl.textContent = 'Başarılı ✓';
           modalNeedsRefresh = true;
+          await refreshWorkflowHints();
         } else if (st.status === 'killed') {
           statusEl.className   = 'modal-status fail';
           statusEl.textContent = `Claude işlemi zaman aşımına uğradı. İşlem yarıda kesildi${st.signal ? ` (${st.signal})` : ''}.`;
@@ -1774,6 +1814,7 @@ async function runModal() {
       statusEl.className   = 'modal-status ok';
       statusEl.textContent = 'Başarılı (exit 0)';
       modalNeedsRefresh = true;
+      await refreshWorkflowHints();
       if (data.mobile_caption_link?.url)
         showModalUrl(data.mobile_caption_link.url, data.mobile_caption_link.index_url || null);
     } else if (data.scaffold_ready) {
@@ -1803,7 +1844,7 @@ async function runModal() {
 // ── Event wiring ───────────────────────────────────────────────────────────
 
 document.getElementById('refresh-btn').addEventListener('click', async () => {
-  await refreshDayHint();
+  await refreshWorkflowHints();
   if (activeTab === 'drafts') {
     if (currentDraft) showDraftDetail(currentDraft);
     else loadDrafts();
@@ -1832,7 +1873,7 @@ document.querySelectorAll('.tab-btn').forEach(btn =>
 
 (async () => {
   try { config = await apiFetch('/api/config'); } catch {}
-  await Promise.all([refreshYtScheduleHint(), refreshDayHint()]);
+  await refreshWorkflowHints();
   getMobileIp();            // pre-fetch local IP for mobile caption URLs
   loadDrafts();             // default active tab
   refreshTokenBadge();
@@ -1843,4 +1884,5 @@ setInterval(() => {
   else if (activeTab === 'shorts'   && !currentSlug)  loadOverview();
   else if (activeTab === 'services')                  loadServices();
   refreshTokenBadge();
+  refreshWorkflowHints();
 }, 30_000);
