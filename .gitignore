@@ -31,3 +31,5 @@ pnpm-debug.log*
 
 # dashboard background job state (ephemeral)
 dashboard/.jobs/
+
+*:Zone.Identifier
