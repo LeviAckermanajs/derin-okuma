@@ -14,15 +14,33 @@ function leadingWorkNumber(value) {
 }
 
 // Editorial slugs may differ from filenames, but numbered works cannot cross-link.
-export function isDraftLinkCompatible(filename, blogSlug) {
+export function isDraftLinkCompatible(filename, blogSlug, blogSource = null) {
   if (typeof blogSlug !== 'string' || !/^[a-zA-Z0-9_-]+$/.test(blogSlug)) return false;
   const draftNumber = leadingWorkNumber(slugifyDraftName(filename));
   const blogNumber = leadingWorkNumber(blogSlug);
-  return draftNumber === null || blogNumber === null || draftNumber === blogNumber;
+  if (draftNumber === null || blogNumber === draftNumber) return true;
+  if (blogNumber !== null) return false;
+  // Editorial slugs may omit the work number. When source frontmatter is
+  // available, use it as the authoritative identity check.
+  if (blogSource === null) return true;
+  return leadingWorkNumber(slugifyDraftName(blogSource)) === draftNumber;
 }
 
-export function linkedSlugForDraft(links, filename) {
+export function linkedSlugForDraft(links, filename, sourceForSlug = null) {
   if (!links || typeof links !== 'object' || Array.isArray(links)) return null;
   const value = links[filename];
-  return isDraftLinkCompatible(filename, value) ? value : null;
+  const source = typeof sourceForSlug === 'function' ? sourceForSlug(value) : null;
+  return isDraftLinkCompatible(filename, value, source) ? value : null;
+}
+
+export function draftLinkState(links, filename, sourceForSlug = null) {
+  const raw = links && typeof links === 'object' && !Array.isArray(links)
+    ? links[filename]
+    : null;
+  const slug = linkedSlugForDraft(links, filename, sourceForSlug);
+  return {
+    slug,
+    stale_slug: typeof raw === 'string' && raw !== slug ? raw : null,
+    mismatch: typeof raw === 'string' && raw !== slug,
+  };
 }

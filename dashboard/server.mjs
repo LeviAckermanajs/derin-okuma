@@ -10,14 +10,15 @@ import os                   from 'os';
 import { fileURLToPath } from 'url';
 import { buildAgentCommand, resolveClaudeBin, resolveCodexBin } from '../scripts/agent-runner.mjs';
 import { computeYoutubeScheduleHint } from './lib/youtube-schedule-hint.mjs';
-import { linkedSlugForDraft, slugifyDraftName } from './lib/draft-link.mjs';
+import { draftLinkState, linkedSlugForDraft, slugifyDraftName } from './lib/draft-link.mjs';
 
-const __dirname  = path.dirname(fileURLToPath(import.meta.url));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname  = path.dirname(__filename);
 const ROOT       = path.resolve(__dirname, '..');
 const PUBLIC_DIR = path.join(__dirname, 'public');
 
 const HOST = '127.0.0.1';
-const PORT = 3456;
+const PORT = Number.parseInt(process.env.DASHBOARD_PORT || '3456', 10);
 
 const SHORTS_DIR   = path.join(ROOT, 'docs', 'video-tests', 'shorts');
 const BATCHES_DIR  = path.join(ROOT, 'docs', 'video-tests', 'batches');
@@ -390,6 +391,17 @@ function findBlogPath(slug, pkg) {
 
 function readDraftLinks() { return readJson(DRAFT_LINKS_PATH) || {}; }
 
+function readBlogSource(slug) {
+  if (typeof slug !== 'string' || !/^[a-zA-Z0-9_-]+$/.test(slug)) return null;
+  for (const ext of ['.md', '.mdx']) {
+    const text = readText(path.join(BLOG_DIR, `${slug}${ext}`));
+    if (!text) continue;
+    const match = text.slice(0, 2000).match(/^source:\s*["']?([^\n"']+)/mi);
+    return match ? match[1].trim() : null;
+  }
+  return null;
+}
+
 // Writes a minimal pipeline status JSON when the pipeline script failed to do so.
 // Mirrors the structure expected by run-shorts-fill-with-claude.mjs.
 function ensurePipelineStatus(slug, title, day, runId) {
@@ -436,7 +448,7 @@ function saveDraftLink(draftFile, blogSlug) {
 // Returns the slug if found, null otherwise.
 function autoRepairDraftLink(filename) {
   const links = readDraftLinks();
-  const linkedSlug = linkedSlugForDraft(links, filename);
+  const linkedSlug = linkedSlugForDraft(links, filename, readBlogSource);
   if (linkedSlug) return linkedSlug;
   if (!exists(BLOG_DIR)) return null;
 
@@ -466,6 +478,7 @@ function autoRepairDraftLink(filename) {
 
 function getDraftStatus(blogSlug) {
   if (!blogSlug) return 'draft';
+  if (!findBlogPath(blogSlug, null)) return 'draft';
   const pkg = readJson(path.join(SHORTS_DIR, blogSlug, `${blogSlug}-shorts-package.json`));
   if (!pkg) return 'blog_created';
   if (pkg.content_generation_status !== 'filled') return 'prep_ready';
@@ -520,7 +533,12 @@ function apiDraft(filename) {
   let stat;
   try { stat = fs.statSync(absPath); } catch { return null; }
 
+  // Read the selected draft link fresh for every detail request. Never reuse
+  // another draft's last-opened slug or package state.
+  const initialLinkState = draftLinkState(readDraftLinks(), filename, readBlogSource);
   const blogSlug = autoRepairDraftLink(filename);
+  const finalLinkState = draftLinkState(readDraftLinks(), filename, readBlogSource);
+  const staleLinkedSlug = finalLinkState.stale_slug ?? initialLinkState.stale_slug;
 
   // Detect multiple ambiguous candidates (not confident → surface hint to UI)
   let orphanedBlogHint = null;
@@ -533,8 +551,38 @@ function apiDraft(filename) {
     } catch {}
   }
 
-  const status     = getDraftStatus(blogSlug);
-  const slugDetail = (blogSlug && /^[a-zA-Z0-9_-]+$/.test(blogSlug)) ? apiSlug(blogSlug) : null;
+  const status = getDraftStatus(blogSlug);
+  let slugDetail = (blogSlug && /^[a-zA-Z0-9_-]+$/.test(blogSlug)) ? apiSlug(blogSlug) : null;
+  // A blog can exist before any video package directory. Return a selected-
+  // draft-scoped detail object instead of falling back to another recent slug.
+  if (blogSlug && !slugDetail) {
+    const blogPath = findBlogPath(blogSlug, null);
+    slugDetail = {
+      slug: blogSlug,
+      source_title: null,
+      test_day: null,
+      blog_exists: !!blogPath,
+      blog_path: blogPath,
+      package_status: 'missing',
+      shorts_count: 0,
+      shorts: [],
+      metadata_exists: false,
+      metadata_status: null,
+      load_inputs: [],
+      batch_exists: false,
+      validation_exists: false,
+      validation_path: null,
+      validation_summary: null,
+      validation_passed: false,
+      pipeline: null,
+      pipeline_mtime: null,
+      is_stale_failed: false,
+      publish_manifest_exists: false,
+      tiktok_export_ready: false,
+      tiktok_upload_ready: false,
+      tiktok_disabled_reason: 'Seçili draft için video paketi henüz oluşturulmadı.',
+    };
+  }
 
   return {
     filename,
@@ -542,6 +590,10 @@ function apiDraft(filename) {
     mtime:      stat.mtime.toISOString(),
     size:       stat.size,
     blog_slug:  blogSlug,
+    link_mismatch: staleLinkedSlug ? {
+      stale_slug: staleLinkedSlug,
+      reason: 'draft_link_incompatible',
+    } : null,
     orphaned_blog_hint: orphanedBlogHint,
     status,
     slug_detail: slugDetail,
@@ -1242,7 +1294,11 @@ const server = http.createServer(async (req, res) => {
   serveStatic(res, pathname);
 });
 
-server.listen(PORT, HOST, () => {
-  console.log(`Dashboard: http://${HOST}:${PORT}`);
-  console.log('Ctrl+C to stop.');
-});
+export { apiDraft };
+
+if (path.resolve(process.argv[1] || '') === __filename) {
+  server.listen(PORT, HOST, () => {
+    console.log(`Dashboard: http://${HOST}:${PORT}`);
+    console.log('Ctrl+C to stop.');
+  });
+}

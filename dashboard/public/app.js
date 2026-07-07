@@ -476,6 +476,13 @@ function cardDraftInfo(d) {
         Manuel olarak <code>.draft-links.json</code> dosyasına slug ekleyin.
       </div>`
     : '';
+  const mismatchNote = d.link_mismatch
+    ? `<div class="stale-note" style="margin-top:10px">
+        ⚠ Seçili draft ile uyumsuz eski bağlantı gizlendi:
+        <code>${esc(d.link_mismatch.stale_slug)}</code>.
+        Bu slug'a ait paket, pipeline ve doğrulama durumu bu draftta kullanılmıyor.
+      </div>`
+    : '';
   return `
     <div class="detail-card">
       <h3>Taslak Bilgisi</h3>
@@ -489,6 +496,7 @@ function cardDraftInfo(d) {
         ${kv('Durum',        draftStatusPill(d.status))}
       </table>
       ${orphanNote}
+      ${mismatchNote}
     </div>`;
 }
 
