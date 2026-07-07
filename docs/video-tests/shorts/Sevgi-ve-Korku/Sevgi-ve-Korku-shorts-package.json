@@ -1,0 +1,182 @@
+{
+  "source": {
+    "blog_post": "Sevgi-ve-Korku",
+    "title": "30.Söz - 1.Maksad - Mukaddime",
+    "source_files": [
+      "docs/drafts/30.Söz - 1.Maksad - Mukaddime.txt"
+    ]
+  },
+  "test_day": "day-48",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan neden sürekli ‘ben’ der?",
+      "title": "İnsan Neden ‘Ben’ Der?",
+      "description": "Benlik yalnızca kişiliğimizi anlatmaz; sınırlı olandan sonsuz hakikate açılan bir ölçü olabilir. Doğru okunmadığında ise insanı kendi içine kapatır.\n\n#derinokuma #shorts #tefekkür #iman #benlik #ene",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#benlik", "#ene"],
+      "thumbnail_or_cover_text": "BEN NEDEN VAR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "İnsan neden sürekli ‘ben’ der? Ben düşündüm, ben yaptım, benim hayatım… Bu küçük kelime, yalnızca kişiliğimizi anlatmaktan daha büyük bir vazife taşıyor olabilir.",
+          "visual_note": "person facing a mirror at dawn, vertical cinematic portrait",
+          "keywords": ["mirror", "reflection", "dawn"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Benlik, kendimizi fark etmemizi sağlayan hassas bir ölçüdür. Kendi sınırlı bilgimizi ve gücümüzü tanıyarak, sınırsız ilim ve kudretin ne demek olduğunu sezmeye başlarız.",
+          "visual_note": "small silhouette beneath a vast starry sky, vertical frame",
+          "keywords": ["silhouette", "starry sky", "vastness"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bu ölçü kendisini değil, kendisinden ötesini gösterdiğinde bir anahtara dönüşür. Fakat insan kendisini mutlak merkez sayarsa aynı benlik, onu kendi içine kapatan bir kilit olur.",
+          "visual_note": "antique key opening a bright door, vertical close-up",
+          "keywords": ["antique key", "bright door", "opening"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Sınırlı bir insan sonsuz kudreti nasıl anlayabilir?",
+      "title": "İnsan Sonsuzu Nasıl Anlar?",
+      "description": "İnsan kendi küçük bilgi, güç ve düzenleme tecrübesini bir ölçü gibi kullanır. Damla denizi kuşatmaz; fakat ona işaret edebilir.\n\n#derinokuma #shorts #tefekkür #iman #kudret #marifet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kudret", "#marifet"],
+      "thumbnail_or_cover_text": "SONSUZ NASIL ANLAŞILIR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Sınırlı bir insan sonsuz kudreti nasıl anlayabilir? Bilgimiz az, gücümüz dar, ömrümüz kısa; yine de sonsuzluk hakkında düşünebiliyoruz.",
+          "visual_note": "tiny person overlooking an immense mountain range, vertical shot",
+          "keywords": ["mountain range", "tiny person", "scale"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Bir odayı düzenleyişimiz, bir işi planlayışımız ve birkaç şeyi bilişimiz bize küçük ölçüler verir. Bu tecrübelerle bütün varlığı kuşatan düzen, ilim ve kudretin anlamına yaklaşırız.",
+          "visual_note": "hands organizing a desk then studying stars, vertical transition",
+          "keywords": ["organized desk", "studying stars", "knowledge"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Bir damla denizi içine alamaz; ama suyun ne olduğunu gösterebilir. Benlik de sonsuzu kuşatmaz. Sınırını bildiğinde, sonsuz olana işaret eden bir pencere olur.",
+          "visual_note": "single drop merging into ocean waves, vertical macro slow motion",
+          "keywords": ["water drop", "ocean", "macro"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "‘Benim’ dediğimiz şeylere gerçekten sahip miyiz?",
+      "title": "Gerçekten Neye Sahibiz?",
+      "description": "Bedenimiz, zamanımız ve imkânlarımız değişirken sahiplik iddiamızın sınırı görünür. Benlik, mutlak malikiyet için değil, hakiki sahibi tanımak için verilmiş bir ölçüdür.\n\n#derinokuma #shorts #tefekkür #iman #emanet #sahiplik",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#emanet", "#sahiplik"],
+      "thumbnail_or_cover_text": "GERÇEKTEN SENİN Mİ?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "‘Benim’ dediğimiz şeylere gerçekten sahip miyiz? Bedenimiz, evimiz, zamanımız ve imkânlarımız sürekli değişiyor; hiçbiri irademizle kalıcı hâle gelmiyor.",
+          "visual_note": "aging hands holding a house key, vertical cinematic close-up",
+          "keywords": ["aging hands", "house key", "impermanence"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "İnsanın sahiplik hissi, kuma çizilmiş geçici bir sınır gibidir. Hakiki malikiyet iddiası için değil, bütün mülkün gerçek sahibini anlayabilmek için bir ölçü vazifesi görür.",
+          "visual_note": "line drawn in sand beside endless sea, vertical composition",
+          "keywords": ["line in sand", "endless sea", "boundary"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Emanet ile mülk arasındaki fark anlaşılınca insan hem çalışır hem de yükünü hafifletir. Kendisine verileni korur; fakat onu yaratmış ve sonsuza kadar elinde tutabilecekmiş gibi davranmaz.",
+          "visual_note": "open hands carefully holding a young plant, soft vertical shot",
+          "keywords": ["open hands", "young plant", "stewardship"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Benlik ne zaman görünmeyen bir perdeye dönüşür?",
+      "title": "Benlik Ne Zaman Perde Olur?",
+      "description": "Benlik kendisini bağımsız merkez saydığında ince bir ölçü olmaktan çıkar, hakikati örten bir perdeye dönüşür. Sorun ‘ben’ demek değil, benliği mutlaklaştırmaktır.\n\n#derinokuma #shorts #tefekkür #iman #enaniyet #benlik",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#enaniyet", "#benlik"],
+      "thumbnail_or_cover_text": "BENLİK PERDE OLURSA",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Benlik ne zaman görünmeyen bir perdeye dönüşür? İnsan kendisini bağımsız bir sahip ve her şeyin ölçüsü saymaya başladığında, ince çizgi kalınlaşır.",
+          "visual_note": "thin thread becoming a thick rope, vertical dark background",
+          "keywords": ["thin thread", "thick rope", "transformation"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "O zaman kişi hoşuna gideni doğru, zoruna gideni yanlış görmeye başlar. Hakikate uymak yerine, hakikatin kendi isteklerine uymasını bekler.",
+          "visual_note": "person surrounded by spinning city lights, vertical disoriented scene",
+          "keywords": ["city lights", "disorientation", "self centered"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Sorun ‘ben’ demek değildir; benliği mutlaklaştırmaktır. İşaret kendisini göstermeye başladığında yön kaybolur ve aydınlık bir dünya, ağır bir perdenin arkasında kalır.",
+          "visual_note": "heavy curtain blocking bright window light, vertical frame",
+          "keywords": ["heavy curtain", "bright window", "blocked light"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Kendini tanımak neden kulluğa götürür?",
+      "title": "Kendini Bilmek Neden Yetmez?",
+      "description": "Kendi sınırını tanımak insanı değersizleştirmez; ona sorumluluğunu ve dayanacağı merkezi gösterir. Kulluk, benliği silmek değil doğru yere yerleştirmektir.\n\n#derinokuma #shorts #tefekkür #iman #kulluk #marifet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#kulluk", "#marifet"],
+      "thumbnail_or_cover_text": "KENDİNİ DOĞRU BİL",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Kendini tanımak neden kulluğa götürür? Çünkü insan sınırlarını gördüğünde, hayatı tek başına kurmadığını ve nimetleri hazır bulduğunu fark eder.",
+          "visual_note": "person receiving sunrise in an open field, vertical peaceful shot",
+          "keywords": ["sunrise", "open field", "gratitude"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Kalbin atışını başlatmayan, güneşi doğurmayan ve toprağı yaratmayan insan; yine de hepsinden faydalanır. Bu farkındalık, sahiplik iddiasını şükre ve sorumluluğa dönüştürür.",
+          "visual_note": "heartbeat monitor transitioning to sun and fertile earth, vertical montage",
+          "keywords": ["heartbeat", "sun", "fertile earth"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Kulluk benliği silmek değildir; onu doğru yere yerleştirmektir. İnsan çalışır, tercih eder ve hesabını taşır; fakat kendisini mülkün ve neticelerin mutlak sahibi sanmaz.",
+          "visual_note": "humble person walking with purpose through a mosque courtyard",
+          "keywords": ["mosque courtyard", "purposeful walk", "humility"]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Benliği yok etmek mi, doğru okumak mı gerekir?",
+      "title": "Benlik Nasıl Anahtara Dönüşür?",
+      "description": "Çözüm kişiliği ve iradeyi silmek değil, benliği ayna ve ölçü olarak kullanmaktır. Aynı ‘ben’, insanı ya kâinata açar ya da kendi içine kilitler.\n\n#derinokuma #shorts #tefekkür #iman #ene #farkındalık",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#ene", "#farkındalık"],
+      "thumbnail_or_cover_text": "ANAHTAR MI KİLİT Mİ?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "narration": "Benliği yok etmek mi, doğru okumak mı gerekir? Çözüm kişiliği silmek, iradeyi bırakmak veya kendini değersiz görmek değildir.",
+          "visual_note": "confident calm person walking on a balanced path, vertical shot",
+          "keywords": ["balanced path", "calm person", "confidence"]
+        },
+        {
+          "scene_id": "scene-002",
+          "narration": "Benlik ayna olduğunda kendisindeki güzelliklerin kaynağını gösterir. Ölçü olduğunda sınırlı güçten sonsuz kudrete, küçük bilgiden kuşatıcı ilme açılır.",
+          "visual_note": "mirror reflecting sunlight toward a vast sky, vertical cinematic frame",
+          "keywords": ["mirror reflection", "sunlight", "vast sky"]
+        },
+        {
+          "scene_id": "scene-003",
+          "narration": "Aynı ‘ben’, insanı ya kâinata açar ya da kendi içine kilitler. Anahtarın yönünü belirleyen şey, kendimizi mutlak sahip mi yoksa emanetçi mi gördüğümüzdür.",
+          "visual_note": "key opening a doorway onto a luminous universe, vertical shot",
+          "keywords": ["key", "open doorway", "luminous universe"]
+        }
+      ]
+    }
+  ]
+}

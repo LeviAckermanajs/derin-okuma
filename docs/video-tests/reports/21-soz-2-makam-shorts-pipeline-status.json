@@ -4,7 +4,7 @@
   "day": 43,
   "dayTag": "day-43",
   "runId": "day43-batch-a",
-  "timestamp": "2026-06-26T11:23:01.167Z",
+  "timestamp": "2026-07-06T20:33:57.703Z",
   "status": "failed",
   "failedCommand": "node scripts/validate-video-package.mjs --slug 21-soz-2-makam --report",
   "paths": {

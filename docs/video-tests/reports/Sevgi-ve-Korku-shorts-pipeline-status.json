@@ -1,0 +1,17 @@
+{
+  "slug": "Sevgi-ve-Korku",
+  "title": "30.Söz - 1.Maksad - Mukaddime",
+  "day": 48,
+  "dayTag": "day-48",
+  "runId": "day48-batch-a",
+  "timestamp": "2026-07-06T20:47:58.539Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/Sevgi-ve-Korku-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/Sevgi-ve-Korku-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/Sevgi-ve-Korku-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-Sevgi-ve-Korku-short-*-day48-batch-a"
+  },
+  "fillTimestamp": "2026-07-06T21:00:23.282Z"
+}

@@ -1,5 +1,7 @@
 // dashboard/public/app.js — Phase 3
 
+import { draftWorkflowDefaults } from './draft-workflow-state.js';
+
 // ── Global state ───────────────────────────────────────────────────────────
 
 let config        = {
@@ -10,6 +12,7 @@ let config        = {
 };
 let activeTab     = 'drafts';
 let currentDraft  = null;   // draft filename shown in draft detail
+let draftRequestId = 0;     // prevents a slower previous selection overwriting the current draft
 let currentSlug   = null;   // slug shown in shorts detail
 let modalAction   = null;
 let modalSlug     = null;
@@ -377,6 +380,7 @@ async function loadDrafts() {
 // ── Draft detail ───────────────────────────────────────────────────────────
 
 async function showDraftDetail(filename) {
+  const requestId = ++draftRequestId;
   currentDraft = filename;
   document.getElementById('drafts-overview').classList.add('hidden');
   document.getElementById('draft-detail-section').classList.remove('hidden');
@@ -386,15 +390,19 @@ async function showDraftDetail(filename) {
   try {
     await refreshWorkflowHints();
     const d = await apiFetch(`/api/draft/${encodeURIComponent(filename)}`);
+    if (requestId !== draftRequestId || currentDraft !== filename) return;
+    document.getElementById('draft-detail-title').textContent = filename;
     document.getElementById('draft-detail-body').innerHTML = renderDraftDetail(d);
     wireDraftDetailButtons(d);
   } catch (err) {
+    if (requestId !== draftRequestId || currentDraft !== filename) return;
     document.getElementById('draft-detail-body').innerHTML =
       `<div class="loading" style="color:#d05555">Hata: ${esc(err.message)}</div>`;
   }
 }
 
 function hideDraftDetail() {
+  draftRequestId++;
   currentDraft = null;
   document.getElementById('drafts-overview').classList.remove('hidden');
   document.getElementById('draft-detail-section').classList.add('hidden');
@@ -437,11 +445,27 @@ function renderDraftDetail(d) {
     ${stepperHtml(d.status, sd)}
     <div class="detail-grid">
       ${cardDraftInfo(d)}
-      ${sd ? cardContentPackage(sd) : ''}
-      ${sd ? cardPipeline(sd) : ''}
+      ${sd ? cardContentPackage(sd) : cardMissingContentPackage()}
+      ${sd ? cardPipeline(sd) : cardPipeline({ pipeline: null })}
       ${cardDraftWorkflowParams(d)}
       ${cardDraftActions(d)}
     </div>`;
+}
+
+function cardMissingContentPackage() {
+  return cardContentPackage({
+    blog_exists: false,
+    blog_path: null,
+    package_status: 'missing',
+    shorts_count: 0,
+    metadata_exists: false,
+    metadata_status: null,
+    load_inputs: [],
+    batch_exists: false,
+    validation_exists: false,
+    validation_path: null,
+    validation_summary: null,
+  });
 }
 
 function cardDraftInfo(d) {
@@ -470,15 +494,16 @@ function cardDraftInfo(d) {
 
 function cardDraftWorkflowParams(d) {
   const sd         = d.slug_detail;
-  const defTitle   = sd?.source_title ?? d.filename.replace(/\.(txt|md|mdx)$/, '');
   const cached     = draftParamCache.get(d.filename);
   const ownDay     = normalizeDayValue(sd?.test_day);
-  const defDay     = cached?.manual ? cached.day : suggestedDayFor(ownDay);
-  const baseRunId  = normalizeRunIdValue(sd?.pipeline?.runId, defDay);
-  const defRunId   = cached?.manual ? cached.run_id : baseRunId;
-  const defYoutubeDate = cached?.youtubeDateManual
-    ? cached.schedule_date
-    : (ytScheduleHint?.suggested_date || istanbulDateStr(1));
+  const defaults   = draftWorkflowDefaults(d, cached, {
+    day: dayHint,
+    youtube: ytScheduleHint,
+  }, istanbulDateStr(1));
+  const defTitle   = defaults.title;
+  const defDay     = defaults.day;
+  const defRunId   = normalizeRunIdValue(defaults.runId, defDay);
+  const defYoutubeDate = defaults.youtubeDate;
   return `
     <div class="detail-card full-width">
       <h3>Workflow Parametreleri</h3>
@@ -600,7 +625,9 @@ function wireDraftDetailButtons(d) {
   wireDatePickers();
   wireYoutubeDateInput('dp-yt-date', draftParamCache, d.filename);
   wireDayRunIdInputs('dp-day', 'dp-run-id', () =>
-    rememberParams(draftParamCache, d.filename, { day: 'dp-day', run_id: 'dp-run-id' }));
+    rememberParams(draftParamCache, d.filename, { title: 'dp-title', day: 'dp-day', run_id: 'dp-run-id' }));
+  document.getElementById('dp-title')?.addEventListener('input', () =>
+    rememberParams(draftParamCache, d.filename, { title: 'dp-title', day: 'dp-day', run_id: 'dp-run-id' }));
   document.querySelectorAll('[data-draft-action]').forEach(btn => {
     btn.addEventListener('click', async () => {
       const action = btn.dataset.draftAction;

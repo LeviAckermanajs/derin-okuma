@@ -10,6 +10,7 @@ import os                   from 'os';
 import { fileURLToPath } from 'url';
 import { buildAgentCommand, resolveClaudeBin, resolveCodexBin } from '../scripts/agent-runner.mjs';
 import { computeYoutubeScheduleHint } from './lib/youtube-schedule-hint.mjs';
+import { linkedSlugForDraft, slugifyDraftName } from './lib/draft-link.mjs';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
 const ROOT       = path.resolve(__dirname, '..');
@@ -431,21 +432,12 @@ function saveDraftLink(draftFile, blogSlug) {
   try { fs.writeFileSync(DRAFT_LINKS_PATH, JSON.stringify(links, null, 2), 'utf8'); } catch {}
 }
 
-function slugifyDraftName(filename) {
-  const withoutExt = filename.replace(/\.(txt|md|mdx)$/, '');
-  return withoutExt
-    .replace(/[ğĞ]/g, 'g').replace(/[üÜ]/g, 'u').replace(/[şŞ]/g, 's')
-    .replace(/[ıİ]/g, 'i').replace(/[öÖ]/g, 'o').replace(/[çÇ]/g, 'c')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-}
-
 // Tries to find a blog slug for an unlinked draft and saves the link if confident.
 // Returns the slug if found, null otherwise.
 function autoRepairDraftLink(filename) {
   const links = readDraftLinks();
-  if (links[filename]) return links[filename];
+  const linkedSlug = linkedSlugForDraft(links, filename);
+  if (linkedSlug) return linkedSlug;
   if (!exists(BLOG_DIR)) return null;
 
   const candidate = slugifyDraftName(filename);
