@@ -1,0 +1,17 @@
+{
+  "slug": "30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar",
+  "title": "30.Söz - 1.Maksad - Mukaddime",
+  "day": 49,
+  "dayTag": "day-49",
+  "runId": "day49-batch-a",
+  "timestamp": "2026-07-07T11:27:28.497Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-short-*-day49-batch-a"
+  },
+  "fillTimestamp": "2026-07-07T14:16:05.473Z"
+}

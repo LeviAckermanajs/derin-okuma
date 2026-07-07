@@ -33,3 +33,6 @@ pnpm-debug.log*
 dashboard/.jobs/
 
 *:Zone.Identifier
+
+# local reset/repair backups
+docs/.reset-trash/

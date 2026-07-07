@@ -16,7 +16,7 @@ const rawInput = {
     description: "Güzelliği yalnız eserde bırakmak, sanatın sahibini görünmez kılar. Ayna olan bakış renk, ölçü ve zarafeti hayranlıktan şükre taşıyan bir işaret olarak okur.\n\n#derinokuma #shorts #tefekkür #güzellik #sanat #şükür",
     language: 'tr',
     author: 'Muhammet Yahya Ozer',
-    job_id_hint: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-short-005-day-49'
+    job_id_hint: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-short-005-day-49'
   },
 
   reuse_existing_audio: {
@@ -94,7 +94,7 @@ const rawInput = {
 
   metadata: {
     source: 'derin-okuma',
-    blog_post: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur',
+    blog_post: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar',
     test_day: 'day-49',
     short_id: 'short-005',
     workflow: 'manual_scene_json_single_track_shorts_load_input',

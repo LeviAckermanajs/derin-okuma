@@ -5,8 +5,8 @@ Bu görevde daha önce `npm run video:prep` ile oluşturulmuş scaffold dosyalar
 ## Hedef Yazı
 
 - Başlık: `30.Söz - 1.Maksad - Mukaddime`
-- Slug: `30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur`
-- Kaynak dosya: `src/content/blog/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur.md`
+- Slug: `30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar`
+- Kaynak dosya: `src/content/blog/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar.md`
 - Gün: `day-49`
 
 ## Amaç
@@ -29,20 +29,20 @@ Bu yazı için:
 
 ### Landscape
 
-- `docs/video-tests/inputs/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-full-video.json`
-- `docs/video-tests/inputs/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-load-input.js`
-- `docs/video-tests/metadata/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-metadata.json`
+- `docs/video-tests/inputs/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-full-video.json`
+- `docs/video-tests/inputs/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-load-input.js`
+- `docs/video-tests/metadata/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-metadata.json`
 
 ### Shorts
 
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-package.json`
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/metadata/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-metadata.json`
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/load-inputs/short-001-load-input.js`
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/load-inputs/short-002-load-input.js`
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/load-inputs/short-003-load-input.js`
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/load-inputs/short-004-load-input.js`
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/load-inputs/short-005-load-input.js`
-- `docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/load-inputs/short-006-load-input.js`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-package.json`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/metadata/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-metadata.json`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/load-inputs/short-001-load-input.js`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/load-inputs/short-002-load-input.js`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/load-inputs/short-003-load-input.js`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/load-inputs/short-004-load-input.js`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/load-inputs/short-005-load-input.js`
+- `docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/load-inputs/short-006-load-input.js`
 
 ## Önce Oku
 
@@ -111,18 +111,18 @@ Bu yazı için:
 JSON dosyaları için:
 
 ```bash
-python3 -m json.tool docs/video-tests/inputs/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-full-video.json > /tmp/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-json-check.json
-python3 -m json.tool docs/video-tests/metadata/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-metadata.json > /tmp/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-metadata-check.json
-python3 -m json.tool docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-package.json > /tmp/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-package-check.json
-python3 -m json.tool docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/metadata/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-metadata.json > /tmp/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-metadata-check.json
+python3 -m json.tool docs/video-tests/inputs/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-full-video.json > /tmp/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-json-check.json
+python3 -m json.tool docs/video-tests/metadata/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-metadata.json > /tmp/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-metadata-check.json
+python3 -m json.tool docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-package.json > /tmp/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-package-check.json
+python3 -m json.tool docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/metadata/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-metadata.json > /tmp/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-metadata-check.json
 ```
 
 JS syntax için:
 
 ```bash
-node -e "new Function(require('fs').readFileSync('docs/video-tests/inputs/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-load-input.js', 'utf8')); console.log('Landscape JS OK')"
+node -e "new Function(require('fs').readFileSync('docs/video-tests/inputs/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-load-input.js', 'utf8')); console.log('Landscape JS OK')"
 
-for f in docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/load-inputs/*.js; do
+for f in docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/load-inputs/*.js; do
   node -e "new Function(require('fs').readFileSync('$f', 'utf8')); console.log('OK:', '$f')"
 done
 ```
@@ -130,7 +130,7 @@ done
 Yasaklı kalıp kontrolü:
 
 ```bash
-grep -RniE "bu metin|metnin|metinde|metne göre|metnin deyimiyle|bu noktada|şu cümle|verilen cevap|verilen örnek|yazar burada|kitap burada|burada anlatılmak istenen|bu bölüm" docs/video-tests/inputs/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur* docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur || true
+grep -RniE "bu metin|metnin|metinde|metne göre|metnin deyimiyle|bu noktada|şu cümle|verilen cevap|verilen örnek|yazar burada|kitap burada|burada anlatılmak istenen|bu bölüm" docs/video-tests/inputs/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar* docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar || true
 ```
 
 ## Çıktı Sonunda Raporla

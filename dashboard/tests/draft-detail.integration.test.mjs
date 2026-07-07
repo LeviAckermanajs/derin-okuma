@@ -8,13 +8,13 @@ test('draft detail never inherits another slug package or pipeline state', () =>
   const detail = apiDraft(filename);
 
   assert.ok(detail);
-  assert.equal(detail.blog_slug, '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur');
+  assert.equal(detail.blog_slug, '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar');
   assert.equal(
     detail.slug_detail.blog_path,
-    'src/content/blog/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur.md',
+    'src/content/blog/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar.md',
   );
-  assert.equal(detail.slug_detail.package_status, 'missing');
-  assert.equal(detail.slug_detail.pipeline, null);
-  assert.equal(detail.slug_detail.validation_exists, false);
+  assert.equal(detail.slug_detail.package_status, 'filled');
+  assert.equal(detail.slug_detail.pipeline?.status, 'success');
+  assert.equal(detail.slug_detail.validation_exists, true);
   assert.notEqual(detail.blog_slug, 'Sevgi-ve-Korku');
 });

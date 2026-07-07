@@ -16,7 +16,7 @@ const rawInput = {
     description: "Benliğin insanı kulluğa açan bir ayna ya da hakikati örten bir perde hâline nasıl gelebildiğini anlatan tefekkür videosu.",
     language: 'tr',
     author: 'Muhammet Yahya Ozer',
-    job_id_hint: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-day-49'
+    job_id_hint: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-day-49'
   },
 
   reuse_existing_audio: {
@@ -490,7 +490,7 @@ const rawInput = {
 
   metadata: {
     source: 'derin-okuma',
-    blog_post: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur',
+    blog_post: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar',
     test_day: 'day-49',
     workflow: 'manual_scene_json_single_track_landscape_load_input',
     content_generation_status: 'filled'

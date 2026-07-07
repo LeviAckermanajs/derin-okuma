@@ -16,7 +16,7 @@ const rawInput = {
     description: "Benlik ışığı sahiplenmeden gösterirse ayna, nimeti kendinden bilirse perde olur. İnsanın yönü, gördüğü hakikati de değiştirir.\n\n#derinokuma #shorts #tefekkür #maneviyat #benlik #kulluk",
     language: 'tr',
     author: 'Muhammet Yahya Ozer',
-    job_id_hint: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-short-002-day-49'
+    job_id_hint: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-short-002-day-49'
   },
 
   reuse_existing_audio: {
@@ -94,7 +94,7 @@ const rawInput = {
 
   metadata: {
     source: 'derin-okuma',
-    blog_post: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur',
+    blog_post: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar',
     test_day: 'day-49',
     short_id: 'short-002',
     workflow: 'manual_scene_json_single_track_shorts_load_input',

@@ -33,11 +33,11 @@ test('accepts a numberless editorial slug when source frontmatter matches', () =
 test('resolves the real blog slug only for the selected draft', () => {
   const links = {
     'Sevgi ve Korku.txt': 'Sevgi-ve-Korku',
-    [DRAFT_30]: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur',
+    [DRAFT_30]: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar',
   };
   assert.equal(
     linkedSlugForDraft(links, DRAFT_30),
-    '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur',
+    '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar',
   );
 });
 

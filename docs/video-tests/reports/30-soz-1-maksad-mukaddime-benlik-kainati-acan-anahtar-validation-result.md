@@ -1,4 +1,4 @@
-# Video Package Validation - 30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur
+# Video Package Validation - 30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar
 
 ## Summary
 
@@ -11,7 +11,7 @@
 
 | Check | Result | Note |
 |---|---|---|
-| Shorts package exists | OK | docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-package.json |
+| Shorts package exists | OK | docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-package.json |
 | Shorts package JSON parse | OK |  |
 | Shorts package content_generation_status | OK | filled |
 | Shorts package non-empty | OK |  |
@@ -208,7 +208,7 @@
 | short-006 scene 3 visual_note non-empty | OK |  |
 | short-006 scene 3 keywords non-empty array | OK |  |
 | Shorts package | OK | 6 shorts |
-| Shorts metadata exists | OK | docs/video-tests/shorts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur/metadata/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-metadata.json |
+| Shorts metadata exists | OK | docs/video-tests/shorts/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar/metadata/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-shorts-metadata.json |
 | Shorts metadata JSON parse | OK |  |
 | Shorts metadata content_generation_status | OK | filled |
 | short-001 metadata selected_title | OK |  |

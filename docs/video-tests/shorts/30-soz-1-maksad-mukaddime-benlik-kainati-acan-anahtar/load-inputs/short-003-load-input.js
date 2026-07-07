@@ -16,7 +16,7 @@ const rawInput = {
     description: "İnsan aczini inkâr ettiğinde yalnızlaşır; doğru okuduğunda sonsuz kudrete dayanır. Muhtaçlık, rahmeti fark ettiren bir pencereye dönüşebilir.\n\n#derinokuma #shorts #tefekkür #iman #acz #tevekkül",
     language: 'tr',
     author: 'Muhammet Yahya Ozer',
-    job_id_hint: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-short-003-day-49'
+    job_id_hint: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-short-003-day-49'
   },
 
   reuse_existing_audio: {
@@ -94,7 +94,7 @@ const rawInput = {
 
   metadata: {
     source: 'derin-okuma',
-    blog_post: '30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur',
+    blog_post: '30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar',
     test_day: 'day-49',
     short_id: 'short-003',
     workflow: 'manual_scene_json_single_track_shorts_load_input',

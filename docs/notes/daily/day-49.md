@@ -16,10 +16,10 @@
 
 ## Durum
 
-`npm run video:validate -- --slug 30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur --report` komutu PASS verdi. JSON parse, JS syntax ve yasaklı kalıp kontrolleri temiz.
+`npm run video:validate -- --slug 30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar --report` komutu PASS verdi. JSON parse, JS syntax ve yasaklı kalıp kontrolleri temiz.
 
 ## Sonraki Adım
 
 Landscape smoke testini şu gerçek n8n girdisiyle başlat:
 
-`docs/video-tests/inputs/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-load-input.js`
+`docs/video-tests/inputs/30-soz-1-maksad-mukaddime-benlik-kainati-acan-anahtar-landscape-load-input.js`
