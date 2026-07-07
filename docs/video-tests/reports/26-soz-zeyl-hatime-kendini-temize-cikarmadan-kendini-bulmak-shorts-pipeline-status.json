@@ -1,0 +1,17 @@
+{
+  "slug": "26-soz-zeyl-hatime-kendini-temize-cikarmadan-kendini-bulmak",
+  "title": "26.Söz - Zeyl - Hatime",
+  "day": 50,
+  "dayTag": "day-50",
+  "runId": "day50-batch-a",
+  "timestamp": "2026-07-07T14:47:12.011Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/26-soz-zeyl-hatime-kendini-temize-cikarmadan-kendini-bulmak-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/26-soz-zeyl-hatime-kendini-temize-cikarmadan-kendini-bulmak-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/26-soz-zeyl-hatime-kendini-temize-cikarmadan-kendini-bulmak-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-26-soz-zeyl-hatime-kendini-temize-cikarmadan-kendini-bulmak-short-*-day50-batch-a"
+  },
+  "fillTimestamp": "2026-07-07T14:54:45.133Z"
+}

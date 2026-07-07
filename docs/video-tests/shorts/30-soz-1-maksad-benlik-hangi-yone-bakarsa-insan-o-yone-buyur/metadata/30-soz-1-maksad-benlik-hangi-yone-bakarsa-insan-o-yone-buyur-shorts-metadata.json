@@ -1,0 +1,68 @@
+{
+  "video_type": "shorts",
+  "source": "30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur",
+  "test_day": "day-51",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Benlik neden bazen ayna, bazen perde olur?",
+      "title": "Benlik Neden Aynaya Dönüşür?",
+      "title_options": ["Benlik Neden Aynaya Dönüşür?", "Benlik Nasıl Perde Olur?", "Ayna mı, Perde mi?", "Benlik Hangi Yöne Bakar?"],
+      "selected_title": "Benlik Neden Aynaya Dönüşür?",
+      "description": "Benlik kendisini göstermek yerine kaynağına işaret ettiğinde insan için hakikate açılan bir aynaya dönüşür. #derinokuma #shorts #tefekkür #iman #benlik #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#benlik", "#maneviyat"],
+      "thumbnail_or_cover_text": "AYNA MI PERDE Mİ?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Acizlik insanı gerçekten küçültür mü?",
+      "title": "Acizlik İnsanı Neden Küçültmez?",
+      "title_options": ["Acizlik İnsanı Neden Küçültmez?", "İhtiyaç Nasıl Rahmete Açılır?", "Acizlik Bir Kapı Olabilir mi?", "Sınırlarımız Bize Ne Söyler?"],
+      "selected_title": "Acizlik İnsanı Neden Küçültmez?",
+      "description": "Acizlik ve ihtiyaç, doğru okunduğunda insanı umutsuzluğa değil kudret ve rahmet kapısına götürür. #derinokuma #shorts #tefekkür #iman #acz #tevekkül",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#acz", "#tevekkül"],
+      "thumbnail_or_cover_text": "ACİZLİK BİR KAPI"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Güçlü olan her zaman haklı mıdır?",
+      "title": "Güç Neden Hakkın Ölçüsü Değil?",
+      "title_options": ["Güç Neden Hakkın Ölçüsü Değil?", "Güçlü Olan Neden Haklı Değil?", "Hak Kuvvetini Nereden Alır?", "Güç mü, Hak mı?"],
+      "selected_title": "Güç Neden Hakkın Ölçüsü Değil?",
+      "description": "Güç, doğruluğu üretmez; ancak adalete ve hakka hizmet ettiğinde gerçek değerini bulur. #derinokuma #shorts #tefekkür #adalet #hak #ahlak",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#adalet", "#hak", "#ahlak"],
+      "thumbnail_or_cover_text": "GÜÇ MÜ HAK MI?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir çiçeğe bakmak nasıl tefekküre dönüşür?",
+      "title": "Güzellik Nasıl Tefekküre Dönüşür?",
+      "title_options": ["Güzellik Nasıl Tefekküre Dönüşür?", "Bir Çiçek Bize Ne Söyler?", "Güzellik Neden Bir Penceredir?", "Hayranlık Nasıl Şükür Olur?"],
+      "selected_title": "Güzellik Nasıl Tefekküre Dönüşür?",
+      "description": "Güzelliği yalnız nesneye hapsetmeyen bakış, sanatı sanatkârına açılan bir pencere olarak görür. #derinokuma #shorts #tefekkür #iman #güzellik #sanat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#iman", "#güzellik", "#sanat"],
+      "thumbnail_or_cover_text": "GÜZELLİĞİN KAYNAĞI"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Hayat gerçekten yalnızca bir mücadele mi?",
+      "title": "Hayat Neden Yalnız Mücadele Değil?",
+      "title_options": ["Hayat Neden Yalnız Mücadele Değil?", "Yardımlaşma Hayatı Nasıl Taşır?", "Hayat Sadece Rekabet mi?", "Varlık Nasıl Dayanışmayla Yaşar?"],
+      "selected_title": "Hayat Neden Yalnız Mücadele Değil?",
+      "description": "Hayatı yalnız rekabetle açıklamak eksiktir; varlık, yardımlaşma ve ikramla da ayakta durur. #derinokuma #shorts #tefekkür #hayat #yardımlaşma #merhamet",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#hayat", "#yardımlaşma", "#merhamet"],
+      "thumbnail_or_cover_text": "HAYAT MÜCADELE Mİ?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "İnsan kendi benliğinin içine nasıl hapsolur?",
+      "title": "Benlik İnsanı Nasıl Hapseder?",
+      "title_options": ["Benlik İnsanı Nasıl Hapseder?", "Ego Dünyayı Nasıl Daraltır?", "Benlik Neden Kalın Bir Perde Olur?", "Kendi İçine Hapsolmak"],
+      "selected_title": "Benlik İnsanı Nasıl Hapseder?",
+      "description": "Ölçü olmak için verilen benlik amaç hâline geldiğinde insanı büyütmez, kendi dar dünyasına kapatır. #derinokuma #shorts #tefekkür #benlik #kibir #maneviyat",
+      "hashtags": ["#derinokuma", "#shorts", "#tefekkür", "#benlik", "#kibir", "#maneviyat"],
+      "thumbnail_or_cover_text": "BENLİĞİN DAR ODASI"
+    }
+  ]
+}

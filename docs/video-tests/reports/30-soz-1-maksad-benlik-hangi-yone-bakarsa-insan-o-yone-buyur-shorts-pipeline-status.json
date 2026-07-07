@@ -1,0 +1,17 @@
+{
+  "slug": "30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur",
+  "title": "30.Söz - 1.Maksad",
+  "day": 51,
+  "dayTag": "day-51",
+  "runId": "day51-batch-a",
+  "timestamp": "2026-07-07T20:12:42.873Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-30-soz-1-maksad-benlik-hangi-yone-bakarsa-insan-o-yone-buyur-short-*-day51-batch-a"
+  },
+  "fillTimestamp": "2026-07-07T20:19:33.635Z"
+}
