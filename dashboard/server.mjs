@@ -501,26 +501,56 @@ function apiDrafts() {
   } catch { return []; }
 }
 
+function modifiedTimestampForSort(item) {
+  const numeric = Number(item?.mtimeMs);
+  if (Number.isFinite(numeric)) return numeric;
+  const parsed = Date.parse(item?.modifiedAt ?? item?.mtime ?? '');
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function compareFilenamesAsc(a, b) {
+  const left  = String(a ?? '');
+  const right = String(b ?? '');
+  if (left < right) return -1;
+  if (left > right) return 1;
+  return 0;
+}
+
+function compareDraftListItems(a, b) {
+  const modifiedDiff = modifiedTimestampForSort(b) - modifiedTimestampForSort(a);
+  if (modifiedDiff) return modifiedDiff;
+  return compareFilenamesAsc(a?.filename, b?.filename);
+}
+
+function buildDraftListItem(filename, stat, blogSlug, status) {
+  const modifiedAt = stat.mtime.toISOString();
+  return {
+    filename,
+    mtime:         modifiedAt,
+    modifiedAt,
+    mtimeMs:       stat.mtimeMs,
+    modifiedLabel: modifiedAt,
+    size:          stat.size,
+    blog_slug:     blogSlug,
+    blogSlug,
+    status,
+  };
+}
+
 // apiDraftsList — rich list for the Taslaklar tab
 function apiDraftsList() {
   if (!exists(DRAFTS_DIR)) return [];
   return fs.readdirSync(DRAFTS_DIR)
     .filter(f => /\.(txt|md|mdx)$/.test(f))
-    .sort()
     .map(filename => {
       try {
         const stat     = fs.statSync(path.join(DRAFTS_DIR, filename));
         const blogSlug = autoRepairDraftLink(filename);
-        return {
-          filename,
-          mtime:     stat.mtime.toISOString(),
-          size:      stat.size,
-          blog_slug: blogSlug,
-          status:    getDraftStatus(blogSlug),
-        };
+        return buildDraftListItem(filename, stat, blogSlug, getDraftStatus(blogSlug));
       } catch { return null; }
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .sort(compareDraftListItems);
 }
 
 // apiDraft — full detail for one draft file
@@ -1294,7 +1324,7 @@ const server = http.createServer(async (req, res) => {
   serveStatic(res, pathname);
 });
 
-export { apiDraft };
+export { apiDraft, apiDraftsList, buildDraftListItem, compareDraftListItems };
 
 if (path.resolve(process.argv[1] || '') === __filename) {
   server.listen(PORT, HOST, () => {

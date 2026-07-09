@@ -350,11 +350,28 @@ function formatSize(bytes) {
   return `${(bytes / 1024).toFixed(1)} KB`;
 }
 
+function draftModifiedTimestamp(draft) {
+  const numeric = Number(draft?.mtimeMs);
+  if (Number.isFinite(numeric)) return numeric;
+  const parsed = Date.parse(draft?.modifiedAt ?? draft?.mtime ?? '');
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function compareDraftRows(a, b) {
+  const modifiedDiff = draftModifiedTimestamp(b) - draftModifiedTimestamp(a);
+  if (modifiedDiff) return modifiedDiff;
+  const left  = String(a?.filename ?? '');
+  const right = String(b?.filename ?? '');
+  if (left < right) return -1;
+  if (left > right) return 1;
+  return 0;
+}
+
 async function loadDrafts() {
   const tbody = document.getElementById('drafts-tbody');
   tbody.innerHTML = '<tr><td colspan="5" class="loading">Yükleniyor…</td></tr>';
   try {
-    const drafts = await apiFetch('/api/drafts-list');
+    const drafts = (await apiFetch('/api/drafts-list')).sort(compareDraftRows);
     if (!drafts.length) {
       tbody.innerHTML = '<tr><td colspan="5" class="loading">docs/drafts/ boş.</td></tr>';
       return;
