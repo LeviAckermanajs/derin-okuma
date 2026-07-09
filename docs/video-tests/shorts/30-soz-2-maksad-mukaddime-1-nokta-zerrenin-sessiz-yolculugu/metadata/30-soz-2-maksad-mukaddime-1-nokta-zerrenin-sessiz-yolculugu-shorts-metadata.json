@@ -1,0 +1,128 @@
+{
+  "video_type": "shorts",
+  "source": "30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu",
+  "test_day": "day-52",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir zerre gerçekten başıboş hareket ediyor olabilir mi?",
+      "title_options": [
+        "Zerre Neden Başıboş Değil?",
+        "Küçük Hareket Ne Anlatır?",
+        "Tesadüf Neden Yetmez?"
+      ],
+      "selected_title": "Zerre Neden Başıboş Değil?",
+      "description": "Küçük bir zerrenin düzenli yolculuğu, tesadüf fikrinden daha derin bir mana taşır. #derinokuma #shorts #tefekkür #iman #zerre #kainat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#zerre",
+        "#kainat"
+      ],
+      "thumbnail_or_cover_text": "ZERRE BAŞIBOŞ MU?"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Küçük bir şey, kendi gücünü aşan işleri nasıl görür?",
+      "title_options": [
+        "Küçük Şeyler Nasıl Büyük İş Görür?",
+        "Zerre Neden Emanet Taşır?",
+        "Küçüklük Güçsüzlük mü?"
+      ],
+      "selected_title": "Küçük Şeyler Nasıl Büyük İş Görür?",
+      "description": "Bir zerre, kendi başına taşıyamayacağı vazifelere emanet bilinciyle dahil olur. #derinokuma #shorts #tefekkür #iman #hikmet #kulluk",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#hikmet",
+        "#kulluk"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜK ŞEY BÜYÜK İŞ"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir zerre her girdiği yeri bilmek zorunda kalsaydı ne olurdu?",
+      "title_options": [
+        "Bir Zerre Her Şeyi Bilebilir mi?",
+        "Tesadüf Bu Düzeni Nasıl Kurar?",
+        "Zerre Neden Tevhidi Gösterir?"
+      ],
+      "selected_title": "Bir Zerre Her Şeyi Bilebilir mi?",
+      "description": "Zerrelerin düzenli hareketi, kör rastlantıdan çok kuşatıcı bir ilmi düşündürür. #derinokuma #shorts #tefekkür #iman #tevhid #akıl",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#tevhid",
+        "#akıl"
+      ],
+      "thumbnail_or_cover_text": "ZERRE NEYİ BİLİR?"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Kâinat neden aynı kalmıyor, durmadan yenileniyor?",
+      "title_options": [
+        "Kâinat Neden Sürekli Yenilenir?",
+        "Değişim Neden Yok Oluş Değil?",
+        "Her Mevsim Ne Anlatır?"
+      ],
+      "selected_title": "Kâinat Neden Sürekli Yenilenir?",
+      "description": "Değişim sadece kayboluş değil; yeni manaların, yeni suretlerle görünmesidir. #derinokuma #shorts #tefekkür #iman #kainat #yenilenme",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kainat",
+        "#yenilenme"
+      ],
+      "thumbnail_or_cover_text": "NEDEN YENİLENİR?"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Tesbih sadece dille mi olur, yoksa varlık da konuşur mu?",
+      "title_options": [
+        "Tesbih Sadece Dille mi Olur?",
+        "Varlık Nasıl Tesbih Eder?",
+        "Sessiz Zikir Ne Demektir?"
+      ],
+      "selected_title": "Tesbih Sadece Dille mi Olur?",
+      "description": "Varlıklar hâlleriyle de Allah’ı hatırlatan bir düzen ve mana taşır. #derinokuma #shorts #tefekkür #iman #tesbih #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#tesbih",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "VARLIK KONUŞUR MU?"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Küçük olmak anlamsız olmak demek değildir.",
+      "title_options": [
+        "Küçüklük Neden Anlamsızlık Değil?",
+        "Bir Zerre Ne Öğretir?",
+        "Küçük Şeyler Nasıl Kapı Açar?"
+      ],
+      "selected_title": "Küçüklük Neden Anlamsızlık Değil?",
+      "description": "Bir zerre bile doğru bakışla vazife, hikmet ve tevhid hakikatine kapı açabilir. #derinokuma #shorts #tefekkür #iman #mana #varlık",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#mana",
+        "#varlık"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜKLÜK MANA TAŞIR"
+    }
+  ]
+}

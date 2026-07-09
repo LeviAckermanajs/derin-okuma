@@ -1,0 +1,314 @@
+{
+  "source": {
+    "blog_post": "30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu",
+    "title": "30.Söz - 2.Maksad - Mukaddime - 1.Nokta",
+    "source_files": [
+      "src/content/blog/30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu.md"
+    ]
+  },
+  "test_day": "day-52",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir zerre gerçekten başıboş hareket ediyor olabilir mi?",
+      "title": "Zerre Neden Başıboş Değil?",
+      "description": "Küçük bir zerrenin düzenli yolculuğu, tesadüf fikrinden daha derin bir mana taşır. #derinokuma #shorts #tefekkür #iman #zerre #kainat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#zerre",
+        "#kainat"
+      ],
+      "thumbnail_or_cover_text": "ZERRE BAŞIBOŞ MU?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Bir zerre gerçekten başıboş hareket ediyor olabilir mi? Havanın içinde dolaşan, toprağa karışan, sonra bir yaprağın yapısına giren küçücük bir şeyden söz ediyoruz.",
+          "visual_note": "tiny particles floating in sunlight near leaves, calm macro shot",
+          "keywords": [
+            "tiny particles",
+            "sunlight",
+            "leaves"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Düzen",
+          "narration": "Eğer hareket başıboş olsaydı, sonuçlarda bu kadar ölçü, fayda ve güzellik görünmezdi. Bir zerre girdiği yerde düzeni bozmuyor; aksine düzenin parçası oluyor.",
+          "visual_note": "macro leaf veins with soft light and slow camera movement",
+          "keywords": [
+            "leaf veins",
+            "soft light",
+            "order"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Mana",
+          "narration": "Bu yüzden küçük hareket, büyük bir manaya kapı açar. Zerrenin yolculuğu tesadüfü değil, vazifeyi ve hikmeti düşündürür.",
+          "visual_note": "peaceful nature path at sunrise with floating dust motes",
+          "keywords": [
+            "nature path",
+            "sunrise",
+            "dust motes"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Küçük bir şey, kendi gücünü aşan işleri nasıl görür?",
+      "title": "Küçük Şeyler Nasıl Büyük İş Görür?",
+      "description": "Bir zerre, kendi başına taşıyamayacağı vazifelere emanet bilinciyle dahil olur. #derinokuma #shorts #tefekkür #iman #hikmet #kulluk",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#hikmet",
+        "#kulluk"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜK ŞEY BÜYÜK İŞ",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Küçük bir şey, kendi gücünü aşan işleri nasıl görür? Bir zerre, bir tohumun içinde ağaca, bir çiçeğin renginde güzelliğe, bir meyvenin tadında nimete hizmet eder.",
+          "visual_note": "seed sprouting in soil, macro cinematic morning light",
+          "keywords": [
+            "seed sprout",
+            "soil",
+            "morning light"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Emanet",
+          "narration": "Bu işler zerrenin kendi bilgisiyle açıklanamaz. O, kendisine verilen vazifenin içinde görünür; kendi adına değil, onu çalıştıran emir adına hareket eder.",
+          "visual_note": "hands gently holding a seedling, humble peaceful mood",
+          "keywords": [
+            "hands",
+            "seedling",
+            "humility"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Sonuç",
+          "narration": "Vazife bittiğinde geride sadece madde kalmaz. Bir güzellik, bir fayda ve bir şükür manası ortaya çıkar.",
+          "visual_note": "ripe fruit on branch with warm sunlight, serene orchard",
+          "keywords": [
+            "ripe fruit",
+            "branch",
+            "warm sunlight"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Bir zerre her girdiği yeri bilmek zorunda kalsaydı ne olurdu?",
+      "title": "Bir Zerre Her Şeyi Bilebilir mi?",
+      "description": "Zerrelerin düzenli hareketi, kör rastlantıdan çok kuşatıcı bir ilmi düşündürür. #derinokuma #shorts #tefekkür #iman #tevhid #akıl",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#tevhid",
+        "#akıl"
+      ],
+      "thumbnail_or_cover_text": "ZERRE NEYİ BİLİR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Bir zerre her girdiği yeri bilmek zorunda kalsaydı ne olurdu? Bir yaprağın ölçüsünü, bir meyvenin yapısını, bir bedenin dengesini tanıması gerekirdi.",
+          "visual_note": "abstract particle moving through leaf cells and fruit texture",
+          "keywords": [
+            "particle",
+            "leaf cells",
+            "fruit texture"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "İmkânsız Yük",
+          "narration": "Bu, küçücük bir şeye neredeyse sınırsız bilgi ve kudret yüklemek demektir. Akıl böyle bir açıklamada rahat etmez; çünkü sonuçlar çok düzenli, sebep ise çok küçüktür.",
+          "visual_note": "microscope view of complex cells, thoughtful scientific mood",
+          "keywords": [
+            "microscope",
+            "complex cells",
+            "thoughtful"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Tevhid",
+          "narration": "Daha sade ve daha güçlü açıklama şudur: Zerre kendi başına iş görmez. Her şeyi bilen bir kudretin emriyle yerini bulur, vazifesini görür.",
+          "visual_note": "wide nature landscape connected by soft beams of light",
+          "keywords": [
+            "nature unity",
+            "light beams",
+            "landscape"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Kâinat neden aynı kalmıyor, durmadan yenileniyor?",
+      "title": "Kâinat Neden Sürekli Yenilenir?",
+      "description": "Değişim sadece kayboluş değil; yeni manaların, yeni suretlerle görünmesidir. #derinokuma #shorts #tefekkür #iman #kainat #yenilenme",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#kainat",
+        "#yenilenme"
+      ],
+      "thumbnail_or_cover_text": "NEDEN YENİLENİR?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Kâinat neden aynı kalmıyor, durmadan yenileniyor? Her bahar yeni yüzler, yeni renkler, yeni şekillerle yeryüzü tekrar açılıyor.",
+          "visual_note": "spring flowers blooming in a field, gentle time lapse feeling",
+          "keywords": [
+            "spring flowers",
+            "blooming field",
+            "renewal"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Mana",
+          "narration": "Bu değişim sadece eskiyi silip yenisini koymak değildir. Aynı hakikatler, farklı suretlerle daha çok mana gösterir.",
+          "visual_note": "apple blossom turning into fruit across seasons, soft transition",
+          "keywords": [
+            "apple blossom",
+            "fruit",
+            "seasons"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Akış",
+          "narration": "Bir yaprak dökülür, toprağa karışır, sonra yeni hayata destek olur. Geçiş yokluk değil; daha geniş bir hikmete açılan akıştır.",
+          "visual_note": "fallen leaf near new sprout in rich soil, calm macro shot",
+          "keywords": [
+            "fallen leaf",
+            "new sprout",
+            "soil"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Tesbih sadece dille mi olur, yoksa varlık da konuşur mu?",
+      "title": "Tesbih Sadece Dille mi Olur?",
+      "description": "Varlıklar hâlleriyle de Allah’ı hatırlatan bir düzen ve mana taşır. #derinokuma #shorts #tefekkür #iman #tesbih #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#tesbih",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "VARLIK KONUŞUR MU?",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Tesbih sadece dille mi olur, yoksa varlık da konuşur mu? Bir çiçek rengiyle, bir meyve tadıyla, bir zerre vazifesiyle anlam taşır.",
+          "visual_note": "flower petals moving gently in wind, soft spiritual mood",
+          "keywords": [
+            "flower petals",
+            "gentle wind",
+            "spiritual mood"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Ritim",
+          "narration": "Gece gündüze, kış bahara, toprak hayata döner. Zerreler de bu büyük ritmin içinde sessizce yer değiştirir.",
+          "visual_note": "night sky transitioning to sunrise over mountains, slow cinematic",
+          "keywords": [
+            "night to sunrise",
+            "mountains",
+            "cosmic rhythm"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Duyuş",
+          "narration": "İnsan bu ritmi fark ettiğinde dünya daha derin görünür. Çünkü sessiz sandığı kâinat, hâl diliyle sürekli hatırlatır.",
+          "visual_note": "quiet meadow at dawn with soft light and contemplative person",
+          "keywords": [
+            "quiet meadow",
+            "dawn light",
+            "contemplative"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Küçük olmak anlamsız olmak demek değildir.",
+      "title": "Küçüklük Neden Anlamsızlık Değil?",
+      "description": "Bir zerre bile doğru bakışla vazife, hikmet ve tevhid hakikatine kapı açabilir. #derinokuma #shorts #tefekkür #iman #mana #varlık",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#mana",
+        "#varlık"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜKLÜK MANA TAŞIR",
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hook",
+          "narration": "Küçük olmak anlamsız olmak demek değildir. Bazen bir zerre, insana koca bir kâinatı nasıl okuyacağını öğretir.",
+          "visual_note": "single grain of sand in hand with vast horizon behind",
+          "keywords": [
+            "grain of sand",
+            "hand",
+            "vast horizon"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Bakış",
+          "narration": "Bir yaprağa, bir nefese, bir damlaya dikkatle bakınca alışkanlık perdesi incelir. Sıradan görünen şeyler, vazife ve hikmet taşımaya başlar.",
+          "visual_note": "close up leaf and water droplet, calm reflective nature shot",
+          "keywords": [
+            "leaf close up",
+            "water droplet",
+            "reflection"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Sonuç",
+          "narration": "Tefekkür, büyüğe hayranlık duyarken küçüğü de ihmal etmemektir. Çünkü en küçük satır bile doğru okunursa insanı tevhid hakikatine götürür.",
+          "visual_note": "macro sand blending into starry sky, peaceful ending",
+          "keywords": [
+            "macro sand",
+            "starry sky",
+            "peaceful ending"
+          ]
+        }
+      ]
+    }
+  ]
+}

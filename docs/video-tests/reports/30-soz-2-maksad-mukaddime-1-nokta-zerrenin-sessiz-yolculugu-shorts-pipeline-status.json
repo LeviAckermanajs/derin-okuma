@@ -1,0 +1,17 @@
+{
+  "slug": "30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu",
+  "title": "30.Söz - 2.Maksad - Mukaddime - 1.Nokta",
+  "day": 52,
+  "dayTag": "day-52",
+  "runId": "day52-batch-a",
+  "timestamp": "2026-07-09T07:38:21.198Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-30-soz-2-maksad-mukaddime-1-nokta-zerrenin-sessiz-yolculugu-short-*-day52-batch-a"
+  },
+  "fillTimestamp": "2026-07-09T07:45:12.645Z"
+}
