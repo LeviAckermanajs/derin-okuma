@@ -1,0 +1,141 @@
+{
+  "video_type": "shorts",
+  "source": "30-soz-2-maksad-2-nokta-bir-zerrenin-sessiz-sahitligi",
+  "test_day": "day-53",
+  "content_generation_status": "filled",
+  "status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir zerre gerçekten başıboş olabilir mi?",
+      "title": "Zerre Neden Başıboş Değil?",
+      "title_options": [
+        "Zerre Neden Başıboş Değil?",
+        "Bir Zerre Ne Anlatır?",
+        "Küçük Şey Neyi Gösterir?"
+      ],
+      "selected_title": "Zerre Neden Başıboş Değil?",
+      "description": "Küçük bir zerrenin düzen içindeki vazifesi, başıboşluk fikrinden daha derin bir anlam taşır. #derinokuma #shorts #tefekkür #iman #zerre #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#zerre",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "ZERRE BAŞIBOŞ MU?",
+      "status": "filled"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Küçük bir şey, kendi gücünü aşan işleri nasıl görür?",
+      "title": "Küçük Şey Nasıl Büyük İş Görür?",
+      "title_options": [
+        "Küçük Şey Nasıl Büyük İş Görür?",
+        "Zerre Büyük Vazifeyi Nasıl Taşır?",
+        "Acz İçinde Vazife"
+      ],
+      "selected_title": "Küçük Şey Nasıl Büyük İş Görür?",
+      "description": "Acz içinde görülen büyük vazife, zerrenin kendi gücünü aşan bir emre bağlı olduğunu düşündürür. #derinokuma #shorts #tefekkür #iman #hikmet #kainat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#hikmet",
+        "#kainat"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜK AMA VAZİFELİ",
+      "status": "filled"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Gözdeki küçücük bir parça neden tesadüfe bırakılmaz?",
+      "title": "Gözdeki Zerre Neden Tesadüf Değil?",
+      "title_options": [
+        "Gözdeki Zerre Neden Tesadüf Değil?",
+        "Gözdeki Denge Ne Söyler?",
+        "Bir Zerre Görmeyi Nasıl Etkiler?"
+      ],
+      "selected_title": "Gözdeki Zerre Neden Tesadüf Değil?",
+      "description": "Gözdeki hassas yerleşim, en küçük parçanın bile bütün bedenle ilişkili olduğunu hatırlatır. #derinokuma #shorts #tefekkür #iman #göz #hikmet",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#göz",
+        "#hikmet"
+      ],
+      "thumbnail_or_cover_text": "GÖZDEKİ DENGE",
+      "status": "filled"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir lokma, hücreye kadar yolunu nasıl bulur?",
+      "title": "Rızık Hücreye Nasıl Ulaşır?",
+      "title_options": [
+        "Rızık Hücreye Nasıl Ulaşır?",
+        "Bir Lokma Neden Sadece Madde Değil?",
+        "Rızkın Sessiz Yolculuğu"
+      ],
+      "selected_title": "Rızık Hücreye Nasıl Ulaşır?",
+      "description": "Bir lokmanın hücrelere kadar uzanan yolculuğu, rızkın içindeki ölçüyü ve şükür kapısını açar. #derinokuma #shorts #tefekkür #iman #rızık #şükür",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#rızık",
+        "#şükür"
+      ],
+      "thumbnail_or_cover_text": "RIZKIN YOLU",
+      "status": "filled"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Bir kubbedeki taş kendi başına ayakta kalabilir mi?",
+      "title": "Kubbedeki Taş Ne Anlatır?",
+      "title_options": [
+        "Kubbedeki Taş Ne Anlatır?",
+        "Bir Taş Nasıl Düzeni Gösterir?",
+        "Zerre ve Kubbe Misali"
+      ],
+      "selected_title": "Kubbedeki Taş Ne Anlatır?",
+      "description": "Kubbedeki taş misali, zerrenin kendi başına değil bütün düzeni bilen bir emirle yerini bulduğunu anlatır. #derinokuma #shorts #tefekkür #iman #mimari #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#mimari",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "KUBBEDEKİ TAŞ",
+      "status": "filled"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Küçük şeyleri değersiz görmek, bazen en büyük dersi kaçırmaktır.",
+      "title": "Küçük Şeyler Neden Büyük Ders Verir?",
+      "title_options": [
+        "Küçük Şeyler Neden Büyük Ders Verir?",
+        "Bir Zerreden Ne Öğrenilir?",
+        "Sessiz Şahitleri Duymak"
+      ],
+      "selected_title": "Küçük Şeyler Neden Büyük Ders Verir?",
+      "description": "Küçük görünen şeyler, dikkatli bakana düzeni, vazifeyi ve birlik fikrini hatırlatır. #derinokuma #shorts #tefekkür #iman #maneviyat #kainat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#maneviyat",
+        "#kainat"
+      ],
+      "thumbnail_or_cover_text": "KÜÇÜKTE BÜYÜK DERS",
+      "status": "filled"
+    }
+  ]
+}
