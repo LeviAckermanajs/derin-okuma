@@ -1,0 +1,17 @@
+{
+  "slug": "30-soz-2-maksad-3-nokta-zerreler-basibos-degil-varligin-sessiz-terbiyesi",
+  "title": "30.Söz - 2.Maksad - 3.Nokta",
+  "day": 54,
+  "dayTag": "day-54",
+  "runId": "day54-batch-a",
+  "timestamp": "2026-07-16T10:25:11.716Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/30-soz-2-maksad-3-nokta-zerreler-basibos-degil-varligin-sessiz-terbiyesi-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/30-soz-2-maksad-3-nokta-zerreler-basibos-degil-varligin-sessiz-terbiyesi-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/30-soz-2-maksad-3-nokta-zerreler-basibos-degil-varligin-sessiz-terbiyesi-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-30-soz-2-maksad-3-nokta-zerreler-basibos-degil-varligin-sessiz-terbiyesi-short-*-day54-batch-a"
+  },
+  "fillTimestamp": "2026-07-16T10:30:29.314Z"
+}
