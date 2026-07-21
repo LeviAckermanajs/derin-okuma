@@ -1,0 +1,350 @@
+{
+  "source": {
+    "blog_post": "2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis",
+    "title": "2.Şua - 1.Makam - 1.Meyve",
+    "source_files": [
+      "src/content/blog/2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis.md"
+    ]
+  },
+  "test_day": "day-55",
+  "video_type": "shorts_package",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir nimet geldiğinde, onu sadece eşya olarak mı görürüz?",
+      "title": "Nimet Neden Sadece Eşya Değildir?",
+      "description": "Bir nimet yalnız fayda taşımaz; arkasında görülen rahmetle kalbe başka bir anlam açar. Sahipsiz sanılan ikram, tevhid bakışıyla sahibine bağlanır.\n\n#derinokuma #shorts #tefekkür #iman #nimet #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#nimet",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "NİMETİN DİLİ",
+      "title_options": [
+        "Nimet Neden Sadece Eşya Değildir?",
+        "Bir Lokma Neyi Hatırlatır?",
+        "Nimet Sahipsiz Görülürse Ne Olur?",
+        "Tevhid Nimeti Nasıl Okutur?"
+      ],
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Nimetin İlk Sesi",
+          "narration": "Bir nimet geldiğinde, onu sadece eşya olarak mı görürüz? Sofraya gelen lokma bedeni doyurur; ama kalbe de daha derin bir şey söyler. İhtiyaç görülüyor, açlık unutulmuyor, rızık başıboş gelmiyor.",
+          "visual_note": "simple meal on a wooden table by a window, vertical warm light",
+          "keywords": [
+            "simple meal",
+            "window light",
+            "gratitude"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Sahipsiz Sanmak",
+          "narration": "Nimeti yalnız maddeye ve sebeplere bağlamak, ondaki şefkat manasını zayıflatır. Lokma aynı lokmadır; fakat kalpte bıraktığı iz değişir. Tevhid, nimetin sahibini hatırlatarak o izi derinleştirir.",
+          "visual_note": "hands holding bread with soft morning light, vertical close up",
+          "keywords": [
+            "bread",
+            "hands",
+            "blessing"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Rahmete Bağlanan İkram",
+          "narration": "Böyle bakınca insan daha bilinçli şükreder. Küçük bir ikram bile büyük bir rahmet düzenine bağlanır. Nimet sadece alınan bir şey değil, kalbi uyandıran bir işaret olur.",
+          "visual_note": "sunlight spreading across a quiet breakfast table, vertical cinematic shot",
+          "keywords": [
+            "breakfast table",
+            "sunlight",
+            "thankfulness"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Bir yavrunun aczi, aslında neyi gösterir?",
+      "title": "Acz Rahmeti Nasıl Gösterir?",
+      "description": "En muhtaç canlıların en uygun rızıkla karşılanması, aczin içinde rahmetin nasıl göründüğünü hatırlatır. Zayıflık bazen ilahî şefkate açılan en berrak penceredir.\n\n#derinokuma #shorts #tefekkür #rahmet #acz #rızık",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#rahmet",
+        "#acz",
+        "#rızık"
+      ],
+      "thumbnail_or_cover_text": "ACZİN RAHMETİ",
+      "title_options": [
+        "Acz Rahmeti Nasıl Gösterir?",
+        "Yavru Neden Sahipsiz Değildir?",
+        "Zayıflığın İçinde Ne Görünür?",
+        "Rızık Neden Tesadüf Değildir?"
+      ],
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "En Muhtaç Hâl",
+          "narration": "Bir yavrunun aczi, aslında neyi gösterir? Dünyaya gelir; ne kendini koruyabilir, ne rızkını hazırlayabilir, ne ihtiyacını anlatabilir. Tam bu güçsüzlüğün içinde ona uygun bir rızık yetişir.",
+          "visual_note": "newborn animal beside its mother, vertical soft natural light",
+          "keywords": [
+            "newborn animal",
+            "mother",
+            "care"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Şefkatin Hizmeti",
+          "narration": "Annenin şefkati ona yönelir, süt hazırlanır, hayatın ilk kapısı açılır. Bu denk geliş yalnız soğuk bir düzen gibi görünmez. Kalp, ihtiyaca cevap veren bir merhamet sezer.",
+          "visual_note": "mother animal nursing newborn, gentle documentary vertical shot",
+          "keywords": [
+            "nursing",
+            "mercy",
+            "new life"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Zayıflığın Penceresi",
+          "narration": "Acz bazen insanı ürkütür; fakat doğru okunduğunda rahmete açılan bir penceredir. En zayıf canlı bile unutulmamışsa, insan kendi ihtiyacında da sahipsiz değildir.",
+          "visual_note": "small child hand held by an adult hand, vertical warm light",
+          "keywords": [
+            "holding hands",
+            "protection",
+            "trust"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Şifa sadece ilacın içinde mi saklıdır?",
+      "title": "Şifa Neden Sadece Madde Değildir?",
+      "description": "İlaçlar, doktorlar ve tedavi yolları değerlidir; fakat şifayı yalnız maddeye sıkıştırmak rahmet anlamını eksiltir. Tevhid, sebepleri inkâr etmeden şifanın kaynağını gösterir.\n\n#derinokuma #shorts #tefekkür #şifa #rahmet #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#şifa",
+        "#rahmet",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "ŞİFANIN KAYNAĞI",
+      "title_options": [
+        "Şifa Neden Sadece Madde Değildir?",
+        "İlaç Rahmeti Nasıl Hatırlatır?",
+        "Hastalık İnsana Ne Öğretir?",
+        "Şifa Gelince Ne Görmeliyiz?"
+      ],
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Hastalığın Hatırlattığı",
+          "narration": "Şifa sadece ilacın içinde mi saklıdır? Hastalık insana gücünün sınırını gösterir. Bir anda doktor, ilaç, bakım ve dua aynı hayatın içinde buluşur.",
+          "visual_note": "quiet hospital room with sunlight entering through window, vertical frame",
+          "keywords": [
+            "hospital room",
+            "sunlight",
+            "healing"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Sebeplerin Değeri",
+          "narration": "İlaçlar ve tedavi yolları değersiz değildir; aksine büyük bir hikmet düzeninin parçalarıdır. Fakat sebebi kaynak yerine koymak, şifanın içindeki rahmet ışığını azaltır. Sebep hizmet eder, şifa ihsan edilir.",
+          "visual_note": "medicinal herbs and medicine bottle on clean table, vertical close up",
+          "keywords": [
+            "medicine",
+            "herbs",
+            "treatment"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Rahmet Olarak Şifa",
+          "narration": "Tevhid bakışı, iyileşmeyi yalnız bedenin toparlanması olarak görmez. Şifa, insanın unutulmadığını hissettiren bir rahmet dokunuşudur. Bu yüzden iyileşen kalp, teşekkür etmeyi de öğrenir.",
+          "visual_note": "person walking slowly outside after recovery, bright morning park, vertical shot",
+          "keywords": [
+            "recovery",
+            "morning park",
+            "gratitude"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir çiçek neden küçük bir ayna gibidir?",
+      "title": "Güzellik Neden Aynaya Dönüşür?",
+      "description": "Bir çiçeğin kısa ömrü, taşıdığı güzelliği değersizleştirmez. Tevhid bakışı, fani güzelliği bâki bir cemalin işareti olarak okutur.\n\n#derinokuma #shorts #tefekkür #güzellik #kâinat #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#güzellik",
+        "#kâinat",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "ÇİÇEĞİN AYNASI",
+      "title_options": [
+        "Güzellik Neden Aynaya Dönüşür?",
+        "Bir Çiçek Neyi Gösterir?",
+        "Fani Güzellik Nasıl Derinleşir?",
+        "Küçük Ayna Ne Taşır?"
+      ],
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Kısa Ömürlü Güzellik",
+          "narration": "Bir çiçek neden küçük bir ayna gibidir? Ömrü kısadır; açar, güzelleşir ve bir gün solar. Fakat renk, koku ve ölçü bir araya geldiğinde kalbe daha büyük bir güzelliği hatırlatır.",
+          "visual_note": "single flower blooming in morning dew, vertical macro cinematic shot",
+          "keywords": [
+            "flower",
+            "dew",
+            "beauty"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Aynanın Işığı",
+          "narration": "Küçük bir ayna güneşe döndüğünde kendinden büyük bir ışığı taşır. Çiçek de yalnız kendi adına okunmadığında böyle olur. Fani güzellik, bâki bir cemalin işaretine dönüşür.",
+          "visual_note": "small mirror reflecting sunlight near flowers, vertical poetic shot",
+          "keywords": [
+            "mirror",
+            "sunlight",
+            "flowers"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Derinleşen Bakış",
+          "narration": "Bu bakış güzelliği azaltmaz; tam tersine derinleştirir. İnsan gördüğü şeyi tüketilecek bir süs gibi değil, kendisine konuşan bir işaret gibi seyreder. Güzellik sahibine bağlanınca kalpte yer eder.",
+          "visual_note": "person calmly watching flowers in a garden at golden hour, vertical frame",
+          "keywords": [
+            "garden",
+            "golden hour",
+            "contemplation"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İnsan neden sahipsizlik hissiyle yorulur?",
+      "title": "Tevhid Kalbi Nasıl Toparlar?",
+      "description": "Hayatı ayrı güçlere ve dağınık kaynaklara bağlamak kalbi yorar. Tevhid, her şeyi tek bir rahmet ve sahiplik altında birleştirerek içe ferahlık verir.\n\n#derinokuma #shorts #tefekkür #tevhid #kalp #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#tevhid",
+        "#kalp",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "KALBİ TOPLAYAN BAKIŞ",
+      "title_options": [
+        "Tevhid Kalbi Nasıl Toparlar?",
+        "İnsan Neden Sahipsizlik Hissiyle Yorulur?",
+        "Dağınık Hayat Nasıl Birleşir?",
+        "Kalp Tek Merkeze Yönelince Ne Olur?"
+      ],
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Dağılan Kalp",
+          "narration": "İnsan neden sahipsizlik hissiyle yorulur? Her ihtiyacı ayrı kapıya, her güzelliği ayrı kaynağa, her sonucu ayrı güce bağladığında kalp dağılır. Hayat kalabalıklaşır, anlam parçalanır.",
+          "visual_note": "person standing in a busy city crowd, vertical slow motion, muted tones",
+          "keywords": [
+            "city crowd",
+            "loneliness",
+            "fragmented"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Tek Merkez",
+          "narration": "Tevhid bu dağınıklığı toplar. Nimet rahmete, şifa şefkate, güzellik cemale, canlılar sahipliğe bağlanır. İnsan aynı dünyada yaşar; fakat artık her şey tek bir anlam merkezine yönelir.",
+          "visual_note": "roads converging toward a bright horizon, vertical aerial perspective",
+          "keywords": [
+            "converging roads",
+            "horizon",
+            "unity"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Ferahlık",
+          "narration": "Kalp tek bir rahmete yöneldiğinde yükler hafifler. Çünkü insan yalnız sebeplerin arasında kalmadığını hisseder. Hiçbir nimet sahipsiz, hiçbir ihtiyaç duyulmamış değildir.",
+          "visual_note": "wide open landscape after rain with sunlight, vertical peaceful scene",
+          "keywords": [
+            "after rain",
+            "sunlight",
+            "peace"
+          ]
+        }
+      ]
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Şirk neden sadece kişisel bir hata değildir?",
+      "title": "Şirk Varlığın Hakkını Nasıl Örter?",
+      "description": "Nimeti sebeplere ve tesadüfe vermek, onun taşıdığı rahmet ve sahiplik anlamını örter. Tevhid, yalnız inancı değil; varlığa bakıştaki adaleti de düzeltir.\n\n#derinokuma #shorts #tefekkür #şirk #tevhid #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#şirk",
+        "#tevhid",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "VARLIĞIN HAKKI",
+      "title_options": [
+        "Şirk Varlığın Hakkını Nasıl Örter?",
+        "Şirk Neden Büyük Bir Zulümdür?",
+        "Nimeti Yanlış Okuyunca Ne Olur?",
+        "Tevhid Varlığa Nasıl Adalet Verir?"
+      ],
+      "scenes": [
+        {
+          "scene_id": "scene-001",
+          "title": "Yanlış Sahiplik",
+          "narration": "Şirk neden sadece kişisel bir hata değildir? Çünkü nimeti sahibinden koparıp sebeplere ve tesadüfe vermek, onun taşıdığı rahmet anlamını örter. Hediye kalır; fakat hediyenin sahibi unutulur.",
+          "visual_note": "wrapped gift left in shadow with light nearby, vertical symbolic shot",
+          "keywords": [
+            "gift",
+            "shadow",
+            "forgetfulness"
+          ]
+        },
+        {
+          "scene_id": "scene-002",
+          "title": "Varlığın Şerefi",
+          "narration": "Bir canlı Allah'a ait olarak görüldüğünde kıymeti büyür. Küçük bir karınca bile sahipsiz bir ayrıntı değildir. Onun varlığı, ilahî mülkiyet içinde şeref kazanır.",
+          "visual_note": "macro ant walking on leaf with sunlight, vertical nature footage",
+          "keywords": [
+            "ant",
+            "leaf",
+            "dignity"
+          ]
+        },
+        {
+          "scene_id": "scene-003",
+          "title": "Adaletli Bakış",
+          "narration": "Tevhid, yalnız inancı düzeltmez; varlığa bakıştaki adaleti de düzeltir. Çiçeği, yavruyu, hastayı, şifayı ve insanı sahipsiz bırakmaz. Her şeyi hakiki sahibine bağlayarak değerini korur.",
+          "visual_note": "wide nature scene with flowers, animals and warm sunrise, vertical cinematic close",
+          "keywords": [
+            "nature",
+            "sunrise",
+            "stewardship"
+          ]
+        }
+      ]
+    }
+  ]
+}

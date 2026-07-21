@@ -1,0 +1,17 @@
+{
+  "slug": "2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis",
+  "title": "2.Şua - 1.Makam - 1.Meyve",
+  "day": 55,
+  "dayTag": "day-55",
+  "runId": "day55-batch-a",
+  "timestamp": "2026-07-21T09:36:58.308Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis-short-*-day55-batch-a"
+  },
+  "fillTimestamp": "2026-07-21T09:45:53.837Z"
+}

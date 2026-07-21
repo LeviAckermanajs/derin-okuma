@@ -1,0 +1,140 @@
+{
+  "video_type": "shorts",
+  "source": "2-sua-1-makam-1-meyve-tevhid-daginik-gorunen-hayati-birlestiren-bakis",
+  "test_day": "day-55",
+  "content_generation_status": "filled",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "Bir nimet geldiğinde, onu sadece eşya olarak mı görürüz?",
+      "title": "Nimet Neden Sadece Eşya Değildir?",
+      "title_options": [
+        "Nimet Neden Sadece Eşya Değildir?",
+        "Bir Lokma Neyi Hatırlatır?",
+        "Nimet Sahipsiz Görülürse Ne Olur?",
+        "Tevhid Nimeti Nasıl Okutur?"
+      ],
+      "selected_title": "Nimet Neden Sadece Eşya Değildir?",
+      "description": "Bir nimet yalnız fayda taşımaz; arkasında görülen rahmetle kalbe başka bir anlam açar. Sahipsiz sanılan ikram, tevhid bakışıyla sahibine bağlanır. #derinokuma #shorts #tefekkür #iman #nimet #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#nimet",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "NİMETİN DİLİ"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Bir yavrunun aczi, aslında neyi gösterir?",
+      "title": "Acz Rahmeti Nasıl Gösterir?",
+      "title_options": [
+        "Acz Rahmeti Nasıl Gösterir?",
+        "Yavru Neden Sahipsiz Değildir?",
+        "Zayıflığın İçinde Ne Görünür?",
+        "Rızık Neden Tesadüf Değildir?"
+      ],
+      "selected_title": "Acz Rahmeti Nasıl Gösterir?",
+      "description": "En muhtaç canlıların en uygun rızıkla karşılanması, aczin içinde rahmetin nasıl göründüğünü hatırlatır. Zayıflık bazen ilahî şefkate açılan en berrak penceredir. #derinokuma #shorts #tefekkür #rahmet #acz #rızık",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#rahmet",
+        "#acz",
+        "#rızık"
+      ],
+      "thumbnail_or_cover_text": "ACZİN RAHMETİ"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Şifa sadece ilacın içinde mi saklıdır?",
+      "title": "Şifa Neden Sadece Madde Değildir?",
+      "title_options": [
+        "Şifa Neden Sadece Madde Değildir?",
+        "İlaç Rahmeti Nasıl Hatırlatır?",
+        "Hastalık İnsana Ne Öğretir?",
+        "Şifa Gelince Ne Görmeliyiz?"
+      ],
+      "selected_title": "Şifa Neden Sadece Madde Değildir?",
+      "description": "İlaçlar, doktorlar ve tedavi yolları değerlidir; fakat şifayı yalnız maddeye sıkıştırmak rahmet anlamını eksiltir. Tevhid, sebepleri inkâr etmeden şifanın kaynağını gösterir. #derinokuma #shorts #tefekkür #şifa #rahmet #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#şifa",
+        "#rahmet",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "ŞİFANIN KAYNAĞI"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Bir çiçek neden küçük bir ayna gibidir?",
+      "title": "Güzellik Neden Aynaya Dönüşür?",
+      "title_options": [
+        "Güzellik Neden Aynaya Dönüşür?",
+        "Bir Çiçek Neyi Gösterir?",
+        "Fani Güzellik Nasıl Derinleşir?",
+        "Küçük Ayna Ne Taşır?"
+      ],
+      "selected_title": "Güzellik Neden Aynaya Dönüşür?",
+      "description": "Bir çiçeğin kısa ömrü, taşıdığı güzelliği değersizleştirmez. Tevhid bakışı, fani güzelliği bâki bir cemalin işareti olarak okutur. #derinokuma #shorts #tefekkür #güzellik #kâinat #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#güzellik",
+        "#kâinat",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "ÇİÇEĞİN AYNASI"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "İnsan neden sahipsizlik hissiyle yorulur?",
+      "title": "Tevhid Kalbi Nasıl Toparlar?",
+      "title_options": [
+        "Tevhid Kalbi Nasıl Toparlar?",
+        "İnsan Neden Sahipsizlik Hissiyle Yorulur?",
+        "Dağınık Hayat Nasıl Birleşir?",
+        "Kalp Tek Merkeze Yönelince Ne Olur?"
+      ],
+      "selected_title": "Tevhid Kalbi Nasıl Toparlar?",
+      "description": "Hayatı ayrı güçlere ve dağınık kaynaklara bağlamak kalbi yorar. Tevhid, her şeyi tek bir rahmet ve sahiplik altında birleştirerek içe ferahlık verir. #derinokuma #shorts #tefekkür #tevhid #kalp #maneviyat",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#tevhid",
+        "#kalp",
+        "#maneviyat"
+      ],
+      "thumbnail_or_cover_text": "KALBİ TOPLAYAN BAKIŞ"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Şirk neden sadece kişisel bir hata değildir?",
+      "title": "Şirk Varlığın Hakkını Nasıl Örter?",
+      "title_options": [
+        "Şirk Varlığın Hakkını Nasıl Örter?",
+        "Şirk Neden Büyük Bir Zulümdür?",
+        "Nimeti Yanlış Okuyunca Ne Olur?",
+        "Tevhid Varlığa Nasıl Adalet Verir?"
+      ],
+      "selected_title": "Şirk Varlığın Hakkını Nasıl Örter?",
+      "description": "Nimeti sebeplere ve tesadüfe vermek, onun taşıdığı rahmet ve sahiplik anlamını örter. Tevhid, yalnız inancı değil; varlığa bakıştaki adaleti de düzeltir. #derinokuma #shorts #tefekkür #şirk #tevhid #iman",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#şirk",
+        "#tevhid",
+        "#iman"
+      ],
+      "thumbnail_or_cover_text": "VARLIĞIN HAKKI"
+    }
+  ]
+}
