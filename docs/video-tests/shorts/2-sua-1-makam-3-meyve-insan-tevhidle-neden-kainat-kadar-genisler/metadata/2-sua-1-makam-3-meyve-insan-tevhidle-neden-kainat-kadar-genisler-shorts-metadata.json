@@ -1,0 +1,129 @@
+{
+  "video_type": "shorts",
+  "source": "2-sua-1-makam-3-meyve-insan-tevhidle-neden-kainat-kadar-genisler",
+  "test_day": "day-57",
+  "content_generation_status": "filled",
+  "status": "ready_for_publish_metadata",
+  "shorts": [
+    {
+      "short_id": "short-001",
+      "hook": "İnsan neden küçücük bedeniyle kâinat kadar geniş arzular taşır?",
+      "title_options": [
+        "İnsan Neden Bu Kadar Geniş?",
+        "Kalp Nasıl Kâinata Açılır?",
+        "İnsanın Arzuları Neden Sonsuz?"
+      ],
+      "selected_title": "İnsan Neden Bu Kadar Geniş?",
+      "description": "İnsanın kalbi bugüne sığmaz; tevhid bu genişliği korkudan çıkarıp anlamlı bir bağa dönüştürür. #derinokuma #shorts #tefekkür #iman #tevhid #insan",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#tevhid",
+        "#insan"
+      ],
+      "thumbnail_or_cover_text": "KÂİNAT KADAR GENİŞ"
+    },
+    {
+      "short_id": "short-002",
+      "hook": "Akıl bazen insana neden huzur değil, yük getirir?",
+      "title_options": [
+        "Akıl Neden Yük Olur?",
+        "Akıl Nasıl Huzur Bulur?",
+        "Düşünmek İnsanı Neden Yorar?"
+      ],
+      "selected_title": "Akıl Neden Yük Olur?",
+      "description": "Akıl sahipsiz bir dünyaya bakınca kaygıyı büyütür; tevhid ışığında ise düzeni, rahmeti ve anlamı fark ettirir. #derinokuma #shorts #tefekkür #iman #akıl #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#akıl",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "AKIL NEDEN YORAR?"
+    },
+    {
+      "short_id": "short-003",
+      "hook": "Şefkat neden bazen insanın kalbini en derinden yaralar?",
+      "title_options": [
+        "Şefkat Neden Acıtır?",
+        "Şefkat Nasıl Teselli Bulur?",
+        "Merhamet Neden Kalbi Yorar?"
+      ],
+      "selected_title": "Şefkat Neden Acıtır?",
+      "description": "Şefkat sevilenleri sahipsiz ve yokluğa gidiyor zannederse ağırlaşır; iman onu daha büyük bir rahmete emanet etmeyi öğretir. #derinokuma #shorts #tefekkür #iman #şefkat #rahmet",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#şefkat",
+        "#rahmet"
+      ],
+      "thumbnail_or_cover_text": "ŞEFKATİN TESELLİSİ"
+    },
+    {
+      "short_id": "short-004",
+      "hook": "Sevgi neden bazen insanı genişletmek yerine daraltır?",
+      "title_options": [
+        "Sevgi Neden Daralır?",
+        "Sevgi Nasıl Genişler?",
+        "Muhabbet Neden Acıya Döner?"
+      ],
+      "selected_title": "Sevgi Neden Daralır?",
+      "description": "Sevgi yokluk korkusuna bağlanırsa acıya döner; tevhid sevgiyi kaynağına bağlayarak kalbi genişletir. #derinokuma #shorts #tefekkür #iman #sevgi #tevhid",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#sevgi",
+        "#tevhid"
+      ],
+      "thumbnail_or_cover_text": "SEVGİ NEDEN ACI?"
+    },
+    {
+      "short_id": "short-005",
+      "hook": "Ölüm imanla bakınca neden sadece karanlık bir son değildir?",
+      "title_options": [
+        "Ölüm Nasıl Başka Görünür?",
+        "Ölüm Neden Son Söz Değildir?",
+        "Mezar Nasıl Kapıya Dönüşür?"
+      ],
+      "selected_title": "Ölüm Nasıl Başka Görünür?",
+      "description": "İman ölümü hayatı anlamsızlaştıran bir yok oluş olarak değil, vazifenin bitmesi ve başka bir hayata geçiş olarak gösterir. #derinokuma #shorts #tefekkür #iman #ölüm #ahiret",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#ölüm",
+        "#ahiret"
+      ],
+      "thumbnail_or_cover_text": "ÖLÜMÜN YÜZÜ"
+    },
+    {
+      "short_id": "short-006",
+      "hook": "Geçicilik sadece kayıp mı, yoksa yenilenmenin dili mi?",
+      "title_options": [
+        "Geçicilik Neden Yenilenmedir?",
+        "Kayıp Nasıl Şükre Açılır?",
+        "Dünya Neden Durmadan Değişir?"
+      ],
+      "selected_title": "Geçicilik Neden Yenilenmedir?",
+      "description": "Tevhid bakışı geçiciliği mutlak kayıp olarak değil, güzelliğin sürekli tazelenmesi ve farklı aynalarda görünmesi olarak okutur. #derinokuma #shorts #tefekkür #iman #geçicilik #şükür",
+      "hashtags": [
+        "#derinokuma",
+        "#shorts",
+        "#tefekkür",
+        "#iman",
+        "#geçicilik",
+        "#şükür"
+      ],
+      "thumbnail_or_cover_text": "KAYIP MI YENİLENME?"
+    }
+  ]
+}

@@ -209,7 +209,13 @@ if (hasFilledPackage && !args.forcePrep) {
   console.log('\n[STEP] video:prep');
   console.log('  (skipped — existing filled package detected)');
 } else {
-  const prepArgs = ['scripts/prepare-video-package.mjs', '--title', args.title, '--slug', slug, '--day', String(args.day)];
+  const prepArgs = [
+    'scripts/prepare-video-package.mjs',
+    '--title', args.title,
+    '--slug', slug,
+    '--day', String(args.day),
+    '--run-id', args.runId,
+  ];
   if (args.forcePrep) prepArgs.push('--force');
   if (!runStep('video:prep', prepArgs)) process.exit(1);
 }

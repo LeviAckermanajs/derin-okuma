@@ -18,7 +18,7 @@ const RENDERER_URL = process.env.SCENE_BLOG_VIDEO_RENDERER_URL ?? 'http://127.0.
 // ─── CLI args ────────────────────────────────────────────────────────────────
 
 function parseArgs(argv) {
-  const args = { title: null, slug: null, day: null, shorts: 6, force: false };
+  const args = { title: null, slug: null, day: null, shorts: 6, runId: null, force: false };
   let i = 0;
   while (i < argv.length) {
     const a = argv[i];
@@ -26,6 +26,7 @@ function parseArgs(argv) {
     else if (a === '--slug'  && argv[i + 1]) { args.slug  = argv[++i]; }
     else if (a === '--day'   && argv[i + 1]) { args.day   = parseInt(argv[++i], 10); }
     else if (a === '--shorts'&& argv[i + 1]) { args.shorts= parseInt(argv[++i], 10); }
+    else if (a === '--run-id'&& argv[i + 1]) { args.runId = argv[++i]; }
     else if (a === '--force') { args.force = true; }
     else if (!a.startsWith('--') && !args.title) { args.title = a; }
     i++;
@@ -68,6 +69,12 @@ function inferNextDay() {
 
 const day = args.day ?? inferNextDay();
 const dayTag = `day-${String(day).padStart(2, '0')}`;
+const runId = args.runId || `day${day}-batch-a`;
+
+if (!/^[a-zA-Z0-9_-]+$/.test(runId)) {
+  console.error('Hata: --run-id sadece harf, rakam, tire veya alt çizgi içerebilir.');
+  process.exit(1);
+}
 
 // ─── Blog kaynak dosya arama ─────────────────────────────────────────────────
 
@@ -167,6 +174,9 @@ function landscapeFullVideoJSON() {
       source: 'derin-okuma',
       blog_post: slug,
       test_day: dayTag,
+      run_id: runId,
+      batch_run_id: runId,
+      export_run_id: runId,
       workflow: 'manual_scene_json_landscape_reference',
       content_generation_status: 'scaffold_only',
       source_files: sourceFiles
@@ -236,6 +246,9 @@ const rawInput = {
     source: 'derin-okuma',
     blog_post: '${slug}',
     test_day: '${dayTag}',
+    run_id: '${runId}',
+    batch_run_id: '${runId}',
+    export_run_id: '${runId}',
     workflow: 'manual_scene_json_single_track_landscape_load_input',
     content_generation_status: 'scaffold_only'
   }
@@ -619,6 +632,7 @@ console.log(`\nDerin Okuma — Video Prep Scaffold`);
 console.log(`  Başlık : ${args.title}`);
 console.log(`  Slug   : ${slug}`);
 console.log(`  Gün    : ${dayTag}`);
+console.log(`  Run ID : ${runId}`);
 console.log(`  Shorts : ${args.shorts}`);
 console.log(`  Kaynak : ${sourceFile ?? '(bulunamadı)'}`);
 console.log(`  Force  : ${args.force}`);

@@ -1,0 +1,94 @@
+---
+title: "İnsan Tevhidle Neden Kâinat Kadar Genişler?"
+description: "2. Şua'nın Birinci Makam'ının Üçüncü Meyvesi, tevhid inancının insanın akıl, şefkat, sevgi ve ölüm karşısındaki bakışını nasıl genişlettiğini açıklar."
+pubDate: 2026-07-21
+source: "2. Şua"
+---
+
+## İnsanın Değerini Belirleyen Bakış
+
+Risale-i Nur Külliyatı'ndaki **İkinci Şua'nın Birinci Makamı**, Allah'ın birliğine iman etmenin insan hayatında meydana getirdiği sonuçları "meyveler" üzerinden ele alır. Bu makamın **Üçüncü Meyvesi** ise doğrudan insana bakar: Tevhid inancı, insanın aklını, sevgisini, şefkatini, korkularını ve geleceğe dair beklentilerini nasıl değiştirir?
+
+Metin, insanı yalnızca bedensel ihtiyaçları bulunan bir varlık olarak görmez. İnsan; geçmişi düşünen, geleceği merak eden, kaybettiklerine üzülen, sevdiklerinin devamını isteyen ve sonsuzluğa uzanan arzular taşıyan bir varlıktır. Bu nedenle insanın huzuru da sadece günlük ihtiyaçlarının karşılanmasıyla sağlanamaz.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Üçüncü Meyve: Zîşuura, bilhassa insana bakar."
+
+Yani bu bölümün merkezinde insan vardır. İnsanın neden bu kadar değerli olduğu, neden aynı zamanda bu kadar kırılgan hâle gelebildiği ve tevhid inancının bu kırılganlığı nasıl dönüştürdüğü anlatılır.
+
+İnsan, varlıklar içinde büyük bir kabiliyete sahiptir. Kâinatın en seçkin meyvesi ve hayatın en kapsamlı neticesi olabilecek bir yaratılış taşır. Fakat aynı insan, sahip olduğu bu geniş duyguların yönünü bulamadığında ağır bir çaresizliğe düşebilir. Çünkü insanın istekleri büyük, gücü ise sınırlıdır. İhtiyaçları çoktur fakat bunların pek azını kendi imkânıyla karşılayabilir.
+
+Risale-i Nur'da şöyle geçer:
+
+> "İnsan nihayetsiz bir aczi ve nihayetsiz düşmanları ve hadsiz bir fakrı ve hadsiz ihtiyaçları bulunmakla beraber..."
+
+İnsan yalnızca bugününü düşünmez. Geçmişte kaybettiklerini hatırlar, gelecekte karşılaşabileceklerinden endişe eder. Bir çiçeğin solmasından, sevdiği bir insanın ayrılışından ve kendi hayatının sona ermesinden etkilenir. Bazen küçük bir olay, insanın içinde çok büyük bir sarsıntıya dönüşür. Çünkü insanın kalbi, yalnızca içinde bulunduğu ana değil, çok daha geniş bir zamana ve varlık alanına açıktır.
+
+Metne göre insanın bu kadar geniş bir dünyaya sahip olması, ancak bütün varlıkların tek bir kudretin yönetiminde olduğunu bilmesiyle huzura dönüşebilir. Çünkü insanın arzularına cevap verecek olan, yalnızca insanın kendisini değil, onun bağlı bulunduğu bütün âlemi idare eden bir kudret olabilir.
+
+## Akıl, Şefkat ve Sevgi Tevhidle Nasıl Değişir?
+
+Tevhid, yalnızca zihinde kabul edilen bir düşünce değildir. İnsanın sahip olduğu bütün duyguların anlamını değiştiren bir bakıştır. Bölümde bunun için akıl, şefkat ve sevgi üzerinde özellikle durulur.
+
+İnsanın en değerli özelliklerinden biri aklıdır. Akıl sayesinde insan, yalnızca yaşadığı anı değil, geçmişi ve geleceği de düşünür. Kâinatı inceler, olayların arkasındaki anlamı araştırır ve görünenin ötesini merak eder.
+
+Fakat akıl, varlığı başıboş ve sahipsiz gördüğünde insana huzur vermek yerine yük olabilir. Geçmişte yaşanan ayrılıkları tekrar tekrar hatırlatır. Henüz gelmemiş geleceğin korkularını bugüne taşır. Böylece insanın hayatını genişletmek için verilen akıl, onun acılarını da genişletebilir.
+
+Risale-i Nur'da şöyle geçer:
+
+> "İnsanın en kıymettar cihazı akıldır."
+
+Ancak akıl, tevhid ışığında çalıştığında farklı bir işlev kazanır. Varlıklardaki anlamı, düzeni ve güzelliği görmeye başlar. Kâinatı, birbirinden kopuk ve sahipsiz şeylerin bulunduğu karanlık bir alan olarak değil, tek bir iradenin yönetimindeki anlamlı bir bütün olarak okur. Böylece geçmiş yalnızca kayıpların toplandığı bir mezarlık, gelecek de yalnızca bilinmezliklerle dolu bir karanlık olmaktan çıkar.
+
+Aynı dönüşüm şefkat için de geçerlidir. Şefkat, insanın en ince ve en güzel duygularından biridir. İnsan yalnızca kendi acısını değil, başka canlıların acısını da hisseder. Bir canlının zarar görmesi, bir yavrunun annesinden ayrılması veya sevilen bir insanın kaybedilmesi kalpte derin iz bırakabilir.
+
+Fakat şefkat, varlıkların tamamen yok olup gittiği düşüncesiyle birleştiğinde ağır bir acıya dönüşür. İnsan, sevdiği her varlığın geçici olduğunu düşündükçe, sevgisiyle birlikte sürekli bir ayrılık korkusu taşır.
+
+Metin bunu, tek yavrusunu kaybeden ve bu ayrılığı sonsuz bir yokluk gibi gören bir annenin acısıyla anlatır. Buradaki mesele şefkatin kötü olması değildir. Aksine şefkat çok değerli bir duygudur. Fakat onun teselli bulabilmesi için sevilen varlıkların sahipsiz olmadığının bilinmesi gerekir.
+
+Sevgi de aynı şekilde insanı hem yükseltebilir hem de ağır bir acıya sürükleyebilir. İnsan sevdiği varlıklarla bağ kurar. Onların güzelliklerinden zevk alır, varlıklarından mutluluk duyar ve devam etmelerini ister. Fakat sevilen her şeyin yokluğa gittiği düşünülürse sevgi, sürekli bir ayrılık beklentisine dönüşür.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Muhabbet, eğer sırr-ı tevhid yardım etse bu küçücük insanı, kâinat kadar büyüttürür."
+
+Tevhid, sevgiyi ortadan kaldırmaz; ona daha geniş bir anlam verir. İnsan, sevdiği varlıkları yalnızca kısa süreli varlıklarıyla değil, onları var eden ve idare eden kudretle birlikte düşünmeye başlar. Böylece sevgi, insanı daraltan bir korku olmaktan çıkar ve kâinat kadar genişleyen bir bağ hâline gelir.
+
+Fakat her şeyin sahipsiz olduğu düşüncesinde insan, sevdiği bütün varlıkların sürekli yok oluşunu izlemek zorunda kalır. Her ayrılık, kalpte yeniden açılan bir yara gibi hissedilir. Metin, geçici eğlencelerin bu acıyı kısa süreliğine unutturabileceğini; fakat ortadan kaldırmadığını söyler.
+
+Üç örnek aynı noktada birleşir: Akıl, şefkat ve sevgi kendi başlarına insan için büyük birer değerdir. Ancak bu duygular, tevhid inancıyla yönünü bulduğunda insana gerçek bir genişlik ve huzur kazandırır. Aksi hâlde insanın kabiliyetleri büyüdükçe, taşıdığı korkular ve acılar da büyür.
+
+## Ölümün ve Geçiciliğin Değişen Yüzü
+
+Bölümün sonunda bu fikirler yalnızca teorik bir açıklama olarak bırakılmaz. Yazar, yüksek bir dağ başında yaşadığı kişisel bir hâli anlatır.
+
+Dağın üzerinde geçmişi, geleceği ve etrafındaki dünyayı düşünürken ölüm bütün açıklığıyla karşısına çıkar. İnsanların birer birer ayrılması, canlıların sönmesi ve varlıkların sürekli değişmesi ona büyük bir hüzün verir. Geçmiş, büyük bir mezarlık gibi görünür. Gelecek ise bilinmezliklerle dolu karanlık bir alan hâline gelir.
+
+Kendisini zamanın ortasında, dört tarafı kayıplar ve korkularla çevrili bir hâlde hisseder. Yukarıda dehşet, aşağıda ve çevresinde üzücü ayrılıklar görür. Sevgi duyduğu varlıkların geçiciliği, kalbindeki merhameti daha da acılı hâle getirir.
+
+Tam bu noktada tevhid düşüncesi bakışını değiştirir.
+
+Ölüm artık mutlak bir yok oluş olarak görünmez. Bir yer değiştirme, bir görevden ayrılma ve başka bir hayata geçiş olarak anlaşılır.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Ölüm, ehl-i iman için bir terhistir; ecel, terhis tezkeresidir."
+
+Bu bakışla ölüm, hayatın bütün güzelliklerini anlamsızlaştıran karanlık bir son olmaktan çıkar. Dünyadaki görevini tamamlayan insanın başka bir âleme çağrılması şeklinde görülür. Mezar da yalnızca toprağın altında kaybolunan bir çukur değil, başka bir hayata açılan kapı hâline gelir.
+
+Geçicilik de bu bakışla farklı bir anlam kazanır. Varlıkların değişmesi ve gitmesi, bütünüyle yok olmaları demek değildir. Metin bunu sinema perdelerinde değişen görüntülere ve güneşin karşısında akıp giden kabarcıklara benzetir. Görüntüler değişir; fakat bu değişim, güzelliğin sürekli yenilenmesine hizmet eder.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Lezzet verici bir teceddüd-i emsaldir, bir tazelenmektir."
+
+Bir çiçek gider, yerine başka bir çiçek gelir. Bir manzara kaybolur, başka bir manzara görünür. Böylece güzellikler donup kalmaz; sürekli yenilenerek görünmeye devam eder. Değişen varlıklar, kalıcı güzelliğin farklı aynaları hâline gelir.
+
+Bu anlayış geçmiş ve geleceğe bakışı da değiştirir. Geçmiş artık yalnızca ayrılanların bulunduğu büyük bir mezarlık değildir. İman gözüyle bakıldığında, başka bir hayata geçmiş insanların bulunduğu aydınlık meclisler olarak görünür. Gelecek de henüz gelmemiş felaketlerin toplandığı bir karanlık değil, yeni buluşmaların ve farklı güzelliklerin ortaya çıkacağı bir alan hâline gelir.
+
+Dağın başında başlayan karanlık düşünce, böylece yerini sürur ve şükre bırakır. Dışarıdaki dünya değişmemiştir; ölüm hâlâ vardır, ayrılıklar hâlâ yaşanmaktadır ve varlıklar hâlâ gelip geçmektedir. Değişen, bütün bunların hangi anlam içinde görüldüğüdür.
+
+Üçüncü Meyve'nin bıraktığı temel iz de burada belirginleşir: İnsan, duygularının genişliği yüzünden hem büyük bir değere hem de büyük bir acı ihtimaline sahiptir. Tevhid ise bu genişliği ortadan kaldırmaz. Aklı susturmaz, şefkati azaltmaz, sevgiyi küçültmez. Tam tersine, bütün bu duyguları taşıyabilecek daha geniş bir anlam dünyası açar.
+
+İnsan böylece geçiciliğin içinde yalnızca kaybı değil, yenilenmeyi; ölümün içinde yalnızca ayrılığı değil, başka bir hayata geçişi; sevginin içinde yalnızca korkuyu değil, kâinat kadar genişleyen bir bağlılığı görmeye başlar.
