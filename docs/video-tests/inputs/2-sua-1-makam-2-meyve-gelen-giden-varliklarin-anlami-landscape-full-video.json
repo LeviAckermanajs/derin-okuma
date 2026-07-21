@@ -1,0 +1,405 @@
+{
+  "input_version": "0.1.0",
+  "input_type": "manual_scene_json",
+  "job": {
+    "title": "2.Şua - 1.Makam - 2.Meyve",
+    "description": "Gelip giden varlıkların tevhid nazarıyla yokluğa değil, anlamlı neticelere baktığını anlatan landscape video içeriği.",
+    "language": "tr",
+    "author": "Muhammet Yahya Ozer",
+    "job_id_hint": "2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami-landscape-day-56"
+  },
+  "render_preferences": {
+    "mode": "full_video",
+    "subtitles_enabled": true,
+    "target_aspect_ratio": "16:9",
+    "target_resolution": "1920x1080",
+    "target_fps": 30,
+    "voice_language": "tr"
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "title": "Gelen ve Giden Varlıklar",
+      "narration": "Bahar geldiğinde yeryüzü birden canlanır. Toprak renklenir, dallar uyanır, kuşlar hareketlenir, küçük canlılar sessiz yerlerinden çıkar. Fakat insan bu güzelliğe biraz dikkatle bakınca, sevinçle birlikte derin bir soru da duyar: Bütün bunlar nereden geliyor, neden bu kadar kısa kalıyor ve nereye gidiyor?",
+      "visual_note": "spring meadow awakening, flowers opening, soft morning light, cinematic landscape",
+      "keywords": [
+        "spring meadow",
+        "flowers",
+        "morning light"
+      ]
+    },
+    {
+      "scene_id": "scene-002",
+      "title": "İki Manzara Bir Arada",
+      "narration": "Kâinatın yüzünde aynı anda iki manzara görünür. Bir tarafta ölçü, güzellik, düzen ve sanat vardır. Diğer tarafta sürekli değişen, solan, yaşlanan ve gözümüzden çekilen varlıklar vardır. İnsan bu iki manzarayı birlikte okuyamazsa, güzellik bile kalbin içinde bir hüzne dönüşebilir.",
+      "visual_note": "wide landscape with blooming trees and falling petals, gentle wind, reflective mood",
+      "keywords": [
+        "blooming trees",
+        "falling petals",
+        "reflective nature"
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "title": "Baharın Sessiz Sorusu",
+      "narration": "Bir çiçek açar, sonra solar. Bir kelebek görünür, sonra kaybolur. Bir kuşun sesi sabahı doldurur, akşam olunca uzaklaşır. Görünen âlem, insana yalnız güzellik sunmaz; aynı zamanda geçiciliğin ne anlama geldiğini de sordurur.",
+      "visual_note": "close up of a flower blooming then fading, butterfly in sunlight, shallow depth of field",
+      "keywords": [
+        "flower",
+        "butterfly",
+        "passing time"
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "title": "Başsız Bir Kalabalık Değil",
+      "narration": "Eğer varlıklar tesadüflerin savurduğu başıboş parçalar gibi görülürse, gelişleri de gidişleri de açıklanamaz. O zaman her canlı kısa bir parıltı gibi yanıp söner ve geriye sadece kayıp hissi kalır. Tevhid bakışı ise kâinatı dağınık bir kalabalık olarak değil, anlamlı bir düzen olarak gösterir.",
+      "visual_note": "orderly rows of trees in a vast field, calm symmetrical composition, golden hour",
+      "keywords": [
+        "orderly nature",
+        "symmetry",
+        "golden hour"
+      ]
+    },
+    {
+      "scene_id": "scene-005",
+      "title": "Bir Kitap Gibi Kâinat",
+      "narration": "Birlik içinde bakıldığında kâinat, rastgele açılmış sayfalar değil, anlam taşıyan büyük bir kitap gibi görünür. Her varlık kendi diliyle bir şey söyler. Her canlı, kısa ömrüyle bile daha geniş bir hakikate işaret eder. Göz yalnız şekli görür; kalp ise o şeklin arkasındaki manayı arar.",
+      "visual_note": "open book beside a window with nature outside, soft daylight, contemplative setting",
+      "keywords": [
+        "open book",
+        "window light",
+        "contemplation"
+      ]
+    },
+    {
+      "scene_id": "scene-006",
+      "title": "Güzellik Neden Kısa?",
+      "narration": "İnsanı en çok sarsan şeylerden biri, güzel olanın kısa sürmesidir. Bir bahar manzarası uzun kalmaz, gençlik uzun durmaz, sevdiklerimizin yüzü bile zamanla değişir. Bu geçicilik, imansız bir bakışta acımasız bir kayıp gibi görünür. Fakat iman, giden şeyin bütünüyle yok olmadığını hatırlatır.",
+      "visual_note": "soft portrait silhouette watching sunset over spring fields, quiet emotional atmosphere",
+      "keywords": [
+        "sunset",
+        "silhouette",
+        "spring field"
+      ]
+    },
+    {
+      "scene_id": "scene-007",
+      "title": "Gitmek Yok Olmak mıdır?",
+      "narration": "Bir varlık gözümüzün önünden ayrıldığında, onu çoğu zaman kaybolmuş sayarız. Çünkü insanın görmesi sınırlıdır; gözden uzaklaşanı varlığın dışına çıkmış gibi zanneder. Oysa görünmemek, yok olmakla aynı şey değildir. Bir sahneden çekilen oyuncu, bütün emeğini ve izini de geride bırakır.",
+      "visual_note": "empty theater stage with one soft spotlight, quiet cinematic atmosphere",
+      "keywords": [
+        "empty stage",
+        "spotlight",
+        "absence"
+      ]
+    },
+    {
+      "scene_id": "scene-008",
+      "title": "Kısa Ömür, Geniş Netice",
+      "narration": "Canlıların ömrü bazen çok kısadır. Fakat kısa ömür, küçük anlam demek değildir. Bir çiçek birkaç gün görünür; ama rengiyle, kokusuyla, düzeniyle ve taşıdığı hayat kanunuyla çok şey anlatır. Bir anlık görünüşün arkasında, onu var eden kudretin ve hikmetin izleri vardır.",
+      "visual_note": "macro shot of colorful flower petals with dew, detailed natural design, cinematic close up",
+      "keywords": [
+        "flower petals",
+        "dew",
+        "natural design"
+      ]
+    },
+    {
+      "scene_id": "scene-009",
+      "title": "Her Canlı Bir İşaret",
+      "narration": "Küçük bir sinek, bir kuş, bir yaprak veya bir tohum yalnız kendi bedeniyle sınırlı değildir. Her biri düzeniyle bir sanat gösterir. Her biri ihtiyaca cevap veren bir ölçü taşır. Her biri, kendisini aşan bir anlamın sessiz işareti hâline gelir.",
+      "visual_note": "small insect on a leaf, sunlight through greenery, detailed macro nature scene",
+      "keywords": [
+        "insect",
+        "leaf",
+        "macro nature"
+      ]
+    },
+    {
+      "scene_id": "scene-010",
+      "title": "Sanatın Sahibi",
+      "narration": "Bir eserin güzelliği, onu yapanı tanıtır. Bir canlıdaki ölçü, renk, denge ve hayat da sahipsiz bir süs değildir. Varlık, kendi üzerinde görünen sanatla sanatkârını gösteren bir ayna gibidir. Bu yüzden bir canlının değeri, sadece dünyada kaldığı süreyle ölçülemez.",
+      "visual_note": "artisan hands shaping delicate pattern, natural light, calm detailed craftsmanship",
+      "keywords": [
+        "craftsmanship",
+        "hands",
+        "delicate pattern"
+      ]
+    },
+    {
+      "scene_id": "scene-011",
+      "title": "Ayna Olan Varlıklar",
+      "narration": "Canlılar yalnız güzel oldukları için değerli değildir. Onlar, güzelliğin kaynağına işaret ettikleri için de derin bir anlam taşır. Merhamet, hikmet, kudret, ilim ve rızık gibi manalar, varlıkların üzerinde parça parça görünür. Böylece kâinat, ilahî isimlerin yansımalarını taşıyan geniş bir ayna hâline gelir.",
+      "visual_note": "calm lake reflecting mountains and sky, clear water, majestic quiet landscape",
+      "keywords": [
+        "lake reflection",
+        "mountains",
+        "clear sky"
+      ]
+    },
+    {
+      "scene_id": "scene-012",
+      "title": "Gidenin Bıraktığı İz",
+      "narration": "Bir canlı dünyadan ayrılırken her şeyi beraberinde götürmez. Gördüren güzelliğini hatıralara bırakır, hayat kanununu nesline aktarır, vazifesinin sonuçlarını kâinatın düzenine katar. Tohumlar, yumurtalar, izler, hatıralar ve manevi neticeler kalır. Görünen beden gider; fakat anlam bütünüyle silinmez.",
+      "visual_note": "seeds carried by wind across a sunlit field, slow motion, hopeful atmosphere",
+      "keywords": [
+        "seeds",
+        "wind",
+        "continuity"
+      ]
+    },
+    {
+      "scene_id": "scene-013",
+      "title": "Sahnenin Arkasına Çekilmek",
+      "narration": "Ölüm ve ayrılık, yalnız dünya gözüyle bakıldığında karanlık görünür. Fakat iman, gidişi mutlak bir hiçlik olarak değil, vazifesini bitiren bir varlığın sahneden çekilişi olarak okur. Bu okuyuş acıyı inkâr etmez. Sadece acının içine anlam ve teslimiyet koyar.",
+      "visual_note": "curtain closing slowly in an old theater, warm dim light, contemplative mood",
+      "keywords": [
+        "curtain",
+        "theater",
+        "transition"
+      ]
+    },
+    {
+      "scene_id": "scene-014",
+      "title": "Terhis Manası",
+      "narration": "Dünya, görev için gelinen bir yer gibidir. Her canlı kendi ölçüsünde bir vazife görür, kendisine verilen kabiliyetleri kullanır ve zamanı dolunca ayrılır. Bu ayrılış, boşa harcanmış bir hayatın dağılışı değildir. Vazifesini tamamlamış bir misafirin başka bir perdeye geçişi gibidir.",
+      "visual_note": "quiet train station platform at dusk, a traveler walking away, soft cinematic light",
+      "keywords": [
+        "train station",
+        "traveler",
+        "departure"
+      ]
+    },
+    {
+      "scene_id": "scene-015",
+      "title": "İlk Bakıştaki Hüzün",
+      "narration": "İnsan çoğu zaman önce hüzünle bakar. Çünkü görünen şey ayrılıktır, solmadır, eksilmedir. Büyük bir özenle yaratılmış canlıların kısa sürede gözden kaybolması kalbe ağır gelir. Bu ağırlık, insanın anlam arayışını daha da derinleştirir.",
+      "visual_note": "fallen flower petals on wet stone path, overcast light, quiet sadness",
+      "keywords": [
+        "fallen petals",
+        "stone path",
+        "melancholy"
+      ]
+    },
+    {
+      "scene_id": "scene-016",
+      "title": "Bakış Değişince",
+      "narration": "Bakış değiştiğinde manzara da değişir. Aynı bahar artık yalnız solacak çiçeklerden ibaret görünmez. Her çiçek, kendi güzelliğini ilan etmiş ve taşıdığı manayı bırakmış bir elçi gibi anlaşılır. Böylece kalpteki feryat, yerini daha sakin bir tefekküre bırakır.",
+      "visual_note": "morning sun breaking through clouds over a flower field, peaceful transformation",
+      "keywords": [
+        "sun rays",
+        "flower field",
+        "peace"
+      ]
+    },
+    {
+      "scene_id": "scene-017",
+      "title": "Güzellik Boşa Gitmez",
+      "narration": "Gerçek güzellik, bütünüyle anlamsız bir sona yakışmaz. Kâinatın her tarafına yayılmış bu kadar düzenli ve derin güzelliğin, merhametsiz bir hiçlikle kapanması akla da kalbe de ağır gelir. Tevhid, güzelliğin boşa gitmediğini gösterir. Her güzel şey, asıl güzellik kaynağına bağlanır.",
+      "visual_note": "vast mountain valley with blooming wildflowers, clear sky, expansive beauty",
+      "keywords": [
+        "mountain valley",
+        "wildflowers",
+        "beauty"
+      ]
+    },
+    {
+      "scene_id": "scene-018",
+      "title": "Kâinat Bir Sergi Gibi",
+      "narration": "Yeryüzü, her an yenilenen büyük bir sergi gibidir. Türler gelir, renkler değişir, şekiller tazelenir, canlılar görev alır. Serginin parçaları değişse de, gösterilen sanat ve hikmet devam eder. Bu yüzden değişim, anlamsız bir dağılma değil, sürekli yenilenen bir teşhir hâline gelir.",
+      "visual_note": "botanical garden walkway with diverse plants, slow cinematic movement, soft light",
+      "keywords": [
+        "botanical garden",
+        "diverse plants",
+        "living exhibition"
+      ]
+    },
+    {
+      "scene_id": "scene-019",
+      "title": "Her Türün Tesbihi",
+      "narration": "Her tür, kendi hâliyle yaratılışın anlamına katılır. Ağaç kök salarak, kuş uçarak, arı çalışarak, tohum sabrederek bir vazife görür. İnsan bu çeşitliliğe dikkatle baktığında, sessiz bir tesbih düzeni fark eder. Kâinat sadece duran bir manzara değil, sürekli konuşan bir bütündür.",
+      "visual_note": "bee moving among flowers, birds crossing the sky, layered nature activity",
+      "keywords": [
+        "bee",
+        "birds",
+        "nature activity"
+      ]
+    },
+    {
+      "scene_id": "scene-020",
+      "title": "Tevhid Kalkarsa",
+      "narration": "Birlik fikri kaybolduğunda, kâinatın dili de dağılır. Sanat tesadüfe, hikmet kör sebeplere, güzellik kısa bir oyalanmaya indirgenir. O zaman canlıların gelişleri de gidişleri de sonuçsuz görünür. İnsan, anlamlı bir âlemde yaşarken onu anlamsız zannetmeye başlar.",
+      "visual_note": "foggy city street with blurred movement, disconnected people, muted colors",
+      "keywords": [
+        "foggy street",
+        "blurred movement",
+        "disconnection"
+      ]
+    },
+    {
+      "scene_id": "scene-021",
+      "title": "İnkârın Ağır Sonucu",
+      "narration": "İnkâr yalnız bir fikir ayrılığı gibi kalmaz; varlığın anlamını da karartır. Bir çiçeğin sanatı, bir kuşun vazifesi, bir canlının hayatı ve insanın kalbindeki hayret değersizleşir. Çünkü her şeyin sonu mutlak yokluk sayılırsa, güzelliğin de görevin de kalıcı bir karşılığı kalmaz.",
+      "visual_note": "withered flower in a dark room beside a closed window, muted cinematic light",
+      "keywords": [
+        "withered flower",
+        "dark room",
+        "meaning loss"
+      ]
+    },
+    {
+      "scene_id": "scene-022",
+      "title": "İman Anlamı Korur",
+      "narration": "İman ise kâinatın değerini korur. Her varlığı sahibine, her güzelliği kaynağına, her vazifeyi hikmetine bağlar. Böylece dünya, sonuçsuz hareketlerin alanı olmaktan çıkar. Anlamlı gelişler, anlamlı vazifeler ve anlamlı ayrılışlar görünmeye başlar.",
+      "visual_note": "sunlit path through tall trees, steady forward camera movement, hopeful calm mood",
+      "keywords": [
+        "forest path",
+        "sunlight",
+        "hope"
+      ]
+    },
+    {
+      "scene_id": "scene-023",
+      "title": "Gözün Sınırı",
+      "narration": "İnsan gözü, çoğu zaman yalnız önündeki perdeyi görür. Perdenin arkasında devam eden neticeleri, yazılan hikmetleri ve saklanan izleri hemen fark edemez. Bu yüzden dünyadan ayrılanı bitmiş zanneder. Oysa varlığın hakikati, gözün gördüğünden daha geniştir.",
+      "visual_note": "soft curtain moving by an open window, light passing through fabric, quiet interior",
+      "keywords": [
+        "curtain",
+        "window light",
+        "hidden depth"
+      ]
+    },
+    {
+      "scene_id": "scene-024",
+      "title": "Hatıralarda Kalan Güzellik",
+      "narration": "Bir canlı gider, fakat onun güzelliği bakanların hafızasında kalır. Bir çocuğun gördüğü çiçek, bir insanın duyduğu kuş sesi, bir baharın bıraktığı sevinç kalpte iz bırakır. Hatıra bile, hayatın boşa akmadığını gösteren ince bir delildir. Geçen şey, her zaman silinen şey değildir.",
+      "visual_note": "person looking at old nature photographs on a wooden desk, soft evening light",
+      "keywords": [
+        "photographs",
+        "memory",
+        "evening light"
+      ]
+    },
+    {
+      "scene_id": "scene-025",
+      "title": "Tohumlarda Devam Eden Hayat",
+      "narration": "Solan bir çiçek, bazen arkasında tohum bırakır. Giden bir canlı, neslin devamına hizmet eder. Bir hayat kapanırken başka hayatların kapısı açılır. Böylece gözün kayıp sandığı şey, daha geniş bir düzen içinde devam eden bir akışa dönüşür.",
+      "visual_note": "hands planting seeds in dark soil, close up, hopeful natural light",
+      "keywords": [
+        "planting seeds",
+        "soil",
+        "new life"
+      ]
+    },
+    {
+      "scene_id": "scene-026",
+      "title": "Kudretin ve Hikmetin Dili",
+      "narration": "Her canlı, kendi yaratılışında kudretin ve hikmetin dilini taşır. Kanadın ölçüsü, yaprağın damarları, gözün hassasiyeti, rızkın zamanında gelişi hep aynı hakikate bakar. Bu dil, varlığın sessiz konuşmasıdır. Dinlemeyi bilen için kâinat suskun değildir.",
+      "visual_note": "macro details of leaf veins and bird wing feathers, natural science cinematic style",
+      "keywords": [
+        "leaf veins",
+        "feathers",
+        "natural detail"
+      ]
+    },
+    {
+      "scene_id": "scene-027",
+      "title": "Büyük Çalışma Alanı",
+      "narration": "Dünya, sayısız varlığın görev yaptığı büyük bir çalışma alanı gibidir. Her şey birbiriyle ilişkilidir; su toprağa, toprak tohuma, tohum canlıya, canlı daha geniş bir düzene bağlanır. Bu bağlantılar kör bir karmaşa değil, hikmetli bir birlik gösterir. Tevhid, bu birliği okunur hâle getirir.",
+      "visual_note": "aerial view of river, fields and forests connected in one landscape, cinematic drone shot",
+      "keywords": [
+        "river",
+        "fields",
+        "ecosystem"
+      ]
+    },
+    {
+      "scene_id": "scene-028",
+      "title": "Kayıp Zannedilen Neticeler",
+      "narration": "İnsan bazen sadece sonuçların görünür kısmını takip eder. Oysa birçok netice göz önünde değil, düzenin içinde saklıdır. Bir canlının besin olması, toprağa karışması, başka bir hayata zemin hazırlaması veya kalpte tefekkür uyandırması aynı zincirin parçalarıdır. Hiçbiri başıboş değildir.",
+      "visual_note": "forest floor with fallen leaves turning into soil, close detailed nature cycle",
+      "keywords": [
+        "forest floor",
+        "fallen leaves",
+        "cycle"
+      ]
+    },
+    {
+      "scene_id": "scene-029",
+      "title": "Ayrılığın İçindeki Rahmet",
+      "narration": "Ayrılık acı verir; bunu inkâr etmek insanın kalbini hafife almak olur. Fakat iman, ayrılığın içinde bile rahmete bakan bir taraf bulunduğunu gösterir. Çünkü gidenler sahipsizliğe atılmaz, neticesizliğe terk edilmez. Onları var eden kudret, gidişlerini de hikmetsiz bırakmaz.",
+      "visual_note": "person standing quietly near a graveyard at sunrise, respectful distant shot, soft light",
+      "keywords": [
+        "sunrise",
+        "quiet reflection",
+        "mercy"
+      ]
+    },
+    {
+      "scene_id": "scene-030",
+      "title": "Soru Değişir",
+      "narration": "Başta soru yalnız hüzünle sorulur: Neden geliyorlar ve neden durmadan gidiyorlar? Sonra aynı soru daha geniş bir kapı açar. Gelmek bir vazifeye, gitmek bir neticeye, hayat bir ilana dönüşür. İnsan artık yalnız kaybı değil, bırakılan anlamı da görmeye başlar.",
+      "visual_note": "long road through open countryside, sunrise ahead, calm forward motion",
+      "keywords": [
+        "open road",
+        "sunrise",
+        "journey"
+      ]
+    },
+    {
+      "scene_id": "scene-031",
+      "title": "Bahar Yine Geçer",
+      "narration": "Bahar yine geçecektir. Çiçekler yine solacak, kuşlar yine göç edecek, yeryüzündeki canlılık yine başka bir mevsime bırakılacaktır. Tevhid gidişi durdurmaz. Fakat gidişin yüzündeki karanlığı kaldırır ve onu anlamlı bir değişim olarak gösterir.",
+      "visual_note": "seasonal transition from spring blossoms to autumn leaves, cinematic landscape montage",
+      "keywords": [
+        "seasons",
+        "autumn leaves",
+        "transition"
+      ]
+    },
+    {
+      "scene_id": "scene-032",
+      "title": "Ölüm Hiçlik Değildir",
+      "narration": "Ölüm, dünya perdesinden bakınca kapanış gibi görünür. Fakat iman nazarında mutlak hiçlik değildir. Bir varlığın görünür bedeni ayrılırken, ruhuna, kayıtlarına, neticelerine ve ilahî ilimdeki değerine bakan yönleri vardır. Bu yüzden yokluk hükmü acele verilmiş bir hükümdür.",
+      "visual_note": "soft light behind a partially open door, quiet interior, symbolic transition",
+      "keywords": [
+        "open door",
+        "soft light",
+        "transition"
+      ]
+    },
+    {
+      "scene_id": "scene-033",
+      "title": "Kalbin Rahatladığı Yer",
+      "narration": "Kalp, güzelliğin boşa gitmediğini anladığında rahatlar. Dünya artık sadece gelenlerin kaybolduğu bir meydan gibi görünmez. Her şeyin sahibine döndüğü, her vazifenin kaydedildiği, her güzelliğin kaynağına bağlandığı bir âlem olarak okunur. Bu okuma, insana hüzün içinde bile sükûnet verir.",
+      "visual_note": "calm person sitting by a lake at dawn, still water, peaceful wide shot",
+      "keywords": [
+        "lake dawn",
+        "still water",
+        "peaceful person"
+      ]
+    },
+    {
+      "scene_id": "scene-034",
+      "title": "Gözden Saklananlar",
+      "narration": "Sonunda insan aynı manzaraya yeniden bakar. Bahar geçer, çiçek solar, canlı gider; fakat artık hepsi bütünüyle kayıp görünmez. Gidenler, yalnız bizim sınırlı gözümüzden saklanır. Anlamları, neticeleri ve onları var eden rahmetin şahitliği kalmaya devam eder.",
+      "visual_note": "wide spring landscape fading into soft golden light, quiet hopeful ending",
+      "keywords": [
+        "spring landscape",
+        "golden light",
+        "hopeful ending"
+      ]
+    }
+  ],
+  "metadata": {
+    "source": "derin-okuma",
+    "blog_post": "2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami",
+    "test_day": "day-56",
+    "workflow": "manual_scene_json_landscape_reference",
+    "content_generation_status": "filled",
+    "source_files": [
+      "src/content/blog/2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami.md"
+    ]
+  }
+}

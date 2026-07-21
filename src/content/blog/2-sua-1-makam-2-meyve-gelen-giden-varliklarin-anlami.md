@@ -1,0 +1,84 @@
+---
+title: "Neden Geliyorlar, Neden Gidiyorlar?"
+description: "2. Şua'nın Birinci Makam'ının İkinci Meyvesi, gelip giden varlıkların tevhid nazarıyla nasıl yokluğa değil, anlamlı neticelere baktığını açıklar."
+pubDate: 2026-07-21
+source: "2. Şua"
+---
+
+## Bir Bahar Manzarasının Ardındaki Büyük Soru
+
+Risale-i Nur Külliyatı'nda yer alan **2. Şua'nın Birinci Makam'ının İkinci Meyvesi**, tevhid inancının kâinata ve canlıların hayatına nasıl bir anlam kazandırdığını ele alır. Birinci Meyve'de bakış doğrudan yaratıcıya yönelirken, burada kâinatın kendisine, varlıkların mahiyetine ve dünyadaki geliş gidişlerine çevrilir.
+
+Çünkü çevremize baktığımızda iki farklı manzarayı aynı anda görürüz: Bir tarafta şaşırtıcı bir düzen, güzellik ve sanat; diğer tarafta sürekli değişen, yaşlanan ve gözden kaybolan varlıklar.
+
+Bahar gelir. Toprak canlanır. Çiçekler açar, böcekler dolaşır, kuşlar hareketlenir. Yeryüzü adeta büyük bir şenlik alanına dönüşür. Fakat bu canlılık uzun sürmez. Güzel görünen her şey kısa bir zaman sonra değişir ve gider.
+
+İşte bu manzara, insanın zihninde kolayca şu soruyu uyandırır. Risale-i Nur'da şöyle geçer:
+
+> "Sevk-i mevcudat ve kafile-i mahlukat nereden geliyor ve nereye gidecek ve ne için gelmişler ve ne yapıyorlar?"
+
+Varlıklar nereden geliyor? Burada neden bulunuyorlar? Ne yapıyorlar ve sonunda nereye gidiyorlar?
+
+Metne göre bu soruların gerçek cevabı ancak tevhidle anlaşılabilir. Çünkü kâinata birlik içinde bakılmadığında, görünen bütün düzen ve güzellikler anlamsızlaşır. Canlıların görevleri, sanatlı yaratılışlarının değeri ve hayatlarının sonuçları açıklanamaz hâle gelir.
+
+Oysa tevhid nazarıyla bakıldığında kâinat, tesadüfen bir araya gelmiş başıboş varlıklardan oluşan bir kalabalık değildir. Anlamlı bir kitap, düzenli bir ülke ve görevlerini yerine getiren sayısız varlığın bulunduğu büyük bir çalışma alanıdır.
+
+## Gitmek, Yok Olmak Değildir
+
+Metinde bu hakikat, bahar mevsiminde yaşanan kişisel bir gözlem üzerinden anlatılır. Yeryüzünde sayısız canlı belirir; canlılar kafileler hâlinde gelir, kısa bir müddet görünür ve ardından kaybolur.
+
+Bu sürekli gidiş, ilk bakışta ağır bir hüzün doğurur. Büyük bir özenle yaratılan, çeşitli yeteneklerle donatılan canlıların kısa sürede gözden kaybolması, sanki bütün o güzelliklerin parçalanıp hiçliğe atılması gibi görünür.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Neden geliyorlar, hiç durmadan gidiyorlar?"
+
+Bu soru yalnızca canlıların ölümünü değil, bütün güzel şeylerin geçiciliğini içinde taşır. Bir çiçeğin solması, bir hayvanın ölmesi veya güzel bir manzaranın dağılması, görünüşte geri dönüşü olmayan bir kayıp gibi algılanabilir.
+
+Metindeki anlatıcı da bu manzara karşısında derin bir acı hisseder. Varlıkların ölümünü düşündükçe onların ardından içinden yükselen bir feryat duyar. Fakat daha sonra iman ve tevhid nazarı bu karanlık görünüşü değiştirir.
+
+Çünkü her canlı yalnızca kısa ömürlü bedeninden ibaret değildir. Onun hayatı, göründüğü birkaç dakikaya veya birkaç yıla sığmayacak kadar çok sonuç taşır.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Her bir mahluk, hususan her bir zîhayatın sırr-ı tevhid ile çok büyük neticeleri ve umumî faydaları vardır."
+
+Bir çiçek veya küçük bir sinek bile anlamlı bir eser olarak tarif edilir. Her biri yaratılışındaki sanatla yaratıcısının kudretini ve hikmetini gösterir. Güzelliğiyle kendisini seyredenlere bir anlam sunar. Üzerindeki sanat, yalnız insanın gördüğü kısa anla sınırlı kalmaz.
+
+Her canlı, yaratılışıyla bir çeşit ilan vazifesi görür. Üzerindeki düzen ve güzellik, onu yapan sanatkârın sanatını tanıtır. Aynı zamanda o varlık, kendisine verilen özelliklerle ilahî isimlerin güzelliklerini yansıtan bir ayna hâline gelir.
+
+Bu nedenle bir canlının dünyadan ayrılması, görevlerinin ve bütün sonuçlarının yok olması anlamına gelmez. Metinde, canlıların birçok iz bırakarak gittikleri anlatılır. Ruhları, hatıralarda kalan görüntüleri, tohumlarında veya yumurtalarında devam eden yaratılış kanunları, gelecek hayatlarına ait neticeleri ve yansıttıkları güzellikler geride kalır.
+
+Görünen beden gider; fakat hayatının anlamı silinmez.
+
+Risale-i Nur'da şöyle geçer:
+
+> "Yalnız dünyevî gözlerden saklanır."
+
+Bu bakış açısıyla ölüm, mutlak bir yok oluş değil, göz önündeki sahneden çekilmek hâline gelir. Varlık dünyadaki görevini tamamlar, taşıdığı neticeleri bırakır ve görünüşte bir ayrılık perdesinin arkasına geçer.
+
+Böylece ilk bakışta acı veren manzara değişmeye başlar. "Yazık" dedirten gidişlerin yerini, yaratılıştaki güzelliği ve hikmeti fark etmek alır. Yokluk olarak görülen şeyin, aslında çok sayıda sonucu içinde taşıyan bir terhis olduğu anlaşılır.
+
+## Kâinatın Bütününe Bakınca
+
+Metin, tevhidin yalnızca tek tek canlılara değil, bütün kâinata anlam kazandırdığını da söyler. Tevhid ile bakıldığında her tür, kendine özgü hâliyle bir tesbih vazifesi görür. Kâinat, sürekli çalışan bir fabrika; farklı güzellikleri gösteren büyük bir sergi ve her varlığıyla anlam taşıyan canlı bir bütün hâline gelir.
+
+Tevhid kaldırıldığında ise aynı kâinatın bütün bu yüksek anlamları söner. Düzenli ve hikmetli bir âlem, başıboş olayların savurduğu anlamsız bir yığına dönüşür. Sanat değersizleşir, canlıların görevleri açıklanamaz ve hayatın bütün hareketleri sonuçsuz görünür.
+
+Bu sebeple metinde şirk ve inkâr, yalnızca bir inanç meselesi olarak değil, kâinatta görünen bütün güzellikleri, görevleri ve anlamları geçersiz kılan bir bakış olarak ele alınır.
+
+## Kaybolduğunu Sandığımız Şeyler
+
+İkinci Meyve'nin bıraktığı temel düşünce şudur: Kâinatta gördüğümüz güzellik ile mutlak yokluk bir arada düşünülemez.
+
+Çünkü her tarafa yayılmış, son derece esaslı ve güçlü bir güzelliğin altında bütünüyle anlamsız ve merhametsiz bir son bulunamaz. Eğer varlıkların bütün hayatı hiçliğe gidiyor olsaydı, onların yaratılışında görülen sanat, düzen ve güzellik de gerçek bir anlam taşımayacaktı.
+
+Oysa metne göre görünen güzellik hakikidir. Öyleyse varlıkların neticeleri de yalnızca gözümüzün önündeki kısa hayattan ibaret değildir.
+
+Bir çiçek solduğunda güzelliği tamamen silinmez. Bir canlı dünyadan ayrıldığında yaptığı vazife boşa gitmez. Her biri kendisine verilen hayatla bir anlam gösterir, birçok netice bırakır ve sonra göz önündeki yerinden çekilir.
+
+Bu yüzden tevhid, gidişi durdurmaz; fakat gidişin anlamını değiştirir. Ölümü görünmez kılmaz; fakat onu hiçlik olmaktan çıkarır. İnsanın "Neden geliyorlar, hiç durmadan gidiyorlar?" diye sorduğu yerde, gelişlerin de gidişlerin de sonuçsuz olmadığını gösterir.
+
+Bahar yine geçer. Çiçekler yine solar. Canlılar yine gelir ve gider. Fakat artık görünen manzara yalnızca kayıplardan oluşmaz.
+
+Çünkü gidenler bütünüyle kaybolmaz; yalnızca bizim gözümüzden saklanır.

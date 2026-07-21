@@ -1,0 +1,17 @@
+{
+  "slug": "2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami",
+  "title": "2.Şua - 1.Makam - 2.Meyve",
+  "day": 56,
+  "dayTag": "day-56",
+  "runId": "day56-batch-a",
+  "timestamp": "2026-07-21T10:07:42.868Z",
+  "status": "success",
+  "failedCommand": null,
+  "paths": {
+    "promptPath": "docs/video-tests/prompts/2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami-fill-video-package-prompt.md",
+    "metadataPath": "docs/video-tests/metadata/2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami-landscape-metadata.json",
+    "batchLoadInputPath": "docs/video-tests/batches/2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami-shorts-batch-load-input.js",
+    "expectedExportFolder": "/home/muhammet/projects/scene-blog-video/output/jobs/job-2-sua-1-makam-2-meyve-gelen-giden-varliklarin-anlami-short-*-day56-batch-a"
+  },
+  "fillTimestamp": "2026-07-21T10:13:41.603Z"
+}
