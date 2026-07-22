@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { isYoutubeUploadedForCalendar } from './youtube-upload-status.mjs';
 
 function readJson(filePath) {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch { return null; }
@@ -26,7 +27,7 @@ export function computeYoutubeScheduleHint(exportRoot, { now = new Date() } = {}
   }
 
   function extractScheduledDate(entry) {
-    if (!entry || typeof entry !== 'object' || entry.scheduled !== true) return;
+    if (!isYoutubeUploadedForCalendar(entry)) return;
     if (entry.publishAtLocal || entry.publish_at_local) {
       bump(entry.publishAtLocal || entry.publish_at_local);
       return;

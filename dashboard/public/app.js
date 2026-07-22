@@ -299,6 +299,31 @@ function boolPill(v, yesLabel = 'evet', noLabel = '—') {
   return v ? pill('yes', yesLabel) : pill('no', noLabel);
 }
 
+function youtubeBatchPills(ytResult) {
+  const status = ytResult.status ?? 'pending';
+  if (status === 'completed') {
+    return pill('yes', `${ytResult.successful}/${ytResult.total} yüklendi`);
+  }
+  if (status === 'partial') {
+    return [
+      pill('ok', `${ytResult.successful}/${ytResult.total} kısmen yüklendi`),
+      ytResult.pending ? pill('scaffold', `${ytResult.pending} bekliyor`) : '',
+      ytResult.failed ? pill('failed', `${ytResult.failed} hata`) : '',
+    ].filter(Boolean).join(' ');
+  }
+  if (status === 'failed') {
+    return [
+      pill('failed', 'YouTube yükleme başarısız'),
+      ytResult.pending ? pill('scaffold', `${ytResult.pending} bekliyor`) : '',
+      ytResult.failed ? pill('failed', `${ytResult.failed} hata`) : '',
+    ].filter(Boolean).join(' ');
+  }
+  return [
+    pill('scaffold', 'yeniden denenebilir'),
+    ytResult.pending ? pill('scaffold', `${ytResult.pending} bekliyor`) : '',
+  ].filter(Boolean).join(' ');
+}
+
 function relTime(iso) {
   if (!iso) return '—';
   const d   = new Date(iso);
@@ -1072,7 +1097,7 @@ function cardExportArtifacts(d) {
   const ytRow = ytResult
     ? kv('YouTube yükleme',
         ytResult.mode === 'batch'
-          ? `${pill('yes', `${ytResult.uploaded}/${ytResult.total} yüklendi`)}${ytResult.failed ? ` ${pill('failed', ytResult.failed + ' hata')}` : ''}`
+          ? youtubeBatchPills(ytResult)
           : `${pill('yes', 'uploaded')} <a href="${esc(ytResult.url ?? '#')}" target="_blank" class="result-link">${esc(ytResult.title ?? ytResult.video_id ?? '')}</a>`)
     : kv('YouTube yükleme', boolPill(d.youtube_upload_result_exists));
 

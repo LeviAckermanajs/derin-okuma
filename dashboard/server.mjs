@@ -10,6 +10,7 @@ import os                   from 'os';
 import { fileURLToPath } from 'url';
 import { buildAgentCommand, resolveClaudeBin, resolveCodexBin } from '../scripts/agent-runner.mjs';
 import { computeYoutubeScheduleHint } from './lib/youtube-schedule-hint.mjs';
+import { summarizeYoutubeUploadResult } from './lib/youtube-upload-status.mjs';
 import { draftLinkState, linkedSlugForDraft, slugifyDraftName } from './lib/draft-link.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -487,7 +488,9 @@ function getDraftStatus(blogSlug) {
   let mp4s = 0;
   try { if (exists(expFolder)) mp4s = fs.readdirSync(expFolder).filter(f => f.endsWith('.mp4')).length; } catch {}
   if (!mp4s) return 'batch_ready';
-  return exists(path.join(expFolder, 'youtube-upload-result.json')) ? 'youtube_uploaded' : 'exported';
+  const ytResult = readJson(path.join(expFolder, 'youtube-upload-result.json'));
+  const ytStatus = summarizeYoutubeUploadResult(ytResult);
+  return ytStatus.completed ? 'youtube_uploaded' : 'exported';
 }
 
 // apiDrafts — returns bare paths for <datalist> use
@@ -743,6 +746,7 @@ function apiSlug(slug) {
 
   const tiktokResult = readJson(tiktokResultPath);
   const ytResult     = readJson(ytResultPath);
+  const ytUploadStatus = summarizeYoutubeUploadResult(ytResult, ytResult?.summary?.total ?? null);
 
   const testDay = normalizeDayNumber(pkg?.test_day)
     ?? normalizeDayNumber(pipeline?.day)
@@ -806,9 +810,14 @@ function apiSlug(slug) {
       ytResult.mode === 'youtube_upload_batch'
         ? {
             mode:         'batch',
-            uploaded:     ytResult.summary?.uploaded  ?? 0,
-            total:        ytResult.summary?.total     ?? 0,
-            failed:       ytResult.summary?.failed    ?? 0,
+            status:       ytUploadStatus.overall_status,
+            completed:    ytUploadStatus.completed,
+            uploaded:     ytUploadStatus.uploaded,
+            skipped:      ytUploadStatus.skipped,
+            successful:   ytUploadStatus.successful,
+            total:        ytUploadStatus.total,
+            failed:       ytUploadStatus.failed,
+            pending:      ytUploadStatus.pending,
             generated_at: ytResult.generated_at       ?? null,
             videos:       (ytResult.videos ?? []).map(v => ({
               id:       v.id,

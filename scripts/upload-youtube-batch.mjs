@@ -56,6 +56,7 @@ import http    from 'http';
 import process from 'process';
 import { fileURLToPath } from 'url';
 import { google } from 'googleapis';
+import { isYoutubeUploadSuccess, summarizeYoutubeUploadResult } from '../dashboard/lib/youtube-upload-status.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -172,7 +173,7 @@ function loadPreviousResults(resultPath) {
   // Batch format: videos array
   if (Array.isArray(raw.videos)) {
     for (const entry of raw.videos) {
-      if (entry.id && entry.status === 'uploaded' && entry.youtube_video_id) {
+      if (entry.id && isYoutubeUploadSuccess(entry)) {
         uploaded.set(entry.id, entry);
       }
     }
@@ -201,24 +202,26 @@ function loadPreviousResults(resultPath) {
 // ── Result writer (called after every upload) ─────────────────────────────────
 
 function buildResultFile(manifest, manifestPath, channel, videoResults) {
-  const uploaded = videoResults.filter((r) => r.status === 'uploaded').length;
-  const skipped  = videoResults.filter((r) => r.status === 'skipped').length;
-  const failed   = videoResults.filter((r) => r.status === 'failed').length;
+  const uploadStatus = summarizeYoutubeUploadResult({ videos: videoResults }, videoResults.length);
 
   return {
     schema_version:               SCHEMA_VERSION,
     generated_at:                 new Date().toISOString(),
     mode:                         'youtube_upload_batch',
+    overall_status:               uploadStatus.overall_status,
+    completed:                    uploadStatus.completed,
     slug:                         manifest.slug,
     run_id:                       manifest.run_id,
     manifest_path:                manifestPath,
     authenticated_channel_id:     channel?.id            || '',
     authenticated_channel_title:  channel?.snippet?.title || '',
     summary: {
-      total:    videoResults.length,
-      uploaded,
-      skipped,
-      failed,
+      total:      uploadStatus.total,
+      uploaded:   uploadStatus.uploaded,
+      skipped:    uploadStatus.skipped,
+      failed:     uploadStatus.failed,
+      pending:    uploadStatus.pending,
+      successful: uploadStatus.successful,
     },
     videos: videoResults,
   };
@@ -487,7 +490,7 @@ function detectScheduleCursor(resultPath, slots) {
   const candidates = [];
   if (Array.isArray(raw.videos)) {
     for (const v of raw.videos) {
-      if (v.youtube_video_id && v.publishAtLocal) candidates.push(v);
+      if (isYoutubeUploadSuccess(v) && v.publishAtLocal) candidates.push(v);
     }
   }
   if (candidates.length === 0) return null;
@@ -503,6 +506,20 @@ function detectScheduleCursor(resultPath, slots) {
   const slotIdx  = slots.indexOf(slotStr);
 
   return { id: latest.id, slotDate, slotStr, slotIdx };
+}
+
+function youtubeErrorDetail(err) {
+  return {
+    message: err?.errors?.[0]?.message || err?.message || String(err),
+    reason: err?.errors?.[0]?.reason || err?.response?.data?.error?.errors?.[0]?.reason || '',
+  };
+}
+
+function isUploadLimitExceededError(err) {
+  const { message, reason } = youtubeErrorDetail(err);
+  return reason === 'uploadLimitExceeded'
+    || /uploadLimitExceeded/i.test(message)
+    || /exceeded the number of videos they may upload/i.test(message);
 }
 
 // ── Single video upload ───────────────────────────────────────────────────────
@@ -775,8 +792,12 @@ for (let i = 0; i < toUpload.length; i++) {
   let uploadData;
   try {
     uploadData = await uploadOneVideo(oauth2Client, video, i + 1, total, publishAt);
+    if (!isNonEmptyString(uploadData?.id)) {
+      throw new Error('YouTube API upload response did not include a video id.');
+    }
   } catch (err) {
-    const detail = err?.errors?.[0]?.message || err?.message || String(err);
+    const { message: detail, reason } = youtubeErrorDetail(err);
+    const uploadLimitExceeded = isUploadLimitExceededError(err);
 
     // Record failure and flush before exiting
     videoResults[resultIndex] = {
@@ -785,6 +806,7 @@ for (let i = 0; i < toUpload.length; i++) {
       path:                        video.path,
       status:                      'failed',
       error:                       detail,
+      error_reason:                reason || (uploadLimitExceeded ? 'uploadLimitExceeded' : null),
       youtube_video_id:            null,
       youtube_url:                 null,
       privacy_status:              'private',
@@ -799,7 +821,11 @@ for (let i = 0; i < toUpload.length; i++) {
     };
     writeResultFile(resultPath, manifest, manifestPath, channel, videoResults);
     console.error(`[FAIL] ${video.id} upload failed: ${detail}`);
-    console.error(`[FAIL] Stopping batch. Fix the error and re-run — completed uploads will be skipped.`);
+    if (uploadLimitExceeded) {
+      console.error('[FAIL] YouTube günlük yükleme sınırı doldu. Mevcut başarılı yüklemeler korundu. Kalan videoları yaklaşık 24 saat sonra yeniden deneyin.');
+    } else {
+      console.error(`[FAIL] Stopping batch. Fix the error and re-run — completed uploads will be skipped.`);
+    }
     process.exit(1);
   }
 
